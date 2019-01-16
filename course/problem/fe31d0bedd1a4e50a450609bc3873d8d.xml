@@ -1,0 +1,20 @@
+<problem display_name="Part 5" markdown="null" max_attempts="3" showanswer="finished" weight="0.0">
+  <numericalresponse answer="1.066">
+    <p>For each item that reaches operation \(Q\), what is the expectation of the time (hrs) that it waits for processing to commerce?</p>
+    <label>\(W_{Q} = \)  
+</label>
+    <description> (Round to 3 decimal places with.) </description>
+    <responseparam type="tolerance" default="0.06"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>
+        <span style="font-size: 1em;">
+          \(W_{q} = \frac{L_{q}}{\lambda_{a}} =1.066(hr)\)
+        </span>
+      </p>
+    </div>
+  </solution>
+</problem>

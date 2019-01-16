@@ -1,0 +1,824 @@
+0
+00:00:00,000 --> 00:00:02,620
+
+
+1
+00:00:02,620 --> 00:00:05,110
+Everybody knows that storage and inventory
+
+2
+00:00:05,110 --> 00:00:07,100
+are important in businesses.
+
+3
+00:00:07,100 --> 00:00:08,890
+But in fact, let's step back a second
+
+4
+00:00:08,890 --> 00:00:10,720
+and observe that storage is really
+
+5
+00:00:10,720 --> 00:00:13,490
+fundamental in nature as well as management
+
+6
+00:00:13,490 --> 00:00:15,410
+and also engineering.
+
+7
+00:00:15,410 --> 00:00:17,030
+In nature, energy is stored.
+
+8
+00:00:17,030 --> 00:00:19,550
+Life can only exist if the acquisition of energy
+
+9
+00:00:19,550 --> 00:00:23,300
+can occur at a different time from the expenditure of energy.
+
+10
+00:00:23,300 --> 00:00:25,550
+In fact, I'm guessing that at least some of the people
+
+11
+00:00:25,550 --> 00:00:27,830
+watching this video are not eating.
+
+12
+00:00:27,830 --> 00:00:31,140
+Those people are using their stored energy.
+
+13
+00:00:31,140 --> 00:00:33,930
+In management, products are stored.
+
+14
+00:00:33,930 --> 00:00:37,700
+In engineering, energy is stored in springs, in batteries,
+
+15
+00:00:37,700 --> 00:00:40,640
+in capacitors, in inductors, and so forth.
+
+16
+00:00:40,640 --> 00:00:43,490
+Information is stored in RAM and hard disks.
+
+17
+00:00:43,490 --> 00:00:47,030
+Water is stored in dams and reservoirs.
+
+18
+00:00:47,030 --> 00:00:49,620
+Storage has cost as well as benefits.
+
+19
+00:00:49,620 --> 00:00:53,730
+We will discuss both in the set of slides.
+
+20
+00:00:53,730 --> 00:00:55,380
+The purpose of storage is to allow
+
+21
+00:00:55,380 --> 00:00:58,290
+systems to survive even when important events are
+
+22
+00:00:58,290 --> 00:00:59,790
+unsynchronized--
+
+23
+00:00:59,790 --> 00:01:02,310
+for example, the separation in time
+
+24
+00:01:02,310 --> 00:01:04,440
+from the acquisition or production of something
+
+25
+00:01:04,440 --> 00:01:07,380
+and its consumption, the occurrence of an event at one
+
+26
+00:01:07,380 --> 00:01:09,540
+location such as a machine failure or a power
+
+27
+00:01:09,540 --> 00:01:12,300
+surge which can prevent desired performance
+
+28
+00:01:12,300 --> 00:01:14,460
+or do damage at another.
+
+29
+00:01:14,460 --> 00:01:16,200
+Storage improves system performance
+
+30
+00:01:16,200 --> 00:01:19,530
+by decoupling parts of the system from one another.
+
+31
+00:01:19,530 --> 00:01:22,080
+Unsynchronization is what makes storage necessary.
+
+32
+00:01:22,080 --> 00:01:23,940
+Randomness causes unsynchronization,
+
+33
+00:01:23,940 --> 00:01:25,890
+but we will see that deterministic systems can
+
+34
+00:01:25,890 --> 00:01:28,380
+have unsynchronized components as well.
+
+35
+00:01:28,380 --> 00:01:31,360
+And such systems can require storage.
+
+36
+00:01:31,360 --> 00:01:33,760
+Storage allows production systems of energy of goods
+
+37
+00:01:33,760 --> 00:01:36,670
+to be built with capacity less than the peak demand.
+
+38
+00:01:36,670 --> 00:01:39,280
+In particular, it helps manage seasonality.
+
+39
+00:01:39,280 --> 00:01:41,590
+Factories or businesses who get their greatest revenue
+
+40
+00:01:41,590 --> 00:01:43,570
+from Christmas sales start production
+
+41
+00:01:43,570 --> 00:01:45,790
+during the summer or earlier.
+
+42
+00:01:45,790 --> 00:01:47,980
+Consequently, they have to store lots of inventory,
+
+43
+00:01:47,980 --> 00:01:50,410
+and they have to store it for a long time.
+
+44
+00:01:50,410 --> 00:01:53,165
+Their peak demand occurs in the last month before Christmas,
+
+45
+00:01:53,165 --> 00:01:55,540
+and that demand rate is much greater than the demand rate
+
+46
+00:01:55,540 --> 00:01:57,220
+during the rest of the year.
+
+47
+00:01:57,220 --> 00:01:59,260
+They would probably prefer to start production
+
+48
+00:01:59,260 --> 00:02:01,060
+in November if they could.
+
+49
+00:02:01,060 --> 00:02:03,137
+That would reduce their inventory costs,
+
+50
+00:02:03,137 --> 00:02:05,470
+and it would allow them to have much more accurate sales
+
+51
+00:02:05,470 --> 00:02:06,370
+forecasts.
+
+52
+00:02:06,370 --> 00:02:08,662
+So why don't they?
+
+53
+00:02:08,662 --> 00:02:11,620
+They don't, because if they started Christmas production
+
+54
+00:02:11,620 --> 00:02:14,320
+in November, they would need much greater production
+
+55
+00:02:14,320 --> 00:02:17,430
+capacity, much bigger factories, or many more factories.
+
+56
+00:02:17,430 --> 00:02:19,930
+They would have to produce at a much greater production rate
+
+57
+00:02:19,930 --> 00:02:22,420
+during last month, and most of those facilities
+
+58
+00:02:22,420 --> 00:02:24,310
+would be idle for most of the year.
+
+59
+00:02:24,310 --> 00:02:27,850
+That idle production capacity would be very expensive.
+
+60
+00:02:27,850 --> 00:02:30,010
+Similarly, the cost of power plants
+
+61
+00:02:30,010 --> 00:02:33,460
+depends mainly on their peak energy generation rate.
+
+62
+00:02:33,460 --> 00:02:35,200
+Energy demand varies during the day
+
+63
+00:02:35,200 --> 00:02:38,000
+and is not at its peak all day and night.
+
+64
+00:02:38,000 --> 00:02:40,030
+If plants could be built to produce constantly
+
+65
+00:02:40,030 --> 00:02:42,190
+at the daily average of demand rate,
+
+66
+00:02:42,190 --> 00:02:44,030
+they would be much less expensive.
+
+67
+00:02:44,030 --> 00:02:46,360
+But this is only possible if there were energy storage
+
+68
+00:02:46,360 --> 00:02:47,860
+facilities available.
+
+69
+00:02:47,860 --> 00:02:50,050
+Storage of energy will become much more important
+
+70
+00:02:50,050 --> 00:02:52,730
+as renewable energy replaces fossil fuels.
+
+71
+00:02:52,730 --> 00:02:54,970
+The sun and the wind generate useful energy only
+
+72
+00:02:54,970 --> 00:02:56,410
+intermittently.
+
+73
+00:02:56,410 --> 00:02:58,300
+For renewables to be effective, they
+
+74
+00:02:58,300 --> 00:03:00,910
+would have to generate energy at a greater rate than demand
+
+75
+00:03:00,910 --> 00:03:04,210
+while they're producing, and that temporary excess of what
+
+76
+00:03:04,210 --> 00:03:06,970
+they're producing over demand would be saved for periods
+
+77
+00:03:06,970 --> 00:03:08,650
+when they're not producing.
+
+78
+00:03:08,650 --> 00:03:10,720
+It reduces the propagation of disturbances,
+
+79
+00:03:10,720 --> 00:03:13,210
+and thus reduces the instability and the fragility
+
+80
+00:03:13,210 --> 00:03:16,450
+of complex, expensive systems.
+
+81
+00:03:16,450 --> 00:03:19,150
+As we've already discussed, if a machine is stopped
+
+82
+00:03:19,150 --> 00:03:21,520
+for a long time, it will cause neighboring machines
+
+83
+00:03:21,520 --> 00:03:25,210
+to be idle if there's little inventory or inventory space.
+
+84
+00:03:25,210 --> 00:03:29,200
+We will see this in greater detail later in the course.
+
+85
+00:03:29,200 --> 00:03:31,900
+Let's be a little specific about the benefits
+
+86
+00:03:31,900 --> 00:03:33,970
+and costs of inventory in factories-- first,
+
+87
+00:03:33,970 --> 00:03:35,620
+the benefits.
+
+88
+00:03:35,620 --> 00:03:38,140
+Storage allows economies of scale--
+
+89
+00:03:38,140 --> 00:03:40,360
+in particular, in volume purchasing.
+
+90
+00:03:40,360 --> 00:03:42,850
+Per item prices are always less for large orders
+
+91
+00:03:42,850 --> 00:03:44,560
+than for small batches, but if you
+
+92
+00:03:44,560 --> 00:03:46,270
+buy something in a large batch, you
+
+93
+00:03:46,270 --> 00:03:50,070
+need to store it before you can use all of it.
+
+94
+00:03:50,070 --> 00:03:52,760
+Reduced set-ups-- set-ups diminish the time
+
+95
+00:03:52,760 --> 00:03:54,440
+in which machines can produce.
+
+96
+00:03:54,440 --> 00:03:56,190
+This motivates infrequent set-ups.
+
+97
+00:03:56,190 --> 00:03:57,950
+However, to have infrequent set-ups,
+
+98
+00:03:57,950 --> 00:04:02,240
+you must have large batches, and that means you have storage.
+
+99
+00:04:02,240 --> 00:04:05,000
+It helps manage uncertainty, including
+
+100
+00:04:05,000 --> 00:04:07,370
+the random arrival of customers or orders
+
+101
+00:04:07,370 --> 00:04:10,250
+and unreliable deliveries of raw materials.
+
+102
+00:04:10,250 --> 00:04:12,770
+Suppose you knew the average daily demand for an item.
+
+103
+00:04:12,770 --> 00:04:15,340
+No day's demand will be exactly that average.
+
+104
+00:04:15,340 --> 00:04:17,540
+A reasonable production strategy would
+
+105
+00:04:17,540 --> 00:04:19,100
+be to make sure that each day you
+
+106
+00:04:19,100 --> 00:04:22,040
+have on hand the average demand plus a small quantity called
+
+107
+00:04:22,040 --> 00:04:23,600
+"safety stock."
+
+108
+00:04:23,600 --> 00:04:25,670
+If anything is unsold at the end of the day,
+
+109
+00:04:25,670 --> 00:04:28,710
+you can use it to meet the demand the next day.
+
+110
+00:04:28,710 --> 00:04:32,220
+Now the costs-- the first cost is financial.
+
+111
+00:04:32,220 --> 00:04:35,250
+Raw materials are paid for, but no revenue comes in
+
+112
+00:04:35,250 --> 00:04:36,750
+until the item is sold.
+
+113
+00:04:36,750 --> 00:04:38,880
+If you borrow money to pay for raw material,
+
+114
+00:04:38,880 --> 00:04:41,160
+you incur interest which you can't pay back until you
+
+115
+00:04:41,160 --> 00:04:42,630
+sell the goods you make.
+
+116
+00:04:42,630 --> 00:04:44,580
+The more inventory you hold, the longer it
+
+117
+00:04:44,580 --> 00:04:46,380
+takes to get it through the factory,
+
+118
+00:04:46,380 --> 00:04:49,350
+and the more you have to pay in interest.
+
+119
+00:04:49,350 --> 00:04:51,840
+Demand risk-- an item loses value or is unsold
+
+120
+00:04:51,840 --> 00:04:55,410
+due to obsolescence-- for example, newspapers,
+
+121
+00:04:55,410 --> 00:04:58,690
+technology, fashion goods.
+
+122
+00:04:58,690 --> 00:05:02,280
+In addition, there's holding cost and shrinkage.
+
+123
+00:05:02,280 --> 00:05:06,199
+"Shrinkage" means damage, or theft, or spoilage, or loss.
+
+124
+00:05:06,199 --> 00:05:08,490
+Here we're going to show how unsynchronized variability
+
+125
+00:05:08,490 --> 00:05:10,080
+causes inventory.
+
+126
+00:05:10,080 --> 00:05:12,690
+This is a picture of a tank that holds water.
+
+127
+00:05:12,690 --> 00:05:16,050
+Water comes in at a rate of 75 gallons a second,
+
+128
+00:05:16,050 --> 00:05:20,390
+and water can leave at a rate of 75 gallons a second.
+
+129
+00:05:20,390 --> 00:05:22,820
+If we start with an empty tank, the tank
+
+130
+00:05:22,820 --> 00:05:24,590
+is always empty except for a little bit
+
+131
+00:05:24,590 --> 00:05:27,570
+of splashing around the bottom.
+
+132
+00:05:27,570 --> 00:05:29,880
+But now let's add a little randomness.
+
+133
+00:05:29,880 --> 00:05:32,410
+We'll put a valve in the pipe carrying water in and one
+
+134
+00:05:32,410 --> 00:05:35,140
+in the pipe carrying water out.
+
+135
+00:05:35,140 --> 00:05:37,540
+The valves are open sometimes and closed other times,
+
+136
+00:05:37,540 --> 00:05:39,550
+but on the average, they carry the same volume
+
+137
+00:05:39,550 --> 00:05:43,194
+of water per time as in the previous slide.
+
+138
+00:05:43,194 --> 00:05:45,110
+When they're open, water can pass through them
+
+139
+00:05:45,110 --> 00:05:47,260
+at a rate of 100 gallons per second.
+
+140
+00:05:47,260 --> 00:05:51,410
+Of course, when they're closed, no water passes through them.
+
+141
+00:05:51,410 --> 00:05:55,140
+The average period when the valve is open is 15 minutes.
+
+142
+00:05:55,140 --> 00:05:57,830
+The average period when it's close to five minutes.
+
+143
+00:05:57,830 --> 00:06:00,050
+Consequently, the average flow rate through it
+
+144
+00:06:00,050 --> 00:06:03,250
+is 75 gallons per second.
+
+145
+00:06:03,250 --> 00:06:05,130
+Let's look at some of the possibilities that
+
+146
+00:06:05,130 --> 00:06:07,080
+can happen in this case.
+
+147
+00:06:07,080 --> 00:06:09,660
+First of all, both valves can be closed.
+
+148
+00:06:09,660 --> 00:06:12,480
+If they're both closed, no water comes in or goes out.
+
+149
+00:06:12,480 --> 00:06:14,340
+The amount of water that's in the tank
+
+150
+00:06:14,340 --> 00:06:16,920
+is staying constant during this period.
+
+151
+00:06:16,920 --> 00:06:18,690
+How it got to the level it got depends
+
+152
+00:06:18,690 --> 00:06:23,370
+on the past history of the valves being opened and closed.
+
+153
+00:06:23,370 --> 00:06:25,570
+The second case is where the first valve is open
+
+154
+00:06:25,570 --> 00:06:27,370
+and the second one is closed.
+
+155
+00:06:27,370 --> 00:06:30,230
+In that case, water enters the tank but can't get out,
+
+156
+00:06:30,230 --> 00:06:33,340
+so the water level in the tank rises.
+
+157
+00:06:33,340 --> 00:06:35,470
+On the contrary, we can have the first valve closed
+
+158
+00:06:35,470 --> 00:06:38,590
+and the second valve open in which case nothing comes in,
+
+159
+00:06:38,590 --> 00:06:41,356
+but water comes out as long as there's water in the tank.
+
+160
+00:06:41,356 --> 00:06:43,480
+When there's no more water in the tank, it's empty.
+
+161
+00:06:43,480 --> 00:06:46,490
+
+
+162
+00:06:46,490 --> 00:06:50,750
+And finally, both valves can be open at the same time, in which
+
+163
+00:06:50,750 --> 00:06:53,960
+case 100 gallons per second goes in and 100 gallons per second
+
+164
+00:06:53,960 --> 00:06:55,400
+goes out.
+
+165
+00:06:55,400 --> 00:06:59,310
+The water level stays constant during that period.
+
+166
+00:06:59,310 --> 00:07:02,829
+So what can we observe from this illustration?
+
+167
+00:07:02,829 --> 00:07:04,370
+There was never any water in the tank
+
+168
+00:07:04,370 --> 00:07:06,335
+when the flow is constant in the first case.
+
+169
+00:07:06,335 --> 00:07:08,210
+Of course, there's a little bit of splashing,
+
+170
+00:07:08,210 --> 00:07:10,220
+but let's not worry about that.
+
+171
+00:07:10,220 --> 00:07:14,320
+There's sometimes water in the tank when the flow is variable.
+
+172
+00:07:14,320 --> 00:07:17,800
+Conclusions-- a very general conclusion first.
+
+173
+00:07:17,800 --> 00:07:20,890
+You can't always replace random variables with their averages
+
+174
+00:07:20,890 --> 00:07:23,860
+for the purpose of predicting the behavior of a system.
+
+175
+00:07:23,860 --> 00:07:25,510
+Sometimes you can.
+
+176
+00:07:25,510 --> 00:07:27,310
+It depends on the nature of the system,
+
+177
+00:07:27,310 --> 00:07:29,300
+the nature of the variability, and the quantity
+
+178
+00:07:29,300 --> 00:07:32,080
+you're trying to predict.
+
+179
+00:07:32,080 --> 00:07:34,300
+But the main point for us is that variability
+
+180
+00:07:34,300 --> 00:07:38,180
+causes inventory.
+
+181
+00:07:38,180 --> 00:07:40,790
+To be more precise, non-synchronization
+
+182
+00:07:40,790 --> 00:07:43,470
+causes inventory.
+
+183
+00:07:43,470 --> 00:07:45,360
+To be more precise, non-synchronization
+
+184
+00:07:45,360 --> 00:07:47,190
+causes inventory.
+
+185
+00:07:47,190 --> 00:07:48,780
+Living things do not acquire energy
+
+186
+00:07:48,780 --> 00:07:50,610
+at the same time they expend it, therefore,
+
+187
+00:07:50,610 --> 00:07:53,880
+they must store energy in the form of fat or sugar.
+
+188
+00:07:53,880 --> 00:07:55,470
+Rivers are dammed and reservoirs are
+
+189
+00:07:55,470 --> 00:07:57,930
+created to control the flow of water
+
+190
+00:07:57,930 --> 00:08:01,390
+to reduce the variability of the water supply.
+
+191
+00:08:01,390 --> 00:08:03,310
+For solar and wind power to be successful,
+
+192
+00:08:03,310 --> 00:08:06,580
+energy storage is required for when the sun doesn't shine
+
+193
+00:08:06,580 --> 00:08:08,600
+and the wind doesn't blow.
+
+194
+00:08:08,600 --> 00:08:11,090
+To wrap up this video, let's list some of the topics
+
+195
+00:08:11,090 --> 00:08:12,380
+we're going to talk about--
+
+196
+00:08:12,380 --> 00:08:15,080
+first of all, the news vendor problem where we have demand
+
+197
+00:08:15,080 --> 00:08:19,500
+risk although no inventory dynamics.
+
+198
+00:08:19,500 --> 00:08:22,790
+There's the economic order quantity problem--
+
+199
+00:08:22,790 --> 00:08:25,860
+deals purely with economies of scale,
+
+200
+00:08:25,860 --> 00:08:28,840
+and the demand is deterministic.
+
+201
+00:08:28,840 --> 00:08:32,679
+The QR policy adds to the economic order quantity
+
+202
+00:08:32,679 --> 00:08:37,059
+problem, the supplier lead time, and random demand.
+
+203
+00:08:37,059 --> 00:08:38,770
+We'll describe a base stock policy
+
+204
+00:08:38,770 --> 00:08:42,720
+for managing a simple factory in order to avoid stockouts,
+
+205
+00:08:42,720 --> 00:08:45,209
+and there will be a few other topics.
+

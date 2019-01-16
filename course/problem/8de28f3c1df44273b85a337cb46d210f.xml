@@ -1,0 +1,10 @@
+<problem display_name="Part 4" markdown="&gt;&gt;Why did the company think that the new NC machine would help them when they bought it?&lt;&lt;&#10;&#10;( ) Because the new machine is more reliable and will produce less defective parts.&#10;(x) Because they confused capacity and delay. The time from start to finish for a part would be less, but it could not be done in parallel, so the capacity was less.&#10;( ) Because the new machine has a shorter cycle time, thus it will produce more parts.&#10;" max_attempts="3" showanswer="finished" weight="0.0">
+  <multiplechoiceresponse>
+    <label>Why did the company think that the new NC machine would help them when they bought it?</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Because the new machine is more reliable and will produce less defective parts.</choice>
+      <choice correct="true">Because they confused capacity and delay. The time from start to finish for a part would be less, but it could not be done in parallel, so the capacity was less.</choice>
+      <choice correct="false">Because the new machine has a shorter cycle time, thus it will produce more parts.</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

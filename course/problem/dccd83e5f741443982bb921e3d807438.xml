@@ -1,0 +1,28 @@
+<problem display_name="Part 1" markdown="null" max_attempts="3" showanswer="past_due" weight="4.0">
+  <p>Parts have already been partially processed before they reach a certain shop. When a part enters the shop, the company has already spent $10,000 for both raw material and previous processing. More processing is required before they can be sold or assembled onto a final product.  </p>
+  <p>In that shop, machine \(M\) takes one minute to do an operation.  It costs $500 to do that operation.  The machine is always operational, but it has a probability 0.1 of creating a defective part.  In other words, a part that is operated on by M has probability 0.1 of being unacceptable and probability 1-0.1 of being acceptable.</p>
+  <p> If the operation on it is good, the cost-based value of the part is $10,000+$500.  That is, its value has increased by $500.  If the operation is bad, the part must be scrapped and its market value is 0.  (In that case, the company has lost $10,500 since it the money spent on the operation was lost.)</p>
+  <label>What is the expected value of a part when it leaves the shop?  (This includes both good and bad parts.) </label>
+  <numericalresponse answer="9450">
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>What is the expected increase of a part's value due to the operation? (It's possible for this value to be negative)</label>
+  <numericalresponse answer="-550">
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>What is the production rate of good parts?</label>
+  <numericalresponse answer="0.9">
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>The value of the part is $10,500 with probability 0.9 and 0 with probability 0.1. Thus the expected value is just \($10,500*0.9\).</p>
+      <p/>
+      <p>The expected value of the part has increased by \($10,500*0.9-$10,000\). Note, it is possible for the part to lose value due to an operation if the probability of defect is large and the cost of the second operation is small.</p>
+      <p/>
+      <p>Since the operation time is only 1 minute, the production rate is just 1-0.1.</p>
+    </div>
+    <script src="/static/st.js" type="text/javascript"/>
+  </solution>
+</problem>

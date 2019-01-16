@@ -1,0 +1,30 @@
+<problem display_name="Part 1" markdown="null" max_attempts="3" showanswer="finished" weight="0.0">
+  <multiplechoiceresponse>
+    <label>The system can be approximated as what type of Queue?</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">M/M/1 Queue</choice>
+      <choice correct="false">D/D/1 Queue</choice>
+      <choice correct="false">M/M/s Queue</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+  <label> What is the λ  (per hour) ? </label>
+  <numericalresponse answer="10">
+    <responseparam type="tolerance" default="0.1"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>What is the μ  (per hour) ? </label>
+  <numericalresponse answer="15">
+    <responseparam type="tolerance" default="0.1"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>
+        <span style="font-size: 1em;">
+          Because there is one queue and one server, the situation is considered to be a M/M/1 queue. Given the information in the problem, \(\lambda = 10 (/hr), \mu = \frac{1}{4} (/min) = 15 (/hour)\)
+        </span>
+      </p>
+    </div>
+  </solution>
+</problem>

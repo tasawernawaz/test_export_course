@@ -1,0 +1,17 @@
+<problem display_name="Concept Check 5" markdown="&gt;&gt; Which statement is NOT true below?&lt;&lt;&#10;( ) Toyota has a major emphasis on reduction of setup time. One element of the setup time reduction strategy is to convert some of the internal setup change activity to external.&#10;( ) The goal for standard operations is to minimize the number of workers for production.&#10;( ) Takt time is given by the ratio of the effective daily operation time  to the required daily quantity.&#10;( X )  Models can only be mixing if the setup time is short. Reducing the setup time is the job for manufacturing system engineers.&#10;&#10;[explanation]&#10;Models can only be mixing if the setup time is short. Reducing the setup time is the job for machine designers. Manufacturing system engineers can determine where such reductions are needed the most.&#10;[explanation]" max_attempts="3" weight="1.0">
+  <multiplechoiceresponse>
+    <label> Which statement is NOT true below?</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Toyota has a major emphasis on reduction of setup time. One element of the setup time reduction strategy is to convert some of the internal setup change activity to external.</choice>
+      <choice correct="false">The goal for standard operations is to minimize the number of workers for production.</choice>
+      <choice correct="false">Takt time is given by the ratio of the effective daily operation time  to the required daily quantity.</choice>
+      <choice correct="true">Models can only be mixing if the setup time is short. Reducing the setup time is the job for manufacturing system engineers.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Models can only be mixing if the setup time is short. Reducing the setup time is the job for machine designers. Manufacturing system engineers can determine where such reductions are needed the most.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

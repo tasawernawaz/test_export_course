@@ -1,0 +1,97 @@
+<problem display_name="Part 4" markdown="null" max_attempts="3" showanswer="finished" weight="0.0">
+  <p>For each time (period) below, enter the approximate Queue length. </p>
+  <table border="1" cellpadding="0" cellspacing="0" width="400" style="width: 300pt;">
+    <colgroup>
+      <col width="150" span="2" style="mso-width-source: userset; mso-width-alt: 6144; width: 144pt;"/>
+    </colgroup>
+    <tbody>
+      <tr style="height: 30.0pt;">
+        <td valign="middle" style="text-align: center;">
+          <b>Time</b>
+        </td>
+        <td valign="middle" style="text-align: center;">
+          <b>Queue Length</b>
+        </td>
+      </tr>
+      <tr height="25" style="height: 20.0pt;">
+        <td valign="top" style="text-align: center;">11:00 - 11:30</td>
+        <td valign="top" style="text-align: center; ">
+          <p/>
+          <p/>
+          <numericalresponse answer="0.25">
+            <responseparam type="tolerance" default="0.05"/>
+            <formulaequationinput/>
+          </numericalresponse>
+        </td>
+      </tr>
+      <tr height="25" style="height: 20.0pt;">
+        <td valign="top" style="text-align: center;">11:30 - 12:00</td>
+        <td valign="top" style="text-align: center;">
+          <p/>
+          <p/>
+          <numericalresponse answer="0.667">
+            <responseparam type="tolerance" default="0.05"/>
+            <formulaequationinput/>
+          </numericalresponse>
+        </td>
+      </tr>
+      <tr height="25" style="height: 20.0pt;">
+        <td valign="top" style="text-align: center;">12:15</td>
+        <td valign="top" style="text-align: center;">
+          <p/>
+          <p/>
+          <numericalresponse answer="6.667">
+            <responseparam type="tolerance" default="0.05"/>
+            <formulaequationinput/>
+          </numericalresponse>
+        </td>
+      </tr>
+      <tr height="25" style="height: 20.0pt;">
+        <td valign="top" style="text-align: center;">12:15 - 1:00</td>
+        <td valign="top" style="text-align: center;">
+          <p/>
+          <p/>
+          <numericalresponse answer="1.5">
+            <responseparam type="tolerance" default="0.05"/>
+            <formulaequationinput/>
+          </numericalresponse>
+        </td>
+      </tr>
+      <tr height="25" style="height: 20.0pt;">
+        <td valign="top" style="text-align: center;">1:15</td>
+        <td valign="top" style="text-align: center;">
+          <p/>
+          <p/>
+          <numericalresponse answer="7.5">
+            <responseparam type="tolerance" default="0.05"/>
+            <formulaequationinput/>
+          </numericalresponse>
+        </td>
+      </tr>
+      <tr height="25" style="height: 20.0pt;">
+        <td valign="top" style="text-align: center;">1:15 - 2:00</td>
+        <td valign="top" style="text-align: center;">
+          <p/>
+          <p/>
+          <numericalresponse answer="0.25">
+            <responseparam type="tolerance" default="0.05"/>
+            <formulaequationinput/>
+          </numericalresponse>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>
+        <span style="font-size: 1em;">
+          <img src="/static/Queue_FE_P1_d.png" alt="" width="600" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+          <p>This is not exactly right, since it does not indicate the gradual decrease in expected queue size after the busy periods. It is not too bad as long as the periods are long enough so that the system reaches steady state in the periods when λ &lt; 2.</p>
+          <p>As we expected, some people fell into the trap of thinking that because the arrival rate was greater than the service rate during some time intervals, the queue length would be infinite. </p>
+          <p>How could the queue length jump to infinity? Where do the infinite number of customers come from? What makes them all show up at just the instant when the arrival rate is large enough? The queue length goes to infinity only after a very long time. If the arrival rate is larger than the service rate, the queue length grows, on the average, at a rate equal to the difference between the arrival and service rates. There is no steady state, and after a very long time, the expected queue length is very large. It is certainly not infinite during a short interval.</p>
+        </span>
+      </p>
+    </div>
+  </solution>
+</problem>

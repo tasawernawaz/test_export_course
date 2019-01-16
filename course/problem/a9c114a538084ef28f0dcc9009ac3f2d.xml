@@ -1,0 +1,17 @@
+<problem display_name="Part 2" group_access="{}" markdown="null" max_attempts="3" showanswer="past_due" weight="5.0">
+  <numericalresponse answer="1.641">
+    <label>They replaced the original sandwich maker with a new sandwich maker whose average sandwich-making time was 25 seconds (The original sandwich maker took 29 seconds on average to prepare a sandwich. What is the average number of customer in the shop at any given time? (Enter 3 decimal places)</label>
+    <responseparam type="tolerance" default="0.05"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>
+        <span style="font-size: 1em;">
+          <img src="/static/Wk4GP1Pt2.png" alt="" width="600" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+        </span>
+      </p>
+    </div>
+  </solution>
+</problem>

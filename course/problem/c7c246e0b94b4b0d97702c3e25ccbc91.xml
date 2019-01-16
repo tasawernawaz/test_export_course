@@ -1,0 +1,36 @@
+<problem display_name="Part 3" markdown="null" max_attempts="3" rerandomize="never" showanswer="finished" weight="1.0">
+  <p>For each value of t, specify the CDF F(t) = P(T ≤ t) of this random variable.</p>
+  <numericalresponse answer="0">
+    <label>For <b>t \(\lt\) a</b> :</label>
+    <responseparam type="tolerance" default="0.01"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <formularesponse type="ci" samples="t,b,a@0.1,0.5,0.1:100,100,100#10" answer=" 2*((t-a)^2)/((b-a)^2)">
+    <label>For <b>a \(\leq\) t \(\leq\) m</b> :</label>
+    <description>Write an expression for the product of <i>t</i>, <i>a</i>, and <i>b</i>.</description>
+    <responseparam type="tolerance" default="0.00001"/>
+    <formulaequationinput size="40"/>
+  </formularesponse>
+  <formularesponse type="ci" samples="t,b,a@0.1,0.5,0.1:100,100,100#10" answer="1-2*((b-t)^2)/((b-a)^2)">
+    <label>For <b>m \(\leq\) t \(\leq\) b</b> :</label>
+    <description>Write an expression for the product of <i>t</i>, <i>a</i>, and <i>b</i>.</description>
+    <responseparam type="tolerance" default="0.00001"/>
+    <formulaequationinput size="40"/>
+  </formularesponse>
+  <numericalresponse answer="1">
+    <label>For <b>t \(\gt\) b</b> :</label>
+    <responseparam type="tolerance" default="0.01"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>
+        <p>Figure 7 is in the explanation of the previous part.</p>
+        <span style="font-size: 1em;">
+          <img src="/static/Probability8.3.PNG" alt="" width="600" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+        </span>
+      </p>
+    </div>
+  </solution>
+</problem>

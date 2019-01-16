@@ -1,0 +1,23 @@
+<problem display_name="Part 5" markdown="null" max_attempts="3" showanswer="finished" weight="0.0">
+  <numericalresponse answer="0.444">
+    <label>What is the probability that a customer waits at least four minutes in the queue before being waited on?</label>
+    <description>(Round to 3 decimal places.) </description>
+    <responseparam type="tolerance" default="0.004"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>
+        <span style="font-size: 1em;">
+          <p>
+            \(P(N_{q} \geq 1)=P(N\geq2)=π(2)+π(3)+......\)
+          </p>
+          <p>
+            \(= 1−\pi(0)−\pi(1)=1−(1−\rho)−(1-\rho)\rho = \frac{4}{9}\)
+          </p>
+        </span>
+      </p>
+    </div>
+  </solution>
+</problem>

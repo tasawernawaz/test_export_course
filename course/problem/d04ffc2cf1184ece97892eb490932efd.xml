@@ -1,0 +1,17 @@
+<problem display_name="Part 2" markdown="&gt;&gt;Which of the following describes Make To Stock production？&lt;&lt;&#10;&#10;(x) Items are available for purchase when a customer arrives&#10;( ) Items are ordered when customers arrive&#10;( ) Items are assembled to order when customers arrive&#10;( ) Items are designed when a customer arrive.&#10;&#10;[Explanation]&#10;Make to stock literally means making the product so it is in stock at the point of sale.&#10;[Explanation]&#10;&#10;" max_attempts="3" showanswer="past_due" weight="3.0">
+  <multiplechoiceresponse>
+    <label>Which of the following describes Make To Stock production？</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">Items are available for purchase when a customer arrives</choice>
+      <choice correct="false">Items are ordered when customers arrive</choice>
+      <choice correct="false">Items are assembled to order when customers arrive</choice>
+      <choice correct="false">Items are designed when a customer arrive.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Make to stock literally means making the product so it is in stock at the point of sale.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

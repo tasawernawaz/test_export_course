@@ -1,0 +1,25 @@
+<problem display_name="Question 6" markdown="&gt;&gt;Pick the trajectory that best fits the situation described.&lt;&lt;&#10;&#10;( ) &lt;img src = &quot;/static/wk2-video5-q6-a.png&quot; width=&quot;400&quot;/&gt;&#10;(x) &lt;img src = &quot;/static/wk2-video5-q6-b.png&quot; width=&quot;400&quot;/&gt;&#10;( ) &lt;img src = &quot;/static/wk2-video5-q6-c.png&quot; width=&quot;400&quot;/&gt;&#10;( ) &lt;img src = &quot;/static/wk2-video5-q6-d.png&quot; width=&quot;400&quot;/&gt;&#10;&#10;[explanation]&#10;Plot B. Let’s describe each state between actions (as denoted by the red circles):  0) Both tanks at full, and thus we begin at the top right corner. 1) B1 remains full and B2 is slightly less than full. 2) B1 slightly less than full and B2 full. 3) B1 has completely emptied and B2 still full. 4) B1 and B2 both empty.&#10;[explanation]&#10;&#10;" max_attempts="3" weight="3.0">
+  <multiplechoiceresponse>
+    <label>Pick the trajectory that best fits the situation described.</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">
+        <img src="/static/wk2-video5-q6-a.png" width="400"/>
+      </choice>
+      <choice correct="true">
+        <img src="/static/wk2-video5-q6-b.png" width="400"/>
+      </choice>
+      <choice correct="false">
+        <img src="/static/wk2-video5-q6-c.png" width="400"/>
+      </choice>
+      <choice correct="false">
+        <img src="/static/wk2-video5-q6-d.png" width="400"/>
+      </choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Plot B. Let’s describe each state between actions (as denoted by the red circles):  0) Both tanks at full, and thus we begin at the top right corner. 1) B1 remains full and B2 is slightly less than full. 2) B1 slightly less than full and B2 full. 3) B1 has completely emptied and B2 still full. 4) B1 and B2 both empty.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

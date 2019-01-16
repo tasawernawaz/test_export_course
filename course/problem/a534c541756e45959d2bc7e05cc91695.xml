@@ -1,0 +1,19 @@
+<problem display_name="Part 2" markdown="null" max_attempts="3" showanswer="finished" weight="1.0">
+  <numericalresponse answer="0.5">
+    <p>Random variables \(X\) and \(Y_{2}\) are give by: </p>
+    <img src="/static/Probability11.2p.png" alt="" width="400"/>
+    <label>Calculate \(Cov(X,Y_{2})\).</label>
+    <responseparam type="tolerance" default="0.05"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>
+          <span style="font-size: 1em;">
+            <img src="/static/Probability11.2.png" alt="" width="500" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+          </span>
+        </p>
+      </div>
+    </solution>
+  </numericalresponse>
+</problem>

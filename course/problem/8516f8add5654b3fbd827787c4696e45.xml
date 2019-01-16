@@ -1,0 +1,30 @@
+<problem display_name="Part 2" markdown="null" max_attempts="3" showanswer="finished" weight="0.0">
+  <numericalresponse answer="191">
+    <p>Assume that the distribution of total daily sales can be well- approximated by a normal distribution. The standard deviation of daily sales is one third (1/3) of the expected daily sales. Lunches sell for $6.00 each. The material for lunch costs $2.00 per lunch. Any surplus food must be discarded, and it costs $1.00 per lunch to discard it.</p>
+    <label>How much food should Don and Phil buy each day (expressed in number of lunches) to maximize their expected profit? </label>
+    <responseparam type="tolerance" default="1"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>
+        <span style="font-size: 1em;">
+          <p>This is a standard newsboy problem, except that the surplus price is negative. Using the formulation of the inventory lecture, \(r = 6, c=2,s=−1,\mu_{w} =180,\sigma_{w} =60\), so the optimal quantity to purchase is given by</p>
+          <p>
+            <center>\(F(\frac{x^{*}-\mu_{w}}{\sigma_{w}}) = F(\frac{x^{*}-180}{60}) = \frac{r-c}{r-s} = \frac{4}{7} = 0.571\)</center>
+          </p>
+          <p>where \(F()\) is the standard normal distribution. Therefore: </p>
+          <p>
+            <center>\(\frac{x^{*}-180}{60} = 0.180\)</center>
+          </p>
+          <p>or</p>
+          <p>
+            <center>\(x^{*} = 190.801\)</center>
+          </p>
+          <p>so they buy materials for 191 lunches. Actually, we should not pick 191 because it is the closest integer to 190.801. We should verify that the expected profit from 191 is higher than that from 190. This is done below in the last problem of this section.</p>
+        </span>
+      </p>
+    </div>
+  </solution>
+</problem>

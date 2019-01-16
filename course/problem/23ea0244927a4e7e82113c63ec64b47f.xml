@@ -1,0 +1,106 @@
+<problem display_name="Part 3" markdown="null" max_attempts="3" showanswer="finished" weight="0.0">
+  <p>For each time period below, describe whether the queuing behavior is decreasing, at steady state, or increasing. </p>
+  <table border="0" cellpadding="0" cellspacing="0" width="384" style="width: 288pt;">
+    <colgroup>
+      <col width="192" span="2" style="mso-width-source: userset; mso-width-alt: 6144; width: 144pt;"/>
+    </colgroup>
+    <tbody>
+      <tr style="height: 30.0pt;">
+        <td valign="middle" style="text-align: center;">
+          <b>Period</b>
+        </td>
+        <td valign="middle" style="text-align: left;">
+          <b>Queue Behavior</b>
+        </td>
+      </tr>
+      <tr height="25" style="height: 20.0pt;">
+        <td valign="top" style="text-align: center;">11:00 - 11:30</td>
+        <td valign="top" style="text-align: center; ">
+          <p/>
+          <optionresponse>
+            <optioninput>
+              <option correct="False">Decreasing</option>
+              <option correct="True">Steady State</option>
+              <option correct="False">Increasing</option>
+            </optioninput>
+          </optionresponse>
+        </td>
+      </tr>
+      <tr height="25" style="height: 20.0pt;">
+        <td valign="top" style="text-align: center;">11:30 - 12:00</td>
+        <td valign="top" style="text-align: center;">
+          <p/>
+          <optionresponse>
+            <optioninput>
+              <option correct="False">Decreasing</option>
+              <option correct="True">Steady State</option>
+              <option correct="False">Increasing</option>
+            </optioninput>
+          </optionresponse>
+        </td>
+      </tr>
+      <tr height="25" style="height: 20.0pt;">
+        <td valign="top" style="text-align: center;">12:00 - 12:15</td>
+        <td valign="top" style="text-align: center;">
+          <p/>
+          <optionresponse>
+            <optioninput>
+              <option correct="False">Decreasing</option>
+              <option correct="False">Steady State</option>
+              <option correct="True">Increasing</option>
+            </optioninput>
+          </optionresponse>
+        </td>
+      </tr>
+      <tr height="25" style="height: 20.0pt;">
+        <td valign="top" style="text-align: center;">12:15 - 1:00</td>
+        <td valign="top" style="text-align: center;">
+          <p/>
+          <optionresponse>
+            <optioninput>
+              <option correct="False">Decreasing</option>
+              <option correct="True">Steady State</option>
+              <option correct="False">Increasing</option>
+            </optioninput>
+          </optionresponse>
+        </td>
+      </tr>
+      <tr height="25" style="height: 20.0pt;">
+        <td valign="top" style="text-align: center;">1:00 - 1:15</td>
+        <td valign="top" style="text-align: center;">
+          <p/>
+          <optionresponse>
+            <optioninput>
+              <option correct="False">Decreasing</option>
+              <option correct="False">Steady State</option>
+              <option correct="True">Increasing</option>
+            </optioninput>
+          </optionresponse>
+        </td>
+      </tr>
+      <tr height="25" style="height: 20.0pt;">
+        <td valign="top" style="text-align: center;">1:15 - 2:00</td>
+        <td valign="top" style="text-align: center;">
+          <p/>
+          <optionresponse>
+            <optioninput>
+              <option correct="False">Decreasing</option>
+              <option correct="True">Steady State</option>
+              <option correct="False">Increasing</option>
+            </optioninput>
+          </optionresponse>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>
+        <span style="font-size: 1em;">
+          In the periods where λ&lt;2 the system is in steady state and when λ&gt;2 the queue is growing in length. 
+        </span>
+      </p>
+    </div>
+  </solution>
+</problem>

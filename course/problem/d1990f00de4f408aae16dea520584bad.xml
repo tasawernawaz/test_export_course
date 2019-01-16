@@ -1,0 +1,17 @@
+<problem display_name="Question 1" markdown="&gt;&gt;Probability and statistics are two fundamentally different concepts. Probability is (There may be multiple correct answers)&lt;&lt;&#10;&#10;[x] a mathematical theory that describes uncertainty&#10;[ ] sets of techniques used for extracting useful information from data&#10;[ ] derived from probability theory&#10;[x] an analysis of random systems and the prediction of their behavior&#10;&#10;[Explanation]&#10;Please review lecture video 1&#10;[Explanation]&#10;" max_attempts="3" showanswer="attempted" weight="1.0">
+  <choiceresponse>
+    <label>Probability and statistics are two fundamentally different concepts. Probability is (There may be multiple correct answers)</label>
+    <checkboxgroup>
+      <choice correct="true">a mathematical theory that describes uncertainty</choice>
+      <choice correct="false">sets of techniques used for extracting useful information from data</choice>
+      <choice correct="false">derived from probability theory</choice>
+      <choice correct="true">an analysis of random systems and the prediction of their behavior</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Please review lecture video 1</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

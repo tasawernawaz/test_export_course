@@ -1,0 +1,6 @@
+<problem display_name="Concept Check 3-1" markdown="Select the correct concept names based on the explanations of the machine’s failure. &#10;&gt;&gt;”Machines can fail even is they’re idle. “&lt;&lt;&#10;[[&#10;Operation-Dependent Faillure(ODF)&#10;(Time-Dependent Failures (TDF))&#10;]]&#10;&#10;&gt;&gt;”A machine can only fail while it's working, not idle. Idleness occurs due to starvation or blockage.”&lt;&lt; [[&#10;(Operation-Dependent Faillure(ODF))&#10;Time-Dependent Failures (TDF)&#10;]]&#10;&#10;"><p>Select the correct concept names based on the explanations of the machine’s failure. </p><label>”Machines can fail even is they’re idle. “</label><optionresponse><optioninput><option correct="False">Operation-Dependent Faillure(ODF)</option><option correct="True">Time-Dependent Failures (TDF)</option></optioninput></optionresponse><label>”A machine can only fail while it's working, not idle. Idleness occurs due to starvation or blockage.”</label>
+ 
+<optionresponse><optioninput><option correct="True">Operation-Dependent Faillure(ODF)</option><option correct="False">Time-Dependent Failures (TDF)</option></optioninput></optionresponse>
+
+
+</problem>

@@ -1,0 +1,19 @@
+<problem display_name="Part 2" markdown="null" max_attempts="3" showanswer="finished" weight="0.0">
+  <p>When the arrival rate is <b>λ &gt; 2</b>, what is the expected rate of change for the Queue length? </p>
+  <formularesponse type="ci" samples="lambda@1:2#100" answer="lambda-2">
+    <label> Write an expression with \(\lambda\):</label>
+    <description>To represent \(\lambda\), use "lambda" in your expression below. </description>
+    <responseparam type="tolerance" default="0.00001"/>
+    <formulaequationinput size="40"/>
+  </formularesponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>
+        <span style="font-size: 1em;">
+          During the periods when the arrival rate is λ &gt; 2, the expected queue length increases as rate λ - 2.
+        </span>
+      </p>
+    </div>
+  </solution>
+</problem>

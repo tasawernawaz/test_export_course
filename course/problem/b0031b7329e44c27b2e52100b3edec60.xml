@@ -1,0 +1,8 @@
+<problem display_name="Part 3" group_access="{}" markdown="Continuing from Part 2.&#10;&#10;&gt;&gt;What is the production rate of this two-machine line in terms of parts per minute? (Round to 3 decimal places)&lt;&lt;&#10;&#10;= 0.179 +-0.018&#10;" max_attempts="2" showanswer="never" weight="2.0">
+  <numericalresponse answer="0.179">
+    <p>Continuing from Part 2.</p>
+    <label>What is the production rate of this two-machine line in terms of parts per minute? (Round to 3 decimal places)</label>
+    <responseparam type="tolerance" default="0.018"/>
+    <formulaequationinput/>
+  </numericalresponse>
+</problem>

@@ -1,0 +1,18 @@
+<problem display_name="Question 3" markdown="&gt;&gt;Pseudo-random number generator:&lt;&lt;&#10;&#10;[ ] Produces numbers that are random.&#10;[x] Produces numbers deterministically.&#10;[x] Produces numbers that look random.&#10;[ ] Produces sequences of numbers that cannot generally be repeated.&#10;[x] Are used extensively in manufacturing systems simulation and the simulation of other complex systems.&#10;&#10;[explanation]&#10;A pseudo-random number generator is determined the seed of the random number generator and output numbers that fulfill a set of requirements to look random. The use of this generator enables the analysis of systems whose processes are inherently stochastic without performing physical experiments.&#10;[explanation]&#10;&#10;&#10;" max_attempts="3">
+  <choiceresponse>
+    <label>Pseudo-random number generator:</label>
+    <checkboxgroup>
+      <choice correct="false">Produces numbers that are random.</choice>
+      <choice correct="true">Produces numbers deterministically.</choice>
+      <choice correct="true">Produces numbers that look random.</choice>
+      <choice correct="false">Produces sequences of numbers that cannot generally be repeated.</choice>
+      <choice correct="true">Are used extensively in manufacturing systems simulation and the simulation of other complex systems.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>A pseudo-random number generator is determined the seed of the random number generator and output numbers that fulfill a set of requirements to look random. The use of this generator enables the analysis of systems whose processes are inherently stochastic without performing physical experiments.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

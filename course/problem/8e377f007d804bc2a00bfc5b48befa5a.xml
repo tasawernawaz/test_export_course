@@ -1,0 +1,15 @@
+<problem display_name="Part 2" markdown="What is the probability that Bobby destroys the car on the Nth throw?&#10;&#10;&gt;&gt;N=1 &lt;&lt;&#10;&#10;= 0.1&#10;&#10;&gt;&gt;N=2&lt;&lt;&#10;&#10;=0.21&#10;&#10;&gt;&gt;N=3&lt;&lt;&#10;&#10;=0.195" max_attempts="3" showanswer="never" weight="5.0">
+  <p>What is the probability that Bobby destroys the car on the Nth throw?</p>
+  <label>N=1 </label>
+  <numericalresponse answer="0.1">
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>N=2</label>
+  <numericalresponse answer="0.21">
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>N=3</label>
+  <numericalresponse answer="0.195">
+    <formulaequationinput/>
+  </numericalresponse>
+</problem>

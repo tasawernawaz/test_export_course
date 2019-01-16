@@ -1,0 +1,29 @@
+<problem display_name="Question 4" markdown="Consider the following transition graph of a discrete Markov chain with four states, and answer the following questions. &#10;&#10;&lt;p&gt;&#10;&lt;img src=&quot;/static/wk3-video1-q4.png&quot; alt=&quot;courses.edx.org/asset-v1:MITx+2.854.1x+2T2018+type@asset+block@wk3-video1-q4.png&quot; width=&quot;600px&quot;/&gt;&#10;&lt;/p&gt;&#10;&#10;&gt;&gt;a. What is \(P_{41}\)?&#10;&lt;&lt;&#10;= 0.5 +- 2%&#10;&#10;[explanation]&#10;The probabilities of leaving state 1 must sum to 1, and therefore \(P_{41} = 1 - (0.3 + 0.2) = 0.5\).&#10;&#10;[explanation]&#10;&#10;&gt;&gt;b. If the system is in state 1 at time n, what is the probability it will be in state 2 at time n + 1?&lt;&lt;&#10;&#10;= 0.2 +- 2%&#10;&#10;[explanation]&#10;There is only one way to get to state 2 in one time step, and we simply take the probability of this path, 0.2.&#10;[explanation]&#10;&#10;&#10;&#10;" max_attempts="3">
+  <p>Consider the following transition graph of a discrete Markov chain with four states, and answer the following questions. </p>
+  <p>
+    <img src="/static/wk3-video1-q4.png" alt="courses.edx.org/asset-v1:MITx+2.854.1x+2T2018+type@asset+block@wk3-video1-q4.png" width="600px"/>
+  </p>
+  <label>a. What is \(P_{41}\)?
+</label>
+  <numericalresponse answer="0.5">
+    <responseparam type="tolerance" default="2%"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>The probabilities of leaving state 1 must sum to 1, and therefore \(P_{41} = 1 - (0.3 + 0.2) = 0.5\).</p>
+    </div>
+  </solution>
+  <label>b. If the system is in state 1 at time n, what is the probability it will be in state 2 at time n + 1?</label>
+  <numericalresponse answer="0.2">
+    <responseparam type="tolerance" default="2%"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>There is only one way to get to state 2 in one time step, and we simply take the probability of this path, 0.2.</p>
+    </div>
+  </solution>
+</problem>

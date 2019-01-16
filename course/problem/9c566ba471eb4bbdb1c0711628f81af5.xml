@@ -1,0 +1,26 @@
+<problem display_name="Part 2" group_access="{}" markdown="null" max_attempts="3" showanswer="past_due" weight="5.0">
+  <label>Determine the steady-state probability \(\pi_1\) (Please round to 3 decimal places).</label>
+  <numericalresponse answer="0.367">
+    <responseparam type="tolerance" default="0.003"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>Calculate the average number of people in the queue (Please round to 3 decimal places).</label>
+  <numericalresponse answer="0.938">
+    <responseparam type="tolerance" default="0.003"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>Calculate their average time in the system.</label>
+  <numericalresponse answer="0.625">
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>
+        <span style="font-size: 1em;">
+          <img src="/static/WK4GP2Pt2.png" alt="" width="600" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+        </span>
+      </p>
+    </div>
+  </solution>
+</problem>

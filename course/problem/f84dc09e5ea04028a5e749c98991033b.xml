@@ -1,0 +1,18 @@
+<problem display_name="Part 4" markdown="Find the optimal set of buffers if a four-machine, three-buffer line is built. That is, find a set of buffers such that the line produces at a rate equal to or greater than the specified rate, and the total inventory cost is minimized.&#10;&gt;&gt;\(N_1\)&lt;&lt;&#10;&#10;= 3+-10%&#10;&gt;&gt;\(N_2\)&lt;&lt;&#10;=5+-10%&#10;&gt;&gt;\(N_3\)&lt;&lt;&#10;=18+-10%" max_attempts="3" showanswer="never" weight="8.0">
+  <p>Find the optimal set of buffers if a four-machine, three-buffer line is built. That is, find a set of buffers such that the line produces at a rate equal to or greater than the specified rate, and the total inventory cost is minimized.</p>
+  <label>\(N_1\)</label>
+  <numericalresponse answer="3">
+    <responseparam type="tolerance" default="10%"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>\(N_2\)</label>
+  <numericalresponse answer="5">
+    <responseparam type="tolerance" default="10%"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>\(N_3\)</label>
+  <numericalresponse answer="18">
+    <responseparam type="tolerance" default="10%"/>
+    <formulaequationinput/>
+  </numericalresponse>
+</problem>

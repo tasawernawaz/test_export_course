@@ -1,0 +1,12 @@
+<problem display_name="Part 1" markdown="&gt;&gt;What is the probability that a given throw misses the car completely? &lt;&lt;&#10;&#10;= 0.4&#10;&#10;[Explanation]&#10;1-0.1-0.2-0.3=0.4&#10;[Explanation]&#10;&#10;" max_attempts="3" showanswer="never" weight="5.0">
+  <numericalresponse answer="0.4">
+    <label>What is the probability that a given throw misses the car completely? </label>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>1-0.1-0.2-0.3=0.4</p>
+      </div>
+    </solution>
+  </numericalresponse>
+</problem>

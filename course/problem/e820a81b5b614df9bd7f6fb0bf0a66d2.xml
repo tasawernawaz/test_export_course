@@ -1,0 +1,57 @@
+<problem display_name="Question 3" markdown="A loyal warrior has three arrows left in the quiver. The enemy is far away and the chance of victory seems slim. The warrior estimates the chance of landing a successful shot is p = 0.3.&#10;&#10;&gt;&gt; a. What is the probability that the first arrow will land?  (numerical input, 10% tolerance)&#10; &lt;&lt;&#10;=0.3+-0.03&#10;[Explanation] &#10;The probability of shot being successful is 0.3. Therefore, the probability of the first shot being successful is 0.3.&#10;[Explanation]&#10;&#10;&gt;&gt; b. What is the probability that the first will not but the second arrow will land? (numerical input, 10% tolerance)&#10;&lt;&lt;&#10;=0.21+-0.021&#10;[Explanation] &#10;\( P(X_g = 2) = (1-0.3)^{(2-1)}*0.3 = 0.21 \)&#10;[Explanation]&#10;&#10;&gt;&gt; c. What is the probability that the first two will not but the third arrow will land? (numerical input, 10% tolerance)&#10;&lt;&lt;&#10;=0.147+-0.015&#10;[Explanation] &#10;\( P(X_g = 3) = (1-0.3)^{(3-1)}*0.3 = 0.147 \)&#10;[Explanation]&#10;&#10;&#10;&gt;&gt; d. The strategy of the warrior’s army is that a warrior should fight if the probability of a successful shot is greater than or equal to .5; if not, the warrior should run away. Should the warrior fight or run away? &#10;&lt;&lt;&#10;(x) Fight&#10;( ) Run away&#10;[Explanation] &#10;\( P(victory) = P(X_g = 1) + P(X_g = 2) + P(X_g = 3) = 0.657 \)&#10;[Explanation]&#10;" max_attempts="3">
+  <p>A loyal warrior has three arrows left in the quiver. The enemy is far away and the chance of victory seems slim. The warrior estimates the chance of landing a successful shot is p = 0.3.</p>
+  <label> a. What is the probability that the first arrow will land?  (numerical input, 10% tolerance)
+ </label>
+  <numericalresponse answer="0.3">
+    <responseparam type="tolerance" default="0.03"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p> </p>
+      <p>The probability of shot being successful is 0.3. Therefore, the probability of the first shot being successful is 0.3.</p>
+    </div>
+  </solution>
+  <label> b. What is the probability that the first will not but the second arrow will land? (numerical input, 10% tolerance)
+</label>
+  <numericalresponse answer="0.21">
+    <responseparam type="tolerance" default="0.021"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p> </p>
+      <p>\( P(X_g = 2) = (1-0.3)^{(2-1)}*0.3 = 0.21 \)</p>
+    </div>
+  </solution>
+  <label> c. What is the probability that the first two will not but the third arrow will land? (numerical input, 10% tolerance)
+</label>
+  <numericalresponse answer="0.147">
+    <responseparam type="tolerance" default="0.015"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p> </p>
+      <p>\( P(X_g = 3) = (1-0.3)^{(3-1)}*0.3 = 0.147 \)</p>
+    </div>
+  </solution>
+  <label> d. The strategy of the warrior’s army is that a warrior should fight if the probability of a successful shot is greater than or equal to .5; if not, the warrior should run away. Should the warrior fight or run away? 
+</label>
+  <multiplechoiceresponse>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">Fight</choice>
+      <choice correct="false">Run away</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p> </p>
+      <p>\( P(victory) = P(X_g = 1) + P(X_g = 2) + P(X_g = 3) = 0.657 \)</p>
+    </div>
+  </solution>
+</problem>

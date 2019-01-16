@@ -1,0 +1,17 @@
+<problem display_name="Question 2" markdown="&gt;&gt;What factors affect factory uncertainty? (There can be more one correct customer)&lt;&lt;&#10;&#10;[x] machine failures&#10;[ ] the amount of money received&#10;[ ] the due date of an order&#10;[x] changes in order amounts&#10;&#10;[Explanation]&#10;For variability and uncertainty, please review video 4.&#10;[Explanation]&#10;" max_attempts="3" showanswer="finished" weight="1.0">
+  <choiceresponse>
+    <label>What factors affect factory uncertainty? (There can be more one correct customer)</label>
+    <checkboxgroup>
+      <choice correct="true">machine failures</choice>
+      <choice correct="false">the amount of money received</choice>
+      <choice correct="false">the due date of an order</choice>
+      <choice correct="true">changes in order amounts</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>For variability and uncertainty, please review video 4.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

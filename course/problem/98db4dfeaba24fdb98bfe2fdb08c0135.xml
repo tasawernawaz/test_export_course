@@ -1,0 +1,21 @@
+<problem display_name="Part 1" group_access="{&quot;50&quot;: [1]}" markdown="Let's access line \(M_{11}-M_2\) first. Only use integer N for input.&#10;&#10;&gt;&gt;What is the optimal profit rate? Round to nearest integer&lt;&lt;&#10;&#10;= 4379 +- 10&#10;&#10;&gt;&gt;What is the optimal \(N\)?&lt;&lt;&#10;&#10;=100+-6&#10;&#10;[explanation]&#10;The maximum profit rate for the M11{M2 version occurs at&#10;N \(\approx\) 100. It is \(\approx\) $4,379.&#10;[explanation]&#10;&#10;&lt;script src=&quot;/static/st.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;" max_attempts="2" showanswer="finished" weight="0.0">
+  <p>Let's access line \(M_{11}-M_2\) first. Only use integer N for input.</p>
+  <label>What is the optimal profit rate? Round to nearest integer</label>
+  <numericalresponse answer="4379">
+    <responseparam type="tolerance" default="10"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>What is the optimal \(N\)?</label>
+  <numericalresponse answer="100">
+    <responseparam type="tolerance" default="6"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>The maximum profit rate for the M11{M2 version occurs at</p>
+      <p>N \(\approx\) 100. It is \(\approx\) $4,379.</p>
+    </div>
+  </solution>
+  <script src="/static/st.js" type="text/javascript"/>
+</problem>

@@ -1,0 +1,21 @@
+<problem display_name="Question 3" markdown="&gt;&gt;Consider a universe of  2-petal flowers in which a 2-petal flower can have none, one, or both petals colored blue (B) with the rest of the petals red (R). The probability that a flower in that subset has both petals colored blue is one half.&#10; &#10;Which of the following are correct:&#10;&#10;&lt;&lt;&#10;&#10;&#10;[ ]Let U = {B,R} and w = B if the petals are blue, w = R if the petals are red, P(X(w = BBB) = 3) = 0.5&#10;[x]Let U = {BB, BR, RB, RR} and w = BB if all petals are blue, w = RR if all petals are red, and BR, or RB if there is one of each. Let X E V be the number of blue petals, where V is the integer line. P(w = BB)=P(X=2) = 0.5.&#10;[ ]Let V = {BB, BR, RB, RR} and w = BB if all petals are blue, w = RR if all petals are red, and BR, or RB if there is one of each. Let X E V be the number of red petals, where V is the real number line. P(x(w = BB) = 0) = 0.5.&#10;[x]Let U = {BB, BR, RB, RR} and w = BB if all petals are blue, w = RR if all petals are red, and BR, or RB if there is one of each. Let X E V be the number of red petals, where V is the real number line. P(X = 0) = 0.5.&#10;&#10;[Explanation]&#10;U represents the universe of all possibilities. The capital X represents a random variable and is not to be confused with the lower-case x which denotes a specific possible value of X.&#10;[Explanation]&#10;" max_attempts="3">
+  <choiceresponse>
+    <label>Consider a universe of  2-petal flowers in which a 2-petal flower can have none, one, or both petals colored blue (B) with the rest of the petals red (R). The probability that a flower in that subset has both petals colored blue is one half.
+ 
+Which of the following are correct:
+
+</label>
+    <checkboxgroup>
+      <choice correct="false">Let U = {B,R} and w = B if the petals are blue, w = R if the petals are red, P(X(w = BBB) = 3) = 0.5</choice>
+      <choice correct="true">Let U = {BB, BR, RB, RR} and w = BB if all petals are blue, w = RR if all petals are red, and BR, or RB if there is one of each. Let X E V be the number of blue petals, where V is the integer line. P(w = BB)=P(X=2) = 0.5.</choice>
+      <choice correct="false">Let V = {BB, BR, RB, RR} and w = BB if all petals are blue, w = RR if all petals are red, and BR, or RB if there is one of each. Let X E V be the number of red petals, where V is the real number line. P(x(w = BB) = 0) = 0.5.</choice>
+      <choice correct="true">Let U = {BB, BR, RB, RR} and w = BB if all petals are blue, w = RR if all petals are red, and BR, or RB if there is one of each. Let X E V be the number of red petals, where V is the real number line. P(X = 0) = 0.5.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>U represents the universe of all possibilities. The capital X represents a random variable and is not to be confused with the lower-case x which denotes a specific possible value of X.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

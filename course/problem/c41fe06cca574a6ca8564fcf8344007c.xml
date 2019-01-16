@@ -1,0 +1,17 @@
+<problem display_name="Part 2" markdown="null" max_attempts="3" showanswer="past_due" weight="1.0">
+  <numericalresponse answer="0.4207">
+    <responseparam type="tolerance" default="0.04"/>
+    <label> Compute \( P(X \lt Y\)) </label>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>
+          <span style="font-size: 1em;">
+            <img src="/static/Screen_Shot_2018-04-09_at_9.44.08_PM.png" alt="" width="600" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+          </span>
+        </p>
+      </div>
+    </solution>
+  </numericalresponse>
+</problem>

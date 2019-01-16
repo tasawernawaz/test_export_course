@@ -1,0 +1,11 @@
+<video youtube="1.00:94p3zgDWO2E" url_name="401bbb97b2954a04aa3792a0539b2a7c" transcripts="{&quot;en&quot;: &quot;3877abca-7945-483a-986b-647680953ea3-en.srt&quot;}" display_name="Video 6: Continuous Improvement" download_track="true" download_video="true" edx_video_id="3877abca-7945-483a-986b-647680953ea3" html5_sources="[]" youtube_id_1_0="94p3zgDWO2E">
+  <video_asset client_video_id="W06v06.mp4" duration="303.74" image="">
+    <encoded_video bitrate="0" file_size="0" profile="youtube" url="94p3zgDWO2E"/>
+    <encoded_video bitrate="192" file_size="7290570" profile="audio_mp3" url="https://d2f1egay8yehza.cloudfront.net/MIT2854F2017-V004900_AUD.mp3"/>
+    <encoded_video bitrate="186" file_size="7089009" profile="desktop_mp4" url="https://d2f1egay8yehza.cloudfront.net/MIT2854F2017-V004900_DTH.mp4"/>
+    <encoded_video bitrate="158" file_size="6025430" profile="mobile_low" url="https://d2f1egay8yehza.cloudfront.net/MIT2854F2017-V004900_MB2.mp4"/>
+    <encoded_video bitrate="0" file_size="0" profile="hls" url="https://d2f1egay8yehza.cloudfront.net/MIT2854F2017-V004900/MIT2854F2017-V004900.m3u8"/>
+    <transcripts/>
+  </video_asset>
+  <transcript language="en" src="3877abca-7945-483a-986b-647680953ea3-en.srt"/>
+</video>

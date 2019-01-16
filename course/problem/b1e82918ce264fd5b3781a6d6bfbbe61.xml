@@ -1,0 +1,17 @@
+<problem display_name="Part 3" markdown="&gt;&gt;What is the inventory trade-off in the Make to Stock production?&lt;&lt;&#10;&#10;(x) Large finished goods inventories needed to prevent stockouts, but small finished goods inventories needed to keep cost low.&#10;( ) Space required for storage&#10;( ) Excess production capacity is needed to allow early, reliable delivery promises, but minimal production capacity is needed to keep costs low.&#10;( ) Damaged inventory&#10;&#10;[Explanation]&#10;Retailers often struggle with keeping enough inventories instock while minimizing the cash they have to invest in keeping the inventory.&#10;[Explanation]&#10;&#10;" max_attempts="3" showanswer="past_due" weight="3.0">
+  <multiplechoiceresponse>
+    <label>What is the inventory trade-off in the Make to Stock production?</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">Large finished goods inventories needed to prevent stockouts, but small finished goods inventories needed to keep cost low.</choice>
+      <choice correct="false">Space required for storage</choice>
+      <choice correct="false">Excess production capacity is needed to allow early, reliable delivery promises, but minimal production capacity is needed to keep costs low.</choice>
+      <choice correct="false">Damaged inventory</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Retailers often struggle with keeping enough inventories instock while minimizing the cash they have to invest in keeping the inventory.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

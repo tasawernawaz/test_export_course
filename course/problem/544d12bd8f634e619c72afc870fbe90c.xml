@@ -1,0 +1,17 @@
+<problem display_name="Question 3" markdown="&gt;&gt;Which of the following can be effectively modeled as a Markov process? (Check all that apply.)  &lt;&lt;&#10;&#10;[x] The next location of a particle diffusing through a medium.&#10;[x] Number of dollars you have after n coin tosses, if you wager $1 per coin toss.&#10;[ ] The chance that it will snow tomorrow.&#10;[ ] The next location of a particle convecting through a medium.&#10;&#10;[explanation]&#10;a) Diffusion is a perfect example of the random walk, and therefore the next state only relies on the previous location, and is therefore a Markov process. b) The # of dollars you may have after n coin tosses only depends on the n-1 state, and is therefore a Markov process. c) The weather is not just determined by yesterday’s weather, but also longer term factors, such as the time of year, and therefore is not a Markov process (as a side note, sometimes a toy example of the weather which only keeps dependence on the previous day’s weather is used as an example of a Markov process). d) Convection is not a good example of a random walk, as the past trajectory and a particle’s velocity in addition to a particle’s previous position will influence its next location, and therefore we would not consider it an example of a Markov process.&#10;[explanation]&#10;" max_attempts="3">
+  <choiceresponse>
+    <label>Which of the following can be effectively modeled as a Markov process? (Check all that apply.)  </label>
+    <checkboxgroup>
+      <choice correct="true">The next location of a particle diffusing through a medium.</choice>
+      <choice correct="true">Number of dollars you have after n coin tosses, if you wager $1 per coin toss.</choice>
+      <choice correct="false">The chance that it will snow tomorrow.</choice>
+      <choice correct="false">The next location of a particle convecting through a medium.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>a) Diffusion is a perfect example of the random walk, and therefore the next state only relies on the previous location, and is therefore a Markov process. b) The # of dollars you may have after n coin tosses only depends on the n-1 state, and is therefore a Markov process. c) The weather is not just determined by yesterday’s weather, but also longer term factors, such as the time of year, and therefore is not a Markov process (as a side note, sometimes a toy example of the weather which only keeps dependence on the previous day’s weather is used as an example of a Markov process). d) Convection is not a good example of a random walk, as the past trajectory and a particle’s velocity in addition to a particle’s previous position will influence its next location, and therefore we would not consider it an example of a Markov process.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

@@ -1,0 +1,17 @@
+<problem display_name="Part 1" markdown="null" max_attempts="3" showanswer="finished" weight="1.0">
+  <numericalresponse answer="0.16666667">
+    <label>What is the probability that \(w = r\)? (Round your answer to 3 decimal places)</label>
+    <responseparam type="tolerance" default="0.016667"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>
+          <span style="font-size: 1em;">
+            <img src="/static/Probability1.1.png" alt="" width="800" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+          </span>
+        </p>
+      </div>
+    </solution>
+  </numericalresponse>
+</problem>

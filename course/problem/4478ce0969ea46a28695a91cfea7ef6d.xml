@@ -1,0 +1,18 @@
+<problem display_name="Question 1" markdown="&gt;&gt;Referencing special probability distributions, a single biased coin, where the probability of heads or tails is not necessarily one half, which of the following distribution would best model the outcome?&#10; &lt;&lt;&#10;&#10;( ) Binomial Random Variable&#10;(x) Bernoulli Random Variable&#10;( ) Geometrically distributed random variable&#10;( ) None of the above&#10;&#10;[Explanation]&#10;The binomial distribution is the sum of independent and identically distributed Bernoulli random variables. For one coin toss, you would only need a Bernoulli distribution as there are only two possible outcomes. The geometric distribution is not appropriate because you would be modeling the latest time you expect to see one outcome.&#10;[Explanation]" max_attempts="3" showanswer="attempted" weight="1.0">
+  <multiplechoiceresponse>
+    <label>Referencing special probability distributions, a single biased coin, where the probability of heads or tails is not necessarily one half, which of the following distribution would best model the outcome?
+ </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Binomial Random Variable</choice>
+      <choice correct="true">Bernoulli Random Variable</choice>
+      <choice correct="false">Geometrically distributed random variable</choice>
+      <choice correct="false">None of the above</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>The binomial distribution is the sum of independent and identically distributed Bernoulli random variables. For one coin toss, you would only need a Bernoulli distribution as there are only two possible outcomes. The geometric distribution is not appropriate because you would be modeling the latest time you expect to see one outcome.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

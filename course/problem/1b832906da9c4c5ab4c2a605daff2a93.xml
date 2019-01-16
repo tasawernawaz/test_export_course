@@ -1,0 +1,18 @@
+<problem display_name="Part 2" markdown="null" max_attempts="3" showanswer="past_due" weight="0.0">
+  <numericalresponse answer="4.5">
+    <p>Define the cumulative distribution function \(F(t)\) of \(t\) by \(F(t) = P(W ≤ t)\). Shade the region consisting of each point \((x, y)\) in which \(x ≥ 0\), and \(F(X) ≤ y ≤ 1\). </p>
+    <label>Compute the area of the shaded region.</label>
+    <responseparam type="tolerance" default="0.45"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>
+          <span style="font-size: 1em;">
+            <img src="/static/Probability6.4.png" alt="" width="500" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+          </span>
+        </p>
+      </div>
+    </solution>
+  </numericalresponse>
+</problem>

@@ -1,0 +1,20 @@
+<problem display_name="Part 3" markdown="null" max_attempts="3" showanswer="finished" weight="1.0">
+  <numericalresponse answer="12">
+    <label>Youngjae wants to add a sufficient number of buffer space for waiting parts to make
+sure that at least 92% of parts that try to enter to the milling area get served there. For
+\( \lambda=\mu \), what is the minimum number of buffer space he will need in the milling area? (Assume that all parts that try to enter to the milling area find at least one empty buffer space will become actual customers, while the parts that do not will be gone for another milling area.)
+</label>
+    <responseparam type="tolerance" default="1"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>
+          <span style="font-size: 1em;">
+            <img src="/static/Stochastic2.4.png" alt="" width="800" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+          </span>
+        </p>
+      </div>
+    </solution>
+  </numericalresponse>
+</problem>

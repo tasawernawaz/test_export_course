@@ -1,0 +1,22 @@
+<p><strong>Bottle Filling Process in BathTime BathTim</strong>e is a Cambridge-based company that makes a full range of liquid products, including bath gels, shampoos, lotions, and creams. The production of such products involves three major steps: mixing, filling and packing.</p>
+<ul>
+<li>Mixing: Chemicals are put together according to formulas, mixed in bulk, and stored in tanks.</li>
+<li>Filling: Bottles printed with product specifications are lined up, filled with liquid product, and capped with lids.</li>
+<li>Packing: Bottles are organized in sets of a dozen in plastic shrink-wrap and packed into cardboard boxes as finished goods.</li>
+</ul>
+<p>As BathTime competes on the quality of its products, inspections are performed at the end of each process. Consider the filling of BathTime&rsquo;s leading product: Top-to-Toe Bath 1000 ml. A portion of the production process flow is illustrated in Figure 1.</p>
+<p style="text-align: center;"><img src="/static/Screen_Shot_2018-11-14_at_8.12.42_AM.png" alt="figure 1" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}" width="465" height="214" /></p>
+<p style="text-align: left;">The bottle arrival process at the filling machine is Poisson with rate of 60 per minute. The filling time (including inspection) is exponential with a mean of 0.5 second. The purpose of inspection after filling is to check the volume of product. Bottles with volume under 990 ml need <strong>refilling at the filling machine</strong>. The total volume of bottle is 1050 ml. Overfilling will make the outside of the bottle sticky and it will be<strong> scrapped</strong>. The bottles that pass inspection are considered qualified and go to the capping machine. According to statistics from BathTime&rsquo;s process engineers2, the filling volume follows a symmetric triangular distribution between 980 ml and 1060 ml with a mean of 1020 ml. The capping machine can complete 5400 bottles per hour, on the average. According to BathTime&rsquo;s process engineers, the time to cap each bottle is exponentially distributed. The inspection just after capping process has four possible outcomes for each bottle:</p>
+<ul>
+<li>Missing cap, with probability at 0.1. The bottle needs to be recapped at the capping machine.</li>
+<li>Spilled liquid, with probability 0.06. The bottle needs to be refilled at the filling machine and then go through capping process again.</li>
+<li>Misalignment between cap and bottle which damages the edge of the bottle, with probability 0.04. The bottle is scrapped.</li>
+<li>Success. The bottle is qualified and it leaves the system.</li>
+</ul>
+<p>Several assumptions are made here, including:</p>
+<ul>
+<li>Both the filling machine and the capping machine are perfectly reliable, in the sense that they do not fail in a mode that requires repair. To put it another way, they are always available.</li>
+<li>All queues in the system are without capacity constraints, i.e., there is no upper limit to the length of any queue.</li>
+<li>In filling and capping, the rework flow is treated identically to the original arrival flow.</li>
+</ul>
+<p>You, as a process manager in BathTime, are assigned the following tasks to model and quantify the filling production process.</p>

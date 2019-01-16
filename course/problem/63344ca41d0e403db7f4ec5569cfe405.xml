@@ -1,0 +1,28 @@
+<problem display_name="Part 1" markdown="null" max_attempts="3" showanswer="finished" weight="0.0">
+  <numericalresponse answer="6.667">
+    <p>Compute the Aggregate Arrival Rate at operation \(Q\) per hour.</p>
+    <label> \(\lambda_{a} = \)</label>
+    <description> (Round to 3 decimal places.) </description>
+    <responseparam type="tolerance" default="0.01"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>
+        <span style="font-size: 1em;">
+          Let’s illustrate the rework process:
+          <img src="/static/Queue_FE_P3_a.png" alt="" width="600" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+           <p>In order to analyze the output flow rate, we need to compare the aggregate arrival rate and process rate. Process rate is \(60/8 = 7.5(/hr)\). Assume the arrival due to rework is \(\lambda'\). </p>
+          <p>	If the process rate is smaller than aggregate arrival rate \(( (\lambda + \lambda ') &gt; \mu )\), then the output rate is \(\mu\). We establish equation \(\lambda'= 0.25\mu\), while \(\mu=7.5(/hr)\)</p>
+          <p>Solve we have \(\lambda'= 1.875(/hr)\). \((\lambda+\lambda') = 6.875\), it doesn’t satisfy \((\lambda+\lambda') &gt; \mu\).</p>
+          <p>If the process rate is larger than aggregate arrival rate \(((\lambda+\lambda') &lt; \mu)\), then the output rate is \(\lambda+\lambda'\). We establish equation \(\lambda'=(\lambda+\lambda')0.25\), while \(\lambda=5(/hr)\)</p>
+          <p>
+            Solve we have \(\lambda'=\frac{1}{3}\lambda=5/3(/hr)\). (\lambda+\lambda')=6.6667,it satisfies \((\lambda+\lambda')&lt;\mu\).</p>
+          <p>Finally, we got the aggregate arrival at \(Q\)</p>
+          <p><center>\(\lambda_{a} =\lambda+\lambda'=6.667(/hr)\)</center></p>
+        </span>
+      </p>
+    </div>
+  </solution>
+</problem>

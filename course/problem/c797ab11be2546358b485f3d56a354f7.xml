@@ -1,0 +1,8 @@
+<problem display_name="Part 2" group_access="{}" markdown="Continuing from Part 1, the next operation after turning (lathe operation), is a milling operation. The operation time at the milling machine is 4 minutes. Its mean time to fail is 30 hours and its mean time to repair is 5 hours.&#10;Any amount of parts can be stored in between the lathe and the mill. &#10;&#10;&gt;&gt;At what rate material on average will accumulate in the storage area in terms of parts per minute? (Round to 3 decimal places) &lt;&lt;&#10;&#10;= 0&#10;" max_attempts="2" showanswer="never" weight="2.0">
+  <numericalresponse answer="0">
+    <p>Continuing from Part 1, the next operation after turning (lathe operation), is a milling operation. The operation time at the milling machine is 4 minutes. Its mean time to fail is 30 hours and its mean time to repair is 5 hours.</p>
+    <p>Any amount of parts can be stored in between the lathe and the mill. </p>
+    <label>At what rate material on average will accumulate in the storage area in terms of parts per minute? (Round to 3 decimal places) </label>
+    <formulaequationinput/>
+  </numericalresponse>
+</problem>

@@ -1,0 +1,496 @@
+0
+00:00:00,000 --> 00:00:02,510
+
+
+1
+00:00:02,510 --> 00:00:04,040
+We've been discussing model mixing,
+
+2
+00:00:04,040 --> 00:00:05,810
+but mixing models only makes sense
+
+3
+00:00:05,810 --> 00:00:09,440
+if setup changes are quick and not costly.
+
+4
+00:00:09,440 --> 00:00:13,990
+All people, and many machines, can perform more than one task.
+
+5
+00:00:13,990 --> 00:00:15,940
+In many cases, an activity is required
+
+6
+00:00:15,940 --> 00:00:18,940
+to change the tasks that a machine is performing.
+
+7
+00:00:18,940 --> 00:00:21,190
+An activity may also be required for the machine
+
+8
+00:00:21,190 --> 00:00:25,030
+to perform the same task but on a different part.
+
+9
+00:00:25,030 --> 00:00:28,580
+This activity is called a setup change.
+
+10
+00:00:28,580 --> 00:00:31,250
+An example of a setup change is a CNC machine
+
+11
+00:00:31,250 --> 00:00:33,890
+that can make many different holes in a work piece.
+
+12
+00:00:33,890 --> 00:00:36,170
+It has a tool magazine or holder for the tools
+
+13
+00:00:36,170 --> 00:00:38,300
+needed for a given piece.
+
+14
+00:00:38,300 --> 00:00:41,210
+In order to work on a different work piece, the tools as well
+
+15
+00:00:41,210 --> 00:00:43,640
+as the programming have to be changed.
+
+16
+00:00:43,640 --> 00:00:46,280
+But changing tools can take time.
+
+17
+00:00:46,280 --> 00:00:49,310
+Setup changes can be time consuming and sometimes
+
+18
+00:00:49,310 --> 00:00:51,930
+expensive for other reasons.
+
+19
+00:00:51,930 --> 00:00:53,640
+They reduce the time that a machine can
+
+20
+00:00:53,640 --> 00:00:55,860
+be used for productive work.
+
+21
+00:00:55,860 --> 00:00:58,260
+If they are done infrequently to reduce
+
+22
+00:00:58,260 --> 00:01:00,570
+the loss of productive time, they
+
+23
+00:01:00,570 --> 00:01:03,030
+cause inventory to be stored.
+
+24
+00:01:03,030 --> 00:01:05,040
+Machines that have very short setup times
+
+25
+00:01:05,040 --> 00:01:07,050
+are said to be flexible.
+
+26
+00:01:07,050 --> 00:01:10,770
+Toyota has had a major emphasis on reduction of setup time.
+
+27
+00:01:10,770 --> 00:01:13,650
+For example, let's consider the pressing department.
+
+28
+00:01:13,650 --> 00:01:16,560
+Pressing is the process of deforming sheet metal
+
+29
+00:01:16,560 --> 00:01:18,300
+into body panels.
+
+30
+00:01:18,300 --> 00:01:21,540
+The setups involve changing the dies, the heavy metal
+
+31
+00:01:21,540 --> 00:01:24,240
+objects that give the panels their shape.
+
+32
+00:01:24,240 --> 00:01:27,330
+When dies are changed, it takes time to remove the old ones
+
+33
+00:01:27,330 --> 00:01:30,450
+and put the new ones into precise positions.
+
+34
+00:01:30,450 --> 00:01:34,470
+Between 1945 to 1954, it took two to three hours
+
+35
+00:01:34,470 --> 00:01:36,570
+to change these dyes.
+
+36
+00:01:36,570 --> 00:01:39,720
+Between '55 and '64 it took 15 minutes.
+
+37
+00:01:39,720 --> 00:01:44,640
+But after 1970, it only took three minutes.
+
+38
+00:01:44,640 --> 00:01:47,000
+An internal setup is one that can only
+
+39
+00:01:47,000 --> 00:01:49,640
+be done while a machine is stopped.
+
+40
+00:01:49,640 --> 00:01:52,460
+In the tool changing example, if the tool magazine
+
+41
+00:01:52,460 --> 00:01:55,220
+is built into the machine, tools can only
+
+42
+00:01:55,220 --> 00:01:57,510
+be changed while the machine is stopped,
+
+43
+00:01:57,510 --> 00:01:59,930
+so setups are internal.
+
+44
+00:01:59,930 --> 00:02:02,240
+External setup work is work that can
+
+45
+00:02:02,240 --> 00:02:05,630
+be done while an operation is taking place.
+
+46
+00:02:05,630 --> 00:02:07,790
+In that example, if the machine is redesigned
+
+47
+00:02:07,790 --> 00:02:10,220
+so the tool magazine is removable
+
+48
+00:02:10,220 --> 00:02:12,890
+and there's a spare magazine, the tool change
+
+49
+00:02:12,890 --> 00:02:14,900
+can be mostly external.
+
+50
+00:02:14,900 --> 00:02:16,850
+While the machine is making one part type
+
+51
+00:02:16,850 --> 00:02:19,400
+using one of the magazines, the other magazine
+
+52
+00:02:19,400 --> 00:02:22,250
+is populated with the tools for the next part type.
+
+53
+00:02:22,250 --> 00:02:25,880
+Often a setup change involves both kinds of activities.
+
+54
+00:02:25,880 --> 00:02:28,280
+One element of the setup time reduction strategy
+
+55
+00:02:28,280 --> 00:02:30,950
+is to convert some of the internal change activity
+
+56
+00:02:30,950 --> 00:02:32,630
+to external.
+
+57
+00:02:32,630 --> 00:02:35,210
+Setup changes are impediments to model mixing.
+
+58
+00:02:35,210 --> 00:02:37,430
+Models can only be mixed if the setup change
+
+59
+00:02:37,430 --> 00:02:39,380
+times are very short.
+
+60
+00:02:39,380 --> 00:02:42,860
+Reducing setup times is the job of machine designers.
+
+61
+00:02:42,860 --> 00:02:44,750
+Manufacturing systems engineers can
+
+62
+00:02:44,750 --> 00:02:47,440
+determine where such reductions are needed most.
+
+63
+00:02:47,440 --> 00:02:50,420
+But let's talk about standardizing operations.
+
+64
+00:02:50,420 --> 00:02:52,280
+The goal of standardizing operations
+
+65
+00:02:52,280 --> 00:02:56,020
+is to minimize the number of workers in production.
+
+66
+00:02:56,020 --> 00:02:59,380
+To do that, you have to maximize the efficiency of the work
+
+67
+00:02:59,380 --> 00:03:02,020
+and eliminate wasteful motions.
+
+68
+00:03:02,020 --> 00:03:05,200
+The standardized order of actions performed for each task
+
+69
+00:03:05,200 --> 00:03:07,180
+are posted as standard operations
+
+70
+00:03:07,180 --> 00:03:12,410
+routine sheets to be visible to all workers.
+
+71
+00:03:12,410 --> 00:03:14,630
+The next goal is to minimize WIP.
+
+72
+00:03:14,630 --> 00:03:16,830
+The next goal is to minimize WIP.
+
+73
+00:03:16,830 --> 00:03:20,370
+There's a standard quantity of work in process.
+
+74
+00:03:20,370 --> 00:03:22,650
+Operations consists of several activities,
+
+75
+00:03:22,650 --> 00:03:24,840
+such as making several holes that cannot be done
+
+76
+00:03:24,840 --> 00:03:27,430
+simultaneously.
+
+77
+00:03:27,430 --> 00:03:29,200
+A line consists of workstations that
+
+78
+00:03:29,200 --> 00:03:31,180
+perform each of the operations.
+
+79
+00:03:31,180 --> 00:03:34,330
+Line balancing is the process of allocating these operations
+
+80
+00:03:34,330 --> 00:03:36,640
+to workstations.
+
+81
+00:03:36,640 --> 00:03:39,190
+The cycle time of an operation is
+
+82
+00:03:39,190 --> 00:03:42,200
+the time it takes to complete the operation.
+
+83
+00:03:42,200 --> 00:03:45,320
+The cycle time of a line is the maximum cycle time
+
+84
+00:03:45,320 --> 00:03:48,800
+of any operation on the line.
+
+85
+00:03:48,800 --> 00:03:50,840
+Ideally, operations on the same line
+
+86
+00:03:50,840 --> 00:03:53,540
+should take the same length of time.
+
+87
+00:03:53,540 --> 00:03:56,180
+Standard operations are determined by the foreman, not
+
+88
+00:03:56,180 --> 00:03:58,970
+the industrial engineering staff.
+
+89
+00:03:58,970 --> 00:04:01,010
+The takt time is defined as the time
+
+90
+00:04:01,010 --> 00:04:04,370
+in which one copy of an item must be produced.
+
+91
+00:04:04,370 --> 00:04:10,090
+It's given by the ratio of the effective daily operating time.
+
+92
+00:04:10,090 --> 00:04:13,910
+It is given by the effective daily operating time divided
+
+93
+00:04:13,910 --> 00:04:15,440
+by the required daily quantity.
+
+94
+00:04:15,440 --> 00:04:18,430
+
+
+95
+00:04:18,430 --> 00:04:22,220
+A necessary condition for the line to meet the demand
+
+96
+00:04:22,220 --> 00:04:26,390
+is that the cycle time be less than or equal to the takt time.
+
+97
+00:04:26,390 --> 00:04:28,340
+It means that the line could make the required
+
+98
+00:04:28,340 --> 00:04:30,800
+quantity or more every day.
+
+99
+00:04:30,800 --> 00:04:33,770
+This is also called feasibility.
+
+100
+00:04:33,770 --> 00:04:35,750
+Late in the month, the central planning office
+
+101
+00:04:35,750 --> 00:04:38,450
+tells each production department the volume
+
+102
+00:04:38,450 --> 00:04:40,910
+required for the next month, in effect
+
+103
+00:04:40,910 --> 00:04:43,310
+the next month's takt time.
+
+104
+00:04:43,310 --> 00:04:45,530
+Lines are rebalanced so that the cycle time
+
+105
+00:04:45,530 --> 00:04:47,930
+is less than the takt time.
+
+106
+00:04:47,930 --> 00:04:49,790
+If the takt time is shorter than before,
+
+107
+00:04:49,790 --> 00:04:52,850
+some workstations may have to be added.
+
+108
+00:04:52,850 --> 00:04:56,820
+Process managers determine how many workers are needed.
+
+109
+00:04:56,820 --> 00:05:00,340
+Let's say a little bit about process design.
+
+110
+00:05:00,340 --> 00:05:02,740
+The earlier layouts of the Toyota factories
+
+111
+00:05:02,740 --> 00:05:07,300
+had machines organized by type and one worker per machine.
+
+112
+00:05:07,300 --> 00:05:10,540
+We described this in the first week as a job shop.
+
+113
+00:05:10,540 --> 00:05:13,090
+In the Toyota production system layout,
+
+114
+00:05:13,090 --> 00:05:16,610
+machines are organized to smooth material flow.
+
+115
+00:05:16,610 --> 00:05:19,730
+Each worker handles three different machines.
+
+116
+00:05:19,730 --> 00:05:21,740
+And a worker deals with one piece at a time.
+
+117
+00:05:21,740 --> 00:05:24,300
+This is called one piece flow.
+
+118
+00:05:24,300 --> 00:05:29,140
+The benefits are that inventory is reduced,
+
+119
+00:05:29,140 --> 00:05:32,560
+fewer workers are needed, and workers feel better
+
+120
+00:05:32,560 --> 00:05:36,400
+about their jobs, at least according to [? Mundin. ?]
+
+121
+00:05:36,400 --> 00:05:38,920
+Workers also have an increased knowledge of the production
+
+122
+00:05:38,920 --> 00:05:40,258
+process.
+
+123
+00:05:40,258 --> 00:05:40,758
+
+

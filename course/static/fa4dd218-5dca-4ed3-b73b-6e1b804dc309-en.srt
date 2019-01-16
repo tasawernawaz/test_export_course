@@ -1,0 +1,296 @@
+0
+00:00:00,000 --> 00:00:01,280
+
+
+1
+00:00:01,280 --> 00:00:02,810
+Many factory performance measures
+
+2
+00:00:02,810 --> 00:00:06,440
+are about time, such as production rate, which
+
+3
+00:00:06,440 --> 00:00:09,940
+is how much is made in a given time.
+
+4
+00:00:09,940 --> 00:00:14,990
+Lead time-- how much time before a part has to be delivered.
+
+5
+00:00:14,990 --> 00:00:19,070
+Cycle time-- how much part spends in a factory.
+
+6
+00:00:19,070 --> 00:00:24,910
+Delivery reliability-- how often a factory delivers on time.
+
+7
+00:00:24,910 --> 00:00:26,770
+Capital payback period-- the time
+
+8
+00:00:26,770 --> 00:00:28,690
+before the company gets its investment back.
+
+9
+00:00:28,690 --> 00:00:32,619
+
+
+10
+00:00:32,619 --> 00:00:36,430
+Even inventory can be described in time units.
+
+11
+00:00:36,430 --> 00:00:39,540
+We are holding x weeks of inventory,
+
+12
+00:00:39,540 --> 00:00:43,350
+means customer demand could consume all our inventory
+
+13
+00:00:43,350 --> 00:00:46,480
+in x weeks.
+
+14
+00:00:46,480 --> 00:00:48,130
+We'll be talking more about this later.
+
+15
+00:00:48,130 --> 00:00:50,740
+
+
+16
+00:00:50,740 --> 00:00:53,590
+Time appears in two forms--
+
+17
+00:00:53,590 --> 00:00:57,740
+delay and capacity utilization.
+
+18
+00:00:57,740 --> 00:01:01,240
+Every action has an impact on both.
+
+19
+00:01:01,240 --> 00:01:03,350
+An operation that takes 10 minutes,
+
+20
+00:01:03,350 --> 00:01:06,680
+adds 10 minutes to the delay that--
+
+21
+00:01:06,680 --> 00:01:11,060
+a workpiece experiences well undergoing that operation.
+
+22
+00:01:11,060 --> 00:01:12,740
+Every other workpiece experiences
+
+23
+00:01:12,740 --> 00:01:16,610
+that is waiting while the first is being processed.
+
+24
+00:01:16,610 --> 00:01:19,400
+A machine stoppage that lasts 10 minutes,
+
+25
+00:01:19,400 --> 00:01:22,160
+adds 10 minutes to the delay, that every workpiece
+
+26
+00:01:22,160 --> 00:01:25,880
+that is waiting to be processed that machine experiences.
+
+27
+00:01:25,880 --> 00:01:27,740
+Machine stoppages are caused by failures,
+
+28
+00:01:27,740 --> 00:01:30,200
+maintenance blocking, starvation, set up changes,
+
+29
+00:01:30,200 --> 00:01:32,570
+and other causes.
+
+30
+00:01:32,570 --> 00:01:34,070
+The sum of all the delays that are
+
+31
+00:01:34,070 --> 00:01:36,170
+part experiences during production
+
+32
+00:01:36,170 --> 00:01:38,420
+is the extra time that a part spends in a factory,
+
+33
+00:01:38,420 --> 00:01:41,960
+beyond the time required for its operations.
+
+34
+00:01:41,960 --> 00:01:46,550
+That is often between 10 and 100 times the total operation time.
+
+35
+00:01:46,550 --> 00:01:48,170
+An operation that takes 10 minutes,
+
+36
+00:01:48,170 --> 00:01:50,900
+takes up 10 minutes of the available time
+
+37
+00:01:50,900 --> 00:01:55,220
+of a machine, an operator, or other resources.
+
+38
+00:01:55,220 --> 00:01:57,740
+Similarly, for machine stoppages,
+
+39
+00:01:57,740 --> 00:02:00,050
+since there are a limited number of minutes
+
+40
+00:02:00,050 --> 00:02:02,884
+of each resource that are available in a day,
+
+41
+00:02:02,884 --> 00:02:04,550
+there are a limited number of operations
+
+42
+00:02:04,550 --> 00:02:07,132
+that can be done in a day.
+
+43
+00:02:07,132 --> 00:02:09,590
+In other words, this is a limit on the factories production
+
+44
+00:02:09,590 --> 00:02:11,630
+rate.
+
+45
+00:02:11,630 --> 00:02:13,670
+The operation time is the time that a machine
+
+46
+00:02:13,670 --> 00:02:15,860
+takes to do an operation.
+
+47
+00:02:15,860 --> 00:02:17,810
+The production rate is the average number
+
+48
+00:02:17,810 --> 00:02:22,370
+of parts produced in a time unit, also called throughput.
+
+49
+00:02:22,370 --> 00:02:23,940
+If nothing interesting ever happens--
+
+50
+00:02:23,940 --> 00:02:27,440
+such as no failures or no set up changes--
+
+51
+00:02:27,440 --> 00:02:31,700
+the production rate is one over the operation time.
+
+52
+00:02:31,700 --> 00:02:34,520
+But something interesting always happens.
+
+53
+00:02:34,520 --> 00:02:37,030
+The capacity is the maximum possible production rate
+
+54
+00:02:37,030 --> 00:02:39,490
+of a manufacturing system for systems that
+
+55
+00:02:39,490 --> 00:02:42,130
+are making only one part type.
+
+56
+00:02:42,130 --> 00:02:44,680
+The short-term capacity is determined by the resources
+
+57
+00:02:44,680 --> 00:02:46,690
+available right now.
+
+58
+00:02:46,690 --> 00:02:48,370
+The long-term capacity is determined
+
+59
+00:02:48,370 --> 00:02:51,520
+by the average resource availability.
+
+60
+00:02:51,520 --> 00:02:53,290
+Short-term capacity must be considered
+
+61
+00:02:53,290 --> 00:02:55,120
+for real-time scheduling.
+
+62
+00:02:55,120 --> 00:02:58,110
+Each time the machine changes its availability-- for example,
+
+63
+00:02:58,110 --> 00:03:00,760
+a failure and then, its repair--
+
+64
+00:03:00,760 --> 00:03:03,340
+the schedule may have to be changed.
+
+65
+00:03:03,340 --> 00:03:06,670
+Long-term capacity is considered in factory design.
+
+66
+00:03:06,670 --> 00:03:08,470
+For example, how many copies of a machine
+
+67
+00:03:08,470 --> 00:03:10,840
+will be needed so that a specified production
+
+68
+00:03:10,840 --> 00:03:12,700
+rate can be achieved.
+
+69
+00:03:12,700 --> 00:03:15,610
+Capacity in parts per day is hard to define precisely,
+
+70
+00:03:15,610 --> 00:03:18,220
+when a factory is making multiple part types
+
+71
+00:03:18,220 --> 00:03:20,350
+and each type requires different amounts of time
+
+72
+00:03:20,350 --> 00:03:22,720
+from each resource.
+
+73
+00:03:22,720 --> 00:03:26,850
+Since it is hard to define, it's very hard to calculate.
+

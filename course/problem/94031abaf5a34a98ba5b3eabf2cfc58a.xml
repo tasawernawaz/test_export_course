@@ -1,0 +1,13 @@
+<problem display_name="Part 3" group_access="{}" markdown="&gt;&gt;What is the production rate of the machine? (Enter 4 decimal places)&lt;&lt;&#10;&#10;= 2*0.3259+-0.06&#10;&#10;[Explanation]&#10;See solution to Part 2.&#10;[Explanation]&#10;" max_attempts="3" showanswer="past_due" weight="3.0">
+  <numericalresponse answer="2*0.3259">
+    <label>What is the production rate of the machine? (Enter 4 decimal places)</label>
+    <responseparam type="tolerance" default="0.06"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>See solution to Part 2.</p>
+      </div>
+    </solution>
+  </numericalresponse>
+</problem>

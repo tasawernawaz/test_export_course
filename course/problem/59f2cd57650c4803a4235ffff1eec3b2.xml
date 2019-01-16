@@ -1,0 +1,13 @@
+<problem display_name="Part 4" group_access="{}" markdown="Continuing from Part 3. Now a third and final operation is added to the line. This is a manual polishing operation that removes the burrs generated from the machining processes. The operation time is 10 minutes, and the worker takes a break on average every 18 parts. The breaks typically last 15 minutes on average.&#10;&#10;&gt;&gt;What is the production rate of this line assuming the buffers in between the machines are infinite in parts per minute (Round to 3 decimal places)?&lt;&lt;&#10;&#10;= 0.092 +- 0.09&#10;&#10;&gt;&gt; What is the rate of material accumulation in the line in parts per minute? (Round to 3 decimal places)&lt;&lt;&#10;&#10;=0.086+-0.008&#10;" max_attempts="2" showanswer="never" weight="2.0">
+  <p>Continuing from Part 3. Now a third and final operation is added to the line. This is a manual polishing operation that removes the burrs generated from the machining processes. The operation time is 10 minutes, and the worker takes a break on average every 18 parts. The breaks typically last 15 minutes on average.</p>
+  <label>What is the production rate of this line assuming the buffers in between the machines are infinite in parts per minute (Round to 3 decimal places)?</label>
+  <numericalresponse answer="0.092">
+    <responseparam type="tolerance" default="0.09"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label> What is the rate of material accumulation in the line in parts per minute? (Round to 3 decimal places)</label>
+  <numericalresponse answer="0.086">
+    <responseparam type="tolerance" default="0.008"/>
+    <formulaequationinput/>
+  </numericalresponse>
+</problem>

@@ -1,0 +1,27 @@
+<problem display_name="Part 3" group_access="{}" markdown="null" max_attempts="3" showanswer="past_due" weight="2.0">
+  <label>What is the production rate of good parts in parts/min? (Please answer with 3 decimals)</label>
+  <numericalresponse answer="1.6328">
+    <responseparam type="tolerance" default="0.001"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>What is the production rate of bad parts in parts/min? (Please answer with 3 decimals)</label>
+  <numericalresponse answer="0.1224">
+    <responseparam type="tolerance" default="0.001"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>The yield is the number of good parts produced divided by the total number of parts produced (or the production rate of good parts divided by the total production rate). What is the yield? (Please answer with 3 decimals)</label>
+  <numericalresponse answer="0.930">
+    <responseparam type="tolerance" default="0.001"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>
+        <span style="font-size: 1em;">
+          <img src="/static/WK3GP2Pt3.png" alt="" width="500" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+        </span>
+      </p>
+    </div>
+  </solution>
+</problem>

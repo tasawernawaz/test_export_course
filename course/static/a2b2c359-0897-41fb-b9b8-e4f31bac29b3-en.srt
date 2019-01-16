@@ -1,0 +1,156 @@
+0
+00:00:00,000 --> 00:00:01,580
+
+
+1
+00:00:01,580 --> 00:00:02,400
+Hi everyone.
+
+2
+00:00:02,400 --> 00:00:07,850
+Welcome back to 2.854.1x, Intro to Manufacturing Systems.
+
+3
+00:00:07,850 --> 00:00:11,390
+In this recitation video, we will solve practice problem two
+
+4
+00:00:11,390 --> 00:00:13,940
+for week three.
+
+5
+00:00:13,940 --> 00:00:15,890
+So here's the problem.
+
+6
+00:00:15,890 --> 00:00:18,830
+This is our transition matrix.
+
+7
+00:00:18,830 --> 00:00:25,810
+This is a pretty simple discrete-time Markov chain.
+
+8
+00:00:25,810 --> 00:00:30,150
+So in this problem we solve for the three states.
+
+9
+00:00:30,150 --> 00:00:34,310
+So the first thing I do is to take this matrix
+
+10
+00:00:34,310 --> 00:00:37,170
+and put it into equation form.
+
+11
+00:00:37,170 --> 00:00:53,425
+So here we go, 0.3 pi one plus 0.1 pi two plus 0.6 pi three
+
+12
+00:00:53,425 --> 00:00:57,070
+equals pi one.
+
+13
+00:00:57,070 --> 00:00:59,840
+So the second equation is pretty simple.
+
+14
+00:00:59,840 --> 00:01:06,630
+That's just 0.7 pi two equal pi two.
+
+15
+00:01:06,630 --> 00:01:15,680
+
+
+16
+00:01:15,680 --> 00:01:17,420
+Then we can throw out the third equation
+
+17
+00:01:17,420 --> 00:01:20,460
+and replace it with the normalization equation.
+
+18
+00:01:20,460 --> 00:01:29,360
+So that's simply pi one plus pi two plus pi three equals 1.
+
+19
+00:01:29,360 --> 00:01:32,910
+Now the second equation, the only way 0.7 pi two
+
+20
+00:01:32,910 --> 00:01:39,290
+can equal to pi two is if pi two equals 0.
+
+21
+00:01:39,290 --> 00:01:42,620
+So we could drop this term and drop this term since pi
+
+22
+00:01:42,620 --> 00:01:44,540
+to is 0.
+
+23
+00:01:44,540 --> 00:01:55,220
+So now we have 0.3 pi one plus 0.6 pi three equal pi one.
+
+24
+00:01:55,220 --> 00:02:01,340
+And just rearrange this equation, we get 0.6 pi three
+
+25
+00:02:01,340 --> 00:02:05,180
+equals 0.7 pi one.
+
+26
+00:02:05,180 --> 00:02:15,660
+So that means pi three is simply 7 over 6 pi one.
+
+27
+00:02:15,660 --> 00:02:18,730
+OK, now we substitute into the normalization equation.
+
+28
+00:02:18,730 --> 00:02:30,510
+We have pi one plus 7 over 6 pi one equal 1.
+
+29
+00:02:30,510 --> 00:02:37,190
+So 13 over 6 pi one equals 1.
+
+30
+00:02:37,190 --> 00:02:44,870
+So this means pi 1 is just 6 over 13.
+
+31
+00:02:44,870 --> 00:02:50,130
+And then since we know that pi one plus pi three must equal 1,
+
+32
+00:02:50,130 --> 00:02:57,310
+that means pi three equals 7 over 13.
+
+33
+00:02:57,310 --> 00:02:58,540
+And that's it.
+
+34
+00:02:58,540 --> 00:03:02,860
+Hopefully this can help you solve future problems.
+
+35
+00:03:02,860 --> 00:03:05,800
+Like always, leave your questions or comments
+
+36
+00:03:05,800 --> 00:03:08,090
+in the discussion section below.
+
+37
+00:03:08,090 --> 00:03:09,750
+Thank you.
+
+38
+00:03:09,750 --> 00:03:12,747
+
+

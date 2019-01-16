@@ -1,0 +1,18 @@
+<problem display_name="Practice Problem 4" markdown="null" max_attempts="3" showanswer="finished" weight="1.0">
+  <numericalresponse answer="0.1666">
+    <label>Two balanced dice are rolled. What is the probability that the sum of their
+pips equals 7?</label>
+    <responseparam type="tolerance" default="0.016"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>
+          <span style="font-size: 1em;">
+            <img src="/static/Probability4.1.png" alt="" width="700" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+          </span>
+        </p>
+      </div>
+    </solution>
+  </numericalresponse>
+</problem>

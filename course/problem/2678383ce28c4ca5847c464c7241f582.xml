@@ -1,0 +1,17 @@
+<problem display_name="Question 2" markdown="&gt;&gt;The definition which best describes a Markov process is:&lt;&lt;&#10;&#10;( ) A progression for an area of a snowflake which converges to 8/5 times the area of a triangle, while the progression for the snowflake's perimeter diverges to infinity. The snowflake itself has a finite area bounded by an infinitely long line.&#10;(x) A stochastic process in which the probability of finding X at some value at time t+δt depends only on the value of X at time t&#10;( ) A mathematical model of conflict and cooperation between intelligent rational decision-makers&#10;( ) A stochastic process in which the probability of finding X at some value at time t+δt doesn’t depend solely on the value of X at time t&#10;&#10;[explanation]&#10;Please review video 1&#10;[explanation]&#10;" max_attempts="3" showanswer="attempted" weight="1.0">
+  <multiplechoiceresponse>
+    <label>The definition which best describes a Markov process is:</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">A progression for an area of a snowflake which converges to 8/5 times the area of a triangle, while the progression for the snowflake's perimeter diverges to infinity. The snowflake itself has a finite area bounded by an infinitely long line.</choice>
+      <choice correct="true">A stochastic process in which the probability of finding X at some value at time t+δt depends only on the value of X at time t</choice>
+      <choice correct="false">A mathematical model of conflict and cooperation between intelligent rational decision-makers</choice>
+      <choice correct="false">A stochastic process in which the probability of finding X at some value at time t+δt doesn’t depend solely on the value of X at time t</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Please review video 1</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

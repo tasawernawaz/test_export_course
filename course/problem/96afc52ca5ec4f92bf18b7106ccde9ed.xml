@@ -1,0 +1,20 @@
+<problem display_name="Part 1" markdown="null" max_attempts="3" showanswer="finished" weight="1.0">
+  <numericalresponse answer="0">
+    <p>Random variables \(X\) and \(Y_{1}\) are independent. Their probability distributions are given by: </p>
+    <img src="/static/Probability11.1p.png" alt="" width="400"/>
+    <label>Calculate \(Cov(X,Y_{1})\).</label>
+    <responseparam type="tolerance" default="0.01"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>
+          <span style="font-size: 1em;">
+            <img src="/static/Probability11.1.png" alt="" width="500" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+          </span>
+        </p>
+      </div>
+    </solution>
+  </numericalresponse>
+  <script src="/static/st.js" type="text/javascript"/>
+</problem>

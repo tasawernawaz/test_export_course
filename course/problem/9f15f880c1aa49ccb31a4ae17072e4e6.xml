@@ -1,0 +1,10 @@
+<problem display_name="Concept Check 2" markdown="Please determine if the statement is true or false:&#10;&#10;&gt;&gt; &quot;In the Normally distributed demand graph, the normal distribution can be negative, whereas demand for newspaper will not be negative. The normal distribution is only a good approximation if the mean of the distribution is much greater than the standard deviation. In this way, the probability of normal distribution predicting a negative demand is very small.&quot; &lt;&lt;&#10;&#10;(x) True.&#10;( ) False." max_attempts="3" showanswer="attempted" weight="1.0">
+  <multiplechoiceresponse>
+    <p>Please determine if the statement is true or false:</p>
+    <label> "In the Normally distributed demand graph, the normal distribution can be negative, whereas demand for newspaper will not be negative. The normal distribution is only a good approximation if the mean of the distribution is much greater than the standard deviation. In this way, the probability of normal distribution predicting a negative demand is very small." </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">True.</choice>
+      <choice correct="false">False.</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

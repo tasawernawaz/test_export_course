@@ -1,0 +1,780 @@
+0
+00:00:00,000 --> 00:00:00,774
+
+
+1
+00:00:00,774 --> 00:00:02,440
+The first week of this course is devoted
+
+2
+00:00:02,440 --> 00:00:05,710
+to an overview of manufacturing systems engineering.
+
+3
+00:00:05,710 --> 00:00:10,150
+We'll start off with a case that illustrates some of the issues.
+
+4
+00:00:10,150 --> 00:00:12,901
+Inkjet printers were introduced in 1993,
+
+5
+00:00:12,901 --> 00:00:15,400
+they were much better than the dot matrix printers that were
+
+6
+00:00:15,400 --> 00:00:17,350
+all that was available before.
+
+7
+00:00:17,350 --> 00:00:18,820
+They had much better print quality,
+
+8
+00:00:18,820 --> 00:00:21,170
+they could print graphics as well as text,
+
+9
+00:00:21,170 --> 00:00:22,270
+and they were much faster.
+
+10
+00:00:22,270 --> 00:00:25,270
+The demand for inkjet printers was large and it grew rapidly.
+
+11
+00:00:25,270 --> 00:00:27,340
+Market share is very important to companies
+
+12
+00:00:27,340 --> 00:00:29,530
+when new technology is introduced.
+
+13
+00:00:29,530 --> 00:00:31,467
+Customers are thought to have brand loyalty.
+
+14
+00:00:31,467 --> 00:00:33,550
+Once they get accustomed to one brand of a product
+
+15
+00:00:33,550 --> 00:00:35,924
+they stay with that brand when they replaced that product
+
+16
+00:00:35,924 --> 00:00:38,500
+with a new model.
+
+17
+00:00:38,500 --> 00:00:40,900
+In addition, printer customers don't just buy printers,
+
+18
+00:00:40,900 --> 00:00:42,890
+they also buy ink cartridges.
+
+19
+00:00:42,890 --> 00:00:44,950
+This is also a lucrative market.
+
+20
+00:00:44,950 --> 00:00:46,570
+Consequently, companies are often
+
+21
+00:00:46,570 --> 00:00:49,090
+willing to forego initial profits for greater profits
+
+22
+00:00:49,090 --> 00:00:50,020
+later.
+
+23
+00:00:50,020 --> 00:00:52,480
+Manufacturers could sell all they could produce.
+
+24
+00:00:52,480 --> 00:00:55,420
+Demand was much greater than production capacity.
+
+25
+00:00:55,420 --> 00:00:57,910
+Hewlett-Packard was designing and producing its printers
+
+26
+00:00:57,910 --> 00:01:01,000
+in Vancouver, Washington near Portland, Oregon.
+
+27
+00:01:01,000 --> 00:01:03,640
+Their initial production was done manually.
+
+28
+00:01:03,640 --> 00:01:06,747
+They decided to increase their printer production rate.
+
+29
+00:01:06,747 --> 00:01:08,830
+In deciding how to increase their production rate,
+
+30
+00:01:08,830 --> 00:01:11,457
+they had to satisfy certain constraints.
+
+31
+00:01:11,457 --> 00:01:13,540
+First constraint was that they had to keep quality
+
+32
+00:01:13,540 --> 00:01:14,650
+at a high level.
+
+33
+00:01:14,650 --> 00:01:18,250
+Quality does not just refer to the way printed pages look,
+
+34
+00:01:18,250 --> 00:01:21,110
+it also refers to the reliability of the product.
+
+35
+00:01:21,110 --> 00:01:24,370
+The printers have to last long enough to satisfy customers.
+
+36
+00:01:24,370 --> 00:01:26,440
+It was not enough to increase production rate
+
+37
+00:01:26,440 --> 00:01:28,067
+to keep up with demand.
+
+38
+00:01:28,067 --> 00:01:30,400
+To increase market share they had to increase production
+
+39
+00:01:30,400 --> 00:01:32,270
+at a greater rate than demand.
+
+40
+00:01:32,270 --> 00:01:35,830
+Their production target was 300,000 printers per month.
+
+41
+00:01:35,830 --> 00:01:38,080
+The capacity with existing manual assembly
+
+42
+00:01:38,080 --> 00:01:40,750
+was only 200,000 printers per month.
+
+43
+00:01:40,750 --> 00:01:42,970
+In addition, they also had to meet profit and revenue
+
+44
+00:01:42,970 --> 00:01:44,240
+targets.
+
+45
+00:01:44,240 --> 00:01:45,640
+To increase market share however,
+
+46
+00:01:45,640 --> 00:01:48,190
+they had to keep costs low to attract customers.
+
+47
+00:01:48,190 --> 00:01:51,370
+Keeping costs low is also necessary for profitability.
+
+48
+00:01:51,370 --> 00:01:53,050
+They wanted to have a stable workforce,
+
+49
+00:01:53,050 --> 00:01:54,730
+they did not want to have to hire people
+
+50
+00:01:54,730 --> 00:01:57,100
+when demand was high and then lay them off
+
+51
+00:01:57,100 --> 00:01:58,660
+when demand dropped.
+
+52
+00:01:58,660 --> 00:02:02,110
+HP invested $25 million in Eclipse, a new system
+
+53
+00:02:02,110 --> 00:02:05,090
+for automated assembly of the print engine.
+
+54
+00:02:05,090 --> 00:02:08,199
+This is a diagram of the whole production process.
+
+55
+00:02:08,199 --> 00:02:11,260
+Raw materials are fed into the mechanical assembly
+
+56
+00:02:11,260 --> 00:02:14,140
+cell, which we're going to focus on-- the Eclipse.
+
+57
+00:02:14,140 --> 00:02:18,190
+The completed print engine went into a storage buffer,
+
+58
+00:02:18,190 --> 00:02:20,230
+and from there it went to final assembly
+
+59
+00:02:20,230 --> 00:02:22,240
+with the rest of the printer, and then
+
+60
+00:02:22,240 --> 00:02:23,840
+to packaging and shipping.
+
+61
+00:02:23,840 --> 00:02:26,870
+Altogether, two of these Eclipse systems were installed.
+
+62
+00:02:26,870 --> 00:02:29,890
+This is a representation of the Eclipse automated assembly
+
+63
+00:02:29,890 --> 00:02:31,240
+system.
+
+64
+00:02:31,240 --> 00:02:34,570
+There are about 100 steps in the manufacturing process.
+
+65
+00:02:34,570 --> 00:02:38,260
+It was a main loop and several sub-assembly lines feeding it.
+
+66
+00:02:38,260 --> 00:02:41,490
+The base was assembled in the first sub-assembly line
+
+67
+00:02:41,490 --> 00:02:44,860
+and additional sub-assemblies were added to it later.
+
+68
+00:02:44,860 --> 00:02:47,730
+The main loop had 30 workstations.
+
+69
+00:02:47,730 --> 00:02:49,470
+When the base entered the main loop,
+
+70
+00:02:49,470 --> 00:02:51,510
+it was attached to a pallet which would carry it
+
+71
+00:02:51,510 --> 00:02:53,460
+through the assembly process.
+
+72
+00:02:53,460 --> 00:02:55,440
+This reduced possible damage to the product
+
+73
+00:02:55,440 --> 00:02:57,780
+from being clamped at each station.
+
+74
+00:02:57,780 --> 00:03:00,390
+Each such clamping risks damage.
+
+75
+00:03:00,390 --> 00:03:04,020
+Clamping the pallet causes no damage to the product.
+
+76
+00:03:04,020 --> 00:03:05,820
+When the assembly process was complete,
+
+77
+00:03:05,820 --> 00:03:07,470
+the engine was detached from the pallet
+
+78
+00:03:07,470 --> 00:03:09,360
+and then sent to a storage area to await
+
+79
+00:03:09,360 --> 00:03:11,340
+final assembly of the printer.
+
+80
+00:03:11,340 --> 00:03:14,010
+The empty pallet was sent back to the first assembly station
+
+81
+00:03:14,010 --> 00:03:16,364
+to get a new base to carry into the main loop.
+
+82
+00:03:16,364 --> 00:03:18,030
+At the time when this was all happening,
+
+83
+00:03:18,030 --> 00:03:20,100
+the American industry consensus was
+
+84
+00:03:20,100 --> 00:03:22,830
+that inventory was bad and should be eliminated.
+
+85
+00:03:22,830 --> 00:03:25,620
+As a consequence, the system was designed with very little room
+
+86
+00:03:25,620 --> 00:03:26,880
+for inventory.
+
+87
+00:03:26,880 --> 00:03:29,190
+As we will see, inventory is a necessary evil
+
+88
+00:03:29,190 --> 00:03:32,070
+if there's variability in the manufacturing process.
+
+89
+00:03:32,070 --> 00:03:35,220
+And there's always variability in the manufacturing process.
+
+90
+00:03:35,220 --> 00:03:38,190
+Some assumptions were made about the system.
+
+91
+00:03:38,190 --> 00:03:39,900
+Efficiency is the fraction of time
+
+92
+00:03:39,900 --> 00:03:42,060
+that machines are available for production--
+
+93
+00:03:42,060 --> 00:03:44,640
+not needing or undergoing repair or maintenance
+
+94
+00:03:44,640 --> 00:03:46,070
+or any other activity like that.
+
+95
+00:03:46,070 --> 00:03:48,860
+We'll describe that in more detail later.
+
+96
+00:03:48,860 --> 00:03:50,490
+The operation times at each station
+
+97
+00:03:50,490 --> 00:03:53,070
+were estimated to be nine seconds and constant.
+
+98
+00:03:53,070 --> 00:03:54,870
+Consequently, the total production rate
+
+99
+00:03:54,870 --> 00:03:58,140
+was estimated to be about 370,000 units per month.
+
+100
+00:03:58,140 --> 00:04:01,170
+But after the first two stations were installed,
+
+101
+00:04:01,170 --> 00:04:03,600
+data was collected and it was found that efficiency
+
+102
+00:04:03,600 --> 00:04:05,490
+was less than 99%.
+
+103
+00:04:05,490 --> 00:04:07,260
+Operation times were variable, often
+
+104
+00:04:07,260 --> 00:04:09,060
+greater than nine seconds.
+
+105
+00:04:09,060 --> 00:04:10,710
+In that case, actual production would
+
+106
+00:04:10,710 --> 00:04:15,480
+be about 125,000 units per month a very disappointing result.
+
+107
+00:04:15,480 --> 00:04:17,070
+They then face the problem--
+
+108
+00:04:17,070 --> 00:04:19,860
+how to modify the system to increase production rate?
+
+109
+00:04:19,860 --> 00:04:22,320
+And how to make the changes happen in a very short time?
+
+110
+00:04:22,320 --> 00:04:25,770
+
+
+111
+00:04:25,770 --> 00:04:28,100
+The reason for the drastically reduced production
+
+112
+00:04:28,100 --> 00:04:30,830
+is the effect that the failure of one machine
+
+113
+00:04:30,830 --> 00:04:32,990
+has on all the others.
+
+114
+00:04:32,990 --> 00:04:36,590
+In this animation, the third sub-assembly line fails.
+
+115
+00:04:36,590 --> 00:04:40,010
+While it is out of action, the upstream part of the main line
+
+116
+00:04:40,010 --> 00:04:42,380
+keeps operating for a short time.
+
+117
+00:04:42,380 --> 00:04:45,380
+But the parts accumulate on the transportation system.
+
+118
+00:04:45,380 --> 00:04:48,770
+They create a traffic jam and all of the upstream machines
+
+119
+00:04:48,770 --> 00:04:51,440
+have to stop because they have nowhere to put their completed
+
+120
+00:04:51,440 --> 00:04:53,360
+parts, they are blocked.
+
+121
+00:04:53,360 --> 00:04:56,510
+At the same time, the parts that were downstream of the failed
+
+122
+00:04:56,510 --> 00:04:59,750
+machine are processed until they leave the system.
+
+123
+00:04:59,750 --> 00:05:02,240
+At that point, the machines downstream
+
+124
+00:05:02,240 --> 00:05:05,790
+of the failed machine have nothing to work on.
+
+125
+00:05:05,790 --> 00:05:08,720
+And so they have to stop, they're starved.
+
+126
+00:05:08,720 --> 00:05:12,580
+When the failed machines are repaired production resumes.
+
+127
+00:05:12,580 --> 00:05:14,230
+But perfectly operational machines
+
+128
+00:05:14,230 --> 00:05:17,870
+were forced to be idle because of the failure of one machine.
+
+129
+00:05:17,870 --> 00:05:19,720
+This is a loss of productive capacity.
+
+130
+00:05:19,720 --> 00:05:24,870
+
+
+131
+00:05:24,870 --> 00:05:26,490
+Simulation is a modeling technique
+
+132
+00:05:26,490 --> 00:05:29,520
+for predicting performance of a complex system.
+
+133
+00:05:29,520 --> 00:05:32,220
+HP tried to analyze the system by simulation.
+
+134
+00:05:32,220 --> 00:05:34,530
+They consulted a vendor but the project
+
+135
+00:05:34,530 --> 00:05:36,660
+appeared to be too large and complex to produce
+
+136
+00:05:36,660 --> 00:05:39,547
+useful results in time to effect the system design.
+
+137
+00:05:39,547 --> 00:05:41,130
+This was because they tried to include
+
+138
+00:05:41,130 --> 00:05:43,080
+too much detail in the model.
+
+139
+00:05:43,080 --> 00:05:45,990
+Some conceivable changes were out of bounds,
+
+140
+00:05:45,990 --> 00:05:47,850
+they could not add labor and they could not
+
+141
+00:05:47,850 --> 00:05:49,290
+redesign the machines.
+
+142
+00:05:49,290 --> 00:05:52,650
+A visiting researcher proposed a feasible change--
+
+143
+00:05:52,650 --> 00:05:56,366
+adding a small amount of buffer space within the Eclipse.
+
+144
+00:05:56,366 --> 00:05:58,740
+Here's a graph that shows the relationship between buffer
+
+145
+00:05:58,740 --> 00:06:02,130
+space, N, and production space, P.
+
+146
+00:06:02,130 --> 00:06:04,050
+The horizontal axis is buffer space,
+
+147
+00:06:04,050 --> 00:06:06,024
+the vertical axis is the production rate.
+
+148
+00:06:06,024 --> 00:06:08,190
+The graph shows that when there's very little buffer
+
+149
+00:06:08,190 --> 00:06:10,830
+space, adding a little can increase production rate
+
+150
+00:06:10,830 --> 00:06:11,575
+by a lot.
+
+151
+00:06:11,575 --> 00:06:13,950
+This is not true when there there's a lot of buffer space
+
+152
+00:06:13,950 --> 00:06:14,820
+already.
+
+153
+00:06:14,820 --> 00:06:17,280
+The underlying design and analysis tools
+
+154
+00:06:17,280 --> 00:06:20,140
+will be described in the second part of this course.
+
+155
+00:06:20,140 --> 00:06:22,500
+Here's a diagram of the modified system.
+
+156
+00:06:22,500 --> 00:06:24,540
+There's an empty pallet buffer, there's
+
+157
+00:06:24,540 --> 00:06:26,670
+work in process space between some assembly
+
+158
+00:06:26,670 --> 00:06:28,300
+lines and the main line, there's work
+
+159
+00:06:28,300 --> 00:06:30,547
+in process space on the main line,
+
+160
+00:06:30,547 --> 00:06:32,130
+and the buffer sizes were large enough
+
+161
+00:06:32,130 --> 00:06:34,390
+to hold about 30 minutes worth of material.
+
+162
+00:06:34,390 --> 00:06:36,210
+This is a small multiple of the mean time
+
+163
+00:06:36,210 --> 00:06:37,620
+to repair of the machines.
+
+164
+00:06:37,620 --> 00:06:40,930
+30 minutes represents about 200 parts.
+
+165
+00:06:40,930 --> 00:06:43,230
+Here's the old system and the new system side by side,
+
+166
+00:06:43,230 --> 00:06:46,776
+you can see the difference.
+
+167
+00:06:46,776 --> 00:06:48,150
+When this was implemented, it led
+
+168
+00:06:48,150 --> 00:06:53,850
+to increased factory capacity to over 200,000 units per month.
+
+169
+00:06:53,850 --> 00:06:55,500
+The increased space on the system
+
+170
+00:06:55,500 --> 00:06:58,320
+is what allowed the increase in production rate.
+
+171
+00:06:58,320 --> 00:07:00,810
+Now, if a machine fails more time
+
+172
+00:07:00,810 --> 00:07:04,260
+must elapse before the upstream traffic jam occurs.
+
+173
+00:07:04,260 --> 00:07:06,450
+This allows the upstream machines
+
+174
+00:07:06,450 --> 00:07:09,090
+to work longer before they are blocked.
+
+175
+00:07:09,090 --> 00:07:11,640
+Similarly, if there are more ports downstream
+
+176
+00:07:11,640 --> 00:07:14,010
+of the failure, the downstream machines
+
+177
+00:07:14,010 --> 00:07:17,040
+can process more parts before they're starved.
+
+178
+00:07:17,040 --> 00:07:18,780
+Consequently, less productive time
+
+179
+00:07:18,780 --> 00:07:20,355
+is lost due to the single failure.
+
+180
+00:07:20,355 --> 00:07:25,780
+
+
+181
+00:07:25,780 --> 00:07:30,520
+The capital cost of the changes was about $1,400,000.
+
+182
+00:07:30,520 --> 00:07:32,710
+The payoff was great, the incremental revenues
+
+183
+00:07:32,710 --> 00:07:34,320
+were about $280 million.
+
+184
+00:07:34,320 --> 00:07:38,050
+The labor productivity increased by about 50%.
+
+185
+00:07:38,050 --> 00:07:42,310
+This was successful because there was early intervention--
+
+186
+00:07:42,310 --> 00:07:45,520
+that is the analysis was done before too much of the system
+
+187
+00:07:45,520 --> 00:07:47,500
+was built and already in place.
+
+188
+00:07:47,500 --> 00:07:50,500
+The rapid response was possible because much
+
+189
+00:07:50,500 --> 00:07:53,750
+of the relevant research work had already been done.
+
+190
+00:07:53,750 --> 00:07:55,630
+The HP managers were quite flexible,
+
+191
+00:07:55,630 --> 00:07:58,630
+possibly because of the crisis they were facing.
+
+192
+00:07:58,630 --> 00:08:01,130
+The new analysis tool was fast, easy to use,
+
+193
+00:08:01,130 --> 00:08:03,565
+and was at the right level of detail.
+
+194
+00:08:03,565 --> 00:08:04,065
+
+

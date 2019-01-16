@@ -1,0 +1,17 @@
+<problem display_name="Question 1" markdown="&#10;&#10;&gt;&gt;What is the difference between open and closed networks? &lt;&lt;&#10;&#10;[x] Whether items can enter and leave the system.&#10;[x] Whether L is known.&#10;[ ] Whether W is known.&#10;[x] Whether materials in the system are constant.&#10;&#10;[explanation]&#10;In open networks, customers can enter and leave whereas in a closed network the population in the system is constant. In open networks \(\lambda\) is known and L is unknown whereas in closed networks L is known and \(\lambda\) is unknown. In both open and closed systems, W is unknown.&#10;[explanation]&#10;&#10;&#10;&#10;" max_attempts="3">
+  <choiceresponse>
+    <label>What is the difference between open and closed networks? </label>
+    <checkboxgroup>
+      <choice correct="true">Whether items can enter and leave the system.</choice>
+      <choice correct="true">Whether L is known.</choice>
+      <choice correct="false">Whether W is known.</choice>
+      <choice correct="true">Whether materials in the system are constant.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>In open networks, customers can enter and leave whereas in a closed network the population in the system is constant. In open networks \(\lambda\) is known and L is unknown whereas in closed networks L is known and \(\lambda\) is unknown. In both open and closed systems, W is unknown.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

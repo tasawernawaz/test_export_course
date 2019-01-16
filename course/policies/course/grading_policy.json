@@ -1,0 +1,30 @@
+{
+    "GRADER": [
+        {
+            "drop_count": 0, 
+            "min_count": 7, 
+            "short_label": "HW", 
+            "type": "Homework", 
+            "weight": 0.3
+        }, 
+        {
+            "drop_count": 0, 
+            "min_count": 1, 
+            "short_label": "Midterm", 
+            "type": "Midterm", 
+            "weight": 0.35
+        }, 
+        {
+            "drop_count": 0, 
+            "min_count": 1, 
+            "short_label": "Final", 
+            "type": "Final", 
+            "weight": 0.35
+        }
+    ], 
+    "GRADE_CUTOFFS": {
+        "A": 0.9, 
+        "B": 0.75, 
+        "C": 0.6
+    }
+}

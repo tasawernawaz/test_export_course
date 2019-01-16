@@ -1,0 +1,23 @@
+<problem display_name="Part 2" markdown="Suppose now that Machine 1 now fails every hour, 10 minutes into the hour, for 10 minutes.&#10;&#10;&gt;&gt;How many parts are produced in the first hour? Assume the buffer is empty.&lt;&lt;&#10;&#10;= 49&#10;&#10;[explanation]&#10;if machine 1 is down for 10 minutes, the system loses 10 parts of production. Also, machine 2 must wait 1 minute at startup, thus the system will lose 11 parts in the first hour.&#10;[explanation]&#10;&#10;&gt;&gt; How many parts are produced if we increase the Kanban count from 1 to 10 in the first hour? Assume the buffer is empty.&lt;&lt;&#10;&#10;=49&#10;&#10;[explanation]&#10;Increasing the Kanban will not help, since the buffer inventory will be 0. It will only help if the second machine goes down.&#10;[explanation]&#10;" max_attempts="3" showanswer="finished" weight="1.0">
+  <p>Suppose now that Machine 1 now fails every hour, 10 minutes into the hour, for 10 minutes.</p>
+  <label>How many parts are produced in the first hour? Assume the buffer is empty.</label>
+  <numericalresponse answer="49">
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>if machine 1 is down for 10 minutes, the system loses 10 parts of production. Also, machine 2 must wait 1 minute at startup, thus the system will lose 11 parts in the first hour.</p>
+    </div>
+  </solution>
+  <label> How many parts are produced if we increase the Kanban count from 1 to 10 in the first hour? Assume the buffer is empty.</label>
+  <numericalresponse answer="49">
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>Increasing the Kanban will not help, since the buffer inventory will be 0. It will only help if the second machine goes down.</p>
+    </div>
+  </solution>
+</problem>

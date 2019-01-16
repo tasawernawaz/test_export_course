@@ -1,0 +1,940 @@
+0
+00:00:00,000 --> 00:00:02,410
+
+
+1
+00:00:02,410 --> 00:00:04,450
+The last thing we discussed was how
+
+2
+00:00:04,450 --> 00:00:07,720
+to calculate the average amount of inventory in an M/M/1 queue
+
+3
+00:00:07,720 --> 00:00:10,370
+or the average number of customers.
+
+4
+00:00:10,370 --> 00:00:11,900
+That's important.
+
+5
+00:00:11,900 --> 00:00:14,750
+What's also important is the average amount of time
+
+6
+00:00:14,750 --> 00:00:17,150
+that a customer spends in a queue or a piece
+
+7
+00:00:17,150 --> 00:00:20,360
+of good spends in a factory, and that relationship
+
+8
+00:00:20,360 --> 00:00:22,770
+is Little's Law.
+
+9
+00:00:22,770 --> 00:00:24,390
+This is a very important law, which
+
+10
+00:00:24,390 --> 00:00:28,600
+is true in general for most systems, and not just M/M/1
+
+11
+00:00:28,600 --> 00:00:30,960
+queues.
+
+12
+00:00:30,960 --> 00:00:33,390
+It applies only for systems in steady state.
+
+13
+00:00:33,390 --> 00:00:35,920
+
+
+14
+00:00:35,920 --> 00:00:38,460
+In this law, the way it's usually written,
+
+15
+00:00:38,460 --> 00:00:42,850
+L is the average number of customers in the system,
+
+16
+00:00:42,850 --> 00:00:45,070
+and W is the average delay experienced
+
+17
+00:00:45,070 --> 00:00:48,630
+by a customer in the system.
+
+18
+00:00:48,630 --> 00:00:51,330
+The relationship is, L equals lambda W. Remember,
+
+19
+00:00:51,330 --> 00:00:53,580
+lambda is the arrival rate.
+
+20
+00:00:53,580 --> 00:00:56,100
+In factories and warehouses, L is the average amount
+
+21
+00:00:56,100 --> 00:00:58,860
+of material in storage, and W is the expected time
+
+22
+00:00:58,860 --> 00:01:01,470
+an item in inventory remains in storage.
+
+23
+00:01:01,470 --> 00:01:03,600
+People actually use Little's Law all the time
+
+24
+00:01:03,600 --> 00:01:05,970
+without thinking it's anything special.
+
+25
+00:01:05,970 --> 00:01:07,920
+Typically, a manager will say something
+
+26
+00:01:07,920 --> 00:01:10,860
+like, "we have two weeks worth of inventory,"
+
+27
+00:01:10,860 --> 00:01:14,550
+rather than saying, "we have 2,000 units in inventory."
+
+28
+00:01:14,550 --> 00:01:16,320
+However, they're equivalent if the demand
+
+29
+00:01:16,320 --> 00:01:18,700
+rate is 1,000 units per week.
+
+30
+00:01:18,700 --> 00:01:22,320
+In the M/M/1 queue, we had the formula for n bar
+
+31
+00:01:22,320 --> 00:01:24,070
+in the previous slide.
+
+32
+00:01:24,070 --> 00:01:26,850
+So from that, we find that W is equal to 1
+
+33
+00:01:26,850 --> 00:01:29,550
+over mu minus lambda.
+
+34
+00:01:29,550 --> 00:01:32,050
+Now, what does the equation say?
+
+35
+00:01:32,050 --> 00:01:35,100
+First of all, it says that if lambda equals 0,
+
+36
+00:01:35,100 --> 00:01:36,560
+then W is 1 over mus.
+
+37
+00:01:36,560 --> 00:01:39,670
+1 over mu is the average service time.
+
+38
+00:01:39,670 --> 00:01:42,070
+So what that really means is that if there is very,
+
+39
+00:01:42,070 --> 00:01:45,310
+very light traffic-- so lambda is very, very small--
+
+40
+00:01:45,310 --> 00:01:47,640
+then when a customer arrives at a queue
+
+41
+00:01:47,640 --> 00:01:49,650
+that customer will be served right away,
+
+42
+00:01:49,650 --> 00:01:51,990
+and the average amount of time that that customer spends
+
+43
+00:01:51,990 --> 00:01:54,000
+is therefore the average amount of time
+
+44
+00:01:54,000 --> 00:01:57,270
+that it takes to do a service, which is 1 over mu.
+
+45
+00:01:57,270 --> 00:02:00,300
+On the other hand, as lambda approaches mu,
+
+46
+00:02:00,300 --> 00:02:03,930
+then we see that the denominator of that fraction is going to 0.
+
+47
+00:02:03,930 --> 00:02:07,030
+So the average waiting time is going to infinity.
+
+48
+00:02:07,030 --> 00:02:11,520
+Here's a graph of W versus lambda, when mu equals 1.
+
+49
+00:02:11,520 --> 00:02:13,800
+This graph shows the phenomena that I just described.
+
+50
+00:02:13,800 --> 00:02:15,990
+W goes to 0, as lambda goes to 0,
+
+51
+00:02:15,990 --> 00:02:19,050
+and W goes infinity as lambda goes to 1.
+
+52
+00:02:19,050 --> 00:02:21,600
+In this case, mus is equal to 1.
+
+53
+00:02:21,600 --> 00:02:23,730
+Mu is the capacity of the system.
+
+54
+00:02:23,730 --> 00:02:26,460
+We've already seen that if lambda is greater than mu,
+
+55
+00:02:26,460 --> 00:02:29,380
+the system breaks down.
+
+56
+00:02:29,380 --> 00:02:31,870
+If lambda is less than mu, the system is stable,
+
+57
+00:02:31,870 --> 00:02:34,660
+and waiting time remains bounded.
+
+58
+00:02:34,660 --> 00:02:38,282
+If mu is greater than 1, the waiting time grows over time,
+
+59
+00:02:38,282 --> 00:02:39,490
+and there is no steady state.
+
+60
+00:02:39,490 --> 00:02:43,840
+So that's why the whole graph is blank on the right side of it.
+
+61
+00:02:43,840 --> 00:02:46,420
+Suppose that for the demand that we have mu
+
+62
+00:02:46,420 --> 00:02:48,110
+equals 1 is not enough.
+
+63
+00:02:48,110 --> 00:02:50,490
+What can we do?
+
+64
+00:02:50,490 --> 00:02:53,930
+Well, we can increase capacity by increasing mu.
+
+65
+00:02:53,930 --> 00:02:56,370
+So we can replace our machine with a faster machine.
+
+66
+00:02:56,370 --> 00:02:59,110
+
+
+67
+00:02:59,110 --> 00:03:01,480
+This also decreases delay.
+
+68
+00:03:01,480 --> 00:03:04,150
+If you look at the amount of delay in the area
+
+69
+00:03:04,150 --> 00:03:07,910
+where lambda is less than mu, but close to it,
+
+70
+00:03:07,910 --> 00:03:11,360
+you can see that the green line is very far below the red line.
+
+71
+00:03:11,360 --> 00:03:13,450
+In other words, by increasing the capacity
+
+72
+00:03:13,450 --> 00:03:15,430
+of the factory or the queue, we've
+
+73
+00:03:15,430 --> 00:03:18,050
+decreased the waiting time.
+
+74
+00:03:18,050 --> 00:03:21,790
+Even though we had enough capacity to handle the demand,
+
+75
+00:03:21,790 --> 00:03:24,860
+if lambda is less than mu, but close to it,
+
+76
+00:03:24,860 --> 00:03:27,980
+we still have plenty of capacity to handle the demand.
+
+77
+00:03:27,980 --> 00:03:32,560
+However, the waiting time and the amount of inventory,
+
+78
+00:03:32,560 --> 00:03:36,040
+or the number of customers, goes up when lambda is close to mu,
+
+79
+00:03:36,040 --> 00:03:37,210
+but even less than that.
+
+80
+00:03:37,210 --> 00:03:40,000
+And that's shown by the red line.
+
+81
+00:03:40,000 --> 00:03:44,230
+By increasing the capacity of the factory, in this case,
+
+82
+00:03:44,230 --> 00:03:48,820
+replacing a machine by another machine which is twice as fast,
+
+83
+00:03:48,820 --> 00:03:51,440
+we've not only given ourselves more capacity,
+
+84
+00:03:51,440 --> 00:03:54,430
+but we've also reduced the waiting time,
+
+85
+00:03:54,430 --> 00:03:56,590
+even when there was sufficient capacity
+
+86
+00:03:56,590 --> 00:03:59,740
+for the demand earlier.
+
+87
+00:03:59,740 --> 00:04:03,220
+There are plenty more single-stage queuing models.
+
+88
+00:04:03,220 --> 00:04:05,470
+Things get more complicated when there
+
+89
+00:04:05,470 --> 00:04:09,130
+are multiple servers, which we're about to talk about,
+
+90
+00:04:09,130 --> 00:04:11,080
+when there's only finite space for queuing,
+
+91
+00:04:11,080 --> 00:04:13,450
+not an unlimited amount of space,
+
+92
+00:04:13,450 --> 00:04:16,149
+when the arrival process is not Poisson,
+
+93
+00:04:16,149 --> 00:04:19,600
+and the service process is not exponential.
+
+94
+00:04:19,600 --> 00:04:23,370
+In some cases there are formulas that we can use,
+
+95
+00:04:23,370 --> 00:04:26,290
+that are exact or approximate for some cases,
+
+96
+00:04:26,290 --> 00:04:28,140
+but not for all cases.
+
+97
+00:04:28,140 --> 00:04:32,410
+A relatively simple extension is the s-Server Queue.
+
+98
+00:04:32,410 --> 00:04:34,630
+In this picture, we have s equals 3.
+
+99
+00:04:34,630 --> 00:04:38,920
+There is three servers in this queuing system.
+
+100
+00:04:38,920 --> 00:04:41,980
+If the demand is too great for a single server,
+
+101
+00:04:41,980 --> 00:04:45,220
+and we can't increase the speed of that server,
+
+102
+00:04:45,220 --> 00:04:47,620
+we can have multiple servers.
+
+103
+00:04:47,620 --> 00:04:50,710
+One way of doing that would be to have multiple queues.
+
+104
+00:04:50,710 --> 00:04:55,370
+So each server has a queue accumulating in front of it.
+
+105
+00:04:55,370 --> 00:04:57,440
+When customers arrive, they must choose the queue
+
+106
+00:04:57,440 --> 00:05:00,240
+and stay on it until they are served.
+
+107
+00:05:00,240 --> 00:05:04,760
+However, a better plan is to combine all of those queues
+
+108
+00:05:04,760 --> 00:05:06,170
+into a single queue.
+
+109
+00:05:06,170 --> 00:05:09,200
+So now we have a single queue with three servers.
+
+110
+00:05:09,200 --> 00:05:13,970
+The average time for one combined M/M/s queue is better
+
+111
+00:05:13,970 --> 00:05:19,340
+than s/M/M/1 queues, because in the M/M/s queue,
+
+112
+00:05:19,340 --> 00:05:23,240
+all servers are busy when there are more than s customers.
+
+113
+00:05:23,240 --> 00:05:25,730
+When we don't combine the queues,
+
+114
+00:05:25,730 --> 00:05:30,230
+there may be times when some queues--
+
+115
+00:05:30,230 --> 00:05:32,450
+if we don't combine the queues, there
+
+116
+00:05:32,450 --> 00:05:36,260
+will be times when some servers are not busy,
+
+117
+00:05:36,260 --> 00:05:39,620
+because their queue is empty, but the other servers are busy
+
+118
+00:05:39,620 --> 00:05:42,310
+and they have queues.
+
+119
+00:05:42,310 --> 00:05:44,680
+The question is, is this a good idea?
+
+120
+00:05:44,680 --> 00:05:47,920
+Is it better to have three servers in parallel
+
+121
+00:05:47,920 --> 00:05:51,430
+rather than one server three times as fast?
+
+122
+00:05:51,430 --> 00:05:55,920
+Here's the transition graph for the M/M/s queue.
+
+123
+00:05:55,920 --> 00:05:59,570
+Now, the arrival process is the same in all states.
+
+124
+00:05:59,570 --> 00:06:03,070
+So the transitions from n to n plus 1
+
+125
+00:06:03,070 --> 00:06:05,230
+haven't changed from the previews,
+
+126
+00:06:05,230 --> 00:06:10,720
+but the service processes or departure processes do change.
+
+127
+00:06:10,720 --> 00:06:13,870
+When there are k, which is greater than s customers
+
+128
+00:06:13,870 --> 00:06:16,870
+in the system, the departure rate
+
+129
+00:06:16,870 --> 00:06:22,610
+is s mu, since all servers are always busy in that case.
+
+130
+00:06:22,610 --> 00:06:26,360
+When there are k less than or equal to s customers
+
+131
+00:06:26,360 --> 00:06:28,340
+in the system, the departure rate
+
+132
+00:06:28,340 --> 00:06:33,606
+is k times mu, since only k of the servers are busy.
+
+133
+00:06:33,606 --> 00:06:35,480
+That leads to a somewhat more complicated set
+
+134
+00:06:35,480 --> 00:06:38,090
+of transition equations.
+
+135
+00:06:38,090 --> 00:06:41,180
+For your information, we can get an analytical solution to this.
+
+136
+00:06:41,180 --> 00:06:42,180
+Don't worry about it.
+
+137
+00:06:42,180 --> 00:06:47,610
+It's complicated and not necessary to work out.
+
+138
+00:06:47,610 --> 00:06:52,550
+Here's the formulas for the probability distribution.
+
+139
+00:06:52,550 --> 00:06:56,570
+Pi 0 is a normalizing constant.
+
+140
+00:06:56,570 --> 00:06:59,030
+We have two different formulas, one for k less than s
+
+141
+00:06:59,030 --> 00:07:00,440
+and one for k greater than s.
+
+142
+00:07:00,440 --> 00:07:02,950
+
+
+143
+00:07:02,950 --> 00:07:05,830
+Here row is equal to lambda over s mu,
+
+144
+00:07:05,830 --> 00:07:08,530
+and that has to be less than 1 for the same reason
+
+145
+00:07:08,530 --> 00:07:11,200
+that row being less than 1 was required before.
+
+146
+00:07:11,200 --> 00:07:14,969
+We can draw some graphs from these formulas.
+
+147
+00:07:14,969 --> 00:07:17,260
+These are graphs of the waiting time versus the arrival
+
+148
+00:07:17,260 --> 00:07:21,310
+rate for four different cases in which the capacity
+
+149
+00:07:21,310 --> 00:07:23,760
+of the system are all four.
+
+150
+00:07:23,760 --> 00:07:26,860
+For the lowest graph, there are four servers,
+
+151
+00:07:26,860 --> 00:07:28,936
+each operating at rate 1.
+
+152
+00:07:28,936 --> 00:07:30,310
+For the next to the lowest, there
+
+153
+00:07:30,310 --> 00:07:33,430
+are two servers, each operating at rate 2.
+
+154
+00:07:33,430 --> 00:07:35,320
+For the next one, there are four servers,
+
+155
+00:07:35,320 --> 00:07:37,359
+each operating at rate 1.
+
+156
+00:07:37,359 --> 00:07:39,400
+And for the highest one, there are eight servers,
+
+157
+00:07:39,400 --> 00:07:42,790
+each operating at the rate 0.5.
+
+158
+00:07:42,790 --> 00:07:47,230
+The graphs all go to infinity as the arrival process approaches
+
+159
+00:07:47,230 --> 00:07:49,210
+the capacity, which is four.
+
+160
+00:07:49,210 --> 00:07:51,550
+But notice that the waiting time for a large number
+
+161
+00:07:51,550 --> 00:07:53,860
+of slow servers is greater than that
+
+162
+00:07:53,860 --> 00:07:56,170
+for a small number of fast servers,
+
+163
+00:07:56,170 --> 00:07:59,230
+especially when the arrival rate is low.
+
+164
+00:07:59,230 --> 00:08:02,080
+From this graph, we can see that a single fast machine provides
+
+165
+00:08:02,080 --> 00:08:04,750
+better performance in terms of reduced waiting
+
+166
+00:08:04,750 --> 00:08:06,940
+time than several machines in parallel,
+
+167
+00:08:06,940 --> 00:08:09,530
+especially if the demand rate is low.
+
+168
+00:08:09,530 --> 00:08:13,030
+But it is often true that the single fast machine
+
+169
+00:08:13,030 --> 00:08:16,120
+is more expensive to own and operate
+
+170
+00:08:16,120 --> 00:08:19,660
+than several parallel machines with the same total capacity
+
+171
+00:08:19,660 --> 00:08:21,880
+and the same performance in other respects.
+
+172
+00:08:21,880 --> 00:08:25,600
+So it's probably a good idea to have several slow servers
+
+173
+00:08:25,600 --> 00:08:28,210
+rather than one fast one when the system is
+
+174
+00:08:28,210 --> 00:08:30,340
+operating near capacity.
+
+175
+00:08:30,340 --> 00:08:33,159
+When the system is near capacity the performance
+
+176
+00:08:33,159 --> 00:08:36,880
+is pretty much the same, but the cost of equipment may be lower.
+
+177
+00:08:36,880 --> 00:08:39,340
+Going back to the graphs that we looked at earlier,
+
+178
+00:08:39,340 --> 00:08:43,600
+here's the effect of replacing the single slow machine
+
+179
+00:08:43,600 --> 00:08:47,030
+by either one fast machine or two slow machines.
+
+180
+00:08:47,030 --> 00:08:49,570
+To increase capacity or reduce delay
+
+181
+00:08:49,570 --> 00:08:54,190
+we can increase mu, which is the green graph,
+
+182
+00:08:54,190 --> 00:08:58,194
+or we can add servers in parallel, in the red graph.
+
+183
+00:08:58,194 --> 00:08:59,860
+But when we add the servers in parallel,
+
+184
+00:08:59,860 --> 00:09:02,680
+that will not reduce the delay as much
+
+185
+00:09:02,680 --> 00:09:04,780
+as the single fast machine.
+
+186
+00:09:04,780 --> 00:09:07,150
+Two more points before we leave this brief introduction
+
+187
+00:09:07,150 --> 00:09:09,370
+to single queuing systems.
+
+188
+00:09:09,370 --> 00:09:11,110
+We've made some very specific assumptions
+
+189
+00:09:11,110 --> 00:09:13,240
+about the queuing systems we've looked at:
+
+190
+00:09:13,240 --> 00:09:16,060
+a Poisson arrival process; an exponentially distributed
+
+191
+00:09:16,060 --> 00:09:19,150
+service process; the arrival and service processes are
+
+192
+00:09:19,150 --> 00:09:21,940
+independent; and there are no limits on the number of items
+
+193
+00:09:21,940 --> 00:09:23,686
+in the queue.
+
+194
+00:09:23,686 --> 00:09:25,560
+We saw that the shape of the graph of waiting
+
+195
+00:09:25,560 --> 00:09:27,690
+time, W versus arrival rate, lambda,
+
+196
+00:09:27,690 --> 00:09:29,460
+has certain characteristics.
+
+197
+00:09:29,460 --> 00:09:32,580
+The waiting time is small for lower arrival rates.
+
+198
+00:09:32,580 --> 00:09:35,580
+It increases monotonically as a function of arrival rate,
+
+199
+00:09:35,580 --> 00:09:37,830
+and it goes to infinity as the arrival rate approaches
+
+200
+00:09:37,830 --> 00:09:39,510
+the service rate.
+
+201
+00:09:39,510 --> 00:09:41,940
+We also saw that if the arrival rate exceeds the service
+
+202
+00:09:41,940 --> 00:09:46,030
+rate, that is to say, the demand exceeds the capacity,
+
+203
+00:09:46,030 --> 00:09:49,770
+then the queue grows and never reaches steady state.
+
+204
+00:09:49,770 --> 00:09:51,870
+The graph of waiting time versus arrival rate
+
+205
+00:09:51,870 --> 00:09:54,600
+has those same characteristics for all reasonable assumptions
+
+206
+00:09:54,600 --> 00:09:56,820
+about arrival and service processes for queues
+
+207
+00:09:56,820 --> 00:09:58,860
+with unlimited waiting room, and the same thing
+
+208
+00:09:58,860 --> 00:10:02,490
+is true for average queue length, or n bar,
+
+209
+00:10:02,490 --> 00:10:04,480
+as a function of arrival rate.
+
+210
+00:10:04,480 --> 00:10:06,780
+Systems with finite room for waiting customers
+
+211
+00:10:06,780 --> 00:10:10,049
+behave a little differently than the ones we've been looking at.
+
+212
+00:10:10,049 --> 00:10:12,090
+In this case, there's another performance measure
+
+213
+00:10:12,090 --> 00:10:14,640
+of interest-- the fraction of people or parts
+
+214
+00:10:14,640 --> 00:10:17,730
+that don't get in, that are turned away.
+
+215
+00:10:17,730 --> 00:10:19,350
+In systems that deal with people that
+
+216
+00:10:19,350 --> 00:10:22,620
+arrive from the outside world, customers
+
+217
+00:10:22,620 --> 00:10:25,830
+are turned away if they arrive when the storage area is full.
+
+218
+00:10:25,830 --> 00:10:28,740
+Those people just don't get service at all.
+
+219
+00:10:28,740 --> 00:10:31,800
+Material or work orders that arrive at a full storage area
+
+220
+00:10:31,800 --> 00:10:35,280
+from other machines are forced to wait at the workstation
+
+221
+00:10:35,280 --> 00:10:36,750
+where they came from.
+
+222
+00:10:36,750 --> 00:10:39,420
+As a result, those parts are stored there.
+
+223
+00:10:39,420 --> 00:10:41,340
+That station could be forced to be idle.
+
+224
+00:10:41,340 --> 00:10:43,480
+It is said to be blocked.
+
+225
+00:10:43,480 --> 00:10:46,350
+The average waiting time for customers that do get in
+
+226
+00:10:46,350 --> 00:10:48,660
+does not go to infinity as the arrival rate approaches
+
+227
+00:10:48,660 --> 00:10:51,810
+the service rate, and this average queue length certainly
+
+228
+00:10:51,810 --> 00:10:52,860
+does not go to infinity.
+
+229
+00:10:52,860 --> 00:10:54,960
+It is bounded by the limited waiting room.
+
+230
+00:10:54,960 --> 00:10:56,790
+Instead, the fraction of customers that
+
+231
+00:10:56,790 --> 00:10:59,550
+don't get service approaches 1.
+
+232
+00:10:59,550 --> 00:11:01,800
+This is, again, true for all reasonable assumptions
+
+233
+00:11:01,800 --> 00:11:04,567
+about arrival and service processes.
+
+234
+00:11:04,567 --> 00:11:05,067
+
+

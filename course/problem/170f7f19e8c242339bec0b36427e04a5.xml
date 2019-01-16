@@ -1,0 +1,16 @@
+<problem display_name="Question 3" markdown="&gt;&gt;There are no self-loops in continuous time Markov processes, because in continuous time models...&lt;&lt;&#10;[ ] The state constantly changes state, never staying in one state. Therefore self-loops are unnecessary.&#10;[x] The system may not change states in a finite time interval, and its remaining in one state is implied by simply not transitioning to another state.&#10;[x] The probability of remaining in a state in a finite time interval is simply approximated by 1 - (the sum of the probability densities of all possible transitions multiplied by that time interval)&#10;&#10;[explanation]&#10;See video 4 (slides 34 - 35).&#10;[explanation]&#10;&#10;" max_attempts="2">
+  <choiceresponse>
+    <label>There are no self-loops in continuous time Markov processes, because in continuous time models...</label>
+    <checkboxgroup>
+      <choice correct="false">The state constantly changes state, never staying in one state. Therefore self-loops are unnecessary.</choice>
+      <choice correct="true">The system may not change states in a finite time interval, and its remaining in one state is implied by simply not transitioning to another state.</choice>
+      <choice correct="true">The probability of remaining in a state in a finite time interval is simply approximated by 1 - (the sum of the probability densities of all possible transitions multiplied by that time interval)</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>See video 4 (slides 34 - 35).</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

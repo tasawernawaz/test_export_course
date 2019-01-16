@@ -1,0 +1,320 @@
+0
+00:00:00,000 --> 00:00:00,499
+
+
+1
+00:00:00,499 --> 00:00:01,280
+Hi, everyone.
+
+2
+00:00:01,280 --> 00:00:03,630
+Welcome to week. three recitation.
+
+3
+00:00:03,630 --> 00:00:06,490
+In this video, we'll go over practice problem two
+
+4
+00:00:06,490 --> 00:00:07,859
+from the MicroMaster's section.
+
+5
+00:00:07,859 --> 00:00:11,370
+
+
+6
+00:00:11,370 --> 00:00:12,030
+OK.
+
+7
+00:00:12,030 --> 00:00:18,190
+So let me just redraw the transition diagram here.
+
+8
+00:00:18,190 --> 00:00:26,750
+So we have four states, state one, two, three, and four.
+
+9
+00:00:26,750 --> 00:00:28,890
+Now according to the problem, the transition
+
+10
+00:00:28,890 --> 00:00:35,592
+from state one to two is 0.01.
+
+11
+00:00:35,592 --> 00:00:43,860
+The transition from one to three is 0.005.
+
+12
+00:00:43,860 --> 00:00:50,250
+From three to one, it is 0.05.
+
+13
+00:00:50,250 --> 00:00:57,750
+From two to three, it is 0.005.
+
+14
+00:00:57,750 --> 00:01:02,970
+From two to four, it's 0.1.
+
+15
+00:01:02,970 --> 00:01:10,880
+From four to one, it is 0.07.
+
+16
+00:01:10,880 --> 00:01:11,940
+OK.
+
+17
+00:01:11,940 --> 00:01:14,970
+So once we have the transition diagram set up,
+
+18
+00:01:14,970 --> 00:01:19,450
+the first thing that I do is to set up the transition matrix.
+
+19
+00:01:19,450 --> 00:01:24,450
+So if you remember from the continuous time recitation
+
+20
+00:01:24,450 --> 00:01:30,180
+video, we said in a discrete state continuous time system,
+
+21
+00:01:30,180 --> 00:01:33,210
+each column is going to sum to 0.
+
+22
+00:01:33,210 --> 00:01:37,890
+So here are the four states-- one, two, three, four, one,
+
+23
+00:01:37,890 --> 00:01:39,971
+two, three, four.
+
+24
+00:01:39,971 --> 00:01:40,470
+OK.
+
+25
+00:01:40,470 --> 00:01:44,030
+First, the transition from one to two
+
+26
+00:01:44,030 --> 00:01:54,421
+is 0.01, one to three 0.005, one to four is 0.
+
+27
+00:01:54,421 --> 00:02:02,970
+So for this column to sum to 0, this is just 0.015.
+
+28
+00:02:02,970 --> 00:02:06,090
+In column two, we have 0.
+
+29
+00:02:06,090 --> 00:02:10,050
+The transition from two to two is just the sum of the columns.
+
+30
+00:02:10,050 --> 00:02:15,331
+From two to three, we have 0.005.
+
+31
+00:02:15,331 --> 00:02:19,098
+Two to four is just 0.1.
+
+32
+00:02:19,098 --> 00:02:25,302
+So right here, we have negative 0.105.
+
+33
+00:02:25,302 --> 00:02:37,440
+In the third column, we have 0.05, 0, negative 0.05, 0,
+
+34
+00:02:37,440 --> 00:02:46,930
+and lastly 0.07, 0, 0, negative 0.07.
+
+35
+00:02:46,930 --> 00:02:47,430
+OK.
+
+36
+00:02:47,430 --> 00:02:49,840
+Here is our transition matrix.
+
+37
+00:02:49,840 --> 00:02:53,760
+Now, we know that one of these equations is redundant,
+
+38
+00:02:53,760 --> 00:02:58,950
+and we're going to replace it with the normalization
+
+39
+00:02:58,950 --> 00:03:00,370
+equation.
+
+40
+00:03:00,370 --> 00:03:10,680
+So the normalization equation is just P1 plus P2 plus P3 plus P4
+
+41
+00:03:10,680 --> 00:03:12,910
+equals 1.
+
+42
+00:03:12,910 --> 00:03:17,780
+So technically this is what we are solving for--
+
+43
+00:03:17,780 --> 00:03:27,180
+P1, P2, P3, P4 equal to 0.
+
+44
+00:03:27,180 --> 00:03:32,230
+We're solving for the null space of the transition matrix.
+
+45
+00:03:32,230 --> 00:03:34,170
+Now, it doesn't matter which equation
+
+46
+00:03:34,170 --> 00:03:37,380
+we replace with the normalization equation.
+
+47
+00:03:37,380 --> 00:03:41,710
+Here, I'm just going to replace the last equation.
+
+48
+00:03:41,710 --> 00:03:58,820
+So our new matrix essentially is 0.015, 0.01, 0.005, 1, 0,
+
+49
+00:03:58,820 --> 00:04:05,285
+negative 0.105, 0.005, 0.1--
+
+50
+00:04:05,285 --> 00:04:14,360
+no, sorry, this is not 0.1.
+
+51
+00:04:14,360 --> 00:04:17,826
+This last part is just 1.
+
+52
+00:04:17,826 --> 00:04:19,560
+The third column--
+
+53
+00:04:19,560 --> 00:04:33,290
+0.05, 0, negative 0.05, and 1, 0.07, 0, 0, and 1.
+
+54
+00:04:33,290 --> 00:04:51,680
+And this multiplies by P1, P2, P3, P4 gives us 0, 0, 0, 1.
+
+55
+00:04:51,680 --> 00:04:54,796
+This last equation is just a normalization equation.
+
+56
+00:04:54,796 --> 00:05:00,230
+
+
+57
+00:05:00,230 --> 00:05:12,750
+So let's call this matrix A. And let's call this vector B.
+
+58
+00:05:12,750 --> 00:05:18,390
+And this is the vector P.
+
+59
+00:05:18,390 --> 00:05:21,630
+So essentially in matrix formation,
+
+60
+00:05:21,630 --> 00:05:30,070
+we have A times P equals B. Now, P is what we are solving for.
+
+61
+00:05:30,070 --> 00:05:34,170
+So all we have to do is take the inverse,
+
+62
+00:05:34,170 --> 00:05:44,405
+P equals A inverse times B, and this vector P is our solution.
+
+63
+00:05:44,405 --> 00:05:48,290
+
+
+64
+00:05:48,290 --> 00:06:10,580
+P is 0.7458, 0.0710, 0.0817, 0.1015.
+
+65
+00:06:10,580 --> 00:06:14,180
+The simplest way to solve this matrix multiplication
+
+66
+00:06:14,180 --> 00:06:19,130
+is to just use Matlab, but you can use a variety of software.
+
+67
+00:06:19,130 --> 00:06:24,650
+I believe you could use Excel, Mathematica.
+
+68
+00:06:24,650 --> 00:06:26,690
+Basically any mathematical software
+
+69
+00:06:26,690 --> 00:06:27,890
+should be able to do this.
+
+70
+00:06:27,890 --> 00:06:29,660
+This is pretty basic.
+
+71
+00:06:29,660 --> 00:06:38,580
+And you could check that sum of P equals 1.
+
+72
+00:06:38,580 --> 00:06:41,270
+So the sum of the probabilities adds up to 1,
+
+73
+00:06:41,270 --> 00:06:43,530
+and we know that's correct.
+
+74
+00:06:43,530 --> 00:06:50,900
+So just so we're clear, it's P1, P2, P3, and P4.
+
+75
+00:06:50,900 --> 00:06:51,400
+OK.
+
+76
+00:06:51,400 --> 00:06:53,660
+That will be it for this recitation.
+
+77
+00:06:53,660 --> 00:06:56,930
+If you have any questions, please send me an email
+
+78
+00:06:56,930 --> 00:07:00,480
+or leave your comments in the discussion section below.
+
+79
+00:07:00,480 --> 00:07:02,170
+Thank you.
+

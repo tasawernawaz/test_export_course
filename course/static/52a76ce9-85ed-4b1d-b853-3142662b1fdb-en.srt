@@ -1,0 +1,60 @@
+0
+00:00:00,000 --> 00:00:01,220
+
+
+1
+00:00:01,220 --> 00:00:02,930
+The first week of this course is devoted
+
+2
+00:00:02,930 --> 00:00:06,350
+to an overview of manufacturing systems, what they are
+
+3
+00:00:06,350 --> 00:00:08,630
+and what problems faced designers and operators
+
+4
+00:00:08,630 --> 00:00:10,667
+of these systems.
+
+5
+00:00:10,667 --> 00:00:12,250
+We'll start off with a case that shows
+
+6
+00:00:12,250 --> 00:00:15,436
+the benefits of the methods we will describe.
+
+7
+00:00:15,436 --> 00:00:16,810
+We'll go through some definitions
+
+8
+00:00:16,810 --> 00:00:18,970
+and take a very basic look at the relationship
+
+9
+00:00:18,970 --> 00:00:21,900
+between a single manufacturing operation and the system
+
+10
+00:00:21,900 --> 00:00:23,890
+it is part of.
+
+11
+00:00:23,890 --> 00:00:26,350
+We will establish one of the basic themes of this course,
+
+12
+00:00:26,350 --> 00:00:28,650
+the effects of variability.
+
+13
+00:00:28,650 --> 00:00:30,660
+We'll describe some system architectures.
+
+14
+00:00:30,660 --> 00:00:33,950
+And we'll discuss some important performance measures.
+

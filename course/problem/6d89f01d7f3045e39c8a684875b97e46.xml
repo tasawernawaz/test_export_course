@@ -1,0 +1,17 @@
+<problem display_name="Part 3" markdown="&gt;&gt;Since station 2 (slide 101, video 5) is the most highly utilized machine, why doesn't the system’s production rate approach infinity when Station 2’s operation time approaches zero?&#10;&lt;&lt;&#10;(x) Because as Station 2’s operation time decreases, at some point station 2 cease to be limiting factor and another machine will limit the production rate.&#10;&#10;( ) Because FMS models consider realistic effects such as the time to move products between stations.&#10;&#10;( ) Because as Station 2’s operation time approaches zero, the product begins to be stored at a pace that approaches infinity, and the assumption of the infinite buffer breaks down.&#10;&#10;[explanation]&#10;Recall that other stations each have some finite production rate, independent of station 2’s production rate. Even if station 2’s operation time approaches zero, the system will be limited by another machine in the system.&#10;&#10;[explanation]&#10;&#10;" max_attempts="2" showanswer="past_due" weight="4.0">
+  <multiplechoiceresponse>
+    <label>Since station 2 (slide 101, video 5) is the most highly utilized machine, why doesn't the system’s production rate approach infinity when Station 2’s operation time approaches zero?
+</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">Because as Station 2’s operation time decreases, at some point station 2 cease to be limiting factor and another machine will limit the production rate.</choice>
+      <choice correct="false">Because FMS models consider realistic effects such as the time to move products between stations.</choice>
+      <choice correct="false">Because as Station 2’s operation time approaches zero, the product begins to be stored at a pace that approaches infinity, and the assumption of the infinite buffer breaks down.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Recall that other stations each have some finite production rate, independent of station 2’s production rate. Even if station 2’s operation time approaches zero, the system will be limited by another machine in the system.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

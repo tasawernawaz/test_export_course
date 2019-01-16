@@ -1,0 +1,17 @@
+<problem display_name="Part 6" markdown="&gt;&gt;In the HP Case, how was the second iteration of the new system different from the old system? &lt;&lt;&#10;&#10;[x] The factory’s production rate doubled.&#10;[x] A small amount of buffer was added between processes.&#10;[x] There was an incremental revenue in the hundreds of millions.&#10;[x] Labor productivity increased by 50%.&#10;&#10;[Explanation]&#10;By adding a small amount of buffer to the system, machines did not shut down as often when one sub-assembly would break, leading to higher efficiencies of machines and labor productivity, and ultimately increased revenue.&#10;[Explanation]&#10;" max_attempts="3" showanswer="past_due" weight="3.0">
+  <choiceresponse>
+    <label>In the HP Case, how was the second iteration of the new system different from the old system? </label>
+    <checkboxgroup>
+      <choice correct="true">The factory’s production rate doubled.</choice>
+      <choice correct="true">A small amount of buffer was added between processes.</choice>
+      <choice correct="true">There was an incremental revenue in the hundreds of millions.</choice>
+      <choice correct="true">Labor productivity increased by 50%.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>By adding a small amount of buffer to the system, machines did not shut down as often when one sub-assembly would break, leading to higher efficiencies of machines and labor productivity, and ultimately increased revenue.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

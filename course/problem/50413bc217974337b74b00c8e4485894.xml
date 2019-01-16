@@ -1,0 +1,6 @@
+<problem display_name="Part 1" markdown="&gt;&gt;What is the probability that your first throw is a 5? (Enter a fraction)&lt;&lt;&#10;&#10;= 1/6&#10;" max_attempts="3" showanswer="never" weight="5.0">
+  <numericalresponse answer="1/6">
+    <label>What is the probability that your first throw is a 5? (Enter a fraction)</label>
+    <formulaequationinput/>
+  </numericalresponse>
+</problem>

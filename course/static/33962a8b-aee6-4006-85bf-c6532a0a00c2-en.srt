@@ -1,0 +1,920 @@
+0
+00:00:00,000 --> 00:00:03,570
+
+
+1
+00:00:03,570 --> 00:00:07,440
+The first important example of a continuous time Markov chain
+
+2
+00:00:07,440 --> 00:00:10,080
+is the exponential random variable.
+
+3
+00:00:10,080 --> 00:00:12,150
+The exponential random variable T
+
+4
+00:00:12,150 --> 00:00:16,830
+is the time to move from state 0 to state 1 in this figure.
+
+5
+00:00:16,830 --> 00:00:19,680
+It is qualitatively and quantitatively similar
+
+6
+00:00:19,680 --> 00:00:21,420
+to geometric random variable.
+
+7
+00:00:21,420 --> 00:00:25,980
+We start in state 1 and after some time, we go to state 0.
+
+8
+00:00:25,980 --> 00:00:28,860
+So you can't have a simpler Markov chain than that.
+
+9
+00:00:28,860 --> 00:00:31,060
+Let's derive the transition equations
+
+10
+00:00:31,060 --> 00:00:33,600
+for this simple chain.
+
+11
+00:00:33,600 --> 00:00:37,680
+Pi of 0 at time t plus delta t is the probability
+
+12
+00:00:37,680 --> 00:00:41,820
+that you make the transition from 1 at time t to 0 at time t
+
+13
+00:00:41,820 --> 00:00:45,900
+plus delta t times the probability of being in state 1
+
+14
+00:00:45,900 --> 00:00:50,445
+at time t plus the probability of making the transition from 0
+
+15
+00:00:50,445 --> 00:00:53,700
+at t to 0 at t plus delta t times the probability
+
+16
+00:00:53,700 --> 00:00:56,846
+that the system was in state 0 at time t.
+
+17
+00:00:56,846 --> 00:01:01,260
+Writing it with a more compact notation, we just have pi of 0,
+
+18
+00:01:01,260 --> 00:01:05,430
+t plus delta t is mu delta t pi 1, t
+
+19
+00:01:05,430 --> 00:01:09,750
+plus pi 0, t plus little o.
+
+20
+00:01:09,750 --> 00:01:14,220
+The transition probability from 1 to 0 in an interval of length
+
+21
+00:01:14,220 --> 00:01:16,140
+delta t is mu delta t.
+
+22
+00:01:16,140 --> 00:01:18,480
+That accounts for the first term on the right side
+
+23
+00:01:18,480 --> 00:01:20,190
+of the equation.
+
+24
+00:01:20,190 --> 00:01:23,970
+The transition probability from 0 at t to 0 at t plus delta t
+
+25
+00:01:23,970 --> 00:01:27,510
+is simply 1 in this case, because once you get into state
+
+26
+00:01:27,510 --> 00:01:29,310
+0, you stay in state 0.
+
+27
+00:01:29,310 --> 00:01:34,290
+So the coefficient of pi 0t in that equation is simply 1.
+
+28
+00:01:34,290 --> 00:01:36,840
+So turning that into a differential equation
+
+29
+00:01:36,840 --> 00:01:42,270
+by subtracting pi 0t from both sides and dividing by delta t,
+
+30
+00:01:42,270 --> 00:01:43,470
+we get the derivative.
+
+31
+00:01:43,470 --> 00:01:48,360
+So d pi 0t dt is equal to mu pi 1, t.
+
+32
+00:01:48,360 --> 00:01:51,870
+Let's develop the equation for state 1.
+
+33
+00:01:51,870 --> 00:01:55,800
+The probability of being in state 1 at time t plus delta t
+
+34
+00:01:55,800 --> 00:01:57,400
+is the sum of two terms.
+
+35
+00:01:57,400 --> 00:02:00,810
+The first one is the probability of finding the system in state
+
+36
+00:02:00,810 --> 00:02:04,095
+1 at time t plus delta t-- given that it was in state 1 at time
+
+37
+00:02:04,095 --> 00:02:09,180
+t-- times the probability of it being in state 1 at time t plus
+
+38
+00:02:09,180 --> 00:02:12,540
+the probability that the system was in state 1 at time t plus
+
+39
+00:02:12,540 --> 00:02:15,960
+delta t-- given that it was in state 0 at time t--
+
+40
+00:02:15,960 --> 00:02:18,675
+times the probability of finding the system in state 0
+
+41
+00:02:18,675 --> 00:02:21,060
+at time t.
+
+42
+00:02:21,060 --> 00:02:25,215
+That just becomes the right side is 1 minus mu delta
+
+43
+00:02:25,215 --> 00:02:28,110
+t times pi of 1, t.
+
+44
+00:02:28,110 --> 00:02:31,020
+That's the first term, because the probability
+
+45
+00:02:31,020 --> 00:02:34,860
+of going from state 1 to state 1 is the probability
+
+46
+00:02:34,860 --> 00:02:36,540
+of not leaving state 1.
+
+47
+00:02:36,540 --> 00:02:39,930
+So that coefficient is just 1 minus mu delta t.
+
+48
+00:02:39,930 --> 00:02:43,314
+The probability of going from state 0 to state 1 is 0.
+
+49
+00:02:43,314 --> 00:02:43,980
+You can't do it.
+
+50
+00:02:43,980 --> 00:02:46,390
+That's the way we define the problem.
+
+51
+00:02:46,390 --> 00:02:50,280
+So there is no term for pi of 0, t.
+
+52
+00:02:50,280 --> 00:02:55,725
+So that just reduces down to d pi dt equals minus mu pi of 1,
+
+53
+00:02:55,725 --> 00:02:57,690
+t.
+
+54
+00:02:57,690 --> 00:02:59,690
+So let's put them together.
+
+55
+00:02:59,690 --> 00:03:01,450
+There are the two transition equations.
+
+56
+00:03:01,450 --> 00:03:04,820
+Note that the sum of the two equations is zero.
+
+57
+00:03:04,820 --> 00:03:07,500
+The solution to those equations is very simple
+
+58
+00:03:07,500 --> 00:03:12,110
+if the initial condition is that we start the system in state 1.
+
+59
+00:03:12,110 --> 00:03:17,480
+So that means pi of 0, 0 equals 0 and pi of 1, 0 equals 1.
+
+60
+00:03:17,480 --> 00:03:22,435
+Then pi of 1, t e to the minus mu t and pi of 1,
+
+61
+00:03:22,435 --> 00:03:25,160
+t is equal to 1 minus e to the minus mu t,
+
+62
+00:03:25,160 --> 00:03:29,760
+and the two probabilities always sum to 1.
+
+63
+00:03:29,760 --> 00:03:32,290
+Now, let's talk about exactly when that transition takes
+
+64
+00:03:32,290 --> 00:03:32,790
+place.
+
+65
+00:03:32,790 --> 00:03:34,380
+What's the probability distribution
+
+66
+00:03:34,380 --> 00:03:35,940
+of when it happens?
+
+67
+00:03:35,940 --> 00:03:39,180
+That probability is equal to the probability
+
+68
+00:03:39,180 --> 00:03:43,830
+that it was in state 1 at time t and state 0 at time t
+
+69
+00:03:43,830 --> 00:03:46,620
+plus delta t, which is approximately
+
+70
+00:03:46,620 --> 00:03:49,590
+equal to the probability that the system is in state 0
+
+71
+00:03:49,590 --> 00:03:53,100
+at time t plus delta t, given that it was in state 1
+
+72
+00:03:53,100 --> 00:03:56,270
+at time t, times the probability of it being in state 1
+
+73
+00:03:56,270 --> 00:04:01,020
+at time t, which is just mu delta t times e to the minus mu
+
+74
+00:04:01,020 --> 00:04:02,660
+t.
+
+75
+00:04:02,660 --> 00:04:06,560
+The exponential density function is, therefore, f of t
+
+76
+00:04:06,560 --> 00:04:09,920
+is mu e to the minus mu t for t greater than 0.
+
+77
+00:04:09,920 --> 00:04:12,800
+And, of course, 0 for t less than 0.
+
+78
+00:04:12,800 --> 00:04:15,530
+The time of that transition, the transition from 1 to 0,
+
+79
+00:04:15,530 --> 00:04:19,920
+is said to be exponentially distributed with rate mu.
+
+80
+00:04:19,920 --> 00:04:22,580
+The expected transition time is 1
+
+81
+00:04:22,580 --> 00:04:25,800
+over mu, which is the integral from 0 to infinity of te
+
+82
+00:04:25,800 --> 00:04:28,530
+to the minus mu t.
+
+83
+00:04:28,530 --> 00:04:31,980
+So the exponential density function
+
+84
+00:04:31,980 --> 00:04:34,620
+is mu e to the minus mu t, for t greater than
+
+85
+00:04:34,620 --> 00:04:37,980
+or equal to 0 and 0 otherwise.
+
+86
+00:04:37,980 --> 00:04:40,860
+The cumulative distribution function--
+
+87
+00:04:40,860 --> 00:04:42,950
+just the integral of that-- is 1 minus e
+
+88
+00:04:42,950 --> 00:04:46,740
+to the minus mu t, for t greater than or equal to 0 and 0
+
+89
+00:04:46,740 --> 00:04:48,960
+otherwise.
+
+90
+00:04:48,960 --> 00:04:50,880
+We already calculated the mean.
+
+91
+00:04:50,880 --> 00:04:53,670
+We can calculate the variance, that's 1 over mu squared.
+
+92
+00:04:53,670 --> 00:04:57,270
+So the standard deviation is the same as the mean, 1 over mu.
+
+93
+00:04:57,270 --> 00:05:00,420
+So the coefficient of variation is equal to 1.
+
+94
+00:05:00,420 --> 00:05:03,930
+And here are the graphs of the density and the distribution
+
+95
+00:05:03,930 --> 00:05:06,550
+function.
+
+96
+00:05:06,550 --> 00:05:08,320
+Suppose you have a process that you think
+
+97
+00:05:08,320 --> 00:05:10,810
+is exponentially distributed and you
+
+98
+00:05:10,810 --> 00:05:14,240
+collect some samples of when the transition takes place.
+
+99
+00:05:14,240 --> 00:05:16,150
+We'll see sometimes, the transition
+
+100
+00:05:16,150 --> 00:05:17,920
+takes place very soon.
+
+101
+00:05:17,920 --> 00:05:20,150
+Sometimes it takes a longer time.
+
+102
+00:05:20,150 --> 00:05:21,970
+But if we don't take very many samples,
+
+103
+00:05:21,970 --> 00:05:25,740
+we'll get a histogram that looks like the one in the figure.
+
+104
+00:05:25,740 --> 00:05:28,500
+That doesn't look much like the exponential distribution,
+
+105
+00:05:28,500 --> 00:05:30,870
+and that's because we took very few samples.
+
+106
+00:05:30,870 --> 00:05:32,880
+If we took more, it would look more
+
+107
+00:05:32,880 --> 00:05:35,260
+like that exponential distribution.
+
+108
+00:05:35,260 --> 00:05:38,080
+So keep that in mind when you take a small number of samples.
+
+109
+00:05:38,080 --> 00:05:41,610
+In fact, there's a large number of distributions
+
+110
+00:05:41,610 --> 00:05:44,430
+that have a density function that sort of qualitatively
+
+111
+00:05:44,430 --> 00:05:47,142
+look like the exponential distribution.
+
+112
+00:05:47,142 --> 00:05:48,600
+If you only take a few samples, you
+
+113
+00:05:48,600 --> 00:05:51,630
+may not be able to distinguish one from the other.
+
+114
+00:05:51,630 --> 00:05:53,880
+So if you're only planning to take a few samples,
+
+115
+00:05:53,880 --> 00:05:55,290
+then the exponential distribution
+
+116
+00:05:55,290 --> 00:05:57,600
+is probably a pretty good stand-in for anything
+
+117
+00:05:57,600 --> 00:05:58,800
+that has that general shape.
+
+118
+00:05:58,800 --> 00:06:02,519
+
+
+119
+00:06:02,519 --> 00:06:05,060
+So there are a few properties of the exponential distribution
+
+120
+00:06:05,060 --> 00:06:06,630
+that you should keep in mind.
+
+121
+00:06:06,630 --> 00:06:08,030
+The first one is memorylessness.
+
+122
+00:06:08,030 --> 00:06:09,830
+We talked about this earlier.
+
+123
+00:06:09,830 --> 00:06:14,690
+The probability that the transition time, T, is greater
+
+124
+00:06:14,690 --> 00:06:18,770
+than little t plus x, given that it's greater than x,
+
+125
+00:06:18,770 --> 00:06:21,170
+is equal to the probability that the transition
+
+126
+00:06:21,170 --> 00:06:23,390
+time is greater than t.
+
+127
+00:06:23,390 --> 00:06:26,480
+In effect, what we're saying is that if the transition hadn't
+
+128
+00:06:26,480 --> 00:06:30,890
+taken place by time x, then the time
+
+129
+00:06:30,890 --> 00:06:33,140
+that it will take place in the future
+
+130
+00:06:33,140 --> 00:06:36,170
+is distributed just the same as the exponential distribution
+
+131
+00:06:36,170 --> 00:06:38,150
+starting at time 0.
+
+132
+00:06:38,150 --> 00:06:41,500
+So you don't remember anything that happened
+
+133
+00:06:41,500 --> 00:06:44,360
+or that nothing happened before time x.
+
+134
+00:06:44,360 --> 00:06:47,640
+The time of the transition is given this way.
+
+135
+00:06:47,640 --> 00:06:51,230
+The probability that the time of the transition is between t
+
+136
+00:06:51,230 --> 00:06:55,760
+and t plus delta t, given that it hadn't taken place
+
+137
+00:06:55,760 --> 00:07:01,030
+by time T, is just mu delta t for small delta t.
+
+138
+00:07:01,030 --> 00:07:02,540
+OK, here's another one.
+
+139
+00:07:02,540 --> 00:07:05,650
+Let's suppose we have n exponentially-distributed
+
+140
+00:07:05,650 --> 00:07:09,050
+random variables with parameters mu 1 to mu n.
+
+141
+00:07:09,050 --> 00:07:10,720
+And we define a new random variable,
+
+142
+00:07:10,720 --> 00:07:14,240
+which is T, which is the minimum of all those random variables.
+
+143
+00:07:14,240 --> 00:07:16,720
+So that is the time of the first event that
+
+144
+00:07:16,720 --> 00:07:19,450
+takes place, the first time that one of those processes
+
+145
+00:07:19,450 --> 00:07:21,860
+makes its transition.
+
+146
+00:07:21,860 --> 00:07:25,800
+What's the probability distribution of T?
+
+147
+00:07:25,800 --> 00:07:28,560
+Well, it turns out the T is an exponentially-distributed
+
+148
+00:07:28,560 --> 00:07:31,020
+random variable with parameter mu
+
+149
+00:07:31,020 --> 00:07:36,030
+equals the sum of the mus of each of those individual ones.
+
+150
+00:07:36,030 --> 00:07:41,460
+Now, that's important when we think about the transition
+
+151
+00:07:41,460 --> 00:07:44,880
+graph that we started with in this section.
+
+152
+00:07:44,880 --> 00:07:49,200
+So the time that the system stays in any given state
+
+153
+00:07:49,200 --> 00:07:53,400
+is exponentially distributed, because it leaves that state
+
+154
+00:07:53,400 --> 00:07:56,190
+to different other states with times that
+
+155
+00:07:56,190 --> 00:07:58,830
+are exponentially-distributed.
+
+156
+00:07:58,830 --> 00:08:00,660
+Let's use the exponential distribution
+
+157
+00:08:00,660 --> 00:08:03,840
+to describe a model that's a little closer to the mission
+
+158
+00:08:03,840 --> 00:08:08,460
+of the course, which is to talk about manufacturing systems.
+
+159
+00:08:08,460 --> 00:08:11,880
+Let's take two exponential distributions
+
+160
+00:08:11,880 --> 00:08:15,150
+and represent the transitions from up to down
+
+161
+00:08:15,150 --> 00:08:18,400
+and down to up in a machine.
+
+162
+00:08:18,400 --> 00:08:21,730
+So the time to make the transition from up to down
+
+163
+00:08:21,730 --> 00:08:25,000
+is exponentially-distributed with parameter p.
+
+164
+00:08:25,000 --> 00:08:26,500
+The time to make the transition from
+
+165
+00:08:26,500 --> 00:08:29,200
+down to up is also exponentially-distributed,
+
+166
+00:08:29,200 --> 00:08:32,429
+this time with parameter r.
+
+167
+00:08:32,429 --> 00:08:35,039
+This is going to be similar to the geometric
+
+168
+00:08:35,039 --> 00:08:37,340
+unreliable machine model.
+
+169
+00:08:37,340 --> 00:08:40,169
+But, of course, in continuous time.
+
+170
+00:08:40,169 --> 00:08:42,710
+So again, we invoke the law of total probability.
+
+171
+00:08:42,710 --> 00:08:45,090
+The probability that the machine is up at time t
+
+172
+00:08:45,090 --> 00:08:47,750
+plus delta t is equal to the probability
+
+173
+00:08:47,750 --> 00:08:50,450
+that the machine is up at time t plus delta t, given
+
+174
+00:08:50,450 --> 00:08:53,090
+that machine is up at time t times
+
+175
+00:08:53,090 --> 00:08:55,220
+the probability that the machine was up at time t
+
+176
+00:08:55,220 --> 00:08:58,940
+plus the probability that the machine is up at time t
+
+177
+00:08:58,940 --> 00:09:02,270
+plus delta t, given that it was down at time t times
+
+178
+00:09:02,270 --> 00:09:06,560
+the probability it was down at time t plus little o.
+
+179
+00:09:06,560 --> 00:09:09,817
+And similarly for the other probability
+
+180
+00:09:09,817 --> 00:09:11,900
+we care about, the probability that the machine is
+
+181
+00:09:11,900 --> 00:09:14,490
+down at time t plus delta t.
+
+182
+00:09:14,490 --> 00:09:17,130
+So we'll use this notation, pi 1,
+
+183
+00:09:17,130 --> 00:09:20,010
+t is the probably that the machine is up at time t.
+
+184
+00:09:20,010 --> 00:09:27,230
+Pi 0, t is the probability that the machine is down at time t.
+
+185
+00:09:27,230 --> 00:09:29,210
+So the conditional probability that the machine
+
+186
+00:09:29,210 --> 00:09:32,540
+is up at time t plus delta t, given that it was up at time t,
+
+187
+00:09:32,540 --> 00:09:34,850
+is 1 minus p delta t.
+
+188
+00:09:34,850 --> 00:09:39,760
+That's the probability that it didn't leave state 1.
+
+189
+00:09:39,760 --> 00:09:41,380
+The probability that it's up at time t
+
+190
+00:09:41,380 --> 00:09:43,900
+plus delta t, given that it was down at time t,
+
+191
+00:09:43,900 --> 00:09:47,130
+is just r delta t.
+
+192
+00:09:47,130 --> 00:09:50,740
+Therefore, that becomes pi of 1, t
+
+193
+00:09:50,740 --> 00:09:53,710
+plus delta t equals 1 minus p delta t
+
+194
+00:09:53,710 --> 00:10:01,970
+pi of 1, t plus r delta t pi of 0, t plus little o.
+
+195
+00:10:01,970 --> 00:10:05,195
+And similarly, for pi of 0, t plus delta t.
+
+196
+00:10:05,195 --> 00:10:07,710
+
+
+197
+00:10:07,710 --> 00:10:10,680
+We can get ready to create a derivative by subtracting
+
+198
+00:10:10,680 --> 00:10:13,369
+pi of 1, t from both sides.
+
+199
+00:10:13,369 --> 00:10:14,910
+Now, we're going to divide by delta t
+
+200
+00:10:14,910 --> 00:10:18,030
+and take the limit as delta t goes to 0.
+
+201
+00:10:18,030 --> 00:10:19,680
+So here's the difference quotient.
+
+202
+00:10:19,680 --> 00:10:23,850
+And we take the limit and we get the pi 1, t dt
+
+203
+00:10:23,850 --> 00:10:29,850
+is equal to pi of 0, t r minus pi of 1, t p.
+
+204
+00:10:29,850 --> 00:10:34,380
+And we have a similar equation for d pi dt of 0, t.
+
+205
+00:10:34,380 --> 00:10:38,590
+Notice again that the two equations add up to 0.
+
+206
+00:10:38,590 --> 00:10:40,870
+We can solve that system of two linear differential
+
+207
+00:10:40,870 --> 00:10:44,140
+equations and two unknowns and we get pi of 0,
+
+208
+00:10:44,140 --> 00:10:49,060
+t equals p over r plus delta t plus a quantity
+
+209
+00:10:49,060 --> 00:10:53,170
+in brackets times e to the minus r plus pt.
+
+210
+00:10:53,170 --> 00:10:58,310
+And pi of 1, t is 1 minus pi 0, t.
+
+211
+00:10:58,310 --> 00:11:00,100
+So in the limit, as t goes to infinity,
+
+212
+00:11:00,100 --> 00:11:02,740
+pi of 0, which is the probability
+
+213
+00:11:02,740 --> 00:11:06,970
+that the machine is down, is equal to p over r plus p.
+
+214
+00:11:06,970 --> 00:11:09,930
+And pi of 1, the probability that the machine is up,
+
+215
+00:11:09,930 --> 00:11:12,940
+is r over r plus p.
+
+216
+00:11:12,940 --> 00:11:16,420
+And again, that fraction r over r plus p is important.
+
+217
+00:11:16,420 --> 00:11:19,420
+The mean time to fail is 1 over p
+
+218
+00:11:19,420 --> 00:11:23,026
+and the mean time to repair is 1 over r.
+
+219
+00:11:23,026 --> 00:11:27,640
+Now, this is in natural time unit, it's not operation times.
+
+220
+00:11:27,640 --> 00:11:30,550
+Natural time units means minutes and seconds and hours
+
+221
+00:11:30,550 --> 00:11:32,900
+and so forth.
+
+222
+00:11:32,900 --> 00:11:34,930
+If the machine makes mu parts per time unit
+
+223
+00:11:34,930 --> 00:11:37,420
+on the average when it's operational,
+
+224
+00:11:37,420 --> 00:11:39,940
+the steady state average production rate
+
+225
+00:11:39,940 --> 00:11:46,120
+is just mu times r over r plus p, which is mu over mean time
+
+226
+00:11:46,120 --> 00:11:49,750
+to fail over mean time to fail plus mean time to repair, which
+
+227
+00:11:49,750 --> 00:11:51,040
+is mu e.
+
+228
+00:11:51,040 --> 00:11:53,860
+And e, which is r over r plus p, is
+
+229
+00:11:53,860 --> 00:11:56,220
+the efficiency of the machine.
+

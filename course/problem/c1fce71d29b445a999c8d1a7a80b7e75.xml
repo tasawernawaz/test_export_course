@@ -1,0 +1,18 @@
+<problem display_name="Part 1" markdown="&gt;&gt;Capacity of a machine:&lt;&lt;&#10;&#10;[x] Is its maximum possible production rate.&#10;[ ] Has four types: two short-term capacities and two long-term capacities.&#10;[x] Can be used to inform factory design.&#10;[x] Can be used to inform real-time scheduling.&#10;&#10;[explanation]&#10;A machine’s capacity is defined as its maximum possible production rate. It has a short-term capacity of 1 when the machine is up and 0 when the machine is down--this can be used for real-time scheduling. A machine has a long-term capacity that is equivalent to efficiency on average (long-term).&#10;[explanation]&#10;&lt;script src=&quot;/static/st.js&quot; type=&quot;text/javascript&quot;/&gt;" max_attempts="3" showanswer="past_due" weight="3.0">
+  <choiceresponse>
+    <label>Capacity of a machine:</label>
+    <checkboxgroup>
+      <choice correct="true">Is its maximum possible production rate.</choice>
+      <choice correct="false">Has four types: two short-term capacities and two long-term capacities.</choice>
+      <choice correct="true">Can be used to inform factory design.</choice>
+      <choice correct="true">Can be used to inform real-time scheduling.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>A machine’s capacity is defined as its maximum possible production rate. It has a short-term capacity of 1 when the machine is up and 0 when the machine is down--this can be used for real-time scheduling. A machine has a long-term capacity that is equivalent to efficiency on average (long-term).</p>
+      </div>
+    </solution>
+    <script src="/static/st.js" type="text/javascript"/>
+  </choiceresponse>
+</problem>

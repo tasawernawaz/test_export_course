@@ -1,0 +1,24 @@
+<problem display_name="Question 2" markdown="While human intuition often associates natural phenomenon with a single event (like a bernoulli random variable), some situations are better described by a series of events. If there is a 0.01% chance that a tsunami will crash on a shore of a given day what is the probability that (answer in decimal):&#10;&#10;&gt;&gt; a. You will be safe on a given day? &lt;&lt;&#10;=0.9999&#10;[Explanation] 1 - 0.0001 = 0.9999 &#10;[Explanation]&#10;&#10;&gt;&gt; b. You will be safe if you live here for 20 years (assuming 1 year = 365 days)?&lt;&lt;&#10;=0.4819+-0.0001&#10;[Explanation] (1 - 0.0001)^(365*20) = 0.482&#10;[Explanation]" max_attempts="3">
+  <p>While human intuition often associates natural phenomenon with a single event (like a bernoulli random variable), some situations are better described by a series of events. If there is a 0.01% chance that a tsunami will crash on a shore of a given day what is the probability that (answer in decimal):</p>
+  <label> a. You will be safe on a given day? </label>
+  <numericalresponse answer="0.9999">
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p> 1 - 0.0001 = 0.9999 </p>
+    </div>
+  </solution>
+  <label> b. You will be safe if you live here for 20 years (assuming 1 year = 365 days)?</label>
+  <numericalresponse answer="0.4819">
+    <responseparam type="tolerance" default="0.0001"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p> (1 - 0.0001)^(365*20) = 0.482</p>
+    </div>
+  </solution>
+</problem>

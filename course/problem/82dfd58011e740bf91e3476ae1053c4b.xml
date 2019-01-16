@@ -1,0 +1,23 @@
+<problem display_name="Part 4" markdown="Now we consider the costs involved in Part 3. The cost of doing an inspection at \(M_1\) is $200.  (Consider this cost as separate from $500.)&#10;&#10;&gt;&gt;What is the expected cost is incurred at \(M_1\) per operation?&lt;&lt;&#10;&#10;= 700&#10;[Explanation]&#10;During each minute, \(M_1\) performs one operation and one inspection. Therefore the rate at which cost is incurred is just $500+$200.&#10;[Explanation]&#10;&#10;&gt;&gt; What is the expected cost is incurred at \(M_2\) per operation?&lt;&lt;&#10;&#10;= 450&#10;[Explanation]&#10;The total rate at which cost is incurred is \((1-0.1)$500\). If there were no inspection, the total rate at which cost would be incurred is $500.&#10;[Explanation]&#10;&#10;" max_attempts="3" showanswer="past_due" weight="4.0">
+  <p>Now we consider the costs involved in Part 3. The cost of doing an inspection at \(M_1\) is $200.  (Consider this cost as separate from $500.)</p>
+  <label>What is the expected cost is incurred at \(M_1\) per operation?</label>
+  <numericalresponse answer="700">
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>During each minute, \(M_1\) performs one operation and one inspection. Therefore the rate at which cost is incurred is just $500+$200.</p>
+    </div>
+  </solution>
+  <label> What is the expected cost is incurred at \(M_2\) per operation?</label>
+  <numericalresponse answer="450">
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>The total rate at which cost is incurred is \((1-0.1)$500\). If there were no inspection, the total rate at which cost would be incurred is $500.</p>
+    </div>
+  </solution>
+</problem>

@@ -1,0 +1,47 @@
+{
+  "start": [
+    0, 
+    930, 
+    3110, 
+    5020, 
+    7280, 
+    9120, 
+    11620, 
+    14200, 
+    17720, 
+    21080, 
+    24780, 
+    26810, 
+    30060
+  ], 
+  "end": [
+    930, 
+    3110, 
+    5020, 
+    7280, 
+    9120, 
+    11620, 
+    14200, 
+    17720, 
+    21080, 
+    24780, 
+    26810, 
+    30060, 
+    34000
+  ], 
+  "text": [
+    "", 
+    "Queues are stochastic processes.", 
+    "Queuing models are widely used to study", 
+    "the arrivals and departures of people or items", 
+    "to a storage area.", 
+    "We will look at some simple models of individual ques", 
+    "to understand how the interaction of random arrival", 
+    "and departure processes affect the number of items in storage", 
+    "and the time they must wait to leave the system.", 
+    "We define the capacity and utilization of such systems.", 
+    "Then we will consider networks of ques", 
+    "and use a network model to study the behavior of material flow", 
+    "in a simple model of a flexible manufacturing system."
+  ]
+}

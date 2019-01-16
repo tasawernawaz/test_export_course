@@ -1,0 +1,17 @@
+<problem display_name="Question 2" markdown="&gt;&gt;Which statement is NOT true about Jackson networks?&lt;&lt;&#10;&#10;( ) It is relatively easy to compute performance measures and provide intuition.&#10;( ) It is good approximation for a large class of systems.&#10;( ) It is easy to optimize and to use for design.&#10;( X ) It has the ability to deal with systems with storage bottlenecks.&#10;&#10;[explanation]&#10;When the storage area is full, blocking will happen. Then any station that needs to put parts into that area needs to be idle. This will reduce productivity and efficiency. &#10;[explanation]&#10;" max_attempts="3" showanswer="attempted" weight="1.0">
+  <multiplechoiceresponse>
+    <label>Which statement is NOT true about Jackson networks?</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">It is relatively easy to compute performance measures and provide intuition.</choice>
+      <choice correct="false">It is good approximation for a large class of systems.</choice>
+      <choice correct="false">It is easy to optimize and to use for design.</choice>
+      <choice correct="true">It has the ability to deal with systems with storage bottlenecks.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>When the storage area is full, blocking will happen. Then any station that needs to put parts into that area needs to be idle. This will reduce productivity and efficiency. </p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

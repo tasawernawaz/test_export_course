@@ -1,0 +1,17 @@
+<problem display_name="Question 4" markdown="&gt;&gt;Why is the coefficient of variation (CV) useful? &lt;&lt;&#10;() It is analogous to the variance of a set of data.&#10;(x) It gives a sense of how much a data set varies normalized by how big or small the values generally are.&#10;() It can be multiplied with the variance to obtain the standard deviation.&#10;[Explanation] &#10;The coefficient of variation is the standard deviation of a data set normalized (divided) by the mean of that set. A standard deviation of 2 mm may be huge when considering pencil lead diameters but would be tiny when considering the length of a firehose. Normalizing by the mean of the dataset gives a better sense towards whether this variation is actually large or not in the context of interest.&#10;[Explanation] " max_attempts="1">
+  <multiplechoiceresponse>
+    <label>Why is the coefficient of variation (CV) useful? </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">It is analogous to the variance of a set of data.</choice>
+      <choice correct="true">It gives a sense of how much a data set varies normalized by how big or small the values generally are.</choice>
+      <choice correct="false">It can be multiplied with the variance to obtain the standard deviation.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p> </p>
+        <p>The coefficient of variation is the standard deviation of a data set normalized (divided) by the mean of that set. A standard deviation of 2 mm may be huge when considering pencil lead diameters but would be tiny when considering the length of a firehose. Normalizing by the mean of the dataset gives a better sense towards whether this variation is actually large or not in the context of interest.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

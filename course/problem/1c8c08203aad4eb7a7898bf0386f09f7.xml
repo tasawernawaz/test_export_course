@@ -1,0 +1,17 @@
+<problem display_name="Part 4" markdown="&gt;&gt;For a two-machine finite-buffer line, improving a non-bottleneck machine:&#10;&lt;&lt;&#10;(x) Increases the production rate of the system.&#10;&#10;( ) Does not change the production rate of the system.&#10;&#10;( ) Decreases the production rate of the system.&#10;&#10;[explanation]&#10;See video 5 (slide 75).&#10;[explanation]&#10;&#10;&#10;&#10;" max_attempts="2" showanswer="past_due" weight="3.0">
+  <multiplechoiceresponse>
+    <label>For a two-machine finite-buffer line, improving a non-bottleneck machine:
+</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">Increases the production rate of the system.</choice>
+      <choice correct="false">Does not change the production rate of the system.</choice>
+      <choice correct="false">Decreases the production rate of the system.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>See video 5 (slide 75).</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

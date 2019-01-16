@@ -1,0 +1,17 @@
+<problem display_name="Part 1" markdown="&gt;&gt;Toy factories produce Christmas toys primarily in December. True or false?&lt;&lt;&#10;( ) True. Christmas demand for toys can be met by the normal capacity a toy factory can offer in one month.&#10;(x) False. Toy factories produce toys for Christmas throughout the entire year. These toys are stored in inventory before they are sold.&#10;( ) True. Toy companies generally contract out work to other factories to meet peak demand around Christmas.&#10;&#10;&#10;[explanation]&#10;The peak production capacity of the toy factory is not high enough to meet peak demand around Christmas. Toy factories produce throughout the year and store product in storage. The costs associated with inventory are less than the costs to produce within one month the product to meet Christmas demand (refer to video 1 around slide 4).&#10;[explanation]&#10;&#10;&lt;script src=&quot;/static/st.js&quot; type=&quot;text/javascript&quot;/&gt;&#10;" max_attempts="2" showanswer="past_due" weight="3.0">
+  <multiplechoiceresponse>
+    <label>Toy factories produce Christmas toys primarily in December. True or false?</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">True. Christmas demand for toys can be met by the normal capacity a toy factory can offer in one month.</choice>
+      <choice correct="true">False. Toy factories produce toys for Christmas throughout the entire year. These toys are stored in inventory before they are sold.</choice>
+      <choice correct="false">True. Toy companies generally contract out work to other factories to meet peak demand around Christmas.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>The peak production capacity of the toy factory is not high enough to meet peak demand around Christmas. Toy factories produce throughout the year and store product in storage. The costs associated with inventory are less than the costs to produce within one month the product to meet Christmas demand (refer to video 1 around slide 4).</p>
+      </div>
+    </solution>
+    <script src="/static/st.js" type="text/javascript"/>
+  </multiplechoiceresponse>
+</problem>

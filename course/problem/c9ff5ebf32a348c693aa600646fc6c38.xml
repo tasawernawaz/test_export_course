@@ -1,0 +1,19 @@
+<problem display_name="Part 4" markdown="null" max_attempts="3" showanswer="finished" weight="1.0">
+  <multiplechoiceresponse>
+    <label>Are the events \(w = 3\) and \(w \lt r\) dependent or independent? </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Independent</choice>
+      <choice correct="true">Dependent</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>
+          <span style="font-size: 1em;">
+            <img src="/static/Probability1.4.png" alt="" width="700" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+          </span>
+        </p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

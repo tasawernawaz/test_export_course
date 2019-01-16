@@ -1,0 +1,340 @@
+0
+00:00:00,000 --> 00:00:01,560
+
+
+1
+00:00:01,560 --> 00:00:08,300
+So in this video of 2.854.1x, we'll go over unit four or week
+
+2
+00:00:08,300 --> 00:00:09,440
+practice problem three.
+
+3
+00:00:09,440 --> 00:00:14,790
+
+
+4
+00:00:14,790 --> 00:00:19,560
+So this problem is a little complicated than the last one.
+
+5
+00:00:19,560 --> 00:00:24,060
+So basically you're at a manufacturing operation.
+
+6
+00:00:24,060 --> 00:00:28,730
+Parts arrive with a rate of 5 per hour.
+
+7
+00:00:28,730 --> 00:00:32,659
+But during this operation there is an inspection process.
+
+8
+00:00:32,659 --> 00:00:39,210
+70% of the parts will pass, 5% of the parts are going to fail,
+
+9
+00:00:39,210 --> 00:00:42,870
+and 25% of the parts is going to need rework.
+
+10
+00:00:42,870 --> 00:00:46,540
+So it re-enters this same process.
+
+11
+00:00:46,540 --> 00:00:50,675
+So let's put this down in a block diagram.
+
+12
+00:00:50,675 --> 00:00:53,620
+
+
+13
+00:00:53,620 --> 00:00:59,730
+So here is the operation Q. Parts are arriving with lambda
+
+14
+00:00:59,730 --> 00:01:01,305
+equal to 5 per hour.
+
+15
+00:01:01,305 --> 00:01:04,019
+
+
+16
+00:01:04,019 --> 00:01:10,500
+Parts pass 70% of the time.
+
+17
+00:01:10,500 --> 00:01:16,120
+Parts fail 5% of the time.
+
+18
+00:01:16,120 --> 00:01:19,180
+And parts are going to need rework,
+
+19
+00:01:19,180 --> 00:01:23,690
+going back, 25% of the time--
+
+20
+00:01:23,690 --> 00:01:27,470
+rework 25%.
+
+21
+00:01:27,470 --> 00:01:28,165
+This is 25%.
+
+22
+00:01:28,165 --> 00:01:31,510
+
+
+23
+00:01:31,510 --> 00:01:37,480
+So let's call this lambda prime, basically
+
+24
+00:01:37,480 --> 00:01:40,840
+is that rearrival rate if you want to call it that.
+
+25
+00:01:40,840 --> 00:01:45,280
+So the aggregate arrival rate basically is lambda a,
+
+26
+00:01:45,280 --> 00:01:50,770
+and that is just lambda plus lambda prime.
+
+27
+00:01:50,770 --> 00:01:52,912
+So what is lambda prime?
+
+28
+00:01:52,912 --> 00:01:56,620
+So lambda prime can be determined by whether or not
+
+29
+00:01:56,620 --> 00:02:01,300
+lambda is the limiting rate or mu is the limiting rate.
+
+30
+00:02:01,300 --> 00:02:02,990
+So lets take a look at mu.
+
+31
+00:02:02,990 --> 00:02:07,980
+The service time is 8 minutes per part.
+
+32
+00:02:07,980 --> 00:02:15,280
+So mu is 60 minutes per hour over 8 minutes, which
+
+33
+00:02:15,280 --> 00:02:22,210
+is 7.5 parts per hour.
+
+34
+00:02:22,210 --> 00:02:31,880
+So if lambda a is greater than mu,
+
+35
+00:02:31,880 --> 00:02:35,820
+then mu becomes the bottleneck of this flow.
+
+36
+00:02:35,820 --> 00:02:43,760
+So that means lambda prime is depending on mu, 0.25 mu.
+
+37
+00:02:43,760 --> 00:02:48,770
+So if this is the case, then lambda a is just 5
+
+38
+00:02:48,770 --> 00:02:56,900
+plus 1.875, which is 6.875.
+
+39
+00:02:56,900 --> 00:02:59,760
+The mu we said here is 7.5.
+
+40
+00:02:59,760 --> 00:03:05,330
+So lambda a being 6.875 is actually smaller than mu,
+
+41
+00:03:05,330 --> 00:03:09,330
+so this scenario cannot happen.
+
+42
+00:03:09,330 --> 00:03:11,030
+So that means the limiting factor
+
+43
+00:03:11,030 --> 00:03:16,460
+must be lambda a, meaning that lambda a is less than mu.
+
+44
+00:03:16,460 --> 00:03:24,770
+So lambda prime is--
+
+45
+00:03:24,770 --> 00:03:28,370
+now many of you are going to think its 0.25 times lambda,
+
+46
+00:03:28,370 --> 00:03:33,170
+but you have to include lambda prime in the rearrival process.
+
+47
+00:03:33,170 --> 00:03:44,250
+So lambda prime is just lambda plus lambda prime time 0.25.
+
+48
+00:03:44,250 --> 00:03:58,270
+So 0.75 lambda prime equal 0.25 lambda.
+
+49
+00:03:58,270 --> 00:04:06,026
+So Lambda prime is just 1/3 of lambda, which is 3 over 5--
+
+50
+00:04:06,026 --> 00:04:07,650
+I mean 5 over 3.
+
+51
+00:04:07,650 --> 00:04:14,330
+
+
+52
+00:04:14,330 --> 00:04:25,320
+Lambda a is just 5 plus 5 over 3, which is 6.6667.
+
+53
+00:04:25,320 --> 00:04:27,080
+That's lambda a.
+
+54
+00:04:27,080 --> 00:04:30,370
+
+
+55
+00:04:30,370 --> 00:04:32,770
+What is the utilization rate?
+
+56
+00:04:32,770 --> 00:04:35,270
+So this is just a simple formula,
+
+57
+00:04:35,270 --> 00:04:48,020
+rho equal lambda a divided by mu, which is 6.667 over 7.5.
+
+58
+00:04:48,020 --> 00:04:54,510
+That's 0.889.
+
+59
+00:04:54,510 --> 00:04:57,850
+The unexpected number of items are waiting in the queue.
+
+60
+00:04:57,850 --> 00:05:01,270
+So this is Lq again.
+
+61
+00:05:01,270 --> 00:05:04,930
+In practice problem two we said the formula for Lq
+
+62
+00:05:04,930 --> 00:05:10,350
+is just rho squared over 1 minus rho.
+
+63
+00:05:10,350 --> 00:05:15,980
+
+
+64
+00:05:15,980 --> 00:05:34,180
+That is 0.889 squared over 1 minus 0.889, which is 7.11.
+
+65
+00:05:34,180 --> 00:05:39,690
+So we're asking about the waiting time in the line,
+
+66
+00:05:39,690 --> 00:05:40,920
+in the queue.
+
+67
+00:05:40,920 --> 00:05:47,410
+So Wq-- we'll use Little's law, which is just Lq over lambda
+
+68
+00:05:47,410 --> 00:05:47,910
+a--
+
+69
+00:05:47,910 --> 00:05:52,780
+
+
+70
+00:05:52,780 --> 00:05:54,391
+lambda a.
+
+71
+00:05:54,391 --> 00:06:08,503
+And that is 7.11 over 6.667, 1.066 hours.
+
+72
+00:06:08,503 --> 00:06:10,820
+The expected sojourn time--
+
+73
+00:06:10,820 --> 00:06:17,630
+so sojourn time, this is just W, the amount of time people
+
+74
+00:06:17,630 --> 00:06:19,520
+spend in the system.
+
+75
+00:06:19,520 --> 00:06:24,500
+And from Little's law we know W is just L over lambda a.
+
+76
+00:06:24,500 --> 00:06:26,030
+So what is L?
+
+77
+00:06:26,030 --> 00:06:31,760
+L is just rho over 1 minus rho.
+
+78
+00:06:31,760 --> 00:06:40,240
+That's 0.889 over 1 minus 0.889.
+
+79
+00:06:40,240 --> 00:06:46,260
+And that is approximately 8.
+
+80
+00:06:46,260 --> 00:06:52,440
+So this is just 8 over 6.667.
+
+81
+00:06:52,440 --> 00:06:57,450
+That's approximately 1.2 hours.
+
+82
+00:06:57,450 --> 00:07:01,320
+This wraps up practice problem three.
+
+83
+00:07:01,320 --> 00:07:04,420
+Please leave your questions in the discussion section below.
+
+84
+00:07:04,420 --> 00:07:06,110
+Thank you.
+

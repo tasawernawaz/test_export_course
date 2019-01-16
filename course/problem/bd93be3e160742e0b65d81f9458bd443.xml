@@ -1,0 +1,25 @@
+<problem display_name="Part 4" markdown="null" max_attempts="3" showanswer="finished" weight="0.0">
+  <numericalresponse answer="12">
+    <label>What is the average time that a customer is in the system? (answer in mins)</label>
+    <description> In orther words, the average waiting time in the queue + the service time.
+(Round to 3 decimal places.) </description>
+    <responseparam type="tolerance" default="1"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>
+        <span style="font-size: 1em;">
+          <p> The average waiting time in the queue is given by \(W_{q} = \frac{L_{q}}{\lambda} = \frac{5}{12}\) (min)</p>
+          <p/>
+          <p> The average waiting time in the system includes the average waiting time in the queue and the process
+            time. Therefore, we have</p>
+          <p>
+            \(W = W_{q} + \frac{1}{\mu} = \frac{L_{q}}{\lambda} + \frac{1}{\mu} = \frac{2}{15} + \frac{1}{15} = \frac{1}{5}(hr) = 12 (min)\)
+          </p>
+        </span>
+      </p>
+    </div>
+  </solution>
+</problem>

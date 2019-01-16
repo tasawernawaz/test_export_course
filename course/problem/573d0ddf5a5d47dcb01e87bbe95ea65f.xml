@@ -1,0 +1,17 @@
+<problem display_name="Question 2" markdown="&gt;&gt;The integration of any normal distribution from negative infinity to positive infinity is:&lt;&lt;&#10;&#10;( ) 0&#10;(x) 1&#10;( ) 2&#10;( ) Infinity&#10;[explanation]&#10;As with any continuous probability distribution, the integration across its entire range will be unity. This is the equivalent to saying that summing the probabilities of all possibilities in the universe represented by the distribution is 100%. And this is also why all cumulative distribution functions must approach 1 as the independent variable approaches positive infinity.&#10;&#10;[explanation]&#10;&#10;&#10;&#10;&#10;" max_attempts="3">
+  <multiplechoiceresponse>
+    <label>The integration of any normal distribution from negative infinity to positive infinity is:</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">0</choice>
+      <choice correct="true">1</choice>
+      <choice correct="false">2</choice>
+      <choice correct="false">Infinity</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>As with any continuous probability distribution, the integration across its entire range will be unity. This is the equivalent to saying that summing the probabilities of all possibilities in the universe represented by the distribution is 100%. And this is also why all cumulative distribution functions must approach 1 as the independent variable approaches positive infinity.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

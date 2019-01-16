@@ -1,0 +1,16 @@
+<problem display_name="Question 1" markdown="&gt;&gt;Which of the following is the efficiency of the unreliable machine?&lt;&lt;&#10;&#10;( ) \(\frac{1}{\tau}\frac{r}{r+p}\)&#10;(x) \(\frac{r}{r+p}\)&#10;( ) \(\frac{p}{r+p}\)&#10;&#10;[Explanation]&#10;In the general case we need to multiply the average production rate by \(\frac{1}{\tau}\) to obtain the machine's efficiency. Because it is given that the machine produces 1 part per time unit \(\tau\) = 1, \(\frac{r}{r+p}\) is both the average production rate when the machine is in State 1 (operational), *and* the efficiency of the machine. &#10;[Explanation]" max_attempts="3" showanswer="attempted" weight="1.0">
+  <multiplechoiceresponse>
+    <label>Which of the following is the efficiency of the unreliable machine?</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">\(\frac{1}{\tau}\frac{r}{r+p}\)</choice>
+      <choice correct="true">\(\frac{r}{r+p}\)</choice>
+      <choice correct="false">\(\frac{p}{r+p}\)</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>In the general case we need to multiply the average production rate by \(\frac{1}{\tau}\) to obtain the machine's efficiency. Because it is given that the machine produces 1 part per time unit \(\tau\) = 1, \(\frac{r}{r+p}\) is both the average production rate when the machine is in State 1 (operational), *and* the efficiency of the machine. </p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

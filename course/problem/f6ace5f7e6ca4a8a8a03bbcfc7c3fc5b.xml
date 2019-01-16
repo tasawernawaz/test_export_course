@@ -1,0 +1,7 @@
+<problem display_name="Part 3" markdown="&gt;&gt;If the processing rate (production rate while the machine is up) is \(\mu=2\) parts per minute, what is the long-term average production rate? (round to 3 decimals)&lt;&lt;&#10;&#10;= 0.651+-5%&#10;&#10;" max_attempts="3" showanswer="never" weight="5.0">
+  <numericalresponse answer="0.651">
+    <label>If the processing rate (production rate while the machine is up) is \(\mu=2\) parts per minute, what is the long-term average production rate? (round to 3 decimals)</label>
+    <responseparam type="tolerance" default="5%"/>
+    <formulaequationinput/>
+  </numericalresponse>
+</problem>

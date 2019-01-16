@@ -1,0 +1,17 @@
+<problem display_name="Question 2" markdown="&gt;&gt;Why does the question, “If I flip a coin 100 times and it shows up heads every time, what is the probability it will show heads next time?” set up a trick question?&#10; &lt;&lt;&#10;&#10;[] Coins are designed to be fair, so the answer is 0.5.&#10;[x] The question lends itself to two approaches--statistical methods and probability theory--and is unclear which approach to take. &#10;[] The coin is obviously unbalanced and the probability is clearly very close to 1.&#10;&#10;[Explanation]&#10;We do not whether the coin is fair and therefore the situation has not been fully described. One could apply statistical reasoning by analyzing the data or apply probability theory based on an assumption of the fairness of the coin to answer the question of chance, and the question yields ambiguity as to which approach to take.&#10;[Explanation]" max_attempts="2">
+  <choiceresponse>
+    <label>Why does the question, “If I flip a coin 100 times and it shows up heads every time, what is the probability it will show heads next time?” set up a trick question?
+ </label>
+    <checkboxgroup>
+      <choice correct="false">Coins are designed to be fair, so the answer is 0.5.</choice>
+      <choice correct="true">The question lends itself to two approaches--statistical methods and probability theory--and is unclear which approach to take. </choice>
+      <choice correct="false">The coin is obviously unbalanced and the probability is clearly very close to 1.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>We do not whether the coin is fair and therefore the situation has not been fully described. One could apply statistical reasoning by analyzing the data or apply probability theory based on an assumption of the fairness of the coin to answer the question of chance, and the question yields ambiguity as to which approach to take.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

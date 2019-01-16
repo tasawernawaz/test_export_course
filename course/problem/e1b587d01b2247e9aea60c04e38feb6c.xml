@@ -1,0 +1,17 @@
+<problem display_name="Part 2" markdown="&gt;&gt;If a machine breaks for a long time (e.g. until all local operations stop), which Kanban buffers become empty?&lt;&lt;&#10;(x) The withdrawal kanban buffers of the broken machine and the upstream machine.&#10;( ) The withdrawal kanban buffer and the production kanban buffer of the broken machine.&#10;( ) Withdrawal kanban buffers and production kanban buffers of both broken machine and upstream machine.&#10;( ) The production kanban buffers of the broken machine and the upstream machine.&#10;[explanation]&#10;When a machine is down for a long time, parts continue to ship to the broken machine and previously finished parts continue to ship away from the broken machine until both withdrawal buffers reach empty.&#10;[explanation]&#10;&#10;&#10;" max_attempts="3" showanswer="past_due" weight="3.0">
+  <multiplechoiceresponse>
+    <label>If a machine breaks for a long time (e.g. until all local operations stop), which Kanban buffers become empty?</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">The withdrawal kanban buffers of the broken machine and the upstream machine.</choice>
+      <choice correct="false">The withdrawal kanban buffer and the production kanban buffer of the broken machine.</choice>
+      <choice correct="false">Withdrawal kanban buffers and production kanban buffers of both broken machine and upstream machine.</choice>
+      <choice correct="false">The production kanban buffers of the broken machine and the upstream machine.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>When a machine is down for a long time, parts continue to ship to the broken machine and previously finished parts continue to ship away from the broken machine until both withdrawal buffers reach empty.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

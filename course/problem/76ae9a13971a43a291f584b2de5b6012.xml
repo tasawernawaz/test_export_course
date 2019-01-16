@@ -1,0 +1,23 @@
+<problem display_name="Part 1" markdown="null" max_attempts="3" weight="1.0">
+  <multiplechoiceresponse>
+    <p>Using the DET2TL program, recommend the cheapest configuration of a two-machine deterministic processing time line. The demand on the system requires a long run production rate of .53 parts per minute. </p>
+    <p>Consider a design with machines that have 1 minute operation times. We have a choice of two models for the first machine: \(M_{11}\) has (r; p) = (.01, .008) and a price of $10,000; \(M_{12}\) has (r; p) = (.01, .006) and a price of $20,000. There is only one model available for the second machine, \(M_2\), and its parameters are (r; p) = (.01, .006) and its price is $20,000. </p>
+    <p>To avoid complicated financial issues like depreciation and taxation, we will evaluate the cost of a line as the sum of the purchase prices of the machines and the value of the average number of parts in the buffer. Assume that the value of a part is $50.</p>
+    <label>What is the least expensive design of the line that has a production rate
+of .53 parts per minute?</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">\(M_{11} -M_{2}\)</choice>
+      <choice correct="false">\(M_{12} -M_{2}\)</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>
+          <span style="font-size: 1em;">
+            <img src="/static/Screen_Shot_2018-05-16_at_12.58.39_AM.png" alt="" width="700" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+          </span>
+        </p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

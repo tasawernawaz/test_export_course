@@ -1,0 +1,16 @@
+<problem display_name="Question 4" markdown="&gt;&gt;Increasing the capacity of a single queue, single server from 1 \(\mu\) to 2 \(\mu\) (check all that apply): &lt;&lt;&#10;&#10;[x] Increases the maximum allowable customer arrival rate that is allowed for a steady-state solution to exist.&#10;[ ] Decreases the waiting time when the arrival rate is between 1 \(\mu\) and 2 \(\mu\).&#10;[x] Decreases the waiting time for all arrival rates.&#10;&#10;[explanation]&#10;Doubling the capacity also doubles the maximum customer arrival rate for a system. Because the single server has a higher capacity, it is able to process clients faster, regardless of whether the arrival rate is low or high.&#10;[explanation]&#10;&#10;&#10;" max_attempts="2">
+  <choiceresponse>
+    <label>Increasing the capacity of a single queue, single server from 1 \(\mu\) to 2 \(\mu\) (check all that apply): </label>
+    <checkboxgroup>
+      <choice correct="true">Increases the maximum allowable customer arrival rate that is allowed for a steady-state solution to exist.</choice>
+      <choice correct="false">Decreases the waiting time when the arrival rate is between 1 \(\mu\) and 2 \(\mu\).</choice>
+      <choice correct="true">Decreases the waiting time for all arrival rates.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Doubling the capacity also doubles the maximum customer arrival rate for a system. Because the single server has a higher capacity, it is able to process clients faster, regardless of whether the arrival rate is low or high.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

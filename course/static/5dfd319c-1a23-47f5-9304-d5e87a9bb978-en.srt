@@ -1,0 +1,72 @@
+0
+00:00:00,000 --> 00:00:00,900
+
+
+1
+00:00:00,900 --> 00:00:02,940
+Last week we introduced variability
+
+2
+00:00:02,940 --> 00:00:04,890
+and discussed its impact on the performance
+
+3
+00:00:04,890 --> 00:00:06,750
+of manufacturing systems.
+
+4
+00:00:06,750 --> 00:00:10,370
+This is the first of three weeks that we'll discuss randomness.
+
+5
+00:00:10,370 --> 00:00:12,350
+This is important because most variability
+
+6
+00:00:12,350 --> 00:00:13,790
+is due to randomness.
+
+7
+00:00:13,790 --> 00:00:16,040
+And we need to be able to quantify it and its effects
+
+8
+00:00:16,040 --> 00:00:17,701
+on system performance.
+
+9
+00:00:17,701 --> 00:00:19,200
+The approach in this course
+
+10
+00:00:19,200 --> 00:00:22,550
+is to provide intuition about randomness and variability,
+
+11
+00:00:22,550 --> 00:00:24,440
+not primarily to teach mathematics,
+
+12
+00:00:24,440 --> 00:00:27,200
+but some math will be needed.
+
+13
+00:00:27,200 --> 00:00:30,410
+We define probability precisely and define such concepts
+
+14
+00:00:30,410 --> 00:00:33,060
+as independence, conditional probability,
+
+15
+00:00:33,060 --> 00:00:37,040
+the law of total probability, random variables, and others.
+
+16
+00:00:37,040 --> 00:00:39,800
+We introduce some widely used probability distributions
+
+17
+00:00:39,800 --> 00:00:43,420
+for discrete and continuous random variables.
+

@@ -1,0 +1,720 @@
+0
+00:00:00,000 --> 00:00:02,110
+
+
+1
+00:00:02,110 --> 00:00:04,630
+We're now going to start talking about stochastic processes
+
+2
+00:00:04,630 --> 00:00:07,390
+and some specific ones that are important for understanding
+
+3
+00:00:07,390 --> 00:00:09,940
+complex systems and, specifically, manufacturing
+
+4
+00:00:09,940 --> 00:00:11,440
+systems.
+
+5
+00:00:11,440 --> 00:00:15,040
+Stochastic processes are random processes in which
+
+6
+00:00:15,040 --> 00:00:17,920
+time plays an important role.
+
+7
+00:00:17,920 --> 00:00:21,100
+We define X as a stochastic process if X of t
+
+8
+00:00:21,100 --> 00:00:25,270
+is a random variable for every t.
+
+9
+00:00:25,270 --> 00:00:26,590
+Here, t is a scalar.
+
+10
+00:00:26,590 --> 00:00:28,330
+It really means time for us.
+
+11
+00:00:28,330 --> 00:00:30,220
+It could be discrete or continuous.
+
+12
+00:00:30,220 --> 00:00:32,890
+We're going to talk about both cases.
+
+13
+00:00:32,890 --> 00:00:35,930
+X of t itself can be discrete or continuous,
+
+14
+00:00:35,930 --> 00:00:38,350
+a scalar or a vector.
+
+15
+00:00:38,350 --> 00:00:42,140
+A Markov process is a special stochastic process.
+
+16
+00:00:42,140 --> 00:00:44,470
+It's one in which the probability of finding X
+
+17
+00:00:44,470 --> 00:00:47,050
+at some value at time t plus delta t
+
+18
+00:00:47,050 --> 00:00:51,970
+depends only on the value of X at time t.
+
+19
+00:00:51,970 --> 00:00:57,040
+In this case, we don't require that delta t be a small number,
+
+20
+00:00:57,040 --> 00:01:01,990
+but we will later for some cases.
+
+21
+00:01:01,990 --> 00:01:05,500
+So another way of saying this, we'll define lower case X of s.
+
+22
+00:01:05,500 --> 00:01:10,822
+These are values of random variable capital X. So X of s,
+
+23
+00:01:10,822 --> 00:01:12,280
+where s is less than or equal to t,
+
+24
+00:01:12,280 --> 00:01:16,090
+is the history of the values of X before time t.
+
+25
+00:01:16,090 --> 00:01:21,670
+And we'll let A be a possible value of X.
+
+26
+00:01:21,670 --> 00:01:25,280
+So the statement is that the probability that X
+
+27
+00:01:25,280 --> 00:01:27,580
+of t plus delta t equals A--
+
+28
+00:01:27,580 --> 00:01:33,820
+given the whole history of X up to and including time t--
+
+29
+00:01:33,820 --> 00:01:38,290
+is the same as the probability of X( of t plus delta t being
+
+30
+00:01:38,290 --> 00:01:43,450
+A, given, only that X of t is equal to little x of t,
+
+31
+00:01:43,450 --> 00:01:47,540
+only at time t and we don't care about what happens before.
+
+32
+00:01:47,540 --> 00:01:51,190
+In other words, if we know what X was at time t,
+
+33
+00:01:51,190 --> 00:01:53,320
+we don't gain any more useful information
+
+34
+00:01:53,320 --> 00:01:56,410
+about X of t plus delta t, by also knowing what x
+
+35
+00:01:56,410 --> 00:01:59,960
+was at any time earlier than t.
+
+36
+00:01:59,960 --> 00:02:02,780
+Please keep in mind this is only the definition of a class
+
+37
+00:02:02,780 --> 00:02:04,040
+of mathematical models.
+
+38
+00:02:04,040 --> 00:02:06,930
+It is not a statement about reality.
+
+39
+00:02:06,930 --> 00:02:10,585
+In other words, not everything is a Markov process.
+
+40
+00:02:10,585 --> 00:02:11,460
+So here's an example.
+
+41
+00:02:11,460 --> 00:02:15,140
+Suppose I have $100 at time t equals 0.
+
+42
+00:02:15,140 --> 00:02:18,920
+At every time t greater than or equal to 1, the amount of money
+
+43
+00:02:18,920 --> 00:02:22,270
+I have is called N of t dollars.
+
+44
+00:02:22,270 --> 00:02:24,860
+Now, each time a possibly biased coin
+
+45
+00:02:24,860 --> 00:02:28,800
+is flipped, if it lands with H showing, then I gain $1.
+
+46
+00:02:28,800 --> 00:02:32,900
+So N of t plus delta t equals N of t plus 1.
+
+47
+00:02:32,900 --> 00:02:37,150
+Then N of t plus 1 equals N of t minus 1.
+
+48
+00:02:37,150 --> 00:02:39,350
+In other words, I lose $1.
+
+49
+00:02:39,350 --> 00:02:40,810
+So N of t is a Markov process.
+
+50
+00:02:40,810 --> 00:02:42,160
+Why?
+
+51
+00:02:42,160 --> 00:02:44,290
+The reason is that it doesn't matter
+
+52
+00:02:44,290 --> 00:02:47,290
+what N was at time t minus 1 and t minus 2
+
+53
+00:02:47,290 --> 00:02:49,210
+all the way back to t 0.
+
+54
+00:02:49,210 --> 00:02:53,200
+All that determines what N is at time t plus 1
+
+55
+00:02:53,200 --> 00:02:57,580
+is what N was at time t and the outcome of the coin flip.
+
+56
+00:02:57,580 --> 00:03:00,850
+There are four kinds of Markov processes.
+
+57
+00:03:00,850 --> 00:03:03,730
+Those with discrete state versus continuous state
+
+58
+00:03:03,730 --> 00:03:06,760
+and those with discrete time versus continuous time.
+
+59
+00:03:06,760 --> 00:03:09,190
+We're going to start off by talking about discrete state,
+
+60
+00:03:09,190 --> 00:03:10,489
+discrete time processes.
+
+61
+00:03:10,489 --> 00:03:12,280
+And later, we'll talk about discrete state,
+
+62
+00:03:12,280 --> 00:03:14,650
+continuous time processes.
+
+63
+00:03:14,650 --> 00:03:17,470
+So in discrete state, discrete time processes,
+
+64
+00:03:17,470 --> 00:03:21,380
+the states can be numbered 0, 1, 2, 3, and so forth.
+
+65
+00:03:21,380 --> 00:03:25,240
+Or if it's more convenient, we can have multiple indices.
+
+66
+00:03:25,240 --> 00:03:29,950
+The time can be numbered 0, 1, 2, 3, or 0, delta 2, delta
+
+67
+00:03:29,950 --> 00:03:32,360
+and so forth if more convenient.
+
+68
+00:03:32,360 --> 00:03:36,640
+So the time is essentially only integers.
+
+69
+00:03:36,640 --> 00:03:39,700
+The probability of a transition from j to i
+
+70
+00:03:39,700 --> 00:03:43,960
+in one time it is often written Pij, where
+
+71
+00:03:43,960 --> 00:03:49,270
+Pij is the probability that x of t plus 1 equals i,
+
+72
+00:03:49,270 --> 00:03:52,270
+given that X of t equals j.
+
+73
+00:03:52,270 --> 00:03:54,700
+And just as a notation note, some people
+
+74
+00:03:54,700 --> 00:03:57,590
+prefer to put the indices the other way around.
+
+75
+00:03:57,590 --> 00:04:01,060
+So what I called Pij is called Pji.
+
+76
+00:04:01,060 --> 00:04:03,460
+This is the transition graph of a discrete time Markov
+
+77
+00:04:03,460 --> 00:04:05,530
+chain with seven states.
+
+78
+00:04:05,530 --> 00:04:07,450
+The circles represent the states,
+
+79
+00:04:07,450 --> 00:04:10,600
+the arrows represent possible transitions.
+
+80
+00:04:10,600 --> 00:04:12,460
+Of course, we're only indicating transitions
+
+81
+00:04:12,460 --> 00:04:14,980
+with non-zero probabilities.
+
+82
+00:04:14,980 --> 00:04:18,500
+The labels on the arrows are the transition probabilities.
+
+83
+00:04:18,500 --> 00:04:22,000
+So we can see that if the system is in state 4 at time 12,
+
+84
+00:04:22,000 --> 00:04:27,760
+for example, then at time 13, it could be in state 1 or 2 or 6.
+
+85
+00:04:27,760 --> 00:04:30,520
+Or it could stay where it is in state 4.
+
+86
+00:04:30,520 --> 00:04:34,510
+Given that it's in state 4 at time 12,
+
+87
+00:04:34,510 --> 00:04:40,390
+then it could be in state 1 at time 13 with probability P14
+
+88
+00:04:40,390 --> 00:04:44,670
+or state 2 at time 13 with probability P24
+
+89
+00:04:44,670 --> 00:04:49,420
+or state 6 at time 13 with probability P64.
+
+90
+00:04:49,420 --> 00:04:52,750
+It might also be at state 4 at time 13
+
+91
+00:04:52,750 --> 00:04:59,590
+with probability P44, which is 1 minus P14 minus P24 minus P64.
+
+92
+00:04:59,590 --> 00:05:02,653
+That's the label on the self loop probability.
+
+93
+00:05:02,653 --> 00:05:06,360
+
+
+94
+00:05:06,360 --> 00:05:10,810
+There are four possible transitions from state 4,
+
+95
+00:05:10,810 --> 00:05:13,210
+and the sum of those probabilities must be 1.
+
+96
+00:05:13,210 --> 00:05:16,840
+So the self loop probability is 1 minus the sum of the others.
+
+97
+00:05:16,840 --> 00:05:18,700
+The following is an animation that'll
+
+98
+00:05:18,700 --> 00:05:20,890
+give you some idea of what actually
+
+99
+00:05:20,890 --> 00:05:22,750
+happens with the system.
+
+100
+00:05:22,750 --> 00:05:25,452
+We're going to start in state 1 and then
+
+101
+00:05:25,452 --> 00:05:26,660
+we're going to watch it move.
+
+102
+00:05:26,660 --> 00:05:29,760
+It might go to state 2 at time equals 1
+
+103
+00:05:29,760 --> 00:05:32,380
+or it might go to state three, we don't know.
+
+104
+00:05:32,380 --> 00:05:36,130
+We can think of the way the transitions are determined
+
+105
+00:05:36,130 --> 00:05:38,040
+by imagining that there's a spinner
+
+106
+00:05:38,040 --> 00:05:40,246
+at every one of the states.
+
+107
+00:05:40,246 --> 00:05:41,620
+For example, here's the one which
+
+108
+00:05:41,620 --> 00:05:44,350
+might correspond to state 4.
+
+109
+00:05:44,350 --> 00:05:49,590
+The red area would correspond to the transition to state 1,
+
+110
+00:05:49,590 --> 00:05:54,600
+the purple to state 2, the tan to state 6,
+
+111
+00:05:54,600 --> 00:05:57,800
+and the yellow staying home at state 4.
+
+112
+00:05:57,800 --> 00:06:00,900
+So at every time step that you're in state 4,
+
+113
+00:06:00,900 --> 00:06:03,690
+you spin the spinner and it whizzes around
+
+114
+00:06:03,690 --> 00:06:05,790
+and it ends up at one of those random places.
+
+115
+00:06:05,790 --> 00:06:07,980
+And that determines where it goes next.
+
+116
+00:06:07,980 --> 00:06:10,050
+Here's the system at time 0.
+
+117
+00:06:10,050 --> 00:06:12,750
+And we're starting it off in state 1.
+
+118
+00:06:12,750 --> 00:06:15,920
+So at time 1, it's still in state 1.
+
+119
+00:06:15,920 --> 00:06:18,690
+But at time 2, it's gone to state 3.
+
+120
+00:06:18,690 --> 00:06:21,960
+At time 4, it's still in state 3, and so on.
+
+121
+00:06:21,960 --> 00:06:23,990
+So over time, it's going to jump around and go
+
+122
+00:06:23,990 --> 00:06:26,200
+from state to state.
+
+123
+00:06:26,200 --> 00:06:28,600
+It will probably visit every one of these states
+
+124
+00:06:28,600 --> 00:06:30,590
+if we wait long enough.
+
+125
+00:06:30,590 --> 00:06:32,080
+And if we wait a long enough time,
+
+126
+00:06:32,080 --> 00:06:33,790
+it will go back to the same states.
+
+127
+00:06:33,790 --> 00:06:36,250
+And what we're interested in in the long run
+
+128
+00:06:36,250 --> 00:06:39,880
+is how much time it spends in each one of these states.
+
+129
+00:06:39,880 --> 00:06:41,650
+Later on, we're going to use this
+
+130
+00:06:41,650 --> 00:06:43,960
+as a way of representing the failures in repairs
+
+131
+00:06:43,960 --> 00:06:45,169
+of a machine.
+
+132
+00:06:45,169 --> 00:06:47,710
+And to begin with, we'll have some very simple pictures where
+
+133
+00:06:47,710 --> 00:06:49,000
+there are only two states.
+
+134
+00:06:49,000 --> 00:06:50,950
+One state is up and the other one
+
+135
+00:06:50,950 --> 00:06:53,146
+is down, operational and under repair.
+
+136
+00:06:53,146 --> 00:06:55,270
+And we're going to model it as going back and forth
+
+137
+00:06:55,270 --> 00:06:57,110
+between those two states.
+
+138
+00:06:57,110 --> 00:07:00,320
+And then later on, we'll have even more complex systems.
+
+139
+00:07:00,320 --> 00:07:03,830
+The basic idea is a simple system that looks like this.
+
+140
+00:07:03,830 --> 00:07:06,214
+We'll also be dealing with infinite dimensional systems.
+
+141
+00:07:06,214 --> 00:07:08,380
+That is, where there's an infinite number of states.
+
+142
+00:07:08,380 --> 00:07:11,050
+And there, there's some other interesting phenomena
+
+143
+00:07:11,050 --> 00:07:12,850
+that come up that we have to take care of.
+
+144
+00:07:12,850 --> 00:07:14,182
+Here's another example.
+
+145
+00:07:14,182 --> 00:07:15,640
+We're going to flip coins and count
+
+146
+00:07:15,640 --> 00:07:17,890
+how many times we get heads.
+
+147
+00:07:17,890 --> 00:07:19,910
+So we'll define our state as H of t,
+
+148
+00:07:19,910 --> 00:07:22,600
+which is the number of heads that we observe
+
+149
+00:07:22,600 --> 00:07:26,360
+after there are t coin flips.
+
+150
+00:07:26,360 --> 00:07:30,520
+So let's assume that the probability of heads is p.
+
+151
+00:07:30,520 --> 00:07:31,930
+So here's the state space.
+
+152
+00:07:31,930 --> 00:07:35,810
+We start at time 0 and we flip a coin.
+
+153
+00:07:35,810 --> 00:07:38,890
+If the coin comes up heads, which
+
+154
+00:07:38,890 --> 00:07:41,320
+it does with probability p, we make the transition
+
+155
+00:07:41,320 --> 00:07:42,910
+from 0 to 1.
+
+156
+00:07:42,910 --> 00:07:46,260
+Otherwise with probability 1 minus p, we stay at 0.
+
+157
+00:07:46,260 --> 00:07:49,280
+When we get to 1, we do the same thing.
+
+158
+00:07:49,280 --> 00:07:52,280
+And then, we get to 2 and 3 and so on.
+
+159
+00:07:52,280 --> 00:07:54,760
+So the progression from 1 to 2 to 3
+
+160
+00:07:54,760 --> 00:07:57,430
+takes place at random times because we don't know what
+
+161
+00:07:57,430 --> 00:07:59,740
+the coin flip is going to show.
+
+162
+00:07:59,740 --> 00:08:02,042
+But what we do know is that over time,
+
+163
+00:08:02,042 --> 00:08:04,000
+eventually, we're going to reach all the states
+
+164
+00:08:04,000 --> 00:08:06,140
+and go off to infinity.
+
+165
+00:08:06,140 --> 00:08:07,730
+So we have an infinite space here.
+
+166
+00:08:07,730 --> 00:08:10,280
+
+
+167
+00:08:10,280 --> 00:08:11,280
+Here's another one.
+
+168
+00:08:11,280 --> 00:08:14,220
+Remember the coin flip bets that we had at slide 5,
+
+169
+00:08:14,220 --> 00:08:18,390
+where I gained $1 or lost $1, depending on the coin flip.
+
+170
+00:08:18,390 --> 00:08:20,120
+Now, we'll allow the coin to be unfair.
+
+171
+00:08:20,120 --> 00:08:22,910
+So it has probability of heads as p.
+
+172
+00:08:22,910 --> 00:08:25,070
+And here's the state space.
+
+173
+00:08:25,070 --> 00:08:28,775
+Now, if we start with $100, for example, if we flip a heads,
+
+174
+00:08:28,775 --> 00:08:31,220
+we move up to $101.
+
+175
+00:08:31,220 --> 00:08:34,130
+If we flip tails, we move down to $99.
+
+176
+00:08:34,130 --> 00:08:37,730
+And we can bounce around along this whole state space.
+
+177
+00:08:37,730 --> 00:08:39,919
+Again, the state space is infinite,
+
+178
+00:08:39,919 --> 00:08:42,840
+although we can assume that we never get below 0.
+
+179
+00:08:42,840 --> 00:08:45,820
+But it's still infinite in the other direction.
+

@@ -1,0 +1,13 @@
+<problem display_name="Part 3" markdown="&gt;&gt;What fraction of time is the machine making good parts? (Please enter in 4 decimal places) &lt;&lt;&#10;&#10;= 0.7458 +- 0.001&#10;&#10;[explanation]&#10;The answer is simply \(p1\).&#10;[explanation]" max_attempts="3" showanswer="finished" weight="1.0">
+  <numericalresponse answer="0.7458">
+    <label>What fraction of time is the machine making good parts? (Please enter in 4 decimal places) </label>
+    <responseparam type="tolerance" default="0.001"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>The answer is simply \(p1\).</p>
+      </div>
+    </solution>
+  </numericalresponse>
+</problem>

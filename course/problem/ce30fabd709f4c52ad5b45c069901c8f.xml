@@ -1,0 +1,17 @@
+<problem display_name="Question 3" markdown="&gt;&gt;An open Jackson network is considered feasible if: &lt;&lt;&#10;&#10;[x] The system can handle the demand placed on it.&#10;&#10;[ ] If \( \lambda_i &gt;= \mu_i \) for all i.&#10;&#10;[x] If the system is found to be ergodic.&#10;&#10;[ ] If there is an exact analytic solution for the probability distribution.&#10;[explanation]&#10;If a system can handle the demand placed on it, it is considered feasible. We can express this condition as \( \lambda_i \lt \mu_i \) for all i. If the system is ergodic, there is a unique steady-state solution, implying the queue cannot grow indefinitely, which in turn implies that the system can handle the demand.&#10;[explanation]&#10;" max_attempts="3">
+  <choiceresponse>
+    <label>An open Jackson network is considered feasible if: </label>
+    <checkboxgroup>
+      <choice correct="true">The system can handle the demand placed on it.</choice>
+      <choice correct="false">If \( \lambda_i &gt;= \mu_i \) for all i.</choice>
+      <choice correct="true">If the system is found to be ergodic.</choice>
+      <choice correct="false">If there is an exact analytic solution for the probability distribution.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>If a system can handle the demand placed on it, it is considered feasible. We can express this condition as \( \lambda_i \lt \mu_i \) for all i. If the system is ergodic, there is a unique steady-state solution, implying the queue cannot grow indefinitely, which in turn implies that the system can handle the demand.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

@@ -1,0 +1,17 @@
+<problem display_name="Question 5" markdown="&gt;&gt;Why is Manufacturing System Engineering (MSE) not as advanced as other branches of engineering? (There can be more than one correct answer) &lt;&lt;&#10;&#10;[ ] The collaborative work between theoreticians and practitioners creates new knowledge in which neither party can fully understand.&#10;[x] Practitioners are encouraged to rely on gurus, slogans, and black boxes.&#10;[ ] Terminology, notations, and basic assumptions are standardized.&#10;[x] The research literature is often incomplete and practitioners are often unaware of what does exist.&#10;&#10;[Explanation]&#10;See slide 17 of the handout.&#10;&#10;[Explanation]&#10;" max_attempts="3" showanswer="attempted" weight="1.0">
+  <choiceresponse>
+    <label>Why is Manufacturing System Engineering (MSE) not as advanced as other branches of engineering? (There can be more than one correct answer) </label>
+    <checkboxgroup>
+      <choice correct="false">The collaborative work between theoreticians and practitioners creates new knowledge in which neither party can fully understand.</choice>
+      <choice correct="true">Practitioners are encouraged to rely on gurus, slogans, and black boxes.</choice>
+      <choice correct="false">Terminology, notations, and basic assumptions are standardized.</choice>
+      <choice correct="true">The research literature is often incomplete and practitioners are often unaware of what does exist.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>See slide 17 of the handout.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

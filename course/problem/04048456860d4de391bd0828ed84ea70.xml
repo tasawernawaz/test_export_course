@@ -1,0 +1,7 @@
+<problem display_name="Part 1" markdown="&gt;&gt;What fraction of bottles successfully leaves the filling machine? (round to 3 decimal places)&lt;&lt;&#10;&#10;= 0.968+-5%&#10;" max_attempts="3" showanswer="never" weight="5.0">
+  <numericalresponse answer="0.968">
+    <label>What fraction of bottles successfully leaves the filling machine? (round to 3 decimal places)</label>
+    <responseparam type="tolerance" default="5%"/>
+    <formulaequationinput/>
+  </numericalresponse>
+</problem>

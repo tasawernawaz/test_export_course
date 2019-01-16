@@ -1,0 +1,16 @@
+<problem display_name="Question 2" markdown="&gt;&gt;The 0 state in an M/M/1 queue is connected to: &lt;&lt;&#10;&#10;( ) Zero states.&#10;(x) One state.&#10;( ) Two states.&#10;[explanation]&#10;Because the system does not allow for negative values, the 0 state is only connected with the 1 state. This 0 state is special in that it is connected by departure but not arrival.&#10;[explanation]&#10;&#10;&#10;" max_attempts="2">
+  <multiplechoiceresponse>
+    <label>The 0 state in an M/M/1 queue is connected to: </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Zero states.</choice>
+      <choice correct="true">One state.</choice>
+      <choice correct="false">Two states.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Because the system does not allow for negative values, the 0 state is only connected with the 1 state. This 0 state is special in that it is connected by departure but not arrival.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

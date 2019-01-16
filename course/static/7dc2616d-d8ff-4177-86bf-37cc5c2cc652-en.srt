@@ -1,0 +1,596 @@
+0
+00:00:00,000 --> 00:00:03,130
+
+
+1
+00:00:03,130 --> 00:00:06,250
+This is a schematic diagram of a two-card kanban system.
+
+2
+00:00:06,250 --> 00:00:08,542
+It is very highly simplified.
+
+3
+00:00:08,542 --> 00:00:12,060
+Now there are two WIP buffers and two kanban buffers.
+
+4
+00:00:12,060 --> 00:00:13,790
+In a two-card kanban system, there
+
+5
+00:00:13,790 --> 00:00:17,790
+are production-ordering kanbans and withdrawal kanbans.
+
+6
+00:00:17,790 --> 00:00:19,920
+In this picture, the green represents the flows
+
+7
+00:00:19,920 --> 00:00:21,540
+of withdrawal kanban, and the red
+
+8
+00:00:21,540 --> 00:00:25,319
+shows the flow of production-ordering kanban.
+
+9
+00:00:25,319 --> 00:00:26,860
+The withdrawal kanbans are like order
+
+10
+00:00:26,860 --> 00:00:30,910
+slips from the downstream stage, telling the upstream stage
+
+11
+00:00:30,910 --> 00:00:32,710
+what they need.
+
+12
+00:00:32,710 --> 00:00:34,810
+It is often used when there's a long distance
+
+13
+00:00:34,810 --> 00:00:37,390
+between operations or work cells.
+
+14
+00:00:37,390 --> 00:00:39,070
+If the squares represent factories,
+
+15
+00:00:39,070 --> 00:00:41,260
+there's a truck traveling between them.
+
+16
+00:00:41,260 --> 00:00:44,260
+If they are two stages that are not adjacent to one another
+
+17
+00:00:44,260 --> 00:00:47,080
+in the same large factory, there may be a forklift
+
+18
+00:00:47,080 --> 00:00:48,779
+doing the transportation.
+
+19
+00:00:48,779 --> 00:00:51,070
+It's also used when parts are delivered to the machines
+
+20
+00:00:51,070 --> 00:00:52,720
+in different sized batches.
+
+21
+00:00:52,720 --> 00:00:56,230
+To summarize the next few slides, on the upstream side,
+
+22
+00:00:56,230 --> 00:00:59,484
+there's a limited number of production-ordering kanbans.
+
+23
+00:00:59,484 --> 00:01:01,150
+When a part arrives and there's at least
+
+24
+00:01:01,150 --> 00:01:04,450
+one production-ordering kanban, the part gets an operation,
+
+25
+00:01:04,450 --> 00:01:06,460
+and the kanban is attached.
+
+26
+00:01:06,460 --> 00:01:08,590
+If there are no production-ordering kanbans
+
+27
+00:01:08,590 --> 00:01:11,890
+in the kanban buffer, no operation takes place.
+
+28
+00:01:11,890 --> 00:01:13,960
+All those kanbans are in the upstream output
+
+29
+00:01:13,960 --> 00:01:16,330
+buffer attached to parts.
+
+30
+00:01:16,330 --> 00:01:18,280
+If there's a withdrawal kanban in its buffer,
+
+31
+00:01:18,280 --> 00:01:21,070
+it's swapped with the production order in kanban.
+
+32
+00:01:21,070 --> 00:01:23,350
+The production order in kanban goes to its buffer,
+
+33
+00:01:23,350 --> 00:01:26,380
+and the part, with the withdrawal kanban attached,
+
+34
+00:01:26,380 --> 00:01:28,480
+is transported to the input WIP buffer
+
+35
+00:01:28,480 --> 00:01:30,760
+of the downstream machine.
+
+36
+00:01:30,760 --> 00:01:32,740
+The part waits in that buffer until the machine
+
+37
+00:01:32,740 --> 00:01:33,580
+is ready for it.
+
+38
+00:01:33,580 --> 00:01:36,370
+When it is, the withdrawal kanban goes to its buffer,
+
+39
+00:01:36,370 --> 00:01:39,300
+the part gets an operation, and then moves on.
+
+40
+00:01:39,300 --> 00:01:41,530
+OK, now for some details.
+
+41
+00:01:41,530 --> 00:01:43,780
+First, the upstream side.
+
+42
+00:01:43,780 --> 00:01:46,460
+These pictures are very highly simplified, as I said.
+
+43
+00:01:46,460 --> 00:01:49,990
+We're only showing a single part and one or two kanbans.
+
+44
+00:01:49,990 --> 00:01:52,280
+The parts are blue, the production-ordering kanbans
+
+45
+00:01:52,280 --> 00:01:56,710
+are red, and the withdrawal kanbans are green.
+
+46
+00:01:56,710 --> 00:01:58,330
+The upstream machine does an operation
+
+47
+00:01:58,330 --> 00:02:01,810
+when its previous operation or downtime is completed,
+
+48
+00:02:01,810 --> 00:02:03,970
+and there is a production-ordering kanban
+
+49
+00:02:03,970 --> 00:02:07,000
+in the production-ordering kanban buffer,
+
+50
+00:02:07,000 --> 00:02:09,280
+and a part is available.
+
+51
+00:02:09,280 --> 00:02:11,950
+After the operation, the kanban is attached to the part,
+
+52
+00:02:11,950 --> 00:02:15,220
+and they move to the output WIP buffer of the upstream machine
+
+53
+00:02:15,220 --> 00:02:17,130
+together.
+
+54
+00:02:17,130 --> 00:02:19,620
+The upstream cycle repeats.
+
+55
+00:02:19,620 --> 00:02:22,380
+If the withdrawal kanban buffer is not empty,
+
+56
+00:02:22,380 --> 00:02:24,240
+the production ordering kanban is
+
+57
+00:02:24,240 --> 00:02:26,250
+removed from a part in the output WIP
+
+58
+00:02:26,250 --> 00:02:29,100
+buffer of the upstream machine and moved
+
+59
+00:02:29,100 --> 00:02:33,140
+to the production-ordering kanban buffer.
+
+60
+00:02:33,140 --> 00:02:36,980
+A withdrawal kanban is attached to that part.
+
+61
+00:02:36,980 --> 00:02:39,410
+The part is made ready for transportation.
+
+62
+00:02:39,410 --> 00:02:42,230
+Transportation occurs according to some specific protocol.
+
+63
+00:02:42,230 --> 00:02:44,840
+There may be a transportation batch size, where there may
+
+64
+00:02:44,840 --> 00:02:48,000
+be a transportation schedule.
+
+65
+00:02:48,000 --> 00:02:50,070
+If parts are being transported a long distance,
+
+66
+00:02:50,070 --> 00:02:53,100
+they might have to wait for a scheduled departure,
+
+67
+00:02:53,100 --> 00:02:54,720
+or a departure may only take place
+
+68
+00:02:54,720 --> 00:02:57,258
+when there's a certain number of parts to transport.
+
+69
+00:02:57,258 --> 00:02:59,890
+
+
+70
+00:02:59,890 --> 00:03:01,750
+When the previous operation or downtime
+
+71
+00:03:01,750 --> 00:03:05,100
+of the downstream machine is completed and is not blocked,
+
+72
+00:03:05,100 --> 00:03:06,610
+the downstream machine takes apart
+
+73
+00:03:06,610 --> 00:03:09,980
+from its input WIP buffer.
+
+74
+00:03:09,980 --> 00:03:12,750
+The withdrawal kanban removed from the part.
+
+75
+00:03:12,750 --> 00:03:14,460
+The withdrawal kanbans are transported
+
+76
+00:03:14,460 --> 00:03:19,760
+to withdraw buffer according to a transportation protocol.
+
+77
+00:03:19,760 --> 00:03:21,980
+Several withdrawal kanbans may accumulate
+
+78
+00:03:21,980 --> 00:03:24,116
+before they're sent upstream.
+
+79
+00:03:24,116 --> 00:03:26,850
+The downstream machine does an operation on the part,
+
+80
+00:03:26,850 --> 00:03:29,550
+and the part is sent to its next step.
+
+81
+00:03:29,550 --> 00:03:33,260
+The downstream cycle repeats.
+
+82
+00:03:33,260 --> 00:03:35,240
+So what happens when there's a machine failure
+
+83
+00:03:35,240 --> 00:03:38,920
+or other stoppage of a machine?
+
+84
+00:03:38,920 --> 00:03:41,210
+The withdrawal kanban are not added
+
+85
+00:03:41,210 --> 00:03:44,300
+to the upstream withdrawal kanban buffer.
+
+86
+00:03:44,300 --> 00:03:47,180
+The ones that are there are removed from that buffer
+
+87
+00:03:47,180 --> 00:03:49,790
+and attached to parts as the upstream machine does
+
+88
+00:03:49,790 --> 00:03:53,500
+operations A part in the output WIP
+
+89
+00:03:53,500 --> 00:03:56,710
+buffer of the upstream machine gains a withdrawal kanban
+
+90
+00:03:56,710 --> 00:04:00,890
+and is transported to the input buffer of the failed machine.
+
+91
+00:04:00,890 --> 00:04:03,680
+This continues until the upstream withdrawal kanban
+
+92
+00:04:03,680 --> 00:04:06,280
+buffer is empty.
+
+93
+00:04:06,280 --> 00:04:10,107
+No parts are added to the output buffer of the failed machine.
+
+94
+00:04:10,107 --> 00:04:12,440
+The parts that remain in the output buffer of the failed
+
+95
+00:04:12,440 --> 00:04:14,840
+machine have their production-ordering kanbans
+
+96
+00:04:14,840 --> 00:04:17,570
+replaced by withdrawal kanbans, and the parts
+
+97
+00:04:17,570 --> 00:04:19,550
+are moved to the input WIP buffer
+
+98
+00:04:19,550 --> 00:04:22,210
+of the downstream machine.
+
+99
+00:04:22,210 --> 00:04:24,900
+This continues until the output buffer of the failed machine
+
+100
+00:04:24,900 --> 00:04:25,400
+is empty.
+
+101
+00:04:25,400 --> 00:04:28,520
+
+
+102
+00:04:28,520 --> 00:04:30,090
+When the failed machine is repaired,
+
+103
+00:04:30,090 --> 00:04:31,145
+the normal cycle resumes.
+
+104
+00:04:31,145 --> 00:04:34,030
+
+
+105
+00:04:34,030 --> 00:04:36,370
+There are other kinds of kanbans.
+
+106
+00:04:36,370 --> 00:04:39,070
+The supplier kanbans are the same as withdrawal kanbans,
+
+107
+00:04:39,070 --> 00:04:42,490
+except they go to an external supplier.
+
+108
+00:04:42,490 --> 00:04:46,000
+Signal kanbans are similar to the production-ordering kanbans
+
+109
+00:04:46,000 --> 00:04:48,760
+but sent to a production station when inventory goes down
+
+110
+00:04:48,760 --> 00:04:50,442
+to a reorder point.
+
+111
+00:04:50,442 --> 00:04:53,540
+A material requisition kanban is also
+
+112
+00:04:53,540 --> 00:04:56,050
+similar to a production-ordering kanban,
+
+113
+00:04:56,050 --> 00:04:57,830
+but it's sent to a material storage area
+
+114
+00:04:57,830 --> 00:05:01,640
+when local inventory goes down to a reorder point.
+
+115
+00:05:01,640 --> 00:05:03,710
+And there are plenty others.
+
+116
+00:05:03,710 --> 00:05:06,350
+This is a summary of the kanban discipline.
+
+117
+00:05:06,350 --> 00:05:09,350
+It only works if everybody follows it.
+
+118
+00:05:09,350 --> 00:05:11,810
+Each process withdraws the necessary products
+
+119
+00:05:11,810 --> 00:05:13,970
+from the previous in necessary quantities
+
+120
+00:05:13,970 --> 00:05:16,540
+at the necessary time.
+
+121
+00:05:16,540 --> 00:05:20,290
+To enforce this, workers must first be won over.
+
+122
+00:05:20,290 --> 00:05:22,810
+This is partly out of respect for people,
+
+123
+00:05:22,810 --> 00:05:24,310
+and partly because if people don't
+
+124
+00:05:24,310 --> 00:05:26,110
+see the value in this discipline,
+
+125
+00:05:26,110 --> 00:05:28,000
+they will follow their instincts.
+
+126
+00:05:28,000 --> 00:05:29,740
+And their instincts tell them that it's
+
+127
+00:05:29,740 --> 00:05:32,170
+natural to keep making parts because those parts will
+
+128
+00:05:32,170 --> 00:05:34,760
+be needed eventually.
+
+129
+00:05:34,760 --> 00:05:38,000
+Kanbans must be attached to product.
+
+130
+00:05:38,000 --> 00:05:40,220
+Each process produces only what is withdrawn
+
+131
+00:05:40,220 --> 00:05:42,620
+by the subsequent process.
+
+132
+00:05:42,620 --> 00:05:46,130
+Defective products are never moved to the next process.
+
+133
+00:05:46,130 --> 00:05:47,210
+This is very important.
+
+134
+00:05:47,210 --> 00:05:48,960
+They should be reworked if possible.
+
+135
+00:05:48,960 --> 00:05:50,630
+If not, they should be scrapped.
+
+136
+00:05:50,630 --> 00:05:53,510
+Otherwise, they waste the time of all the machines and people
+
+137
+00:05:53,510 --> 00:05:55,370
+that operate on them later.
+
+138
+00:05:55,370 --> 00:05:57,290
+Also, they may escape the factory
+
+139
+00:05:57,290 --> 00:05:58,880
+and be delivered to a customer.
+
+140
+00:05:58,880 --> 00:06:00,266
+That is very bad.
+
+141
+00:06:00,266 --> 00:06:01,640
+In addition, the machine that did
+
+142
+00:06:01,640 --> 00:06:03,890
+the operation that made the part bad
+
+143
+00:06:03,890 --> 00:06:05,490
+should be investigated and repaired.
+
+144
+00:06:05,490 --> 00:06:08,010
+
+
+145
+00:06:08,010 --> 00:06:10,940
+The number of kanbans should be minimized,
+
+146
+00:06:10,940 --> 00:06:12,630
+and the kanban system should be used
+
+147
+00:06:12,630 --> 00:06:15,906
+to adapt to small fluctuations in demand.
+
+148
+00:06:15,906 --> 00:06:16,406
+
+

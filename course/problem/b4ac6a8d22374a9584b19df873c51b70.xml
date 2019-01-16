@@ -1,0 +1,16 @@
+<problem display_name="Question 3" markdown="&gt;&gt;Imagine the initial state in our valve-tank analogy where B2 is full and B1 is empty and all valves are closed. Now the M3 valve is open. What happens? &lt;&lt;&#10;(x) B1 remains empty and B2 loses water until it is completely empty.&#10;() B1 fills while B2 remains full.&#10;() B1 fills while B2 loses water until it becomes completely empty.&#10;[Explanation]&#10;Because all other valves except the M3 valve is open, the water from B2 will simply flow out. With no other source upstream, the tank level goes down until it becomes completely empty.&#10;[Explanation]" max_attempts="2">
+  <multiplechoiceresponse>
+    <label>Imagine the initial state in our valve-tank analogy where B2 is full and B1 is empty and all valves are closed. Now the M3 valve is open. What happens? </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">B1 remains empty and B2 loses water until it is completely empty.</choice>
+      <choice correct="false">B1 fills while B2 remains full.</choice>
+      <choice correct="false">B1 fills while B2 loses water until it becomes completely empty.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Because all other valves except the M3 valve is open, the water from B2 will simply flow out. With no other source upstream, the tank level goes down until it becomes completely empty.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

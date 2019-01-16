@@ -1,0 +1,16 @@
+<problem display_name="Question 2" markdown="&gt;&gt;What was the major flaw in the design of HP’s original system? &lt;&lt;&#10;&#10;( ) Tool breakdown&#10;(x) Little room for inventory&#10;( ) Low labor productivity&#10;&#10;[Explanation]&#10;The breakdown of equipment in the system is inevitable and is a common source of variability in manufacturing. Low productivity was a result of idle machines. Insufficient inventory space was a flaw in the design. There was no labor in the line. (There was upstream and downstream of it.) Ultimately, little room for inventory meant that when a machine broke down, downstream and upstream machines would soon stop operating, and the machines would be starved or blocked and consequently idle.&#10;[Explanation]" max_attempts="2">
+  <multiplechoiceresponse>
+    <label>What was the major flaw in the design of HP’s original system? </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Tool breakdown</choice>
+      <choice correct="true">Little room for inventory</choice>
+      <choice correct="false">Low labor productivity</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>The breakdown of equipment in the system is inevitable and is a common source of variability in manufacturing. Low productivity was a result of idle machines. Insufficient inventory space was a flaw in the design. There was no labor in the line. (There was upstream and downstream of it.) Ultimately, little room for inventory meant that when a machine broke down, downstream and upstream machines would soon stop operating, and the machines would be starved or blocked and consequently idle.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

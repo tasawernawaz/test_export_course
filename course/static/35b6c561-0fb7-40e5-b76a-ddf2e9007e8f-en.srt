@@ -1,0 +1,616 @@
+0
+00:00:00,000 --> 00:00:02,270
+
+
+1
+00:00:02,270 --> 00:00:04,700
+This week, we go into great depth about single part
+
+2
+00:00:04,700 --> 00:00:06,140
+manufacturing systems.
+
+3
+00:00:06,140 --> 00:00:09,750
+Such systems are economically important in themselves.
+
+4
+00:00:09,750 --> 00:00:12,800
+In addition, they allow us to study some important properties
+
+5
+00:00:12,800 --> 00:00:16,100
+of manufacturing systems without lots of messy complications
+
+6
+00:00:16,100 --> 00:00:19,710
+that exist in most real world factories.
+
+7
+00:00:19,710 --> 00:00:22,300
+We'll study flow lines, also known as production,
+
+8
+00:00:22,300 --> 00:00:24,100
+or transfer, lines.
+
+9
+00:00:24,100 --> 00:00:26,080
+In such systems, we have machine,
+
+10
+00:00:26,080 --> 00:00:28,810
+followed by buffer, followed by machine, followed by buffer,
+
+11
+00:00:28,810 --> 00:00:30,250
+and so forth.
+
+12
+00:00:30,250 --> 00:00:32,350
+The machines are unreliable.
+
+13
+00:00:32,350 --> 00:00:35,060
+The buffers are finite.
+
+14
+00:00:35,060 --> 00:00:37,970
+In many cases, the operation times are constant and equal
+
+15
+00:00:37,970 --> 00:00:39,710
+for all machines.
+
+16
+00:00:39,710 --> 00:00:41,480
+The reason that buffers are present
+
+17
+00:00:41,480 --> 00:00:43,760
+is to prevent the stoppage of one machine
+
+18
+00:00:43,760 --> 00:00:46,900
+from forcing the other machines to be idle.
+
+19
+00:00:46,900 --> 00:00:48,510
+This graph is the production output
+
+20
+00:00:48,510 --> 00:00:50,880
+from a simulation of a transfer line.
+
+21
+00:00:50,880 --> 00:00:53,400
+The horizontal axis is the time in weeks.
+
+22
+00:00:53,400 --> 00:00:56,310
+The vertical axis is the output in a week.
+
+23
+00:00:56,310 --> 00:00:59,250
+The parameters of the line are comparable to an industry
+
+24
+00:00:59,250 --> 00:01:02,830
+line making small auto parts, like piston rods.
+
+25
+00:01:02,830 --> 00:01:05,269
+The customer for this product may be an engine assembly
+
+26
+00:01:05,269 --> 00:01:06,690
+plant.
+
+27
+00:01:06,690 --> 00:01:08,610
+As you can see, the average weekly output
+
+28
+00:01:08,610 --> 00:01:10,890
+is about 3,000 parts.
+
+29
+00:01:10,890 --> 00:01:12,720
+But notice that the best week's output
+
+30
+00:01:12,720 --> 00:01:15,360
+is about twice that of the worst week during the two year
+
+31
+00:01:15,360 --> 00:01:17,100
+period.
+
+32
+00:01:17,100 --> 00:01:19,140
+If their customer is an assembly plant that
+
+33
+00:01:19,140 --> 00:01:22,140
+needs 3,000 parts a week, every week,
+
+34
+00:01:22,140 --> 00:01:24,420
+there must be a buffer of at least 1,000 parts
+
+35
+00:01:24,420 --> 00:01:27,000
+between this plant and that customer.
+
+36
+00:01:27,000 --> 00:01:29,800
+This simulation shows that, for these two year period,
+
+37
+00:01:29,800 --> 00:01:31,800
+there would not be an interruption of production
+
+38
+00:01:31,800 --> 00:01:35,740
+in the assembly plant if there were a buffer of that size.
+
+39
+00:01:35,740 --> 00:01:38,550
+Note that in a supply chain, upstream inventory is usually
+
+40
+00:01:38,550 --> 00:01:41,370
+less expensive to hold than downstream inventory.
+
+41
+00:01:41,370 --> 00:01:43,200
+It takes up less space.
+
+42
+00:01:43,200 --> 00:01:45,300
+Most products are assemblies, and there's usually
+
+43
+00:01:45,300 --> 00:01:47,310
+a lot of error in an assembly.
+
+44
+00:01:47,310 --> 00:01:49,510
+The first case we'll look at is pretty simple--
+
+45
+00:01:49,510 --> 00:01:51,790
+a single unreliable machine.
+
+46
+00:01:51,790 --> 00:01:53,460
+If the machine is perfectly reliable,
+
+47
+00:01:53,460 --> 00:01:56,100
+and its average operation time is tau,
+
+48
+00:01:56,100 --> 00:02:00,000
+then its maximum production rate is 1 over tau.
+
+49
+00:02:00,000 --> 00:02:03,120
+Keep in mind that sometimes the term Cycle Time is used
+
+50
+00:02:03,120 --> 00:02:04,980
+instead of Operation Time--
+
+51
+00:02:04,980 --> 00:02:08,250
+but be careful because Cycle Time has at least two meanings.
+
+52
+00:02:08,250 --> 00:02:11,280
+The other meaning is the time a part spends in a system.
+
+53
+00:02:11,280 --> 00:02:13,262
+If the system is a single reliable machine,
+
+54
+00:02:13,262 --> 00:02:14,720
+then the two meanings are the same.
+
+55
+00:02:14,720 --> 00:02:17,460
+But if it's anything more complicated, they're not.
+
+56
+00:02:17,460 --> 00:02:20,220
+Now, let's look at a single unreliable machine.
+
+57
+00:02:20,220 --> 00:02:21,870
+We'll be concerned with interruptions
+
+58
+00:02:21,870 --> 00:02:23,022
+due to machine failures.
+
+59
+00:02:23,022 --> 00:02:24,480
+Actually, the interruption could be
+
+60
+00:02:24,480 --> 00:02:28,860
+anything that could be modeled in a similar way.
+
+61
+00:02:28,860 --> 00:02:31,690
+A machine is up, or operational, or down-- being
+
+62
+00:02:31,690 --> 00:02:33,490
+repaired or maintained.
+
+63
+00:02:33,490 --> 00:02:35,380
+The Mean Time to Fail is the average time
+
+64
+00:02:35,380 --> 00:02:37,810
+between the completion of a repair and the next time
+
+65
+00:02:37,810 --> 00:02:39,290
+the machine fails.
+
+66
+00:02:39,290 --> 00:02:41,050
+It's also called Average Up Time.
+
+67
+00:02:41,050 --> 00:02:44,290
+The Mean Time to Repair is the average duration of a downtime,
+
+68
+00:02:44,290 --> 00:02:46,690
+including the time until the repair, or maintenance,
+
+69
+00:02:46,690 --> 00:02:48,250
+people show up--
+
+70
+00:02:48,250 --> 00:02:51,690
+also called Average Downtime.
+
+71
+00:02:51,690 --> 00:02:55,260
+The Mean Time Between Failures-- the MTBF--
+
+72
+00:02:55,260 --> 00:02:58,110
+is the average duration of an up-down period.
+
+73
+00:02:58,110 --> 00:03:00,600
+Sometimes people confuse Mean Time to Fail
+
+74
+00:03:00,600 --> 00:03:04,650
+and Mean Time Between Failures because Mean Time to Repair
+
+75
+00:03:04,650 --> 00:03:07,620
+is often much less than Mean Time to Fail.
+
+76
+00:03:07,620 --> 00:03:10,320
+If a machine is unreliable, and its average operation
+
+77
+00:03:10,320 --> 00:03:15,150
+time is tau, its Mean Time to Fail is MTTF.
+
+78
+00:03:15,150 --> 00:03:18,300
+Its Mean Time to Repair is MTTR.
+
+79
+00:03:18,300 --> 00:03:21,090
+Then its maximum production rate, or capacity,
+
+80
+00:03:21,090 --> 00:03:25,740
+is 1 over tau times MTTF, over MTTF plus MTTR.
+
+81
+00:03:25,740 --> 00:03:30,000
+We saw this formula in one of the Markov process videos.
+
+82
+00:03:30,000 --> 00:03:32,220
+Then we assume that the up times and down times
+
+83
+00:03:32,220 --> 00:03:34,410
+are geometrically distributed.
+
+84
+00:03:34,410 --> 00:03:35,910
+Now we will show that this formula
+
+85
+00:03:35,910 --> 00:03:38,640
+is true without having to make that assumption,
+
+86
+00:03:38,640 --> 00:03:41,990
+although we will return to that assumption later.
+
+87
+00:03:41,990 --> 00:03:45,170
+This represents a timeline of events at a machine.
+
+88
+00:03:45,170 --> 00:03:48,500
+The green bars represent the periods when the machine is up,
+
+89
+00:03:48,500 --> 00:03:52,080
+and the red bars represent when its down.
+
+90
+00:03:52,080 --> 00:03:54,900
+The average production rate, while the machine is up,
+
+91
+00:03:54,900 --> 00:03:57,210
+is 1 over tau.
+
+92
+00:03:57,210 --> 00:04:02,230
+The average duration of an up period is MTTF.
+
+93
+00:04:02,230 --> 00:04:05,020
+So the average production during an up period
+
+94
+00:04:05,020 --> 00:04:08,560
+is MTTF divided by tau.
+
+95
+00:04:08,560 --> 00:04:11,110
+The average duration of an up-down period
+
+96
+00:04:11,110 --> 00:04:14,050
+is MTTF plus I'm MTTR.
+
+97
+00:04:14,050 --> 00:04:16,209
+The average production during the up-down period
+
+98
+00:04:16,209 --> 00:04:19,360
+is MTTF over tau because the production
+
+99
+00:04:19,360 --> 00:04:21,564
+during the down period is 0.
+
+100
+00:04:21,564 --> 00:04:23,980
+The average production rate is the average production rate
+
+101
+00:04:23,980 --> 00:04:26,920
+during an up-down period divided by the average length
+
+102
+00:04:26,920 --> 00:04:28,277
+of an up-down period.
+
+103
+00:04:28,277 --> 00:04:29,860
+Therefore, the average production rate
+
+104
+00:04:29,860 --> 00:04:34,480
+is MTTF over tau, over MTTF plus MTTR--
+
+105
+00:04:34,480 --> 00:04:41,120
+or 1 over tau times the fraction MTTF over MTTF plus MTTR.
+
+106
+00:04:41,120 --> 00:04:45,510
+That fraction-- MTTF over MTTF plus MTTR--
+
+107
+00:04:45,510 --> 00:04:48,220
+is e, the efficiency of the machine.
+
+108
+00:04:48,220 --> 00:04:51,800
+e is the fraction of time the machine is up.
+
+109
+00:04:51,800 --> 00:04:54,170
+e can be thought of as the production rate in units
+
+110
+00:04:54,170 --> 00:04:58,050
+of parts per operation time, or the actual production
+
+111
+00:04:58,050 --> 00:05:00,000
+rate divided by what the production rate would
+
+112
+00:05:00,000 --> 00:05:02,650
+be if the machine never failed.
+
+113
+00:05:02,650 --> 00:05:04,739
+e is a dimensionless quantity.
+
+114
+00:05:04,739 --> 00:05:06,280
+Now, we're going to be more specific.
+
+115
+00:05:06,280 --> 00:05:07,770
+We will assume that the machine has
+
+116
+00:05:07,770 --> 00:05:10,020
+geometric up and down times.
+
+117
+00:05:10,020 --> 00:05:12,330
+This is the same model we discussed during the Markov
+
+118
+00:05:12,330 --> 00:05:15,510
+process videos.
+
+119
+00:05:15,510 --> 00:05:17,970
+The assumption is that the operation time was constant.
+
+120
+00:05:17,970 --> 00:05:21,240
+Failure and repair times are geometrically distributed.
+
+121
+00:05:21,240 --> 00:05:23,280
+Whenever we analyze systems with machines
+
+122
+00:05:23,280 --> 00:05:25,260
+that have geometric up and down time,
+
+123
+00:05:25,260 --> 00:05:28,050
+we will treat the operation time as the time unit.
+
+124
+00:05:28,050 --> 00:05:30,300
+This will simplify notation.
+
+125
+00:05:30,300 --> 00:05:36,340
+As a consequence, MTTR MTTF will be measured in operation times.
+
+126
+00:05:36,340 --> 00:05:39,220
+p is the probability that a machine fails during any given
+
+127
+00:05:39,220 --> 00:05:40,460
+operation.
+
+128
+00:05:40,460 --> 00:05:43,420
+Then MTTF is equal to 1 over p.
+
+129
+00:05:43,420 --> 00:05:46,530
+r is the probability that M gets repaired during an operation
+
+130
+00:05:46,530 --> 00:05:48,160
+time when it's down.
+
+131
+00:05:48,160 --> 00:05:51,890
+Then MTTR is equal to 1 over r.
+
+132
+00:05:51,890 --> 00:05:53,550
+The average production rate of M,
+
+133
+00:05:53,550 --> 00:05:55,770
+and parts per operation time, is then
+
+134
+00:05:55,770 --> 00:05:58,590
+e, which is equal to r over r plus p.
+
+135
+00:05:58,590 --> 00:06:00,930
+Since we assume that the operation time is the time
+
+136
+00:06:00,930 --> 00:06:02,880
+unit, the production rate is the same
+
+137
+00:06:02,880 --> 00:06:04,800
+as the machine's efficiency.
+
+138
+00:06:04,800 --> 00:06:07,110
+I will be using those terms interchangeably
+
+139
+00:06:07,110 --> 00:06:10,650
+whenever I make the geometric up and down time assumption.
+
+140
+00:06:10,650 --> 00:06:13,710
+The capacity of a machine is its maximum possible production
+
+141
+00:06:13,710 --> 00:06:15,360
+rate.
+
+142
+00:06:15,360 --> 00:06:19,050
+The machine really has three capacities.
+
+143
+00:06:19,050 --> 00:06:21,030
+One, when it's up.
+
+144
+00:06:21,030 --> 00:06:23,460
+And remember that the time unit is the operation time,
+
+145
+00:06:23,460 --> 00:06:27,110
+so 1 means 1 part per operation time.
+
+146
+00:06:27,110 --> 00:06:30,100
+0, when it's down.
+
+147
+00:06:30,100 --> 00:06:33,290
+And r over r plus p, on the average.
+
+148
+00:06:33,290 --> 00:06:35,090
+We care about short-term capacity
+
+149
+00:06:35,090 --> 00:06:37,820
+when we're thinking about real time scheduling,
+
+150
+00:06:37,820 --> 00:06:39,620
+and we care about long-term capacity
+
+151
+00:06:39,620 --> 00:06:41,750
+when we're thinking about designing a manufacturing
+
+152
+00:06:41,750 --> 00:06:42,807
+system.
+
+153
+00:06:42,807 --> 00:06:43,307
+
+

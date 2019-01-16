@@ -1,0 +1,22 @@
+<problem display_name="Question 3" markdown="null" max_attempts="2">
+  <multiplechoiceresponse>
+    <label>
+If the sun can shine while raining, does the below still hold? 
+P({I will have a cold tomorrow})=
+  P({I will have a cold tomorrow and it is raining today}) +
+   P({I will have a cold tomorrow and it is snowing today}) +
+   P({I will have a cold tomorrow and it is sunny today})
+</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">No</choice>
+      <choice correct="false">Yes</choice>
+      <choice correct="false">There is not enough information to answer the question.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>The law of total probability relies on the independence of each event. That is, \(E_i ∩ E_j = 0\) for all \(i \ne\ j\) </p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

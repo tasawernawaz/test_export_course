@@ -1,0 +1,17 @@
+<problem display_name="Question 2" markdown="&gt;&gt;Define “Design Quality”? &lt;&lt;&#10;&#10;( ) the manufacturing of products to avoid giving customers what they don’t want or would not like to have&#10;(x) the design of products that give customers what they want or would like to have&#10;( ) how much is produced and when it is produced&#10;( ) how well it is produced&#10;&#10;[Explanation]&#10;We have defined “design quality” as the design of products that give customers what they want or would like to have.&#10;[Explanation]&#10;" max_attempts="2" showanswer="finished" weight="1.0">
+  <multiplechoiceresponse>
+    <label>Define “Design Quality”? </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">the manufacturing of products to avoid giving customers what they don’t want or would not like to have</choice>
+      <choice correct="true">the design of products that give customers what they want or would like to have</choice>
+      <choice correct="false">how much is produced and when it is produced</choice>
+      <choice correct="false">how well it is produced</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>We have defined “design quality” as the design of products that give customers what they want or would like to have.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

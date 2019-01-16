@@ -1,0 +1,50 @@
+{
+  "start": [
+    0, 
+    300, 
+    1940, 
+    4460, 
+    5770, 
+    7680, 
+    9350, 
+    11637, 
+    14220, 
+    15310, 
+    17950, 
+    20610, 
+    22000, 
+    24230
+  ], 
+  "end": [
+    300, 
+    1940, 
+    4460, 
+    5770, 
+    7680, 
+    9350, 
+    11637, 
+    14220, 
+    15310, 
+    17950, 
+    20610, 
+    22000, 
+    24230, 
+    27750
+  ], 
+  "text": [
+    "", 
+    "The Toyota production system has been", 
+    "successful and widely adopted and imitated", 
+    "throughout the world.", 
+    "In this set of videos, we describe", 
+    "some of its key elements.", 
+    "Particularly how it deals with variability,", 
+    "and how it treats the people who are part of the manufacturing", 
+    "system.", 
+    "We discuss kanban, production smoothing,", 
+    "reduction of set up time, improvement activities,", 
+    "and other topics.", 
+    "We briefly discuss how the Toyota production", 
+    "system was influenced by its historical context."
+  ]
+}

@@ -1,0 +1,26 @@
+<problem display_name="Part 2" markdown="&gt;&gt;Consider the following transition graph of a discrete Markov chain with four states.&#10; &lt;p&gt;&#10; &lt;img src = &quot;/static/wk3-video2-q5.png&quot; alt = &quot;courses.edx.org/asset-v1:MITx+2.854.1x+2T2018+type@asset+block@wk3-video2-q5.png&quot; width = &quot;600px&quot;/&gt;&#10; &lt;/p&gt;&#10; If the system is in state 4 at time n, what is the probability it will be in state 4 at time n + 4 (Please round to 3 decimals) Hint: You have to solve for \(P_{41}\)? &#10; &lt;&lt;&#10;&#10;= 0.32 +- 5%&#10;&#10;[explanation]&#10;&#10;Method 1: &#10;&#10;Method 2: Sum probabilities of all possible paths.&#10;A path is denoted in the following format: &#10;\(Stage_{n+1}-Stage_{n+2}-Stage_{n+3}-Stage_{n+4}\)&#10;4-4-4-4 (system takes self-loop every single time): \(0.6^4 = 0.1296\)&#10;4-3-2-4: \(0.6*0.4*0.4*0.5 = 0.048\)&#10;3-3-2-4: \(0.4*0.6*0.4*0.5 = 0.048\)&#10;3-1-1-4: \(0.4*0.4*0.3*0.5 = 0.024\)&#10;3-1-4-4: \(0.4*0.4*0.5*0.6) = 0.048\)&#10;3-1-2-4: \(0.4*0.4*0.2*0.7 = 0.0224\)&#10;Sum: \(0.1296 + 0.048 + 0.048 + 0.024 + 0.048 + 0.0224 = 0.32\)&#10;&#10;[explanation]&#10;&#10;" max_attempts="3" showanswer="past_due" weight="4.0">
+  <numericalresponse answer="0.32">
+    <label>Consider the following transition graph of a discrete Markov chain with four states.
+ <p><img src="/static/wk3-video2-q5.png" alt="courses.edx.org/asset-v1:MITx+2.854.1x+2T2018+type@asset+block@wk3-video2-q5.png" width="600px"/></p>
+ If the system is in state 4 at time n, what is the probability it will be in state 4 at time n + 4 (Please round to 3 decimals) Hint: You have to solve for \(P_{41}\)? 
+ </label>
+    <responseparam type="tolerance" default="5%"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Method 1: </p>
+        <p>Method 2: Sum probabilities of all possible paths.</p>
+        <p>A path is denoted in the following format: </p>
+        <p>\(Stage_{n+1}-Stage_{n+2}-Stage_{n+3}-Stage_{n+4}\)</p>
+        <p>4-4-4-4 (system takes self-loop every single time): \(0.6^4 = 0.1296\)</p>
+        <p>4-3-2-4: \(0.6*0.4*0.4*0.5 = 0.048\)</p>
+        <p>3-3-2-4: \(0.4*0.6*0.4*0.5 = 0.048\)</p>
+        <p>3-1-1-4: \(0.4*0.4*0.3*0.5 = 0.024\)</p>
+        <p>3-1-4-4: \(0.4*0.4*0.5*0.6) = 0.048\)</p>
+        <p>3-1-2-4: \(0.4*0.4*0.2*0.7 = 0.0224\)</p>
+        <p>Sum: \(0.1296 + 0.048 + 0.048 + 0.024 + 0.048 + 0.0224 = 0.32\)</p>
+      </div>
+    </solution>
+  </numericalresponse>
+</problem>

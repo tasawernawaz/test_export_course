@@ -1,0 +1,17 @@
+<problem display_name="Question 1" markdown="&gt;&gt;On average, 3 people buy sandwiches from Jack's Sandwich shop every minute during lunch time. What is the probability that Jack will sell more than 10 sandwiches in the next 5 minutes? (Assume the time between sales is exponentially distributed) &lt;&lt;&#10;&#10;= 0.88153 +-0.01&#10;&#10;[Explanation]&#10;By using the formula for Poisson Distribution:&#10;\(e^{-\lambda t}\frac{(\lambda t)^x}{x!} \)&#10;for \(x=0,1,2,3,4,5,6,7,8,9,10\) and summing over x, we get \(P(X\leq 10)\).&#10;Then,&#10;\(P(X&gt;10)=1-P(X\leq 10)\).&#10;[Explanation]" max_attempts="3" showanswer="attempted" weight="1.0">
+  <numericalresponse answer="0.88153">
+    <label>On average, 3 people buy sandwiches from Jack's Sandwich shop every minute during lunch time. What is the probability that Jack will sell more than 10 sandwiches in the next 5 minutes? (Assume the time between sales is exponentially distributed) </label>
+    <responseparam type="tolerance" default="0.01"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>By using the formula for Poisson Distribution:</p>
+        <p>\(e^{-\lambda t}\frac{(\lambda t)^x}{x!} \)</p>
+        <p>for \(x=0,1,2,3,4,5,6,7,8,9,10\) and summing over x, we get \(P(X\leq 10)\).</p>
+        <p>Then,</p>
+        <p>\(P(X&gt;10)=1-P(X\leq 10)\).</p>
+      </div>
+    </solution>
+  </numericalresponse>
+</problem>

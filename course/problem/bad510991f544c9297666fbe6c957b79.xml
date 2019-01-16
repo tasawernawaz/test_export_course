@@ -1,0 +1,8 @@
+<problem display_name="Part 4" markdown="(Hard problem, I suggest you do this one last)&#10;&#10;&gt;&gt;What is the expected number of throws it will take to destroy the car? (round to 3 decimal places)&lt;&lt;&#10;&#10;= 4.167 +-5%&#10;&#10;" max_attempts="3" showanswer="never" weight="5.0">
+  <numericalresponse answer="4.167">
+    <p>(Hard problem, I suggest you do this one last)</p>
+    <label>What is the expected number of throws it will take to destroy the car? (round to 3 decimal places)</label>
+    <responseparam type="tolerance" default="5%"/>
+    <formulaequationinput/>
+  </numericalresponse>
+</problem>

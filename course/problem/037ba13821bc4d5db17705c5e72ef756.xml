@@ -1,0 +1,15 @@
+<problem display_name="Part 2" group_access="{}" markdown="null" max_attempts="2" showanswer="past_due">
+  <multiplechoiceresponse>
+    <p>For line speed of 2 parts per minute.</p>
+    <label>Assuming that both machines must operate at the same speed, what is the optimal combination of machines?</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">\(M_{1a}\) - \(M_2\)</choice>
+      <choice correct="false">\(M_{1b}\) - \(M_2\)</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+  <numericalresponse answer="118">
+    <label>What is the optimal buffer size if inventory costs $50 each? (Round to nearest integer)</label>
+    <responseparam type="tolerance" default="5"/>
+    <formulaequationinput/>
+  </numericalresponse>
+</problem>

@@ -1,0 +1,18 @@
+<problem display_name="Question 4" markdown="&#10;&#10;&gt;&gt;What are the goals of this course? &lt;&lt;&#10;&#10;[x] To explain important measures of system performance.&#10;[x] To show the importance of random, potentially disruptive events in factories.&#10;[ ] To describe all common-sense approaches.&#10;[x] To give some intuition about behavior of these systems.&#10;[x] To describe and justify some quantitative tools and methods.&#10;&#10;[Explanation]&#10;See slide 14 of the handout.&#10;[Explanation]" max_attempts="3">
+  <choiceresponse>
+    <label>What are the goals of this course? </label>
+    <checkboxgroup>
+      <choice correct="true">To explain important measures of system performance.</choice>
+      <choice correct="true">To show the importance of random, potentially disruptive events in factories.</choice>
+      <choice correct="false">To describe all common-sense approaches.</choice>
+      <choice correct="true">To give some intuition about behavior of these systems.</choice>
+      <choice correct="true">To describe and justify some quantitative tools and methods.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>See slide 14 of the handout.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

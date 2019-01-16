@@ -1,0 +1,364 @@
+0
+00:00:00,000 --> 00:00:01,240
+
+
+1
+00:00:01,240 --> 00:00:02,670
+Hi, everyone.
+
+2
+00:00:02,670 --> 00:00:04,900
+Welcome to this recitation video.
+
+3
+00:00:04,900 --> 00:00:08,400
+In this video, we'll go over MicroMaster's Practice Problem
+
+4
+00:00:08,400 --> 00:00:12,100
+1 for Unit 4.
+
+5
+00:00:12,100 --> 00:00:15,390
+So the problem is basically talking about AGVs
+
+6
+00:00:15,390 --> 00:00:19,550
+in a factory that are breaking down.
+
+7
+00:00:19,550 --> 00:00:25,090
+The repair crew is situated in a single location.
+
+8
+00:00:25,090 --> 00:00:29,910
+So really, it's just one crew of people repairing these AGVs.
+
+9
+00:00:29,910 --> 00:00:37,080
+And the AGVs are breaking down at a mean rate of one per hour.
+
+10
+00:00:37,080 --> 00:00:39,510
+The time required to fix an AGV has
+
+11
+00:00:39,510 --> 00:00:44,550
+a negative exponential distribution for any crew size.
+
+12
+00:00:44,550 --> 00:00:50,040
+And the time required by one worker to fix the AGV
+
+13
+00:00:50,040 --> 00:00:50,835
+is 2 hours.
+
+14
+00:00:50,835 --> 00:00:53,930
+
+
+15
+00:00:53,930 --> 00:00:58,920
+So because the crew is located in one location,
+
+16
+00:00:58,920 --> 00:01:03,210
+this is an M/M/1 system.
+
+17
+00:01:03,210 --> 00:01:07,050
+Now because you could have different sized work
+
+18
+00:01:07,050 --> 00:01:12,810
+crew, the more people you have, the faster it is to repair.
+
+19
+00:01:12,810 --> 00:01:16,470
+So mu, the repair rate is a function
+
+20
+00:01:16,470 --> 00:01:18,990
+of k, the number of people--
+
+21
+00:01:18,990 --> 00:01:23,340
+a times k. a is the proportionality constant.
+
+22
+00:01:23,340 --> 00:01:27,770
+And lambda is just one per hour.
+
+23
+00:01:27,770 --> 00:01:31,578
+
+
+24
+00:01:31,578 --> 00:01:33,260
+And that is given.
+
+25
+00:01:33,260 --> 00:01:36,050
+
+
+26
+00:01:36,050 --> 00:01:42,920
+So the first question asks us so if each crew member
+
+27
+00:01:42,920 --> 00:01:47,030
+costs $10 an hour and the cost of having a AGV down
+
+28
+00:01:47,030 --> 00:01:50,930
+is $40 per hour, what is the optimal crew size?
+
+29
+00:01:50,930 --> 00:01:54,780
+
+
+30
+00:01:54,780 --> 00:02:08,919
+So let k equal the number of repair crew,
+
+31
+00:02:08,919 --> 00:02:14,875
+n be the number of broken AGV.
+
+32
+00:02:14,875 --> 00:02:21,810
+
+
+33
+00:02:21,810 --> 00:02:26,640
+So what we know right now is this is an M/M/1 system.
+
+34
+00:02:26,640 --> 00:02:30,060
+
+
+35
+00:02:30,060 --> 00:02:34,590
+mu is a times k.
+
+36
+00:02:34,590 --> 00:02:39,640
+So if it takes one guy 2 hours to fix it,
+
+37
+00:02:39,640 --> 00:02:43,660
+that means he could repair 1/2 each hour.
+
+38
+00:02:43,660 --> 00:02:48,160
+So that means 1/2 equals a times 1.
+
+39
+00:02:48,160 --> 00:02:50,220
+So a equals 1/2.
+
+40
+00:02:50,220 --> 00:02:52,770
+That's our proportionality constant.
+
+41
+00:02:52,770 --> 00:02:58,800
+So that's mu equals 1/2k.
+
+42
+00:02:58,800 --> 00:03:01,840
+And lambda is just 1.
+
+43
+00:03:01,840 --> 00:03:08,040
+Now on average, how many AGVs will be broken?
+
+44
+00:03:08,040 --> 00:03:12,780
+Since this is an M/M/1 system, we just apply the formula.
+
+45
+00:03:12,780 --> 00:03:21,420
+That N bar equals lambda over mu minus lambda.
+
+46
+00:03:21,420 --> 00:03:24,340
+
+
+47
+00:03:24,340 --> 00:03:28,121
+So that's directly taken from the lecture slides for an M/M/1
+
+48
+00:03:28,121 --> 00:03:28,620
+system.
+
+49
+00:03:28,620 --> 00:03:31,290
+
+
+50
+00:03:31,290 --> 00:03:39,300
+So that just means 1 over 1/2k minus 1 is N bar.
+
+51
+00:03:39,300 --> 00:03:41,970
+If you multiply the top and bottom by 2,
+
+52
+00:03:41,970 --> 00:03:46,390
+you have 2 over k minus 2.
+
+53
+00:03:46,390 --> 00:03:57,560
+So the expected cost is so $10 per crew member
+
+54
+00:03:57,560 --> 00:04:05,070
+per hour plus $40 per AGV per hour, multiply
+
+55
+00:04:05,070 --> 00:04:09,620
+by the average number, which is this guy right there,
+
+56
+00:04:09,620 --> 00:04:12,950
+[INAUDIBLE] down, which is 2 over k minus 2.
+
+57
+00:04:12,950 --> 00:04:15,500
+
+
+58
+00:04:15,500 --> 00:04:19,380
+So we're looking for the minimal cost.
+
+59
+00:04:19,380 --> 00:04:23,300
+So we're looking for an optimal number here.
+
+60
+00:04:23,300 --> 00:04:25,970
+To get the optimum, we have to find the derivative
+
+61
+00:04:25,970 --> 00:04:28,970
+of the cost with respect to k.
+
+62
+00:04:28,970 --> 00:04:37,310
+So de, dk-- we just differentiate--
+
+63
+00:04:37,310 --> 00:04:42,320
+equals 10 plus 10.
+
+64
+00:04:42,320 --> 00:04:50,000
+Actually, minus 80 over k minus 2 squared.
+
+65
+00:04:50,000 --> 00:04:52,850
+We set the derivative equal to 0.
+
+66
+00:04:52,850 --> 00:04:55,160
+Now we solve for k.
+
+67
+00:04:55,160 --> 00:04:59,600
+k is just 4.8.
+
+68
+00:04:59,600 --> 00:05:02,600
+And the problem asks us to round to the nearest whole number.
+
+69
+00:05:02,600 --> 00:05:04,025
+So we call it 5.
+
+70
+00:05:04,025 --> 00:05:06,680
+
+
+71
+00:05:06,680 --> 00:05:13,340
+So given mu equals 1/2k, the optimal number of repair crew
+
+72
+00:05:13,340 --> 00:05:13,900
+is 5.
+
+73
+00:05:13,900 --> 00:05:19,710
+
+
+74
+00:05:19,710 --> 00:05:28,710
+For Part 2, we're saying mu is 1/2 square root of k.
+
+75
+00:05:28,710 --> 00:05:32,050
+So everything else is pretty much the same.
+
+76
+00:05:32,050 --> 00:05:35,680
+We just run through the same process, same formula.
+
+77
+00:05:35,680 --> 00:05:41,510
+So N bar equals 2 over square root of k minus .
+
+78
+00:05:41,510 --> 00:05:49,800
+2 and the expected cost is just 10k
+
+79
+00:05:49,800 --> 00:05:56,220
+plus 80 over square root of k minus 2.
+
+80
+00:05:56,220 --> 00:06:00,130
+Once again, we look for the derivative.
+
+81
+00:06:00,130 --> 00:06:10,700
+de, dk equals 10 minus 80 over square root
+
+82
+00:06:10,700 --> 00:06:18,420
+of k minus 2 squared, multiply by 1 over 2 square root of k.
+
+83
+00:06:18,420 --> 00:06:21,730
+We set the derivative equal to 0.
+
+84
+00:06:21,730 --> 00:06:23,590
+You can solve this on your own.
+
+85
+00:06:23,590 --> 00:06:29,255
+k is just 9.8, or we round it to 10.
+
+86
+00:06:29,255 --> 00:06:32,640
+
+
+87
+00:06:32,640 --> 00:06:36,280
+So that wraps up this recitation video.
+
+88
+00:06:36,280 --> 00:06:39,030
+If you have any questions, please send me an email
+
+89
+00:06:39,030 --> 00:06:42,190
+or leave a comment in the discussion section below.
+
+90
+00:06:42,190 --> 00:06:43,880
+Thank you.
+

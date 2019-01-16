@@ -1,0 +1,17 @@
+<problem display_name="Question 1" markdown="&gt;&gt;Define “Operation Time”?&lt;&lt;&#10;&#10;( ) the amount that is made in a given time&#10;(x) the time that a machine takes to do an operation&#10;( ) the time it takes before delivery&#10;( ) how often a factory delivers on time&#10;&#10;[Explanation]&#10;Please review Video 5.&#10;[Explanation]&#10;" max_attempts="3" showanswer="finished" weight="1.0">
+  <multiplechoiceresponse>
+    <label>Define “Operation Time”?</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">the amount that is made in a given time</choice>
+      <choice correct="true">the time that a machine takes to do an operation</choice>
+      <choice correct="false">the time it takes before delivery</choice>
+      <choice correct="false">how often a factory delivers on time</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Please review Video 5.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

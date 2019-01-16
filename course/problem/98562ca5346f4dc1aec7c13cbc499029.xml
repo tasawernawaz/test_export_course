@@ -1,0 +1,20 @@
+<problem display_name="Part 2" markdown="null" max_attempts="3" showanswer="finished" weight="1.0">
+  <numericalresponse answer="2.26">
+    <label>Assume that the pdf for service times is negative exponential. For \( \lambda=2\mu \), compute \( L \), the expected number of customers in the milling area. To do this first
+define the state space. Then draw the Markov transition graph. Then write the transition or
+balance equations. Compute the steady state probabilities and then calculate \( L \).
+</label>
+    <responseparam type="tolerance" default="0.2"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>
+          <span style="font-size: 1em;">
+            <img src="/static/Stochastic2.3.png" alt="" width="800" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+          </span>
+        </p>
+      </div>
+    </solution>
+  </numericalresponse>
+</problem>

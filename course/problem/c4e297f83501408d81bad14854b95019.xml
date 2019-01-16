@@ -1,0 +1,18 @@
+<problem display_name="Part 1" markdown="&gt;&gt;What are differences between push and pull systems?&lt;&lt;&#10;[x] The direction of control information flow.&#10;[x] Adaptability to fluctuations in the system.&#10;[x] Size of inventory in the presence of fluctuations in the system.&#10;[x] Source of scheduling.&#10;&#10;[explanation]&#10;In push systems, the control information flow is in the same direction of goods flow whereas in pull systems the direction opposes the direction of flow (each step responds to the step that follows it). Thus, push systems are less adaptable to fluctuations in the system and generally lead to larger inventory when the system experiences fluctuations. Instead of scheduling coming from a central location in a push system, scheduling is comes from its following step in a pull system.&#10;[explanation]&#10;&#10;&lt;script src=&quot;/static/st.js&quot; type=&quot;text/javascript&quot;/&gt;" max_attempts="3" showanswer="past_due" weight="3.0">
+  <choiceresponse>
+    <label>What are differences between push and pull systems?</label>
+    <checkboxgroup>
+      <choice correct="true">The direction of control information flow.</choice>
+      <choice correct="true">Adaptability to fluctuations in the system.</choice>
+      <choice correct="true">Size of inventory in the presence of fluctuations in the system.</choice>
+      <choice correct="true">Source of scheduling.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>In push systems, the control information flow is in the same direction of goods flow whereas in pull systems the direction opposes the direction of flow (each step responds to the step that follows it). Thus, push systems are less adaptable to fluctuations in the system and generally lead to larger inventory when the system experiences fluctuations. Instead of scheduling coming from a central location in a push system, scheduling is comes from its following step in a pull system.</p>
+      </div>
+    </solution>
+    <script src="/static/st.js" type="text/javascript"/>
+  </choiceresponse>
+</problem>

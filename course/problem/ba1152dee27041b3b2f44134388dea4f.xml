@@ -1,0 +1,16 @@
+<problem display_name="Question 1" markdown="&gt;&gt;What is the value of \(\lambda_{ii}\) in the \(\Lambda\) matrix?&lt;&lt;&#10;&#10;( ) 1&#10;(x) \(-\sum_{j\neq i} \lambda_{ji}\)&#10;( ) 0&#10;&#10;[Explanation]&#10;This is because each row of the \(\Lambda\) matrix must sum to zero. Thus, \(\lambda_{ii}\) is an expression of convenience, it is not a rate, nor a probability.&#10;[Explanation]" max_attempts="2" showanswer="attempted" weight="1.0">
+  <multiplechoiceresponse>
+    <label>What is the value of \(\lambda_{ii}\) in the \(\Lambda\) matrix?</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">1</choice>
+      <choice correct="true">\(-\sum_{j\neq i} \lambda_{ji}\)</choice>
+      <choice correct="false">0</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>This is because each row of the \(\Lambda\) matrix must sum to zero. Thus, \(\lambda_{ii}\) is an expression of convenience, it is not a rate, nor a probability.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

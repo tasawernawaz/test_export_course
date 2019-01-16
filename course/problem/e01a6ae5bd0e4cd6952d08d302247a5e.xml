@@ -1,0 +1,16 @@
+<problem display_name="Part 1" markdown="&gt;&gt;Given that the system starts at state 1 and p = 0.9 for the two-state system presented in slide 21 (Video 3), at what time is it equally probable for the system to be either in state 0 or state 1?  &lt;&lt;&#10;&#10;= 0.301 +-5%&#10;&#10;&#10;[explanation]&#10;\(\frac{1}{2} = (1-p)^t\)&#10;&#10;\(log(\frac{1}{2}) = t*log(1-p)\)&#10;&#10;\(t = \frac{(log(\frac{1}{2}))}{(log(1-p))}\)&#10;&#10;If \(p = 0.9 → t = 0.301\)&#10;&#10;&#10;[explanation]&#10;&#10;" max_attempts="3" showanswer="past_due" weight="3.0">
+  <numericalresponse answer="0.301">
+    <label>Given that the system starts at state 1 and p = 0.9 for the two-state system presented in slide 21 (Video 3), at what time is it equally probable for the system to be either in state 0 or state 1?  </label>
+    <responseparam type="tolerance" default="5%"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>\(\frac{1}{2} = (1-p)^t\)</p>
+        <p>\(log(\frac{1}{2}) = t*log(1-p)\)</p>
+        <p>\(t = \frac{(log(\frac{1}{2}))}{(log(1-p))}\)</p>
+        <p>If \(p = 0.9 → t = 0.301\)</p>
+      </div>
+    </solution>
+  </numericalresponse>
+</problem>

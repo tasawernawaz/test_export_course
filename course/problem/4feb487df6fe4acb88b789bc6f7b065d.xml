@@ -1,0 +1,35 @@
+<problem display_name="Part 2" markdown="&gt;&gt;Which machine is the bottleneck?&lt;&lt;&#10;[[&#10;\(M_1\)&#10;\(M_2\)&#10;\(M_3\)&#10;(\(M_4\))&#10;\(M_5\)&#10;\(M_6\)&#10;]]&#10;&#10;[Explanation]&#10;Recall that \(e=\frac{r}{r+p}\) Then, \(e_i = 0.952, e_3 = 0.870, e_4 = 0.833, and e_5 = 0.870\). Because \(e_4\) is the smallest, \(M_4\) is the bottleneck.&#10;[Explanation]&#10;&#10;&gt;&gt;Which buffer will have the largest inventory after a long time? &lt;&lt;&#10;[[&#10;\(B_1\)&#10;(\(B_2\))&#10;\(B_3\)&#10;\(B_4\)&#10;\(B_5\)&#10;]]&#10;&#10;[Explanation]&#10;The rate of increase is largest for \(B_2 = 0.952 - 0.870 = .082\), and thus \(B_2\) will have the largest inventory after a long time.&#10;[Explanation]" max_attempts="3" showanswer="past_due" weight="3.0">
+  <label>Which machine is the bottleneck?</label>
+  <optionresponse>
+    <optioninput>
+      <option correct="False">\(M_1\)</option>
+      <option correct="False">\(M_2\)</option>
+      <option correct="False">\(M_3\)</option>
+      <option correct="True">\(M_4\)</option>
+      <option correct="False">\(M_5\)</option>
+      <option correct="False">\(M_6\)</option>
+    </optioninput>
+  </optionresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>Recall that \(e=\frac{r}{r+p}\) Then, \(e_i = 0.952, e_3 = 0.870, e_4 = 0.833, and e_5 = 0.870\). Because \(e_4\) is the smallest, \(M_4\) is the bottleneck.</p>
+    </div>
+  </solution>
+  <label>Which buffer will have the largest inventory after a long time? </label>
+  <optionresponse>
+    <optioninput>
+      <option correct="False">\(B_1\)</option>
+      <option correct="True">\(B_2\)</option>
+      <option correct="False">\(B_3\)</option>
+      <option correct="False">\(B_4\)</option>
+      <option correct="False">\(B_5\)</option>
+    </optioninput>
+  </optionresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>The rate of increase is largest for \(B_2 = 0.952 - 0.870 = .082\), and thus \(B_2\) will have the largest inventory after a long time.</p>
+    </div>
+  </solution>
+</problem>

@@ -1,0 +1,17 @@
+<problem display_name="Question 2" markdown="&#10;&gt;&gt;Compare and contrast U and V. &lt;&lt;&#10;&#10;[ ]They are one and the same.&#10;[ ]They are both vector spaces.&#10;[x]One is a space and one is a set.&#10;[x]U maps to V via the random variable X&#10;[Explanation]&#10;X is a mapping from U, the set of all possibilities and V, a vector space (commonly the real number line).&#10;[Explanation]&#10;" max_attempts="3">
+  <choiceresponse>
+    <label>Compare and contrast U and V. </label>
+    <checkboxgroup>
+      <choice correct="false">They are one and the same.</choice>
+      <choice correct="false">They are both vector spaces.</choice>
+      <choice correct="true">One is a space and one is a set.</choice>
+      <choice correct="true">U maps to V via the random variable X</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>X is a mapping from U, the set of all possibilities and V, a vector space (commonly the real number line).</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

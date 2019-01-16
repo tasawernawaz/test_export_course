@@ -1,0 +1,17 @@
+<problem display_name="Part 4" markdown="&gt;&gt;When does \(x^*\) increase with increasing \(\sigma_w\)?&lt;&lt;&#10;[x] \((r - c) / (r - s) \gt 0.5\)&#10;[ ] \((r - c) / (r - s) \lt 0.5\)&#10;[ ] \(x^*\) always increases with \(\sigma_w\).&#10;[x] When marginal profit is greater than marginal loss.&#10;&#10;[explanation]&#10;If \(k = (r-c)/(r-s) \gt 0.5\) then \(x^*\) increases. In other words, when the marginal profit is greater than marginal loss, more variability actually brings less risk and therefore \(x^*\) increases with \(\sigma_w\).&#10;[explanation]&#10;&#10;&#10;" max_attempts="3" showanswer="past_due" weight="3.0">
+  <choiceresponse>
+    <label>When does \(x^*\) increase with increasing \(\sigma_w\)?</label>
+    <checkboxgroup>
+      <choice correct="true">\((r - c) / (r - s) \gt 0.5\)</choice>
+      <choice correct="false">\((r - c) / (r - s) \lt 0.5\)</choice>
+      <choice correct="false">\(x^*\) always increases with \(\sigma_w\).</choice>
+      <choice correct="true">When marginal profit is greater than marginal loss.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>If \(k = (r-c)/(r-s) \gt 0.5\) then \(x^*\) increases. In other words, when the marginal profit is greater than marginal loss, more variability actually brings less risk and therefore \(x^*\) increases with \(\sigma_w\).</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

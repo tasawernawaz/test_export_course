@@ -1,0 +1,380 @@
+0
+00:00:00,000 --> 00:00:02,100
+
+
+1
+00:00:02,100 --> 00:00:03,210
+Hi, everyone.
+
+2
+00:00:03,210 --> 00:00:04,140
+This is Jack here.
+
+3
+00:00:04,140 --> 00:00:06,090
+Welcome to Week 7.
+
+4
+00:00:06,090 --> 00:00:10,870
+This week, we will be introducing Matlab online.
+
+5
+00:00:10,870 --> 00:00:13,860
+So if you go to the Week 7 tab, there
+
+6
+00:00:13,860 --> 00:00:16,740
+is a drop-down where it says DET2TL.
+
+7
+00:00:16,740 --> 00:00:20,370
+That means Deterministic Two-Machine Line.
+
+8
+00:00:20,370 --> 00:00:25,630
+If you click on that, there will be an introduction
+
+9
+00:00:25,630 --> 00:00:28,300
+on how to use this tool.
+
+10
+00:00:28,300 --> 00:00:32,110
+
+
+11
+00:00:32,110 --> 00:00:37,740
+So the first tab explains what are the inputs to this program.
+
+12
+00:00:37,740 --> 00:00:41,260
+Essentially, you have five inputs.
+
+13
+00:00:41,260 --> 00:00:44,910
+R1, which is the repair rate of machine 1.
+
+14
+00:00:44,910 --> 00:00:48,160
+P1 is the failure rate of machine 1.
+
+15
+00:00:48,160 --> 00:00:50,790
+R2, repair rate of machine 2.
+
+16
+00:00:50,790 --> 00:00:53,710
+P2 is the failure rate of machine 2.
+
+17
+00:00:53,710 --> 00:00:55,800
+N is the buffer size.
+
+18
+00:00:55,800 --> 00:01:00,690
+What this Matlab program does is, given these five inputs,
+
+19
+00:01:00,690 --> 00:01:05,040
+it will calculate what the production rate of the line is
+
+20
+00:01:05,040 --> 00:01:07,560
+and what is the average buffer level.
+
+21
+00:01:07,560 --> 00:01:11,400
+We're going to use this program to solve Practice Problem 2
+
+22
+00:01:11,400 --> 00:01:13,380
+and Graded Assignment 2.
+
+23
+00:01:13,380 --> 00:01:15,585
+So let me show you the program and how it works.
+
+24
+00:01:15,585 --> 00:01:22,710
+
+
+25
+00:01:22,710 --> 00:01:28,080
+So on the second tab, this is a description
+
+26
+00:01:28,080 --> 00:01:30,780
+of what this code does.
+
+27
+00:01:30,780 --> 00:01:32,820
+Here is the script.
+
+28
+00:01:32,820 --> 00:01:35,970
+Now, the code itself is an m-file.
+
+29
+00:01:35,970 --> 00:01:40,090
+It's a function file that is uploaded to this interface.
+
+30
+00:01:40,090 --> 00:01:41,910
+It's DET2.
+
+31
+00:01:41,910 --> 00:01:44,190
+That's what the program is.
+
+32
+00:01:44,190 --> 00:01:46,600
+So the gray area--
+
+33
+00:01:46,600 --> 00:01:50,250
+the rows are highlighted in gray--
+
+34
+00:01:50,250 --> 00:01:51,060
+those are locked.
+
+35
+00:01:51,060 --> 00:01:54,070
+You cannot change these values.
+
+36
+00:01:54,070 --> 00:01:56,820
+But what's in white, you could change.
+
+37
+00:01:56,820 --> 00:01:59,590
+And you can feel free to add additional lines of code
+
+38
+00:01:59,590 --> 00:02:01,080
+down here.
+
+39
+00:02:01,080 --> 00:02:04,710
+It's just like an desktop version of Matlab.
+
+40
+00:02:04,710 --> 00:02:07,770
+So for those of you who are not familiar with Matlab,
+
+41
+00:02:07,770 --> 00:02:11,490
+I'm going to demonstrate how to run the code.
+
+42
+00:02:11,490 --> 00:02:14,060
+So we have some inputs here.
+
+43
+00:02:14,060 --> 00:02:18,810
+R1-- well everything is 0.01, other than P2, which is 0.05.
+
+44
+00:02:18,810 --> 00:02:20,310
+You could change these inputs.
+
+45
+00:02:20,310 --> 00:02:23,100
+These are what you put into the program.
+
+46
+00:02:23,100 --> 00:02:31,966
+So we could change P2 to 0.03 and N to 5--
+
+47
+00:02:31,966 --> 00:02:34,560
+15, and hit Run Script.
+
+48
+00:02:34,560 --> 00:02:36,941
+
+
+49
+00:02:36,941 --> 00:02:37,440
+OK.
+
+50
+00:02:37,440 --> 00:02:38,670
+And we have our output.
+
+51
+00:02:38,670 --> 00:02:47,530
+Production rate is 0.1247, and M bar is 9.6.
+
+52
+00:02:47,530 --> 00:02:50,565
+So the average inventory is 9.6, and the production rate
+
+53
+00:02:50,565 --> 00:02:53,950
+is 0.1247 parts per time unit.
+
+54
+00:02:53,950 --> 00:03:00,190
+Now, we could change N to 20, for example.
+
+55
+00:03:00,190 --> 00:03:02,010
+So by changing N to 20, our production rate
+
+56
+00:03:02,010 --> 00:03:04,170
+should actually increase, because you're
+
+57
+00:03:04,170 --> 00:03:09,680
+decreasing the probability of starving and blocking.
+
+58
+00:03:09,680 --> 00:03:15,710
+So now it's 0.1285.
+
+59
+00:03:15,710 --> 00:03:22,570
+In the practice problem and the graded problem,
+
+60
+00:03:22,570 --> 00:03:26,920
+we're going to ask you to run an optimization.
+
+61
+00:03:26,920 --> 00:03:32,980
+By varying N, what is the optimal balance
+
+62
+00:03:32,980 --> 00:03:35,480
+between cost and profit?
+
+63
+00:03:35,480 --> 00:03:39,970
+So for those of you who are familiar with Matlab
+
+64
+00:03:39,970 --> 00:03:42,980
+you can feel free to do one of two things.
+
+65
+00:03:42,980 --> 00:03:46,900
+First, you could run a for loop and just index N
+
+66
+00:03:46,900 --> 00:03:49,870
+to get your optimal solution.
+
+67
+00:03:49,870 --> 00:03:52,870
+Or, the optimization toolbox is actually available.
+
+68
+00:03:52,870 --> 00:03:57,510
+You could use something like fminbound or whatever you want.
+
+69
+00:03:57,510 --> 00:04:03,430
+fminbound is recommended for single-variate optimization.
+
+70
+00:04:03,430 --> 00:04:07,090
+And for those of you who are not familiar with Matlab,
+
+71
+00:04:07,090 --> 00:04:10,400
+the homework assignment is quite simple.
+
+72
+00:04:10,400 --> 00:04:16,209
+We suggest that students think about,
+
+73
+00:04:16,209 --> 00:04:21,550
+what are some clever ways of guessing and reach N.
+
+74
+00:04:21,550 --> 00:04:26,140
+So you could do something like the golden search,
+
+75
+00:04:26,140 --> 00:04:32,110
+or for root finding, there's the bisectional method.
+
+76
+00:04:32,110 --> 00:04:36,430
+You could generate an estimate of the derivative
+
+77
+00:04:36,430 --> 00:04:39,790
+by taking differences, just small differences,
+
+78
+00:04:39,790 --> 00:04:43,990
+using finite difference to get a derivative approximation
+
+79
+00:04:43,990 --> 00:04:47,920
+and iterate until the difference becomes 0.
+
+80
+00:04:47,920 --> 00:04:49,340
+So these are just suggestions.
+
+81
+00:04:49,340 --> 00:04:52,900
+You could use whatever method you'd like.
+
+82
+00:04:52,900 --> 00:04:58,450
+And as always, leave me an email or leave a note
+
+83
+00:04:58,450 --> 00:05:02,020
+in the discussion down below if you have questions.
+
+84
+00:05:02,020 --> 00:05:04,720
+Now, this tool is embedded in the practice problem
+
+85
+00:05:04,720 --> 00:05:06,147
+and the graded problem as well.
+
+86
+00:05:06,147 --> 00:05:08,230
+So you don't have to reference back to this window
+
+87
+00:05:08,230 --> 00:05:14,200
+if you're doing a problem with a different window.
+
+88
+00:05:14,200 --> 00:05:15,370
+Great.
+
+89
+00:05:15,370 --> 00:05:17,440
+Let me know if you have any questions.
+
+90
+00:05:17,440 --> 00:05:19,630
+Oh, by the way, the semicolon is there
+
+91
+00:05:19,630 --> 00:05:22,300
+so the inputs don't get printed out anymore.
+
+92
+00:05:22,300 --> 00:05:25,340
+If you remove the semicolon in the output window,
+
+93
+00:05:25,340 --> 00:05:28,061
+R1 and P1 would just get printed again.
+
+94
+00:05:28,061 --> 00:05:28,561
+
+

@@ -1,0 +1,18 @@
+<problem display_name="Question 2" markdown="&gt;&gt;The difference(s) between matrix \(P\) (discrete time) and matrix \(\Lambda\) (continuous time) is/are: &#10;&lt;&lt;&#10;&#10;[x] The columns of \(P\) sum to 1 vs. the columns of \(\Lambda\) sum to 0.&#10;&#10;[ ] One is composed elements of probabilities, the other is composed of probability rates.&#10;&#10;[x] One is multiplied with the \(\pi\) vector to obtain the probabilities of all states in next time step whereas the other is multiplied with the \(\pi\) vector to obtain the rates of changes of probabilities to all states.&#10;&#10;[x] The elements of one are probabilities and most of the elements of the other are probability rates.&#10;&#10;[explanation]&#10;1) Because \(P\) is a matrix composed of probabilities, all of the element in each column represent all possible transitions from a state, and therefore sum to one. Thus the multiplication of \(P\) with the \(\pi\) vector, yields a vector composed of the probabilities of each state in the next step. 2) The off-diagonal elements of the \(\Lambda_{ii}\) matrix are composed of probability rates, but the diagonal is composed of \(\Lambda_{ii}\), which is defined by convenience to be the negative of the sum of the other elements. Thus, the columns sum to zero. The multiplication of \(\Lambda\) with the \(\pi\) vector then yields the rates of changes of probabilities to all states.&#10;[explanation]&#10;" max_attempts="3">
+  <choiceresponse>
+    <label>The difference(s) between matrix \(P\) (discrete time) and matrix \(\Lambda\) (continuous time) is/are: 
+</label>
+    <checkboxgroup>
+      <choice correct="true">The columns of \(P\) sum to 1 vs. the columns of \(\Lambda\) sum to 0.</choice>
+      <choice correct="false">One is composed elements of probabilities, the other is composed of probability rates.</choice>
+      <choice correct="true">One is multiplied with the \(\pi\) vector to obtain the probabilities of all states in next time step whereas the other is multiplied with the \(\pi\) vector to obtain the rates of changes of probabilities to all states.</choice>
+      <choice correct="true">The elements of one are probabilities and most of the elements of the other are probability rates.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>1) Because \(P\) is a matrix composed of probabilities, all of the element in each column represent all possible transitions from a state, and therefore sum to one. Thus the multiplication of \(P\) with the \(\pi\) vector, yields a vector composed of the probabilities of each state in the next step. 2) The off-diagonal elements of the \(\Lambda_{ii}\) matrix are composed of probability rates, but the diagonal is composed of \(\Lambda_{ii}\), which is defined by convenience to be the negative of the sum of the other elements. Thus, the columns sum to zero. The multiplication of \(\Lambda\) with the \(\pi\) vector then yields the rates of changes of probabilities to all states.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

@@ -1,0 +1,468 @@
+0
+00:00:00,000 --> 00:00:02,810
+
+
+1
+00:00:02,810 --> 00:00:06,800
+Suppose you will make or buy a quantity of some item to sell.
+
+2
+00:00:06,800 --> 00:00:09,975
+Random demand creates the possibility of the demand being
+
+3
+00:00:09,975 --> 00:00:12,350
+less than that quantity, in which case you are stuck with
+
+4
+00:00:12,350 --> 00:00:14,060
+goods you cannot sell.
+
+5
+00:00:14,060 --> 00:00:16,280
+It also creates the possibility of not having
+
+6
+00:00:16,280 --> 00:00:19,080
+enough to meet all the demand.
+
+7
+00:00:19,080 --> 00:00:21,200
+But if the profit for each sale is high enough,
+
+8
+00:00:21,200 --> 00:00:23,030
+you can still make money in the long run
+
+9
+00:00:23,030 --> 00:00:25,527
+if you make or buy the right quantity.
+
+10
+00:00:25,527 --> 00:00:27,110
+The news vendor problem provides a way
+
+11
+00:00:27,110 --> 00:00:29,640
+of determining what the right quantity is.
+
+12
+00:00:29,640 --> 00:00:32,720
+The news vendor is a person who buys newspapers
+
+13
+00:00:32,720 --> 00:00:35,829
+at a discount from the newspaper publisher.
+
+14
+00:00:35,829 --> 00:00:37,370
+He gets them at a discount because he
+
+15
+00:00:37,370 --> 00:00:39,200
+buys a large quantity.
+
+16
+00:00:39,200 --> 00:00:43,040
+He then sells them on the street to people passing by.
+
+17
+00:00:43,040 --> 00:00:45,710
+So let's formulate this problem.
+
+18
+00:00:45,710 --> 00:00:47,420
+The news vendor buys x newspapers
+
+19
+00:00:47,420 --> 00:00:48,980
+at c dollars per paper.
+
+20
+00:00:48,980 --> 00:00:51,830
+That's his cost.
+
+21
+00:00:51,830 --> 00:00:53,780
+Then newspapers are sold at a customer
+
+22
+00:00:53,780 --> 00:00:57,441
+price of r dollars per paper, which is greater than c.
+
+23
+00:00:57,441 --> 00:00:58,190
+That's his profit.
+
+24
+00:00:58,190 --> 00:01:01,020
+
+
+25
+00:01:01,020 --> 00:01:03,540
+If there are any papers left at the end of a day,
+
+26
+00:01:03,540 --> 00:01:06,660
+a scrap dealer will buy them at a salvage price s.
+
+27
+00:01:06,660 --> 00:01:09,130
+s is less than c.
+
+28
+00:01:09,130 --> 00:01:12,040
+That is, the vendor gets s dollars
+
+29
+00:01:12,040 --> 00:01:14,950
+per paper, which is less than c, which
+
+30
+00:01:14,950 --> 00:01:17,350
+is how much he had to pay to get the newspapers
+
+31
+00:01:17,350 --> 00:01:19,130
+in the first place.
+
+32
+00:01:19,130 --> 00:01:23,230
+So unsold newspapers represent a loss.
+
+33
+00:01:23,230 --> 00:01:26,170
+This is not quite an inventory problem yet
+
+34
+00:01:26,170 --> 00:01:29,020
+because we have no inventory dynamics.
+
+35
+00:01:29,020 --> 00:01:31,510
+Products left at the end of the day cannot be used the next
+
+36
+00:01:31,510 --> 00:01:33,650
+day, so they're discarded.
+
+37
+00:01:33,650 --> 00:01:36,940
+So now let's formulate this in a little bit more detail.
+
+38
+00:01:36,940 --> 00:01:39,250
+Assume the demand is a continuous random variable,
+
+39
+00:01:39,250 --> 00:01:42,310
+with distribution function capital F of w
+
+40
+00:01:42,310 --> 00:01:46,420
+is the probability that W is less than little w.
+
+41
+00:01:46,420 --> 00:01:49,000
+Assume the density function little f of w
+
+42
+00:01:49,000 --> 00:01:51,700
+is the derivative of dF dw, and it exists
+
+43
+00:01:51,700 --> 00:01:55,420
+for all w greater than 0.
+
+44
+00:01:55,420 --> 00:01:58,750
+The problem that we have is to choose x to maximize
+
+45
+00:01:58,750 --> 00:01:59,770
+the expected profit.
+
+46
+00:01:59,770 --> 00:02:05,460
+
+
+47
+00:02:05,460 --> 00:02:08,340
+Just keep in mind that w is greater than 0.
+
+48
+00:02:08,340 --> 00:02:09,990
+So F of w equals 0.
+
+49
+00:02:09,990 --> 00:02:14,130
+And little f of w equals 0 for all w less than 0.
+
+50
+00:02:14,130 --> 00:02:17,760
+Let's write expressions for the revenue and then the profits.
+
+51
+00:02:17,760 --> 00:02:22,140
+If x is less than w, the vendor sells all that he bought.
+
+52
+00:02:22,140 --> 00:02:24,170
+So his revenue is rx.
+
+53
+00:02:24,170 --> 00:02:29,330
+
+
+54
+00:02:29,330 --> 00:02:31,940
+If x is greater than w, that means
+
+55
+00:02:31,940 --> 00:02:35,450
+that he has some papers left after he's sold w of them.
+
+56
+00:02:35,450 --> 00:02:38,270
+So he gets r dollars for the first w,
+
+57
+00:02:38,270 --> 00:02:41,310
+and only s dollars for the remainder.
+
+58
+00:02:41,310 --> 00:02:46,390
+So that leads to the expression rw plus s times x minus w.
+
+59
+00:02:46,390 --> 00:02:48,880
+Now, to get the profit we subtract off cx.
+
+60
+00:02:48,880 --> 00:02:53,330
+That's what the vendor had to pay to get the newspapers.
+
+61
+00:02:53,330 --> 00:02:56,360
+So if x is less than or equal to w,
+
+62
+00:02:56,360 --> 00:02:58,630
+the profit is r minus c times x.
+
+63
+00:02:58,630 --> 00:03:01,800
+
+
+64
+00:03:01,800 --> 00:03:05,490
+If x is greater than w, it's rw plus s times
+
+65
+00:03:05,490 --> 00:03:08,430
+x minus w minus cx.
+
+66
+00:03:08,430 --> 00:03:11,520
+We can rearrange the terms to get
+
+67
+00:03:11,520 --> 00:03:16,920
+r minus s times w minus c minus s times x.
+
+68
+00:03:16,920 --> 00:03:19,980
+Notice that c is greater than x, so that last term
+
+69
+00:03:19,980 --> 00:03:22,140
+represents a loss.
+
+70
+00:03:22,140 --> 00:03:25,590
+Now here's a graph of profit and revenue
+
+71
+00:03:25,590 --> 00:03:28,890
+for a case where we pick the numbers that are indicated
+
+72
+00:03:28,890 --> 00:03:30,510
+at the bottom of the graph.
+
+73
+00:03:30,510 --> 00:03:32,540
+The horizontal axis is x.
+
+74
+00:03:32,540 --> 00:03:36,620
+The vertical axis is the profit in dollars.
+
+75
+00:03:36,620 --> 00:03:39,030
+We chose w equals 500.
+
+76
+00:03:39,030 --> 00:03:45,070
+So the profit is maximum at x equals 500.
+
+77
+00:03:45,070 --> 00:03:47,410
+However, you don't know what w is
+
+78
+00:03:47,410 --> 00:03:49,780
+going to be when you buy the newspapers in the morning,
+
+79
+00:03:49,780 --> 00:03:53,700
+so you can't pick x equals w.
+
+80
+00:03:53,700 --> 00:03:56,580
+But anyway, here's what happens if you pick too little or too
+
+81
+00:03:56,580 --> 00:04:01,520
+much, or if you're lucky enough to get it exactly right.
+
+82
+00:04:01,520 --> 00:04:03,830
+And notice that if x is too large,
+
+83
+00:04:03,830 --> 00:04:06,640
+the profit could even be negative.
+
+84
+00:04:06,640 --> 00:04:09,310
+This graph is the density function of w.
+
+85
+00:04:09,310 --> 00:04:12,280
+The vertical axis is the density and the horizontal axis
+
+86
+00:04:12,280 --> 00:04:17,380
+is W. We've also indicated a value of X.
+
+87
+00:04:17,380 --> 00:04:24,080
+Now, the region in yellow is the area under the density function
+
+88
+00:04:24,080 --> 00:04:27,910
+which is greater than X. And that area represents
+
+89
+00:04:27,910 --> 00:04:33,660
+the probability that w is greater than X.
+
+90
+00:04:33,660 --> 00:04:38,140
+The area in pink represents the probability
+
+91
+00:04:38,140 --> 00:04:41,710
+that W is less than X. Let's superimpose
+
+92
+00:04:41,710 --> 00:04:45,560
+on that the profit function.
+
+93
+00:04:45,560 --> 00:04:49,200
+For a given X, the profit is constant
+
+94
+00:04:49,200 --> 00:04:53,430
+when W is greater than X because the profit depends only on X.
+
+95
+00:04:53,430 --> 00:04:57,300
+However, when W is less than X, the profit
+
+96
+00:04:57,300 --> 00:05:00,640
+goes down as W is reduced.
+
+97
+00:05:00,640 --> 00:05:04,850
+And as you can see, the profit could even go negative.
+
+98
+00:05:04,850 --> 00:05:06,960
+In this graph and in several that will follow,
+
+99
+00:05:06,960 --> 00:05:10,190
+we will approximate the demand with a normal distribution.
+
+100
+00:05:10,190 --> 00:05:11,450
+This is reasonable.
+
+101
+00:05:11,450 --> 00:05:13,130
+If there were n potential customers
+
+102
+00:05:13,130 --> 00:05:15,290
+and each had a probability p of wanting a paper
+
+103
+00:05:15,290 --> 00:05:18,410
+independent of all others, the probability distribution
+
+104
+00:05:18,410 --> 00:05:20,750
+of the demand would be a binomial distribution,
+
+105
+00:05:20,750 --> 00:05:22,700
+as we saw earlier.
+
+106
+00:05:22,700 --> 00:05:24,500
+And we also saw that the binomial
+
+107
+00:05:24,500 --> 00:05:27,580
+is close to the normal.
+
+108
+00:05:27,580 --> 00:05:29,750
+However, we have to be alert to something.
+
+109
+00:05:29,750 --> 00:05:32,180
+Demand for newspapers is always positive or 0.
+
+110
+00:05:32,180 --> 00:05:33,530
+It's never negative.
+
+111
+00:05:33,530 --> 00:05:37,140
+But the normal distribution can be negative.
+
+112
+00:05:37,140 --> 00:05:39,780
+The normal is only a good approximation
+
+113
+00:05:39,780 --> 00:05:42,990
+if the mean of the distribution is much greater
+
+114
+00:05:42,990 --> 00:05:45,340
+than the standard deviation.
+
+115
+00:05:45,340 --> 00:05:49,240
+That way, the probability of the normal distribution predicting
+
+116
+00:05:49,240 --> 00:05:52,590
+a negative demand is very small.
+

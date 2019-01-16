@@ -1,0 +1,21 @@
+<problem display_name="Part 1" group_access="{&quot;50&quot;: [1]}" markdown="&gt;&gt;Cars are rented for one day. The daily demand at a particular location is Poisson with a mean of 60. Demands on different days are independent, with the same distribution. The revenue at that location is $30 per car rented. How many cars should be located there? (Assume 365 days per year)&lt;&lt;&#10;&#10;= 62.5+-1&#10;&#10;[Explanation]&#10;Use Newsboy model:&#10;&#10;Cost per day:\(c=\frac{4000}{365}=10.96\) ($/day)&#10;Revenue per day:\(r=30\) ($/day)&#10;Salvage value per day:\(s=0\) ($/day)&#10;Demand \(d\) is Poisson distributed with mean 60.&#10;\(P(d\leq Q) \geq \frac{r-c}{r-s}=0.6347\)&#10;When \(Q=62\), \(P(d\leq Q)=0.63381\)&#10;When \(Q=63\), \(P(d\leq Q)=0.68043\)&#10;[Explanation]&#10;&#10;&lt;script src=&quot;/static/st.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;" max_attempts="2" showanswer="past_due" weight="10.0">
+  <numericalresponse answer="62.5">
+    <label>Cars are rented for one day. The daily demand at a particular location is Poisson with a mean of 60. Demands on different days are independent, with the same distribution. The revenue at that location is $30 per car rented. How many cars should be located there? (Assume 365 days per year)</label>
+    <responseparam type="tolerance" default="1"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Use Newsboy model:</p>
+        <p>Cost per day:\(c=\frac{4000}{365}=10.96\) ($/day)</p>
+        <p>Revenue per day:\(r=30\) ($/day)</p>
+        <p>Salvage value per day:\(s=0\) ($/day)</p>
+        <p>Demand \(d\) is Poisson distributed with mean 60.</p>
+        <p>\(P(d\leq Q) \geq \frac{r-c}{r-s}=0.6347\)</p>
+        <p>When \(Q=62\), \(P(d\leq Q)=0.63381\)</p>
+        <p>When \(Q=63\), \(P(d\leq Q)=0.68043\)</p>
+      </div>
+    </solution>
+    <script src="/static/st.js" type="text/javascript"/>
+  </numericalresponse>
+</problem>

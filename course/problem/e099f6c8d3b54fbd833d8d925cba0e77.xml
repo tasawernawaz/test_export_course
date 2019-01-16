@@ -1,0 +1,19 @@
+<problem display_name="Part 5" markdown="null" max_attempts="2" showanswer="past_due" weight="1.0">
+  <multiplechoiceresponse>
+    <label>Are the events \(w = 3\) and \(w \neq r\) dependent or independent? </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">Independent</choice>
+      <choice correct="false">Dependent</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>
+          <span style="font-size: 1em;">
+            <img src="/static/Probability1.5.png" alt="" width="600" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+          </span>
+        </p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

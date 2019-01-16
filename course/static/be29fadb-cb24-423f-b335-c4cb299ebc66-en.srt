@@ -1,0 +1,580 @@
+0
+00:00:00,000 --> 00:00:02,510
+
+
+1
+00:00:02,510 --> 00:00:03,350
+OK.
+
+2
+00:00:03,350 --> 00:00:07,290
+Another important distribution is the uniform distribution,
+
+3
+00:00:07,290 --> 00:00:09,630
+and that's described here on the slide.
+
+4
+00:00:09,630 --> 00:00:13,140
+The density function is just constant between an interval
+
+5
+00:00:13,140 --> 00:00:15,960
+from a to b and 0 otherwise.
+
+6
+00:00:15,960 --> 00:00:18,750
+And it has to be 1 over b minus a in order for it
+
+7
+00:00:18,750 --> 00:00:20,280
+to integrate up to 1.
+
+8
+00:00:20,280 --> 00:00:23,730
+The next slide has the uniform density and then
+
+9
+00:00:23,730 --> 00:00:25,560
+the uniform distribution.
+
+10
+00:00:25,560 --> 00:00:28,440
+The distribution function has the same characteristic shape
+
+11
+00:00:28,440 --> 00:00:30,510
+as all distribution functions, which
+
+12
+00:00:30,510 --> 00:00:33,100
+is that it goes to 0 as x goes to minus infinity,
+
+13
+00:00:33,100 --> 00:00:35,070
+and goes to 1 as x goes to plus infinity,
+
+14
+00:00:35,070 --> 00:00:38,690
+and increases monotonically between them.
+
+15
+00:00:38,690 --> 00:00:43,020
+Another important distribution is the triangular distribution.
+
+16
+00:00:43,020 --> 00:00:45,120
+Now we have three parameters.
+
+17
+00:00:45,120 --> 00:00:49,590
+It goes between a and b, and it has a maximum at c.
+
+18
+00:00:49,590 --> 00:00:54,000
+The density function is shown on this slide.
+
+19
+00:00:54,000 --> 00:00:55,620
+The cumulative distribution function
+
+20
+00:00:55,620 --> 00:01:00,050
+is shown here and, again, with that same characteristic shape.
+
+21
+00:01:00,050 --> 00:01:03,210
+The exponential distribution is a very important distribution.
+
+22
+00:01:03,210 --> 00:01:06,020
+It's very often used to represent the time
+
+23
+00:01:06,020 --> 00:01:09,630
+until some specified event occurs.
+
+24
+00:01:09,630 --> 00:01:13,260
+The density is given by this formula.
+
+25
+00:01:13,260 --> 00:01:15,780
+The distribution is just the integral
+
+26
+00:01:15,780 --> 00:01:18,390
+of the density, which is given by this.
+
+27
+00:01:18,390 --> 00:01:21,090
+And here are graphs of the exponential density
+
+28
+00:01:21,090 --> 00:01:24,530
+function and the exponential distribution.
+
+29
+00:01:24,530 --> 00:01:27,000
+The exponential is close numerically
+
+30
+00:01:27,000 --> 00:01:29,630
+to the geometric distribution, except, of course,
+
+31
+00:01:29,630 --> 00:01:32,760
+it's for continuous time rather than discrete time.
+
+32
+00:01:32,760 --> 00:01:34,710
+It's very mathematically convenient
+
+33
+00:01:34,710 --> 00:01:39,420
+for doing calculations involving some complicated systems.
+
+34
+00:01:39,420 --> 00:01:40,230
+It looks like this.
+
+35
+00:01:40,230 --> 00:01:42,930
+The probability that T is greater than little t
+
+36
+00:01:42,930 --> 00:01:46,890
+plus x given that T is greater than x is just the probability
+
+37
+00:01:46,890 --> 00:01:49,770
+that capital T is greater than little t.
+
+38
+00:01:49,770 --> 00:01:55,140
+Now, notice that the difference between x and t plus x is just
+
+39
+00:01:55,140 --> 00:01:56,100
+t.
+
+40
+00:01:56,100 --> 00:01:58,440
+So the way we can interpret that is
+
+41
+00:01:58,440 --> 00:02:00,900
+to think about an exponentially distributed process that
+
+42
+00:02:00,900 --> 00:02:04,080
+started at time 0 and there's some event
+
+43
+00:02:04,080 --> 00:02:06,100
+that we're waiting until that happens,
+
+44
+00:02:06,100 --> 00:02:08,009
+such as a customer arriving in a queue,
+
+45
+00:02:08,009 --> 00:02:10,500
+which we're going to talk about a lot soon.
+
+46
+00:02:10,500 --> 00:02:14,430
+Suppose that event hasn't happened yet at time x.
+
+47
+00:02:14,430 --> 00:02:17,550
+Well, the memorylessness process essentially
+
+48
+00:02:17,550 --> 00:02:19,950
+forgets the fact that we're at time x,
+
+49
+00:02:19,950 --> 00:02:23,070
+and it treats the whole thing as though we've started at time 0.
+
+50
+00:02:23,070 --> 00:02:25,320
+So the probability distribution of the time
+
+51
+00:02:25,320 --> 00:02:28,620
+after x at which that customer arrives
+
+52
+00:02:28,620 --> 00:02:31,230
+is still the same as the original exponential
+
+53
+00:02:31,230 --> 00:02:32,650
+distribution.
+
+54
+00:02:32,650 --> 00:02:36,480
+So the process has no memory of when it was actually started.
+
+55
+00:02:36,480 --> 00:02:38,970
+Another random variable, but this time it's discreet,
+
+56
+00:02:38,970 --> 00:02:42,760
+is the Poisson distribution, and it's given by this formula.
+
+57
+00:02:42,760 --> 00:02:44,520
+It's the probability that x events
+
+58
+00:02:44,520 --> 00:02:47,700
+happen in a time interval between 0 and t
+
+59
+00:02:47,700 --> 00:02:50,100
+if the events are independent and the times between them
+
+60
+00:02:50,100 --> 00:02:53,096
+are exponentially distributed with parameter lambda.
+
+61
+00:02:53,096 --> 00:02:54,970
+So we're going to talk about queueing theory,
+
+62
+00:02:54,970 --> 00:02:57,345
+and we're going to talk about customers that are arriving
+
+63
+00:02:57,345 --> 00:02:59,280
+at random times in a queue.
+
+64
+00:02:59,280 --> 00:03:02,130
+And as we watch those customers arriving,
+
+65
+00:03:02,130 --> 00:03:05,190
+if we observe the time between those arrivals,
+
+66
+00:03:05,190 --> 00:03:07,980
+those times are exponentially distributed
+
+67
+00:03:07,980 --> 00:03:12,390
+in the typical assumptions that we make in queueing theory.
+
+68
+00:03:12,390 --> 00:03:15,430
+Finally, let's talk about something which is not random
+
+69
+00:03:15,430 --> 00:03:18,240
+at all, but you can see what I mean--
+
+70
+00:03:18,240 --> 00:03:20,910
+you will see what I mean when I say it's almost random.
+
+71
+00:03:20,910 --> 00:03:24,310
+And that is a pseudo random number generator.
+
+72
+00:03:24,310 --> 00:03:27,820
+Sometimes we need to generate random numbers with a computer.
+
+73
+00:03:27,820 --> 00:03:32,410
+Suppose we wanted to see how often 100 coin flips
+
+74
+00:03:32,410 --> 00:03:34,210
+will all come up heads.
+
+75
+00:03:34,210 --> 00:03:37,300
+So we'd flip coins and flip coins, thousands of coins,
+
+76
+00:03:37,300 --> 00:03:41,385
+and count how many times we had 100 of them heads in a row.
+
+77
+00:03:41,385 --> 00:03:43,510
+Well, we wouldn't want to do that actual experiment
+
+78
+00:03:43,510 --> 00:03:44,320
+with coins.
+
+79
+00:03:44,320 --> 00:03:47,110
+It would take way too long.
+
+80
+00:03:47,110 --> 00:03:50,410
+So we'd like to somehow do that experiment using computers
+
+81
+00:03:50,410 --> 00:03:54,610
+and have a computer generate the random coin flips.
+
+82
+00:03:54,610 --> 00:03:56,900
+The problem is that computers are deterministic.
+
+83
+00:03:56,900 --> 00:04:00,790
+We know that when you put a certain data into a computer
+
+84
+00:04:00,790 --> 00:04:03,550
+and ask it to do a calculation, the same number
+
+85
+00:04:03,550 --> 00:04:07,330
+will come out every time if we put the same number in.
+
+86
+00:04:07,330 --> 00:04:09,560
+So how do we deal with this?
+
+87
+00:04:09,560 --> 00:04:11,860
+How do we create random numbers with the computer?
+
+88
+00:04:11,860 --> 00:04:14,050
+And the answer is that we don't.
+
+89
+00:04:14,050 --> 00:04:17,019
+Instead, we generate pseudo random numbers.
+
+90
+00:04:17,019 --> 00:04:20,180
+We generate numbers that look random.
+
+91
+00:04:20,180 --> 00:04:23,420
+So the pseudo random number generator is a function that
+
+92
+00:04:23,420 --> 00:04:26,450
+generates a set of numbers-- x0, x1, and so forth--
+
+93
+00:04:26,450 --> 00:04:30,620
+where the x's satisfy this equation, xn plus 1
+
+94
+00:04:30,620 --> 00:04:32,780
+equals f of xn.
+
+95
+00:04:32,780 --> 00:04:36,710
+And f is a function such that that sequence of x's
+
+96
+00:04:36,710 --> 00:04:39,090
+satisfies certain conditions.
+
+97
+00:04:39,090 --> 00:04:43,190
+So those conditions include that there's a known finite maximum,
+
+98
+00:04:43,190 --> 00:04:47,870
+and all the x's go between 0 and that maximum,
+
+99
+00:04:47,870 --> 00:04:52,310
+and the sequence of these u over x max
+
+100
+00:04:52,310 --> 00:04:54,770
+looks like a set of uniform distributed
+
+101
+00:04:54,770 --> 00:04:57,180
+independent random variables.
+
+102
+00:04:57,180 --> 00:04:59,090
+Now, designing such a function is not easy,
+
+103
+00:04:59,090 --> 00:05:02,150
+and I'll leave that to the experts.
+
+104
+00:05:02,150 --> 00:05:05,330
+So it looks like in the sense that statistical tests
+
+105
+00:05:05,330 --> 00:05:08,990
+on these u's say that the probability of the sequence not
+
+106
+00:05:08,990 --> 00:05:13,140
+being independent uniform random variables is very small.
+
+107
+00:05:13,140 --> 00:05:15,550
+The sequence is actually deterministic.
+
+108
+00:05:15,550 --> 00:05:19,660
+It's determined by x0, the seed of the random number generator.
+
+109
+00:05:19,660 --> 00:05:22,600
+That's useful because if you use the same seed twice,
+
+110
+00:05:22,600 --> 00:05:24,850
+you get the same sequence both times.
+
+111
+00:05:24,850 --> 00:05:27,550
+This is useful when we're trying to develop software
+
+112
+00:05:27,550 --> 00:05:31,274
+and we want to debug it as we watch it calculate.
+
+113
+00:05:31,274 --> 00:05:33,190
+On the other hand, if you use different seeds,
+
+114
+00:05:33,190 --> 00:05:34,840
+you get completely different sequences,
+
+115
+00:05:34,840 --> 00:05:37,990
+even if the seeds are close together.
+
+116
+00:05:37,990 --> 00:05:40,360
+Pseudo random number generators are used extensively
+
+117
+00:05:40,360 --> 00:05:42,190
+in simulations.
+
+118
+00:05:42,190 --> 00:05:44,290
+If you're not familiar with simulation,
+
+119
+00:05:44,290 --> 00:05:46,270
+a simulation is a little bit like a video game
+
+120
+00:05:46,270 --> 00:05:48,470
+that plays by itself.
+
+121
+00:05:48,470 --> 00:05:52,120
+So in other words, instead of having a player, a human,
+
+122
+00:05:52,120 --> 00:05:55,060
+play the game, we have the moves that the human
+
+123
+00:05:55,060 --> 00:05:57,720
+would make programmed in.
+
+124
+00:05:57,720 --> 00:06:01,560
+It's used in factory and other kinds of designs.
+
+125
+00:06:01,560 --> 00:06:04,570
+Simulation is used for a couple of purposes.
+
+126
+00:06:04,570 --> 00:06:08,490
+One is that it can actually show the movement of materials
+
+127
+00:06:08,490 --> 00:06:10,800
+and how that movement is affected by machine failures
+
+128
+00:06:10,800 --> 00:06:14,320
+and set of change policies and so forth.
+
+129
+00:06:14,320 --> 00:06:17,280
+The second use is to turn off the video,
+
+130
+00:06:17,280 --> 00:06:19,260
+and then you can make it run very fast.
+
+131
+00:06:19,260 --> 00:06:22,000
+In which case, you can watch events as they take place.
+
+132
+00:06:22,000 --> 00:06:23,940
+You can count the events, and you
+
+133
+00:06:23,940 --> 00:06:27,360
+can use that to calculate performance measures.
+
+134
+00:06:27,360 --> 00:06:31,500
+The performance measures include the production rate,
+
+135
+00:06:31,500 --> 00:06:35,580
+the lead time, the amount of inventory, and so forth.
+
+136
+00:06:35,580 --> 00:06:39,190
+The simulation can run a lot faster than a real factory.
+
+137
+00:06:39,190 --> 00:06:41,520
+One day of a factory operation can
+
+138
+00:06:41,520 --> 00:06:44,980
+be simulated in a fraction of a second, in some cases.
+
+139
+00:06:44,980 --> 00:06:47,082
+So the idea is to run it for a very long time,
+
+140
+00:06:47,082 --> 00:06:48,540
+count the number of parts produced,
+
+141
+00:06:48,540 --> 00:06:49,830
+and divide by that time.
+
+142
+00:06:49,830 --> 00:06:51,420
+And from that, you get an estimate
+
+143
+00:06:51,420 --> 00:06:53,282
+of the production rate.
+
+144
+00:06:53,282 --> 00:06:53,782
+
+

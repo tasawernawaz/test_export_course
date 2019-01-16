@@ -1,0 +1,18 @@
+<problem display_name="Question 1" markdown="&#10;&gt;&gt;Queuing theory:&#10; &lt;&lt;&#10;&#10;[x] Is a mathematical theory often used to predict what resources are needed to provide a service.&#10;[x] Is used in many contexts, such as calls waiting at call centers, data packets in computer networks, traffic at an intersection, and telecommunication.&#10;[ ] Describes the energy loss in resonant cavities.&#10;[x] Can be used to evaluate performance measures such as factory capacity utilization and storage.&#10;&#10;[explanation]&#10;Queuing theory is the mathematical theory to evaluate performance measures in systems such as wait times or the number of people waiting in line. In the context of manufacturing systems, we are interested in using queuing theory to analyze performance measures in factories such as capacity utilization and inventory.&#10;[explanation]&#10;&#10;" max_attempts="3">
+  <choiceresponse>
+    <label>Queuing theory:
+ </label>
+    <checkboxgroup>
+      <choice correct="true">Is a mathematical theory often used to predict what resources are needed to provide a service.</choice>
+      <choice correct="true">Is used in many contexts, such as calls waiting at call centers, data packets in computer networks, traffic at an intersection, and telecommunication.</choice>
+      <choice correct="false">Describes the energy loss in resonant cavities.</choice>
+      <choice correct="true">Can be used to evaluate performance measures such as factory capacity utilization and storage.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Queuing theory is the mathematical theory to evaluate performance measures in systems such as wait times or the number of people waiting in line. In the context of manufacturing systems, we are interested in using queuing theory to analyze performance measures in factories such as capacity utilization and inventory.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

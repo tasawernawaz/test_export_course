@@ -1,0 +1,18 @@
+<problem display_name="Part 1" markdown="&gt;&gt;Which of the following is a goal of TPS? &lt;&lt;&#10;&#10;( ) Maximize production&#10;( ) To acquire the greatest market share&#10;( ) Maximize automation&#10;( ) Minimize idle time&#10;(x) Minimize waste&#10;&#10;[Explanation]&#10;TPS's main intention is to minimize waste. Waste can include uncecessary movement, setup time, overproduction, excessive WIP and machine downtime.&#10;[Explanation]&#10;" max_attempts="3" weight="1.0">
+  <multiplechoiceresponse>
+    <label>Which of the following is a goal of TPS? </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Maximize production</choice>
+      <choice correct="false">To acquire the greatest market share</choice>
+      <choice correct="false">Maximize automation</choice>
+      <choice correct="false">Minimize idle time</choice>
+      <choice correct="true">Minimize waste</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>TPS's main intention is to minimize waste. Waste can include uncecessary movement, setup time, overproduction, excessive WIP and machine downtime.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

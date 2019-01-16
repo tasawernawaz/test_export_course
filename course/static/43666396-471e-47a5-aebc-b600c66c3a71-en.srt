@@ -1,0 +1,1184 @@
+0
+00:00:00,000 --> 00:00:02,009
+
+
+1
+00:00:02,009 --> 00:00:03,780
+Consider a special case of the system
+
+2
+00:00:03,780 --> 00:00:06,810
+that we've been discussing, in which alpha i
+
+3
+00:00:06,810 --> 00:00:09,450
+equals 0 for all nodes i.
+
+4
+00:00:09,450 --> 00:00:12,000
+That means that there's nothing from the outside world that
+
+5
+00:00:12,000 --> 00:00:14,250
+enters the system.
+
+6
+00:00:14,250 --> 00:00:17,670
+p i 0 equals 0 for all nodes, and that means
+
+7
+00:00:17,670 --> 00:00:21,300
+that nothing exits the system.
+
+8
+00:00:21,300 --> 00:00:23,970
+In that case, since nothing is entering
+
+9
+00:00:23,970 --> 00:00:26,340
+and nothing is departing from the system,
+
+10
+00:00:26,340 --> 00:00:29,170
+the number of items in the network is constant.
+
+11
+00:00:29,170 --> 00:00:33,300
+So the sum of the n i's of t is equal to n, a constant,
+
+12
+00:00:33,300 --> 00:00:35,160
+for all t.
+
+13
+00:00:35,160 --> 00:00:38,820
+The system is closed because nothing gets in or gets out.
+
+14
+00:00:38,820 --> 00:00:40,620
+This model is useful in analyzing two
+
+15
+00:00:40,620 --> 00:00:43,056
+kinds of manufacturing systems.
+
+16
+00:00:43,056 --> 00:00:44,430
+The first is those in which there
+
+17
+00:00:44,430 --> 00:00:46,230
+are a limited number of pallets or fixtures
+
+18
+00:00:46,230 --> 00:00:48,409
+to carry parts throughout the system.
+
+19
+00:00:48,409 --> 00:00:49,950
+Parts enter and leave, but the number
+
+20
+00:00:49,950 --> 00:00:53,010
+of fixtures in the system stays constant.
+
+21
+00:00:53,010 --> 00:00:54,810
+As we'll see, the performance of the system
+
+22
+00:00:54,810 --> 00:00:56,370
+depends on the number of fixtures.
+
+23
+00:00:56,370 --> 00:00:58,800
+If there are too few, performance suffers.
+
+24
+00:00:58,800 --> 00:01:00,270
+Think about the food court example,
+
+25
+00:01:00,270 --> 00:01:02,353
+and assume there are only a finite number of trays
+
+26
+00:01:02,353 --> 00:01:04,050
+shared by all the vendors.
+
+27
+00:01:04,050 --> 00:01:07,170
+If there are only two trays, to be extreme,
+
+28
+00:01:07,170 --> 00:01:10,050
+all the vendors would go out of business very soon.
+
+29
+00:01:10,050 --> 00:01:11,580
+Ideally, there would be enough trays
+
+30
+00:01:11,580 --> 00:01:14,970
+so that it would be very rare for a customer not to have one.
+
+31
+00:01:14,970 --> 00:01:17,490
+Food court trays are cheap, but fixtures in a factory
+
+32
+00:01:17,490 --> 00:01:18,899
+can be expensive.
+
+33
+00:01:18,899 --> 00:01:20,940
+There's a trade-off between the financial benefit
+
+34
+00:01:20,940 --> 00:01:22,950
+of each fixture and its cost.
+
+35
+00:01:22,950 --> 00:01:25,050
+The benefit from increasing the number of fixtures
+
+36
+00:01:25,050 --> 00:01:27,147
+is increased production rate.
+
+37
+00:01:27,147 --> 00:01:28,980
+But there's an upper bound to the production
+
+38
+00:01:28,980 --> 00:01:31,050
+rate, which is reached asymptotically
+
+39
+00:01:31,050 --> 00:01:33,039
+as the number of fixtures is increased.
+
+40
+00:01:33,039 --> 00:01:34,830
+On the other hand, the cost of the fixtures
+
+41
+00:01:34,830 --> 00:01:37,020
+is linear in the number of fixtures.
+
+42
+00:01:37,020 --> 00:01:40,350
+So there's no upper bound to the cost of fixtures.
+
+43
+00:01:40,350 --> 00:01:43,440
+Second, is where there are virtual fixtures.
+
+44
+00:01:43,440 --> 00:01:47,130
+A card can be attached to each part that enters this system.
+
+45
+00:01:47,130 --> 00:01:49,620
+The part travels with the card, which is then
+
+46
+00:01:49,620 --> 00:01:51,570
+detached when the part leaves.
+
+47
+00:01:51,570 --> 00:01:55,110
+The card is then recycled for another part entering.
+
+48
+00:01:55,110 --> 00:01:57,330
+Such cards are called kanbans.
+
+49
+00:01:57,330 --> 00:01:59,040
+Kanban is a Japanese word.
+
+50
+00:01:59,040 --> 00:02:01,680
+The kanban approach originated with the Toyota production
+
+51
+00:02:01,680 --> 00:02:03,180
+system.
+
+52
+00:02:03,180 --> 00:02:04,960
+The number of cards is finite.
+
+53
+00:02:04,960 --> 00:02:07,290
+They never leave the system, and no new ones come in.
+
+54
+00:02:07,290 --> 00:02:08,770
+The closed queueing network model
+
+55
+00:02:08,770 --> 00:02:12,120
+may be useful for predicting performance.
+
+56
+00:02:12,120 --> 00:02:14,820
+Cards are not expensive, but inventory is.
+
+57
+00:02:14,820 --> 00:02:16,410
+The number of parts in the system
+
+58
+00:02:16,410 --> 00:02:19,500
+is always less than or equal to the number of cards,
+
+59
+00:02:19,500 --> 00:02:22,920
+so the number of cards regulates the inventory.
+
+60
+00:02:22,920 --> 00:02:25,234
+The number of cards is chosen so that the factory meets
+
+61
+00:02:25,234 --> 00:02:27,150
+its production rate requirement with the least
+
+62
+00:02:27,150 --> 00:02:28,909
+amount of inventory.
+
+63
+00:02:28,909 --> 00:02:30,450
+The mathematics is a little different
+
+64
+00:02:30,450 --> 00:02:32,700
+here from in the more general case.
+
+65
+00:02:32,700 --> 00:02:35,070
+That's because lambda equals p lambda does not
+
+66
+00:02:35,070 --> 00:02:37,430
+have a unique solution.
+
+67
+00:02:37,430 --> 00:02:39,430
+This means that a different solution approach is
+
+68
+00:02:39,430 --> 00:02:41,500
+needed to analyze the system.
+
+69
+00:02:41,500 --> 00:02:44,410
+That solution is used in the example that follows.
+
+70
+00:02:44,410 --> 00:02:47,082
+A flexible manufacturing system is an automated system
+
+71
+00:02:47,082 --> 00:02:49,540
+that is capable of operating on a variety of different part
+
+72
+00:02:49,540 --> 00:02:50,710
+types.
+
+73
+00:02:50,710 --> 00:02:52,960
+It includes a set of machines, a transportation
+
+74
+00:02:52,960 --> 00:02:57,100
+system, a control system for dispatching parts to machines.
+
+75
+00:02:57,100 --> 00:02:59,650
+Different part types require different tools or fixtures
+
+76
+00:02:59,650 --> 00:03:02,566
+for metal cutting, or different temperatures for ovens,
+
+77
+00:03:02,566 --> 00:03:03,940
+or different chemicals or paints,
+
+78
+00:03:03,940 --> 00:03:06,760
+or other features needed for specific products.
+
+79
+00:03:06,760 --> 00:03:09,640
+Flexibility refers to the variety of different tools,
+
+80
+00:03:09,640 --> 00:03:12,190
+fixtures, chemicals, et cetera that the system
+
+81
+00:03:12,190 --> 00:03:15,260
+provides for operations on different part types.
+
+82
+00:03:15,260 --> 00:03:17,290
+Most importantly, it also refers to the time
+
+83
+00:03:17,290 --> 00:03:19,600
+it takes to change a machine from being set up
+
+84
+00:03:19,600 --> 00:03:24,010
+for one operation on a part type to an operation on another.
+
+85
+00:03:24,010 --> 00:03:26,650
+The less time, the more flexible.
+
+86
+00:03:26,650 --> 00:03:29,096
+There are many issues in the design of such systems.
+
+87
+00:03:29,096 --> 00:03:30,970
+Many of them are physical, such as the nature
+
+88
+00:03:30,970 --> 00:03:33,460
+of the machines, the mechanical problems of transportation
+
+89
+00:03:33,460 --> 00:03:35,060
+in fixed rings, and so forth.
+
+90
+00:03:35,060 --> 00:03:37,360
+And we will not be dealing with them here.
+
+91
+00:03:37,360 --> 00:03:38,980
+The system's design issues include
+
+92
+00:03:38,980 --> 00:03:41,320
+determining what part type should be manufactured
+
+93
+00:03:41,320 --> 00:03:43,870
+at the same time in the same FMS,
+
+94
+00:03:43,870 --> 00:03:46,210
+designing the system for a given set of part types
+
+95
+00:03:46,210 --> 00:03:48,160
+and the demands for those part types,
+
+96
+00:03:48,160 --> 00:03:51,730
+and designing the system for possible future part types.
+
+97
+00:03:51,730 --> 00:03:53,470
+Operation issues include determining
+
+98
+00:03:53,470 --> 00:03:55,600
+which parts to dispatch to which machines,
+
+99
+00:03:55,600 --> 00:03:57,840
+and when to dispatch them.
+
+100
+00:03:57,840 --> 00:03:59,500
+In the next set of slides, we describe
+
+101
+00:03:59,500 --> 00:04:01,720
+a model of a flexible manufacturing system.
+
+102
+00:04:01,720 --> 00:04:04,750
+Like all models, it's an approximation of reality,
+
+103
+00:04:04,750 --> 00:04:07,300
+and is appropriate for a limited set of uses.
+
+104
+00:04:07,300 --> 00:04:09,460
+That is, it can be helpful for making some design
+
+105
+00:04:09,460 --> 00:04:12,070
+decisions, but not all.
+
+106
+00:04:12,070 --> 00:04:14,680
+This model is intended to help make some early design
+
+107
+00:04:14,680 --> 00:04:17,320
+decisions, and in making preliminary evaluations
+
+108
+00:04:17,320 --> 00:04:19,600
+of some proposed designs.
+
+109
+00:04:19,600 --> 00:04:21,370
+Specifically, the purpose of this model
+
+110
+00:04:21,370 --> 00:04:25,090
+is to estimate the capacity, or the maximum production rate,
+
+111
+00:04:25,090 --> 00:04:27,550
+of a proposed FMS design.
+
+112
+00:04:27,550 --> 00:04:29,890
+This capacity is a function of the operation
+
+113
+00:04:29,890 --> 00:04:32,185
+times of the machines, the number of pallets required,
+
+114
+00:04:32,185 --> 00:04:36,040
+the mix of parts, and the speed of the transportation system.
+
+115
+00:04:36,040 --> 00:04:37,990
+It can also assist in estimating the amount
+
+116
+00:04:37,990 --> 00:04:39,550
+of in-process inventory the system
+
+117
+00:04:39,550 --> 00:04:41,567
+will contain on the average.
+
+118
+00:04:41,567 --> 00:04:43,900
+However, it does not take into account everything that's
+
+119
+00:04:43,900 --> 00:04:44,780
+important.
+
+120
+00:04:44,780 --> 00:04:46,990
+It does not include the changeover times of a machine
+
+121
+00:04:46,990 --> 00:04:48,700
+from one part type to another.
+
+122
+00:04:48,700 --> 00:04:51,717
+It assumes that the changeover times are all 0.
+
+123
+00:04:51,717 --> 00:04:53,800
+While it accounts for the total number of pallets,
+
+124
+00:04:53,800 --> 00:04:55,480
+it does not account for the possibility
+
+125
+00:04:55,480 --> 00:04:57,910
+that different parts might require different pallets.
+
+126
+00:04:57,910 --> 00:05:00,640
+It assumes infinite storage space.
+
+127
+00:05:00,640 --> 00:05:02,230
+Consequently, this model is useful
+
+128
+00:05:02,230 --> 00:05:04,480
+for the evaluation of early rough designs,
+
+129
+00:05:04,480 --> 00:05:08,380
+and for providing preliminary estimates of required machines
+
+130
+00:05:08,380 --> 00:05:10,840
+and transportation speeds, the number of pallets,
+
+131
+00:05:10,840 --> 00:05:12,490
+and the work-in-process inventory.
+
+132
+00:05:12,490 --> 00:05:15,340
+Systems designers can then use those preliminary estimates
+
+133
+00:05:15,340 --> 00:05:17,380
+to create a more detailed design.
+
+134
+00:05:17,380 --> 00:05:20,410
+At that point, they must use a more detailed model, preferably
+
+135
+00:05:20,410 --> 00:05:21,580
+a simulation--
+
+136
+00:05:21,580 --> 00:05:24,910
+probably a simulation-- to make estimates of the performance
+
+137
+00:05:24,910 --> 00:05:26,500
+of the system.
+
+138
+00:05:26,500 --> 00:05:28,390
+In this model, there's a load-unload station,
+
+139
+00:05:28,390 --> 00:05:32,620
+a transportation system, and n minus 1 machines.
+
+140
+00:05:32,620 --> 00:05:36,310
+The transportation system is treated as the n-th machine.
+
+141
+00:05:36,310 --> 00:05:38,230
+There are n pallets.
+
+142
+00:05:38,230 --> 00:05:40,240
+Part types are not distinguished.
+
+143
+00:05:40,240 --> 00:05:43,030
+Instead, the set of parts is treated as a single homogeneous
+
+144
+00:05:43,030 --> 00:05:44,500
+population.
+
+145
+00:05:44,500 --> 00:05:46,570
+Instead of modeling the detailed routing
+
+146
+00:05:46,570 --> 00:05:48,700
+through the system of each part type,
+
+147
+00:05:48,700 --> 00:05:51,220
+it sends parts to each machine randomly,
+
+148
+00:05:51,220 --> 00:05:53,350
+in the proportions determined by the processing
+
+149
+00:05:53,350 --> 00:05:56,650
+requirements of the set of parts that will be produced.
+
+150
+00:05:56,650 --> 00:05:59,602
+Parts enter the system at the load-unload station.
+
+151
+00:05:59,602 --> 00:06:01,060
+There, they are attached to pallets
+
+152
+00:06:01,060 --> 00:06:03,520
+and sent to the transportation system.
+
+153
+00:06:03,520 --> 00:06:05,800
+They wait in a queue for the transportation system
+
+154
+00:06:05,800 --> 00:06:07,810
+to bring them to one of the machines.
+
+155
+00:06:07,810 --> 00:06:11,170
+The probability that a part goes to machine i is q i.
+
+156
+00:06:11,170 --> 00:06:16,250
+The part goes to the load-unload station with probability qM.
+
+157
+00:06:16,250 --> 00:06:19,140
+So recall the definition of pij.
+
+158
+00:06:19,140 --> 00:06:22,900
+piM equals 1 means that parts go to the transportation station
+
+159
+00:06:22,900 --> 00:06:26,760
+after receiving an operation at a workstation.
+
+160
+00:06:26,760 --> 00:06:29,400
+pMj equals qj is the probability that when
+
+161
+00:06:29,400 --> 00:06:33,810
+a part leaves the transportation system, it goes to station j.
+
+162
+00:06:33,810 --> 00:06:36,440
+pij equals 0 means that no part goes directly
+
+163
+00:06:36,440 --> 00:06:38,060
+from one machine to another.
+
+164
+00:06:38,060 --> 00:06:40,370
+Parts go from machine to transportation system
+
+165
+00:06:40,370 --> 00:06:41,800
+to machine.
+
+166
+00:06:41,800 --> 00:06:45,290
+The service rate at station i is mu i.
+
+167
+00:06:45,290 --> 00:06:48,860
+That means the average operation time for a part at station i
+
+168
+00:06:48,860 --> 00:06:50,930
+is 1 over mu i.
+
+169
+00:06:50,930 --> 00:06:53,330
+The input data is the set of numbers that
+
+170
+00:06:53,330 --> 00:06:55,770
+describes a particular case.
+
+171
+00:06:55,770 --> 00:06:59,720
+We've already described M, N, qj, and mu j.
+
+172
+00:06:59,720 --> 00:07:01,910
+One more thing is sj.
+
+173
+00:07:01,910 --> 00:07:05,180
+We're analyzing multiple machines at each station,
+
+174
+00:07:05,180 --> 00:07:07,550
+and those queues are analyzed with the M/M/s model
+
+175
+00:07:07,550 --> 00:07:09,500
+that we described earlier.
+
+176
+00:07:09,500 --> 00:07:12,650
+The output data, the production rate, the average time a part
+
+177
+00:07:12,650 --> 00:07:15,020
+spends in the system, and the utilization
+
+178
+00:07:15,020 --> 00:07:18,360
+per machine of station j is the information
+
+179
+00:07:18,360 --> 00:07:20,820
+that we're trying to get out of the model.
+
+180
+00:07:20,820 --> 00:07:22,790
+These are the performance measures.
+
+181
+00:07:22,790 --> 00:07:25,050
+In the following graphs, these are the default values
+
+182
+00:07:25,050 --> 00:07:26,550
+of all the parameters.
+
+183
+00:07:26,550 --> 00:07:28,800
+We will vary one parameter at a time,
+
+184
+00:07:28,800 --> 00:07:30,330
+and see the effect of that variable
+
+185
+00:07:30,330 --> 00:07:32,550
+on some of the performance measures.
+
+186
+00:07:32,550 --> 00:07:34,350
+In the first graph, the horizontal axis
+
+187
+00:07:34,350 --> 00:07:38,340
+is the number of pallets, N. The vertical axis is the production
+
+188
+00:07:38,340 --> 00:07:39,250
+rate.
+
+189
+00:07:39,250 --> 00:07:41,790
+P increases monotonically with N,
+
+190
+00:07:41,790 --> 00:07:45,490
+and reaches an upper limit asymptotically.
+
+191
+00:07:45,490 --> 00:07:48,940
+We will see similar graphs later for other kinds of systems.
+
+192
+00:07:48,940 --> 00:07:52,570
+It has this shape because of the infinite buffer assumption.
+
+193
+00:07:52,570 --> 00:07:55,330
+In reality, if the storage space were limited,
+
+194
+00:07:55,330 --> 00:07:57,640
+the production rate would increase and then
+
+195
+00:07:57,640 --> 00:07:59,710
+start to decrease when the number of pallets
+
+196
+00:07:59,710 --> 00:08:01,180
+gets very large.
+
+197
+00:08:01,180 --> 00:08:04,030
+This will happen because of blocking and traffic congestion
+
+198
+00:08:04,030 --> 00:08:05,330
+in the system.
+
+199
+00:08:05,330 --> 00:08:06,790
+In this graph, the horizontal axis
+
+200
+00:08:06,790 --> 00:08:08,620
+is still the number of pallets.
+
+201
+00:08:08,620 --> 00:08:10,630
+The vertical axis is now the average time
+
+202
+00:08:10,630 --> 00:08:13,030
+a part spends in the system.
+
+203
+00:08:13,030 --> 00:08:15,910
+The graph is monotonically increasing.
+
+204
+00:08:15,910 --> 00:08:17,830
+As N increases, the graph looks more and more
+
+205
+00:08:17,830 --> 00:08:20,500
+like a straight line, and goes to infinity
+
+206
+00:08:20,500 --> 00:08:23,320
+as the number of pallets goes to infinity.
+
+207
+00:08:23,320 --> 00:08:24,940
+As the number of pallets increases,
+
+208
+00:08:24,940 --> 00:08:26,950
+the queues at some or all of the stations
+
+209
+00:08:26,950 --> 00:08:28,810
+increase without limit.
+
+210
+00:08:28,810 --> 00:08:32,270
+This causes parts to have to wait longer at some queues.
+
+211
+00:08:32,270 --> 00:08:36,179
+So the total average time in the system increases.
+
+212
+00:08:36,179 --> 00:08:38,470
+Again, it has this shape because of the infinite buffer
+
+213
+00:08:38,470 --> 00:08:39,700
+assumption.
+
+214
+00:08:39,700 --> 00:08:41,265
+If buffers were finite, there would
+
+215
+00:08:41,265 --> 00:08:43,390
+be an upper bound to the waiting time for the parts
+
+216
+00:08:43,390 --> 00:08:46,990
+that get into the system, but some parts would not get in,
+
+217
+00:08:46,990 --> 00:08:50,860
+or would have to wait in a very long queue outside the system.
+
+218
+00:08:50,860 --> 00:08:52,420
+In this graph, the horizontal axis
+
+219
+00:08:52,420 --> 00:08:55,060
+is still the number of pallets, N.
+
+220
+00:08:55,060 --> 00:08:58,500
+The vertical axis is the utilization of the stations.
+
+221
+00:08:58,500 --> 00:09:01,430
+All graphs are monotonically increasing.
+
+222
+00:09:01,430 --> 00:09:03,580
+This is because as the number of pallets grows,
+
+223
+00:09:03,580 --> 00:09:06,490
+the fraction of time that a station has an empty queue
+
+224
+00:09:06,490 --> 00:09:08,140
+decreases.
+
+225
+00:09:08,140 --> 00:09:12,070
+As a consequence, the utilization increases.
+
+226
+00:09:12,070 --> 00:09:14,770
+The ratios of the utilizations are constant.
+
+227
+00:09:14,770 --> 00:09:16,840
+That is because the processing needs of each part
+
+228
+00:09:16,840 --> 00:09:19,840
+stays constant no matter how many pallets there are.
+
+229
+00:09:19,840 --> 00:09:22,130
+All the graphs have asymptotes.
+
+230
+00:09:22,130 --> 00:09:26,620
+The upper limit for station 2 is 1, or 100% utilization,
+
+231
+00:09:26,620 --> 00:09:29,650
+and the upper limits for all the others are less.
+
+232
+00:09:29,650 --> 00:09:31,540
+Why is that?
+
+233
+00:09:31,540 --> 00:09:33,850
+The reason is that the parts need to go to station 2
+
+234
+00:09:33,850 --> 00:09:36,160
+more often than the other stations,
+
+235
+00:09:36,160 --> 00:09:38,410
+or they need to spend more time there.
+
+236
+00:09:38,410 --> 00:09:41,620
+As N increases, the only limit on the utilizations
+
+237
+00:09:41,620 --> 00:09:44,290
+of the stations is 100%.
+
+238
+00:09:44,290 --> 00:09:46,360
+Station 2 reaches that limit because it's
+
+239
+00:09:46,360 --> 00:09:49,210
+the most highly utilized.
+
+240
+00:09:49,210 --> 00:09:50,920
+This means that as N increases, there
+
+241
+00:09:50,920 --> 00:09:53,110
+will be a longer and longer queue at station 2,
+
+242
+00:09:53,110 --> 00:09:56,170
+and parts will spend increasing amounts of time there.
+
+243
+00:09:56,170 --> 00:09:58,270
+Since the utilizations of all the other queues
+
+244
+00:09:58,270 --> 00:10:01,240
+are less than 1, their queues will approach the M/M/s
+
+245
+00:10:01,240 --> 00:10:04,000
+steady state performance.
+
+246
+00:10:04,000 --> 00:10:06,430
+Almost all the time in the graph in the previous slide
+
+247
+00:10:06,430 --> 00:10:10,420
+is spent waiting in the queue for station 2.
+
+248
+00:10:10,420 --> 00:10:15,070
+Now, the horizontal axis is the operation time of station 2.
+
+249
+00:10:15,070 --> 00:10:16,900
+The vertical axis is the utilization
+
+250
+00:10:16,900 --> 00:10:19,120
+of all the stations.
+
+251
+00:10:19,120 --> 00:10:21,700
+The utilization of station 2 is increasing,
+
+252
+00:10:21,700 --> 00:10:24,790
+and the utilizations of all the others are decreasing.
+
+253
+00:10:24,790 --> 00:10:26,800
+When station 2 is very fast--
+
+254
+00:10:26,800 --> 00:10:29,630
+that is, when its operation time is very short--
+
+255
+00:10:29,630 --> 00:10:31,510
+it can satisfy the needs of all the parts
+
+256
+00:10:31,510 --> 00:10:33,470
+with very little of its time.
+
+257
+00:10:33,470 --> 00:10:35,770
+Consequently, it goes to 0.
+
+258
+00:10:35,770 --> 00:10:38,800
+This allows the system to produce at a higher rate,
+
+259
+00:10:38,800 --> 00:10:40,870
+as we will see in the next slide.
+
+260
+00:10:40,870 --> 00:10:43,610
+Consequently, the other machines have more work to do,
+
+261
+00:10:43,610 --> 00:10:46,270
+so their utilizations are high.
+
+262
+00:10:46,270 --> 00:10:48,940
+As station 2 gets slower, it needs more time
+
+263
+00:10:48,940 --> 00:10:52,000
+to work on the parts, so it's busy more of the time,
+
+264
+00:10:52,000 --> 00:10:54,640
+and, therefore, its utilization goes up.
+
+265
+00:10:54,640 --> 00:10:57,250
+This reduces the rate at which it can do its work,
+
+266
+00:10:57,250 --> 00:11:00,310
+so that the production rate goes down.
+
+267
+00:11:00,310 --> 00:11:02,500
+This causes the other machines to have less work,
+
+268
+00:11:02,500 --> 00:11:05,350
+so their utilizations go down.
+
+269
+00:11:05,350 --> 00:11:07,150
+When station 2 is very slow, it's
+
+270
+00:11:07,150 --> 00:11:09,010
+the limiting factor on the production rate,
+
+271
+00:11:09,010 --> 00:11:10,870
+as the next graph shows.
+
+272
+00:11:10,870 --> 00:11:15,120
+As a consequence, its utilization approaches 100%.
+
+273
+00:11:15,120 --> 00:11:16,720
+On this graph, the horizontal axis
+
+274
+00:11:16,720 --> 00:11:19,930
+is still the operation time of station 2.
+
+275
+00:11:19,930 --> 00:11:23,050
+The vertical axis is the production rate of the system.
+
+276
+00:11:23,050 --> 00:11:25,360
+This graph is monotonically decreasing.
+
+277
+00:11:25,360 --> 00:11:27,940
+As station 2's operation time increases,
+
+278
+00:11:27,940 --> 00:11:31,030
+its production rate goes down, and this reduces the production
+
+279
+00:11:31,030 --> 00:11:33,190
+rate of the system as a whole.
+
+280
+00:11:33,190 --> 00:11:35,710
+When its operation time is close to 0,
+
+281
+00:11:35,710 --> 00:11:38,842
+the production rate of the system does not go to infinity.
+
+282
+00:11:38,842 --> 00:11:40,300
+This is because a different station
+
+283
+00:11:40,300 --> 00:11:44,320
+becomes the limiting factor on the production rate.
+
+284
+00:11:44,320 --> 00:11:46,150
+Again, on this graph, the horizontal axis
+
+285
+00:11:46,150 --> 00:11:48,730
+is the operation time of station 2.
+
+286
+00:11:48,730 --> 00:11:50,380
+The vertical axis is the average time
+
+287
+00:11:50,380 --> 00:11:52,330
+a part spends in the system.
+
+288
+00:11:52,330 --> 00:11:54,760
+As station 2 gets slower, we've seen
+
+289
+00:11:54,760 --> 00:11:56,920
+that its utilization goes up.
+
+290
+00:11:56,920 --> 00:11:59,950
+This causes the waiting time in its queue to increase.
+
+291
+00:11:59,950 --> 00:12:02,440
+When the utilization approaches 100%,
+
+292
+00:12:02,440 --> 00:12:05,502
+the waiting time in its queue goes to infinity,
+
+293
+00:12:05,502 --> 00:12:07,960
+so the average waiting time in the system goes to infinity,
+
+294
+00:12:07,960 --> 00:12:09,655
+as well.
+
+295
+00:12:09,655 --> 00:12:10,155
+
+

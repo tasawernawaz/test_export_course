@@ -1,0 +1,17 @@
+<problem display_name="Question 2" markdown="&#10;&gt;&gt;Which of the following situations would it be preferable to model using continuous variables instead of discrete variables? &lt;&lt;&#10;&#10;[x] Production of nails in a plant&#10;[x] Production of ketchup in a Heinz factory&#10;[ ] Production of airplanes&#10;[ ] Production of a custom part in a job shop&#10;&#10;[Explanation]&#10;If we measure nails by kilograms or ketchup by liters, a continuous model will predict behavior with practical accuracy, and it would probably be easier to work with than a discrete model. Such a model would not be useful to predict the behavior of an airplane factory or a job shop.&#10;[Explanation]&#10;" max_attempts="3">
+  <choiceresponse>
+    <label>Which of the following situations would it be preferable to model using continuous variables instead of discrete variables? </label>
+    <checkboxgroup>
+      <choice correct="true">Production of nails in a plant</choice>
+      <choice correct="true">Production of ketchup in a Heinz factory</choice>
+      <choice correct="false">Production of airplanes</choice>
+      <choice correct="false">Production of a custom part in a job shop</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>If we measure nails by kilograms or ketchup by liters, a continuous model will predict behavior with practical accuracy, and it would probably be easier to work with than a discrete model. Such a model would not be useful to predict the behavior of an airplane factory or a job shop.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

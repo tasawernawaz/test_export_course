@@ -1,0 +1,23 @@
+<problem display_name="Part 3" group_access="{}" markdown="null" max_attempts="2" showanswer="past_due" weight="5.0">
+  <p>After we determine the purchase contract size of each product type, we will workout the order policy. The supply chain department provided the following data. The inventoryholding cost of both product types is $200/set/quarter. The ordering cost of both product types is $1000 per order.</p>
+  <p>Assume the demand over YR2018 Q1 is constant.</p>
+  <label>What is the optimal quantity per order for 1080i TVs? (Round to nearest integer)</label>
+  <numericalresponse answer="150">
+    <responseparam type="tolerance" default="1"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>What is the optimal quantity per prder for 4K TVs? (Round to nearest integer)</label>
+  <numericalresponse answer="109">
+    <responseparam type="tolerance" default="1"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>
+        <span style="font-size: 1em;">
+          <img src="/static/WK5GP2Pt3.png" alt="" width="500" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+        </span>
+      </p>
+    </div>
+  </solution>
+</problem>

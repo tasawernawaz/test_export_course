@@ -1,0 +1,864 @@
+0
+00:00:00,000 --> 00:00:03,564
+
+
+1
+00:00:03,564 --> 00:00:04,980
+In this set of slides, we're going
+
+2
+00:00:04,980 --> 00:00:08,070
+to talk about queueing theory, some elementary models.
+
+3
+00:00:08,070 --> 00:00:09,570
+Before we do that, though, we should
+
+4
+00:00:09,570 --> 00:00:11,284
+talk about the Poisson process, which
+
+5
+00:00:11,284 --> 00:00:12,450
+is going to be used in that.
+
+6
+00:00:12,450 --> 00:00:15,000
+
+
+7
+00:00:15,000 --> 00:00:18,840
+Imagine a process that repeats over and over again
+
+8
+00:00:18,840 --> 00:00:21,000
+and it happens at random times.
+
+9
+00:00:21,000 --> 00:00:24,990
+So the first time it happens is at time T1, which is here.
+
+10
+00:00:24,990 --> 00:00:29,890
+The next time is a time T1 plus T2, which is here, and so on.
+
+11
+00:00:29,890 --> 00:00:34,140
+So the time between the events is T1, T2, T3, T4,
+
+12
+00:00:34,140 --> 00:00:34,740
+and so forth.
+
+13
+00:00:34,740 --> 00:00:38,280
+
+
+14
+00:00:38,280 --> 00:00:39,780
+What we're interested in is counting
+
+15
+00:00:39,780 --> 00:00:43,390
+the number of events that have happened up to a certain time.
+
+16
+00:00:43,390 --> 00:00:46,650
+So at this time, the number of events that occurred is zero.
+
+17
+00:00:46,650 --> 00:00:50,369
+At this time, exactly one event occurred.
+
+18
+00:00:50,369 --> 00:00:52,410
+At this time, we have three events have occurred.
+
+19
+00:00:52,410 --> 00:00:54,380
+And after this there would be four times.
+
+20
+00:00:54,380 --> 00:00:57,980
+So to be formal about it, we're going to say Ti--
+
+21
+00:00:57,980 --> 00:01:00,750
+i equals 1, 2, 3, and so forth-- are
+
+22
+00:01:00,750 --> 00:01:03,330
+a set of independent exponentially distributed
+
+23
+00:01:03,330 --> 00:01:06,060
+random variables with parameter lambda.
+
+24
+00:01:06,060 --> 00:01:08,040
+Each random variable may represent
+
+25
+00:01:08,040 --> 00:01:10,705
+the time between occurrences of a repeating event.
+
+26
+00:01:10,705 --> 00:01:13,080
+The kinds of events that we're going to be mostly talking
+
+27
+00:01:13,080 --> 00:01:16,650
+about we're going to call customer arrivals at a queue
+
+28
+00:01:16,650 --> 00:01:18,840
+at a line waiting for service.
+
+29
+00:01:18,840 --> 00:01:21,150
+But there's also clicks of a Geiger counter
+
+30
+00:01:21,150 --> 00:01:23,070
+and lots of other examples.
+
+31
+00:01:23,070 --> 00:01:27,785
+The time required for n such events is the summation from i
+
+32
+00:01:27,785 --> 00:01:30,630
+equals 1 to n of Ti.
+
+33
+00:01:30,630 --> 00:01:33,000
+So for example, that's what this time is,
+
+34
+00:01:33,000 --> 00:01:36,720
+T1 plus T2 plus T3 plus T4.
+
+35
+00:01:36,720 --> 00:01:38,850
+So informally, the number we're interested in,
+
+36
+00:01:38,850 --> 00:01:41,100
+the Poisson process, is N of t.
+
+37
+00:01:41,100 --> 00:01:45,490
+That's the number of events that occur between 0 and T.
+
+38
+00:01:45,490 --> 00:01:47,810
+Formally, we'll define it this way.
+
+39
+00:01:47,810 --> 00:01:51,450
+N of t is equal to 0 if T1 is greater than t.
+
+40
+00:01:51,450 --> 00:01:55,230
+That is, the time of the first event is greater than t.
+
+41
+00:01:55,230 --> 00:02:00,450
+And it's n such that the sum up to n is less than t
+
+42
+00:02:00,450 --> 00:02:03,960
+and the sum up to n plus 1 is greater than t.
+
+43
+00:02:03,960 --> 00:02:06,870
+So then N of t is called a Poisson process
+
+44
+00:02:06,870 --> 00:02:08,550
+with parameter lambda.
+
+45
+00:02:08,550 --> 00:02:12,000
+Here's a graphical view of the way the Poisson process looks.
+
+46
+00:02:12,000 --> 00:02:14,910
+The horizontal axis is time and the vertical axis
+
+47
+00:02:14,910 --> 00:02:18,180
+is N of t, which is the cumulative number of events
+
+48
+00:02:18,180 --> 00:02:20,825
+that have happened between 0 and t.
+
+49
+00:02:20,825 --> 00:02:22,950
+And you can see that it looks like a step function,
+
+50
+00:02:22,950 --> 00:02:24,580
+but with random steps.
+
+51
+00:02:24,580 --> 00:02:27,120
+Each step, the vertical is always 1.
+
+52
+00:02:27,120 --> 00:02:29,220
+But the horizontal is random.
+
+53
+00:02:29,220 --> 00:02:32,232
+OK, so let's talk about a queuing system.
+
+54
+00:02:32,232 --> 00:02:34,590
+A queuing system consists of a server that
+
+55
+00:02:34,590 --> 00:02:37,020
+provides some kind of service that takes time,
+
+56
+00:02:37,020 --> 00:02:38,700
+let's say the customers that arrive
+
+57
+00:02:38,700 --> 00:02:42,070
+at different times in an area for the customers to wait in.
+
+58
+00:02:42,070 --> 00:02:43,890
+Queuing theory is the mathematical theory
+
+59
+00:02:43,890 --> 00:02:44,760
+of such systems.
+
+60
+00:02:44,760 --> 00:02:47,400
+Its main purpose is to evaluate performance measures
+
+61
+00:02:47,400 --> 00:02:50,820
+such as waiting times and the number of people waiting.
+
+62
+00:02:50,820 --> 00:02:54,200
+The informal terminology refers to people getting service.
+
+63
+00:02:54,200 --> 00:02:55,930
+But it has been used in many contexts,
+
+64
+00:02:55,930 --> 00:02:57,480
+including inventory and factories,
+
+65
+00:02:57,480 --> 00:03:00,240
+calls waiting at call centers, data packets in computer
+
+66
+00:03:00,240 --> 00:03:02,040
+networks, and others.
+
+67
+00:03:02,040 --> 00:03:05,130
+The purpose of queuing theory is to evaluate
+
+68
+00:03:05,130 --> 00:03:06,900
+performance measures.
+
+69
+00:03:06,900 --> 00:03:08,940
+The motivation for the discussion
+
+70
+00:03:08,940 --> 00:03:13,050
+here is to develop some intuition about capacity
+
+71
+00:03:13,050 --> 00:03:14,800
+utilization and storage.
+
+72
+00:03:14,800 --> 00:03:18,600
+So in this figure, customers are arriving at random times.
+
+73
+00:03:18,600 --> 00:03:20,744
+The service time is random.
+
+74
+00:03:20,744 --> 00:03:22,410
+And so there's a random number of people
+
+75
+00:03:22,410 --> 00:03:24,380
+in the system at any given time.
+
+76
+00:03:24,380 --> 00:03:28,170
+In the M/M/1 queue, we have exponentially distributed
+
+77
+00:03:28,170 --> 00:03:30,540
+inter-arrival times.
+
+78
+00:03:30,540 --> 00:03:33,710
+The arrival time is a Poisson process with parameter lambda.
+
+79
+00:03:33,710 --> 00:03:36,850
+1/lamda is the average time between arrivals.
+
+80
+00:03:36,850 --> 00:03:38,970
+Lambda is the arrival rate, because lambda
+
+81
+00:03:38,970 --> 00:03:40,350
+is the average number of arrivals
+
+82
+00:03:40,350 --> 00:03:43,470
+in time period t divided by t.
+
+83
+00:03:43,470 --> 00:03:45,360
+Each time there's an arrival, one customer
+
+84
+00:03:45,360 --> 00:03:49,020
+joins the queue and so the queue size increases by one.
+
+85
+00:03:49,020 --> 00:03:50,720
+The arrival rate is constant.
+
+86
+00:03:50,720 --> 00:03:52,470
+It's independent of time and of the number
+
+87
+00:03:52,470 --> 00:03:53,700
+of people in the queue.
+
+88
+00:03:53,700 --> 00:03:55,980
+Service is provided in the system.
+
+89
+00:03:55,980 --> 00:03:57,390
+The service time is exponentially
+
+90
+00:03:57,390 --> 00:03:59,590
+distributed with parameter mu.
+
+91
+00:03:59,590 --> 00:04:02,460
+1/mu is the average service time.
+
+92
+00:04:02,460 --> 00:04:04,380
+Each time there's a service, one customer
+
+93
+00:04:04,380 --> 00:04:07,680
+departs so the queue size decreases by one.
+
+94
+00:04:07,680 --> 00:04:09,460
+The mu is the service rate, because mu
+
+95
+00:04:09,460 --> 00:04:11,100
+is the average number of services
+
+96
+00:04:11,100 --> 00:04:12,870
+in a time period of length t divided
+
+97
+00:04:12,870 --> 00:04:17,070
+by t as long as the queue is not empty during that period.
+
+98
+00:04:17,070 --> 00:04:20,550
+The arrival and service processes are independent.
+
+99
+00:04:20,550 --> 00:04:22,780
+There's one server.
+
+100
+00:04:22,780 --> 00:04:24,990
+There's an unlimited waiting area.
+
+101
+00:04:24,990 --> 00:04:27,150
+No customer is turned away, although some
+
+102
+00:04:27,150 --> 00:04:30,700
+may have to wait in the queue for a very long time.
+
+103
+00:04:30,700 --> 00:04:32,850
+This simplifies the mathematics, but it limits
+
+104
+00:04:32,850 --> 00:04:35,130
+the usefulness of the model.
+
+105
+00:04:35,130 --> 00:04:37,470
+In many real-world systems, limited weighting
+
+106
+00:04:37,470 --> 00:04:39,450
+or storage space causes disruptions
+
+107
+00:04:39,450 --> 00:04:42,510
+in the part of the system that generates the arrivals.
+
+108
+00:04:42,510 --> 00:04:44,060
+We'll discuss that later.
+
+109
+00:04:44,060 --> 00:04:47,240
+Here, we're still going to be assuming infinite waiting area.
+
+110
+00:04:47,240 --> 00:04:50,040
+The designation M/M/1 queue is an old-fashioned kind
+
+111
+00:04:50,040 --> 00:04:52,590
+of terminology, but it's frequently used.
+
+112
+00:04:52,590 --> 00:04:56,730
+The M in both cases refers to Markovian, which in this case
+
+113
+00:04:56,730 --> 00:04:58,170
+means exponential.
+
+114
+00:04:58,170 --> 00:05:02,440
+Sometimes this is referred to as an M/M/1 infinity queue
+
+115
+00:05:02,440 --> 00:05:05,830
+because of the infinite waiting area and because people have
+
+116
+00:05:05,830 --> 00:05:10,210
+also studied M/M/1/N queue, where N refers to the size
+
+117
+00:05:10,210 --> 00:05:11,520
+of the waiting area.
+
+118
+00:05:11,520 --> 00:05:13,780
+We are going to be defining the utilization
+
+119
+00:05:13,780 --> 00:05:15,550
+rho as lambda over mu.
+
+120
+00:05:15,550 --> 00:05:18,110
+And the motivation for that will be coming soon.
+
+121
+00:05:18,110 --> 00:05:20,230
+This is a graph of the number of customers
+
+122
+00:05:20,230 --> 00:05:23,110
+in a queue at any given time.
+
+123
+00:05:23,110 --> 00:05:24,590
+The horizontal axis is time.
+
+124
+00:05:24,590 --> 00:05:28,330
+The vertical axis is the number of people in the queue.
+
+125
+00:05:28,330 --> 00:05:31,450
+Every time the line jumps up, it means
+
+126
+00:05:31,450 --> 00:05:34,180
+that a customer has arrived.
+
+127
+00:05:34,180 --> 00:05:36,250
+Every time the line goes down, a customer
+
+128
+00:05:36,250 --> 00:05:39,280
+departs because its service has been completed.
+
+129
+00:05:39,280 --> 00:05:41,950
+The flat areas in the graph are where the queue length is not
+
+130
+00:05:41,950 --> 00:05:43,330
+changing.
+
+131
+00:05:43,330 --> 00:05:45,686
+Those are the times between arrivals and services.
+
+132
+00:05:45,686 --> 00:05:47,060
+The number of people in the queue
+
+133
+00:05:47,060 --> 00:05:48,690
+goes up and down at random times,
+
+134
+00:05:48,690 --> 00:05:51,190
+and that's the essence of what we're going to be looking at.
+
+135
+00:05:51,190 --> 00:05:55,990
+By contrast, here's a different system called the D/D/1 queue--
+
+136
+00:05:55,990 --> 00:05:58,490
+not a very interesting system, but it makes a point.
+
+137
+00:05:58,490 --> 00:06:01,330
+D here refers to deterministic.
+
+138
+00:06:01,330 --> 00:06:05,070
+The time between arrivals is a fixed length of time.
+
+139
+00:06:05,070 --> 00:06:07,280
+It's constant, doesn't change over time.
+
+140
+00:06:07,280 --> 00:06:09,370
+The second D refers to the service time,
+
+141
+00:06:09,370 --> 00:06:12,631
+and it's constant, or deterministic.
+
+142
+00:06:12,631 --> 00:06:15,130
+You'll see that it's important that the service time be less
+
+143
+00:06:15,130 --> 00:06:17,510
+than the time between arrivals.
+
+144
+00:06:17,510 --> 00:06:20,004
+In this graph also, the number of customers in the system
+
+145
+00:06:20,004 --> 00:06:22,420
+goes up when there's an arrival and goes down when there's
+
+146
+00:06:22,420 --> 00:06:26,170
+a departure, but it's not a very interesting-looking graph
+
+147
+00:06:26,170 --> 00:06:28,990
+because of this deterministic nature.
+
+148
+00:06:28,990 --> 00:06:31,870
+There's never more than one person in the queue.
+
+149
+00:06:31,870 --> 00:06:33,530
+And between the completion of a service
+
+150
+00:06:33,530 --> 00:06:35,332
+and the arrival of the next customer,
+
+151
+00:06:35,332 --> 00:06:36,790
+there are zero people in the queue.
+
+152
+00:06:36,790 --> 00:06:39,760
+Besides the fact that the D/D/1 queue is all deterministic
+
+153
+00:06:39,760 --> 00:06:42,160
+and the M/M/1 queue is all random,
+
+154
+00:06:42,160 --> 00:06:44,920
+the really important difference between the two of them
+
+155
+00:06:44,920 --> 00:06:48,230
+is that in the M/M/1 queue, arrivals and services are not
+
+156
+00:06:48,230 --> 00:06:49,780
+synchronized.
+
+157
+00:06:49,780 --> 00:06:53,850
+As a consequence, the number of people in the queue are random.
+
+158
+00:06:53,850 --> 00:06:56,020
+In the D/D/1 queue, the number of customers
+
+159
+00:06:56,020 --> 00:06:57,460
+is never greater than 1.
+
+160
+00:06:57,460 --> 00:07:00,280
+The important lesson here is that in the absence
+
+161
+00:07:00,280 --> 00:07:04,150
+of variability, the queue length can be short.
+
+162
+00:07:04,150 --> 00:07:05,830
+This is important.
+
+163
+00:07:05,830 --> 00:07:07,660
+Queues are expensive.
+
+164
+00:07:07,660 --> 00:07:13,000
+In factories, queues are really inventory in storage.
+
+165
+00:07:13,000 --> 00:07:15,070
+And in order to have large queues,
+
+166
+00:07:15,070 --> 00:07:19,330
+we need to leave large amounts of space, which cost money.
+
+167
+00:07:19,330 --> 00:07:21,320
+And the inventory itself costs money.
+
+168
+00:07:21,320 --> 00:07:24,340
+So therefore, it's desirable to remove all the variability
+
+169
+00:07:24,340 --> 00:07:25,780
+we can from the system.
+
+170
+00:07:25,780 --> 00:07:28,170
+In this course, we're taking the amount of variability
+
+171
+00:07:28,170 --> 00:07:30,040
+as given and looking at the consequence
+
+172
+00:07:30,040 --> 00:07:31,550
+of that amount of variability.
+
+173
+00:07:31,550 --> 00:07:35,260
+So let's look at a longer time period for this queuing
+
+174
+00:07:35,260 --> 00:07:37,720
+system for the M/M/1 system.
+
+175
+00:07:37,720 --> 00:07:40,540
+So customers are now going to arrive in a Poisson process
+
+176
+00:07:40,540 --> 00:07:43,660
+with average inter-arrival time one minute.
+
+177
+00:07:43,660 --> 00:07:46,630
+And the service time will be exponentially distributed,
+
+178
+00:07:46,630 --> 00:07:49,600
+with average service time equal to 54 seconds.
+
+179
+00:07:49,600 --> 00:07:52,690
+It will turn out that the average number of customers
+
+180
+00:07:52,690 --> 00:07:54,820
+in the system is 9.
+
+181
+00:07:54,820 --> 00:07:57,070
+We'll show that shortly.
+
+182
+00:07:57,070 --> 00:07:59,170
+Here's a graph of the number of customers
+
+183
+00:07:59,170 --> 00:08:02,110
+in the system for a short time period.
+
+184
+00:08:02,110 --> 00:08:06,240
+The system starts empty and increases and decreases and so
+
+185
+00:08:06,240 --> 00:08:06,740
+on.
+
+186
+00:08:06,740 --> 00:08:09,460
+Notice that over this short time period,
+
+187
+00:08:09,460 --> 00:08:13,550
+it never reaches the long-term average number in the system.
+
+188
+00:08:13,550 --> 00:08:15,490
+Now let's look at this same system
+
+189
+00:08:15,490 --> 00:08:17,090
+over a longer period of time.
+
+190
+00:08:17,090 --> 00:08:20,000
+This is actually the same system as before,
+
+191
+00:08:20,000 --> 00:08:22,600
+and the first 100 times steps are the same as what
+
+192
+00:08:22,600 --> 00:08:24,020
+was on the previous graph.
+
+193
+00:08:24,020 --> 00:08:26,170
+This graph shows the simulation of the number
+
+194
+00:08:26,170 --> 00:08:29,590
+of customers in that same M/M/1 queue for a long time.
+
+195
+00:08:29,590 --> 00:08:33,950
+The last slide is the first 100 time units of this slide.
+
+196
+00:08:33,950 --> 00:08:35,799
+Notice that the largest number in the system
+
+197
+00:08:35,799 --> 00:08:40,390
+is almost 30 times larger than in the D/D/1 queue.
+
+198
+00:08:40,390 --> 00:08:43,780
+The average is sometimes exceeded by quite a lot.
+
+199
+00:08:43,780 --> 00:08:47,080
+The highest value that the queue achieves during this time
+
+200
+00:08:47,080 --> 00:08:50,320
+period is over three times the average,
+
+201
+00:08:50,320 --> 00:08:52,250
+the long-term average in the system.
+
+202
+00:08:52,250 --> 00:08:54,580
+This is why factory managers and operators
+
+203
+00:08:54,580 --> 00:08:56,200
+want to remove as much variability
+
+204
+00:08:56,200 --> 00:08:57,910
+in the system as possible.
+
+205
+00:08:57,910 --> 00:08:59,680
+It costs money to have inventory,
+
+206
+00:08:59,680 --> 00:09:02,110
+it costs money to provide space for inventory,
+
+207
+00:09:02,110 --> 00:09:04,270
+and customers do not like to wait, especially
+
+208
+00:09:04,270 --> 00:09:07,430
+for random lengths of time.
+
+209
+00:09:07,430 --> 00:09:09,970
+Here's an animation of that same queuing system.
+
+210
+00:09:09,970 --> 00:09:14,880
+
+
+211
+00:09:14,880 --> 00:09:20,760
+You'll see now that the largest queue is larger
+
+212
+00:09:20,760 --> 00:09:25,680
+than it was on the graph that was on the slide.
+
+213
+00:09:25,680 --> 00:09:28,050
+It's much higher than the average
+
+214
+00:09:28,050 --> 00:09:32,450
+that we expect to see over the long-run.
+
+215
+00:09:32,450 --> 00:09:44,896
+
+

@@ -1,0 +1,6 @@
+<problem display_name="Part 3" markdown="&#10;&gt;&gt;Given the solution in Part 1, what is the corresponding pollution in the downstream river (in mg/day)?&lt;&lt;&#10;&#10;= 2400&#10;" max_attempts="3" showanswer="never" weight="5.0">
+  <numericalresponse answer="2400">
+    <label>Given the solution in Part 1, what is the corresponding pollution in the downstream river (in mg/day)?</label>
+    <formulaequationinput/>
+  </numericalresponse>
+</problem>

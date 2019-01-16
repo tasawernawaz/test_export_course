@@ -1,0 +1,13 @@
+<problem display_name="Part 1" markdown="Parts in storage costs between the drilling and reaming machines cost $100.&#10;&#10;&gt;&gt;What is the the final cost of the optimal line?&lt;&lt;&#10;&#10;= 146830 +- 5%&#10;&#10;&gt;&gt;What is the buffer size of the optimal line?&lt;&lt;&#10;&#10;=1639 +- 5%&#10;&#10;" max_attempts="3" showanswer="never" weight="20.0">
+  <p>Parts in storage costs between the drilling and reaming machines cost $100.</p>
+  <label>What is the the final cost of the optimal line?</label>
+  <numericalresponse answer="146830">
+    <responseparam type="tolerance" default="5%"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>What is the buffer size of the optimal line?</label>
+  <numericalresponse answer="1639">
+    <responseparam type="tolerance" default="5%"/>
+    <formulaequationinput/>
+  </numericalresponse>
+</problem>

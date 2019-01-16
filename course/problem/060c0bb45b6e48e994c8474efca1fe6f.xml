@@ -1,0 +1,17 @@
+<problem display_name="Question 3" markdown="&gt;&gt;Over the entire range of possible arrival rates, how does 1 M/M/s queue of \(s* \mu\) total capacity compare to s M/M/1 queues each of \(\mu\) capacity?&lt;&lt;&#10;( ) 1 M/M/s queue of \(s* \mu\) is always significantly faster than s M/M/1 queues of \(\mu\) capacity.&#10;(x) 1 M/M/s queue of \(s* \mu\) is sometimes significantly faster than s M/M/1 queues of \(\mu\) capacity.&#10;( ) 1 M/M/s queue of \(s* \mu\) is equally fast as s M/M/1 queues of \(\mu\) capacity.&#10;( ) 1 M/M/s queue of \(s* \mu\) is always significantly slower than s M/M/1 queues of \(\mu\) capacity.&#10;&#10;[explanation]&#10;When the arrival rate approaches the capacity of the system, \(s* \mu\), there is no idle time in any server, and the lag time of both systems are approximately the same. When the arrival rate is significantly less than \(s* \mu\) however, there will be times when one or some queues in the multiple queue system that are empty and thus are not fully utilized. This leads to a slower performance and longer lag times.&#10;[explanation]&#10;&#10;&#10;&#10;&#10;&#10;" max_attempts="3">
+  <multiplechoiceresponse>
+    <label>Over the entire range of possible arrival rates, how does 1 M/M/s queue of \(s* \mu\) total capacity compare to s M/M/1 queues each of \(\mu\) capacity?</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">1 M/M/s queue of \(s* \mu\) is always significantly faster than s M/M/1 queues of \(\mu\) capacity.</choice>
+      <choice correct="true">1 M/M/s queue of \(s* \mu\) is sometimes significantly faster than s M/M/1 queues of \(\mu\) capacity.</choice>
+      <choice correct="false">1 M/M/s queue of \(s* \mu\) is equally fast as s M/M/1 queues of \(\mu\) capacity.</choice>
+      <choice correct="false">1 M/M/s queue of \(s* \mu\) is always significantly slower than s M/M/1 queues of \(\mu\) capacity.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>When the arrival rate approaches the capacity of the system, \(s* \mu\), there is no idle time in any server, and the lag time of both systems are approximately the same. When the arrival rate is significantly less than \(s* \mu\) however, there will be times when one or some queues in the multiple queue system that are empty and thus are not fully utilized. This leads to a slower performance and longer lag times.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

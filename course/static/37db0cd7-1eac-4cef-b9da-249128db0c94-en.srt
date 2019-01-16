@@ -1,0 +1,1176 @@
+0
+00:00:00,000 --> 00:00:02,490
+
+
+1
+00:00:02,490 --> 00:00:05,050
+In this video, we will start a discussion of flow lines
+
+2
+00:00:05,050 --> 00:00:07,720
+with finite non-zero buffers.
+
+3
+00:00:07,720 --> 00:00:09,280
+The behavior of these lines is more
+
+4
+00:00:09,280 --> 00:00:13,190
+complex than that of lines with infinite or zero buffers.
+
+5
+00:00:13,190 --> 00:00:14,840
+In particular, the production rate
+
+6
+00:00:14,840 --> 00:00:16,309
+is a function of both the mean time
+
+7
+00:00:16,309 --> 00:00:19,190
+to repair and mean time to fail of the machines and not just
+
+8
+00:00:19,190 --> 00:00:21,650
+the machines efficiencies, which are functions
+
+9
+00:00:21,650 --> 00:00:25,430
+of the ratios of mean time to fail to mean time to repair.
+
+10
+00:00:25,430 --> 00:00:27,530
+The mathematics is also more complex.
+
+11
+00:00:27,530 --> 00:00:30,470
+For that reason, we will talk about two machine lines now,
+
+12
+00:00:30,470 --> 00:00:34,120
+and longer lines in the second part of the course.
+
+13
+00:00:34,120 --> 00:00:36,310
+The motivation for having buffers
+
+14
+00:00:36,310 --> 00:00:39,670
+is to increase the production rate beyond what the production
+
+15
+00:00:39,670 --> 00:00:44,680
+rate would be with zero buffers, but it comes with costs.
+
+16
+00:00:44,680 --> 00:00:47,500
+One cost is the in-process inventory, and also
+
+17
+00:00:47,500 --> 00:00:51,670
+the increased lead time that in process inventory leads to.
+
+18
+00:00:51,670 --> 00:00:55,600
+Second is the floor space that we have to dedicate to this.
+
+19
+00:00:55,600 --> 00:00:58,610
+And third is the material handling mechanism.
+
+20
+00:00:58,610 --> 00:01:00,970
+Let's compare the consequences of disruptions
+
+21
+00:01:00,970 --> 00:01:03,940
+in systems with different kinds of buffers.
+
+22
+00:01:03,940 --> 00:01:07,270
+A line with infinite buffers has delayed downstream propagation
+
+23
+00:01:07,270 --> 00:01:09,520
+of disruptions in the form of starvation
+
+24
+00:01:09,520 --> 00:01:12,490
+and no upstream propagation.
+
+25
+00:01:12,490 --> 00:01:15,970
+Zero buffers have essentially instantaneous propagation
+
+26
+00:01:15,970 --> 00:01:18,010
+of disruptions in both directions,
+
+27
+00:01:18,010 --> 00:01:20,860
+upstream and downstream.
+
+28
+00:01:20,860 --> 00:01:25,280
+Finite buffers have a delayed propagation in both directions,
+
+29
+00:01:25,280 --> 00:01:28,960
+and there's a new phenomenon which we call a blockage.
+
+30
+00:01:28,960 --> 00:01:32,770
+Machine, Mi, is blocked at time, t,
+
+31
+00:01:32,770 --> 00:01:35,680
+if buffer, Bi, is full at time, t.
+
+32
+00:01:35,680 --> 00:01:39,070
+Buffer, Bi, is the buffer downstream of a machine, Mi.
+
+33
+00:01:39,070 --> 00:01:41,830
+the difficulty with this is that no simple formula
+
+34
+00:01:41,830 --> 00:01:45,250
+for calculating production rate inventory levels or performance
+
+35
+00:01:45,250 --> 00:01:47,110
+measures exist.
+
+36
+00:01:47,110 --> 00:01:50,020
+To get around that there are various solutions.
+
+37
+00:01:50,020 --> 00:01:51,070
+One is simulation.
+
+38
+00:01:51,070 --> 00:01:54,430
+Simulation can be accurate, but it's statistical,
+
+39
+00:01:54,430 --> 00:01:57,220
+and it can be slowed for doing optimization with.
+
+40
+00:01:57,220 --> 00:01:59,710
+Analytical approximations, analytical
+
+41
+00:01:59,710 --> 00:02:01,930
+means that there are equations that can be solved
+
+42
+00:02:01,930 --> 00:02:03,730
+for the quantities we need.
+
+43
+00:02:03,730 --> 00:02:07,210
+We can get exact numerical solutions for short lines,
+
+44
+00:02:07,210 --> 00:02:08,889
+and a special case is that we can
+
+45
+00:02:08,889 --> 00:02:12,340
+get an exact analytical solution for two machine lines.
+
+46
+00:02:12,340 --> 00:02:14,050
+From now on, we're going to focus on two
+
+47
+00:02:14,050 --> 00:02:16,680
+machine finite buffer lines.
+
+48
+00:02:16,680 --> 00:02:20,970
+The parameters are P1, the probability
+
+49
+00:02:20,970 --> 00:02:23,820
+of machine one failing while doing an operation.
+
+50
+00:02:23,820 --> 00:02:27,640
+One over P1 is the mean time to fail of machine one.
+
+51
+00:02:27,640 --> 00:02:29,970
+R1 is the probability of machine one
+
+52
+00:02:29,970 --> 00:02:33,540
+getting repaired during an operation time when it is down.
+
+53
+00:02:33,540 --> 00:02:37,500
+P2 and R2 are similar for the second machine,
+
+54
+00:02:37,500 --> 00:02:40,080
+and N is the number of parts of the buffer can hold,
+
+55
+00:02:40,080 --> 00:02:41,460
+the buffer size.
+
+56
+00:02:41,460 --> 00:02:43,080
+The next four slides are going to show
+
+57
+00:02:43,080 --> 00:02:46,770
+graphs of N of T, the number of parts in the buffer of a two
+
+58
+00:02:46,770 --> 00:02:48,330
+machine line.
+
+59
+00:02:48,330 --> 00:02:49,770
+The parameters of each example are
+
+60
+00:02:49,770 --> 00:02:52,020
+chosen so the lines have different than hopefully
+
+61
+00:02:52,020 --> 00:02:53,940
+interesting behaviors.
+
+62
+00:02:53,940 --> 00:02:56,620
+In example one, both machines are the same
+
+63
+00:02:56,620 --> 00:02:58,630
+and the buffer is small.
+
+64
+00:02:58,630 --> 00:03:01,960
+Example two has the same machines as in example one,
+
+65
+00:03:01,960 --> 00:03:04,000
+but now the buffer is much larger.
+
+66
+00:03:04,000 --> 00:03:07,060
+Example three is the same as example two,
+
+67
+00:03:07,060 --> 00:03:12,810
+except that the first machine fails more often.
+
+68
+00:03:12,810 --> 00:03:15,930
+And example four is the reverse of example three.
+
+69
+00:03:15,930 --> 00:03:18,510
+It's the same as example two, except now the second machine
+
+70
+00:03:18,510 --> 00:03:21,250
+fails more often.
+
+71
+00:03:21,250 --> 00:03:23,470
+Here's the graph of example one.
+
+72
+00:03:23,470 --> 00:03:25,460
+The horizontal axis is time.
+
+73
+00:03:25,460 --> 00:03:27,220
+The vertical axis is the number of parts
+
+74
+00:03:27,220 --> 00:03:29,230
+in the buffer at each time.
+
+75
+00:03:29,230 --> 00:03:31,030
+The behavior of the buffer level is driven
+
+76
+00:03:31,030 --> 00:03:33,040
+by the states of the machines.
+
+77
+00:03:33,040 --> 00:03:35,500
+When the first machine is up and the second is down,
+
+78
+00:03:35,500 --> 00:03:37,660
+the buffer level increases.
+
+79
+00:03:37,660 --> 00:03:40,420
+When the first machine is down and the second is up,
+
+80
+00:03:40,420 --> 00:03:42,550
+the buffer level decreases.
+
+81
+00:03:42,550 --> 00:03:44,770
+When the machines are in the same state, both up
+
+82
+00:03:44,770 --> 00:03:48,250
+or both down, the buffer level stays constant.
+
+83
+00:03:48,250 --> 00:03:49,720
+We can't tell whether the machines
+
+84
+00:03:49,720 --> 00:03:53,040
+are both up or both down by looking at the graph.
+
+85
+00:03:53,040 --> 00:03:57,290
+When the buffer level zero, that is when the buffer is empty,
+
+86
+00:03:57,290 --> 00:04:00,680
+the first machine must be down and the second must be up.
+
+87
+00:04:00,680 --> 00:04:03,060
+The second one is start.
+
+88
+00:04:03,060 --> 00:04:06,060
+When the buffer level is 10, in this case, when the buffer is
+
+89
+00:04:06,060 --> 00:04:10,230
+full, the first machine must be up and the second must be down.
+
+90
+00:04:10,230 --> 00:04:12,030
+The first machine is blocked.
+
+91
+00:04:12,030 --> 00:04:13,710
+Note that many of the failures lead
+
+92
+00:04:13,710 --> 00:04:16,110
+to a blockage or starvation.
+
+93
+00:04:16,110 --> 00:04:18,480
+This is because the mean downtime of both machines
+
+94
+00:04:18,480 --> 00:04:21,810
+is 10, since R is equal to 0.1 for both.
+
+95
+00:04:21,810 --> 00:04:23,910
+Therefore, a large fraction of downtimes
+
+96
+00:04:23,910 --> 00:04:26,380
+will be greater than 10.
+
+97
+00:04:26,380 --> 00:04:29,540
+Keep in mind that the buffer size is 10.
+
+98
+00:04:29,540 --> 00:04:31,670
+So if the first machine fails and stays down
+
+99
+00:04:31,670 --> 00:04:34,160
+for 10 or more operation times, and the second machine
+
+100
+00:04:34,160 --> 00:04:37,010
+stays up, the buffer will become empty.
+
+101
+00:04:37,010 --> 00:04:39,440
+Similarly, if the second one fails and stays down
+
+102
+00:04:39,440 --> 00:04:41,150
+for more than 10 operations times,
+
+103
+00:04:41,150 --> 00:04:44,300
+and the first stays up, the buffer will become full.
+
+104
+00:04:44,300 --> 00:04:46,130
+Here's example two.
+
+105
+00:04:46,130 --> 00:04:48,180
+In this case, the buffer size is 100,
+
+106
+00:04:48,180 --> 00:04:51,410
+which is 10 times the mean downtimes of both machines.
+
+107
+00:04:51,410 --> 00:04:54,750
+The machines are the same as in example one.
+
+108
+00:04:54,750 --> 00:04:58,620
+As a consequence, starvations and blockages are much rarer.
+
+109
+00:04:58,620 --> 00:05:01,850
+Most downtimes are much less than the buffer size
+
+110
+00:05:01,850 --> 00:05:04,800
+when we measure downtimes and operation time.
+
+111
+00:05:04,800 --> 00:05:06,900
+A single failure rarely lasts long enough
+
+112
+00:05:06,900 --> 00:05:09,330
+to fill or empty the buffer.
+
+113
+00:05:09,330 --> 00:05:11,220
+Note that the scales on both the axes
+
+114
+00:05:11,220 --> 00:05:14,020
+are different from those of example one.
+
+115
+00:05:14,020 --> 00:05:15,940
+For the buffer to become empty, for example,
+
+116
+00:05:15,940 --> 00:05:18,310
+there must be a period starting with the buffer level
+
+117
+00:05:18,310 --> 00:05:22,790
+being 50, in which machine one is down more than 50 operation
+
+118
+00:05:22,790 --> 00:05:25,000
+times more than machine two is down.
+
+119
+00:05:25,000 --> 00:05:26,750
+This is rare.
+
+120
+00:05:26,750 --> 00:05:28,640
+Increasing the buffer size has the effect
+
+121
+00:05:28,640 --> 00:05:30,130
+of increasing the production rate,
+
+122
+00:05:30,130 --> 00:05:32,630
+because the fraction of the time the buffer is full or empty
+
+123
+00:05:32,630 --> 00:05:34,070
+decreases.
+
+124
+00:05:34,070 --> 00:05:36,560
+Increasing the buffer size also makes the average amount
+
+125
+00:05:36,560 --> 00:05:38,430
+of inventory increase.
+
+126
+00:05:38,430 --> 00:05:40,190
+Here's the graph of example three.
+
+127
+00:05:40,190 --> 00:05:42,140
+This example is similar to example two,
+
+128
+00:05:42,140 --> 00:05:45,920
+except machine one fails twice as often as machine two.
+
+129
+00:05:45,920 --> 00:05:48,540
+Machine one is the bottleneck.
+
+130
+00:05:48,540 --> 00:05:50,630
+This graphs looks similar to that of example two,
+
+131
+00:05:50,630 --> 00:05:54,020
+except that the buffer level rarely goes above 50.
+
+132
+00:05:54,020 --> 00:05:55,550
+During the period shown, the buffer
+
+133
+00:05:55,550 --> 00:05:58,020
+is often empty, but never full.
+
+134
+00:05:58,020 --> 00:06:01,140
+What would be the effect of increasing the buffer size?
+
+135
+00:06:01,140 --> 00:06:02,670
+If the marketing department told us
+
+136
+00:06:02,670 --> 00:06:05,670
+that we have to meet a significantly higher demand,
+
+137
+00:06:05,670 --> 00:06:09,740
+could we hope to meet it by increasing the buffer size?
+
+138
+00:06:09,740 --> 00:06:11,390
+Pause the video at this point if you
+
+139
+00:06:11,390 --> 00:06:12,980
+want to check your intuition.
+
+140
+00:06:12,980 --> 00:06:14,210
+My answer is coming next.
+
+141
+00:06:14,210 --> 00:06:17,120
+
+
+142
+00:06:17,120 --> 00:06:18,670
+The answer is, of course not.
+
+143
+00:06:18,670 --> 00:06:21,310
+During the period of 10,000 operation times,
+
+144
+00:06:21,310 --> 00:06:23,290
+the buffer is never full.
+
+145
+00:06:23,290 --> 00:06:25,690
+If we ran the same simulation with the same sequence
+
+146
+00:06:25,690 --> 00:06:28,420
+of failures and repairs into the larger buffer,
+
+147
+00:06:28,420 --> 00:06:30,257
+we would see exactly the same buffer level
+
+148
+00:06:30,257 --> 00:06:32,590
+history, and therefore, exactly the same production rate
+
+149
+00:06:32,590 --> 00:06:34,330
+and average inventory.
+
+150
+00:06:34,330 --> 00:06:37,390
+To summarize, increasing the buffer size in this case
+
+151
+00:06:37,390 --> 00:06:39,430
+would not change the production rate.
+
+152
+00:06:39,430 --> 00:06:41,980
+But it would increase the cost of buffer space.
+
+153
+00:06:41,980 --> 00:06:45,320
+It would also have no effect on the average inventory.
+
+154
+00:06:45,320 --> 00:06:47,640
+Here's example four.
+
+155
+00:06:47,640 --> 00:06:49,890
+This example is the same as example three,
+
+156
+00:06:49,890 --> 00:06:51,630
+but the machines are switched.
+
+157
+00:06:51,630 --> 00:06:54,520
+Now machine two is the bottleneck.
+
+158
+00:06:54,520 --> 00:06:56,920
+The buffer quickly fills up, after that,
+
+159
+00:06:56,920 --> 00:06:59,740
+it stays close to full for much of the time.
+
+160
+00:06:59,740 --> 00:07:01,590
+It drops down to zero once, and it
+
+161
+00:07:01,590 --> 00:07:05,200
+goes below 50 far less time than it is above 50.
+
+162
+00:07:05,200 --> 00:07:07,480
+Let's consider the following situation.
+
+163
+00:07:07,480 --> 00:07:09,280
+Suppose the marketing department tells us
+
+164
+00:07:09,280 --> 00:07:13,100
+they need us to ramp up the production rate substantially.
+
+165
+00:07:13,100 --> 00:07:17,260
+We consider increasing the buffer size from 100 to 200.
+
+166
+00:07:17,260 --> 00:07:19,060
+What would be the effect on the production
+
+167
+00:07:19,060 --> 00:07:22,010
+rate and the average inventory if we did that?
+
+168
+00:07:22,010 --> 00:07:25,960
+Let's make a possibly unfair self-assessment quiz question.
+
+169
+00:07:25,960 --> 00:07:26,509
+Don't worry.
+
+170
+00:07:26,509 --> 00:07:28,925
+Your performance on this will not affect your course grade
+
+171
+00:07:28,925 --> 00:07:31,100
+in any way.
+
+172
+00:07:31,100 --> 00:07:33,490
+We're going to give you two multiple choice questions.
+
+173
+00:07:33,490 --> 00:07:35,470
+Please try to answer the questions for yourself
+
+174
+00:07:35,470 --> 00:07:37,630
+before advancing the video.
+
+175
+00:07:37,630 --> 00:07:39,880
+The video provides an answer, so stop the video
+
+176
+00:07:39,880 --> 00:07:42,816
+after the second question.
+
+177
+00:07:42,816 --> 00:07:44,690
+The first question is, what will the increase
+
+178
+00:07:44,690 --> 00:07:46,340
+do to the steady state production rate?
+
+179
+00:07:46,340 --> 00:07:49,010
+
+
+180
+00:07:49,010 --> 00:07:51,020
+A, it will double it.
+
+181
+00:07:51,020 --> 00:07:53,210
+B, it will increase it substantially,
+
+182
+00:07:53,210 --> 00:07:54,800
+but less than double.
+
+183
+00:07:54,800 --> 00:07:58,640
+C, it will increase it, but only by a trivial amount.
+
+184
+00:07:58,640 --> 00:08:01,760
+D, it will have exactly zero effect.
+
+185
+00:08:01,760 --> 00:08:04,460
+And E, none of the above.
+
+186
+00:08:04,460 --> 00:08:06,770
+The second question is, what will happen
+
+187
+00:08:06,770 --> 00:08:09,890
+to the average inventory?
+
+188
+00:08:09,890 --> 00:08:13,732
+A, it will increase it by something very close to 100.
+
+189
+00:08:13,732 --> 00:08:15,770
+B, it will double it.
+
+190
+00:08:15,770 --> 00:08:17,780
+C, it will increase it substantially,
+
+191
+00:08:17,780 --> 00:08:19,580
+but less than double.
+
+192
+00:08:19,580 --> 00:08:23,230
+D, it will increase it, but only by a trivial amount.
+
+193
+00:08:23,230 --> 00:08:26,060
+E, it will have exactly zero effect.
+
+194
+00:08:26,060 --> 00:08:29,210
+And F, none of the above.
+
+195
+00:08:29,210 --> 00:08:29,810
+OK.
+
+196
+00:08:29,810 --> 00:08:30,990
+Pause the video.
+
+197
+00:08:30,990 --> 00:08:32,419
+Think about these questions.
+
+198
+00:08:32,419 --> 00:08:34,970
+The answer is coming next.
+
+199
+00:08:34,970 --> 00:08:37,530
+To answer these questions, we ran the simulation.
+
+200
+00:08:37,530 --> 00:08:39,530
+Here, we're seeing the results of the simulation
+
+201
+00:08:39,530 --> 00:08:41,030
+as they emerge.
+
+202
+00:08:41,030 --> 00:08:43,440
+This is a simulation of two cases.
+
+203
+00:08:43,440 --> 00:08:45,290
+One is just like example four.
+
+204
+00:08:45,290 --> 00:08:48,390
+The other is the same, but with a buffer size of 200.
+
+205
+00:08:48,390 --> 00:08:50,600
+Let's call the first one, example 4-100,
+
+206
+00:08:50,600 --> 00:08:53,090
+and the second one, 4-200.
+
+207
+00:08:53,090 --> 00:08:56,240
+The following three slides have static graphs of the simulation
+
+208
+00:08:56,240 --> 00:08:58,550
+over different time scales.
+
+209
+00:08:58,550 --> 00:09:00,860
+The initial buffer levels of both are 50,
+
+210
+00:09:00,860 --> 00:09:04,280
+and initially the states of both machines are up.
+
+211
+00:09:04,280 --> 00:09:06,710
+The machines go up and down at random.
+
+212
+00:09:06,710 --> 00:09:08,330
+To do this comparison experiment,
+
+213
+00:09:08,330 --> 00:09:11,240
+we've contrived to have almost the same sequence of failures
+
+214
+00:09:11,240 --> 00:09:13,850
+in repairs for both sets of machines.
+
+215
+00:09:13,850 --> 00:09:16,580
+The sequences differ slightly because of the operation
+
+216
+00:09:16,580 --> 00:09:18,290
+dependent failure assumption.
+
+217
+00:09:18,290 --> 00:09:20,270
+If the buffer of one of the lines is full,
+
+218
+00:09:20,270 --> 00:09:22,550
+but the buffer of the other one is not,
+
+219
+00:09:22,550 --> 00:09:24,380
+it's possible that the first machine
+
+220
+00:09:24,380 --> 00:09:27,860
+in the line with the non-full buffer might fail.
+
+221
+00:09:27,860 --> 00:09:30,320
+But the first machine in the line with the full buffer
+
+222
+00:09:30,320 --> 00:09:31,562
+will not.
+
+223
+00:09:31,562 --> 00:09:33,770
+This won't happen very often, because the buffers are
+
+224
+00:09:33,770 --> 00:09:36,647
+almost always full and non-full at the same time.
+
+225
+00:09:36,647 --> 00:09:38,480
+In this graph, the purple line is the number
+
+226
+00:09:38,480 --> 00:09:41,180
+of parts in the buffer, 4-100.
+
+227
+00:09:41,180 --> 00:09:45,100
+The green line represents the level of the buffer in 4-200.
+
+228
+00:09:45,100 --> 00:09:47,360
+The sample paths of both simulations
+
+229
+00:09:47,360 --> 00:09:49,730
+are exactly the same until the buffer
+
+230
+00:09:49,730 --> 00:09:52,100
+levels of both reach 100.
+
+231
+00:09:52,100 --> 00:09:57,020
+That's why you see only one line between time 0 and time 228.
+
+232
+00:09:57,020 --> 00:09:59,720
+As a consequence, the production rates and average inventories
+
+233
+00:09:59,720 --> 00:10:05,420
+of both lines are exactly the same between time 0 and 228.
+
+234
+00:10:05,420 --> 00:10:08,850
+At time 228, however, the buffer in example 4-100
+
+235
+00:10:08,850 --> 00:10:11,940
+becomes full, and then stays full, or close to full
+
+236
+00:10:11,940 --> 00:10:14,210
+for a long time.
+
+237
+00:10:14,210 --> 00:10:16,930
+The reason for this is that, when the buffer level in 4-100
+
+238
+00:10:16,930 --> 00:10:21,070
+reaches 100, and machine 2 is down, machine one is blocked,
+
+239
+00:10:21,070 --> 00:10:23,670
+and no part enters the buffer.
+
+240
+00:10:23,670 --> 00:10:25,500
+On the other hand, the buffer in 4-200
+
+241
+00:10:25,500 --> 00:10:28,350
+keeps growing until time 240.
+
+242
+00:10:28,350 --> 00:10:31,110
+Machine one is not blocked in 4-200 at this time,
+
+243
+00:10:31,110 --> 00:10:35,900
+so parts are allowed to go in, and they go into the buffer.
+
+244
+00:10:35,900 --> 00:10:37,625
+There brief downtimes of machine one
+
+245
+00:10:37,625 --> 00:10:40,640
+and machine two at 240 and 242.
+
+246
+00:10:40,640 --> 00:10:44,390
+Then both machines are up until time 254.
+
+247
+00:10:44,390 --> 00:10:46,940
+The buffer in 4-100 drops down to 99
+
+248
+00:10:46,940 --> 00:10:50,060
+because of some uninteresting details about the buffer model,
+
+249
+00:10:50,060 --> 00:10:51,680
+and stays constant.
+
+250
+00:10:51,680 --> 00:10:56,360
+The buffer level of 4-200 is constant at 111.
+
+251
+00:10:56,360 --> 00:11:00,710
+Between this time and time 479, a pattern emerges.
+
+252
+00:11:00,710 --> 00:11:03,830
+When machine one is down, and machine two is up,
+
+253
+00:11:03,830 --> 00:11:06,380
+both buffer levels fall.
+
+254
+00:11:06,380 --> 00:11:09,920
+If the buffer level in 4-100 is below 100,
+
+255
+00:11:09,920 --> 00:11:12,320
+the two graphs move in parallel.
+
+256
+00:11:12,320 --> 00:11:17,220
+If the buffer level in 4-100 is equal to 100, it stays at 100,
+
+257
+00:11:17,220 --> 00:11:20,030
+and the leveling 4-200 rises.
+
+258
+00:11:20,030 --> 00:11:22,460
+This kind of behavior persists, with both buffers
+
+259
+00:11:22,460 --> 00:11:26,330
+increasing and decreasing until time 479.
+
+260
+00:11:26,330 --> 00:11:29,450
+Until that time, whenever machine two is up,
+
+261
+00:11:29,450 --> 00:11:32,840
+the output processes of both lines are the same.
+
+262
+00:11:32,840 --> 00:11:36,160
+At time 479 both buffers are full.
+
+263
+00:11:36,160 --> 00:11:38,680
+After this, the amount of space in the buffers of the lines
+
+264
+00:11:38,680 --> 00:11:41,020
+are the same, and they will stay the same
+
+265
+00:11:41,020 --> 00:11:44,450
+as long as the buffer in 4-100 is not empty.
+
+266
+00:11:44,450 --> 00:11:48,910
+That is the quantity 200 minus N200 of T
+
+267
+00:11:48,910 --> 00:11:53,380
+will be equal to the quantity 100 minus N100 of t.
+
+268
+00:11:53,380 --> 00:11:56,290
+As a consequence, the output processes of both lines
+
+269
+00:11:56,290 --> 00:11:58,080
+are the same.
+
+270
+00:11:58,080 --> 00:12:01,220
+The buffer in 4-100 reaches zero for the first time
+
+271
+00:12:01,220 --> 00:12:05,990
+at time 43,650, and that is the first time the output
+
+272
+00:12:05,990 --> 00:12:08,580
+processes of the lines differ.
+
+273
+00:12:08,580 --> 00:12:11,700
+That buffer stays empty for only a short time.
+
+274
+00:12:11,700 --> 00:12:14,280
+This reflects the fact that the production rate of the two
+
+275
+00:12:14,280 --> 00:12:17,220
+lines will differ, but only by a small amount.
+
+276
+00:12:17,220 --> 00:12:21,810
+For one run of the simulation of 500,000 to operation times,
+
+277
+00:12:21,810 --> 00:12:27,180
+we found that the buffer 4-100 was empty for 417 time steps,
+
+278
+00:12:27,180 --> 00:12:30,800
+and the buffer in 4-200 was never empty at all.
+
+279
+00:12:30,800 --> 00:12:33,590
+Consequently, line 4-200 produced
+
+280
+00:12:33,590 --> 00:12:38,270
+417 more parts than 4-100 did.
+
+281
+00:12:38,270 --> 00:12:45,170
+As a consequence, the production rate of line 4-200 was 0.8317,
+
+282
+00:12:45,170 --> 00:12:51,710
+and that of 4-100 was 0.8309, a very small difference.
+
+283
+00:12:51,710 --> 00:12:54,850
+On the other hand, the average inventory in 4-100
+
+284
+00:12:54,850 --> 00:12:59,680
+was 83.41 parts, and that of 4-200
+
+285
+00:12:59,680 --> 00:13:06,260
+was 183.39 parts, a difference of almost 100 parts.
+
+286
+00:13:06,260 --> 00:13:08,250
+Therefore, if this simulation is typical,
+
+287
+00:13:08,250 --> 00:13:12,389
+and I think it is, you get an unofficial A if you decided
+
+288
+00:13:12,389 --> 00:13:13,930
+that the answer to the first question
+
+289
+00:13:13,930 --> 00:13:16,870
+was C. It will increase the production rate,
+
+290
+00:13:16,870 --> 00:13:20,140
+but only by a trivial amount, and that the answer
+
+291
+00:13:20,140 --> 00:13:22,410
+to the second was A, the buffer level
+
+292
+00:13:22,410 --> 00:13:26,700
+will increase by something very close to, and less than 100.
+
+293
+00:13:26,700 --> 00:13:27,403
+
+

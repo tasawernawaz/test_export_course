@@ -1,0 +1,13 @@
+<problem display_name="Part 1" markdown="&gt;&gt;What are the indicators of plant performance?&lt;&lt;&#10;&#10;[ ] Year over year cost reductions&#10;[x] Net profit&#10;[ ] Return on assets&#10;[x] Return on investment&#10;[x] Cash flow&#10;[ ] Leverage ratio&#10;" max_attempts="3" showanswer="finished" weight="0.0">
+  <choiceresponse>
+    <label>What are the indicators of plant performance?</label>
+    <checkboxgroup>
+      <choice correct="false">Year over year cost reductions</choice>
+      <choice correct="true">Net profit</choice>
+      <choice correct="false">Return on assets</choice>
+      <choice correct="true">Return on investment</choice>
+      <choice correct="true">Cash flow</choice>
+      <choice correct="false">Leverage ratio</choice>
+    </checkboxgroup>
+  </choiceresponse>
+</problem>

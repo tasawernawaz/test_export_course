@@ -1,0 +1,904 @@
+0
+00:00:00,000 --> 00:00:02,410
+
+
+1
+00:00:02,410 --> 00:00:05,350
+In the set of slides, we examined several graphs
+
+2
+00:00:05,350 --> 00:00:07,780
+to look at the sensitivity of the optimal inventory
+
+3
+00:00:07,780 --> 00:00:10,450
+to the parameters of the news vendor problem.
+
+4
+00:00:10,450 --> 00:00:12,940
+We have a set of base values for all the parameters.
+
+5
+00:00:12,940 --> 00:00:15,010
+We vary the parameters one at a time
+
+6
+00:00:15,010 --> 00:00:17,907
+to see how x star changes with them.
+
+7
+00:00:17,907 --> 00:00:20,240
+There are two base cases and we'll switch back and forth
+
+8
+00:00:20,240 --> 00:00:21,500
+between them.
+
+9
+00:00:21,500 --> 00:00:24,764
+In example one, the sale price of the papers is $1.
+
+10
+00:00:24,764 --> 00:00:26,680
+And the price the vendor pays to the publisher
+
+11
+00:00:26,680 --> 00:00:30,170
+is $0.25, for each paper.
+
+12
+00:00:30,170 --> 00:00:32,150
+The salvage price is zero.
+
+13
+00:00:32,150 --> 00:00:33,860
+The mean demand is 100.
+
+14
+00:00:33,860 --> 00:00:35,320
+And the standard deviation demand
+
+15
+00:00:35,320 --> 00:00:37,670
+is 10 newspapers in a day.
+
+16
+00:00:37,670 --> 00:00:40,070
+An example to all the parameters are the same
+
+17
+00:00:40,070 --> 00:00:44,180
+except the price that the vendor pays to the publisher is $0.75.
+
+18
+00:00:44,180 --> 00:00:47,390
+We assume that the demand is distributed normally.
+
+19
+00:00:47,390 --> 00:00:50,300
+This assumption gets us into a little trouble in some cases,
+
+20
+00:00:50,300 --> 00:00:52,710
+as we will discuss shortly.
+
+21
+00:00:52,710 --> 00:00:55,900
+This kind of exercise is useful for at least three reasons.
+
+22
+00:00:55,900 --> 00:00:58,740
+First, we see if the behavior makes sense intuitively,
+
+23
+00:00:58,740 --> 00:01:00,900
+that is, if it seems reasonable.
+
+24
+00:01:00,900 --> 00:01:02,590
+If it does, great.
+
+25
+00:01:02,590 --> 00:01:04,590
+If it doesn't, we have to examine both the model
+
+26
+00:01:04,590 --> 00:01:06,750
+and our intuition.
+
+27
+00:01:06,750 --> 00:01:09,930
+If we can't find any problems in the model of the analysis,
+
+28
+00:01:09,930 --> 00:01:12,450
+then we have to ask ourselves if our intuition is correct
+
+29
+00:01:12,450 --> 00:01:15,510
+and think hard about what the graphs tell us.
+
+30
+00:01:15,510 --> 00:01:17,220
+Second, we may not have any intuition
+
+31
+00:01:17,220 --> 00:01:19,980
+at all about the problem we are considering.
+
+32
+00:01:19,980 --> 00:01:21,810
+In that case, if the model seems correct
+
+33
+00:01:21,810 --> 00:01:24,450
+we can develop new intuition.
+
+34
+00:01:24,450 --> 00:01:27,360
+Third, it helps us to find limitations of the model
+
+35
+00:01:27,360 --> 00:01:28,950
+or of the analysis.
+
+36
+00:01:28,950 --> 00:01:32,400
+In this graph, the horizontal axis is the sale price r.
+
+37
+00:01:32,400 --> 00:01:35,460
+And the vertical axis is the optimal purchase amount, x
+
+38
+00:01:35,460 --> 00:01:36,750
+star.
+
+39
+00:01:36,750 --> 00:01:38,430
+Other than r, all the parameters are
+
+40
+00:01:38,430 --> 00:01:41,640
+fixed that the values at the top of the slide.
+
+41
+00:01:41,640 --> 00:01:44,970
+We see that x star increases monotonically in r.
+
+42
+00:01:44,970 --> 00:01:47,820
+This makes sense given the assumption of the problem.
+
+43
+00:01:47,820 --> 00:01:49,650
+The higher the sale price for the papers
+
+44
+00:01:49,650 --> 00:01:51,690
+the more the vendor should be willing to buy
+
+45
+00:01:51,690 --> 00:01:53,250
+from the publisher.
+
+46
+00:01:53,250 --> 00:01:56,100
+In fact, x star would continue to increase to infinity
+
+47
+00:01:56,100 --> 00:01:59,010
+as r increases to infinity.
+
+48
+00:01:59,010 --> 00:02:01,550
+However, this reveals some of the limitations of the problem
+
+49
+00:02:01,550 --> 00:02:02,870
+formulation.
+
+50
+00:02:02,870 --> 00:02:06,170
+The model has no mechanism for varying the demand
+
+51
+00:02:06,170 --> 00:02:08,789
+as a function of the sale price.
+
+52
+00:02:08,789 --> 00:02:11,000
+We assume that mu and sigma are fixed.
+
+53
+00:02:11,000 --> 00:02:14,240
+Clearly if the price of the newspaper rose to $100,
+
+54
+00:02:14,240 --> 00:02:15,980
+sales would drop off.
+
+55
+00:02:15,980 --> 00:02:18,830
+The only way to allow the demand to be a function of the sale
+
+56
+00:02:18,830 --> 00:02:20,990
+price in a model like this would be
+
+57
+00:02:20,990 --> 00:02:23,450
+to make the mean and possibly the standard deviation
+
+58
+00:02:23,450 --> 00:02:26,570
+of the demand functions of the price, r.
+
+59
+00:02:26,570 --> 00:02:29,120
+But that would raise another question, exactly how does
+
+60
+00:02:29,120 --> 00:02:32,030
+the demand depend on the price?
+
+61
+00:02:32,030 --> 00:02:33,800
+That does not make the model useless.
+
+62
+00:02:33,800 --> 00:02:36,080
+Its behavior as a function of r is reasonable
+
+63
+00:02:36,080 --> 00:02:37,700
+given the assumptions.
+
+64
+00:02:37,700 --> 00:02:40,010
+This gives us some confidence that its behavior
+
+65
+00:02:40,010 --> 00:02:44,040
+as a function of other parameters is also reasonable.
+
+66
+00:02:44,040 --> 00:02:45,770
+Also, the demand probably changes
+
+67
+00:02:45,770 --> 00:02:48,650
+very little over a limited range of r.
+
+68
+00:02:48,650 --> 00:02:51,430
+In that case, the model would be accurate.
+
+69
+00:02:51,430 --> 00:02:54,250
+And marketers have tools for predicting demand changes
+
+70
+00:02:54,250 --> 00:02:57,410
+for small changes in price.
+
+71
+00:02:57,410 --> 00:03:00,360
+These tools could be incorporated in the model.
+
+72
+00:03:00,360 --> 00:03:02,100
+One more observation about this graph,
+
+73
+00:03:02,100 --> 00:03:07,380
+x star rises very steeply in the neighborhood of r equals $0.25.
+
+74
+00:03:07,380 --> 00:03:10,620
+This is because the sale price r, in this range,
+
+75
+00:03:10,620 --> 00:03:16,120
+is only slightly greater than the cost, c, which is $0.25.
+
+76
+00:03:16,120 --> 00:03:19,240
+For example, suppose the sale price were $0.26,
+
+77
+00:03:19,240 --> 00:03:22,120
+then the vendor would make one penny for each paper sold
+
+78
+00:03:22,120 --> 00:03:25,780
+and would lose $0.25 for each paper unsold.
+
+79
+00:03:25,780 --> 00:03:29,380
+That is, for every unsold paper on a bad day,
+
+80
+00:03:29,380 --> 00:03:31,450
+the vendor loses the profit made by selling
+
+81
+00:03:31,450 --> 00:03:33,760
+25 papers on a good day.
+
+82
+00:03:33,760 --> 00:03:36,880
+Consequently, there is great incentive to be cautious
+
+83
+00:03:36,880 --> 00:03:39,070
+and that keeps x star low.
+
+84
+00:03:39,070 --> 00:03:40,900
+As the sale price increases, the number
+
+85
+00:03:40,900 --> 00:03:44,830
+of papers sold on a good day for every paper unsold on a bad day
+
+86
+00:03:44,830 --> 00:03:47,530
+decreases rapidly at first and then more slowly
+
+87
+00:03:47,530 --> 00:03:49,270
+as r increases.
+
+88
+00:03:49,270 --> 00:03:51,340
+The vendor can be less cautious.
+
+89
+00:03:51,340 --> 00:03:55,050
+That is, when r is not to a much greater than c, x
+
+90
+00:03:55,050 --> 00:03:57,880
+star increases rapidly with r.
+
+91
+00:03:57,880 --> 00:04:00,205
+This graph is also x star versus r.
+
+92
+00:04:00,205 --> 00:04:02,920
+The only difference is that here, is that the publisher
+
+93
+00:04:02,920 --> 00:04:05,770
+price here is $0.75.
+
+94
+00:04:05,770 --> 00:04:07,960
+It looks like the same graph as the previous shifted
+
+95
+00:04:07,960 --> 00:04:09,767
+on the horizontal axis.
+
+96
+00:04:09,767 --> 00:04:12,100
+In this graph, we look at the effect of different values
+
+97
+00:04:12,100 --> 00:04:14,410
+of c on x star.
+
+98
+00:04:14,410 --> 00:04:16,479
+The horizontal axis is c.
+
+99
+00:04:16,479 --> 00:04:19,660
+r and all the other parameters are held constant.
+
+100
+00:04:19,660 --> 00:04:21,970
+c is the discounted price that the vendor pays
+
+101
+00:04:21,970 --> 00:04:23,680
+the publisher for the papers.
+
+102
+00:04:23,680 --> 00:04:25,600
+When c is very small, the vendor takes
+
+103
+00:04:25,600 --> 00:04:27,790
+on very little risk for each paper bought
+
+104
+00:04:27,790 --> 00:04:29,140
+from the publisher.
+
+105
+00:04:29,140 --> 00:04:32,680
+Consequently, the vendor is willing to buy a lot of papers.
+
+106
+00:04:32,680 --> 00:04:36,880
+As the price, c, goes to zero, x star goes to infinity.
+
+107
+00:04:36,880 --> 00:04:39,070
+On the other hand, when c approaches r,
+
+108
+00:04:39,070 --> 00:04:42,070
+there is very little profit in the sale of each paper
+
+109
+00:04:42,070 --> 00:04:44,650
+and a lot of loss for each paper not sold.
+
+110
+00:04:44,650 --> 00:04:47,020
+Consequently, there is little incentive for the vendor
+
+111
+00:04:47,020 --> 00:04:49,180
+to invest in very many papers.
+
+112
+00:04:49,180 --> 00:04:52,900
+As c goes to r, x star goes to zero.
+
+113
+00:04:52,900 --> 00:04:57,160
+This graph shows the effect of s, the salvage price on x star.
+
+114
+00:04:57,160 --> 00:05:01,740
+s equals zero in all the other cases but it's non-zero here.
+
+115
+00:05:01,740 --> 00:05:04,930
+x star increases with s, because larger s
+
+116
+00:05:04,930 --> 00:05:06,910
+means that there's less risk.
+
+117
+00:05:06,910 --> 00:05:10,720
+As s approaches c, the risk disappears.
+
+118
+00:05:10,720 --> 00:05:13,750
+If s were equal to c, the price that the vendor pays
+
+119
+00:05:13,750 --> 00:05:16,090
+the publisher for newspapers, it would
+
+120
+00:05:16,090 --> 00:05:19,810
+mean that the vendor could do no worse than breaking even.
+
+121
+00:05:19,810 --> 00:05:24,490
+Consequently, as s approaches c, x star approaches infinity.
+
+122
+00:05:24,490 --> 00:05:27,160
+Here again, we have x star versus s.
+
+123
+00:05:27,160 --> 00:05:30,430
+In this case, c equals $0.75.
+
+124
+00:05:30,430 --> 00:05:32,510
+The graph is similar to the previous one.
+
+125
+00:05:32,510 --> 00:05:36,250
+In this graph, we vary mu and look at x star.
+
+126
+00:05:36,250 --> 00:05:39,100
+We will discuss shortly why this graph looks linear.
+
+127
+00:05:39,100 --> 00:05:42,010
+It is linear, but the graph is actually not quite right.
+
+128
+00:05:42,010 --> 00:05:43,900
+We'll discuss that as well.
+
+129
+00:05:43,900 --> 00:05:47,330
+See if you can figure out what the problem is, if you can,
+
+130
+00:05:47,330 --> 00:05:49,960
+before you look at slides 41 to 44,
+
+131
+00:05:49,960 --> 00:05:52,300
+which is where we discuss this.
+
+132
+00:05:52,300 --> 00:05:55,030
+It shows that the optimal amount to buy from the publisher
+
+133
+00:05:55,030 --> 00:05:57,850
+increases with the mean of the demand.
+
+134
+00:05:57,850 --> 00:05:59,210
+This makes sense.
+
+135
+00:05:59,210 --> 00:06:01,390
+The more papers people want to buy,
+
+136
+00:06:01,390 --> 00:06:03,130
+the more the vendor should provide.
+
+137
+00:06:03,130 --> 00:06:04,820
+This graph is very similar.
+
+138
+00:06:04,820 --> 00:06:06,790
+It's also x star versus mu.
+
+139
+00:06:06,790 --> 00:06:09,190
+This times c is $0.75 whereas c was
+
+140
+00:06:09,190 --> 00:06:11,680
+equal to $0.25 in the previous graph.
+
+141
+00:06:11,680 --> 00:06:13,390
+In this graph, we consider the effect
+
+142
+00:06:13,390 --> 00:06:16,930
+of the standard deviation of demand on x star.
+
+143
+00:06:16,930 --> 00:06:20,110
+Similarly, the graph is linear but really it shouldn't be.
+
+144
+00:06:20,110 --> 00:06:22,360
+And we'll explain why shortly.
+
+145
+00:06:22,360 --> 00:06:24,670
+In this graph, the publisher's price to the vendor
+
+146
+00:06:24,670 --> 00:06:27,140
+is $0.25 per paper.
+
+147
+00:06:27,140 --> 00:06:29,270
+This graph shows that as the standard deviation
+
+148
+00:06:29,270 --> 00:06:31,940
+of the demand increases, the more papers the vendor
+
+149
+00:06:31,940 --> 00:06:32,990
+should buy.
+
+150
+00:06:32,990 --> 00:06:35,900
+But before we develop an intuitive explanation of this,
+
+151
+00:06:35,900 --> 00:06:37,490
+we should look at the next graph.
+
+152
+00:06:37,490 --> 00:06:40,550
+Here we also have x star versus sigma.
+
+153
+00:06:40,550 --> 00:06:43,250
+Here we also have x star versus sigma.
+
+154
+00:06:43,250 --> 00:06:45,710
+The graph is also linear as it was in the previous
+
+155
+00:06:45,710 --> 00:06:48,410
+but it is not similar to the previous one,
+
+156
+00:06:48,410 --> 00:06:52,130
+Here, c equals $0.75.
+
+157
+00:06:52,130 --> 00:06:54,860
+This star suggests that x star decreases
+
+158
+00:06:54,860 --> 00:06:57,320
+with the standard deviation of demand.
+
+159
+00:06:57,320 --> 00:07:00,140
+Why is this different from the previous one?
+
+160
+00:07:00,140 --> 00:07:04,100
+To understand why x star is linear in mu and sigma,
+
+161
+00:07:04,100 --> 00:07:06,330
+lets recall what x star is.
+
+162
+00:07:06,330 --> 00:07:08,870
+It's the solution to this equation.
+
+163
+00:07:08,870 --> 00:07:12,830
+x star is the solution to this equation, the distribution
+
+164
+00:07:12,830 --> 00:07:15,230
+function evaluated x star is equal to r
+
+165
+00:07:15,230 --> 00:07:18,050
+minus c over r minus s.
+
+166
+00:07:18,050 --> 00:07:22,460
+Let's assume that the demand is normal, with means--
+
+167
+00:07:22,460 --> 00:07:24,200
+Let's assume that the demand is normally
+
+168
+00:07:24,200 --> 00:07:27,250
+distributed with parameters mu and sigma,
+
+169
+00:07:27,250 --> 00:07:30,860
+then for any demand, w, the distribution function
+
+170
+00:07:30,860 --> 00:07:34,540
+evaluated at w is simply the standard normal evaluated
+
+171
+00:07:34,540 --> 00:07:37,220
+at w minus mu over sigma.
+
+172
+00:07:37,220 --> 00:07:40,730
+Therefore the standard normal evaluated at x star minus mu
+
+173
+00:07:40,730 --> 00:07:45,230
+over sigma, is equal to r minus c over r minus s.
+
+174
+00:07:45,230 --> 00:07:48,170
+Or we can write it this way by just inverting
+
+175
+00:07:48,170 --> 00:07:50,590
+the standard normal.
+
+176
+00:07:50,590 --> 00:07:53,920
+And finally, this becomes x star equals
+
+177
+00:07:53,920 --> 00:07:56,160
+mu plus sigma times the inverse of
+
+178
+00:07:56,160 --> 00:08:01,130
+the standard normal evaluated at r minus c over r minus s.
+
+179
+00:08:01,130 --> 00:08:05,450
+So this explains why x star is linear in mu and sigma.
+
+180
+00:08:05,450 --> 00:08:14,360
+
+
+181
+00:08:14,360 --> 00:08:19,790
+Should x star actually be linear in mu and sigma?
+
+182
+00:08:19,790 --> 00:08:21,540
+The answer is yes and no.
+
+183
+00:08:21,540 --> 00:08:24,870
+Yes if we accept the assumption that the demand is normal.
+
+184
+00:08:24,870 --> 00:08:30,820
+But no in reality, because the demand cannot be normal.
+
+185
+00:08:30,820 --> 00:08:33,830
+It cannot be normal because the demand cannot be negative.
+
+186
+00:08:33,830 --> 00:08:36,370
+In fact, the demand is more realistically modeled
+
+187
+00:08:36,370 --> 00:08:38,289
+as a truncated normal.
+
+188
+00:08:38,289 --> 00:08:40,480
+So then for what values of mu and sigma
+
+189
+00:08:40,480 --> 00:08:44,410
+is x star closest to linear in mu and sigma.
+
+190
+00:08:44,410 --> 00:08:47,950
+The answer is when mu is much greater than sigma.
+
+191
+00:08:47,950 --> 00:08:49,930
+If so, the normal distribution predicts
+
+192
+00:08:49,930 --> 00:08:53,320
+a very small probability for w being negative.
+
+193
+00:08:53,320 --> 00:08:55,360
+Therefore, the normal is a good approximation
+
+194
+00:08:55,360 --> 00:08:58,177
+for the truncated normal in that range.
+
+195
+00:08:58,177 --> 00:09:00,010
+Another question that arises from the graphs
+
+196
+00:09:00,010 --> 00:09:03,550
+is, what determines whether x star increases or decreases
+
+197
+00:09:03,550 --> 00:09:04,810
+in sigma.
+
+198
+00:09:04,810 --> 00:09:08,800
+To answer that, note that the standard normal--
+
+199
+00:09:08,800 --> 00:09:11,350
+note that the inverse of the standard normal
+
+200
+00:09:11,350 --> 00:09:16,170
+is positive if it's evaluated at a quantity which
+
+201
+00:09:16,170 --> 00:09:18,140
+is greater than 0.5.
+
+202
+00:09:18,140 --> 00:09:20,610
+And it's negative if it's evaluated at a quantity which
+
+203
+00:09:20,610 --> 00:09:25,070
+is less than 0.5.
+
+204
+00:09:25,070 --> 00:09:28,730
+Well, since x is equal to mu plus sigma
+
+205
+00:09:28,730 --> 00:09:31,380
+times the standard normal inverse of r
+
+206
+00:09:31,380 --> 00:09:35,210
+minus c over r minus s, then x star
+
+207
+00:09:35,210 --> 00:09:38,810
+must increase with sigma if r minus c over r minus s
+
+208
+00:09:38,810 --> 00:09:42,780
+is greater than 0.5, and decrease with sigma
+
+209
+00:09:42,780 --> 00:09:46,590
+if r minus c over r minus s is less than 0.5.
+
+210
+00:09:46,590 --> 00:09:49,410
+The next question is, can we extend this strategy
+
+211
+00:09:49,410 --> 00:09:52,350
+to manage inventory in other settings?
+
+212
+00:09:52,350 --> 00:09:55,380
+Specifically suppose the stock remaining at the end of the day
+
+213
+00:09:55,380 --> 00:09:57,054
+can be used in the future.
+
+214
+00:09:57,054 --> 00:09:59,220
+In other words, we don't have a news vendor problem,
+
+215
+00:09:59,220 --> 00:10:01,270
+we have a true inventory problem.
+
+216
+00:10:01,270 --> 00:10:03,540
+Because is the result that we found of the news vendor
+
+217
+00:10:03,540 --> 00:10:06,930
+problem suggests a possible heuristic extension.
+
+218
+00:10:06,930 --> 00:10:09,840
+Heuristic here means it seems like a pretty good idea
+
+219
+00:10:09,840 --> 00:10:12,450
+but we don't have a rigorous proof that it really is.
+
+220
+00:10:12,450 --> 00:10:14,070
+Well, the answer is yes.
+
+221
+00:10:14,070 --> 00:10:17,250
+Build enough inventory to satisfy demand
+
+222
+00:10:17,250 --> 00:10:21,120
+100K% of the time for some k, where
+
+223
+00:10:21,120 --> 00:10:22,980
+k is given by that fraction.
+
+224
+00:10:22,980 --> 00:10:26,359
+Compare this with a discussion on slide 28.
+
+225
+00:10:26,359 --> 00:10:26,859
+
+

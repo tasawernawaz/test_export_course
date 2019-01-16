@@ -1,0 +1,17 @@
+<problem display_name="Question 1" markdown="&gt;&gt;Rules to dictate the running of a factory… &lt;&lt;&#10;&#10;[x] Proliferate when a system is not well understood.&#10;[ ] Do not need to take into account set up times.&#10;[x] Can lead to unexpected, and undesirable behavior when the system is not well understood.&#10;[ ] Should always treat the the orders of the highest priority customer.&#10;&#10;[Explanation]&#10;See video 3 (slide #20).&#10;[Explanation]&#10;" max_attempts="3">
+  <choiceresponse>
+    <label>Rules to dictate the running of a factory… </label>
+    <checkboxgroup>
+      <choice correct="true">Proliferate when a system is not well understood.</choice>
+      <choice correct="false">Do not need to take into account set up times.</choice>
+      <choice correct="true">Can lead to unexpected, and undesirable behavior when the system is not well understood.</choice>
+      <choice correct="false">Should always treat the the orders of the highest priority customer.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>See video 3 (slide #20).</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

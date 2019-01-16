@@ -1,0 +1,896 @@
+0
+00:00:00,000 --> 00:00:02,534
+
+
+1
+00:00:02,534 --> 00:00:03,950
+Now, we're going to begin to study
+
+2
+00:00:03,950 --> 00:00:05,750
+systems that operate in continuous,
+
+3
+00:00:05,750 --> 00:00:08,650
+rather than discrete time.
+
+4
+00:00:08,650 --> 00:00:12,240
+The states are still discrete, so they can be numbered 0, 1,
+
+5
+00:00:12,240 --> 00:00:13,910
+2, 3, and so forth.
+
+6
+00:00:13,910 --> 00:00:16,490
+Or with multiple indices.
+
+7
+00:00:16,490 --> 00:00:18,500
+The time, however, is a real number,
+
+8
+00:00:18,500 --> 00:00:21,020
+defined on the real number line from minus infinity
+
+9
+00:00:21,020 --> 00:00:24,770
+to plus infinite, or a subset of that-- a smaller interval.
+
+10
+00:00:24,770 --> 00:00:27,230
+There are important differences from discrete time systems.
+
+11
+00:00:27,230 --> 00:00:31,231
+Since events can take place at any time,
+
+12
+00:00:31,231 --> 00:00:32,689
+we have to consider the probability
+
+13
+00:00:32,689 --> 00:00:35,180
+that an event can take place during an interval
+
+14
+00:00:35,180 --> 00:00:37,860
+rather than in a specific time.
+
+15
+00:00:37,860 --> 00:00:39,350
+We do this for very small intervals
+
+16
+00:00:39,350 --> 00:00:42,202
+so the probability is very small.
+
+17
+00:00:42,202 --> 00:00:43,910
+This is a little like a density function,
+
+18
+00:00:43,910 --> 00:00:45,830
+where the probability of an event happening
+
+19
+00:00:45,830 --> 00:00:48,110
+in a small interval is proportional to the size
+
+20
+00:00:48,110 --> 00:00:51,030
+of that interval.
+
+21
+00:00:51,030 --> 00:00:53,670
+As a consequence, the important transition parameters
+
+22
+00:00:53,670 --> 00:00:55,500
+are not probabilities.
+
+23
+00:00:55,500 --> 00:01:00,510
+They're rates in units of probability per time.
+
+24
+00:01:00,510 --> 00:01:02,580
+The probability of a transition from j
+
+25
+00:01:02,580 --> 00:01:06,600
+to i during the interval t to t plus delta t
+
+26
+00:01:06,600 --> 00:01:09,860
+is approximately lambda i j delta t,
+
+27
+00:01:09,860 --> 00:01:12,840
+where delta t is small.
+
+28
+00:01:12,840 --> 00:01:18,450
+Lambda i j delta t is approximately the probability
+
+29
+00:01:18,450 --> 00:01:21,030
+of finding the system in state i at time t
+
+30
+00:01:21,030 --> 00:01:26,680
+plus delta t, given that it was in state j at time t.
+
+31
+00:01:26,680 --> 00:01:30,000
+And this is true for i not equal to j.
+
+32
+00:01:30,000 --> 00:01:32,660
+We'll deal with i equals j later.
+
+33
+00:01:32,660 --> 00:01:34,500
+Let's rewrite that last equation to make
+
+34
+00:01:34,500 --> 00:01:36,000
+it a little more precise.
+
+35
+00:01:36,000 --> 00:01:40,470
+Lambda i j delta t is equal to p of x of t
+
+36
+00:01:40,470 --> 00:01:42,660
+plus delta t equals i given x of t
+
+37
+00:01:42,660 --> 00:01:48,250
+equals j, plus little o of delta t, for i not equal to j.
+
+38
+00:01:48,250 --> 00:01:50,860
+Little o is a function that satisfies this limit.
+
+39
+00:01:50,860 --> 00:01:55,030
+The limit of little o of delta t divided by delta t is 0.
+
+40
+00:01:55,030 --> 00:01:56,860
+So in other words, little o of delta t
+
+41
+00:01:56,860 --> 00:01:59,470
+is a function which could be quadratic in delta t
+
+42
+00:01:59,470 --> 00:02:01,870
+or a higher power.
+
+43
+00:02:01,870 --> 00:02:04,750
+This is the formal definition of little o of delta t.
+
+44
+00:02:04,750 --> 00:02:07,210
+This is a standard mathematical expression.
+
+45
+00:02:07,210 --> 00:02:09,490
+There is also a big O function, which is related
+
+46
+00:02:09,490 --> 00:02:11,230
+but not the same thing.
+
+47
+00:02:11,230 --> 00:02:13,390
+If the size of the interval was not small,
+
+48
+00:02:13,390 --> 00:02:17,560
+the transition probability from j to i
+
+49
+00:02:17,560 --> 00:02:20,950
+would be a complicated nonlinear function of delta t.
+
+50
+00:02:20,950 --> 00:02:23,290
+That function would be 0.
+
+51
+00:02:23,290 --> 00:02:27,400
+That function would be 0 for delta t equals 0.
+
+52
+00:02:27,400 --> 00:02:30,820
+If we expanded that function into a Taylor series,
+
+53
+00:02:30,820 --> 00:02:32,800
+the constant term would then be 0,
+
+54
+00:02:32,800 --> 00:02:34,720
+and the first non-zero term would be the one
+
+55
+00:02:34,720 --> 00:02:36,850
+that's linear in delta t.
+
+56
+00:02:36,850 --> 00:02:40,600
+This is the transition graph for a continuous time system.
+
+57
+00:02:40,600 --> 00:02:42,940
+Compared with the discrete time graph,
+
+58
+00:02:42,940 --> 00:02:45,370
+there are two important differences.
+
+59
+00:02:45,370 --> 00:02:48,010
+Lambda is a probability rate.
+
+60
+00:02:48,010 --> 00:02:51,580
+Lambda i j delta t is a probability.
+
+61
+00:02:51,580 --> 00:02:54,460
+The labels on the graphs are probability rates, not
+
+62
+00:02:54,460 --> 00:02:56,350
+probabilities.
+
+63
+00:02:56,350 --> 00:02:58,540
+The labels on the transition arrows
+
+64
+00:02:58,540 --> 00:03:01,510
+are probability rates, not probabilities.
+
+65
+00:03:01,510 --> 00:03:04,660
+And there are no self-loops in the system.
+
+66
+00:03:04,660 --> 00:03:07,540
+We'll discuss why there are no self-loops soon.
+
+67
+00:03:07,540 --> 00:03:09,940
+Before we get there, think about what
+
+68
+00:03:09,940 --> 00:03:12,490
+the labels on the self-loops would be
+
+69
+00:03:12,490 --> 00:03:14,230
+and what they would mean.
+
+70
+00:03:14,230 --> 00:03:15,100
+So here's a hint.
+
+71
+00:03:15,100 --> 00:03:18,160
+We haven't defined lambda i i.
+
+72
+00:03:18,160 --> 00:03:22,240
+We've only defined lambda i j for j not equal to i.
+
+73
+00:03:22,240 --> 00:03:25,090
+Compare this graph with a similar discrete time graph
+
+74
+00:03:25,090 --> 00:03:26,690
+that we talked about earlier.
+
+75
+00:03:26,690 --> 00:03:28,690
+On this slide, we'll be developing one
+
+76
+00:03:28,690 --> 00:03:30,700
+of the transition equations.
+
+77
+00:03:30,700 --> 00:03:32,830
+Take a look at the graph on the previous slide
+
+78
+00:03:32,830 --> 00:03:35,710
+while we're doing this development.
+
+79
+00:03:35,710 --> 00:03:38,350
+In the example, we're going to focus on state 5.
+
+80
+00:03:38,350 --> 00:03:40,920
+So for delta t small, we're going
+
+81
+00:03:40,920 --> 00:03:45,240
+to look at pi 5 of t plus delta t.
+
+82
+00:03:45,240 --> 00:03:49,330
+That is approximately this equation.
+
+83
+00:03:49,330 --> 00:03:55,380
+So let's focus on the first term in the right-hand side
+
+84
+00:03:55,380 --> 00:03:56,610
+of this equation.
+
+85
+00:03:56,610 --> 00:03:59,730
+If the system is in state 5 of time t,
+
+86
+00:03:59,730 --> 00:04:02,370
+when the system is in state 5, its next state
+
+87
+00:04:02,370 --> 00:04:04,560
+could be 2, 4, or 6.
+
+88
+00:04:04,560 --> 00:04:07,650
+Or it could simply stay in state 5.
+
+89
+00:04:07,650 --> 00:04:10,230
+Given that the system is in state 5 of time t,
+
+90
+00:04:10,230 --> 00:04:11,760
+the probability that the system is
+
+91
+00:04:11,760 --> 00:04:14,820
+in state 5 of time t plus delta t
+
+92
+00:04:14,820 --> 00:04:18,240
+is the probability that the system does not leave state 5.
+
+93
+00:04:18,240 --> 00:04:22,019
+That is, that it does not go to states to 2, 4, or 6.
+
+94
+00:04:22,019 --> 00:04:25,320
+That probability is the coefficient of pi 5
+
+95
+00:04:25,320 --> 00:04:27,540
+in the second line of the equation.
+
+96
+00:04:27,540 --> 00:04:29,220
+The second line is then the probability
+
+97
+00:04:29,220 --> 00:04:32,010
+that the system does not leave state 5 during the time
+
+98
+00:04:32,010 --> 00:04:34,620
+interval from t to t plus delta t.
+
+99
+00:04:34,620 --> 00:04:37,890
+For the third line, we'll notice that the transition
+
+100
+00:04:37,890 --> 00:04:41,660
+graph shows that the possible previous states from state 5--
+
+101
+00:04:41,660 --> 00:04:44,850
+the states from which the system can reach 5 directly--
+
+102
+00:04:44,850 --> 00:04:47,310
+are 2, 3, 6, and 7.
+
+103
+00:04:47,310 --> 00:04:50,130
+The probability that the system is in state 5 of time t
+
+104
+00:04:50,130 --> 00:04:55,380
+plus delta t, given that it was in state 2 at time t,
+
+105
+00:04:55,380 --> 00:05:00,630
+is lambda 5, 2 times delta t.
+
+106
+00:05:00,630 --> 00:05:03,330
+The first term in the last line of the equation
+
+107
+00:05:03,330 --> 00:05:05,880
+is the part of the probability that the system
+
+108
+00:05:05,880 --> 00:05:10,170
+is in state 5 of time t plus delta t, that is due to state 2
+
+109
+00:05:10,170 --> 00:05:12,940
+being the possible previous state.
+
+110
+00:05:12,940 --> 00:05:14,780
+Similarly for the other terms.
+
+111
+00:05:14,780 --> 00:05:16,800
+Then the whole last line is the probability
+
+112
+00:05:16,800 --> 00:05:20,370
+that the system arrives at state 5 from a different state
+
+113
+00:05:20,370 --> 00:05:21,720
+previous time.
+
+114
+00:05:21,720 --> 00:05:23,910
+So this slide is the next step in the development
+
+115
+00:05:23,910 --> 00:05:25,035
+of the transition equation.
+
+116
+00:05:25,035 --> 00:05:26,820
+It's equivalent to the second.
+
+117
+00:05:26,820 --> 00:05:30,170
+We simply separated out pi 5 from the rest
+
+118
+00:05:30,170 --> 00:05:31,490
+of the second line.
+
+119
+00:05:31,490 --> 00:05:34,470
+Now we'll subtract pi 5 from both sides of the last equation
+
+120
+00:05:34,470 --> 00:05:36,810
+and divide both sides by delta t.
+
+121
+00:05:36,810 --> 00:05:40,110
+In addition, we're going to take the limit as delta t goes to 0.
+
+122
+00:05:40,110 --> 00:05:42,420
+So this gives us the time derivative of pi 5
+
+123
+00:05:42,420 --> 00:05:44,250
+on the left side of the equation.
+
+124
+00:05:44,250 --> 00:05:47,010
+This is the transition equation for state 5.
+
+125
+00:05:47,010 --> 00:05:48,510
+It would be nice, however, to write
+
+126
+00:05:48,510 --> 00:05:52,110
+this equation a little more compactly and symmetrically.
+
+127
+00:05:52,110 --> 00:05:54,720
+To do this, recall that we did not define
+
+128
+00:05:54,720 --> 00:05:57,840
+lambda i j when i equals j.
+
+129
+00:05:57,840 --> 00:06:00,600
+So we have some symbols available for a definition
+
+130
+00:06:00,600 --> 00:06:02,240
+of lambda i i.
+
+131
+00:06:02,240 --> 00:06:05,270
+To do this, recall that we did not define lambda i j when
+
+132
+00:06:05,270 --> 00:06:07,620
+i equals j, so we have some symbols
+
+133
+00:06:07,620 --> 00:06:10,830
+available for a definition, lambda i i.
+
+134
+00:06:10,830 --> 00:06:15,600
+So why not define lambda 55 as the coefficient of pi 5
+
+135
+00:06:15,600 --> 00:06:16,810
+in this equation.
+
+136
+00:06:16,810 --> 00:06:19,510
+So that's what we're doing on this slide.
+
+137
+00:06:19,510 --> 00:06:21,900
+Notice that I'm saying for convenience.
+
+138
+00:06:21,900 --> 00:06:25,020
+I did that because this sometimes confuses people.
+
+139
+00:06:25,020 --> 00:06:27,630
+Since lambda 55 is negative, they
+
+140
+00:06:27,630 --> 00:06:29,790
+think that we've defined the negative probability,
+
+141
+00:06:29,790 --> 00:06:31,860
+or a negative probability rate.
+
+142
+00:06:31,860 --> 00:06:32,760
+We have not.
+
+143
+00:06:32,760 --> 00:06:35,130
+We have just used an otherwise unused symbol
+
+144
+00:06:35,130 --> 00:06:38,910
+to make the equation look a little bit nicer.
+
+145
+00:06:38,910 --> 00:06:41,370
+So now the equation looks like this.
+
+146
+00:06:41,370 --> 00:06:43,370
+So let's write this in general.
+
+147
+00:06:43,370 --> 00:06:49,610
+Pi i of t is the probability that x sub t is equal to i.
+
+148
+00:06:49,610 --> 00:06:52,415
+It's convenient, as we said, to define lambda i
+
+149
+00:06:52,415 --> 00:06:58,010
+i as minus the sum of lambda j i, where j is not equal to i.
+
+150
+00:06:58,010 --> 00:07:00,770
+So now the transition equations become
+
+151
+00:07:00,770 --> 00:07:06,770
+d pi i d t equals the sum of lambda i j pi j of t.
+
+152
+00:07:06,770 --> 00:07:09,030
+We also have the normalization equation.
+
+153
+00:07:09,030 --> 00:07:11,660
+The sum of pi i of t is equal to 1.
+
+154
+00:07:11,660 --> 00:07:15,140
+And just to remind you, that lambda i i is often confusing,
+
+155
+00:07:15,140 --> 00:07:16,610
+so don't let it throw you.
+
+156
+00:07:16,610 --> 00:07:19,650
+So let's look at the same equations in vector matrix
+
+157
+00:07:19,650 --> 00:07:21,330
+form.
+
+158
+00:07:21,330 --> 00:07:23,780
+So we're going to find pi of t and nu,
+
+159
+00:07:23,780 --> 00:07:26,115
+as we did earlier for the discrete time case.
+
+160
+00:07:26,115 --> 00:07:29,120
+
+
+161
+00:07:29,120 --> 00:07:30,427
+Define the lambda matrix--
+
+162
+00:07:30,427 --> 00:07:32,260
+that symbol, if you're not familiar with it,
+
+163
+00:07:32,260 --> 00:07:37,420
+is a capital lambda, is the matrix of lambdas.
+
+164
+00:07:37,420 --> 00:07:41,410
+The transition equations can be written very compactly as d pi
+
+165
+00:07:41,410 --> 00:07:45,310
+d t equals lambda pi of t.
+
+166
+00:07:45,310 --> 00:07:49,420
+The normalization equation is new transpose pi equals 1.
+
+167
+00:07:49,420 --> 00:07:52,700
+That is, the sum of the pi's equals 1.
+
+168
+00:07:52,700 --> 00:07:55,520
+And we have some other facts.
+
+169
+00:07:55,520 --> 00:07:59,610
+New transpose p is equal to 0.
+
+170
+00:07:59,610 --> 00:08:03,520
+That's important because each column of p sums to 0.
+
+171
+00:08:03,520 --> 00:08:05,400
+The reason that the columns sum to 0
+
+172
+00:08:05,400 --> 00:08:08,100
+is because of the way we define the diagonal terms.
+
+173
+00:08:08,100 --> 00:08:10,770
+The diagonal terms are just the negative
+
+174
+00:08:10,770 --> 00:08:12,900
+of the sum of all the other terms in the column.
+
+175
+00:08:12,900 --> 00:08:16,060
+
+
+176
+00:08:16,060 --> 00:08:20,230
+Also, pi of t is e to the lambda t pi of 0.
+
+177
+00:08:20,230 --> 00:08:23,072
+That's a matrix exponential there that e to the lambda t--
+
+178
+00:08:23,072 --> 00:08:25,280
+if you're not familiar with it, don't worry about it.
+
+179
+00:08:25,280 --> 00:08:27,970
+We will solve any equations that we come up
+
+180
+00:08:27,970 --> 00:08:32,799
+with in the usual way, component wise.
+
+181
+00:08:32,799 --> 00:08:35,710
+Again, we need to worry about the steady state probability
+
+182
+00:08:35,710 --> 00:08:37,340
+distribution.
+
+183
+00:08:37,340 --> 00:08:42,220
+So pi i, without an argument, is defined as the limit
+
+184
+00:08:42,220 --> 00:08:47,110
+as t goes to infinity of pi i of t, if it exists.
+
+185
+00:08:47,110 --> 00:08:51,070
+And that same issue about whether it exists or not occurs
+
+186
+00:08:51,070 --> 00:08:54,530
+in the continuous time case.
+
+187
+00:08:54,530 --> 00:08:57,650
+The steady state transition equations
+
+188
+00:08:57,650 --> 00:09:00,950
+are obtained by just setting d pi d t equals 0.
+
+189
+00:09:00,950 --> 00:09:05,960
+So 0 is the sum over j of lambda i j pi j.
+
+190
+00:09:05,960 --> 00:09:07,820
+Again, we have an alternative form,
+
+191
+00:09:07,820 --> 00:09:11,000
+which is the steady state balance equations, which
+
+192
+00:09:11,000 --> 00:09:18,920
+are pi times the sum of lambda i i for all m not equal to i,
+
+193
+00:09:18,920 --> 00:09:25,150
+equals the sum over j of j not equal to i of lambda i j pi j.
+
+194
+00:09:25,150 --> 00:09:28,000
+And of course, we have the normalization equation.
+
+195
+00:09:28,000 --> 00:09:31,380
+That still holds for the steady state equations.
+
+196
+00:09:31,380 --> 00:09:33,850
+And we're going to have the same issue in which we
+
+197
+00:09:33,850 --> 00:09:36,220
+have to throw out one of the transition equations
+
+198
+00:09:36,220 --> 00:09:38,470
+or one of the balance equations and replace it
+
+199
+00:09:38,470 --> 00:09:40,420
+with the normalization equation.
+
+200
+00:09:40,420 --> 00:09:45,730
+In matrix vector form, we define pi as the limit of pi of t,
+
+201
+00:09:45,730 --> 00:09:47,530
+if it exists.
+
+202
+00:09:47,530 --> 00:09:49,240
+The steady state transition equations
+
+203
+00:09:49,240 --> 00:09:52,420
+can just be written 0 equals lambda pi.
+
+204
+00:09:52,420 --> 00:09:56,570
+And the normalization equation is new transpose pi equals 1.
+
+205
+00:09:56,570 --> 00:09:58,900
+Here are some sources of confusion
+
+206
+00:09:58,900 --> 00:10:00,690
+in dealing with continuous time models,
+
+207
+00:10:00,690 --> 00:10:03,280
+if you haven't seen this before.
+
+208
+00:10:03,280 --> 00:10:06,730
+Never draw self-loops in continuous time Markov process
+
+209
+00:10:06,730 --> 00:10:08,950
+graphs.
+
+210
+00:10:08,950 --> 00:10:11,620
+Never write something like 1 minus lambda 14
+
+211
+00:10:11,620 --> 00:10:14,740
+minus lambda 24 minus lambda 64.
+
+212
+00:10:14,740 --> 00:10:19,630
+Write instead 1 minus, and then in parentheses, lambda 14,
+
+213
+00:10:19,630 --> 00:10:23,320
+plus lambda 24, plus lambda 64, times delta t.
+
+214
+00:10:23,320 --> 00:10:26,740
+Or just simply, minus the sum of lambda 12,
+
+215
+00:10:26,740 --> 00:10:29,080
+lambda 24, lambda 64.
+
+216
+00:10:29,080 --> 00:10:31,750
+The reason for that is that the lambdas
+
+217
+00:10:31,750 --> 00:10:34,210
+are rates, not pure numbers.
+
+218
+00:10:34,210 --> 00:10:35,860
+Whereas, 1 is a pure number.
+
+219
+00:10:35,860 --> 00:10:38,770
+So you can have an expression that mixes them both.
+
+220
+00:10:38,770 --> 00:10:43,640
+So remember, lambda i i, which is minus the sum of lambda j i,
+
+221
+00:10:43,640 --> 00:10:48,280
+where j is not equal to i is not a rate and not a probability.
+
+222
+00:10:48,280 --> 00:10:50,956
+It's only a convenient notation.
+
+223
+00:10:50,956 --> 00:10:51,456
+
+

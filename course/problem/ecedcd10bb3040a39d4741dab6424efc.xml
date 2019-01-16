@@ -1,0 +1,15 @@
+<problem display_name="Question 3" markdown="&gt;&gt;In this class, will there be a focus on topics such as machining processes, specific equipment, or models of factory layout?  &lt;&lt;&#10;( )Yes&#10;(x)No&#10;&#10;&#10;&#10;[Explanation]&#10;We will not focus on the different physical elements of a factory but instead focus on the analysis of the factory as a system.&#10;[Explanation]" max_attempts="1">
+  <multiplechoiceresponse>
+    <label>In this class, will there be a focus on topics such as machining processes, specific equipment, or models of factory layout?  </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Yes</choice>
+      <choice correct="true">No</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>We will not focus on the different physical elements of a factory but instead focus on the analysis of the factory as a system.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

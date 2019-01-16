@@ -1,0 +1,18 @@
+<problem display_name="Part 3" markdown="null" max_attempts="3" showanswer="finished" weight="0.0">
+  <numericalresponse answer="1.333">
+    <label>What is the average Queue Length? </label>
+    <description> Round to 2 decimal places. </description>
+    <responseparam type="tolerance" default="0.003"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>
+        <span style="font-size: 1em;">
+          The average queue length \(L_{q} = \frac{\rho^{2}}{1-\rho} = 4/3 = 1.333\)
+        </span>
+      </p>
+    </div>
+  </solution>
+</problem>

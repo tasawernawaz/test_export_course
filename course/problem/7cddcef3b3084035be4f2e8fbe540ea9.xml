@@ -1,0 +1,16 @@
+<problem display_name="Concept Check 5" markdown="&gt;&gt;The cost that we do NOT need to consider explicitly in the context of EOQ is:&lt;&lt;&#10;( ) the holding cost.&#10;(x) the per-unit cost of the raw material.&#10;( ) the ordering cost.&#10;&#10;[explanation]&#10;The cost of raw materials must be considered when determining the product’s sale price for the finished product. It will affect the demand of the product. The cost of raw material will only enter this problem indirectly through the ordering cost or the holding cost.&#10;[explanation]" max_attempts="3" showanswer="attempted" weight="1.0">
+  <multiplechoiceresponse>
+    <label>The cost that we do NOT need to consider explicitly in the context of EOQ is:</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">the holding cost.</choice>
+      <choice correct="true">the per-unit cost of the raw material.</choice>
+      <choice correct="false">the ordering cost.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>The cost of raw materials must be considered when determining the product’s sale price for the finished product. It will affect the demand of the product. The cost of raw material will only enter this problem indirectly through the ordering cost or the holding cost.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

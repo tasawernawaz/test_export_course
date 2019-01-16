@@ -1,0 +1,13 @@
+<problem display_name="Part 3" group_access="{}" markdown="Regardless of line speed.&#10;&#10;&gt;&gt;What is the cost of the optimal line if inventory costs $70 each? (Round to the nearest integer)&lt;&lt;&#10;&#10;= 56695+-5%&#10;&#10;&gt;&gt;What is the cost of the optinal line if inventory costs $400 each? (Round to the nearest integer)&lt;&lt;&#10;&#10;=82600+-5%&#10;" max_attempts="2" showanswer="past_due">
+  <p>Regardless of line speed.</p>
+  <label>What is the cost of the optimal line if inventory costs $70 each? (Round to the nearest integer)</label>
+  <numericalresponse answer="56695">
+    <responseparam type="tolerance" default="5%"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>What is the cost of the optinal line if inventory costs $400 each? (Round to the nearest integer)</label>
+  <numericalresponse answer="82600">
+    <responseparam type="tolerance" default="5%"/>
+    <formulaequationinput/>
+  </numericalresponse>
+</problem>

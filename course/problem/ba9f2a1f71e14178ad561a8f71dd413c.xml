@@ -1,0 +1,14 @@
+<problem display_name="Part 2" group_access="{}" markdown="Instead of throwing away the loaves at the end of the day, Hungary Nerds realized they can be sold at a discounted price of $0.25 per loaf at store closing.&#10;&#10;&gt;&gt;What quantity should they now order to maximize profit? (Round to the nearest integer)&lt;&lt;&#10;&#10;= 668+-6&#10;&#10;[Explanation]&#10;Set \(s=$0.25\), follow the solution of part 1.&#10;[Explanation]" max_attempts="2" showanswer="past_due" weight="7.0">
+  <numericalresponse answer="668">
+    <p>Instead of throwing away the loaves at the end of the day, Hungary Nerds realized they can be sold at a discounted price of $0.25 per loaf at store closing.</p>
+    <label>What quantity should they now order to maximize profit? (Round to the nearest integer)</label>
+    <responseparam type="tolerance" default="6"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Set \(s=$0.25\), follow the solution of part 1.</p>
+      </div>
+    </solution>
+  </numericalresponse>
+</problem>

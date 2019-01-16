@@ -1,0 +1,18 @@
+<problem display_name="Part 9" markdown="&gt;&gt;The purpose of a buffer is to:  &lt;&lt;&#10;&#10;[x] Allow for an upstream machine to continue to work, even if one machine stops, (until the buffer between fills).&#10;[ ] Enable the material from the unfinished parts in buffers can be scavenged, if raw material of a particular type runs out.&#10;[x] Allow a machine downstream to continue to work until the buffer between them becomes empty, even if an operator is not present on one machine.&#10;[x] Increase the production efficiency of machines.&#10;&#10;[Explanation] &#10;Buffers are often placed between operations to increase production rate in light of inevitable variability in production flow.&#10;[Explanation] &#10;" max_attempts="3" showanswer="past_due" weight="3.0">
+  <choiceresponse>
+    <label>The purpose of a buffer is to:  </label>
+    <checkboxgroup>
+      <choice correct="true">Allow for an upstream machine to continue to work, even if one machine stops, (until the buffer between fills).</choice>
+      <choice correct="false">Enable the material from the unfinished parts in buffers can be scavenged, if raw material of a particular type runs out.</choice>
+      <choice correct="true">Allow a machine downstream to continue to work until the buffer between them becomes empty, even if an operator is not present on one machine.</choice>
+      <choice correct="true">Increase the production efficiency of machines.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p> </p>
+        <p>Buffers are often placed between operations to increase production rate in light of inevitable variability in production flow.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

@@ -1,0 +1,52 @@
+0
+00:00:00,000 --> 00:00:00,930
+
+
+1
+00:00:00,930 --> 00:00:03,110
+Queues are stochastic processes.
+
+2
+00:00:03,110 --> 00:00:05,020
+Queuing models are widely used to study
+
+3
+00:00:05,020 --> 00:00:07,280
+the arrivals and departures of people or items
+
+4
+00:00:07,280 --> 00:00:09,120
+to a storage area.
+
+5
+00:00:09,120 --> 00:00:11,620
+We will look at some simple models of individual queues
+
+6
+00:00:11,620 --> 00:00:14,200
+to understand how the interaction of random arrival
+
+7
+00:00:14,200 --> 00:00:17,720
+and departure processes affect the number of items in storage
+
+8
+00:00:17,720 --> 00:00:21,080
+and the time they must wait to leave the system.
+
+9
+00:00:21,080 --> 00:00:24,780
+We define the capacity and utilization of such systems.
+
+10
+00:00:24,780 --> 00:00:26,810
+Then we will consider networks of queues
+
+11
+00:00:26,810 --> 00:00:30,060
+and use a network model to study the behavior of material flow
+
+12
+00:00:30,060 --> 00:00:34,000
+in a simple model of a flexible manufacturing system.
+

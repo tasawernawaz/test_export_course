@@ -1,0 +1,1856 @@
+0
+00:00:00,000 --> 00:00:02,500
+
+
+1
+00:00:02,500 --> 00:00:05,440
+In this video we describe how we model the two machine one
+
+2
+00:00:05,440 --> 00:00:09,850
+buffer line as a Markov process and generate numerical results
+
+3
+00:00:09,850 --> 00:00:10,840
+from it.
+
+4
+00:00:10,840 --> 00:00:13,660
+Then we interpret the results.
+
+5
+00:00:13,660 --> 00:00:16,090
+There are several models in the literature.
+
+6
+00:00:16,090 --> 00:00:18,760
+Here we're going to focus on the deterministic processing
+
+7
+00:00:18,760 --> 00:00:21,490
+time, or Buzacott model.
+
+8
+00:00:21,490 --> 00:00:25,010
+In this model there's a deterministic processing time,
+
+9
+00:00:25,010 --> 00:00:28,360
+the geometric failure and repair times,
+
+10
+00:00:28,360 --> 00:00:31,450
+the failures are operation dependent,
+
+11
+00:00:31,450 --> 00:00:34,300
+and the model is a discrete state discrete time Markov
+
+12
+00:00:34,300 --> 00:00:36,670
+process.
+
+13
+00:00:36,670 --> 00:00:39,160
+In my view this is the simplest model that's available.
+
+14
+00:00:39,160 --> 00:00:41,890
+Other models in the literature have continuous time
+
+15
+00:00:41,890 --> 00:00:44,530
+or continuous material or more complex
+
+16
+00:00:44,530 --> 00:00:47,590
+failure and repair behaviors.
+
+17
+00:00:47,590 --> 00:00:51,240
+Let's remind you of the definition of a Markov process.
+
+18
+00:00:51,240 --> 00:00:54,390
+The probability that the state has a certain value of time t
+
+19
+00:00:54,390 --> 00:00:58,920
+plus one given the values of the state at time t and t
+
+20
+00:00:58,920 --> 00:01:02,400
+minus 1 and t minus 2, and so on is
+
+21
+00:01:02,400 --> 00:01:04,739
+the same as the probability that the state that
+
+22
+00:01:04,739 --> 00:01:07,920
+has that value at time t plus 1 given
+
+23
+00:01:07,920 --> 00:01:10,350
+the value of the state at time t.
+
+24
+00:01:10,350 --> 00:01:14,850
+So the history of the state before that is irrelevant.
+
+25
+00:01:14,850 --> 00:01:18,210
+For notation purposes if we write i equals little x of t
+
+26
+00:01:18,210 --> 00:01:23,970
+plus 1 equals little x of t, the probability that x of t plus 1
+
+27
+00:01:23,970 --> 00:01:28,530
+equals i given x of t equals j is equal to p i j.
+
+28
+00:01:28,530 --> 00:01:31,489
+And that's the transition matrix of the Markov process.
+
+29
+00:01:31,489 --> 00:01:33,030
+And that really summarizes everything
+
+30
+00:01:33,030 --> 00:01:35,880
+we need to know about it.
+
+31
+00:01:35,880 --> 00:01:38,010
+Since the buffers are finite the state space
+
+32
+00:01:38,010 --> 00:01:40,320
+is going to be finite.
+
+33
+00:01:40,320 --> 00:01:43,320
+An analytical solution is available for Markov process
+
+34
+00:01:43,320 --> 00:01:46,620
+model of a two machine line.
+
+35
+00:01:46,620 --> 00:01:51,250
+Here, the state space is given by n alpha 1 alpha 2,
+
+36
+00:01:51,250 --> 00:01:53,490
+where n is the number of parts in the buffer
+
+37
+00:01:53,490 --> 00:01:58,590
+and n goes between 0 to capital N. Alpha i
+
+38
+00:01:58,590 --> 00:02:03,130
+is the repair state of machine i for i equals 1 and 2.
+
+39
+00:02:03,130 --> 00:02:08,190
+Alpha i equals 1 means machine i is up, or operational.
+
+40
+00:02:08,190 --> 00:02:13,260
+Alpha equals 0 means machine i is down, or under repair.
+
+41
+00:02:13,260 --> 00:02:16,440
+Here's some examples of transition probabilities.
+
+42
+00:02:16,440 --> 00:02:19,252
+Suppose j equals x of t, which is 3, 0,
+
+43
+00:02:19,252 --> 00:02:22,200
+1 That means there are three parts in the buffer,
+
+44
+00:02:22,200 --> 00:02:25,560
+the first machine is down, and the second is up.
+
+45
+00:02:25,560 --> 00:02:28,350
+ni, which is x of t plus 1, is equal to 7,
+
+46
+00:02:28,350 --> 00:02:32,190
+1, 1 which means that there are seven parts in the buffer
+
+47
+00:02:32,190 --> 00:02:34,110
+and both machines are up.
+
+48
+00:02:34,110 --> 00:02:37,640
+Then the transition probability from 3, 0, 1 to 7, 1,
+
+49
+00:02:37,640 --> 00:02:43,080
+1 is 0 because the buffer level cannot change by more than one
+
+50
+00:02:43,080 --> 00:02:46,019
+part in one time unit.
+
+51
+00:02:46,019 --> 00:02:46,810
+Here's another one.
+
+52
+00:02:46,810 --> 00:02:51,360
+Suppose that at time t the state is 3, 0, 1 again.
+
+53
+00:02:51,360 --> 00:02:54,300
+And this time at time t plus 1 the state is 2, 0, 1--
+
+54
+00:02:54,300 --> 00:02:56,160
+that is, there are two parts in the buffer,
+
+55
+00:02:56,160 --> 00:02:59,140
+the first machine is down and the second is up.
+
+56
+00:02:59,140 --> 00:03:03,270
+Then the transition probability from 3, 0, 1 to 2, 0, 1
+
+57
+00:03:03,270 --> 00:03:09,180
+is 1 minus r1 times 1 minus p2 because the probability
+
+58
+00:03:09,180 --> 00:03:13,135
+that the first machine does not get repaired is 1 minus r1,
+
+59
+00:03:13,135 --> 00:03:15,510
+and the probability that the second machine does not fail
+
+60
+00:03:15,510 --> 00:03:21,420
+is 1 minus p2 and the buffer level must go down by one.
+
+61
+00:03:21,420 --> 00:03:26,380
+And by contrast, if the state at time t
+
+62
+00:03:26,380 --> 00:03:30,490
+is 3, 0, 1 and the state at time t
+
+63
+00:03:30,490 --> 00:03:34,930
+plus 1 is also 3, 0, 1, then that transition probability
+
+64
+00:03:34,930 --> 00:03:36,220
+is zero.
+
+65
+00:03:36,220 --> 00:03:38,110
+And the reason is that the buffer level
+
+66
+00:03:38,110 --> 00:03:40,510
+must go down by one.
+
+67
+00:03:40,510 --> 00:03:42,970
+Here's the state transition graph for the model
+
+68
+00:03:42,970 --> 00:03:44,240
+that we're looking at.
+
+69
+00:03:44,240 --> 00:03:48,794
+In this case, we're assuming a buffer size of 13.
+
+70
+00:03:48,794 --> 00:03:52,120
+n, which is shown along the top here,
+
+71
+00:03:52,120 --> 00:03:54,520
+is the number of parts in the buffer.
+
+72
+00:03:54,520 --> 00:03:58,130
+And the alphas represent the repair states of the machines.
+
+73
+00:03:58,130 --> 00:04:00,120
+0,0 means both machines are down.
+
+74
+00:04:00,120 --> 00:04:03,240
+0,1 means the first is down and the second is up 1,0
+
+75
+00:04:03,240 --> 00:04:04,990
+is the first is up and the second is down.
+
+76
+00:04:04,990 --> 00:04:09,520
+And 1,1 is the first is up and the second is that is up.
+
+77
+00:04:09,520 --> 00:04:13,030
+This state, for example, represents 3, 0, 1,
+
+78
+00:04:13,030 --> 00:04:17,310
+the examples that we've been looking at so far.
+
+79
+00:04:17,310 --> 00:04:19,370
+If the buffer size is capital N then
+
+80
+00:04:19,370 --> 00:04:22,040
+there are capital N plus 1 buffer levels.
+
+81
+00:04:22,040 --> 00:04:24,480
+Each machine has two possible states.
+
+82
+00:04:24,480 --> 00:04:27,350
+So the total number of states is 2 times 2 times
+
+83
+00:04:27,350 --> 00:04:29,460
+capital N plus 1.
+
+84
+00:04:29,460 --> 00:04:33,950
+In this case that works out to 56 possible states.
+
+85
+00:04:33,950 --> 00:04:36,070
+Now, the probabilities of the p's and r's are
+
+86
+00:04:36,070 --> 00:04:37,880
+relatively small.
+
+87
+00:04:37,880 --> 00:04:41,470
+So the machine states are more likely to stay the same
+
+88
+00:04:41,470 --> 00:04:43,930
+than change at a single transition.
+
+89
+00:04:43,930 --> 00:04:46,870
+But of course, eventually they do change.
+
+90
+00:04:46,870 --> 00:04:49,340
+When both alphas are the same--
+
+91
+00:04:49,340 --> 00:04:51,700
+in other words, 0, 1, or 1, 1--
+
+92
+00:04:51,700 --> 00:04:54,360
+the buffer level does not change.
+
+93
+00:04:54,360 --> 00:04:58,440
+When alpha 1 equals 0 and alpha 2 equals 1
+
+94
+00:04:58,440 --> 00:05:01,680
+the buffer level goes down because the first machine does
+
+95
+00:05:01,680 --> 00:05:03,780
+not put a part in the buffer but the second one
+
+96
+00:05:03,780 --> 00:05:05,790
+does take one out.
+
+97
+00:05:05,790 --> 00:05:10,560
+On the other hand, if alpha 1 equals 1 and alpha 2 equals 0,
+
+98
+00:05:10,560 --> 00:05:13,900
+so the machine states are 1, 0, the buffer level goes up.
+
+99
+00:05:13,900 --> 00:05:15,480
+The first machine puts a part in.
+
+100
+00:05:15,480 --> 00:05:19,232
+The second one doesn't take a part out.
+
+101
+00:05:19,232 --> 00:05:20,940
+There are different colors of the states.
+
+102
+00:05:20,940 --> 00:05:24,270
+The ones that are colored yellow are internal states
+
+103
+00:05:24,270 --> 00:05:25,560
+and typical.
+
+104
+00:05:25,560 --> 00:05:28,960
+They all have the same transition behavior.
+
+105
+00:05:28,960 --> 00:05:32,460
+Each usually has a pretty small probability.
+
+106
+00:05:32,460 --> 00:05:34,020
+The other states are boundary states.
+
+107
+00:05:34,020 --> 00:05:36,690
+The light blue ones are non-transient.
+
+108
+00:05:36,690 --> 00:05:40,190
+They generally have relatively large probabilities.
+
+109
+00:05:40,190 --> 00:05:43,890
+The dotted ghostly looking white states are transient.
+
+110
+00:05:43,890 --> 00:05:47,370
+Those are states with steady state probability of 0.
+
+111
+00:05:47,370 --> 00:05:49,770
+To obtain the probabilities of all the states
+
+112
+00:05:49,770 --> 00:05:51,660
+we form the steady state transition
+
+113
+00:05:51,660 --> 00:05:55,060
+equations and the normalization equation and we solve them.
+
+114
+00:05:55,060 --> 00:05:58,470
+This gives us the probabilities of all the states.
+
+115
+00:05:58,470 --> 00:06:01,320
+We use these probabilities for calculating the performance
+
+116
+00:06:01,320 --> 00:06:02,970
+measures.
+
+117
+00:06:02,970 --> 00:06:05,460
+Here we briefly describe the steady state transition
+
+118
+00:06:05,460 --> 00:06:08,070
+equation and the normalization equation.
+
+119
+00:06:08,070 --> 00:06:13,010
+Here again we remind you of the Markov process analysis.
+
+120
+00:06:13,010 --> 00:06:18,180
+So pi of ni alpha 1 alpha 2 is the steady state probability
+
+121
+00:06:18,180 --> 00:06:19,770
+that there are n parts in the buffer
+
+122
+00:06:19,770 --> 00:06:24,000
+and the machine states are alpha 1 and alpha 2.
+
+123
+00:06:24,000 --> 00:06:30,470
+To obtain all these pi's, let's let i equals n alpha 1 alpha 2,
+
+124
+00:06:30,470 --> 00:06:33,950
+and j equals n prime alpha 1 prime alpha 2 prime,
+
+125
+00:06:33,950 --> 00:06:37,110
+just for notation purposes.
+
+126
+00:06:37,110 --> 00:06:40,020
+Then the transition equations can
+
+127
+00:06:40,020 --> 00:06:46,020
+be written as pi i equals the sum if h of pi ij pi j,
+
+128
+00:06:46,020 --> 00:06:50,640
+or in vector matrix form, pi equals p pi.
+
+129
+00:06:50,640 --> 00:06:52,950
+We also have the normalization equations.
+
+130
+00:06:52,950 --> 00:06:56,322
+The sum of all the pi's equals 1.
+
+131
+00:06:56,322 --> 00:06:59,220
+This is exactly what we discussed in the Markov process
+
+132
+00:06:59,220 --> 00:07:01,920
+videos, although the specific notation for this system
+
+133
+00:07:01,920 --> 00:07:04,050
+is a little more complicated here.
+
+134
+00:07:04,050 --> 00:07:06,030
+It's more complicated because i and j
+
+135
+00:07:06,030 --> 00:07:12,070
+represent triplets and alpha 1, alpha 2 are not just integers.
+
+136
+00:07:12,070 --> 00:07:14,560
+So how do we use these probabilities to calculate
+
+137
+00:07:14,560 --> 00:07:16,150
+the performance measures?
+
+138
+00:07:16,150 --> 00:07:20,200
+Well, the production rate can be thought of as the probability
+
+139
+00:07:20,200 --> 00:07:24,750
+that a part can leave the system in any operation time.
+
+140
+00:07:24,750 --> 00:07:28,200
+In order for that to happen, the second machine has to be up
+
+141
+00:07:28,200 --> 00:07:30,450
+and the buffer has to be non-empty.
+
+142
+00:07:30,450 --> 00:07:33,300
+Now let's look at the state space again.
+
+143
+00:07:33,300 --> 00:07:37,920
+The states that are highlighted in purple are those states.
+
+144
+00:07:37,920 --> 00:07:42,660
+If the machine states are 0, 1, as long as the first machine
+
+145
+00:07:42,660 --> 00:07:47,160
+is not empty all of these states allow parts to leave the system
+
+146
+00:07:47,160 --> 00:07:48,900
+because machine 2 is up.
+
+147
+00:07:48,900 --> 00:07:50,550
+That's what the one means.
+
+148
+00:07:50,550 --> 00:07:55,000
+When both machines are up, then we have these states.
+
+149
+00:07:55,000 --> 00:07:59,820
+And the sum of the probabilities of all the states in purple
+
+150
+00:07:59,820 --> 00:08:01,470
+is the probability that a part leaves
+
+151
+00:08:01,470 --> 00:08:04,870
+the system in one time step.
+
+152
+00:08:04,870 --> 00:08:07,390
+To calculate the average inventory
+
+153
+00:08:07,390 --> 00:08:08,920
+we evaluate this summation.
+
+154
+00:08:08,920 --> 00:08:12,640
+This is a standard expression for the average
+
+155
+00:08:12,640 --> 00:08:16,166
+of any quantity, in particular the average inventory.
+
+156
+00:08:16,166 --> 00:08:17,790
+So now let's examine how the production
+
+157
+00:08:17,790 --> 00:08:21,800
+rate in average inventory vary with buffer size.
+
+158
+00:08:21,800 --> 00:08:25,060
+In this graph the horizontal axis is the buffer size.
+
+159
+00:08:25,060 --> 00:08:27,880
+The vertical axis is the production rate.
+
+160
+00:08:27,880 --> 00:08:30,610
+These graphs were drawn using the methods described
+
+161
+00:08:30,610 --> 00:08:32,909
+in the last two slides.
+
+162
+00:08:32,909 --> 00:08:36,360
+The situation is that we have to design a two machine one buffer
+
+163
+00:08:36,360 --> 00:08:39,150
+line to produce at a specified production rate.
+
+164
+00:08:39,150 --> 00:08:42,390
+I'll tell you what that production rate is later.
+
+165
+00:08:42,390 --> 00:08:44,440
+We have already chosen the second machine.
+
+166
+00:08:44,440 --> 00:08:48,540
+It has r2 equals 0.1 and p2 equals 0.01.
+
+167
+00:08:48,540 --> 00:08:50,490
+We still need to select the first machine
+
+168
+00:08:50,490 --> 00:08:52,830
+and the size of the buffer.
+
+169
+00:08:52,830 --> 00:08:56,610
+There are five possible choices for the first machine.
+
+170
+00:08:56,610 --> 00:09:01,360
+They all have p1 equals 0.01, the same as the second machine.
+
+171
+00:09:01,360 --> 00:09:03,270
+However, they all have different r1,
+
+172
+00:09:03,270 --> 00:09:06,620
+which means they have a different mean time to repair.
+
+173
+00:09:06,620 --> 00:09:09,150
+The versions of machine one with a high r1,
+
+174
+00:09:09,150 --> 00:09:11,970
+or low mean time to repair, means
+
+175
+00:09:11,970 --> 00:09:13,920
+they are easier to repair.
+
+176
+00:09:13,920 --> 00:09:15,711
+The machine designers did a better job
+
+177
+00:09:15,711 --> 00:09:18,210
+of making it easier to get at the parts that must be changed
+
+178
+00:09:18,210 --> 00:09:21,090
+more often or maybe they've developed a better failure
+
+179
+00:09:21,090 --> 00:09:23,530
+diagnostic system.
+
+180
+00:09:23,530 --> 00:09:26,960
+So what can we observe from looking at these graphs?
+
+181
+00:09:26,960 --> 00:09:29,570
+First of all, all the graphs are increasing.
+
+182
+00:09:29,570 --> 00:09:31,480
+This is because more storage space means
+
+183
+00:09:31,480 --> 00:09:33,730
+that each machine is less likely to force
+
+184
+00:09:33,730 --> 00:09:37,180
+the other to be idle due to starvation or blockage.
+
+185
+00:09:37,180 --> 00:09:39,640
+That leads to greater production rate.
+
+186
+00:09:39,640 --> 00:09:42,370
+Second, all the graphs have upper limit
+
+187
+00:09:42,370 --> 00:09:45,010
+and approach them asymptotically.
+
+188
+00:09:45,010 --> 00:09:47,260
+This because when the buffer size is infinite,
+
+189
+00:09:47,260 --> 00:09:49,480
+we have an infinite buffer line.
+
+190
+00:09:49,480 --> 00:09:52,390
+The production rate cannot be larger than that of a line with
+
+191
+00:09:52,390 --> 00:09:54,820
+the same machines and an infinite buffer.
+
+192
+00:09:54,820 --> 00:09:56,650
+And that production rate is finite
+
+193
+00:09:56,650 --> 00:09:58,492
+so there is a finite upper bound.
+
+194
+00:09:58,492 --> 00:10:00,700
+We know that that's the production rate of the slower
+
+195
+00:10:00,700 --> 00:10:01,630
+machine of the two.
+
+196
+00:10:01,630 --> 00:10:04,770
+
+
+197
+00:10:04,770 --> 00:10:08,340
+The isolated production rate of the second machine
+
+198
+00:10:08,340 --> 00:10:13,710
+which is r2 over r2 plus p2, is 0.1 over 0.1
+
+199
+00:10:13,710 --> 00:10:20,590
+plus 0.01, which is 0.909 parts per operation time.
+
+200
+00:10:20,590 --> 00:10:22,560
+So let's look at the two slower versions
+
+201
+00:10:22,560 --> 00:10:27,090
+of machine one, those with r1 equals 0.06 and r1
+
+202
+00:10:27,090 --> 00:10:31,210
+equals 0.08, the black and the blue graphs.
+
+203
+00:10:31,210 --> 00:10:39,670
+The isolated production rates are 0.857 for 0.06 and 0.889
+
+204
+00:10:39,670 --> 00:10:41,690
+for 0.08.
+
+205
+00:10:41,690 --> 00:10:44,560
+They're both less than the isolated production
+
+206
+00:10:44,560 --> 00:10:46,070
+rate of the second machine.
+
+207
+00:10:46,070 --> 00:10:48,500
+So the limiting production rate of a line
+
+208
+00:10:48,500 --> 00:10:51,560
+with one of those machines as a first machine
+
+209
+00:10:51,560 --> 00:10:55,130
+is 0.857 and 0.889, respectively.
+
+210
+00:10:55,130 --> 00:10:58,980
+The asymptotes are shown on the graph.
+
+211
+00:10:58,980 --> 00:11:01,500
+In the case of the two fastest machines,
+
+212
+00:11:01,500 --> 00:11:13,797
+the isolated production rates are 0.923 and 0.933.
+
+213
+00:11:13,797 --> 00:11:15,630
+They are both faster than the second machine
+
+214
+00:11:15,630 --> 00:11:17,850
+so the limiting production rate of a line with one
+
+215
+00:11:17,850 --> 00:11:20,160
+of those as the first machine is the speed
+
+216
+00:11:20,160 --> 00:11:23,130
+of the second machine, or 0.909.
+
+217
+00:11:23,130 --> 00:11:24,870
+Both of the graphs for these machines
+
+218
+00:11:24,870 --> 00:11:28,270
+have the same asymptote.
+
+219
+00:11:28,270 --> 00:11:29,970
+The middle version of the first machine
+
+220
+00:11:29,970 --> 00:11:34,650
+is the one with the same r as the second machine, 0.1.
+
+221
+00:11:34,650 --> 00:11:37,450
+Since they both have the same isolated production rates,
+
+222
+00:11:37,450 --> 00:11:40,140
+a two machine one buffer line with that first machine
+
+223
+00:11:40,140 --> 00:11:42,920
+has the same asymptote as the lines with the two fastest
+
+224
+00:11:42,920 --> 00:11:45,570
+machines, 0.909.
+
+225
+00:11:45,570 --> 00:11:47,400
+In this case, the production rate
+
+226
+00:11:47,400 --> 00:11:50,160
+approaches that limit much more slowly than the lines
+
+227
+00:11:50,160 --> 00:11:53,960
+that use the two fastest first machines.
+
+228
+00:11:53,960 --> 00:11:56,120
+One more observation-- the graphs
+
+229
+00:11:56,120 --> 00:12:00,770
+with the smaller r1 lie below the graphs with the larger r1.
+
+230
+00:12:00,770 --> 00:12:03,590
+This is because if we compare the two production lines that
+
+231
+00:12:03,590 --> 00:12:06,410
+are the same in every respect except r1,
+
+232
+00:12:06,410 --> 00:12:10,550
+the line with the smaller r1, or larger average downtime,
+
+233
+00:12:10,550 --> 00:12:13,700
+will most often stay down longer whenever it fails.
+
+234
+00:12:13,700 --> 00:12:15,860
+Therefore the line with the smaller r1
+
+235
+00:12:15,860 --> 00:12:18,040
+will produce less in the same time
+
+236
+00:12:18,040 --> 00:12:20,420
+so it has a smaller production rate, p.
+
+237
+00:12:20,420 --> 00:12:22,470
+Here's a question for you.
+
+238
+00:12:22,470 --> 00:12:26,230
+What is the production rate of the line when n equals 0?
+
+239
+00:12:26,230 --> 00:12:28,030
+Is it zero?
+
+240
+00:12:28,030 --> 00:12:30,700
+Pause the video if you want to think about it before hearing
+
+241
+00:12:30,700 --> 00:12:31,700
+the answer from me.
+
+242
+00:12:31,700 --> 00:12:36,040
+
+
+243
+00:12:36,040 --> 00:12:37,570
+The answer is, the production rate
+
+244
+00:12:37,570 --> 00:12:40,870
+can be found from the Buzacott formula on slide 36.
+
+245
+00:12:40,870 --> 00:12:43,070
+It is not zero.
+
+246
+00:12:43,070 --> 00:12:46,450
+In this graph, the horizontal axis is the buffer size
+
+247
+00:12:46,450 --> 00:12:48,590
+and the vertical axis is the average inventory
+
+248
+00:12:48,590 --> 00:12:50,490
+in the buffer.
+
+249
+00:12:50,490 --> 00:12:52,430
+So what do we observe from seeing this graph?
+
+250
+00:12:52,430 --> 00:12:55,770
+First of all, again, all the graphs are increasing.
+
+251
+00:12:55,770 --> 00:12:58,790
+This is because the more storage space you have,
+
+252
+00:12:58,790 --> 00:13:01,920
+the more stuff you store.
+
+253
+00:13:01,920 --> 00:13:05,160
+Those of us who own closets will know that very well.
+
+254
+00:13:05,160 --> 00:13:07,530
+As n approaches infinity the lower two graphs
+
+255
+00:13:07,530 --> 00:13:08,706
+approach a limit.
+
+256
+00:13:08,706 --> 00:13:10,080
+This is because the first machine
+
+257
+00:13:10,080 --> 00:13:12,390
+is slower than the second.
+
+258
+00:13:12,390 --> 00:13:14,850
+The line is essentially a queuing system
+
+259
+00:13:14,850 --> 00:13:16,290
+where the first machine determines
+
+260
+00:13:16,290 --> 00:13:19,410
+the arrival process of the queue, which is the buffer.
+
+261
+00:13:19,410 --> 00:13:21,990
+And the second machine is the surface process.
+
+262
+00:13:21,990 --> 00:13:24,680
+The arrival process is slower than the surface process.
+
+263
+00:13:24,680 --> 00:13:27,310
+So when the buffer becomes very large,
+
+264
+00:13:27,310 --> 00:13:29,960
+the whole thing acts like an infinite buffer.
+
+265
+00:13:29,960 --> 00:13:32,580
+That limiting system has a steady state and therefore
+
+266
+00:13:32,580 --> 00:13:35,430
+a finite average inventory.
+
+267
+00:13:35,430 --> 00:13:37,470
+The upper two graphs do not approach a limit
+
+268
+00:13:37,470 --> 00:13:39,610
+as n approaches infinity.
+
+269
+00:13:39,610 --> 00:13:41,880
+In fact, they both approach straight lines which
+
+270
+00:13:41,880 --> 00:13:44,340
+are parallel to the n bar equals n line, which
+
+271
+00:13:44,340 --> 00:13:47,089
+is drawn here as a dashed line.
+
+272
+00:13:47,089 --> 00:13:48,880
+This is because the first machine is faster
+
+273
+00:13:48,880 --> 00:13:50,380
+than the second.
+
+274
+00:13:50,380 --> 00:13:52,570
+If the buffer really was infinite,
+
+275
+00:13:52,570 --> 00:13:54,820
+there would be no steady state behavior.
+
+276
+00:13:54,820 --> 00:13:57,160
+When the buffer is finite but large
+
+277
+00:13:57,160 --> 00:14:00,910
+the buffer is nearly full most of the time, regardless
+
+278
+00:14:00,910 --> 00:14:02,800
+of the size of the buffer.
+
+279
+00:14:02,800 --> 00:14:05,290
+In fact, the average amount of space in a buffer
+
+280
+00:14:05,290 --> 00:14:07,420
+approaches a limit.
+
+281
+00:14:07,420 --> 00:14:09,200
+When the two machines are the same,
+
+282
+00:14:09,200 --> 00:14:10,660
+the average amount of inventory is
+
+283
+00:14:10,660 --> 00:14:12,785
+equal to the average amount of space in the buffer,
+
+284
+00:14:12,785 --> 00:14:14,140
+whatever its size.
+
+285
+00:14:14,140 --> 00:14:16,300
+Therefore n bar equals n over 2.
+
+286
+00:14:16,300 --> 00:14:18,730
+This is shown by the green line for r1 equals
+
+287
+00:14:18,730 --> 00:14:21,850
+0.1 which is equal to r2.
+
+288
+00:14:21,850 --> 00:14:23,440
+Now lets design the production line
+
+289
+00:14:23,440 --> 00:14:26,770
+or at least narrow the possible design choices.
+
+290
+00:14:26,770 --> 00:14:28,810
+The marketing department has told us
+
+291
+00:14:28,810 --> 00:14:30,610
+that they need the line to produce parts
+
+292
+00:14:30,610 --> 00:14:34,430
+at a rate of 0.88 parts per operation time.
+
+293
+00:14:34,430 --> 00:14:35,890
+What are the best possible choices
+
+294
+00:14:35,890 --> 00:14:38,530
+of machine one in the buffer size?
+
+295
+00:14:38,530 --> 00:14:41,410
+The two graphs that we've been studying are shown here.
+
+296
+00:14:41,410 --> 00:14:44,710
+A horizontal line has been added to the production rate graph
+
+297
+00:14:44,710 --> 00:14:49,150
+to indicate the production rate target of p equals 0.88.
+
+298
+00:14:49,150 --> 00:14:51,910
+The feasible choices are at the intersections
+
+299
+00:14:51,910 --> 00:14:54,959
+of the production rate curves with the target line.
+
+300
+00:14:54,959 --> 00:14:56,125
+The intersections are shown.
+
+301
+00:14:56,125 --> 00:14:58,740
+
+
+302
+00:14:58,740 --> 00:15:00,930
+The first thing we notice is that the worst version
+
+303
+00:15:00,930 --> 00:15:05,730
+of machine one, the one where r equals 0.06,
+
+304
+00:15:05,730 --> 00:15:09,375
+and the isolated efficiency of the first machine is 0.857,
+
+305
+00:15:09,375 --> 00:15:11,520
+is not a feasible solution.
+
+306
+00:15:11,520 --> 00:15:14,460
+There is no intersection with the target production rate.
+
+307
+00:15:14,460 --> 00:15:17,340
+No matter how big the buffer is, the two machine production line
+
+308
+00:15:17,340 --> 00:15:19,600
+will never meet the target production rate
+
+309
+00:15:19,600 --> 00:15:22,930
+if that version of machine one is used.
+
+310
+00:15:22,930 --> 00:15:24,310
+For the feasible machines, we see
+
+311
+00:15:24,310 --> 00:15:26,290
+a pattern in the intersections.
+
+312
+00:15:26,290 --> 00:15:30,640
+The better machine one is, that is the larger r1 one is,
+
+313
+00:15:30,640 --> 00:15:32,800
+the smaller the buffer that is needed to achieve
+
+314
+00:15:32,800 --> 00:15:35,610
+the production rate target.
+
+315
+00:15:35,610 --> 00:15:38,160
+This is the list of the feasible solutions.
+
+316
+00:15:38,160 --> 00:15:39,990
+Except for the worst feasible version
+
+317
+00:15:39,990 --> 00:15:43,580
+of machine one, the version where r1 equals 0.08,
+
+318
+00:15:43,580 --> 00:15:45,780
+the table suggests that the feasible buffer
+
+319
+00:15:45,780 --> 00:15:49,710
+size is two or three times the mean time to repair.
+
+320
+00:15:49,710 --> 00:15:52,710
+This is a pretty small sample, but it's not a coincidence.
+
+321
+00:15:52,710 --> 00:15:55,170
+The purpose of the buffer is to prevent stoppages
+
+322
+00:15:55,170 --> 00:15:56,520
+from propagating.
+
+323
+00:15:56,520 --> 00:15:58,530
+Therefore the required buffer size
+
+324
+00:15:58,530 --> 00:16:01,630
+should be a small multiple of the average downtime.
+
+325
+00:16:01,630 --> 00:16:03,850
+This is a very crude rule of thumb
+
+326
+00:16:03,850 --> 00:16:07,360
+but it's a good starting point for design.
+
+327
+00:16:07,360 --> 00:16:10,010
+The graph on the right is the average inventory graph,
+
+328
+00:16:10,010 --> 00:16:11,870
+but now with the buffer size indicated
+
+329
+00:16:11,870 --> 00:16:14,090
+for each version of m1.
+
+330
+00:16:14,090 --> 00:16:16,610
+We see that the worse m1 is, the more
+
+331
+00:16:16,610 --> 00:16:20,120
+inventory is needed to meet the target production rate.
+
+332
+00:16:20,120 --> 00:16:21,770
+The conclusion is that a buffer can
+
+333
+00:16:21,770 --> 00:16:23,870
+compensate for machine unreliability
+
+334
+00:16:23,870 --> 00:16:25,760
+but only up to a point.
+
+335
+00:16:25,760 --> 00:16:28,520
+And the worse the machine is, the more compensation
+
+336
+00:16:28,520 --> 00:16:32,690
+is needed both in inventory space and an actual inventory.
+
+337
+00:16:32,690 --> 00:16:35,330
+We have not solved the problem of selecting the optimum buffer
+
+338
+00:16:35,330 --> 00:16:36,140
+size.
+
+339
+00:16:36,140 --> 00:16:39,080
+That is because the problem is not fully specified.
+
+340
+00:16:39,080 --> 00:16:41,360
+In particular, we have not specified the costs--
+
+341
+00:16:41,360 --> 00:16:43,250
+the capital cost of the different versions
+
+342
+00:16:43,250 --> 00:16:46,340
+of machine one, the cost of buffer space,
+
+343
+00:16:46,340 --> 00:16:47,810
+and the inventory holding cost.
+
+344
+00:16:47,810 --> 00:16:50,580
+
+
+345
+00:16:50,580 --> 00:16:52,580
+But let's assume that the better machine one is,
+
+346
+00:16:52,580 --> 00:16:54,350
+the more expensive it is.
+
+347
+00:16:54,350 --> 00:16:57,770
+That means that if we spend more to get a more reliable machine
+
+348
+00:16:57,770 --> 00:17:00,050
+we can get by with less inventory space and less
+
+349
+00:17:00,050 --> 00:17:01,370
+inventory.
+
+350
+00:17:01,370 --> 00:17:03,560
+If we economize on the machine, we
+
+351
+00:17:03,560 --> 00:17:06,829
+need to spend more on inventory space and inventory.
+
+352
+00:17:06,829 --> 00:17:09,440
+Exactly which is the best choice depends on exactly what
+
+353
+00:17:09,440 --> 00:17:12,069
+those costs are.
+
+354
+00:17:12,069 --> 00:17:14,014
+So here are some questions.
+
+355
+00:17:14,014 --> 00:17:15,430
+This is the same pair of questions
+
+356
+00:17:15,430 --> 00:17:17,328
+I've been asking over and over again.
+
+357
+00:17:17,328 --> 00:17:19,869
+Pause the video if you want to answer the question before you
+
+358
+00:17:19,869 --> 00:17:22,579
+hear my answers.
+
+359
+00:17:22,579 --> 00:17:25,942
+First question, if you want to increase the production rate,
+
+360
+00:17:25,942 --> 00:17:27,275
+which machine should we improve?
+
+361
+00:17:27,275 --> 00:17:32,720
+
+
+362
+00:17:32,720 --> 00:17:35,660
+We have been ignoring the cost of improvements.
+
+363
+00:17:35,660 --> 00:17:38,360
+In that tradition, the answer to the first question
+
+364
+00:17:38,360 --> 00:17:42,284
+is the bottleneck.
+
+365
+00:17:42,284 --> 00:17:43,950
+What would happen to the production rate
+
+366
+00:17:43,950 --> 00:17:45,460
+if we improved any other machine?
+
+367
+00:17:45,460 --> 00:17:51,856
+
+
+368
+00:17:51,856 --> 00:17:53,230
+The answer to the second question
+
+369
+00:17:53,230 --> 00:17:56,812
+is, improving any machine will increase the production rate.
+
+370
+00:17:56,812 --> 00:17:58,645
+That is demonstrated on the next two slides.
+
+371
+00:17:58,645 --> 00:18:01,630
+
+
+372
+00:18:01,630 --> 00:18:03,700
+This slide and the next show that
+
+373
+00:18:03,700 --> 00:18:05,740
+improving a non-bottleneck machine
+
+374
+00:18:05,740 --> 00:18:08,900
+could increase production rate.
+
+375
+00:18:08,900 --> 00:18:10,650
+The green line is the production rate when
+
+376
+00:18:10,650 --> 00:18:12,790
+the machines are identical.
+
+377
+00:18:12,790 --> 00:18:14,590
+The blue line shows the production rate
+
+378
+00:18:14,590 --> 00:18:17,070
+for improving machine one, that is reducing
+
+379
+00:18:17,070 --> 00:18:19,180
+its mean time to repair.
+
+380
+00:18:19,180 --> 00:18:22,920
+Now machine two is the bottleneck.
+
+381
+00:18:22,920 --> 00:18:24,910
+The red line shows what happens when
+
+382
+00:18:24,910 --> 00:18:28,440
+we improve machine one more-- that is, when we improve a non
+
+383
+00:18:28,440 --> 00:18:30,240
+bottleneck machine.
+
+384
+00:18:30,240 --> 00:18:32,310
+There's a noticeable increase in the production
+
+385
+00:18:32,310 --> 00:18:33,840
+rate when the buffer a small.
+
+386
+00:18:33,840 --> 00:18:36,450
+The amount of the increase diminishes
+
+387
+00:18:36,450 --> 00:18:38,940
+as the buffer gets larger because the production
+
+388
+00:18:38,940 --> 00:18:42,890
+rate gets closer to that of machine two, the bottleneck.
+
+389
+00:18:42,890 --> 00:18:45,590
+On the other hand, if we need a substantial increase
+
+390
+00:18:45,590 --> 00:18:48,200
+in the production rate and the buffer is not small
+
+391
+00:18:48,200 --> 00:18:51,410
+we must improve the bottleneck.
+
+392
+00:18:51,410 --> 00:18:53,600
+OK, one more question.
+
+393
+00:18:53,600 --> 00:18:56,510
+Is it better to have short frequent disruptions
+
+394
+00:18:56,510 --> 00:18:58,910
+or long infrequent disruptions?
+
+395
+00:18:58,910 --> 00:19:01,100
+Suppose we're designing a line and everything
+
+396
+00:19:01,100 --> 00:19:04,082
+was decided except the choice of the first machine.
+
+397
+00:19:04,082 --> 00:19:05,540
+Two versions are available that are
+
+398
+00:19:05,540 --> 00:19:07,580
+identical in all respects but one.
+
+399
+00:19:07,580 --> 00:19:10,520
+In particular, they have the same efficiency.
+
+400
+00:19:10,520 --> 00:19:12,620
+They differ in both the frequency of failures
+
+401
+00:19:12,620 --> 00:19:15,050
+and the duration of downtimes.
+
+402
+00:19:15,050 --> 00:19:17,780
+I say they differ in only one respect because in order
+
+403
+00:19:17,780 --> 00:19:19,400
+for them to have the same efficiency
+
+404
+00:19:19,400 --> 00:19:22,340
+the ratio of mean time to repair to mean time to fail
+
+405
+00:19:22,340 --> 00:19:24,500
+must be fixed.
+
+406
+00:19:24,500 --> 00:19:27,890
+If that machine were the only machine in the factory and all
+
+407
+00:19:27,890 --> 00:19:30,010
+we cared about was production rate
+
+408
+00:19:30,010 --> 00:19:34,140
+the versions of that machine would be equivalent.
+
+409
+00:19:34,140 --> 00:19:36,620
+But which version will give us a higher production
+
+410
+00:19:36,620 --> 00:19:38,760
+rate when it's in a line?
+
+411
+00:19:38,760 --> 00:19:39,970
+Which do you think?
+
+412
+00:19:39,970 --> 00:19:42,480
+Pause this video and try to answer the question before you
+
+413
+00:19:42,480 --> 00:19:43,500
+listen to the answer.
+
+414
+00:19:43,500 --> 00:19:49,946
+
+
+415
+00:19:49,946 --> 00:19:51,320
+This graph is the production rate
+
+416
+00:19:51,320 --> 00:19:53,300
+of a two machine line versus the mean time
+
+417
+00:19:53,300 --> 00:19:55,370
+to repair of the first machine.
+
+418
+00:19:55,370 --> 00:19:57,710
+The parameters of the second machine and the buffer size
+
+419
+00:19:57,710 --> 00:20:00,010
+are shown.
+
+420
+00:20:00,010 --> 00:20:03,520
+r1 and p1 are chosen so that the efficiency of the first machine
+
+421
+00:20:03,520 --> 00:20:04,900
+is 0.9.
+
+422
+00:20:04,900 --> 00:20:06,610
+That means that the mean time to fail
+
+423
+00:20:06,610 --> 00:20:10,610
+is nine times the mean time to repair.
+
+424
+00:20:10,610 --> 00:20:13,670
+r1 and p1 are chosen together so that the efficiency
+
+425
+00:20:13,670 --> 00:20:15,830
+of the first machine is 0.9.
+
+426
+00:20:15,830 --> 00:20:17,420
+That means that the mean time to fail
+
+427
+00:20:17,420 --> 00:20:20,740
+is nine times the mean time to repair.
+
+428
+00:20:20,740 --> 00:20:24,160
+Well the answer is evidently short, frequent failures
+
+429
+00:20:24,160 --> 00:20:27,820
+because the production rate when r1 and p1 are small
+
+430
+00:20:27,820 --> 00:20:31,345
+is larger than the production rate when r1 and p1 are large.
+
+431
+00:20:31,345 --> 00:20:34,090
+
+
+432
+00:20:34,090 --> 00:20:36,344
+Again, pause this video and think about why.
+
+433
+00:20:36,344 --> 00:20:38,510
+I'll give you the answer when you start it up again.
+
+434
+00:20:38,510 --> 00:20:46,519
+
+
+435
+00:20:46,519 --> 00:20:49,060
+The reason is that when the mean time to repair and mean time
+
+436
+00:20:49,060 --> 00:20:51,010
+to fail of the first machine are small
+
+437
+00:20:51,010 --> 00:20:53,380
+compared to the size of the buffer,
+
+438
+00:20:53,380 --> 00:20:56,470
+a single failure is not likely to empty the buffer.
+
+439
+00:20:56,470 --> 00:20:59,170
+In order to empty the buffer, you need a long period
+
+440
+00:20:59,170 --> 00:21:00,670
+with several failures and repairs
+
+441
+00:21:00,670 --> 00:21:03,670
+of both machines during which the first machine is down
+
+442
+00:21:03,670 --> 00:21:05,904
+more than the second machine.
+
+443
+00:21:05,904 --> 00:21:07,570
+If the mean time to repair and mean time
+
+444
+00:21:07,570 --> 00:21:09,970
+to fail of the first machine are large then
+
+445
+00:21:09,970 --> 00:21:12,670
+it's very likely that a single failure of the first machine
+
+446
+00:21:12,670 --> 00:21:14,290
+can empty the buffer.
+
+447
+00:21:14,290 --> 00:21:16,687
+The same is true of the second machine
+
+448
+00:21:16,687 --> 00:21:18,520
+but then we will be thinking about how often
+
+449
+00:21:18,520 --> 00:21:20,124
+a single failure will fill the buffer
+
+450
+00:21:20,124 --> 00:21:21,790
+and as a result block the first machine.
+
+451
+00:21:21,790 --> 00:21:25,300
+
+
+452
+00:21:25,300 --> 00:21:26,770
+Well that's all we have.
+
+453
+00:21:26,770 --> 00:21:28,600
+I hope you enjoyed this course and I hope
+
+454
+00:21:28,600 --> 00:21:30,970
+that you'll find it useful.
+
+455
+00:21:30,970 --> 00:21:33,370
+Part two continues the exploration of the issues
+
+456
+00:21:33,370 --> 00:21:36,490
+that we've studied in part one, the causes and consequences
+
+457
+00:21:36,490 --> 00:21:41,070
+of the variability in factories and what to do about them.
+
+458
+00:21:41,070 --> 00:21:43,374
+I hope you'll come back for part two
+
+459
+00:21:43,374 --> 00:21:45,540
+and for the rest of the principles and manufacturing
+
+460
+00:21:45,540 --> 00:21:46,770
+program.
+
+461
+00:21:46,770 --> 00:21:49,140
+Please feel free to offer comments, criticisms
+
+462
+00:21:49,140 --> 00:21:51,420
+and suggestions for improvements.
+
+463
+00:21:51,420 --> 00:21:54,950
+Thank you very much for your participation.
+

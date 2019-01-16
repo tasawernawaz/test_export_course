@@ -1,0 +1,15 @@
+<problem display_name="Concept Check 6" markdown="&gt;&gt; The Jidoka (Automation) means “The autonomous check of the abnormal in a process.” It includes mechanism to detect defects and mechanism to stop the line when defects are detected. It is a part of centralized management. &lt;&lt; &#10;( ) True.&#10;( X ) False.&#10;&#10;[explanation]&#10;The Jidoka (Automation) means “The autonomous check of the abnormal in a process.” It includes mechanism to detect defects and mechanism to stop the line when defects are detected. Autonomous means local: Local machine controls and local people stops the lines. It is not a part of centralizd management.&#10;[explanation]" max_attempts="3" weight="1.0">
+  <multiplechoiceresponse>
+    <label> The Jidoka (Automation) means “The autonomous check of the abnormal in a process.” It includes mechanism to detect defects and mechanism to stop the line when defects are detected. It is a part of centralized management. </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">True.</choice>
+      <choice correct="true">False.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>The Jidoka (Automation) means “The autonomous check of the abnormal in a process.” It includes mechanism to detect defects and mechanism to stop the line when defects are detected. Autonomous means local: Local machine controls and local people stops the lines. It is not a part of centralizd management.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

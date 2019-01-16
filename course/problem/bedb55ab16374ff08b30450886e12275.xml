@@ -1,0 +1,14 @@
+<problem display_name="Question 2" markdown="&gt;&gt;In the closed network model graphed in this video (system diagram in slide 96), what was the greatest number of machines at a station?&#10; &lt;&lt;&#10;&#10;= 15 +- 1%&#10;&#10;[explanation]&#10;s_j = 2, 1, 2, 1, 15. Therefore 15 is the maximum number of machines a station has.&#10;[explanation]&#10;&#10;" max_attempts="3">
+  <numericalresponse answer="15">
+    <label>In the closed network model graphed in this video (system diagram in slide 96), what was the greatest number of machines at a station?
+ </label>
+    <responseparam type="tolerance" default="1%"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>s_j = 2, 1, 2, 1, 15. Therefore 15 is the maximum number of machines a station has.</p>
+      </div>
+    </solution>
+  </numericalresponse>
+</problem>

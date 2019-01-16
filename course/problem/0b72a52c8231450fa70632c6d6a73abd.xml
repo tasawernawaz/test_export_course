@@ -1,0 +1,25 @@
+<problem display_name="Question 4" markdown="&gt;&gt;Which of the following trajectories best describes the above situation?&lt;&lt;&#10;&#10;( ) &lt;img src=&quot;https://courses.edx.org/asset-v1:MITx+2.854.1x+2T2018+type@asset+block@wk2-video5-q4-a.png&quot; width=&quot;400&quot;/&gt;&#10;( ) &lt;img src=&quot;https://courses.edx.org/asset-v1:MITx+2.854.1x+2T2018+type@asset+block@wk2-video5-q4-b.png&quot; width=&quot;400&quot;/&gt;&#10;(x) &lt;img src=&quot;https://courses.edx.org/asset-v1:MITx+2.854.1x+2T2018+type@asset+block@wk2-video5-q4-c.png&quot; width=&quot;400&quot;/&gt;&#10;( ) &lt;img src=&quot;https://courses.edx.org/asset-v1:MITx+2.854.1x+2T2018+type@asset+block@wk2-video5-q4-d.png&quot; width=&quot;400&quot;/&gt;&#10;&#10;[explanation]&#10;The answer is Plot C. B1 empty and B2 full would be denoted by a point on the upper left corner. When point in the space where both tanks are empty is denoted by a point on the lower left corner.&#10;&#10;[explanation]&#10;&#10;&#10;&#10;&#10;" max_attempts="3">
+  <multiplechoiceresponse>
+    <label>Which of the following trajectories best describes the above situation?</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">
+        <img src="https://courses.edx.org/asset-v1:MITx+2.854.1x+2T2018+type@asset+block@wk2-video5-q4-a.png" width="400"/>
+      </choice>
+      <choice correct="false">
+        <img src="https://courses.edx.org/asset-v1:MITx+2.854.1x+2T2018+type@asset+block@wk2-video5-q4-b.png" width="400"/>
+      </choice>
+      <choice correct="true">
+        <img src="https://courses.edx.org/asset-v1:MITx+2.854.1x+2T2018+type@asset+block@wk2-video5-q4-c.png" width="400"/>
+      </choice>
+      <choice correct="false">
+        <img src="https://courses.edx.org/asset-v1:MITx+2.854.1x+2T2018+type@asset+block@wk2-video5-q4-d.png" width="400"/>
+      </choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>The answer is Plot C. B1 empty and B2 full would be denoted by a point on the upper left corner. When point in the space where both tanks are empty is denoted by a point on the lower left corner.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

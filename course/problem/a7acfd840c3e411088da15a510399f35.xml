@@ -1,0 +1,17 @@
+<problem display_name="Question 2" markdown="&gt;&gt;Little’s Law:  &lt;&lt;&#10;&#10;[x] Only applies for steady-state solutions.&#10;[ ] Can be applied to obtain time-transient solutions.&#10;[ ] Does not only apply to M/M/1 systems.&#10;[x] Is often used to determine the average wait time a customer experiences in a system.&#10;[explanation]&#10;\( L = \lambda * W \), where L is the average number of customers in a system, \(\lambda\) is the average arrival rate, and W is the average wait time a customer experiences in a system. Little’s Law is only applicable for steady-state.&#10;[explanation]&#10;&#10;" max_attempts="3">
+  <choiceresponse>
+    <label>Little’s Law:  </label>
+    <checkboxgroup>
+      <choice correct="true">Only applies for steady-state solutions.</choice>
+      <choice correct="false">Can be applied to obtain time-transient solutions.</choice>
+      <choice correct="false">Does not only apply to M/M/1 systems.</choice>
+      <choice correct="true">Is often used to determine the average wait time a customer experiences in a system.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>\( L = \lambda * W \), where L is the average number of customers in a system, \(\lambda\) is the average arrival rate, and W is the average wait time a customer experiences in a system. Little’s Law is only applicable for steady-state.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

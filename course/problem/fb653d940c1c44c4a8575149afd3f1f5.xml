@@ -1,0 +1,21 @@
+<problem display_name="Question 2" markdown="&gt;&gt;M/M/1 Queues (check all that apply): &lt;&lt;&#10;[ ] Are systems that have M number of servers.&#10;[x] Are systems that have have one server.&#10;&#10;[x] Are systems where arrivals are determined by a Poisson process.&#10;&#10;[x] Are systems where arrival times are exponentially distributed.&#10;&#10;[x] Are systems that have average arrival rate, \(\lambda\).&#10;&#10;[ ] Are systems that have a time-varying service rate, \(\mu = \mu(t)\).&#10;&#10;[x] Are systems where job service times are exponentially distributed.&#10;&#10;[x] Are systems whose processes are Markovian.&#10;[explanation]&#10;M/M/1 queues represents the queue length in a system that has one server, where arrival times and job service times are exponentially distributed and determined by a Poisson process with constant arrival and service rates \(\rho\) and \(\lambda\), respectively.&#10;&#10;[explanation]&#10;&#10;" max_attempts="5">
+  <choiceresponse>
+    <label>M/M/1 Queues (check all that apply): </label>
+    <checkboxgroup>
+      <choice correct="false">Are systems that have M number of servers.</choice>
+      <choice correct="true">Are systems that have have one server.</choice>
+      <choice correct="true">Are systems where arrivals are determined by a Poisson process.</choice>
+      <choice correct="true">Are systems where arrival times are exponentially distributed.</choice>
+      <choice correct="true">Are systems that have average arrival rate, \(\lambda\).</choice>
+      <choice correct="false">Are systems that have a time-varying service rate, \(\mu = \mu(t)\).</choice>
+      <choice correct="true">Are systems where job service times are exponentially distributed.</choice>
+      <choice correct="true">Are systems whose processes are Markovian.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>M/M/1 queues represents the queue length in a system that has one server, where arrival times and job service times are exponentially distributed and determined by a Poisson process with constant arrival and service rates \(\rho\) and \(\lambda\), respectively.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

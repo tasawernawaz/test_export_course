@@ -1,0 +1,10 @@
+<problem display_name="Part 1" markdown="&gt;&gt;Mathematically, what does Goldratt mean by &quot;dependent events&quot;?&lt;&lt;&#10;&#10;( ) Some events are dependant random variables&#10;(x) The requirement that certain things be non-negative (like inventory).&#10;( ) Some events can only happen if other events happen.&#10;" max_attempts="3" showanswer="finished" weight="0.0">
+  <multiplechoiceresponse>
+    <label>Mathematically, what does Goldratt mean by "dependent events"?</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Some events are dependant random variables</choice>
+      <choice correct="true">The requirement that certain things be non-negative (like inventory).</choice>
+      <choice correct="false">Some events can only happen if other events happen.</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

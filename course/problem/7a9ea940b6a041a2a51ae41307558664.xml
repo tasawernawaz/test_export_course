@@ -1,0 +1,23 @@
+<problem display_name="Part 1" markdown="&gt;&gt;How many parts are produced in the 1st hour? Assume the buffer is empty at time 0.&lt;&lt;&#10;&#10;= 59&#10;&#10;[explanation]&#10;Machine 1 and 2 can both produce 60 parts/hour. However, machine 2 must wait 1 minute before there is a part two work on.&#10;[explanation]&#10;&#10;&gt;&gt;How many parts are produced in the second hour?&lt;&lt;&#10;&#10;=60&#10;&#10;[explanation]&#10;Now since the buffer machine 2 is continuously fed by machine 1, production rate reaches 60. However, the buffer is still empty.&#10;[explanation]&#10;&#10;&lt;script src=&quot;/static/st.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;" max_attempts="3" showanswer="finished" weight="1.0">
+  <label>How many parts are produced in the 1st hour? Assume the buffer is empty at time 0.</label>
+  <numericalresponse answer="59">
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>Machine 1 and 2 can both produce 60 parts/hour. However, machine 2 must wait 1 minute before there is a part two work on.</p>
+    </div>
+  </solution>
+  <label>How many parts are produced in the second hour?</label>
+  <numericalresponse answer="60">
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>Now since the buffer machine 2 is continuously fed by machine 1, production rate reaches 60. However, the buffer is still empty.</p>
+    </div>
+  </solution>
+  <script src="/static/st.js" type="text/javascript"/>
+</problem>

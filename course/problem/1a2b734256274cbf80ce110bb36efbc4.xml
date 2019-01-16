@@ -1,0 +1,28 @@
+<problem display_name="Part 1" markdown="null" max_attempts="3" showanswer="finished" weight="0.0">
+  <p>Considering specifically when the arrival rate is less than 2 per minute (<b>λ &lt; 2</b>): </p>
+  <p/>
+  <multiplechoiceresponse>
+    <label>The system can be approximated as what type of Queue?</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">M/M/1 Queue</choice>
+      <choice correct="false">D/D/1 Queue</choice>
+      <choice correct="false">M/M/s Queue</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+  <formularesponse type="ci" samples="lambda@1:2#100" answer="lambda/(2-lambda)">
+    <label>Write an expression with \(\lambda\), representing the average Queue length:</label>
+    <description>To represent \(\lambda\), use "lambda" in your expression below. </description>
+    <responseparam type="tolerance" default="0.00001"/>
+    <formulaequationinput size="40"/>
+  </formularesponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>
+        <span style="font-size: 1em;">
+          Note that the arrival rate exceeds the service rate during some intervals. This is not a problem since the lengths of the intervals are finite. The queue length grows during such periods. The service rate is always 2 per minute. During the periods when the arrival rate is less than 2, we can approximate the system as an M/M/1 queue in steady state. The average queue length is then λ/(2 − λ).
+        </span>
+      </p>
+    </div>
+  </solution>
+</problem>

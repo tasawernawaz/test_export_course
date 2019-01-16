@@ -1,0 +1,30 @@
+<problem display_name="Part 3" markdown="null" max_attempts="3" showanswer="finished" weight="0.0">
+  <numericalresponse answer="635.51">
+    <label>The Gottahunch Consulting Company offers to do a study which they say will reduce the standard deviation of the daily sales volume by 50%. What is the new expected profit? Assume a triangular distribution for x. Round the optimal amount of food \(x^*\) to the nearest integer.</label>
+    <responseparam type="tolerance" default="5"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>For this question, we first consider the change in the optimal amount of food (x∗) resulted in the reduction of the standard deviation. Then we consider the change of the expected profit so</p>
+        <p>that to determine what is the most money that Ekoleye should be willing to pay for such a study. </p>
+        <p>For the triangular distribution, we have</p>
+        <p>\(\mu=180\) and \(\sigma=30\)</p>
+        <p>Therefore,</p>
+        <p>\(m=180=\frac{a+b}{2}\) and \(\sigma^2=30^2=900=\frac{(b-a)^2}{24}\)</p>
+        <p>or</p>
+        <p>\(b-a=146.97\) and \(b+a=360\)</p>
+        <p>so</p>
+        <p>\(a=106.525\) and \(b=253.485\)</p>
+        <p>Therefore, under this triangular distribution, the optimal amount of food \(x^*\) is 185.45. Again, we consider \(x^*=185\).</p>
+        <p>
+          <p>
+            <span style="font-size: 1em;">
+              <img src="/static/Screen_Shot_2018-05-02_at_11.12.24_AM.png" alt="" width="600" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+            </span>
+          </p>
+        </p>
+      </div>
+    </solution>
+  </numericalresponse>
+</problem>

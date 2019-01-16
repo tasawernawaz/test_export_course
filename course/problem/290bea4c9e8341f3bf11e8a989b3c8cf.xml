@@ -1,0 +1,15 @@
+<problem display_name="Part 2" markdown="&gt;&gt;Non-synchronization causes inventory. True or False?&lt;&lt;&#10;(x) True&#10;( ) False&#10;&#10;[explanation]&#10;This is the main message of your introduction to inventory management!&#10;[explanation]&#10;" max_attempts="1" showanswer="past_due" weight="2.0">
+  <multiplechoiceresponse>
+    <label>Non-synchronization causes inventory. True or False?</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">True</choice>
+      <choice correct="false">False</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>This is the main message of your introduction to inventory management!</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

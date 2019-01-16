@@ -1,0 +1,17 @@
+<problem display_name="Question 2" markdown="&gt;&gt;The time that a part spends in a factory beyond the time required for its operation is: &lt;&lt;&#10;&#10;( ) About zero in a properly-designed factory.&#10;( ) About the same time as the amount a part spends being operated on.&#10;( ) About twice times the total operation time.&#10;(x) Often 10 to 100 times the total operation time.&#10;&#10;[Explanation]&#10;The sum of all the delays that are part experiences during production is the extra time that a part spends in a factory, beyond the time required for its operations. Delay is inevitable, such as those caused by machine stoppages in the form of failures, maintenance blocking, starvation, and set up changes.&#10;&#10;[Explanation]" max_attempts="3">
+  <multiplechoiceresponse>
+    <label>The time that a part spends in a factory beyond the time required for its operation is: </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">About zero in a properly-designed factory.</choice>
+      <choice correct="false">About the same time as the amount a part spends being operated on.</choice>
+      <choice correct="false">About twice times the total operation time.</choice>
+      <choice correct="true">Often 10 to 100 times the total operation time.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>The sum of all the delays that are part experiences during production is the extra time that a part spends in a factory, beyond the time required for its operations. Delay is inevitable, such as those caused by machine stoppages in the form of failures, maintenance blocking, starvation, and set up changes.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

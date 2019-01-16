@@ -1,0 +1,16 @@
+<problem display_name="Part 2" markdown="&gt;&gt;Flip a biased coin repeatedly. Its probability of heads is .55. Tails comes up on the first three flips. What is the probability that the first time that heads comes up is on the 5th flip? (Enter 4 decimal places)&lt;&lt;&#10;&#10;= 0.2475+-0.0025&#10;&#10;[Explanation]&#10;The probability that the first head comes up on the 5th flip is 0.0225. However, we are now given the condition that the first 3 flips were all tails. So the probability that we get 3 tails first is just:&#10;\((1-0.55)^{3}=0.0911\)&#10;Now the conditional probability of getting a head on the 5th flip given the first 3 flips are tails is just:&#10;\(0.0225/0.0911=0.2475\)&#10;[Explanation]" max_attempts="3" showanswer="past_due" weight="2.0">
+  <numericalresponse answer="0.2475">
+    <label>Flip a biased coin repeatedly. Its probability of heads is .55. Tails comes up on the first three flips. What is the probability that the first time that heads comes up is on the 5th flip? (Enter 4 decimal places)</label>
+    <responseparam type="tolerance" default="0.0025"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>The probability that the first head comes up on the 5th flip is 0.0225. However, we are now given the condition that the first 3 flips were all tails. So the probability that we get 3 tails first is just:</p>
+        <p>\((1-0.55)^{3}=0.0911\)</p>
+        <p>Now the conditional probability of getting a head on the 5th flip given the first 3 flips are tails is just:</p>
+        <p>\(0.0225/0.0911=0.2475\)</p>
+      </div>
+    </solution>
+  </numericalresponse>
+</problem>

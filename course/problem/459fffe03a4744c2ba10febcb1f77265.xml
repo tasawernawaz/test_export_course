@@ -1,0 +1,32 @@
+<problem display_name="Part 2" markdown="&gt;&gt;Calculate the steady-state probability of state 1 (Please enter 4 decimal places).&lt;&lt; &#10;&#10;= 0.3333 +-0.0001&#10;&#10;&gt;&gt;Calculate the steady-state probability of state 2 (Please enter 4 decimal places).&lt;&lt; &#10;&#10;= 0.30000 +-0.001&#10;&#10;&gt;&gt;Calculate the steady-state probability of state 3 (Please enter 4 decimal places).&lt;&lt; &#10;&#10;= 0.30000 +-0.001&#10;&#10;&gt;&gt;Calculate the steady-state probability of state 4 (Please enter 4 decimal places).&lt;&lt; &#10;&#10;= 0.0667 +-0.001&#10;&#10;[explanation]&#10;Setup and solve the following system of equations:&#10;\(\lambda_{41}P_4=(\lambda_{12}+\lambda_{14})P_1 \)&#10;\(\lambda_{12}P_1=(\lambda_{23}+\lambda_{24})P_2 \)&#10;\(\lambda_{23}P_2=\lambda_{34}P_3 \)&#10;\(P_1+P_2+P_3+P_4=1\)&#10;[explanation]" max_attempts="3" showanswer="finished" weight="1.0">
+  <label>Calculate the steady-state probability of state 1 (Please enter 4 decimal places).</label>
+  <numericalresponse answer="0.3333">
+    <responseparam type="tolerance" default="0.0001"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>Calculate the steady-state probability of state 2 (Please enter 4 decimal places).</label>
+  <numericalresponse answer="0.30000">
+    <responseparam type="tolerance" default="0.001"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>Calculate the steady-state probability of state 3 (Please enter 4 decimal places).</label>
+  <numericalresponse answer="0.30000">
+    <responseparam type="tolerance" default="0.001"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>Calculate the steady-state probability of state 4 (Please enter 4 decimal places).</label>
+  <numericalresponse answer="0.0667">
+    <responseparam type="tolerance" default="0.001"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>Setup and solve the following system of equations:</p>
+      <p>\(\lambda_{41}P_4=(\lambda_{12}+\lambda_{14})P_1 \)</p>
+      <p>\(\lambda_{12}P_1=(\lambda_{23}+\lambda_{24})P_2 \)</p>
+      <p>\(\lambda_{23}P_2=\lambda_{34}P_3 \)</p>
+      <p>\(P_1+P_2+P_3+P_4=1\)</p>
+    </div>
+  </solution>
+</problem>

@@ -1,0 +1,46 @@
+<problem display_name="Question 2" markdown="null" max_attempts="7">
+  <p>Consider the following transition graph of a discrete Markov chain with four states, and answer the following questions. </p>
+  <p>
+    <img src="/static/wk3-video2-q1.png" alt="https://courses.edx.org/asset-v1:MITx+2.854.1x+2T2018+type@asset+block@wk3-video2-q5.png" width="600"/>
+  </p>
+  <label>a. If the system is in state 1 at time n, what is the probability it will be in state 4 at time n + 2? 
+      (Numerical Input.)</label>
+  <numericalresponse answer="0.59">
+    <responseparam type="tolerance" default="5%"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>A path is denoted in the following format: \(Stage_{n+1}-Stage_{n+2}\)</p>
+      <p>1-4: \(0.3*0.5 = 0.15\)</p>
+      <p>2-4: \(0.2*0.7 = 0.14\)</p>
+      <p>4-4: \(0.5*0.6 = 0.3\)</p>
+      <p>Sum: \(0.15 + 0.14 + 0.3 = 0.59\)</p>
+    </div>
+  </solution>
+  <label>b. If we know that at time t, the probability of the system will be in state 1, 2, 3, 4 is 0.2, 0.4, 0.3, 0.1, respectively, what is the probability that at time t + 1, the system will be in state 2?
+</label>
+  <numericalresponse answer="0.16">
+    <responseparam type="tolerance" default="5%"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>\(\pi_{2(t+1)} = P_{21} * \pi_{1(t)} + P_{22} * \pi_{2(t)} = 0.2*0.2 + 0.3*0.4 = 0.16\)</p>
+    </div>
+  </solution>
+  <symbolicresponse cfn="symmath_check" answer="[[0.3,0,0.4,0],[0.2,0.3,0,0],[0,0,0.6,0.4],[0.5,0.7,0,0.6]]" options="matrix,imaginary" state="unsubmitted">
+    <label>c. What does the P matrix look like?</label>
+    <description>Enter matrices in the form: [ [m, a, r, k], [o, v, p, r], [o, c, e, s], [s, y, a, y] ]. All incorrect answer will return the message: "Error in evaluating your expression [MATRIX] as a valid equation". </description>
+    <textline size="80" math="1"/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Please review slide 15 in video 2 to see the form of the P matrix. In this case, P is a 4 x 4 matrix that looks like this:</p>
+        <p>\[ P = \left[ \begin{matrix} 0.3 &amp; 0 &amp; 0.4 &amp; 0\\ 0.2 &amp; 0.3 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0.6 &amp; 0.4 \\ 0.5 &amp; 0.7 &amp; 0 &amp; 0.6 \end{matrix} \right] \]</p>
+      </div>
+    </solution>
+  </symbolicresponse>
+</problem>

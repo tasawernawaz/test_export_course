@@ -1,0 +1,76 @@
+0
+00:00:00,000 --> 00:00:00,500
+
+
+1
+00:00:00,500 --> 00:00:03,130
+Inventory is a major issue in every factory.
+
+2
+00:00:03,130 --> 00:00:05,770
+We show how some inventory is inevitable
+
+3
+00:00:05,770 --> 00:00:09,220
+when variability is present in a system of flows.
+
+4
+00:00:09,220 --> 00:00:11,170
+Inventory is necessary for a factory
+
+5
+00:00:11,170 --> 00:00:13,180
+to meet some of its performance goals.
+
+6
+00:00:13,180 --> 00:00:14,720
+Such as having products available
+
+7
+00:00:14,720 --> 00:00:17,770
+when customers want them, or meeting a specified production
+
+8
+00:00:17,770 --> 00:00:19,090
+rate target.
+
+9
+00:00:19,090 --> 00:00:21,400
+However, it has costs.
+
+10
+00:00:21,400 --> 00:00:23,170
+We will describe some inventory models
+
+11
+00:00:23,170 --> 00:00:25,180
+that deal with issues such as, the trade off
+
+12
+00:00:25,180 --> 00:00:27,910
+between the risk of having too little inventory to satisfy
+
+13
+00:00:27,910 --> 00:00:30,970
+all customers, and having too much so that some items are
+
+14
+00:00:30,970 --> 00:00:32,350
+unsold.
+
+15
+00:00:32,350 --> 00:00:34,360
+We will look at economies of scale.
+
+16
+00:00:34,360 --> 00:00:36,340
+When is it worthwhile to buy or make more
+
+17
+00:00:36,340 --> 00:00:38,950
+than you expect to need immediately because of reduced
+
+18
+00:00:38,950 --> 00:00:43,320
+per item costs, even though doing so adds storage costs?
+

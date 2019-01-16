@@ -1,0 +1,20 @@
+<problem display_name="Part 6" markdown="null" max_attempts="3" showanswer="finished" weight="0.0">
+  <numericalresponse answer="1.199">
+    <p>What can you say about the expected Sojourn time (hrs) of a unit at operation \(Q\)?</p>
+    <label>\(W = \)  
+</label>
+    <description> (Round to 3 decimal places with.) </description>
+    <responseparam type="tolerance" default="0.09"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>
+        <span style="font-size: 1em;">
+         \(W =W_{q} + \frac{1}{\mu} =1.199(hr)\)
+        </span>
+      </p>
+    </div>
+  </solution>
+</problem>

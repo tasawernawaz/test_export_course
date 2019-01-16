@@ -1,0 +1,80 @@
+0
+00:00:00,000 --> 00:00:00,499
+
+
+1
+00:00:00,499 --> 00:00:02,580
+This week we build on the probability basics
+
+2
+00:00:02,580 --> 00:00:06,030
+from last week to discuss random dynamic systems, which
+
+3
+00:00:06,030 --> 00:00:08,189
+is what factories are.
+
+4
+00:00:08,189 --> 00:00:10,560
+In a stochastic process, the state of a system
+
+5
+00:00:10,560 --> 00:00:12,630
+evolves randomly over time.
+
+6
+00:00:12,630 --> 00:00:15,800
+And the present state influences the future.
+
+7
+00:00:15,800 --> 00:00:19,250
+We focus on Markov processes, a class of stochastic processes
+
+8
+00:00:19,250 --> 00:00:22,820
+that is very useful for modeling real world systems.
+
+9
+00:00:22,820 --> 00:00:25,430
+We study both discrete time and continuous time Markov
+
+10
+00:00:25,430 --> 00:00:26,600
+processes.
+
+11
+00:00:26,600 --> 00:00:28,640
+We develop transition equations, and we
+
+12
+00:00:28,640 --> 00:00:30,770
+show how to use them to calculate performance
+
+13
+00:00:30,770 --> 00:00:33,080
+measures of complex systems.
+
+14
+00:00:33,080 --> 00:00:35,167
+We model single unreliable machines
+
+15
+00:00:35,167 --> 00:00:37,250
+and relate their production rates to their failure
+
+16
+00:00:37,250 --> 00:00:39,320
+and repaired behavior.
+
+17
+00:00:39,320 --> 00:00:41,930
+We will use these ideas later to study variations
+
+18
+00:00:41,930 --> 00:00:44,750
+of inventory levels over time in production lines that
+
+19
+00:00:44,750 --> 00:00:47,110
+consist of many machines.
+

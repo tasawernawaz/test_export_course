@@ -1,0 +1,16 @@
+<problem display_name="Part 1" markdown="&gt;&gt;Imagine the initial state in our valve-tank analogy (slide 50) where both tanks are full and all valves are open. Now: (1) The M2 valve is closed for a short time.  Then (2) simultaneously the M2 valve opens and the M1 and M3 valves close and they all stay in those states for a long time. Then (3) the M3 valve opens. The M1 valve remains closed and the other two stay open for a long time. Which tank will hit empty first? All pipes have the same diameter (i.e., flow rate capacity).&lt;&lt;&#10;(x) B1&#10;( ) B2&#10;( ) Neither will ever hit empty&#10;&#10;[explanation]&#10;We explain in stages. 1) After the M2 valve closes for a short-time, B1 remains full and B2 will drop in level a small amount. 2) When M1 and M3 are closed, the water levels will switch and B1 will drop in level a small amount and B2 will be full. 3) When only M1 remains closed, B1 will lower in water level while B2 remains the same. B2 then begins to lower in water level after B1 is completely empty. Thus B1 will hit empty first.&#10;&#10;[explanation]&#10;&#10;&#10;" max_attempts="3" weight="2.0">
+  <multiplechoiceresponse>
+    <label>Imagine the initial state in our valve-tank analogy (slide 50) where both tanks are full and all valves are open. Now: (1) The M2 valve is closed for a short time.  Then (2) simultaneously the M2 valve opens and the M1 and M3 valves close and they all stay in those states for a long time. Then (3) the M3 valve opens. The M1 valve remains closed and the other two stay open for a long time. Which tank will hit empty first? All pipes have the same diameter (i.e., flow rate capacity).</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">B1</choice>
+      <choice correct="false">B2</choice>
+      <choice correct="false">Neither will ever hit empty</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>We explain in stages. 1) After the M2 valve closes for a short-time, B1 remains full and B2 will drop in level a small amount. 2) When M1 and M3 are closed, the water levels will switch and B1 will drop in level a small amount and B2 will be full. 3) When only M1 remains closed, B1 will lower in water level while B2 remains the same. B2 then begins to lower in water level after B1 is completely empty. Thus B1 will hit empty first.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

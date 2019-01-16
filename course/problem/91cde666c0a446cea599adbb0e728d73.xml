@@ -1,0 +1,10 @@
+<problem display_name="Part 1" markdown="&gt;&gt;How do you use information about the bottleneck? &lt;&lt;&#10;&#10;( ) Place QC after the botleneck to only good parts flow through the remainder of the production line.&#10;(x) Use the bottleneck capacity to limit the rate of flow of material through the system.&#10;( ) Place bottleneck at the end of the line so the production rate is the production rate of the bottleneck.&#10;" max_attempts="3" showanswer="finished" weight="0.0">
+  <multiplechoiceresponse>
+    <label>How do you use information about the bottleneck? </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Place QC after the botleneck to only good parts flow through the remainder of the production line.</choice>
+      <choice correct="true">Use the bottleneck capacity to limit the rate of flow of material through the system.</choice>
+      <choice correct="false">Place bottleneck at the end of the line so the production rate is the production rate of the bottleneck.</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

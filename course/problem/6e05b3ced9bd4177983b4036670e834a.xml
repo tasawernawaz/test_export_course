@@ -1,0 +1,17 @@
+<problem display_name="Part 4" markdown="&gt;&gt;Benefits associated with TPS include: &lt;&lt;&#10;&#10;[x] Reduced inventory&#10;[x] Fewer workers needed&#10;[x] Better worker morale&#10;[x] Better worker understanding of the production process&#10;&#10;[explanation]&#10;See video 5 (slide 55).&#10;[explanation]&#10;" max_attempts="3" showanswer="past_due" weight="3.0">
+  <choiceresponse>
+    <label>Benefits associated with TPS include: </label>
+    <checkboxgroup>
+      <choice correct="true">Reduced inventory</choice>
+      <choice correct="true">Fewer workers needed</choice>
+      <choice correct="true">Better worker morale</choice>
+      <choice correct="true">Better worker understanding of the production process</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>See video 5 (slide 55).</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

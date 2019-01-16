@@ -1,0 +1,17 @@
+<p>The <strong>Markov Chain and Sausage Link Manufacturing Company&nbsp;</strong>has a Machine M whose quality deteriorates over time until it is repaired. It has perfect yield (ie, it makes 100% good parts) immediately after repair. In that case, we say it is in state 1. After some time, either the operator chooses to repair it, or it spontaneously goes to state 2 (due to wear), where the yield is 98%. After some time in state 2, either the operator chooses to repair it, or it spontaneously goes to state 3, where the yield is 90%. After some time in state 3, the operator always chooses to repair it. When the operator repairs the machine, we say it is in state 4.</p>
+<p>The production rate of the machine is 100 parts per hour in states 1-3 and 0 in state 4.</p>
+<p>Assume that the time that the machine spends in each state is exponentially distributed (independent of whether it leaves due to a spontaneous transition to the next state or due to the operator's intervention).</p>
+<ol>
+<ul>
+<ul>
+<ul>
+<li>When the machine is in state 1, the average time before a spontaneous transition to state 2 is 10 hours. If the machine is in state 1, there is a probability of 0.001 that the operator will choose to repair it (ie, send it to state 4) instead. (Hint: 0.001 is the probability that the machine goes to state 4 from state 1, given it is leaving state 1)</li>
+<li>When the machine is in state 2, the average time before a spontaneous transition to state 3 is 10 hours. There is a probability of 0.1 that the operator will choose to repair it.</li>
+<li>When the machine is in state 3, the average time before the transition to state 4 is 10 hours.</li>
+<li>When the machine is in state 4, the average time before the transition to state 1 is 2 hours.</li>
+</ul>
+</ul>
+</ul>
+</ol>
+<p>We will model this as a discrete-state, continuous-time Markov process. Below is the transition diagram:</p>
+<p><img src="/static/Screen_Shot_2018-02-25_at_5.40.47_PM.png" alt="Transition Diagram" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}" width="751" height="628" /></p>

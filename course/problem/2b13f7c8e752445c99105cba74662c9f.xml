@@ -1,0 +1,19 @@
+<problem display_name="Part 1" group_access="{&quot;50&quot;: [1]}" markdown="&gt;&gt;What is the order quantity that will maximize profit? &lt;&lt;&#10;&#10;= 183 +-1&#10;&#10;[explanation]&#10;Use the Newsboy's model to get the order quantity.&#10;\(P(D\leq q)\geq \frac{r-c}{r-s}=\frac{(4.5+8)-8}{4.5+8}=0.36\)&#10;D is normally distributed with mean of 200 and standard deviation of 50.&#10;\(P(\frac{d-\mu}{\sigma}\leq \frac{Q-\mu}{\sigma})=P(Z\leq -0.35)=0.3632&gt;0.36\)&#10;\(\frac{Q-\mu}{\sigma}=\frac{Q-200}{50}=-0.35\)&#10;\(q=183\)&#10;[explanation]&#10;&#10;&lt;script src=&quot;/static/st.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;" max_attempts="2" showanswer="past_due" weight="10.0">
+  <numericalresponse answer="183">
+    <label>What is the order quantity that will maximize profit? </label>
+    <responseparam type="tolerance" default="1"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Use the Newsboy's model to get the order quantity.</p>
+        <p>\(P(D\leq q)\geq \frac{r-c}{r-s}=\frac{(4.5+8)-8}{4.5+8}=0.36\)</p>
+        <p>D is normally distributed with mean of 200 and standard deviation of 50.</p>
+        <p>\(P(\frac{d-\mu}{\sigma}\leq \frac{Q-\mu}{\sigma})=P(Z\leq -0.35)=0.3632&gt;0.36\)</p>
+        <p>\(\frac{Q-\mu}{\sigma}=\frac{Q-200}{50}=-0.35\)</p>
+        <p>\(q=183\)</p>
+      </div>
+    </solution>
+    <script src="/static/st.js" type="text/javascript"/>
+  </numericalresponse>
+</problem>

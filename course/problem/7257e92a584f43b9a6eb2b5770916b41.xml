@@ -1,0 +1,12 @@
+<problem display_name="Question 1" markdown="&gt;&gt;Three coins are flipped at the same time. Let w=TTT if we flip the 3 coins and get 3 tails, w=TTH if we flip the 3 coins and get tails in coins 1 and 2 and head in coin 3, and so forth. The universe of possible results for this experiment is U=(TTT, TTH, THT, THH, HTT, HTH, HHT, HHH). Let X be the number of tails in a given run. What is P(X=1)? Assume the coins are fair&lt;&lt;&#10;&#10;= 0.375&#10;&#10;[Explanation]&#10;There are eight possible outcomes and they are all equally probable. There are only three outcomes in which one tail can occur out of three coins in this set (THH, HHT, HTH,) and thus the answer is 3/8.&#10;[Explanation]&#10;" max_attempts="3" showanswer="attempted" weight="1.0">
+  <numericalresponse answer="0.375">
+    <label>Three coins are flipped at the same time. Let w=TTT if we flip the 3 coins and get 3 tails, w=TTH if we flip the 3 coins and get tails in coins 1 and 2 and head in coin 3, and so forth. The universe of possible results for this experiment is U=(TTT, TTH, THT, THH, HTT, HTH, HHT, HHH). Let X be the number of tails in a given run. What is P(X=1)? Assume the coins are fair</label>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>There are eight possible outcomes and they are all equally probable. There are only three outcomes in which one tail can occur out of three coins in this set (THH, HHT, HTH,) and thus the answer is 3/8.</p>
+      </div>
+    </solution>
+  </numericalresponse>
+</problem>

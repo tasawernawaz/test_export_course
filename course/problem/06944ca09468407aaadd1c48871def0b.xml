@@ -1,0 +1,14 @@
+<problem display_name="Part 3" markdown="&#10;&gt;&gt;Calculate the production rate of good products in bottle per sec. (Good products are the&#10;products which pass the inspection after the capping machine, round to 3 decimal places)  &lt;&lt;&#10;&#10;= 0.920 +-5%&#10;&#10;&gt;&gt;If the capping speed is&#10;increased from 5400 bottles/hour to 6600 bottles/hour, what is the new production rate in bottles per sec? (round to 3 decimal places)&lt;&lt;&#10;&#10;=0.920+-5%&#10;&#10;" max_attempts="3" showanswer="never" weight="5.0">
+  <label>Calculate the production rate of good products in bottle per sec. (Good products are the
+products which pass the inspection after the capping machine, round to 3 decimal places)  </label>
+  <numericalresponse answer="0.920">
+    <responseparam type="tolerance" default="5%"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>If the capping speed is
+increased from 5400 bottles/hour to 6600 bottles/hour, what is the new production rate in bottles per sec? (round to 3 decimal places)</label>
+  <numericalresponse answer="0.920">
+    <responseparam type="tolerance" default="5%"/>
+    <formulaequationinput/>
+  </numericalresponse>
+</problem>

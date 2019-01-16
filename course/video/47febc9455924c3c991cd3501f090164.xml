@@ -1,0 +1,11 @@
+<video youtube="1.00:utfgKEU4TnY" url_name="47febc9455924c3c991cd3501f090164" transcripts="{&quot;en&quot;: &quot;fb2abc22-c9bb-4810-8f77-860297cfdcc1-en.srt&quot;}" display_name="Video 4: Discrete Random Variables" download_track="true" download_video="true" edx_video_id="fb2abc22-c9bb-4810-8f77-860297cfdcc1" html5_sources="[]" youtube_id_1_0="utfgKEU4TnY">
+  <video_asset client_video_id="W02v04.mp4" duration="412.39" image="">
+    <encoded_video bitrate="0" file_size="0" profile="youtube" url="utfgKEU4TnY"/>
+    <encoded_video bitrate="192" file_size="9899274" profile="audio_mp3" url="https://d2f1egay8yehza.cloudfront.net/MIT2854F2017-V003000_AUD.mp3"/>
+    <encoded_video bitrate="170" file_size="8769266" profile="mobile_low" url="https://d2f1egay8yehza.cloudfront.net/MIT2854F2017-V003000_MB2.mp4"/>
+    <encoded_video bitrate="155" file_size="8003812" profile="desktop_mp4" url="https://d2f1egay8yehza.cloudfront.net/MIT2854F2017-V003000_DTH.mp4"/>
+    <encoded_video bitrate="0" file_size="0" profile="hls" url="https://d2f1egay8yehza.cloudfront.net/MIT2854F2017-V003000/MIT2854F2017-V003000.m3u8"/>
+    <transcripts/>
+  </video_asset>
+  <transcript language="en" src="fb2abc22-c9bb-4810-8f77-860297cfdcc1-en.srt"/>
+</video>

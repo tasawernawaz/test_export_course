@@ -1,0 +1,6 @@
+<problem display_name="Part 2" markdown="&gt;&gt;How many constraints are active, including the non-negativity constraints?&lt;&lt;&#10;&#10;= 3&#10;" max_attempts="2" showanswer="never" weight="5.0">
+  <numericalresponse answer="3">
+    <label>How many constraints are active, including the non-negativity constraints?</label>
+    <formulaequationinput/>
+  </numericalresponse>
+</problem>

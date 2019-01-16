@@ -1,0 +1,568 @@
+0
+00:00:00,000 --> 00:00:03,470
+
+
+1
+00:00:03,470 --> 00:00:04,440
+Hi, everyone.
+
+2
+00:00:04,440 --> 00:00:05,330
+My name is Jack.
+
+3
+00:00:05,330 --> 00:00:07,610
+I'm one of the TAs for Introduction
+
+4
+00:00:07,610 --> 00:00:09,500
+to Manufacturing Systems.
+
+5
+00:00:09,500 --> 00:00:15,700
+In this video, which is the first recitation for 2.854.1x,
+
+6
+00:00:15,700 --> 00:00:18,890
+I will go through practice problem one in detail.
+
+7
+00:00:18,890 --> 00:00:22,760
+OK, so here is practice problem one.
+
+8
+00:00:22,760 --> 00:00:25,100
+So three white balls and three black balls
+
+9
+00:00:25,100 --> 00:00:28,700
+are distributed between urns A and B in such a way
+
+10
+00:00:28,700 --> 00:00:31,790
+that each urn contains exactly three balls.
+
+11
+00:00:31,790 --> 00:00:36,050
+One ball is drawn at random and simultaneously from each urn.
+
+12
+00:00:36,050 --> 00:00:39,450
+These two balls are then placed in the other urn.
+
+13
+00:00:39,450 --> 00:00:41,140
+This action is repeated many times.
+
+14
+00:00:41,140 --> 00:00:42,890
+We are interested in describing how
+
+15
+00:00:42,890 --> 00:00:47,180
+the number of black and white balls in each urn behaves.
+
+16
+00:00:47,180 --> 00:00:49,550
+So part of this problem, we've provided you
+
+17
+00:00:49,550 --> 00:00:52,980
+with the transition diagram.
+
+18
+00:00:52,980 --> 00:00:55,850
+The first thing normally I do when I see a diagram like this
+
+19
+00:00:55,850 --> 00:00:59,190
+is to place this in a transition matrix.
+
+20
+00:00:59,190 --> 00:01:00,020
+So here it is.
+
+21
+00:01:00,020 --> 00:01:05,230
+
+
+22
+00:01:05,230 --> 00:01:07,500
+In that transition matrix, it's easier
+
+23
+00:01:07,500 --> 00:01:10,300
+to set up if you label the states.
+
+24
+00:01:10,300 --> 00:01:13,990
+So we have states 1, 2, 3, and 4.
+
+25
+00:01:13,990 --> 00:01:15,720
+So let's put the states down.
+
+26
+00:01:15,720 --> 00:01:25,690
+
+
+27
+00:01:25,690 --> 00:01:28,380
+And same thing going down this way.
+
+28
+00:01:28,380 --> 00:01:33,380
+
+
+29
+00:01:33,380 --> 00:01:38,540
+OK, so let's first begin with state 1.
+
+30
+00:01:38,540 --> 00:01:42,140
+So it looks like if you're in state 1,
+
+31
+00:01:42,140 --> 00:01:46,430
+the only state you can transition to is state 2.
+
+32
+00:01:46,430 --> 00:01:53,250
+So that means a transition from state 1 to state 1 is 0.
+
+33
+00:01:53,250 --> 00:01:54,130
+OK.
+
+34
+00:01:54,130 --> 00:01:59,150
+A transition from state 1 to state 2 is 1.
+
+35
+00:01:59,150 --> 00:02:01,310
+That's the transition rate.
+
+36
+00:02:01,310 --> 00:02:05,642
+From state 1 to state 3, that's 0.
+
+37
+00:02:05,642 --> 00:02:08,030
+And 0 to state 4.
+
+38
+00:02:08,030 --> 00:02:08,840
+OK.
+
+39
+00:02:08,840 --> 00:02:13,070
+From state 2 to state 1, looks like the transition rate
+
+40
+00:02:13,070 --> 00:02:15,650
+is 1/9.
+
+41
+00:02:15,650 --> 00:02:20,240
+From state 2 to state 2 is 4/9.
+
+42
+00:02:20,240 --> 00:02:25,790
+From state 2 to state 3 is 4/9.
+
+43
+00:02:25,790 --> 00:02:27,220
+That's right here.
+
+44
+00:02:27,220 --> 00:02:33,290
+From state 2 to state 4 is 0.
+
+45
+00:02:33,290 --> 00:02:42,650
+From state 3 to state 1, state 3 to state 1, that's 0.
+
+46
+00:02:42,650 --> 00:02:47,510
+State 3 to state 2, that's right here.
+
+47
+00:02:47,510 --> 00:02:48,950
+4/9.
+
+48
+00:02:48,950 --> 00:02:54,860
+State 3 to state 3 is 4/9.
+
+49
+00:02:54,860 --> 00:03:02,825
+
+
+50
+00:03:02,825 --> 00:03:06,910
+And state 3 to state 4 is 1.
+
+51
+00:03:06,910 --> 00:03:09,560
+That's this one right here.
+
+52
+00:03:09,560 --> 00:03:12,770
+From state 4 to state 1, that is 0.
+
+53
+00:03:12,770 --> 00:03:18,300
+
+
+54
+00:03:18,300 --> 00:03:24,040
+From state 4 to state 2 is also 0.
+
+55
+00:03:24,040 --> 00:03:27,560
+So state 4 can only go to state 3.
+
+56
+00:03:27,560 --> 00:03:32,460
+And state 4 to state 4 is 0.
+
+57
+00:03:32,460 --> 00:03:33,300
+OK.
+
+58
+00:03:33,300 --> 00:03:35,130
+So what's important here is, notice
+
+59
+00:03:35,130 --> 00:03:39,240
+that the sum of each column, they all equal to 1.
+
+60
+00:03:39,240 --> 00:03:46,120
+
+
+61
+00:03:46,120 --> 00:03:49,460
+OK, so here is our transition matrix again.
+
+62
+00:03:49,460 --> 00:03:52,900
+So to solve for the steady-state probabilities,
+
+63
+00:03:52,900 --> 00:03:56,740
+we have to set up the steady-state transition
+
+64
+00:03:56,740 --> 00:03:59,560
+equations, essentially basically is
+
+65
+00:03:59,560 --> 00:04:09,620
+multiplying this matrix by a factor of pis, pi 3 and pi 4.
+
+66
+00:04:09,620 --> 00:04:12,800
+
+
+67
+00:04:12,800 --> 00:04:16,079
+So here is four equations and four unknowns.
+
+68
+00:04:16,079 --> 00:04:17,810
+But as you recall from the lecture,
+
+69
+00:04:17,810 --> 00:04:19,970
+we have to replace one of these equations
+
+70
+00:04:19,970 --> 00:04:25,620
+by the normalization equation, which is just pi 1 plus pi 2
+
+71
+00:04:25,620 --> 00:04:33,200
+plus pi 3 plus pi 4 equals 1.
+
+72
+00:04:33,200 --> 00:04:36,430
+So let's set up the equations.
+
+73
+00:04:36,430 --> 00:04:42,602
+So pi 1 is just equal to 1/9 pi 2.
+
+74
+00:04:42,602 --> 00:04:45,800
+
+
+75
+00:04:45,800 --> 00:04:52,970
+Pi 2 equals pi 1 plus 4/9.
+
+76
+00:04:52,970 --> 00:04:58,900
+Pi 2 plus 4/9 pi 3.
+
+77
+00:04:58,900 --> 00:05:16,940
+Pi 3 equals 4/9 pi 2 plus 4/9 pi 3 plus pi 4.
+
+78
+00:05:16,940 --> 00:05:20,560
+
+
+79
+00:05:20,560 --> 00:05:26,720
+And pi 4 is just 1/9 of pi 3.
+
+80
+00:05:26,720 --> 00:05:33,441
+
+
+81
+00:05:33,441 --> 00:05:35,690
+Now we're going to have to drop one of these equations
+
+82
+00:05:35,690 --> 00:05:37,810
+and add a normalization equation.
+
+83
+00:05:37,810 --> 00:05:39,950
+For this example here, I'm going to eliminate
+
+84
+00:05:39,950 --> 00:05:41,320
+the third equation.
+
+85
+00:05:41,320 --> 00:05:42,900
+So we're not going to use this one.
+
+86
+00:05:42,900 --> 00:05:48,950
+
+
+87
+00:05:48,950 --> 00:05:54,150
+OK, so here, I rearrange the equations on the left.
+
+88
+00:05:54,150 --> 00:05:57,020
+Basically, we have our three transition equations
+
+89
+00:05:57,020 --> 00:06:01,680
+and our fourth normalization equation.
+
+90
+00:06:01,680 --> 00:06:05,620
+So we have a system of four equations and four unknowns.
+
+91
+00:06:05,620 --> 00:06:09,920
+Now let's simplify equation number two, the pi 2 equation.
+
+92
+00:06:09,920 --> 00:06:28,840
+So basically, pi 2 minus 4/9 pi 2 equals pi 1 plus 4/9 pi 3.
+
+93
+00:06:28,840 --> 00:06:39,260
+So 5/9 pi 2 equals pi 1 plus 4/9 pi 3.
+
+94
+00:06:39,260 --> 00:06:48,160
+But pi 1 is just 1/9 pi 2.
+
+95
+00:06:48,160 --> 00:07:03,820
+So really, 5/9 pi 2 equals 1/9 pi 2 plus 4/9 pi 3.
+
+96
+00:07:03,820 --> 00:07:18,250
+So 4/9 pi 2 equals 4/9 pi 3.
+
+97
+00:07:18,250 --> 00:07:20,840
+
+
+98
+00:07:20,840 --> 00:07:24,808
+And what it really means is pi 2 just equals pi 3.
+
+99
+00:07:24,808 --> 00:07:32,290
+
+
+100
+00:07:32,290 --> 00:07:40,090
+OK, so now we have pi 2 equals pi 3.
+
+101
+00:07:40,090 --> 00:07:48,336
+Our first equation is pi 1, which equals 1/9 pi 2.
+
+102
+00:07:48,336 --> 00:07:52,140
+And our-- let's go back.
+
+103
+00:07:52,140 --> 00:07:59,050
+
+
+104
+00:07:59,050 --> 00:08:04,120
+Pi 4 equals 4/9--
+
+105
+00:08:04,120 --> 00:08:20,770
+1/9 pi 3, and pi 1 plus pi 2 plus pi 3 plus pi 4 equals 1.
+
+106
+00:08:20,770 --> 00:08:24,460
+So now we have a much more simplified system of equations.
+
+107
+00:08:24,460 --> 00:08:28,820
+
+
+108
+00:08:28,820 --> 00:08:31,990
+So let's do some substitutions.
+
+109
+00:08:31,990 --> 00:08:39,070
+So I see that we have a pi 2 here, pi 2 here, pi 2 here.
+
+110
+00:08:39,070 --> 00:08:40,659
+Let's substitute.
+
+111
+00:08:40,659 --> 00:09:08,230
+So 1/9 pi 2 plus pi 2 plus pi 2 plus pi 4 equals 1.
+
+112
+00:09:08,230 --> 00:09:14,760
+
+
+113
+00:09:14,760 --> 00:09:22,440
+So 19/9 pi 2 plus pi 4 just equals 1.
+
+114
+00:09:22,440 --> 00:09:29,640
+
+
+115
+00:09:29,640 --> 00:09:43,821
+Now, pi 4 is just 1/9 pi 3, which equals 1/9 pi 2.
+
+116
+00:09:43,821 --> 00:09:46,090
+So what do we have?
+
+117
+00:09:46,090 --> 00:09:54,940
+19/9 pi 2 plus 1/9 pi 2 just equals 1.
+
+118
+00:09:54,940 --> 00:10:00,330
+So 20/9 pi 2 equals 1.
+
+119
+00:10:00,330 --> 00:10:11,070
+So pi 2 equals 9/20, which is 0.045.
+
+120
+00:10:11,070 --> 00:10:17,280
+So now, since we know what pi 2 is, and pi 2 just equals pi 3,
+
+121
+00:10:17,280 --> 00:10:24,750
+so that equals 0.045.
+
+122
+00:10:24,750 --> 00:10:39,160
+Pi 1 equals 1/9 of pi 2, which just equals 0.045/9,
+
+123
+00:10:39,160 --> 00:10:45,920
+which is 0.005, I believe.
+
+124
+00:10:45,920 --> 00:10:50,280
+And same with pi 4.
+
+125
+00:10:50,280 --> 00:11:04,190
+So pi 4 equals 1/9 pi 3, which is just the 0.045 divided
+
+126
+00:11:04,190 --> 00:11:13,330
+by 9, so 0.005.
+
+127
+00:11:13,330 --> 00:11:14,830
+So there you have it.
+
+128
+00:11:14,830 --> 00:11:16,620
+We have our solution.
+
+129
+00:11:16,620 --> 00:11:21,990
+Pi 1 equals 0.005.
+
+130
+00:11:21,990 --> 00:11:26,650
+Pi 2 equals 0.045.
+
+131
+00:11:26,650 --> 00:11:31,810
+Pi 3 equals 0.045.
+
+132
+00:11:31,810 --> 00:11:38,940
+And pi 4 equals 0.005.
+
+133
+00:11:38,940 --> 00:11:42,770
+And you can check here that the sum of the pis
+
+134
+00:11:42,770 --> 00:11:45,895
+is just equal to 1.
+
+135
+00:11:45,895 --> 00:11:56,890
+
+
+136
+00:11:56,890 --> 00:11:59,670
+So this concludes our recitation video.
+
+137
+00:11:59,670 --> 00:12:01,380
+If anybody has any questions, feel
+
+138
+00:12:01,380 --> 00:12:04,890
+free to leave it in the discussion block below.
+
+139
+00:12:04,890 --> 00:12:09,600
+And I'll look forward to our next recitation video.
+
+140
+00:12:09,600 --> 00:12:11,360
+Thank you.
+
+141
+00:12:11,360 --> 00:12:12,473
+
+

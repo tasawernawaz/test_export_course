@@ -1,0 +1,18 @@
+<problem display_name="Question 2" markdown="&gt;&gt;If B is not the null set and P(A ∩ B) = P(B), what is true about A and B? &lt;&lt;&#10;() A is subset of B&#10;(x) B is subset of A&#10;() A and B are disjoint&#10;() A = B&#10;[Explanation] &#10;P(A ∩ B) = P(B) implies that the intersection of A and B is B itself, and that B must be wholly included in A.&#10;[Explanation]" max_attempts="3">
+  <multiplechoiceresponse>
+    <label>If B is not the null set and P(A ∩ B) = P(B), what is true about A and B? </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">A is subset of B</choice>
+      <choice correct="true">B is subset of A</choice>
+      <choice correct="false">A and B are disjoint</choice>
+      <choice correct="false">A = B</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p> </p>
+        <p>P(A ∩ B) = P(B) implies that the intersection of A and B is B itself, and that B must be wholly included in A.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

@@ -1,0 +1,17 @@
+<problem display_name="Question 1" markdown="&gt;&gt;Which of the following examples justify the use of the truncated normal distribution? &lt;&lt;&#10;&#10;[x] When modeling demand of a product.&#10;[ ] When modeling the error of a manufacturing process.&#10;[ ] When modeling the returns of a stock portfolio.&#10;[x] When modeling inventory in a warehouse.&#10;&#10;[Explanation]&#10;Truncated normal distribution is typically associated with random variables that cannot take on negative values. The demand of a product and inventory level in a warehouse cannot take on negative values.&#10;[Explanation]" max_attempts="3" showanswer="attempted" weight="1.0">
+  <choiceresponse>
+    <label>Which of the following examples justify the use of the truncated normal distribution? </label>
+    <checkboxgroup>
+      <choice correct="true">When modeling demand of a product.</choice>
+      <choice correct="false">When modeling the error of a manufacturing process.</choice>
+      <choice correct="false">When modeling the returns of a stock portfolio.</choice>
+      <choice correct="true">When modeling inventory in a warehouse.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Truncated normal distribution is typically associated with random variables that cannot take on negative values. The demand of a product and inventory level in a warehouse cannot take on negative values.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

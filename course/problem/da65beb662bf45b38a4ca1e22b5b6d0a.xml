@@ -1,0 +1,21 @@
+<problem display_name="Part 3" markdown="null" max_attempts="3" showanswer="finished" weight="0.0">
+  <multiplechoiceresponse>
+    <p> What are the appropriate bounds on \( \mu \) when \( \sigma \) is fixed and \( \sigma \) when \( \mu \) is fixed? </p>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">for fixed \( \sigma , \sqrt6\sigma\le\mu\lt\infty \), for fixed \( \mu , \frac{\mu}{\sqrt6}\le\sigma\lt\infty \) </choice>
+      <choice correct="true">for fixed \( \sigma , \sqrt6\sigma\le\mu\lt\infty \), for fixed \( \mu , 0\le\sigma\le\frac{\mu}{\sqrt6} \) </choice>
+      <choice correct="false">for fixed \( \sigma , 0\le\mu\le\sqrt6\sigma \), for fixed \( \mu , \frac{\mu}{\sqrt6}\le\sigma\lt\infty \) </choice>
+      <choice correct="false">for fixed \( \sigma , 0\le\mu\le\sqrt6\sigma \), for fixed \( \mu , 0\le\sigma\le\frac{\mu}{\sqrt6} \) </choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>
+          <span style="font-size: 1em;">
+            <img src="/static/Stochastic3.9.png" alt="" width="800" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+          </span>
+        </p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

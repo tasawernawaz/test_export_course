@@ -1,0 +1,18 @@
+<problem display_name="Part 1" markdown="&#10;&gt;&gt;What is the optimal profit per day?&lt;&lt;&#10;&#10;= 4300&#10;&#10;&gt;&gt;What is the daily production of trousers?&lt;&lt;&#10;=0&#10;&gt;&gt;What is the daily production of shirts?&lt;&lt;&#10;=300&#10;What is the daily production of T-shirts?&#10;=200" max_attempts="3" showanswer="never" weight="5.0">
+  <label>What is the optimal profit per day?</label>
+  <numericalresponse answer="4300">
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>What is the daily production of trousers?</label>
+  <numericalresponse answer="0">
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>What is the daily production of shirts?</label>
+  <numericalresponse answer="300">
+    <formulaequationinput/>
+  </numericalresponse>
+  <p>What is the daily production of T-shirts?</p>
+  <numericalresponse answer="200">
+    <formulaequationinput/>
+  </numericalresponse>
+</problem>

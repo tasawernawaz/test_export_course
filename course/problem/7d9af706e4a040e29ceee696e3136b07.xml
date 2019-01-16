@@ -1,0 +1,16 @@
+<problem display_name="Concept Check 3" markdown="&gt;&gt;Which of the following is most likely to happen to \(EP\) (Expected Profit) if \(x  \to ∞ \)? &lt;&lt;&#10;&#10;( ) EP is zero.&#10;(x) EP goes to minus infinity.&#10;( ) EP goes to a finite constant.&#10;&#10;[explanation]&#10;\(x\) is the amount of newspaper, which is above or equal to zero. When \(x = 0\), \(EP\) is \(0\). When \(x \to +∞\), the first term of \(EP\) goes to a finite constant, the middle term goes to \( -∞\), and the last term goes to zero. Thus, when \(x \to ∞\) , \(EP \to -∞\).&#10;[explanation]" max_attempts="3" showanswer="attempted" weight="1.0">
+  <multiplechoiceresponse>
+    <label>Which of the following is most likely to happen to \(EP\) (Expected Profit) if \(x  \to ∞ \)? </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">EP is zero.</choice>
+      <choice correct="true">EP goes to minus infinity.</choice>
+      <choice correct="false">EP goes to a finite constant.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>\(x\) is the amount of newspaper, which is above or equal to zero. When \(x = 0\), \(EP\) is \(0\). When \(x \to +∞\), the first term of \(EP\) goes to a finite constant, the middle term goes to \( -∞\), and the last term goes to zero. Thus, when \(x \to ∞\) , \(EP \to -∞\).</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

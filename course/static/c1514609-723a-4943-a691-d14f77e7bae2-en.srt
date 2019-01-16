@@ -1,0 +1,504 @@
+0
+00:00:00,000 --> 00:00:02,860
+
+
+1
+00:00:02,860 --> 00:00:06,410
+The next concept we have to talk about is random variables.
+
+2
+00:00:06,410 --> 00:00:09,870
+So to do that, first we let V be a vector space.
+
+3
+00:00:09,870 --> 00:00:13,300
+Than a random variable, X, is a mapping
+
+4
+00:00:13,300 --> 00:00:15,310
+or a function from U to V. Remember
+
+5
+00:00:15,310 --> 00:00:19,390
+that U is the universe.
+
+6
+00:00:19,390 --> 00:00:23,830
+So if omega is in U and X is equal to X
+
+7
+00:00:23,830 --> 00:00:27,580
+of omega, which is in V, then X is a random variable.
+
+8
+00:00:27,580 --> 00:00:31,060
+Capital X is a random variable.
+
+9
+00:00:31,060 --> 00:00:34,280
+Examples include the real number line,
+
+10
+00:00:34,280 --> 00:00:38,190
+which is very frequently what we're going to be looking at,
+
+11
+00:00:38,190 --> 00:00:40,900
+typical notation.
+
+12
+00:00:40,900 --> 00:00:43,480
+The upper case letters are usually
+
+13
+00:00:43,480 --> 00:00:46,900
+used for random variables and the corresponding lower case
+
+14
+00:00:46,900 --> 00:00:49,720
+letters are usually used for possible values
+
+15
+00:00:49,720 --> 00:00:51,190
+of the random variables.
+
+16
+00:00:51,190 --> 00:00:54,970
+This can get confusing sometimes.
+
+17
+00:00:54,970 --> 00:00:58,060
+The random variables, X of omega,
+
+18
+00:00:58,060 --> 00:01:00,280
+are usually not written as functions.
+
+19
+00:01:00,280 --> 00:01:03,440
+The argument is left out.
+
+20
+00:01:03,440 --> 00:01:05,560
+So in other words, we'd have just capital X
+
+21
+00:01:05,560 --> 00:01:07,810
+instead of capital X of omega.
+
+22
+00:01:07,810 --> 00:01:11,197
+And this is another source of possible confusion.
+
+23
+00:01:11,197 --> 00:01:16,170
+
+
+24
+00:01:16,170 --> 00:01:19,960
+OK, for examples, let's start off with a coin flip.
+
+25
+00:01:19,960 --> 00:01:23,250
+So our universe is heads and tails, H and T.
+
+26
+00:01:23,250 --> 00:01:27,000
+So we let omega equals H if we flip the coin and get heads,
+
+27
+00:01:27,000 --> 00:01:31,630
+omega equals T if we flip a coin and get tails.
+
+28
+00:01:31,630 --> 00:01:33,710
+So we need to define the vector space.
+
+29
+00:01:33,710 --> 00:01:36,910
+So V is going to be the real number line.
+
+30
+00:01:36,910 --> 00:01:39,280
+And X of omega is the number of times
+
+31
+00:01:39,280 --> 00:01:41,690
+that we get heads in one coin flip.
+
+32
+00:01:41,690 --> 00:01:45,640
+So this is pretty simple X of t equals zero
+
+33
+00:01:45,640 --> 00:01:50,960
+if we get tails we don't get any heads X of H equals 1.
+
+34
+00:01:50,960 --> 00:01:52,690
+So there's our mapping.
+
+35
+00:01:52,690 --> 00:01:54,920
+Now we can calculate the probability.
+
+36
+00:01:54,920 --> 00:01:57,820
+So the probability that equals 0,
+
+37
+00:01:57,820 --> 00:01:59,320
+which is the same as the probability
+
+38
+00:01:59,320 --> 00:02:02,336
+that omega equals tails, is one half.
+
+39
+00:02:02,336 --> 00:02:03,710
+And the probability that X equals
+
+40
+00:02:03,710 --> 00:02:05,890
+1, which is the same as the probability
+
+41
+00:02:05,890 --> 00:02:10,550
+that omega equals heads, is also one half.
+
+42
+00:02:10,550 --> 00:02:13,130
+OK, let's get a little more interesting.
+
+43
+00:02:13,130 --> 00:02:14,920
+Let's flip three coins.
+
+44
+00:02:14,920 --> 00:02:17,520
+
+
+45
+00:02:17,520 --> 00:02:22,300
+The three coins can land in eight different ways--
+
+46
+00:02:22,300 --> 00:02:25,210
+heads heads heads, heads heads tails, heads tails heads,
+
+47
+00:02:25,210 --> 00:02:25,840
+and so forth.
+
+48
+00:02:25,840 --> 00:02:28,950
+
+
+49
+00:02:28,950 --> 00:02:32,240
+So we're going to define our samples this way--
+
+50
+00:02:32,240 --> 00:02:35,780
+omega is HHH if we flip the three coins
+
+51
+00:02:35,780 --> 00:02:37,910
+and we get three heads.
+
+52
+00:02:37,910 --> 00:02:40,760
+Omega equals HHT if we flip three coins
+
+53
+00:02:40,760 --> 00:02:44,960
+and get two heads and then one tail, and so forth.
+
+54
+00:02:44,960 --> 00:02:46,142
+The order matters.
+
+55
+00:02:46,142 --> 00:02:47,975
+So for that reason, there are eight samples.
+
+56
+00:02:47,975 --> 00:02:51,450
+
+
+57
+00:02:51,450 --> 00:02:55,560
+Now, we'll assume that the coins are fair.
+
+58
+00:02:55,560 --> 00:02:59,270
+So the probability of each one of these eight possibilities
+
+59
+00:02:59,270 --> 00:03:00,500
+is exactly one eighth.
+
+60
+00:03:00,500 --> 00:03:03,330
+
+
+61
+00:03:03,330 --> 00:03:06,340
+Now we're going to find the random variable.
+
+62
+00:03:06,340 --> 00:03:08,650
+So X is the number of heads.
+
+63
+00:03:08,650 --> 00:03:11,070
+So now X has four possible values--
+
+64
+00:03:11,070 --> 00:03:15,145
+0, 1, 2, or 3.
+
+65
+00:03:15,145 --> 00:03:18,470
+The probability that X equals 0 is one eighth.
+
+66
+00:03:18,470 --> 00:03:20,600
+There's only one way of not getting any heads,
+
+67
+00:03:20,600 --> 00:03:22,190
+and that's to get three tails.
+
+68
+00:03:22,190 --> 00:03:23,810
+And so since there's only one way,
+
+69
+00:03:23,810 --> 00:03:26,030
+the probability is one eighth.
+
+70
+00:03:26,030 --> 00:03:29,270
+The probability that X equals 1 is 3/8
+
+71
+00:03:29,270 --> 00:03:32,860
+because there are three ways of getting exactly one head--
+
+72
+00:03:32,860 --> 00:03:37,310
+HTT, THT, and TTH.
+
+73
+00:03:37,310 --> 00:03:38,367
+So that's 3/8.
+
+74
+00:03:38,367 --> 00:03:40,075
+For the same reason, the probability of X
+
+75
+00:03:40,075 --> 00:03:44,950
+equals 2 is 3/8, and probability of X equals 3 is one eighth.
+
+76
+00:03:44,950 --> 00:03:48,385
+
+
+77
+00:03:48,385 --> 00:03:50,760
+Now we're going to introduce the concept of a probability
+
+78
+00:03:50,760 --> 00:03:53,470
+distribution.
+
+79
+00:03:53,470 --> 00:03:55,560
+If X of omega is a random variable, then
+
+80
+00:03:55,560 --> 00:03:57,810
+the probability that X of omega equals
+
+81
+00:03:57,810 --> 00:04:01,350
+little x is called the probability distribution of X.
+
+82
+00:04:01,350 --> 00:04:04,560
+And as I said, we usually drop off the omega.
+
+83
+00:04:04,560 --> 00:04:08,250
+And in fact, we simplify it just to P of little x.
+
+84
+00:04:08,250 --> 00:04:10,500
+For three coin flips, that probability distribution
+
+85
+00:04:10,500 --> 00:04:11,730
+looks like this--
+
+86
+00:04:11,730 --> 00:04:14,670
+for 0 and 3, the probability is one eighth.
+
+87
+00:04:14,670 --> 00:04:18,600
+For 1 and 2, the probability is 3/8.
+
+88
+00:04:18,600 --> 00:04:22,170
+So the shorthand is instead of rating P of X of omega
+
+89
+00:04:22,170 --> 00:04:24,120
+equals little x, people often write
+
+90
+00:04:24,120 --> 00:04:28,050
+P of x, if the meaning is not ambiguous.
+
+91
+00:04:28,050 --> 00:04:30,990
+Important quantities related to the probability distribution
+
+92
+00:04:30,990 --> 00:04:32,640
+are the mean and the variance.
+
+93
+00:04:32,640 --> 00:04:36,090
+The mean, which is also called the average or the expected
+
+94
+00:04:36,090 --> 00:04:40,020
+value, is written as mu X. Sometimes it's
+
+95
+00:04:40,020 --> 00:04:45,210
+written as mu sub X, which means the mean of variable X. Also
+
+96
+00:04:45,210 --> 00:04:47,850
+written as capital E of X is just
+
+97
+00:04:47,850 --> 00:04:52,650
+the summation, the summation of X times P of X.
+
+98
+00:04:52,650 --> 00:04:55,425
+The mean is an indicator of where the probability
+
+99
+00:04:55,425 --> 00:04:58,110
+of distribution is located.
+
+100
+00:04:58,110 --> 00:05:01,110
+The variance is an indicator of how widespread
+
+101
+00:05:01,110 --> 00:05:03,360
+the possible results are.
+
+102
+00:05:03,360 --> 00:05:10,270
+So V sub X, also written as sigma square sub X,
+
+103
+00:05:10,270 --> 00:05:12,880
+is the expected value of X minus mu X
+
+104
+00:05:12,880 --> 00:05:19,310
+squared, which can be written as the summation indicated.
+
+105
+00:05:19,310 --> 00:05:23,900
+The standard deviation is the square root of the variance.
+
+106
+00:05:23,900 --> 00:05:25,820
+The coefficient of variation is just
+
+107
+00:05:25,820 --> 00:05:28,520
+the ratio of the standard deviation to the mean.
+
+108
+00:05:28,520 --> 00:05:31,230
+
+
+109
+00:05:31,230 --> 00:05:33,420
+In this case, the three coin flips,
+
+110
+00:05:33,420 --> 00:05:36,810
+the average number of heads is 1 and 1/2.
+
+111
+00:05:36,810 --> 00:05:40,052
+The variance of the number of heads 0.75.
+
+112
+00:05:40,052 --> 00:05:41,760
+The standard deviation is the square root
+
+113
+00:05:41,760 --> 00:05:44,391
+of 0.75, which is 0.866.
+
+114
+00:05:44,391 --> 00:05:49,630
+And the coefficient of variation 0.577.
+
+115
+00:05:49,630 --> 00:05:54,470
+A function of a random variable is also a random variable.
+
+116
+00:05:54,470 --> 00:05:57,540
+A special case is a linear function.
+
+117
+00:05:57,540 --> 00:06:01,760
+So we're going to define the function Y of omega
+
+118
+00:06:01,760 --> 00:06:05,840
+to be equal to a of X of omega plus b.
+
+119
+00:06:05,840 --> 00:06:09,110
+In that case, the mean of Y, Y-bar,
+
+120
+00:06:09,110 --> 00:06:12,440
+is equal to aX-bar plus b.
+
+121
+00:06:12,440 --> 00:06:15,380
+And the variance of Y is a-square times
+
+122
+00:06:15,380 --> 00:06:19,070
+the variance of X. The standard deviation of Y
+
+123
+00:06:19,070 --> 00:06:23,289
+is the absolute value of a times the standard deviation of X.
+
+124
+00:06:23,289 --> 00:06:24,830
+You need the absolute value because a
+
+125
+00:06:24,830 --> 00:06:27,070
+could be a negative number.
+

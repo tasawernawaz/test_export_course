@@ -1,0 +1,29 @@
+<problem display_name="Part 1" group_access="{}" markdown="null" max_attempts="3" showanswer="past_due" weight="4.0">
+  <p>Solve for the steady-state probabilities, \(\pi_i; i=1,2,3\). (Enter 4 decimal places)</p>
+  <label>What is \(\pi_1\)?</label>
+  <numericalresponse answer="0.0033">
+    <responseparam type="tolerance" default="0.0003"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>What is \(\pi_2\)?</label>
+  <numericalresponse answer="0.0110">
+    <responseparam type="tolerance" default="0.001"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>What is \(\pi_3\)?</label>
+  <numericalresponse answer="0.6571">
+    <responseparam type="tolerance" default="0.06"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>
+        <span style="font-size: 1em;">
+          <img src="/static/Wk3GP1Pt1.png" alt="" width="500" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+        </span>
+      </p>
+    </div>
+  </solution>
+  <script src="/static/st.js" type="text/javascript"/>
+</problem>

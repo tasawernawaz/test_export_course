@@ -1,0 +1,16 @@
+<problem display_name="Concept Check 2" markdown="&gt;&gt;Which statement is NOT true about Kanban?&lt;&lt;&#10;( ) Kanban is a pull manufacturing system, which can adapt demand fluctuations and disruptions.&#10;( X ) Material is the only thing that flows in the factory. &#10;( ) In the Single-Card Kanban system, if the last machine stops for a long enough time, it can prevent the next to last from working. If the stoppage lasts long enough, the machine upstream of that can be prevented from working. &#10;&#10;[explanation]&#10;Kanban is an information system for controlling production quantity and timing. Kanbans circlet within factories and between factories. &#10;[explanation]" max_attempts="3" showanswer="attempted" weight="1.0">
+  <multiplechoiceresponse>
+    <label>Which statement is NOT true about Kanban?</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Kanban is a pull manufacturing system, which can adapt demand fluctuations and disruptions.</choice>
+      <choice correct="true">Material is the only thing that flows in the factory.</choice>
+      <choice correct="false">In the Single-Card Kanban system, if the last machine stops for a long enough time, it can prevent the next to last from working. If the stoppage lasts long enough, the machine upstream of that can be prevented from working.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Kanban is an information system for controlling production quantity and timing. Kanbans circlet within factories and between factories. </p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

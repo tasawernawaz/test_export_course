@@ -1,0 +1,18 @@
+<problem display_name="Part 1" markdown="A milling machine is used to do an operation on a certain part. The operation time is 2 minutes. On the average,the machine requires maintenance after operating on 3,000 parts. The average time for maintenance is 7 hours. (For the purpose of these calculations, maintenance is the same as a failure.)&#10;&#10;&gt;&gt;How many hours are needed to produce 24,000 parts if that is the only operation needed for that part? Round to nearest integer.&lt;&lt;&#10;&#10;= 856 +-2&#10;&#10;[explanation]&#10;MTTF=(3000 parts) x (2 minutes/part) = 6000 minutes = 100 hours&#10;MTTR=7 hours&#10;\(\tau\) = 2 minutes&#10;Production rate = \( \frac{1}{\tau}(\frac{MTTF}{MTTF+MTTR})=\frac{1}{2}\frac{100}{100+7}=0.467\) parts per minute&#10;Time to make 24,000 parts is \(24000/.467=51360\) minutes or 856 hours&#10;[explanation]" max_attempts="3" weight="1.0">
+  <numericalresponse answer="856">
+    <p>A milling machine is used to do an operation on a certain part. The operation time is 2 minutes. On the average,the machine requires maintenance after operating on 3,000 parts. The average time for maintenance is 7 hours. (For the purpose of these calculations, maintenance is the same as a failure.)</p>
+    <label>How many hours are needed to produce 24,000 parts if that is the only operation needed for that part? Round to nearest integer.</label>
+    <responseparam type="tolerance" default="2"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>MTTF=(3000 parts) x (2 minutes/part) = 6000 minutes = 100 hours</p>
+        <p>MTTR=7 hours</p>
+        <p>\(\tau\) = 2 minutes</p>
+        <p>Production rate = \( \frac{1}{\tau}(\frac{MTTF}{MTTF+MTTR})=\frac{1}{2}\frac{100}{100+7}=0.467\) parts per minute</p>
+        <p>Time to make 24,000 parts is \(24000/.467=51360\) minutes or 856 hours</p>
+      </div>
+    </solution>
+  </numericalresponse>
+</problem>

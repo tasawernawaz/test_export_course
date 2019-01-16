@@ -1,0 +1,18 @@
+<problem display_name="Part 2" markdown="null" max_attempts="3" showanswer="finished" weight="1.0">
+  <numericalresponse answer="0.41667">
+    <responseparam type="tolerance" default="0.04"/>
+    <label>What is the probability that 
+    \( w \lt  r \)? (Round your answer to 3 decimal places)</label>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>
+          <span style="font-size: 1em;">
+            <img src="/static/Probability1.2.png" alt="" width="800" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+          </span>
+        </p>
+      </div>
+    </solution>
+  </numericalresponse>
+</problem>

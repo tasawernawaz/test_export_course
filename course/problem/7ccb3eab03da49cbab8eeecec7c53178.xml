@@ -1,0 +1,16 @@
+<problem display_name="Part 3 " markdown="The company decided that it did not want to store all those parts so it decided not to store any parts between the mill and the drill. How long will it take to produce 24,000 parts? Assume the up-times and down-times are geometrically distributed.&#10;&#10;&gt;&gt;How many hours will it take to produce 24,000 parts? Assume the up-times and down-times are geometrically distributed. Round to the nearest integer.&lt;&lt;&#10;&#10;= 923+-2&#10;&#10;[explanation]&#10;This is a zero-buffer line. The production rate is &#10;\( \frac{1}{\tau}(\frac{1}{1+\frac{MTTR_!}{MTTF_1}+\frac{MTTR_2}{MTTF_2}})=.433\) parts per minute&#10;The time to make 24,000 parts is 24,000/.433=54427 minutes=923 hours.&#10;[explanation]" max_attempts="3" weight="1.0">
+  <numericalresponse answer="923">
+    <p>The company decided that it did not want to store all those parts so it decided not to store any parts between the mill and the drill. How long will it take to produce 24,000 parts? Assume the up-times and down-times are geometrically distributed.</p>
+    <label>How many hours will it take to produce 24,000 parts? Assume the up-times and down-times are geometrically distributed. Round to the nearest integer.</label>
+    <responseparam type="tolerance" default="2"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>This is a zero-buffer line. The production rate is </p>
+        <p>\( \frac{1}{\tau}(\frac{1}{1+\frac{MTTR_!}{MTTF_1}+\frac{MTTR_2}{MTTF_2}})=.433\) parts per minute</p>
+        <p>The time to make 24,000 parts is 24,000/.433=54427 minutes=923 hours.</p>
+      </div>
+    </solution>
+  </numericalresponse>
+</problem>

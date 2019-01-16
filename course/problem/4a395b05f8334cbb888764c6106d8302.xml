@@ -1,0 +1,16 @@
+<problem display_name="Question 3" markdown="&#10;&gt;&gt;The exponential density function: &lt;&lt;&#10;[x] May not be closely followed by a histogram of samples from an exponentially distributed process if the number of samples is small.&#10;[x] Can be used to approximate many histograms that take a shape that is qualitatively similar to the exponential curve, even if the samples do not come from processes that are exactly exponentially distributed.&#10;[x] Is memorylessness.&#10;&#10;[explanation]&#10;See video 5 (slide 50).&#10;[explanation]&#10;&#10;" max_attempts="2">
+  <choiceresponse>
+    <label>The exponential density function: </label>
+    <checkboxgroup>
+      <choice correct="true">May not be closely followed by a histogram of samples from an exponentially distributed process if the number of samples is small.</choice>
+      <choice correct="true">Can be used to approximate many histograms that take a shape that is qualitatively similar to the exponential curve, even if the samples do not come from processes that are exactly exponentially distributed.</choice>
+      <choice correct="true">Is memorylessness.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>See video 5 (slide 50).</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

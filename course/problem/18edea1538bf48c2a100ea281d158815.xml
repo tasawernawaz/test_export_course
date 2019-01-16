@@ -1,0 +1,17 @@
+<problem display_name="Part 2" group_access="{}" markdown="null" max_attempts="3" showanswer="past_due" weight="3.0">
+  <numericalresponse answer="0.3259">
+    <label>What is the efficiency of the machine (The fraction of time the machine is up or \(\pi_U\))? (Enter 4 decimal places) </label>
+    <responseparam type="tolerance" default=".032"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>
+        <span style="font-size: 1em;">
+          <img src="/static/Wk3GP1Pt2.png" alt="" width="500" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+        </span>
+      </p>
+    </div>
+  </solution>
+</problem>

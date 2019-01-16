@@ -1,0 +1,14 @@
+<problem display_name="Concept Check 5-1" markdown="&gt;&gt;In the Buzacott model, what are the assumptions? (Select all that apply.)&lt;&lt;&#10;[X] Deterministic processing time;&#10;[X] The probability of failure is independent of the amount of process time;&#10;[ ] The probability of failure has positive correlation of the amount of process time;  &#10;[ ] Time-Dependent Failures;&#10;[X] Operational-dependent failures;&#10;[X] Discrete state, discrete time.&#10;[ ] Continuous time, continuous material;&#10;" max_attempts="2">
+  <choiceresponse>
+    <label>In the Buzacott model, what are the assumptions? (Select all that apply.)</label>
+    <checkboxgroup>
+      <choice correct="true">Deterministic processing time;</choice>
+      <choice correct="true">The probability of failure is independent of the amount of process time;</choice>
+      <choice correct="false">The probability of failure has positive correlation of the amount of process time;  </choice>
+      <choice correct="false">Time-Dependent Failures;</choice>
+      <choice correct="true">Operational-dependent failures;</choice>
+      <choice correct="true">Discrete state, discrete time.</choice>
+      <choice correct="false">Continuous time, continuous material;</choice>
+    </checkboxgroup>
+  </choiceresponse>
+</problem>

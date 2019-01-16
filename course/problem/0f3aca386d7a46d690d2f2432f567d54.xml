@@ -1,0 +1,16 @@
+<problem display_name="Question 2" markdown="&gt;&gt;Intuition in manufacturing systems design &lt;&lt;&#10;( )Is completely useless.&#10;( )Is all that you need.&#10;(x)Provides a starting point.&#10;&#10;&#10;&#10;[Explanation]&#10;Intuition provides a starting point for systems design that is then refined using quantitative techniques.&#10;[Explanation]" max_attempts="2">
+  <multiplechoiceresponse>
+    <label>Intuition in manufacturing systems design </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Is completely useless.</choice>
+      <choice correct="false">Is all that you need.</choice>
+      <choice correct="true">Provides a starting point.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Intuition provides a starting point for systems design that is then refined using quantitative techniques.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

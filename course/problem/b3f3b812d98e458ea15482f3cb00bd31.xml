@@ -1,0 +1,18 @@
+<problem display_name="Part 1" markdown="null" max_attempts="3" showanswer="finished" weight="1.0">
+  <numericalresponse answer="4.8">
+    <label>Assume that the mean service rate of the repair crew is proportional to its size. What should the crew size be in order to minimize the expected total cost of this operation per hour? (Hint: You will need to solve for the proportionality constant) (Round your answer to a full number)</label>
+    <responseparam type="tolerance" default="0.8"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>
+        <span style="font-size: 1em;">
+          <img src="/static/Stochastic1.1.PNG" alt="" width="600" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+        </span>
+      </p>
+    </div>
+  </solution>
+  <script src="/static/st.js" type="text/javascript"/>
+</problem>

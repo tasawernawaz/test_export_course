@@ -1,0 +1,38 @@
+<problem display_name="Graded Problem 3" markdown="null" max_attempts="3" showanswer="past_due" weight="3.0">
+  <multiplechoiceresponse>
+    <p>In a city, 87% of the households have TVs, 45% have stereos, and 38% have
+    both.</p>
+    <description>Is the event that a randomly selected household has a TV independent
+of the event that a randomly selected household has a stereo? </description>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Independent</choice>
+      <choice correct="true">Dependent</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>
+          <span style="font-size: 1em;">
+            <img src="/static/Probability3.1.png" alt="" width="500" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+          </span>
+        </p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+  <numericalresponse answer="0.94">
+    <label>What is the probability that a randomly selected household has at least one of these appliances?</label>
+    <responseparam type="tolerance" default="0.09"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>
+          <span style="font-size: 1em;">
+            <img src="/static/Probability3.2.png" alt="" width="400" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+          </span>
+        </p>
+      </div>
+    </solution>
+  </numericalresponse>
+  <script src="/static/st.js" type="text/javascript"/>
+</problem>

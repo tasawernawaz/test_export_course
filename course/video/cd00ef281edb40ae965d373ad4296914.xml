@@ -1,0 +1,11 @@
+<video youtube="1.00:FOKtcFGtzj0" url_name="cd00ef281edb40ae965d373ad4296914" transcripts="{&quot;en&quot;: &quot;52a76ce9-85ed-4b1d-b853-3142662b1fdb-en.srt&quot;}" display_name="Introduction Video" download_track="true" download_video="true" edx_video_id="52a76ce9-85ed-4b1d-b853-3142662b1fdb" html5_sources="[]" youtube_id_1_0="FOKtcFGtzj0">
+  <video_asset client_video_id="W01_Intro.mov" duration="33.1" image="">
+    <encoded_video bitrate="192" file_size="797599" profile="audio_mp3" url="https://d2f1egay8yehza.cloudfront.net/MIT2854F2017-V000700_AUD.mp3"/>
+    <encoded_video bitrate="484" file_size="2011340" profile="mobile_low" url="https://d2f1egay8yehza.cloudfront.net/MIT2854F2017-V000700_MB2.mp4"/>
+    <encoded_video bitrate="1159" file_size="4812972" profile="desktop_mp4" url="https://d2f1egay8yehza.cloudfront.net/MIT2854F2017-V000700_DTH.mp4"/>
+    <encoded_video bitrate="0" file_size="0" profile="hls" url="https://d2f1egay8yehza.cloudfront.net/MIT2854F2017-V000700/MIT2854F2017-V000700.m3u8"/>
+    <encoded_video bitrate="0" file_size="0" profile="youtube" url="FOKtcFGtzj0"/>
+    <transcripts/>
+  </video_asset>
+  <transcript language="en" src="52a76ce9-85ed-4b1d-b853-3142662b1fdb-en.srt"/>
+</video>

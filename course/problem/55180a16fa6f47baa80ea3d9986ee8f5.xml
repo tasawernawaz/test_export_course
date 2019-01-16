@@ -1,0 +1,15 @@
+<problem display_name="Part 2" markdown="&gt;&gt;It is a good idea to move the bottleneck to the upsteam end of the line.&lt;&lt;&#10;&#10;(x) True&#10;( ) False&#10;&#10;[Explanation]&#10;This is true because the inventory in the factory will be reduced.&#10;[Explanation]&#10;" max_attempts="3" showanswer="finished" weight="0.0">
+  <multiplechoiceresponse>
+    <label>It is a good idea to move the bottleneck to the upsteam end of the line.</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">True</choice>
+      <choice correct="false">False</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>This is true because the inventory in the factory will be reduced.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

@@ -1,0 +1,16 @@
+<problem display_name="Question 3" markdown="&gt;&gt;In this course, we will focus mostly on: &lt;&lt;&#10;&#10;[x] How much is produced&#10;[x] When it is produced&#10;[ ] How well it is produced&#10;&#10;[Explanation]&#10;We will be most concerned with “quantity”, which we define have defined in this course as delivering a specified amount at a specified time. We will not be spending as much focus on quality, which has to do with tolerances. For controlling manufacturing processes, please see another class in the &lt;a href=&quot;https://www.edx.org/micromasters/principles-manufacturing&quot; target=&quot;_blank&quot;&gt;Principles of Manufacturing MicroMaster&lt;/a&gt;, “Manufacturing Process Control I and II”. &#10;&#10;[Explanation]" max_attempts="2">
+  <choiceresponse>
+    <label>In this course, we will focus mostly on: </label>
+    <checkboxgroup>
+      <choice correct="true">How much is produced</choice>
+      <choice correct="true">When it is produced</choice>
+      <choice correct="false">How well it is produced</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>We will be most concerned with “quantity”, which we define have defined in this course as delivering a specified amount at a specified time. We will not be spending as much focus on quality, which has to do with tolerances. For controlling manufacturing processes, please see another class in the <a href="https://www.edx.org/micromasters/principles-manufacturing" target="_blank">Principles of Manufacturing MicroMaster</a>, “Manufacturing Process Control I and II”. </p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

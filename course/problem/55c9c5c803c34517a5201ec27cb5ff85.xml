@@ -1,0 +1,18 @@
+<problem display_name="Part 1" markdown="null" max_attempts="3" showanswer="finished" weight="0.0">
+  <numericalresponse answer="0.3881">
+    <label>What is the maximum production rate that the line can achieve with-out buffers in parts per minute? Round to 4 decimal places. </label>
+    <responseparam type="tolerance" default="0.001"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>
+          <span style="font-size: 1em;">
+            <img src="/static/Screen_Shot_2018-05-16_at_1.32.45_AM.png" alt="" width="600" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+          </span>
+        </p>
+      </div>
+    </solution>
+  </numericalresponse>
+  <script src="/static/st.js" type="text/javascript"/>
+</problem>

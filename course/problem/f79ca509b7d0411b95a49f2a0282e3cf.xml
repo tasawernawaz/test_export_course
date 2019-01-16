@@ -1,0 +1,14 @@
+<problem display_name="Part 1" markdown="&gt;&gt;Flip a biased coin repeatedly. Its probability of heads is .55. (The bias is such that the probability of heads on one flip is .55.) What is the probability that the first time that heads comes up is on the 5th flip? (Enter 4 decimal places)&lt;&lt;&#10;&#10;= 0.0225+-0.0002&#10;&#10;[explanation]&#10;\((1-0.55)^{4}*0.55=0.0225\)&#10;[explanation]&#10;&lt;script src=&quot;/static/st.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;" max_attempts="3" showanswer="past_due" weight="2.0">
+  <numericalresponse answer="0.0225">
+    <label>Flip a biased coin repeatedly. Its probability of heads is .55. (The bias is such that the probability of heads on one flip is .55.) What is the probability that the first time that heads comes up is on the 5th flip? (Enter 4 decimal places)</label>
+    <responseparam type="tolerance" default="0.0002"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>\((1-0.55)^{4}*0.55=0.0225\)</p>
+      </div>
+    </solution>
+    <script src="/static/st.js" type="text/javascript"/>
+  </numericalresponse>
+</problem>

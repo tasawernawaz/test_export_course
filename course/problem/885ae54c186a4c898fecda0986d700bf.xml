@@ -1,0 +1,6 @@
+<problem display_name="Part 3" markdown="&gt;&gt;What is the probability that it will take 3 or more throws to destroy the car?&lt;&lt;&#10;&#10;= 1-0.1-0.21&#10;&#10;" max_attempts="3" showanswer="never" weight="5.0">
+  <numericalresponse answer="1-0.1-0.21">
+    <label>What is the probability that it will take 3 or more throws to destroy the car?</label>
+    <formulaequationinput/>
+  </numericalresponse>
+</problem>

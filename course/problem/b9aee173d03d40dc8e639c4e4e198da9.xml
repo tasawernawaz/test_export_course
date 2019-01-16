@@ -1,0 +1,17 @@
+<problem display_name="Question 1" markdown="&gt;&gt;Which of the following expressions represent the average production rate of the unreliable machine?&lt;&lt;&#10;&#10;[x] \(\mu \frac{r}{r+p}\)&#10;[ ] \(\mu \frac{p}{r+p}\)&#10;[x] \(\mu e\)&#10;[x] \(\mu \frac{MTTF}{MTTF+MTTR}\)&#10;&#10;[explanation]&#10;Please see slide 60 for detailed explanation.&#10;[explanation]&#10;" max_attempts="3" showanswer="attempted" weight="1.0">
+  <choiceresponse>
+    <label>Which of the following expressions represent the average production rate of the unreliable machine?</label>
+    <checkboxgroup>
+      <choice correct="true">\(\mu \frac{r}{r+p}\)</choice>
+      <choice correct="false">\(\mu \frac{p}{r+p}\)</choice>
+      <choice correct="true">\(\mu e\)</choice>
+      <choice correct="true">\(\mu \frac{MTTF}{MTTF+MTTR}\)</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Please see slide 60 for detailed explanation.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

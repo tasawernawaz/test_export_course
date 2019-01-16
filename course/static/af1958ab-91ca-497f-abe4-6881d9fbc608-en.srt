@@ -1,0 +1,816 @@
+0
+00:00:00,000 --> 00:00:02,610
+
+
+1
+00:00:02,610 --> 00:00:03,540
+OK.
+
+2
+00:00:03,540 --> 00:00:09,660
+Welcome to the third recitation video of 2.854.1x.
+
+3
+00:00:09,660 --> 00:00:12,960
+This recitation video will be on week five,
+
+4
+00:00:12,960 --> 00:00:14,100
+practice problem two.
+
+5
+00:00:14,100 --> 00:00:20,490
+
+
+6
+00:00:20,490 --> 00:00:20,990
+OK.
+
+7
+00:00:20,990 --> 00:00:24,000
+So you guys probably read over the problem all ready.
+
+8
+00:00:24,000 --> 00:00:27,980
+So in summary, basically, there are two guys selling lunches
+
+9
+00:00:27,980 --> 00:00:30,110
+out of a truck at MIT.
+
+10
+00:00:30,110 --> 00:00:32,330
+We're given six different time periods
+
+11
+00:00:32,330 --> 00:00:36,290
+with six different arrival rates of customers,
+
+12
+00:00:36,290 --> 00:00:43,040
+assuming each customer buys one lunch.
+
+13
+00:00:43,040 --> 00:00:44,180
+OK.
+
+14
+00:00:44,180 --> 00:00:50,610
+So part 1, it asks what is the expected sales?
+
+15
+00:00:50,610 --> 00:00:53,900
+This is a relatively simple question.
+
+16
+00:00:53,900 --> 00:00:59,870
+Basically, it's just your discrete [? expectation. ?]
+
+17
+00:00:59,870 --> 00:01:02,480
+So we have six different arrival rates.
+
+18
+00:01:02,480 --> 00:01:06,730
+So you have lambda 1 is 0.4.
+
+19
+00:01:06,730 --> 00:01:09,320
+Lambda 2 is 0.8.
+
+20
+00:01:09,320 --> 00:01:13,185
+Lambda 3, 2.4.
+
+21
+00:01:13,185 --> 00:01:17,985
+Lambda 4 equals 1.6.
+
+22
+00:01:17,985 --> 00:01:24,650
+Lambda 5 equals 2.4.
+
+23
+00:01:24,650 --> 00:01:29,295
+Lambda 6, which equals 0.4.
+
+24
+00:01:29,295 --> 00:01:30,440
+OK?
+
+25
+00:01:30,440 --> 00:01:32,870
+So the six different time segments
+
+26
+00:01:32,870 --> 00:01:35,900
+are all 30 minutes long, and since lambda
+
+27
+00:01:35,900 --> 00:01:40,760
+is arrivals per minute, it's a simple multiplication
+
+28
+00:01:40,760 --> 00:01:43,940
+to get the expected sales for each one of those time
+
+29
+00:01:43,940 --> 00:01:45,300
+intervals.
+
+30
+00:01:45,300 --> 00:01:50,680
+So the expected sales of time interval one--
+
+31
+00:01:50,680 --> 00:01:59,460
+that is just 0.4 times 30, which is 12 lunches.
+
+32
+00:01:59,460 --> 00:02:00,200
+OK?
+
+33
+00:02:00,200 --> 00:02:03,530
+And similarly, we do it for the next six.
+
+34
+00:02:03,530 --> 00:02:06,490
+So you have 0.8 times 30--
+
+35
+00:02:06,490 --> 00:02:08,389
+the next five I meant.
+
+36
+00:02:08,389 --> 00:02:21,660
+2.4 times 30, 1.6 times 30, 2.4 times 30, 0.4 times 30.
+
+37
+00:02:21,660 --> 00:02:45,190
+And they are just 24, 78, 36, this is 1.2, sorry, 78, and 12.
+
+38
+00:02:45,190 --> 00:02:50,880
+So the total expected sales is just the sum
+
+39
+00:02:50,880 --> 00:02:52,870
+of the six time intervals.
+
+40
+00:02:52,870 --> 00:02:56,070
+And that is just 180.
+
+41
+00:02:56,070 --> 00:02:59,970
+So you're mu equals 180 for this problem.
+
+42
+00:02:59,970 --> 00:03:03,900
+
+
+43
+00:03:03,900 --> 00:03:10,230
+The next part, basically, asks us to find the optimal quantity
+
+44
+00:03:10,230 --> 00:03:16,060
+that we should order, given certain criterias.
+
+45
+00:03:16,060 --> 00:03:18,570
+So we're getting a little bit of information.
+
+46
+00:03:18,570 --> 00:03:21,810
+So each sandwich is sold for $6.00.
+
+47
+00:03:21,810 --> 00:03:25,620
+So r equals 6.
+
+48
+00:03:25,620 --> 00:03:28,670
+It costs $2.00 to make, so c equals 2.
+
+49
+00:03:28,670 --> 00:03:32,340
+
+
+50
+00:03:32,340 --> 00:03:38,240
+It costs $1.00 to dispose, so s equals negative 1.
+
+51
+00:03:38,240 --> 00:03:40,070
+And I think that's all we need.
+
+52
+00:03:40,070 --> 00:03:42,680
+So when you're given this information,
+
+53
+00:03:42,680 --> 00:03:46,510
+the first thing you should solve for is the critical ratio.
+
+54
+00:03:46,510 --> 00:03:53,610
+So critical ratio is just r minus c over r minus s,
+
+55
+00:03:53,610 --> 00:03:58,180
+which is just 4 over 7 in our case.
+
+56
+00:03:58,180 --> 00:04:09,100
+Now, we know that mu equals 180 and the standard deviation
+
+57
+00:04:09,100 --> 00:04:12,370
+is one third of the mean.
+
+58
+00:04:12,370 --> 00:04:17,110
+So that is just 180 divided by 3, which is 60.
+
+59
+00:04:17,110 --> 00:04:21,579
+And this is a normal distribution
+
+60
+00:04:21,579 --> 00:04:24,990
+with mean at 180, a standard deviation of 60.
+
+61
+00:04:24,990 --> 00:04:27,190
+OK?
+
+62
+00:04:27,190 --> 00:04:34,300
+So a couple of different ways to find the optimal x.
+
+63
+00:04:34,300 --> 00:04:41,020
+So we know that the standard normal distribution is just
+
+64
+00:04:41,020 --> 00:04:47,360
+x minus the mean divided by the standard deviation.
+
+65
+00:04:47,360 --> 00:04:52,090
+And that is just equal to the standard normal.
+
+66
+00:04:52,090 --> 00:04:55,280
+So we want to find the inverse of this.
+
+67
+00:04:55,280 --> 00:04:57,010
+How do we do that?
+
+68
+00:04:57,010 --> 00:05:01,630
+So you could use the z-table and look up
+
+69
+00:05:01,630 --> 00:05:04,970
+what the inverse should be, but a simpler way to do
+
+70
+00:05:04,970 --> 00:05:07,370
+this is just to use Excel.
+
+71
+00:05:07,370 --> 00:05:20,430
+So if you have Excel, just simply enter normsinv 7,
+
+72
+00:05:20,430 --> 00:05:26,410
+and that will give you 0.180.
+
+73
+00:05:26,410 --> 00:05:27,090
+OK.
+
+74
+00:05:27,090 --> 00:05:36,990
+So now, we know that x minus 180 divided by 60 equals 0.180 plus
+
+75
+00:05:36,990 --> 00:05:41,375
+x equal 190-ish.
+
+76
+00:05:41,375 --> 00:05:42,780
+OK?
+
+77
+00:05:42,780 --> 00:05:46,610
+190.8.
+
+78
+00:05:46,610 --> 00:05:48,290
+OK.
+
+79
+00:05:48,290 --> 00:05:52,040
+Another way to do this, instead of going through this ordeal,
+
+80
+00:05:52,040 --> 00:05:55,400
+just simply type in equal norminv.
+
+81
+00:05:55,400 --> 00:05:59,470
+
+
+82
+00:05:59,470 --> 00:06:03,200
+It's going to ask for the probability.
+
+83
+00:06:03,200 --> 00:06:09,320
+That is just your critical ratio, the mean, which is 180,
+
+84
+00:06:09,320 --> 00:06:11,930
+and the standard deviation of 60.
+
+85
+00:06:11,930 --> 00:06:17,660
+If you do this, it should just output 190.8, exactly.
+
+86
+00:06:17,660 --> 00:06:20,310
+It's a much simpler way to solve for the optimal quantity.
+
+87
+00:06:20,310 --> 00:06:25,780
+
+
+88
+00:06:25,780 --> 00:06:29,960
+OK, part 3 we are asked to solve the expected profit.
+
+89
+00:06:29,960 --> 00:06:31,970
+This is probably the most complicated part
+
+90
+00:06:31,970 --> 00:06:33,050
+of this problem.
+
+91
+00:06:33,050 --> 00:06:35,960
+Before we start, one of the parameters of the problem
+
+92
+00:06:35,960 --> 00:06:37,260
+has changed.
+
+93
+00:06:37,260 --> 00:06:40,550
+So now, sigma is just 30.
+
+94
+00:06:40,550 --> 00:06:46,460
+We still have our mu, which is equal to 180.
+
+95
+00:06:46,460 --> 00:06:50,150
+Since this is a symmetrical triangular distribution,
+
+96
+00:06:50,150 --> 00:06:55,490
+that is just our m, which is equal to a plus b divided by 2,
+
+97
+00:06:55,490 --> 00:06:57,920
+since it's symmetrical.
+
+98
+00:06:57,920 --> 00:07:07,120
+So that means a plus b equals 360.
+
+99
+00:07:07,120 --> 00:07:16,130
+OK, so sigma squared is equal to b minus a squared over 24,
+
+100
+00:07:16,130 --> 00:07:21,950
+which equals to 30 squared.
+
+101
+00:07:21,950 --> 00:07:30,890
+So b minus a is equal to 30 squared times 24.
+
+102
+00:07:30,890 --> 00:07:33,520
+And the square root of that--
+
+103
+00:07:33,520 --> 00:07:36,450
+so if you solve this equation--
+
+104
+00:07:36,450 --> 00:07:53,260
+in this equation, we get a equal 106.525, and b equals 253.485.
+
+105
+00:07:53,260 --> 00:07:53,760
+OK.
+
+106
+00:07:53,760 --> 00:07:57,120
+So in practice problem 1, we were
+
+107
+00:07:57,120 --> 00:08:02,550
+given the cumulative distribution of a symmetrical
+
+108
+00:08:02,550 --> 00:08:05,310
+triangular distribution.
+
+109
+00:08:05,310 --> 00:08:10,080
+And since we know the critical ratio is 4 over 7,
+
+110
+00:08:10,080 --> 00:08:17,650
+that means f of t is 4 over 7.
+
+111
+00:08:17,650 --> 00:08:19,500
+So now, we have to figure out if t
+
+112
+00:08:19,500 --> 00:08:24,000
+is between a and m or m and b.
+
+113
+00:08:24,000 --> 00:08:25,440
+In the interest of time, I'm just
+
+114
+00:08:25,440 --> 00:08:27,660
+going to tell you that it's between m and b.
+
+115
+00:08:27,660 --> 00:08:29,820
+You could try it for a and m, and you're
+
+116
+00:08:29,820 --> 00:08:33,270
+going to see that the function is not going to work out.
+
+117
+00:08:33,270 --> 00:08:45,560
+So this means 4/7 is equal to 1 minus 253.485
+
+118
+00:08:45,560 --> 00:09:00,790
+minus t squared over 73.475 146.96.
+
+119
+00:09:00,790 --> 00:09:09,030
+So I think-- this is just b minus m, b minus a.
+
+120
+00:09:09,030 --> 00:09:09,970
+OK.
+
+121
+00:09:09,970 --> 00:09:13,540
+So all of this--
+
+122
+00:09:13,540 --> 00:09:15,091
+what does this equal to?
+
+123
+00:09:15,091 --> 00:09:15,590
+OK.
+
+124
+00:09:15,590 --> 00:09:18,260
+
+
+125
+00:09:18,260 --> 00:09:29,760
+So t will equal to 253.485 minus the square root of negative
+
+126
+00:09:29,760 --> 00:09:41,240
+of 4 over 7 minus 1 times 73.475 times 146.96.
+
+127
+00:09:41,240 --> 00:09:47,507
+So our t is 185.458.
+
+128
+00:09:47,507 --> 00:09:49,340
+And we said to round to the nearest integer,
+
+129
+00:09:49,340 --> 00:09:58,960
+so that it's just equal to 185.
+
+130
+00:09:58,960 --> 00:10:05,770
+So now, we know that our optimal water quantity, let's just
+
+131
+00:10:05,770 --> 00:10:11,990
+call that Q star, is 185.
+
+132
+00:10:11,990 --> 00:10:14,790
+Now we're asked to solve for the expected profit.
+
+133
+00:10:14,790 --> 00:10:18,130
+
+
+134
+00:10:18,130 --> 00:10:21,150
+So in the lecture slides, I believe
+
+135
+00:10:21,150 --> 00:10:30,460
+it's slide 12, we said expected profit of Q star
+
+136
+00:10:30,460 --> 00:10:39,926
+is equal to r minus s times negative infinity to x.
+
+137
+00:10:39,926 --> 00:10:57,710
+Omega-- f of omega, d omega plus s minus c x f of x plus r minus
+
+138
+00:10:57,710 --> 00:11:05,010
+c x 1 minus f of x.
+
+139
+00:11:05,010 --> 00:11:05,510
+OK.
+
+140
+00:11:05,510 --> 00:11:11,630
+
+
+141
+00:11:11,630 --> 00:11:13,875
+So these two, here, you could--
+
+142
+00:11:13,875 --> 00:11:16,250
+I'm not going to do the algebra because it's pretty long,
+
+143
+00:11:16,250 --> 00:11:19,530
+but these two is a simple substitution.
+
+144
+00:11:19,530 --> 00:11:21,810
+Now you should be able to just carry it out.
+
+145
+00:11:21,810 --> 00:11:27,770
+So s minus c is [INAUDIBLE] value minus costs,
+
+146
+00:11:27,770 --> 00:11:29,660
+so that's negative 3.
+
+147
+00:11:29,660 --> 00:11:35,840
+And our x, which is just our Q right here times 185 times
+
+148
+00:11:35,840 --> 00:11:38,000
+f of 185.
+
+149
+00:11:38,000 --> 00:11:40,040
+You could just substitute that in.
+
+150
+00:11:40,040 --> 00:11:48,840
+And for this part, r minus c is just 4 times 185 times
+
+151
+00:11:48,840 --> 00:11:52,560
+1 minus f of 180.
+
+152
+00:11:52,560 --> 00:11:53,340
+OK.
+
+153
+00:11:53,340 --> 00:11:55,790
+So now, let's dig into this part.
+
+154
+00:11:55,790 --> 00:11:59,480
+
+
+155
+00:11:59,480 --> 00:12:05,150
+So we know f is a triangular-- is a probability density
+
+156
+00:12:05,150 --> 00:12:08,000
+function of the triangle distribution.
+
+157
+00:12:08,000 --> 00:12:10,250
+And it's an integral from negative infinity
+
+158
+00:12:10,250 --> 00:12:16,500
+to x, but, however, remember on the triangular distribution,
+
+159
+00:12:16,500 --> 00:12:21,230
+here is a, here is b, here is n.
+
+160
+00:12:21,230 --> 00:12:26,380
+Anything less than a is just 0, right?
+
+161
+00:12:26,380 --> 00:12:28,990
+So we don't actually need this negative infinity, here.
+
+162
+00:12:28,990 --> 00:12:32,020
+We could actually just replace it by 0 to x.
+
+163
+00:12:32,020 --> 00:12:35,950
+And x is just 185.
+
+164
+00:12:35,950 --> 00:12:39,040
+So this is actually two separate integrals
+
+165
+00:12:39,040 --> 00:12:48,740
+from a to 185 and from 8m, which is 180, and from 180 to 185.
+
+166
+00:12:48,740 --> 00:12:50,210
+So let's write that down.
+
+167
+00:12:50,210 --> 00:12:52,970
+
+
+168
+00:12:52,970 --> 00:12:57,080
+So this part, I'm just going to bring it down here,
+
+169
+00:12:57,080 --> 00:13:05,185
+is equal to a equals 106 to 180.
+
+170
+00:13:05,185 --> 00:13:21,140
+We could just write x dx plus 180 to 185 x fx and dx.
+
+171
+00:13:21,140 --> 00:13:32,410
+
+
+172
+00:13:32,410 --> 00:13:34,980
+So if you do the integral, here, there
+
+173
+00:13:34,980 --> 00:13:37,900
+are some things we can move around.
+
+174
+00:13:37,900 --> 00:13:42,930
+So first step into the integral, so there is a r minus
+
+175
+00:13:42,930 --> 00:13:45,080
+s out here.
+
+176
+00:13:45,080 --> 00:13:46,500
+OK.
+
+177
+00:13:46,500 --> 00:13:51,040
+So this is now just 2 times r minus
+
+178
+00:13:51,040 --> 00:13:59,470
+s divided by 253 minus 106--
+
+179
+00:13:59,470 --> 00:14:00,970
+I'm skipping the decimal so I don't
+
+180
+00:14:00,970 --> 00:14:03,370
+have to keep writing on this.
+
+181
+00:14:03,370 --> 00:14:10,010
+180 minus 106.
+
+182
+00:14:10,010 --> 00:14:17,313
+Multiply it by the integral, 106 to 180.
+
+183
+00:14:17,313 --> 00:14:20,842
+We'll make it squared minus 8 omega--
+
+184
+00:14:20,842 --> 00:14:21,660
+oh, sorry.
+
+185
+00:14:21,660 --> 00:14:31,190
+We said we're going to use x. x squared ax dx plus 180
+
+186
+00:14:31,190 --> 00:14:38,350
+to 185 bx minus x squared dx.
+
+187
+00:14:38,350 --> 00:14:42,700
+
+
+188
+00:14:42,700 --> 00:14:45,210
+So I think, here, it's pretty straightforward.
+
+189
+00:14:45,210 --> 00:14:49,520
+You just have to finish this integral.
+
+190
+00:14:49,520 --> 00:14:52,430
+I'm not going to write out the details,
+
+191
+00:14:52,430 --> 00:15:07,010
+but, basically, this piece is just one third x cubed minus 8
+
+192
+00:15:07,010 --> 00:15:14,580
+over 2 x squared, evaluated 180 and 106.
+
+193
+00:15:14,580 --> 00:15:27,516
+And this part is b over 2 x cubed minus 1/3 x cubed,
+
+194
+00:15:27,516 --> 00:15:32,028
+evaluated 185 over 180.
+
+195
+00:15:32,028 --> 00:15:33,960
+OK.
+
+196
+00:15:33,960 --> 00:15:41,090
+So the sum of this and this gets multiplied by this quantity,
+
+197
+00:15:41,090 --> 00:15:43,130
+right here.
+
+198
+00:15:43,130 --> 00:15:48,794
+And then, adding this quantity, right here.
+
+199
+00:15:48,794 --> 00:15:50,210
+And you should have your solution.
+
+200
+00:15:50,210 --> 00:16:06,740
+
+
+201
+00:16:06,740 --> 00:16:15,470
+So the expected profit at 185 units ordered,
+
+202
+00:16:15,470 --> 00:16:19,594
+should just be $635.51.
+
+203
+00:16:19,594 --> 00:16:23,760
+
+

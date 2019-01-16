@@ -1,0 +1,1020 @@
+0
+00:00:00,000 --> 00:00:02,150
+
+
+1
+00:00:02,150 --> 00:00:05,190
+The notation to talk about Markov processes
+
+2
+00:00:05,190 --> 00:00:09,270
+with discrete states and discrete time is to say x of t
+
+3
+00:00:09,270 --> 00:00:12,330
+equals i is the event that the random quantity,
+
+4
+00:00:12,330 --> 00:00:15,780
+the random variable, x of t has value, i.
+
+5
+00:00:15,780 --> 00:00:19,800
+For example, in the graph on slide seven, x of t
+
+6
+00:00:19,800 --> 00:00:23,670
+is any state in the graph and, i is some particular state.
+
+7
+00:00:23,670 --> 00:00:28,140
+We're going to define pi i of t as the probability that x of t
+
+8
+00:00:28,140 --> 00:00:30,660
+equals i at time, t.
+
+9
+00:00:30,660 --> 00:00:34,740
+And this is important and you see that notation a lot.
+
+10
+00:00:34,740 --> 00:00:37,590
+The pi's have to satisfy the normalization equation, which
+
+11
+00:00:37,590 --> 00:00:42,400
+is the sum over all the pi's at time t equals 1.
+
+12
+00:00:42,400 --> 00:00:44,100
+That is to say, x of t has to have
+
+13
+00:00:44,100 --> 00:00:46,350
+some of the possible values of i,
+
+14
+00:00:46,350 --> 00:00:49,380
+and the sum of the probabilities of all those possibilities
+
+15
+00:00:49,380 --> 00:00:50,950
+equals 1.
+
+16
+00:00:50,950 --> 00:00:52,740
+So let's look at the transition equations.
+
+17
+00:00:52,740 --> 00:00:57,330
+How do we quantify the event that we go from one state
+
+18
+00:00:57,330 --> 00:00:58,740
+to another?
+
+19
+00:00:58,740 --> 00:01:02,010
+Here's a detail of the graph on slide seven
+
+20
+00:01:02,010 --> 00:01:06,660
+and I'm focusing on states five and four.
+
+21
+00:01:06,660 --> 00:01:09,750
+To be in state four at time t plus 1,
+
+22
+00:01:09,750 --> 00:01:13,500
+the system must have been either in state five at time t
+
+23
+00:01:13,500 --> 00:01:16,770
+or in state four at time t.
+
+24
+00:01:16,770 --> 00:01:20,550
+So the probability of being in state four at time t plus 1
+
+25
+00:01:20,550 --> 00:01:23,280
+is equal to the probability that the system was in state five
+
+26
+00:01:23,280 --> 00:01:26,610
+at time t and made a transition from five to four,
+
+27
+00:01:26,610 --> 00:01:28,800
+plus the probability that the system was
+
+28
+00:01:28,800 --> 00:01:31,500
+in state four at time t and did not
+
+29
+00:01:31,500 --> 00:01:33,870
+make a transition to any of the other possible states
+
+30
+00:01:33,870 --> 00:01:36,612
+it could have gone to-- one, two, or six.
+
+31
+00:01:36,612 --> 00:01:38,070
+And just to remember that notation,
+
+32
+00:01:38,070 --> 00:01:43,330
+P 4,5 here is probability x of t plus 1 equals 4 given x of t
+
+33
+00:01:43,330 --> 00:01:45,779
+equals 5, and so forth.
+
+34
+00:01:45,779 --> 00:01:46,570
+Here's another one.
+
+35
+00:01:46,570 --> 00:01:48,630
+Let's focus on state two.
+
+36
+00:01:48,630 --> 00:01:52,080
+The system could be in state two at time t plus 1
+
+37
+00:01:52,080 --> 00:01:57,570
+if it was in one or four or five or two at time t.
+
+38
+00:01:57,570 --> 00:02:01,697
+So the probability that it's in state two at time t plus 1
+
+39
+00:02:01,697 --> 00:02:03,780
+is equal to the probability that it's in state two
+
+40
+00:02:03,780 --> 00:02:08,100
+at time t plus 1, given that it was in state one at time t,
+
+41
+00:02:08,100 --> 00:02:11,310
+times the probability that it was in state one at time t;
+
+42
+00:02:11,310 --> 00:02:15,060
+plus the probability that it's in state two at time t plus 1,
+
+43
+00:02:15,060 --> 00:02:18,750
+given that it was in state two at time t times the probability
+
+44
+00:02:18,750 --> 00:02:23,070
+that it was in state two at time t, and so forth.
+
+45
+00:02:23,070 --> 00:02:26,640
+This looks a lot like that equation of total probability
+
+46
+00:02:26,640 --> 00:02:28,230
+that describe the probability that I
+
+47
+00:02:28,230 --> 00:02:29,940
+was going to have a cold tomorrow given
+
+48
+00:02:29,940 --> 00:02:32,910
+the weather conditions today that we talked about some time
+
+49
+00:02:32,910 --> 00:02:34,390
+earlier.
+
+50
+00:02:34,390 --> 00:02:37,080
+We've defined P ij as the probability
+
+51
+00:02:37,080 --> 00:02:39,390
+that the system is in state i at time
+
+52
+00:02:39,390 --> 00:02:44,152
+t plus 1 given that the system was in state j at time t.
+
+53
+00:02:44,152 --> 00:02:45,610
+To summarize what we've done before
+
+54
+00:02:45,610 --> 00:02:49,240
+and put it in compact notation, the transition equations
+
+55
+00:02:49,240 --> 00:02:55,480
+say pi i of t plus 1 is equal to the sum over j of P ij times pi
+
+56
+00:02:55,480 --> 00:02:56,920
+j at time t.
+
+57
+00:02:56,920 --> 00:03:00,130
+This is an application of the law of total probability.
+
+58
+00:03:00,130 --> 00:03:02,120
+We also have the normalization equation:
+
+59
+00:03:02,120 --> 00:03:06,230
+sum over i of pi i of t equals 1.
+
+60
+00:03:06,230 --> 00:03:10,340
+So to go through this exercise with state two
+
+61
+00:03:10,340 --> 00:03:12,740
+from the definitions, we have the transition
+
+62
+00:03:12,740 --> 00:03:16,640
+equation for state two, which is pi 2 of t plus 1
+
+63
+00:03:16,640 --> 00:03:21,220
+equals P 2,1 pi 1 of t plus P 2,2 pi 2 of t plus P
+
+64
+00:03:21,220 --> 00:03:25,730
+2,4 pi 4 of t plus P 2,5 pi 5 of t.
+
+65
+00:03:25,730 --> 00:03:29,900
+And remember that P 2,2 is equal to 1 minus P 5,2.
+
+66
+00:03:29,900 --> 00:03:31,820
+So we're going to take the equations
+
+67
+00:03:31,820 --> 00:03:36,410
+that we wrote on slide 13 and now we're going to put them
+
+68
+00:03:36,410 --> 00:03:38,840
+in matrix vector form.
+
+69
+00:03:38,840 --> 00:03:44,765
+So pi of t will be the vector of the pi's at time t.
+
+70
+00:03:44,765 --> 00:03:48,260
+P is the matrix of the P ij's, and we're
+
+71
+00:03:48,260 --> 00:03:52,250
+defining a vector new which is a vector all of whose components
+
+72
+00:03:52,250 --> 00:03:53,570
+are one.
+
+73
+00:03:53,570 --> 00:03:56,630
+We can now write the transition equations as pi of t plus 1
+
+74
+00:03:56,630 --> 00:04:00,140
+equals P pi of t, and the normalization equation
+
+75
+00:04:00,140 --> 00:04:03,380
+is new transpose times by of t equals 1.
+
+76
+00:04:03,380 --> 00:04:07,400
+Other facts that we should know is that new transpose P
+
+77
+00:04:07,400 --> 00:04:11,720
+equals new transpose, which is a complicated way of saying
+
+78
+00:04:11,720 --> 00:04:16,140
+that each column of the p matrix sums to one.
+
+79
+00:04:16,140 --> 00:04:18,750
+The reason for that is the way we defined the diagonal entries
+
+80
+00:04:18,750 --> 00:04:25,340
+of the matrix P 1,1 is 1 minus the sum of P 2,1 up to P n,1.
+
+81
+00:04:25,340 --> 00:04:31,940
+We can also calculate pi at time t from pi at time 0
+
+82
+00:04:31,940 --> 00:04:34,340
+by iterated matrix multiplication.
+
+83
+00:04:34,340 --> 00:04:40,900
+So P to the t means matrix P by itself t times.
+
+84
+00:04:40,900 --> 00:04:43,150
+This is a graph of the probabilities
+
+85
+00:04:43,150 --> 00:04:45,880
+of all the states in the transition
+
+86
+00:04:45,880 --> 00:04:47,500
+graph in slide seven.
+
+87
+00:04:47,500 --> 00:04:50,830
+So now let's make an assumption that the non-zero transition
+
+88
+00:04:50,830 --> 00:04:54,430
+probabilities, other than the self loop probabilities,
+
+89
+00:04:54,430 --> 00:04:57,301
+are all very small on the order of 0.01.
+
+90
+00:04:57,301 --> 00:04:59,800
+That means that the average time between transitions
+
+91
+00:04:59,800 --> 00:05:02,650
+is on the order of about 100.
+
+92
+00:05:02,650 --> 00:05:06,240
+Suppose the system is in state one at time 0.
+
+93
+00:05:06,240 --> 00:05:09,090
+Then at time one, it's still most likely in state one
+
+94
+00:05:09,090 --> 00:05:13,780
+because the probability of transition is very small.
+
+95
+00:05:13,780 --> 00:05:16,450
+With small probabilities, it could be in stage two or three,
+
+96
+00:05:16,450 --> 00:05:18,640
+but it's impossible for it to be in any other state
+
+97
+00:05:18,640 --> 00:05:22,360
+because it needs more than one transition to get there.
+
+98
+00:05:22,360 --> 00:05:25,480
+At times two, three, four, and a little while after that,
+
+99
+00:05:25,480 --> 00:05:27,780
+it's very unlikely that a transition will take place
+
+100
+00:05:27,780 --> 00:05:31,510
+so the system will still very likely be in state one.
+
+101
+00:05:31,510 --> 00:05:34,510
+After about time 30, as you can see on the graph,
+
+102
+00:05:34,510 --> 00:05:36,760
+the probability that the transition has taken place
+
+103
+00:05:36,760 --> 00:05:38,530
+already is not small, so the system
+
+104
+00:05:38,530 --> 00:05:42,280
+might be in state two or three as well as one, or even
+
+105
+00:05:42,280 --> 00:05:44,720
+others with small probability.
+
+106
+00:05:44,720 --> 00:05:46,580
+After about time 50, it's unlikely
+
+107
+00:05:46,580 --> 00:05:48,110
+that it has not left state one.
+
+108
+00:05:48,110 --> 00:05:49,710
+It might still be in two or three,
+
+109
+00:05:49,710 --> 00:05:52,670
+but it could have left them and moved on to five or seven.
+
+110
+00:05:52,670 --> 00:05:54,410
+Actually, it could be in any state,
+
+111
+00:05:54,410 --> 00:05:56,450
+but except for states one, two, and three,
+
+112
+00:05:56,450 --> 00:05:59,680
+the probabilities are still small.
+
+113
+00:05:59,680 --> 00:06:01,660
+After more time, the system could be found
+
+114
+00:06:01,660 --> 00:06:03,610
+in any state in the system.
+
+115
+00:06:03,610 --> 00:06:06,160
+The probability that the system is in any given state
+
+116
+00:06:06,160 --> 00:06:07,960
+depends on the transition probabilities,
+
+117
+00:06:07,960 --> 00:06:10,960
+the initial state, and how long the system has been running.
+
+118
+00:06:10,960 --> 00:06:15,080
+Now let's think about the system at around time 150.
+
+119
+00:06:15,080 --> 00:06:17,680
+We watch the system for a while and we observe the fraction
+
+120
+00:06:17,680 --> 00:06:20,170
+of time that the system is in any given state
+
+121
+00:06:20,170 --> 00:06:24,419
+and we observe that that fraction is not changing.
+
+122
+00:06:24,419 --> 00:06:26,960
+In fact, the fraction of time that the system is in any given
+
+123
+00:06:26,960 --> 00:06:31,660
+stated time 200 is about the same as at time 150.
+
+124
+00:06:31,660 --> 00:06:33,850
+In that case, we can say that the system has reached
+
+125
+00:06:33,850 --> 00:06:37,790
+steady state at time 150.
+
+126
+00:06:37,790 --> 00:06:41,890
+So formally, a system is in steady state
+
+127
+00:06:41,890 --> 00:06:46,060
+when it approaches a limiting probability distribution
+
+128
+00:06:46,060 --> 00:06:47,590
+as time goes to infinity.
+
+129
+00:06:47,590 --> 00:06:51,500
+And we'll call pi i the limit of pi i of t
+
+130
+00:06:51,500 --> 00:06:54,280
+as t goes to infinity, which is also
+
+131
+00:06:54,280 --> 00:07:01,160
+the limit as t goes to infinity of p to the t times pi i of 0.
+
+132
+00:07:01,160 --> 00:07:04,350
+But notice that now I'm saying if it exists,
+
+133
+00:07:04,350 --> 00:07:05,990
+so it might not exist.
+
+134
+00:07:05,990 --> 00:07:08,670
+Why would it not exist?
+
+135
+00:07:08,670 --> 00:07:11,250
+Let's go take a look at another example.
+
+136
+00:07:11,250 --> 00:07:14,540
+Remember the number of heads after t coin flips.
+
+137
+00:07:14,540 --> 00:07:18,920
+What we found is that the state will eventually
+
+138
+00:07:18,920 --> 00:07:22,880
+progress to larger and larger numbers over time.
+
+139
+00:07:22,880 --> 00:07:24,710
+There's no steady state in this one.
+
+140
+00:07:24,710 --> 00:07:28,220
+The probability that h of t equals 10, for example,
+
+141
+00:07:28,220 --> 00:07:31,760
+is 0 for t equals 0 one to nine, but it's
+
+142
+00:07:31,760 --> 00:07:34,860
+non-zero for t greater than or equal to 10.
+
+143
+00:07:34,860 --> 00:07:38,690
+As t increases, that probably first increases and then
+
+144
+00:07:38,690 --> 00:07:40,550
+decreases.
+
+145
+00:07:40,550 --> 00:07:43,130
+It approaches 0 as t goes to infinity,
+
+146
+00:07:43,130 --> 00:07:46,070
+but it is not zero for any finite t.
+
+147
+00:07:46,070 --> 00:07:50,360
+As a consequence, there is no steady state probability.
+
+148
+00:07:50,360 --> 00:07:52,580
+Some systems with an infinite number of states
+
+149
+00:07:52,580 --> 00:07:55,430
+do reach stead state, others do not.
+
+150
+00:07:55,430 --> 00:07:58,960
+This has practical importance as we're going to see later.
+
+151
+00:07:58,960 --> 00:08:01,510
+Remember that models are approximations of reality.
+
+152
+00:08:01,510 --> 00:08:03,250
+Everything in the real world is finite,
+
+153
+00:08:03,250 --> 00:08:05,020
+but sometimes infinite state models
+
+154
+00:08:05,020 --> 00:08:08,950
+can help us to understand some features of finite systems.
+
+155
+00:08:08,950 --> 00:08:11,870
+The steady state transition equations are just pi i of t
+
+156
+00:08:11,870 --> 00:08:15,670
+is the sum over j P ij pi j.
+
+157
+00:08:15,670 --> 00:08:20,260
+So this is the same as the non-steady state equations,
+
+158
+00:08:20,260 --> 00:08:23,350
+except that we've eliminated the t arguments.
+
+159
+00:08:23,350 --> 00:08:27,610
+So before we had pi i of t plus one on the left and pi j of t,
+
+160
+00:08:27,610 --> 00:08:29,474
+but now we just have pi vectors.
+
+161
+00:08:29,474 --> 00:08:31,390
+We're going to use the steady state transition
+
+162
+00:08:31,390 --> 00:08:33,622
+equations to calculate these probabilities,
+
+163
+00:08:33,622 --> 00:08:35,080
+but there's another way that we can
+
+164
+00:08:35,080 --> 00:08:38,080
+do things, which is the steady state balance equations.
+
+165
+00:08:38,080 --> 00:08:40,600
+I've written them formally here, but in the next couple
+
+166
+00:08:40,600 --> 00:08:43,570
+of slides I'll explain what it all really means.
+
+167
+00:08:43,570 --> 00:08:46,540
+We're going to also need the normalization equation in order
+
+168
+00:08:46,540 --> 00:08:50,440
+to define the steady state probability vector.
+
+169
+00:08:50,440 --> 00:08:53,390
+OK, we'll use state four to illustrate the balance
+
+170
+00:08:53,390 --> 00:08:54,530
+equations.
+
+171
+00:08:54,530 --> 00:08:57,400
+What the balance equations say is
+
+172
+00:08:57,400 --> 00:09:01,090
+that the probability at any time of crossing
+
+173
+00:09:01,090 --> 00:09:04,750
+that circle, the dotted line circle, from the outside
+
+174
+00:09:04,750 --> 00:09:08,050
+to the inside is equal to the probability of crossing
+
+175
+00:09:08,050 --> 00:09:11,450
+that circle from the inside to the outside.
+
+176
+00:09:11,450 --> 00:09:13,330
+This is only true in steady state.
+
+177
+00:09:13,330 --> 00:09:16,300
+There's no transition equation analog
+
+178
+00:09:16,300 --> 00:09:19,580
+of this when we are not in steady state.
+
+179
+00:09:19,580 --> 00:09:23,410
+So the probability of going from outside to inside
+
+180
+00:09:23,410 --> 00:09:27,520
+is the probability of being in states one, two, or six.
+
+181
+00:09:27,520 --> 00:09:30,220
+There's only one way of going from outside to inside,
+
+182
+00:09:30,220 --> 00:09:32,860
+and that is that we were in state five,
+
+183
+00:09:32,860 --> 00:09:35,770
+and then we make the transition from five to four.
+
+184
+00:09:35,770 --> 00:09:39,070
+So the probability of making the transition from five to four
+
+185
+00:09:39,070 --> 00:09:41,920
+is P 4,5 pi 5.
+
+186
+00:09:41,920 --> 00:09:44,080
+The probability at any time of going
+
+187
+00:09:44,080 --> 00:09:47,380
+from state four outside state four
+
+188
+00:09:47,380 --> 00:09:50,920
+is the sum of the probabilities of the states
+
+189
+00:09:50,920 --> 00:09:54,040
+where the system can reach from state four times
+
+190
+00:09:54,040 --> 00:09:56,800
+the probability of being in state four.
+
+191
+00:09:56,800 --> 00:10:02,710
+So that's just P 1,4 plus P 2,4 plus P 6,4 times pi 4.
+
+192
+00:10:02,710 --> 00:10:04,300
+So here's what I said before.
+
+193
+00:10:04,300 --> 00:10:07,390
+Intuitively, it means that the average number of transitions
+
+194
+00:10:07,390 --> 00:10:09,760
+into the circle per unit time equals
+
+195
+00:10:09,760 --> 00:10:11,230
+the average number of transitions
+
+196
+00:10:11,230 --> 00:10:14,620
+out of a circle per unit time.
+
+197
+00:10:14,620 --> 00:10:19,335
+The reason for all this fuss about probability transitions
+
+198
+00:10:19,335 --> 00:10:21,812
+and Markov chains and so forth is
+
+199
+00:10:21,812 --> 00:10:23,520
+that we're going to need that probability
+
+200
+00:10:23,520 --> 00:10:27,580
+distribution to evaluate the performance of certain systems.
+
+201
+00:10:27,580 --> 00:10:30,120
+So we need to calculate the steady state probability
+
+202
+00:10:30,120 --> 00:10:31,630
+distribution pi.
+
+203
+00:10:31,630 --> 00:10:33,490
+So how do we do that?
+
+204
+00:10:33,490 --> 00:10:36,000
+Well, let's start off by assuming that the system has
+
+205
+00:10:36,000 --> 00:10:38,640
+n states and n is finite.
+
+206
+00:10:38,640 --> 00:10:41,070
+We assume there's a unique steady state probability
+
+207
+00:10:41,070 --> 00:10:43,530
+distribution.
+
+208
+00:10:43,530 --> 00:10:47,040
+The transition equations form a set of n linear equations
+
+209
+00:10:47,040 --> 00:10:48,800
+and unknowns.
+
+210
+00:10:48,800 --> 00:10:52,390
+The normalization is also a linear equation.
+
+211
+00:10:52,390 --> 00:10:56,280
+So that means we have n plus one equations and n unknowns.
+
+212
+00:10:56,280 --> 00:10:57,490
+Is that a problem?
+
+213
+00:10:57,490 --> 00:10:59,790
+We're not supposed to have n plus one equations and n
+
+214
+00:10:59,790 --> 00:11:01,030
+unknowns.
+
+215
+00:11:01,030 --> 00:11:03,780
+Well, it turns out there is not a problem.
+
+216
+00:11:03,780 --> 00:11:07,230
+One of those transition equations is redundant
+
+217
+00:11:07,230 --> 00:11:10,590
+and that's because each column sums to one.
+
+218
+00:11:10,590 --> 00:11:13,410
+We can throw out any one of those transition equations
+
+219
+00:11:13,410 --> 00:11:17,470
+and replace it by the normalization equation.
+
+220
+00:11:17,470 --> 00:11:20,500
+And then we solve that resulting system of linear equations
+
+221
+00:11:20,500 --> 00:11:22,470
+and unknowns.
+
+222
+00:11:22,470 --> 00:11:25,650
+We can solve it by hand if it's a small enough system
+
+223
+00:11:25,650 --> 00:11:28,890
+or we can use various computer programs that will help us
+
+224
+00:11:28,890 --> 00:11:30,870
+if it's larger than that.
+
+225
+00:11:30,870 --> 00:11:33,420
+A system that has a unique steady state probability
+
+226
+00:11:33,420 --> 00:11:35,940
+distribution is called ergotic.
+
+227
+00:11:35,940 --> 00:11:38,910
+The probability distribution as a function of time
+
+228
+00:11:38,910 --> 00:11:41,880
+approaches that limit, no matter what the initial probability
+
+229
+00:11:41,880 --> 00:11:44,280
+distribution was.
+
+230
+00:11:44,280 --> 00:11:46,890
+For systems that have more than one steady state solution,
+
+231
+00:11:46,890 --> 00:11:48,330
+the limiting distribution depends
+
+232
+00:11:48,330 --> 00:11:50,820
+on the initial probability.
+
+233
+00:11:50,820 --> 00:11:53,162
+The balance equations can be used
+
+234
+00:11:53,162 --> 00:11:54,870
+to find the limiting distribution instead
+
+235
+00:11:54,870 --> 00:11:56,850
+of the transition equations.
+
+236
+00:11:56,850 --> 00:11:58,920
+As before, one equation has to be replaced
+
+237
+00:11:58,920 --> 00:12:01,350
+by the normalization equation.
+
+238
+00:12:01,350 --> 00:12:02,520
+Which to use?
+
+239
+00:12:02,520 --> 00:12:05,100
+The balance equation or the transition equation
+
+240
+00:12:05,100 --> 00:12:08,730
+is a matter of convenience and taste.
+
+241
+00:12:08,730 --> 00:12:11,100
+If a system has an infinite number of states,
+
+242
+00:12:11,100 --> 00:12:13,260
+and it has a steady state probability distribution,
+
+243
+00:12:13,260 --> 00:12:16,470
+there are two possibilities for finding it.
+
+244
+00:12:16,470 --> 00:12:19,740
+It might be possible to solve the equations analytically.
+
+245
+00:12:19,740 --> 00:12:23,150
+We're going to see an example of that.
+
+246
+00:12:23,150 --> 00:12:25,990
+Otherwise, we have to truncate the system.
+
+247
+00:12:25,990 --> 00:12:28,890
+That means solve a system with a large but finite number
+
+248
+00:12:28,890 --> 00:12:30,035
+of states.
+
+249
+00:12:30,035 --> 00:12:31,410
+If you understand the system, you
+
+250
+00:12:31,410 --> 00:12:33,480
+can get which are the highest probability states
+
+251
+00:12:33,480 --> 00:12:34,790
+and you keep those.
+
+252
+00:12:34,790 --> 00:12:36,420
+Throw out the rest.
+
+253
+00:12:36,420 --> 00:12:40,050
+Solving that will provide an approximate solution
+
+254
+00:12:40,050 --> 00:12:43,570
+to the steady state transition equations.
+

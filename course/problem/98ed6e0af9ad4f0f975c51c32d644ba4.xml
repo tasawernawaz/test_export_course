@@ -1,0 +1,16 @@
+<problem display_name="Part 3" markdown="&gt;&gt;In a zero-buffer line improving a machine that does not have the largest \(p/r\) ratio will not increase the production rate of the system.&#10;&lt;&lt;&#10;&#10;( ) True&#10;(x) False&#10;&#10;[explanation]&#10;Because any failure of any machine causes the line to stop, an improvement of any machine will increase the production rate of the line.&#10;[explanation]&#10;&#10;" max_attempts="1" weight="3.0">
+  <multiplechoiceresponse>
+    <label>In a zero-buffer line improving a machine that does not have the largest \(p/r\) ratio will not increase the production rate of the system.
+</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">True</choice>
+      <choice correct="true">False</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Because any failure of any machine causes the line to stop, an improvement of any machine will increase the production rate of the line.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

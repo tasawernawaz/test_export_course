@@ -1,0 +1,18 @@
+<problem display_name="Question 3" markdown="&#10;&gt;&gt;Long-term capacity: &lt;&lt;&#10;&#10;&#10;[ ] Is generally influenced by the stochastic fluctuations of one process.&#10;[ ] Will change significantly if there is a two-day power outage.&#10;[x] Is determined by average resource availability.&#10;[x] Dictates the overall production rate of a factory.&#10;[x] Is hard to calculate.&#10;&#10;[Explanation]&#10;See video 6 (slide 49).&#10;[Explanation]" max_attempts="3">
+  <choiceresponse>
+    <label>Long-term capacity: </label>
+    <checkboxgroup>
+      <choice correct="false">Is generally influenced by the stochastic fluctuations of one process.</choice>
+      <choice correct="false">Will change significantly if there is a two-day power outage.</choice>
+      <choice correct="true">Is determined by average resource availability.</choice>
+      <choice correct="true">Dictates the overall production rate of a factory.</choice>
+      <choice correct="true">Is hard to calculate.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>See video 6 (slide 49).</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

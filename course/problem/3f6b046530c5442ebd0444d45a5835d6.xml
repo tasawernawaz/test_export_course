@@ -1,0 +1,17 @@
+<problem display_name="Part 8" markdown="&gt;&gt;What are the costs associated with inventory?  &lt;&lt;&#10;&#10;[x] The time difference between purchasing raw materials and selling of goods.&#10;[x] Storage space and material handling for inventory.&#10;[x] Potential loss due to obsolescence or spoilage.&#10;[x] Potential loss due to damage, theft, or misplacement.&#10;[Explanation]&#10;See video at slide 29.&#10;[Explanation]" max_attempts="3" showanswer="past_due" weight="3.0">
+  <choiceresponse>
+    <label>What are the costs associated with inventory?  </label>
+    <checkboxgroup>
+      <choice correct="true">The time difference between purchasing raw materials and selling of goods.</choice>
+      <choice correct="true">Storage space and material handling for inventory.</choice>
+      <choice correct="true">Potential loss due to obsolescence or spoilage.</choice>
+      <choice correct="true">Potential loss due to damage, theft, or misplacement.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>See video at slide 29.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

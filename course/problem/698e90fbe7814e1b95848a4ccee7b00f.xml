@@ -1,0 +1,17 @@
+<problem display_name="Question 1" markdown="&gt;&gt;What does \(s\) in m\m\s system stand for? &lt;&lt;&#10;&#10;( ) The limit of the queue size.&#10;(x) The number of servers.&#10;( ) The number of lines in the system.&#10;( ) The number of customers in the line.&#10;&#10;[explanation]&#10;\(s\) stands for the number of servers in the system. When s=1, it is equivalent to an m/m/1 system.&#10;[explanation]&#10;" max_attempts="3" showanswer="finished" weight="1.0">
+  <multiplechoiceresponse>
+    <label>What does \(s\) in m\m\s system stand for? </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">The limit of the queue size.</choice>
+      <choice correct="true">The number of servers.</choice>
+      <choice correct="false">The number of lines in the system.</choice>
+      <choice correct="false">The number of customers in the line.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>\(s\) stands for the number of servers in the system. When s=1, it is equivalent to an m/m/1 system.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

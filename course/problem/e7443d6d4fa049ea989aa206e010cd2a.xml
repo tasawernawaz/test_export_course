@@ -1,0 +1,23 @@
+<problem display_name="Part 2" markdown="null" max_attempts="3" showanswer="finished" weight="0.0">
+  <p> For the following questions provide a numerical response formatted as a percentage. (If your answer is 50%, just enter 50)</p>
+  <label>What percentage of the time is she serving customers? </label>
+  <numericalresponse answer="66.7">
+    <responseparam type="tolerance" default="1"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label> What percentage of the time is she idle? </label>
+  <numericalresponse answer="33.3">
+    <responseparam type="tolerance" default="0.3"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>
+        <span style="font-size: 1em;">
+          The fraction of serving time is the utilization \(\rho = \frac{\lambda}{\mu} = \frac{10}{15} = \frac{2}{3} = 66.7\)%. The fraction of idle time is \(1-0.6667=0.3333\).
+        </span>
+      </p>
+    </div>
+  </solution>
+</problem>

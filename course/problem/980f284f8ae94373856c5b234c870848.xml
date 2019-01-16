@@ -1,0 +1,17 @@
+<problem display_name="Concept Check 3" markdown="&gt;&gt;Which statement is NOT true about Two-Card Kanban?&lt;&lt;&#10;( ) When the previous operation or downtime of the downstream machine is complete and it is not blocked, the downstream machine takes a part from input WIP buffer.&#10;( ) When there is a long distance between operations to work cells, or when parts are delivered to the machines in different-sized batches, a two-card kanban system will be used.&#10;( X )  If the withdrawal kanban buffer is not empty, the priority is to take care of the existing production-ordering kanban of the part in the output WIP buffer of the upstream machine. Then the withdrawal kanban is attached to the next part.&#10;( ) On the upstream side, there is a limited number of production ordering kanbans. When a part arrives in, and there is at least one production-ordering kanban, the part gets operation and a kanban is attached. &#10;&#10;[explanation]&#10;If the withdrawal kanban buffer is not empty, the production-ordering kanban is removed from a part in the output WIP buffer of the upstream machine and moved to the production-ordering kanban buffer. A withdrawal kanban is attached to that part.&#10;[explanation]" max_attempts="3">
+  <multiplechoiceresponse>
+    <label>Which statement is NOT true about Two-Card Kanban?</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">When the previous operation or downtime of the downstream machine is complete and it is not blocked, the downstream machine takes a part from input WIP buffer.</choice>
+      <choice correct="false">When there is a long distance between operations to work cells, or when parts are delivered to the machines in different-sized batches, a two-card kanban system will be used.</choice>
+      <choice correct="true">If the withdrawal kanban buffer is not empty, the priority is to take care of the existing production-ordering kanban of the part in the output WIP buffer of the upstream machine. Then the withdrawal kanban is attached to the next part.</choice>
+      <choice correct="false">On the upstream side, there is a limited number of production ordering kanbans. When a part arrives in, and there is at least one production-ordering kanban, the part gets operation and a kanban is attached.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>If the withdrawal kanban buffer is not empty, the production-ordering kanban is removed from a part in the output WIP buffer of the upstream machine and moved to the production-ordering kanban buffer. A withdrawal kanban is attached to that part.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

@@ -1,0 +1,16 @@
+<problem display_name="Concept Check 5-2" markdown="&gt;&gt; Which statement is NOT true below, in the analysis of Deterministic Processing Time, Two-Machine, Finite-Buffer Flow Lines?&lt;&lt;&#10;( ) the buffer level cannot change by more than one part in one time unit;&#10;(X) the buffer level must go down by one for a transition in one time unit;&#10;( ) the total number of states is 2 times 2 times capital N plus 1. (N is the buffer size.)&#10;&#10;[explanation]&#10;The buffer level can go up or down by one, or remains the same in one time unit, based on the states of the two machines. &#10;[explanation]" max_attempts="2">
+  <multiplechoiceresponse>
+    <label> Which statement is NOT true below, in the analysis of Deterministic Processing Time, Two-Machine, Finite-Buffer Flow Lines?</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">the buffer level cannot change by more than one part in one time unit;</choice>
+      <choice correct="true">the buffer level must go down by one for a transition in one time unit;</choice>
+      <choice correct="false">the total number of states is 2 times 2 times capital N plus 1. (N is the buffer size.)</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>The buffer level can go up or down by one, or remains the same in one time unit, based on the states of the two machines. </p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

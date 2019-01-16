@@ -1,0 +1,1324 @@
+0
+00:00:00,000 --> 00:00:02,696
+
+
+1
+00:00:02,696 --> 00:00:04,820
+We need to make some more assumptions about machine
+
+2
+00:00:04,820 --> 00:00:08,250
+failures in order to analyze systems.
+
+3
+00:00:08,250 --> 00:00:10,680
+These assumptions are important for machines and systems
+
+4
+00:00:10,680 --> 00:00:12,330
+in which a machine can be made idle
+
+5
+00:00:12,330 --> 00:00:15,170
+by another machine's failure.
+
+6
+00:00:15,170 --> 00:00:19,100
+The issue is what can happen when a machine is idle.
+
+7
+00:00:19,100 --> 00:00:22,310
+First of all, there's operation-dependent failures.
+
+8
+00:00:22,310 --> 00:00:25,460
+If we assume that, a machine can only fail while it's working,
+
+9
+00:00:25,460 --> 00:00:27,260
+not idle.
+
+10
+00:00:27,260 --> 00:00:30,710
+Idleness occurs due to starvation or blockage.
+
+11
+00:00:30,710 --> 00:00:33,900
+This is the usual assumption.
+
+12
+00:00:33,900 --> 00:00:36,090
+The other assumption is time-dependent failure.
+
+13
+00:00:36,090 --> 00:00:38,820
+A machine can fail, even if it's idle.
+
+14
+00:00:38,820 --> 00:00:41,520
+We are going to assume operation-dependent failures
+
+15
+00:00:41,520 --> 00:00:44,010
+unless we say otherwise.
+
+16
+00:00:44,010 --> 00:00:47,250
+Now we can start thinking about systems of machines.
+
+17
+00:00:47,250 --> 00:00:49,440
+My strategy is to start with assumptions
+
+18
+00:00:49,440 --> 00:00:52,320
+that make models easy to analyze and then
+
+19
+00:00:52,320 --> 00:00:54,780
+proceed to model systems that are progressively harder
+
+20
+00:00:54,780 --> 00:00:56,010
+to analyze.
+
+21
+00:00:56,010 --> 00:00:59,860
+This process will continue into part two of this course.
+
+22
+00:00:59,860 --> 00:01:01,530
+The first kind of system we will analyze
+
+23
+00:01:01,530 --> 00:01:03,900
+are lines with infinite buffers.
+
+24
+00:01:03,900 --> 00:01:05,459
+Of course, we live in a finite world,
+
+25
+00:01:05,459 --> 00:01:08,370
+so there are no lines with infinite buffers.
+
+26
+00:01:08,370 --> 00:01:10,290
+So why are we studying such lines?
+
+27
+00:01:10,290 --> 00:01:12,070
+There are two reasons.
+
+28
+00:01:12,070 --> 00:01:13,770
+First, the infinite buffer assumption
+
+29
+00:01:13,770 --> 00:01:15,660
+gives us an upper bound on the production
+
+30
+00:01:15,660 --> 00:01:18,060
+rate of a line with finite buffers.
+
+31
+00:01:18,060 --> 00:01:21,780
+It's easy to calculate that upper bound, as you'll see.
+
+32
+00:01:21,780 --> 00:01:23,910
+We can also learn something from the distribution
+
+33
+00:01:23,910 --> 00:01:25,800
+of the inventory of such a line that
+
+34
+00:01:25,800 --> 00:01:28,500
+may give us some insight into the distribution of inventory
+
+35
+00:01:28,500 --> 00:01:29,960
+in a real line.
+
+36
+00:01:29,960 --> 00:01:32,220
+And lines with infinite buffers are much easier
+
+37
+00:01:32,220 --> 00:01:34,170
+to study than lines with finite buffers.
+
+38
+00:01:34,170 --> 00:01:37,780
+We'll get to those finite buffer lines later.
+
+39
+00:01:37,780 --> 00:01:39,760
+When buffers are infinite, the only way
+
+40
+00:01:39,760 --> 00:01:41,590
+that one machine can interact with another
+
+41
+00:01:41,590 --> 00:01:42,790
+is through starvation.
+
+42
+00:01:42,790 --> 00:01:46,000
+There is no blockage.
+
+43
+00:01:46,000 --> 00:01:50,440
+Machine Mi is starved at time t if buffer Bi minus 1--
+
+44
+00:01:50,440 --> 00:01:52,090
+the buffer just upstream of it--
+
+45
+00:01:52,090 --> 00:01:55,390
+is empty at time t.
+
+46
+00:01:55,390 --> 00:01:57,790
+The assumptions are that a machine is not idle
+
+47
+00:01:57,790 --> 00:01:59,454
+if it's not starved.
+
+48
+00:01:59,454 --> 00:02:01,120
+In other words, a machine works whenever
+
+49
+00:02:01,120 --> 00:02:04,720
+it has something to work on and is operational.
+
+50
+00:02:04,720 --> 00:02:07,450
+The first machine is never starved.
+
+51
+00:02:07,450 --> 00:02:11,050
+The first machine always has something to work on.
+
+52
+00:02:11,050 --> 00:02:14,020
+These two assumptions and the assumption of infinite buffers
+
+53
+00:02:14,020 --> 00:02:17,170
+give us an upper bound for the production rate of a line.
+
+54
+00:02:17,170 --> 00:02:19,420
+If you have to meet a specified target production
+
+55
+00:02:19,420 --> 00:02:21,640
+rate with a given set of machines,
+
+56
+00:02:21,640 --> 00:02:23,170
+and you calculate that you won't be
+
+57
+00:02:23,170 --> 00:02:25,510
+able to meet that target with infinite buffers
+
+58
+00:02:25,510 --> 00:02:27,640
+in these assumptions, then you won't
+
+59
+00:02:27,640 --> 00:02:30,845
+be able to meet it with any real line.
+
+60
+00:02:30,845 --> 00:02:32,970
+The assumption that the first machine is never idle
+
+61
+00:02:32,970 --> 00:02:35,490
+may seem to rule out the possibility of modeling
+
+62
+00:02:35,490 --> 00:02:37,470
+a line with an unreliable supplier,
+
+63
+00:02:37,470 --> 00:02:39,379
+but we can get around that.
+
+64
+00:02:39,379 --> 00:02:41,670
+We could use the first machine in the model of the line
+
+65
+00:02:41,670 --> 00:02:44,580
+as a model for the supplier and the first buffer
+
+66
+00:02:44,580 --> 00:02:46,620
+as the raw material inventory.
+
+67
+00:02:46,620 --> 00:02:48,360
+Then machine 2 in the diagram would
+
+68
+00:02:48,360 --> 00:02:51,480
+represent the first actual machine in the line.
+
+69
+00:02:51,480 --> 00:02:53,730
+The production rate of the line is the production rate
+
+70
+00:02:53,730 --> 00:02:57,540
+of the slowest machine in the line called the bottleneck.
+
+71
+00:02:57,540 --> 00:03:00,950
+Slowest means least average production rate.
+
+72
+00:03:00,950 --> 00:03:03,680
+The production rate is therefore given by this formula--
+
+73
+00:03:03,680 --> 00:03:06,020
+P is the minimum of this expression over all
+
+74
+00:03:06,020 --> 00:03:07,520
+the machines in the line.
+
+75
+00:03:07,520 --> 00:03:09,860
+That expression is just the production rate
+
+76
+00:03:09,860 --> 00:03:13,310
+of an individual machine.
+
+77
+00:03:13,310 --> 00:03:17,840
+And Mi, where the minimum occurs, is the bottleneck.
+
+78
+00:03:17,840 --> 00:03:19,910
+We will assume that the bottleneck is unique.
+
+79
+00:03:19,910 --> 00:03:22,760
+There's only one machine that has at least average production
+
+80
+00:03:22,760 --> 00:03:23,870
+rate.
+
+81
+00:03:23,870 --> 00:03:26,270
+If all the taos equals 1, then that formula
+
+82
+00:03:26,270 --> 00:03:27,560
+reduces to this one.
+
+83
+00:03:27,560 --> 00:03:29,390
+And, of course, M is still the bottleneck.
+
+84
+00:03:29,390 --> 00:03:33,500
+When we have a bottleneck, the system is not in steady state.
+
+85
+00:03:33,500 --> 00:03:35,120
+An increasing amount of inventory
+
+86
+00:03:35,120 --> 00:03:38,750
+accumulates in the buffer upstream of the bottleneck.
+
+87
+00:03:38,750 --> 00:03:42,540
+In this picture, buffer 4 and machine 5
+
+88
+00:03:42,540 --> 00:03:45,420
+from a queuing system with unlimited storage
+
+89
+00:03:45,420 --> 00:03:47,280
+in which the arrival rate to the system
+
+90
+00:03:47,280 --> 00:03:49,350
+is greater than the rate that can be processed
+
+91
+00:03:49,350 --> 00:03:52,210
+by the server, machine 5.
+
+92
+00:03:52,210 --> 00:03:55,390
+We've seen that already when we studied M/M/1 queues.
+
+93
+00:03:55,390 --> 00:03:58,000
+This is why the system cannot be in steady state.
+
+94
+00:03:58,000 --> 00:04:01,330
+The amount of material in buffer 4 grows over time.
+
+95
+00:04:01,330 --> 00:04:02,980
+A finite amount of material appears
+
+96
+00:04:02,980 --> 00:04:05,110
+downstream of the bottleneck.
+
+97
+00:04:05,110 --> 00:04:07,120
+Since machine 5 is the bottleneck,
+
+98
+00:04:07,120 --> 00:04:10,000
+the rate of flow of parts leaving machine 5
+
+99
+00:04:10,000 --> 00:04:12,820
+is less than the capacity of machine 6.
+
+100
+00:04:12,820 --> 00:04:15,040
+Since the rate of flow arriving at the buffer
+
+101
+00:04:15,040 --> 00:04:19,390
+5 machine 6 system is within the capacity of the server, machine
+
+102
+00:04:19,390 --> 00:04:23,650
+6, the buffer level does not grow steadily over time.
+
+103
+00:04:23,650 --> 00:04:26,380
+If there were more machines downstream faster than machine
+
+104
+00:04:26,380 --> 00:04:29,200
+5, the arrival rate to each of those machines
+
+105
+00:04:29,200 --> 00:04:31,210
+would be less than their capacity.
+
+106
+00:04:31,210 --> 00:04:32,770
+Consequently, their buffer levels
+
+107
+00:04:32,770 --> 00:04:35,300
+would also not grow steadily over time.
+
+108
+00:04:35,300 --> 00:04:37,960
+Let's do an example.
+
+109
+00:04:37,960 --> 00:04:41,710
+We're going to simulate this 10-machine line
+
+110
+00:04:41,710 --> 00:04:43,440
+with a bottleneck.
+
+111
+00:04:43,440 --> 00:04:45,730
+The parameters of all the machines
+
+112
+00:04:45,730 --> 00:04:49,000
+other than the bottleneck, which is machine 10,
+
+113
+00:04:49,000 --> 00:04:52,630
+are r equals 0.1 and P equals 0.01.
+
+114
+00:04:52,630 --> 00:04:57,922
+For machine 10, r equals 0.1, and P equals 0.03.
+
+115
+00:04:57,922 --> 00:05:01,130
+Therefore, the efficiencies, or production rates,
+
+116
+00:05:01,130 --> 00:05:05,870
+of all the machines other than machine 10 are 0.909.
+
+117
+00:05:05,870 --> 00:05:09,615
+And the production rate of machine 10 is 0.769.
+
+118
+00:05:09,615 --> 00:05:12,570
+This is a graph of the levels of each of the buffers in the line
+
+119
+00:05:12,570 --> 00:05:14,280
+we're simulating.
+
+120
+00:05:14,280 --> 00:05:16,950
+The horizontal axis is of the time, measured
+
+121
+00:05:16,950 --> 00:05:19,080
+in units of operation times.
+
+122
+00:05:19,080 --> 00:05:21,140
+The vertical axis is the amount of inventory
+
+123
+00:05:21,140 --> 00:05:23,010
+in all of the buffers.
+
+124
+00:05:23,010 --> 00:05:28,290
+All the buffer levels except that of buffer 9 remain small.
+
+125
+00:05:28,290 --> 00:05:31,500
+Buffer 9, the buffer upstream of the bottleneck,
+
+126
+00:05:31,500 --> 00:05:34,480
+increases roughly linearly over time.
+
+127
+00:05:34,480 --> 00:05:37,260
+It's not exactly a straight line because of the random failures
+
+128
+00:05:37,260 --> 00:05:38,970
+in repairs.
+
+129
+00:05:38,970 --> 00:05:41,550
+The buffer level grows for the reasons discussed earlier
+
+130
+00:05:41,550 --> 00:05:43,560
+in slide 18.
+
+131
+00:05:43,560 --> 00:05:46,000
+So now let's ask, what is the rate of growth of n
+
+132
+00:05:46,000 --> 00:05:49,900
+9, the inventory in buffer 9?
+
+133
+00:05:49,900 --> 00:05:51,940
+I suggest that you think about this question
+
+134
+00:05:51,940 --> 00:05:54,070
+before moving on to the next slide, in which I
+
+135
+00:05:54,070 --> 00:05:55,820
+will reveal the answer.
+
+136
+00:05:55,820 --> 00:05:58,610
+So pause the video and give it some thought.
+
+137
+00:05:58,610 --> 00:06:01,670
+So the question is, what is the rate of growth
+
+138
+00:06:01,670 --> 00:06:05,580
+of n9, the inventory in B9?
+
+139
+00:06:05,580 --> 00:06:08,670
+To get the answer, we observe that the rate that parts
+
+140
+00:06:08,670 --> 00:06:12,850
+arrive at buffer 9 is 0.909.
+
+141
+00:06:12,850 --> 00:06:16,270
+The rate that parts leave, which is the rate that machine 10 can
+
+142
+00:06:16,270 --> 00:06:19,960
+process them, is 0.769.
+
+143
+00:06:19,960 --> 00:06:24,250
+Therefore, the rate of increase is 0.909 minus 0.769,
+
+144
+00:06:24,250 --> 00:06:28,790
+which is 0.14 parts per operation time.
+
+145
+00:06:28,790 --> 00:06:30,370
+So here's a question.
+
+146
+00:06:30,370 --> 00:06:33,760
+What happens when the buffers are large but finite?
+
+147
+00:06:33,760 --> 00:06:36,340
+Let's examine that question and temporarily depart
+
+148
+00:06:36,340 --> 00:06:38,650
+from the infinite buffer assumption.
+
+149
+00:06:38,650 --> 00:06:41,140
+If you would like to test your intuition again,
+
+150
+00:06:41,140 --> 00:06:44,890
+pause the video and see if you can come up with a hypothesis.
+
+151
+00:06:44,890 --> 00:06:47,800
+The answer is the last buffer gains material
+
+152
+00:06:47,800 --> 00:06:49,630
+until it becomes full.
+
+153
+00:06:49,630 --> 00:06:52,330
+Then, the next to last buffer gains material until it
+
+154
+00:06:52,330 --> 00:06:54,190
+becomes full.
+
+155
+00:06:54,190 --> 00:06:57,740
+This process keeps repeating until all the buffers are full.
+
+156
+00:06:57,740 --> 00:07:00,340
+Let's take a look at the graph on the next slide.
+
+157
+00:07:00,340 --> 00:07:02,810
+This is a graph of the simulation of the line.
+
+158
+00:07:02,810 --> 00:07:05,050
+All the buffer sizes are 5,000.
+
+159
+00:07:05,050 --> 00:07:07,340
+The machines are the same as before.
+
+160
+00:07:07,340 --> 00:07:10,750
+If you compare this graph with the one on slide 20,
+
+161
+00:07:10,750 --> 00:07:13,300
+keep in mind that both the horizontal and vertical scales
+
+162
+00:07:13,300 --> 00:07:14,630
+are very different.
+
+163
+00:07:14,630 --> 00:07:15,670
+So what happens?
+
+164
+00:07:15,670 --> 00:07:21,140
+First, buffer 9 gains material at rate 0.14 and then fills up.
+
+165
+00:07:21,140 --> 00:07:24,760
+It gets full at roughly 35,000 or so time steps.
+
+166
+00:07:24,760 --> 00:07:27,370
+When buffer 9 becomes full, buffer 8
+
+167
+00:07:27,370 --> 00:07:31,000
+starts gaining material, also at rate 0.14
+
+168
+00:07:31,000 --> 00:07:35,860
+and then fills up after another 35,000 or so time steps.
+
+169
+00:07:35,860 --> 00:07:37,990
+This continues until each buffer gets
+
+170
+00:07:37,990 --> 00:07:42,070
+full from the end of the line to the beginning.
+
+171
+00:07:42,070 --> 00:07:45,310
+Note that the buffers do not stay exactly full.
+
+172
+00:07:45,310 --> 00:07:48,610
+Because of failures upstream, they lose some material.
+
+173
+00:07:48,610 --> 00:07:51,280
+Then they become full again because of downstream failures.
+
+174
+00:07:51,280 --> 00:07:53,770
+But they always stay close to full.
+
+175
+00:07:53,770 --> 00:07:57,410
+When buffer 1 finally becomes full, machine 1 is blocked.
+
+176
+00:07:57,410 --> 00:08:00,220
+Parts are prevented from entering the system.
+
+177
+00:08:00,220 --> 00:08:04,000
+The production rate of this line is less than 0.769,
+
+178
+00:08:04,000 --> 00:08:07,080
+which was the production rate of the bottleneck,
+
+179
+00:08:07,080 --> 00:08:09,250
+because of the parts that don't get into it.
+
+180
+00:08:09,250 --> 00:08:09,750
+OK.
+
+181
+00:08:09,750 --> 00:08:12,980
+Let's get back to infinite buffers.
+
+182
+00:08:12,980 --> 00:08:16,130
+The second bottleneck is the slowest machine upstream
+
+183
+00:08:16,130 --> 00:08:17,940
+of the bottleneck.
+
+184
+00:08:17,940 --> 00:08:21,275
+It's not necessarily the second slowest machine in the line.
+
+185
+00:08:21,275 --> 00:08:23,240
+A machine downstream of the bottleneck
+
+186
+00:08:23,240 --> 00:08:25,760
+could be the second slowest.
+
+187
+00:08:25,760 --> 00:08:27,200
+We will assume that the bottleneck
+
+188
+00:08:27,200 --> 00:08:30,570
+and the second bottleneck are unique.
+
+189
+00:08:30,570 --> 00:08:32,280
+Machine 10 is the bottleneck.
+
+190
+00:08:32,280 --> 00:08:36,510
+Machine 5 is the second bottleneck in this picture.
+
+191
+00:08:36,510 --> 00:08:38,280
+From now on, when we have to, we'll
+
+192
+00:08:38,280 --> 00:08:40,409
+call the bottleneck the first bottleneck.
+
+193
+00:08:40,409 --> 00:08:43,169
+Since buffers 5 through 9 are infinite,
+
+194
+00:08:43,169 --> 00:08:45,900
+buffer 5 will never be full.
+
+195
+00:08:45,900 --> 00:08:49,680
+Consequently, what happens downstream of buffer 5
+
+196
+00:08:49,680 --> 00:08:53,710
+does not have any effect on what happens upstream of buffer 5.
+
+197
+00:08:53,710 --> 00:08:56,490
+Therefore, the part of the line from machine 1 to machine 5
+
+198
+00:08:56,490 --> 00:09:00,120
+is the infinite buffer line with a bottleneck at machine 5.
+
+199
+00:09:00,120 --> 00:09:02,700
+From what we've learned about lines with infinite buffers
+
+200
+00:09:02,700 --> 00:09:05,730
+and bottlenecks, the amount of material in buffer 4
+
+201
+00:09:05,730 --> 00:09:08,050
+increases steadily without limit.
+
+202
+00:09:08,050 --> 00:09:10,140
+So an increasing amount of inventory
+
+203
+00:09:10,140 --> 00:09:14,350
+accumulates just upstream of the second bottleneck.
+
+204
+00:09:14,350 --> 00:09:16,190
+A finite amount of inventory appears
+
+205
+00:09:16,190 --> 00:09:18,130
+between the second bottleneck and the machine
+
+206
+00:09:18,130 --> 00:09:19,880
+upstream of the first bottleneck.
+
+207
+00:09:19,880 --> 00:09:23,470
+Since machines 6, 7, 8, and 9 are all faster
+
+208
+00:09:23,470 --> 00:09:27,250
+than machine 5, the levels in buffers 6, 7, 8, and 9
+
+209
+00:09:27,250 --> 00:09:30,180
+do not increase steadily over time.
+
+210
+00:09:30,180 --> 00:09:31,620
+An increasing amount of inventory
+
+211
+00:09:31,620 --> 00:09:33,420
+accumulates in the buffer just upstream
+
+212
+00:09:33,420 --> 00:09:34,697
+of the first bottleneck.
+
+213
+00:09:34,697 --> 00:09:36,030
+Of course, we already knew that.
+
+214
+00:09:36,030 --> 00:09:37,240
+That's what happens.
+
+215
+00:09:37,240 --> 00:09:39,330
+That's what we've been describing earlier.
+
+216
+00:09:39,330 --> 00:09:41,220
+A finite amount of inventory appears
+
+217
+00:09:41,220 --> 00:09:43,140
+downstream of the first bottleneck-- again,
+
+218
+00:09:43,140 --> 00:09:44,370
+for the same reason.
+
+219
+00:09:44,370 --> 00:09:46,710
+If there were machines in buffers downstream of machine
+
+220
+00:09:46,710 --> 00:09:49,274
+10, they would be faster than machine 10.
+
+221
+00:09:49,274 --> 00:09:50,940
+So the amount of material in the buffers
+
+222
+00:09:50,940 --> 00:09:52,990
+would not increase over time.
+
+223
+00:09:52,990 --> 00:09:55,350
+So let's do a simulation of this.
+
+224
+00:09:55,350 --> 00:09:59,490
+Here, we have our line with two bottlenecks.
+
+225
+00:09:59,490 --> 00:10:02,180
+All the machines except machine 5 and 10
+
+226
+00:10:02,180 --> 00:10:04,740
+have the same parameters as most of the machines
+
+227
+00:10:04,740 --> 00:10:09,420
+in the last one, in which r was 0.01 and p was 0.01.
+
+228
+00:10:09,420 --> 00:10:14,340
+For machine 5, r is 0.01, and p is 0.02.
+
+229
+00:10:14,340 --> 00:10:21,040
+And for machine 10, r is 0.01 and p is 0.03 again.
+
+230
+00:10:21,040 --> 00:10:23,850
+Therefore, the production rates of all the machines
+
+231
+00:10:23,850 --> 00:10:28,870
+other than the first and second bottleneck are 0.909.
+
+232
+00:10:28,870 --> 00:10:31,960
+The production rate of machine 5 is 0,833,
+
+233
+00:10:31,960 --> 00:10:33,940
+and the production rate of machine 10--
+
+234
+00:10:33,940 --> 00:10:37,290
+the bottleneck-- is 0.769.
+
+235
+00:10:37,290 --> 00:10:40,730
+So here's the usual graph that we've been drawing.
+
+236
+00:10:40,730 --> 00:10:44,870
+It's drawn with the same scale as the first graph
+
+237
+00:10:44,870 --> 00:10:47,720
+that we showed, so you can compare them if you like.
+
+238
+00:10:47,720 --> 00:10:49,970
+Just to remind you, the production rate of machine 10
+
+239
+00:10:49,970 --> 00:10:52,550
+is less than that of machine 5.
+
+240
+00:10:52,550 --> 00:10:55,220
+But the level of buffer 4, the buffer upstream
+
+241
+00:10:55,220 --> 00:10:57,380
+of the second bottleneck, is greater
+
+242
+00:10:57,380 --> 00:11:00,260
+than the level of buffer 9, the buffer upstream
+
+243
+00:11:00,260 --> 00:11:02,440
+of the first bottleneck.
+
+244
+00:11:02,440 --> 00:11:04,180
+Does this seem counter-intuitive?
+
+245
+00:11:04,180 --> 00:11:05,880
+Why should this be?
+
+246
+00:11:05,880 --> 00:11:09,120
+Well, to look at the rates of growth of buffer 4
+
+247
+00:11:09,120 --> 00:11:13,580
+and buffer 9, the rate of growth of buffer 4
+
+248
+00:11:13,580 --> 00:11:18,780
+is 0.909 minus 0.833, by the same logic as we had earlier.
+
+249
+00:11:18,780 --> 00:11:21,870
+And that's 0.076.
+
+250
+00:11:21,870 --> 00:11:27,900
+Now, remember that the rate of flow into buffer 9
+
+251
+00:11:27,900 --> 00:11:29,760
+is not 0.909 anymore.
+
+252
+00:11:29,760 --> 00:11:33,030
+It's 0.833 because that's the rate that parts
+
+253
+00:11:33,030 --> 00:11:35,850
+are leaving machine 5.
+
+254
+00:11:35,850 --> 00:11:41,130
+So the rate of growth of buffer 9 is 0.833 minus 0.769,
+
+255
+00:11:41,130 --> 00:11:45,880
+which is 0.064 so that when t is large enough,
+
+256
+00:11:45,880 --> 00:11:47,760
+the level of buffer 4 is going to be greater
+
+257
+00:11:47,760 --> 00:11:49,650
+than the level of buffer 9.
+
+258
+00:11:49,650 --> 00:11:51,600
+So that, is in this case, the buffer
+
+259
+00:11:51,600 --> 00:11:53,910
+before the second bottleneck accumulates material
+
+260
+00:11:53,910 --> 00:11:56,670
+faster than the buffer before the first bottleneck.
+
+261
+00:11:56,670 --> 00:11:59,110
+But that's not a general rule.
+
+262
+00:11:59,110 --> 00:12:02,440
+The rate of growth of both of those first and second
+
+263
+00:12:02,440 --> 00:12:06,580
+bottleneck buffers depend on the parameters of the machines.
+
+264
+00:12:06,580 --> 00:12:08,440
+It's tempting to believe that the easiest
+
+265
+00:12:08,440 --> 00:12:10,660
+way to find the bottleneck of a line
+
+266
+00:12:10,660 --> 00:12:13,750
+is to look for the greatest accumulation of inventory.
+
+267
+00:12:13,750 --> 00:12:15,250
+Is that correct?
+
+268
+00:12:15,250 --> 00:12:16,600
+Evidently not.
+
+269
+00:12:16,600 --> 00:12:19,600
+Machine 10 was the bottleneck, and machine 5
+
+270
+00:12:19,600 --> 00:12:21,190
+was the second bottleneck.
+
+271
+00:12:21,190 --> 00:12:24,790
+But buffer 4 has more material in it than buffer 9.
+
+272
+00:12:24,790 --> 00:12:28,150
+So let's ask my improvement questions again.
+
+273
+00:12:28,150 --> 00:12:30,460
+If we want to increase the production rate of a line,
+
+274
+00:12:30,460 --> 00:12:33,144
+which machine should we improve?
+
+275
+00:12:33,144 --> 00:12:34,810
+What would happen to the production rate
+
+276
+00:12:34,810 --> 00:12:37,866
+if we improved any other machine?
+
+277
+00:12:37,866 --> 00:12:39,490
+I will answer the question in a moment.
+
+278
+00:12:39,490 --> 00:12:42,180
+But I strongly suggest that you stop the video before you hear
+
+279
+00:12:42,180 --> 00:12:44,460
+my answers, think about them, and come up
+
+280
+00:12:44,460 --> 00:12:46,020
+with your own answers.
+
+281
+00:12:46,020 --> 00:12:47,040
+OK.
+
+282
+00:12:47,040 --> 00:12:48,480
+I gave you my spoiler alert.
+
+283
+00:12:48,480 --> 00:12:49,809
+Here come the answers.
+
+284
+00:12:49,809 --> 00:12:51,600
+If we want to increase the production rate,
+
+285
+00:12:51,600 --> 00:12:53,610
+which machine should we improve?
+
+286
+00:12:53,610 --> 00:12:55,290
+The answer is the bottleneck.
+
+287
+00:12:55,290 --> 00:12:58,020
+The production rate of the line with infinite buffers
+
+288
+00:12:58,020 --> 00:12:59,560
+is that of the bottleneck.
+
+289
+00:12:59,560 --> 00:13:01,170
+So any increase of the production rate
+
+290
+00:13:01,170 --> 00:13:03,794
+of the bottleneck will increase the production rate of the line
+
+291
+00:13:03,794 --> 00:13:06,000
+by that same amount.
+
+292
+00:13:06,000 --> 00:13:07,074
+Second question.
+
+293
+00:13:07,074 --> 00:13:09,240
+What would happen to the production rate of the line
+
+294
+00:13:09,240 --> 00:13:13,260
+if we improved any other machine?
+
+295
+00:13:13,260 --> 00:13:17,300
+Stop me again if you want to think about this one.
+
+296
+00:13:17,300 --> 00:13:19,710
+The answer is nothing.
+
+297
+00:13:19,710 --> 00:13:22,670
+The line's production rate is that of the slowest machine.
+
+298
+00:13:22,670 --> 00:13:25,160
+Speeding up any other machine's production rate
+
+299
+00:13:25,160 --> 00:13:28,520
+has no effect on the line's production rate.
+
+300
+00:13:28,520 --> 00:13:32,900
+But these answers do not apply to lines with finite buffers.
+
+301
+00:13:32,900 --> 00:13:35,910
+Let's talk a little bit about simulation.
+
+302
+00:13:35,910 --> 00:13:38,610
+The simulations shown here were discrete-time rather than
+
+303
+00:13:38,610 --> 00:13:40,260
+discrete-event simulation.
+
+304
+00:13:40,260 --> 00:13:43,230
+I'll describe discrete-time simulation.
+
+305
+00:13:43,230 --> 00:13:46,290
+Discrete-time simulations are easier to program
+
+306
+00:13:46,290 --> 00:13:48,720
+but less general, less accurate, and slower
+
+307
+00:13:48,720 --> 00:13:50,940
+than discrete-event simulations.
+
+308
+00:13:50,940 --> 00:13:54,000
+Discrete-time simulations are easiest to write for systems
+
+309
+00:13:54,000 --> 00:13:57,840
+where all event times are geometrically distributed.
+
+310
+00:13:57,840 --> 00:14:00,390
+Commercial simulation code is always discrete-event
+
+311
+00:14:00,390 --> 00:14:03,220
+because it's faster and more flexible.
+
+312
+00:14:03,220 --> 00:14:05,389
+If you need to simulate a very simple system,
+
+313
+00:14:05,389 --> 00:14:07,180
+however, it's sometimes preferable to write
+
+314
+00:14:07,180 --> 00:14:09,380
+the simulation yourself.
+
+315
+00:14:09,380 --> 00:14:13,720
+Here's a very brief introduction to discrete-time simulation.
+
+316
+00:14:13,720 --> 00:14:15,520
+Assume that some event occurs according
+
+317
+00:14:15,520 --> 00:14:17,950
+to a geometric probability distribution,
+
+318
+00:14:17,950 --> 00:14:22,400
+and it has a mean time to occur of t time steps.
+
+319
+00:14:22,400 --> 00:14:25,520
+Then the probability that it occurs in any given time step
+
+320
+00:14:25,520 --> 00:14:29,840
+is p equals 1 over T. The discrete-time simulation logic
+
+321
+00:14:29,840 --> 00:14:34,030
+is at each time step, choose x--
+
+322
+00:14:34,030 --> 00:14:39,670
+a uniformly distributed random number between 0 and 1.
+
+323
+00:14:39,670 --> 00:14:43,150
+If x is less than p, the event has occurred.
+
+324
+00:14:43,150 --> 00:14:46,810
+Change the state of the system accordingly.
+
+325
+00:14:46,810 --> 00:14:50,440
+If x is greater than p, the event has not occurred.
+
+326
+00:14:50,440 --> 00:14:53,870
+Change the state according to this.
+
+327
+00:14:53,870 --> 00:14:56,600
+If x is chosen in this way, then the probability
+
+328
+00:14:56,600 --> 00:14:59,300
+that the event has occurred is p.
+
+329
+00:14:59,300 --> 00:15:01,770
+We'll discuss simulation a little more in the second part
+
+330
+00:15:01,770 --> 00:15:03,470
+of the course.
+

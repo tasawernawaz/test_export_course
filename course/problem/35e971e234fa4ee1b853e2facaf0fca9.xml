@@ -1,0 +1,16 @@
+<problem display_name="Question 3" markdown="&gt;&gt;Which of the following is most likely to happen if \(\rho &gt; 1\) in a system with an infinite queue?  (\(\rho\) is the utilization of the system.)&lt;&lt;&#10;&#10;( ) The line will go to 0&#10;(x) The line will grow to infinity&#10;( ) The wait time will go to 0.&#10;&#10;[explanation]&#10;If \(\rho&gt;1\), then there people are arriving into the system at a higher rate than people leaving the system. The line will most likely continue to grow to infinity.&#10;[explanation]&#10;" max_attempts="2" showanswer="finished" weight="1.0">
+  <multiplechoiceresponse>
+    <label>Which of the following is most likely to happen if \(\rho &gt; 1\) in a system with an infinite queue?  (\(\rho\) is the utilization of the system.)</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">The line will go to 0</choice>
+      <choice correct="true">The line will grow to infinity</choice>
+      <choice correct="false">The wait time will go to 0.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>If \(\rho&gt;1\), then there people are arriving into the system at a higher rate than people leaving the system. The line will most likely continue to grow to infinity.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

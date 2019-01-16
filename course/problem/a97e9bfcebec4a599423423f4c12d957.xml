@@ -1,0 +1,16 @@
+<problem display_name="Question 3" markdown="&gt;&gt;Why did a failing of a sub-assembly cause downstream machines to stop? &lt;&lt;&#10;&#10;( ) Equipment was mechanically linked, and downstream machines would break in series.&#10;(x) Downstream machines would be given no more product to work on.&#10;( ) Incomplete pallets continued to be fed to downstream machines and would jam the machines.&#10;&#10;&#10;[Explanation]&#10;With little to no buffer between sub-assemblies, when one sub-assembly would break down, upstream machines would soon run out of space to put their output and downstream machines could only work on the parts that were on the assembly line and had just been finished by the sub-assembly that just broke.&#10;[Explanation]" max_attempts="2">
+  <multiplechoiceresponse>
+    <label>Why did a failing of a sub-assembly cause downstream machines to stop? </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Equipment was mechanically linked, and downstream machines would break in series.</choice>
+      <choice correct="true">Downstream machines would be given no more product to work on.</choice>
+      <choice correct="false">Incomplete pallets continued to be fed to downstream machines and would jam the machines.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>With little to no buffer between sub-assemblies, when one sub-assembly would break down, upstream machines would soon run out of space to put their output and downstream machines could only work on the parts that were on the assembly line and had just been finished by the sub-assembly that just broke.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

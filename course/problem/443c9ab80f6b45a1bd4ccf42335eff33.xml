@@ -1,0 +1,19 @@
+<problem display_name="Part 6" markdown="null" max_attempts="3" showanswer="finished" weight="0.0">
+  <p> Jane’s other job is grading calculus assignments. It takes her about five minutes to grade each assignment. She spends her idle time at the food court grading. How many papers per hour can she grade while working at the food court? </p>
+  <numericalresponse answer="4">
+    <label>\(\mu = \)</label>
+    <responseparam type="tolerance" default="0.1"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>
+        <span style="font-size: 1em;">
+          As the faction of idle time is 0.3333, the processing time of grading is 5/60 hour per homework.
+Then the process rate of idle time is \(\mu = 0.3333 × \frac{60}{5} = 4 (/hr )\) .
+        </span>
+      </p>
+    </div>
+  </solution>
+</problem>

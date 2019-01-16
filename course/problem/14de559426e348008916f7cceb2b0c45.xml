@@ -1,0 +1,15 @@
+<problem display_name="Question 1" markdown="&gt;&gt;Continuous random variables can take on an infinite number of distinct values. &lt;&lt;&#10;&#10;(x) True&#10;( ) False&#10;&#10;&#10;[Explanation]&#10;Refer to slide 47. For any given point in the space, we can put a small square around it. If you shrink that square in such a way that the given point is always inside the square, and if the probability of the square is always very close to proportional to the area of the square, then the random variable can take on the value of that point.  Because there are an infinite number of such points, we can be convinced that continuous random variables can take on an infinite number of distinct values. [Explanation]" max_attempts="1" showanswer="attempted" weight="1.0">
+  <multiplechoiceresponse>
+    <label>Continuous random variables can take on an infinite number of distinct values. </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">True</choice>
+      <choice correct="false">False</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Refer to slide 47. For any given point in the space, we can put a small square around it. If you shrink that square in such a way that the given point is always inside the square, and if the probability of the square is always very close to proportional to the area of the square, then the random variable can take on the value of that point.  Because there are an infinite number of such points, we can be convinced that continuous random variables can take on an infinite number of distinct values. </p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

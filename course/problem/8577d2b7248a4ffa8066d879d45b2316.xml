@@ -1,0 +1,11 @@
+<problem display_name="Part 3" markdown="Calculate upper and lower bounds on the production rate of the line (Round to 2 decimal places).&#10;&#10;&gt;&gt;\(E_{LB}\)&lt;&lt;&#10;&#10;= 0.625&#10;&#10;&gt;&gt;\(E_{UB}\)&lt;&lt;&#10;=0.833" max_attempts="3" showanswer="never" weight="5.0">
+  <p>Calculate upper and lower bounds on the production rate of the line (Round to 2 decimal places).</p>
+  <label>\(E_{LB}\)</label>
+  <numericalresponse answer="0.625">
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>\(E_{UB}\)</label>
+  <numericalresponse answer="0.833">
+    <formulaequationinput/>
+  </numericalresponse>
+</problem>

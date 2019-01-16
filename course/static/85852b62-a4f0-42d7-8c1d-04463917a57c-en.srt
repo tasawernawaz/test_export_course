@@ -1,0 +1,616 @@
+0
+00:00:00,000 --> 00:00:03,620
+
+
+1
+00:00:03,620 --> 00:00:06,550
+Let's add some realism to the model we just discussed.
+
+2
+00:00:06,550 --> 00:00:08,470
+We will consider two new issues.
+
+3
+00:00:08,470 --> 00:00:11,010
+First, the factory orders were material,
+
+4
+00:00:11,010 --> 00:00:12,840
+but it does not arrive until some time has
+
+5
+00:00:12,840 --> 00:00:13,840
+passed-- the lead time.
+
+6
+00:00:13,840 --> 00:00:16,626
+
+
+7
+00:00:16,626 --> 00:00:18,000
+If everything were deterministic,
+
+8
+00:00:18,000 --> 00:00:19,280
+this would not be a problem.
+
+9
+00:00:19,280 --> 00:00:22,820
+Just order a bit earlier than we would have, otherwise.
+
+10
+00:00:22,820 --> 00:00:26,850
+But the second issue is that demand is random.
+
+11
+00:00:26,850 --> 00:00:28,530
+The problem is that the demand that
+
+12
+00:00:28,530 --> 00:00:30,780
+occurs between when the order is placed
+
+13
+00:00:30,780 --> 00:00:33,360
+and when the goods are delivered might be large enough
+
+14
+00:00:33,360 --> 00:00:35,090
+to cause a stock-out.
+
+15
+00:00:35,090 --> 00:00:36,840
+A stock-out of a make-to-stock product
+
+16
+00:00:36,840 --> 00:00:39,600
+occurs when a customer arrives and finds that none
+
+17
+00:00:39,600 --> 00:00:41,960
+of the product is available.
+
+18
+00:00:41,960 --> 00:00:43,980
+There are other possible issues.
+
+19
+00:00:43,980 --> 00:00:45,950
+Lead time could be random, production quantity
+
+20
+00:00:45,950 --> 00:00:48,241
+could be random, and lots of other things could happen.
+
+21
+00:00:48,241 --> 00:00:51,350
+But we're not going to be discussing that.
+
+22
+00:00:51,350 --> 00:00:54,800
+This is a graph of the inventory and inventory
+
+23
+00:00:54,800 --> 00:00:57,860
+position versus time for a deterministic system.
+
+24
+00:00:57,860 --> 00:01:01,320
+
+
+25
+00:01:01,320 --> 00:01:03,350
+The horizontal axis is the time and days.
+
+26
+00:01:03,350 --> 00:01:07,520
+The vertical axis is the raw material inventory and units.
+
+27
+00:01:07,520 --> 00:01:09,170
+The raw material inventory position
+
+28
+00:01:09,170 --> 00:01:11,090
+is defined as the inventory in the factory,
+
+29
+00:01:11,090 --> 00:01:14,510
+plus the inventory that has been ordered but not yet arrived.
+
+30
+00:01:14,510 --> 00:01:16,160
+In this graph, we ignore the time
+
+31
+00:01:16,160 --> 00:01:18,537
+from when the supplier gets the order and when it ships.
+
+32
+00:01:18,537 --> 00:01:20,120
+That is we assume that the material is
+
+33
+00:01:20,120 --> 00:01:22,040
+shipped immediately.
+
+34
+00:01:22,040 --> 00:01:24,410
+The graph ignores all randomness.
+
+35
+00:01:24,410 --> 00:01:25,910
+For that reason, the factory order's
+
+36
+00:01:25,910 --> 00:01:28,250
+just enough so that the factory can exactly
+
+37
+00:01:28,250 --> 00:01:30,950
+meet the total customer demand between the time
+
+38
+00:01:30,950 --> 00:01:35,360
+the order arrives and the next time the inventory goes to 0.
+
+39
+00:01:35,360 --> 00:01:37,940
+One way of dealing with these new issues
+
+40
+00:01:37,940 --> 00:01:40,500
+is called the QR Policy.
+
+41
+00:01:40,500 --> 00:01:42,090
+We assume a fixed ordering costs,
+
+42
+00:01:42,090 --> 00:01:45,600
+like in the EOQ problem, a random demand,
+
+43
+00:01:45,600 --> 00:01:47,640
+like in the news vendor problem.
+
+44
+00:01:47,640 --> 00:01:49,740
+But the inventory retains its value.
+
+45
+00:01:49,740 --> 00:01:51,600
+It's not scrapped.
+
+46
+00:01:51,600 --> 00:01:54,420
+The inventory problem was really a one-day problem
+
+47
+00:01:54,420 --> 00:01:56,640
+that was repeated every day.
+
+48
+00:01:56,640 --> 00:01:58,320
+Now, we're dealing with one problem
+
+49
+00:01:58,320 --> 00:02:01,080
+that continues indefinitely over many lead times.
+
+50
+00:02:01,080 --> 00:02:03,840
+If there is raw material left just before the next shipment
+
+51
+00:02:03,840 --> 00:02:07,350
+arrives, that material can be used for future customers.
+
+52
+00:02:07,350 --> 00:02:09,479
+That makes this a true inventory problem.
+
+53
+00:02:09,479 --> 00:02:13,680
+
+
+54
+00:02:13,680 --> 00:02:15,630
+The product is a make-to-stock product.
+
+55
+00:02:15,630 --> 00:02:18,300
+There's no advanced ordering by customers.
+
+56
+00:02:18,300 --> 00:02:21,300
+The policy is when the inventory level
+
+57
+00:02:21,300 --> 00:02:26,550
+goes below R, order a quantity Q. The problem is
+
+58
+00:02:26,550 --> 00:02:30,360
+to find Q and R to minimize the ordering plus holding costs
+
+59
+00:02:30,360 --> 00:02:33,570
+while not losing too many sales to stock-out.
+
+60
+00:02:33,570 --> 00:02:35,970
+Here's a graph of inventory and inventory
+
+61
+00:02:35,970 --> 00:02:38,220
+position as a function of time.
+
+62
+00:02:38,220 --> 00:02:41,160
+This is a graph of inventory and inventory position
+
+63
+00:02:41,160 --> 00:02:44,580
+versus time under the conditions for the new problem.
+
+64
+00:02:44,580 --> 00:02:46,980
+The horizontal axis is time and days.
+
+65
+00:02:46,980 --> 00:02:49,740
+The vertical axis is raw material and units.
+
+66
+00:02:49,740 --> 00:02:53,940
+The red line is the actual inventory in the factory.
+
+67
+00:02:53,940 --> 00:02:56,370
+The blue line is the inventory position--
+
+68
+00:02:56,370 --> 00:02:59,930
+the material in the factory plus the material in transit.
+
+69
+00:02:59,930 --> 00:03:04,560
+Lines are not straight due to daily demand randomness.
+
+70
+00:03:04,560 --> 00:03:06,240
+The lead time is 50.
+
+71
+00:03:06,240 --> 00:03:08,265
+The demand has a very large daily variance.
+
+72
+00:03:08,265 --> 00:03:11,020
+
+
+73
+00:03:11,020 --> 00:03:14,480
+In this graph, R is equal to 150, and Q is 300.
+
+74
+00:03:14,480 --> 00:03:18,310
+That is when the inventory falls below 150, the factory
+
+75
+00:03:18,310 --> 00:03:20,710
+orders 300 from the supplier.
+
+76
+00:03:20,710 --> 00:03:23,500
+The time between orders is not fixed because it depends
+
+77
+00:03:23,500 --> 00:03:25,720
+on the demand, which is random.
+
+78
+00:03:25,720 --> 00:03:29,200
+The object in choosing R was to keep inventory non-negative.
+
+79
+00:03:29,200 --> 00:03:30,880
+But you can see that the policy failed
+
+80
+00:03:30,880 --> 00:03:35,980
+to do so between about day 125 until about day 140.
+
+81
+00:03:35,980 --> 00:03:38,230
+We need to determine Q and R. First,
+
+82
+00:03:38,230 --> 00:03:41,366
+we describe how to choose R. Let L be the number of days
+
+83
+00:03:41,366 --> 00:03:43,990
+between when the order is placed and when the shipment arrives.
+
+84
+00:03:43,990 --> 00:03:46,402
+The order lead time, L, is constant.
+
+85
+00:03:46,402 --> 00:03:48,499
+Let D be the total demand that arrives
+
+86
+00:03:48,499 --> 00:03:51,040
+between when an order is placed and when the shipment arrives
+
+87
+00:03:51,040 --> 00:03:52,770
+that sell days.
+
+88
+00:03:52,770 --> 00:03:55,130
+D is the random variable.
+
+89
+00:03:55,130 --> 00:03:58,780
+The order is placed when the inventory level goes below R.
+
+90
+00:03:58,780 --> 00:04:00,580
+The factory would like R to be greater
+
+91
+00:04:00,580 --> 00:04:03,250
+than the demand that arrives before the raw material
+
+92
+00:04:03,250 --> 00:04:04,670
+arrives.
+
+93
+00:04:04,670 --> 00:04:06,850
+But since the demand is random, the best we can do
+
+94
+00:04:06,850 --> 00:04:09,770
+is choose R, such that the probability that D is greater
+
+95
+00:04:09,770 --> 00:04:11,830
+than R is less than epsilon, where
+
+96
+00:04:11,830 --> 00:04:15,270
+epsilon is a small number.
+
+97
+00:04:15,270 --> 00:04:18,060
+The value of epsilon is a management decision.
+
+98
+00:04:18,060 --> 00:04:21,660
+Management has to decide how conservative they want to be.
+
+99
+00:04:21,660 --> 00:04:24,300
+If epsilon were small, it would be rare for a customer
+
+100
+00:04:24,300 --> 00:04:25,470
+to be disappointed.
+
+101
+00:04:25,470 --> 00:04:27,600
+But that would mean that R would be large.
+
+102
+00:04:27,600 --> 00:04:29,940
+That is there would be lots of inventory.
+
+103
+00:04:29,940 --> 00:04:32,610
+If management is not willing to carry a large inventory,
+
+104
+00:04:32,610 --> 00:04:34,050
+epsilon will have to be large.
+
+105
+00:04:34,050 --> 00:04:35,730
+And that means many customers will not
+
+106
+00:04:35,730 --> 00:04:37,271
+get what they want when they want it.
+
+107
+00:04:37,271 --> 00:04:39,970
+
+
+108
+00:04:39,970 --> 00:04:44,310
+It's convenient to write the last equation in this form.
+
+109
+00:04:44,310 --> 00:04:46,350
+If L is large enough, the central limit theorem
+
+110
+00:04:46,350 --> 00:04:48,340
+says that D is approximately normal,
+
+111
+00:04:48,340 --> 00:04:51,900
+regardless of the distribution of the daily demand.
+
+112
+00:04:51,900 --> 00:04:55,080
+In that case, we assume that D is normal with mean u and stand
+
+113
+00:04:55,080 --> 00:04:56,730
+deviation sigma.
+
+114
+00:04:56,730 --> 00:04:58,530
+The probability distribution of the demand
+
+115
+00:04:58,530 --> 00:05:00,720
+is given by this formula where phi
+
+116
+00:05:00,720 --> 00:05:03,540
+is the standard normal probability distribution.
+
+117
+00:05:03,540 --> 00:05:06,840
+Then we choose R to satisfy this inequality.
+
+118
+00:05:06,840 --> 00:05:09,450
+The smallest value of R that satisfies this
+
+119
+00:05:09,450 --> 00:05:11,620
+is given by this last equation.
+
+120
+00:05:11,620 --> 00:05:13,410
+Recall that in the EOQ formulation,
+
+121
+00:05:13,410 --> 00:05:15,420
+lambda was the yearly demand.
+
+122
+00:05:15,420 --> 00:05:18,040
+Here mu is the mean demand for L days.
+
+123
+00:05:18,040 --> 00:05:22,590
+Therefore, mu is equal to L lambda over 365.
+
+124
+00:05:22,590 --> 00:05:25,230
+We might want to adjust that in leap years.
+
+125
+00:05:25,230 --> 00:05:27,540
+A graph of R star is a function of epsilon
+
+126
+00:05:27,540 --> 00:05:29,421
+with mu equals 1,000, and sigma equals
+
+127
+00:05:29,421 --> 00:05:31,530
+100 is on the next slide.
+
+128
+00:05:31,530 --> 00:05:33,600
+The horizontal axis is epsilon, the fraction
+
+129
+00:05:33,600 --> 00:05:36,900
+of customers and that management is willing to let be unhappy.
+
+130
+00:05:36,900 --> 00:05:40,080
+The vertical axis is R. R is the reorder point.
+
+131
+00:05:40,080 --> 00:05:42,060
+As soon as the inventory drops below R,
+
+132
+00:05:42,060 --> 00:05:44,190
+we order more raw materials.
+
+133
+00:05:44,190 --> 00:05:47,860
+The graph shows that R decreases with epsilon.
+
+134
+00:05:47,860 --> 00:05:50,490
+Now we describe how to choose Q. It's almost the same as
+
+135
+00:05:50,490 --> 00:05:52,860
+in the EOQ formulation.
+
+136
+00:05:52,860 --> 00:05:57,420
+The expected time between orders is T equals Q over lambda.
+
+137
+00:05:57,420 --> 00:06:00,660
+The expected number of days in a year is lambda over Q.
+
+138
+00:06:00,660 --> 00:06:03,210
+Therefore, the expected ordering cost in a year
+
+139
+00:06:03,210 --> 00:06:06,210
+is S lambda over Q.
+
+140
+00:06:06,210 --> 00:06:08,490
+Assume that the holding cost for material in transit
+
+141
+00:06:08,490 --> 00:06:11,160
+is the same as for inventory in the factory.
+
+142
+00:06:11,160 --> 00:06:14,380
+This is not actually an important assumption.
+
+143
+00:06:14,380 --> 00:06:17,567
+The average inventory position is R plus Q over 2.
+
+144
+00:06:17,567 --> 00:06:19,150
+And the average inventory holding cost
+
+145
+00:06:19,150 --> 00:06:21,090
+is h times R plus Q over 2.
+
+146
+00:06:21,090 --> 00:06:24,110
+
+
+147
+00:06:24,110 --> 00:06:25,600
+Therefore, we choose Q to minimize
+
+148
+00:06:25,600 --> 00:06:28,720
+the approximate expected annual cost, which
+
+149
+00:06:28,720 --> 00:06:31,020
+is given by this equation.
+
+150
+00:06:31,020 --> 00:06:33,670
+But since R is constant for this purpose,
+
+151
+00:06:33,670 --> 00:06:35,970
+this is essentially the same as the EOQ problem
+
+152
+00:06:35,970 --> 00:06:40,200
+for determining Q, which is Q is equal to the square root
+
+153
+00:06:40,200 --> 00:06:42,950
+of 2s lambda over h.
+

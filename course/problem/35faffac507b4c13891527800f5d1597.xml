@@ -1,0 +1,17 @@
+<problem display_name="Concept Check 1" markdown="&gt;&gt;Which of the following statements of storage are true?&lt;&lt;&#10;[x] Human body is a system of energy storage.&#10;[x] The supermarket requires inventory because of the uncertainty associated with product demand.&#10;[x] The storage system can increase the reliability and stability of complex system.&#10;[x] Storage comes with risk and cost.&#10;&#10;[explanation]&#10;Human body is a energy storage system; No-synchronization is the cause of inventory; The purpose of storage is to reduce the instability and fragility of complex, expensive system; Storage comes with risks(demanding risk, theft/loss/natural damage) and cost(operating, warehouse holding fees). Thus, all of them are correct.&#10;[explanation]" max_attempts="3" showanswer="attempted" weight="1.0">
+  <choiceresponse>
+    <label>Which of the following statements of storage are true?</label>
+    <checkboxgroup>
+      <choice correct="true">Human body is a system of energy storage.</choice>
+      <choice correct="true">The supermarket requires inventory because of the uncertainty associated with product demand.</choice>
+      <choice correct="true">The storage system can increase the reliability and stability of complex system.</choice>
+      <choice correct="true">Storage comes with risk and cost.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Human body is a energy storage system; No-synchronization is the cause of inventory; The purpose of storage is to reduce the instability and fragility of complex, expensive system; Storage comes with risks(demanding risk, theft/loss/natural damage) and cost(operating, warehouse holding fees). Thus, all of them are correct.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

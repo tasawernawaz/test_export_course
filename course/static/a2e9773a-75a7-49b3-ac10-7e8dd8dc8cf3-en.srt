@@ -1,0 +1,404 @@
+0
+00:00:00,000 --> 00:00:01,380
+
+
+1
+00:00:01,380 --> 00:00:03,547
+Since there's so much randomness in factories,
+
+2
+00:00:03,547 --> 00:00:05,130
+we're devoting this week to cover some
+
+3
+00:00:05,130 --> 00:00:07,660
+of the basics of probability.
+
+4
+00:00:07,660 --> 00:00:09,630
+So let's start off with a trick question.
+
+5
+00:00:09,630 --> 00:00:12,450
+Suppose I flip a coin 100 times and it comes up heads
+
+6
+00:00:12,450 --> 00:00:14,309
+each time.
+
+7
+00:00:14,309 --> 00:00:16,350
+What's the probability that it will come up heads
+
+8
+00:00:16,350 --> 00:00:17,970
+the next time?
+
+9
+00:00:17,970 --> 00:00:22,845
+Who thinks that the answer is one half, or 50% of the time?
+
+10
+00:00:22,845 --> 00:00:24,720
+On the other hand, who thinks that the answer
+
+11
+00:00:24,720 --> 00:00:25,850
+is almost certain?
+
+12
+00:00:25,850 --> 00:00:30,170
+
+
+13
+00:00:30,170 --> 00:00:31,700
+Another way of asking the question
+
+14
+00:00:31,700 --> 00:00:34,190
+is to ask how much you would be willing to bet
+
+15
+00:00:34,190 --> 00:00:37,160
+that the next flip will be heads.
+
+16
+00:00:37,160 --> 00:00:40,190
+Suppose I said that if you bet on heads and it came up heads,
+
+17
+00:00:40,190 --> 00:00:42,140
+I would give you $1.
+
+18
+00:00:42,140 --> 00:00:44,120
+If you said one half to the first question,
+
+19
+00:00:44,120 --> 00:00:46,203
+you would probably say that you would bet anything
+
+20
+00:00:46,203 --> 00:00:47,200
+less than $1.
+
+21
+00:00:47,200 --> 00:00:49,700
+If you said that it was almost certain that it would come up
+
+22
+00:00:49,700 --> 00:00:52,610
+heads, you'd be willing to bet any amount, more or less
+
+23
+00:00:52,610 --> 00:00:55,490
+than $1, since you're almost certain to get that dollar back
+
+24
+00:00:55,490 --> 00:00:56,780
+no matter how much you bet.
+
+25
+00:00:56,780 --> 00:00:59,782
+
+
+26
+00:00:59,782 --> 00:01:01,740
+Still, another way of talking about probability
+
+27
+00:01:01,740 --> 00:01:04,185
+is to ask, what betting odds would you demand?
+
+28
+00:01:04,185 --> 00:01:07,210
+
+
+29
+00:01:07,210 --> 00:01:08,640
+So these were all trick questions
+
+30
+00:01:08,640 --> 00:01:11,610
+because I didn't explain the problem fully.
+
+31
+00:01:11,610 --> 00:01:14,220
+If your estimate was one half, then
+
+32
+00:01:14,220 --> 00:01:17,580
+you actually made the assumption that the coin was fair.
+
+33
+00:01:17,580 --> 00:01:19,410
+Since the outcome of each flip is
+
+34
+00:01:19,410 --> 00:01:23,190
+independent of the outcomes of previous flips,
+
+35
+00:01:23,190 --> 00:01:25,200
+the probability is one half.
+
+36
+00:01:25,200 --> 00:01:27,510
+You treated this question as a probability problem.
+
+37
+00:01:27,510 --> 00:01:30,570
+
+
+38
+00:01:30,570 --> 00:01:32,430
+If your estimate was 1, then you used
+
+39
+00:01:32,430 --> 00:01:35,400
+the data provided to determine the probability of heads,
+
+40
+00:01:35,400 --> 00:01:37,770
+the data being that we flipped the coin 100 times
+
+41
+00:01:37,770 --> 00:01:39,630
+and we got heads every time.
+
+42
+00:01:39,630 --> 00:01:43,710
+You treated this question as a statistics problem.
+
+43
+00:01:43,710 --> 00:01:46,680
+Probability and statistics are two different subjects.
+
+44
+00:01:46,680 --> 00:01:48,810
+Probability is a mathematical theory
+
+45
+00:01:48,810 --> 00:01:50,790
+that describes uncertainty.
+
+46
+00:01:50,790 --> 00:01:52,710
+It's the analysis of random systems
+
+47
+00:01:52,710 --> 00:01:54,990
+and the prediction of their behavior.
+
+48
+00:01:54,990 --> 00:01:57,480
+Statistics is a set of techniques for extracting
+
+49
+00:01:57,480 --> 00:01:59,550
+useful information from data.
+
+50
+00:01:59,550 --> 00:02:01,200
+These techniques are usually derived
+
+51
+00:02:01,200 --> 00:02:03,210
+using probability theory, but other techniques
+
+52
+00:02:03,210 --> 00:02:05,400
+have come up recently.
+
+53
+00:02:05,400 --> 00:02:07,860
+In this course, we make heavy use of probability and none
+
+54
+00:02:07,860 --> 00:02:09,520
+at all of statistics.
+
+55
+00:02:09,520 --> 00:02:11,190
+This is not because statistics is not
+
+56
+00:02:11,190 --> 00:02:14,280
+important for manufacturing systems, it's very important,
+
+57
+00:02:14,280 --> 00:02:15,930
+but our time is limited, and I think
+
+58
+00:02:15,930 --> 00:02:20,250
+it's better to focus on probability issues first.
+
+59
+00:02:20,250 --> 00:02:22,880
+But what do we mean by probability?
+
+60
+00:02:22,880 --> 00:02:25,830
+Specifically, suppose I perform an experiment
+
+61
+00:02:25,830 --> 00:02:29,140
+that has possible outcomes A, B, C, and so forth.
+
+62
+00:02:29,140 --> 00:02:31,770
+What do I mean when I say that the probability of outcome A
+
+63
+00:02:31,770 --> 00:02:33,660
+is P?
+
+64
+00:02:33,660 --> 00:02:36,270
+Well, there are two major interpretations-- the frequency
+
+65
+00:02:36,270 --> 00:02:39,300
+interpretation and the state of belief interpretation.
+
+66
+00:02:39,300 --> 00:02:42,500
+In the frequency interpretation, the probability of outcome A
+
+67
+00:02:42,500 --> 00:02:45,900
+is P means that if I perform the experiment many times,
+
+68
+00:02:45,900 --> 00:02:49,650
+the fraction of times that the outcome is A is close to P,
+
+69
+00:02:49,650 --> 00:02:52,330
+and the more I perform it, the closer the fraction is
+
+70
+00:02:52,330 --> 00:02:55,890
+to P. This interpret makes sense when you're considering
+
+71
+00:02:55,890 --> 00:02:59,620
+an event that could happen many times or is very refutable.
+
+72
+00:02:59,620 --> 00:03:03,640
+
+
+73
+00:03:03,640 --> 00:03:06,030
+In the state of belief interpretation,
+
+74
+00:03:06,030 --> 00:03:08,550
+I'm willing to base an action, such as placing a bet,
+
+75
+00:03:08,550 --> 00:03:10,060
+on an opinion.
+
+76
+00:03:10,060 --> 00:03:11,970
+For example, if I believe the coin is fair,
+
+77
+00:03:11,970 --> 00:03:14,430
+I'm willing to bet anything less than $1
+
+78
+00:03:14,430 --> 00:03:19,050
+on heads if I get $1 if the outcome is heads.
+
+79
+00:03:19,050 --> 00:03:21,480
+An example of the state of belief interpretation
+
+80
+00:03:21,480 --> 00:03:23,460
+is the choice of betting odds.
+
+81
+00:03:23,460 --> 00:03:25,020
+So the statement that the probability
+
+82
+00:03:25,020 --> 00:03:26,775
+that the outcome of an experiment is A
+
+83
+00:03:26,775 --> 00:03:29,790
+is P, if before the experiment is performed,
+
+84
+00:03:29,790 --> 00:03:32,320
+a risk neutral observer would be willing to bet
+
+85
+00:03:32,320 --> 00:03:37,184
+$1 against getting more than 1 minus P over P dollars.
+
+86
+00:03:37,184 --> 00:03:40,900
+
+
+87
+00:03:40,900 --> 00:03:42,330
+The reason to choose that fraction
+
+88
+00:03:42,330 --> 00:03:45,210
+is based on making sure that the expected value of the bet
+
+89
+00:03:45,210 --> 00:03:46,590
+is positive.
+
+90
+00:03:46,590 --> 00:03:48,840
+We're going to discuss expected values later.
+
+91
+00:03:48,840 --> 00:03:52,290
+
+
+92
+00:03:52,290 --> 00:03:55,050
+A better example would be to bet on the outcome of an election.
+
+93
+00:03:55,050 --> 00:03:56,802
+You can't repeat an election many times.
+
+94
+00:03:56,802 --> 00:03:58,260
+You decide whether you want to make
+
+95
+00:03:58,260 --> 00:04:01,440
+that bet on the outcome based on your opinion of the effects
+
+96
+00:04:01,440 --> 00:04:03,390
+of many influences.
+
+97
+00:04:03,390 --> 00:04:05,760
+Regardless which interpretation we follow,
+
+98
+00:04:05,760 --> 00:04:08,880
+we can formalize this with the axioms of probability.
+
+99
+00:04:08,880 --> 00:04:10,800
+Then we can use these axioms to carry out
+
+100
+00:04:10,800 --> 00:04:14,900
+calculations concerning the outcomes of complex systems.
+

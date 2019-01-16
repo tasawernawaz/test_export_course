@@ -1,0 +1,17 @@
+<problem display_name="Part 1" markdown="&gt;&gt;\(\rho\) is called the utilization of the system because \(\rho\):&lt;&lt;&#10;&#10;( ) Is composed of the fraction of \(\mu\) over \(\lambda\), and therefore represents the fraction of time that the system is idle.&#10;&#10;( ) Quantifies how much capacity a system has.&#10;&#10;(x) Is composed of the fraction of \(\lambda\) over \(\mu\), and therefore represents the fraction of time that the system is busy.&#10;&#10;( ) Is the maximum rate of flow the system can handle.&#10;&#10;[explanation]&#10; Recall that \( \rho = \frac{\lambda} {\mu} = \frac{average ~service ~time}{average ~inter-arrival ~time}\). In other words, the \(\rho\) represents the fraction of time the system is servicing over the average time between customers arrivals (see video 2 on slide 72).&#10;&#10;[explanation]&#10;" max_attempts="3" showanswer="past_due" weight="3.0">
+  <multiplechoiceresponse>
+    <label>\(\rho\) is called the utilization of the system because \(\rho\):</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Is composed of the fraction of \(\mu\) over \(\lambda\), and therefore represents the fraction of time that the system is idle.</choice>
+      <choice correct="false">Quantifies how much capacity a system has.</choice>
+      <choice correct="true">Is composed of the fraction of \(\lambda\) over \(\mu\), and therefore represents the fraction of time that the system is busy.</choice>
+      <choice correct="false">Is the maximum rate of flow the system can handle.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p> Recall that \( \rho = \frac{\lambda} {\mu} = \frac{average ~service ~time}{average ~inter-arrival ~time}\). In other words, the \(\rho\) represents the fraction of time the system is servicing over the average time between customers arrivals (see video 2 on slide 72).</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

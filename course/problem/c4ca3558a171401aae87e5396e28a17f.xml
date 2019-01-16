@@ -1,0 +1,16 @@
+<problem display_name="Question 1" markdown="&gt;&gt;When solving for the steady state probability distribution, what happens when the system has N unknowns, but N + 1 linear equations? &lt;&lt;&#10;&#10;( ) The system does not have steady-state.&#10;(x) The system is solvable, because one of the balance equations is redundant.&#10;( ) The system is over constrained.&#10;&#10;[Explanation]&#10;Having one more equation than unknown is okay because one of the balance equations will be redundant. This happens because each column of the Markov matrix sums to 1. Thus by replacing any equation with the normalization equation, we can solve this system.&#10;[Explanation]&#10;" max_attempts="2" showanswer="attempted" weight="1.0">
+  <multiplechoiceresponse>
+    <label>When solving for the steady state probability distribution, what happens when the system has N unknowns, but N + 1 linear equations? </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">The system does not have steady-state.</choice>
+      <choice correct="true">The system is solvable, because one of the balance equations is redundant.</choice>
+      <choice correct="false">The system is over constrained.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Having one more equation than unknown is okay because one of the balance equations will be redundant. This happens because each column of the Markov matrix sums to 1. Thus by replacing any equation with the normalization equation, we can solve this system.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

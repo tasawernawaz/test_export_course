@@ -1,0 +1,24 @@
+<problem display_name="Part 1" markdown="null" max_attempts="3" showanswer="finished" weight="1.0">
+  <label>What is the transition rate from state 1 to state 4? (Enter 7 decimal places)</label>
+  <numericalresponse answer="0.0001001">
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>What is the transition rate from state 2 to state 4? (Enter 5 decimal places)</label>
+  <numericalresponse answer="0.01111">
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>First, \(\lambda_{12}=\lambda_{23}=\lambda_{34}=0.1 \), \(\lambda_{41}=0.5 \).</p>
+      <ul>  
+        </ul>
+      <p>To determine \(\lambda_{14} \), note that the rate the machine leaves state 1 (given it is in state 1) is \(\lambda_{14}+\lambda_{12}\) (since it leaves when the first of the two exit processes occurs). The probability that it goes to state 4 during \([t, \delta t]\) given that it leaves state 1 during \([t, \delta t]\) is</p>
+      <p>\(\frac{\lambda_{14}\delta t}{(\lambda_{14}+\lambda_{12})\delta t}=\frac{\lambda_{14}}{(\lambda_{14}+\lambda_{12})}=0.001\) </p>
+      <p>Therefore, \(\lambda_{14} \) represents 0.1% of the probability of leaving state 1 and \(\lambda_{12} \) represents 99.9% of the probability of leaving state 1.</p>
+      <p>Thus, \(\lambda_{14}=\lambda_{12}/999 \).</p>
+      <p>Similarily, \(\lambda_{24}=\lambda_{23}/9 \).</p>
+    </div>
+  </solution>
+  <script src="/static/st.js" type="text/javascript"/>
+</problem>

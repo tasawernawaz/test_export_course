@@ -1,0 +1,544 @@
+0
+00:00:00,000 --> 00:00:02,224
+
+
+1
+00:00:02,224 --> 00:00:03,640
+This course has a message and that
+
+2
+00:00:03,640 --> 00:00:05,260
+is, that manufacturing systems can
+
+3
+00:00:05,260 --> 00:00:08,962
+be understood like any complex engineered system.
+
+4
+00:00:08,962 --> 00:00:10,420
+There are two views about factories
+
+5
+00:00:10,420 --> 00:00:12,160
+that are very widespread.
+
+6
+00:00:12,160 --> 00:00:15,130
+One is that factories are huge messes that cannot possibly be
+
+7
+00:00:15,130 --> 00:00:18,160
+understood, and at the best that anyone can do is to overbuild
+
+8
+00:00:18,160 --> 00:00:20,200
+them and then, react to unwelcome events as they
+
+9
+00:00:20,200 --> 00:00:21,490
+happen.
+
+10
+00:00:21,490 --> 00:00:24,210
+The other is that factories can be understood, but only
+
+11
+00:00:24,210 --> 00:00:26,290
+designed and operated using common sense,
+
+12
+00:00:26,290 --> 00:00:28,570
+non-quantitative methods.
+
+13
+00:00:28,570 --> 00:00:30,700
+The message here is that we can treat factories
+
+14
+00:00:30,700 --> 00:00:35,990
+with quantitative engineering approaches and methods.
+
+15
+00:00:35,990 --> 00:00:38,570
+Engineers must have intuition about these systems
+
+16
+00:00:38,570 --> 00:00:42,080
+in order to design and operate them most effectively.
+
+17
+00:00:42,080 --> 00:00:43,580
+To be a good engineer, you must have
+
+18
+00:00:43,580 --> 00:00:46,100
+intuition about the kinds of things you work on.
+
+19
+00:00:46,100 --> 00:00:48,740
+You must have a rough idea of how the value of each parameter
+
+20
+00:00:48,740 --> 00:00:51,260
+affects the performance of a system.
+
+21
+00:00:51,260 --> 00:00:54,860
+And how different components combine to affect performance.
+
+22
+00:00:54,860 --> 00:00:56,870
+Intuition is not enough for design
+
+23
+00:00:56,870 --> 00:01:00,980
+because it is not precise so quantitative tools are needed.
+
+24
+00:01:00,980 --> 00:01:04,099
+But good intuition can provide a good starting point for design.
+
+25
+00:01:04,099 --> 00:01:05,690
+That starting point can be refined
+
+26
+00:01:05,690 --> 00:01:08,390
+by using quantitative techniques.
+
+27
+00:01:08,390 --> 00:01:10,400
+Such intuition can be developed by studying
+
+28
+00:01:10,400 --> 00:01:13,246
+the elements of the system and their interactions.
+
+29
+00:01:13,246 --> 00:01:14,870
+A goal of this course is to provide you
+
+30
+00:01:14,870 --> 00:01:16,970
+with some such intuition, especially about
+
+31
+00:01:16,970 --> 00:01:20,150
+the effect of randomness on manufacturing systems.
+
+32
+00:01:20,150 --> 00:01:22,280
+Using intuition and appropriate design tools
+
+33
+00:01:22,280 --> 00:01:24,480
+can have a big payoff.
+
+34
+00:01:24,480 --> 00:01:26,910
+In the HP case described in the previous video,
+
+35
+00:01:26,910 --> 00:01:30,630
+is an example of such a big payoff.
+
+36
+00:01:30,630 --> 00:01:33,810
+The goals of the course are to explain important measures
+
+37
+00:01:33,810 --> 00:01:35,880
+of system performance.
+
+38
+00:01:35,880 --> 00:01:38,460
+To show the importance of random, potentially disruptive
+
+39
+00:01:38,460 --> 00:01:40,260
+events in factories.
+
+40
+00:01:40,260 --> 00:01:43,850
+To give some intuition about the behavior of these systems.
+
+41
+00:01:43,850 --> 00:01:47,610
+Describe and justify some quantitative tools and methods.
+
+42
+00:01:47,610 --> 00:01:51,630
+But not to describe all current common sense approaches.
+
+43
+00:01:51,630 --> 00:01:53,730
+The approach is to focus on important factory
+
+44
+00:01:53,730 --> 00:01:56,414
+phenomena that can be analyzed quantitatively.
+
+45
+00:01:56,414 --> 00:01:58,080
+We will look at some of these phenomenon
+
+46
+00:01:58,080 --> 00:02:00,140
+in a very fundamental way.
+
+47
+00:02:00,140 --> 00:02:03,420
+Also, to develop or describe mathematical models
+
+48
+00:02:03,420 --> 00:02:05,010
+of these phenomena.
+
+49
+00:02:05,010 --> 00:02:06,720
+Mathematical modeling and analysis
+
+50
+00:02:06,720 --> 00:02:08,930
+is a very important part of the course.
+
+51
+00:02:08,930 --> 00:02:11,580
+In the next few weeks, we'll be reviewing basic probability
+
+52
+00:02:11,580 --> 00:02:15,090
+because we'll be focusing on randomness in factories.
+
+53
+00:02:15,090 --> 00:02:17,550
+To study the required mathematics, only as deeply as
+
+54
+00:02:17,550 --> 00:02:19,480
+needed.
+
+55
+00:02:19,480 --> 00:02:22,310
+This is not a math course, but some math is needed,
+
+56
+00:02:22,310 --> 00:02:26,480
+and it might feel like a math course at some times.
+
+57
+00:02:26,480 --> 00:02:28,980
+There are some problems in the field of manufacturing system
+
+58
+00:02:28,980 --> 00:02:29,964
+engineering.
+
+59
+00:02:29,964 --> 00:02:32,130
+First of all, it's not as advanced as other branches
+
+60
+00:02:32,130 --> 00:02:33,860
+of engineering.
+
+61
+00:02:33,860 --> 00:02:36,540
+Not as advanced, in particular, compared with aerospace,
+
+62
+00:02:36,540 --> 00:02:38,190
+computers, and so forth.
+
+63
+00:02:38,190 --> 00:02:40,890
+The hardware-- the machines, and processes,
+
+64
+00:02:40,890 --> 00:02:43,650
+and material handling systems-- are just as advanced,
+
+65
+00:02:43,650 --> 00:02:46,470
+but the overall factory design and operation
+
+66
+00:02:46,470 --> 00:02:48,330
+is not quite so advanced.
+
+67
+00:02:48,330 --> 00:02:50,100
+Practitioners are sometimes, encouraged
+
+68
+00:02:50,100 --> 00:02:52,770
+to rely on slogans or black boxes.
+
+69
+00:02:52,770 --> 00:02:54,630
+An example of a slogan is, inventory
+
+70
+00:02:54,630 --> 00:02:57,960
+is waste or zero inventory.
+
+71
+00:02:57,960 --> 00:03:00,810
+Those were current at the time of the HP project.
+
+72
+00:03:00,810 --> 00:03:02,314
+The black box is a computer program
+
+73
+00:03:02,314 --> 00:03:04,230
+that you put numbers into, and you get numbers
+
+74
+00:03:04,230 --> 00:03:06,990
+out of without knowing or possibly
+
+75
+00:03:06,990 --> 00:03:09,450
+even caring how it works.
+
+76
+00:03:09,450 --> 00:03:11,340
+A gap exists between theoreticians
+
+77
+00:03:11,340 --> 00:03:13,820
+and practitioners.
+
+78
+00:03:13,820 --> 00:03:16,007
+The research literature is incomplete,
+
+79
+00:03:16,007 --> 00:03:17,840
+in that there are lots of important problems
+
+80
+00:03:17,840 --> 00:03:20,600
+that researchers have not touched not.
+
+81
+00:03:20,600 --> 00:03:24,530
+But practitioners are often unaware of what does exist.
+
+82
+00:03:24,530 --> 00:03:26,990
+Terminology, notation, and basic assumptions
+
+83
+00:03:26,990 --> 00:03:28,730
+are not standardized.
+
+84
+00:03:28,730 --> 00:03:31,100
+Different factories or companies use different terms
+
+85
+00:03:31,100 --> 00:03:33,230
+for the same thing and sometimes, the same terms
+
+86
+00:03:33,230 --> 00:03:34,610
+for different things.
+
+87
+00:03:34,610 --> 00:03:37,860
+I will point out some of these during the course.
+
+88
+00:03:37,860 --> 00:03:40,820
+There is typically a separation of product, process, and system
+
+89
+00:03:40,820 --> 00:03:41,930
+design.
+
+90
+00:03:41,930 --> 00:03:44,360
+They really should be done simultaneously
+
+91
+00:03:44,360 --> 00:03:47,420
+or iteratively, but not sequentially.
+
+92
+00:03:47,420 --> 00:03:49,350
+We'll talk about this shortly.
+
+93
+00:03:49,350 --> 00:03:50,810
+Another problem for practitioners
+
+94
+00:03:50,810 --> 00:03:54,020
+is that there's often a confusion about objectives.
+
+95
+00:03:54,020 --> 00:03:56,600
+Should they try to maximize capacity?
+
+96
+00:03:56,600 --> 00:03:59,360
+Or minimize capacity variability?
+
+97
+00:03:59,360 --> 00:04:02,620
+Or maximize capacity utilization?
+
+98
+00:04:02,620 --> 00:04:04,760
+Should they minimize lead time?
+
+99
+00:04:04,760 --> 00:04:07,220
+Or minimize lead time variability?
+
+100
+00:04:07,220 --> 00:04:09,200
+Or maximize profit?
+
+101
+00:04:09,200 --> 00:04:11,960
+And there are lots of others that people think about.
+
+102
+00:04:11,960 --> 00:04:13,760
+This diagram shows the relationship
+
+103
+00:04:13,760 --> 00:04:17,060
+between manufacturing systems engineering and other aspects
+
+104
+00:04:17,060 --> 00:04:18,769
+of manufacturing.
+
+105
+00:04:18,769 --> 00:04:23,530
+To bring a product from a designer's idea to something
+
+106
+00:04:23,530 --> 00:04:27,170
+useful that you can sell, takes a lot of steps.
+
+107
+00:04:27,170 --> 00:04:29,590
+First of all, somebody has to design the products.
+
+108
+00:04:29,590 --> 00:04:31,900
+Then, somebody has to design the processes
+
+109
+00:04:31,900 --> 00:04:33,940
+by which you make the products.
+
+110
+00:04:33,940 --> 00:04:36,720
+Then, you have to think about the manufacturing system.
+
+111
+00:04:36,720 --> 00:04:39,220
+First, you have to think about the structure of the system--
+
+112
+00:04:39,220 --> 00:04:41,590
+the architecture-- and we'll give some examples of that
+
+113
+00:04:41,590 --> 00:04:42,749
+later.
+
+114
+00:04:42,749 --> 00:04:45,040
+Then, we have to choose the machines that will actually
+
+115
+00:04:45,040 --> 00:04:48,460
+implement the processes and buffers that will store
+
+116
+00:04:48,460 --> 00:04:51,490
+material between machines.
+
+117
+00:04:51,490 --> 00:04:53,920
+Finally, we have to choose an operating policy--
+
+118
+00:04:53,920 --> 00:04:57,510
+decisions that we have to make in real time, in response
+
+119
+00:04:57,510 --> 00:04:59,020
+to random events that take place,
+
+120
+00:04:59,020 --> 00:05:03,320
+such as unexpected machine failures.
+
+121
+00:05:03,320 --> 00:05:05,990
+Once all of these decisions have been made,
+
+122
+00:05:05,990 --> 00:05:09,150
+then we have to predict the performance of the system.
+
+123
+00:05:09,150 --> 00:05:12,110
+This is done by some kind of modeling technique,
+
+124
+00:05:12,110 --> 00:05:15,470
+specifically simulation or mathematical modeling.
+
+125
+00:05:15,470 --> 00:05:18,840
+And we'll talk more about that in the rest of the course.
+
+126
+00:05:18,840 --> 00:05:21,830
+Once you evaluate this design, the question
+
+127
+00:05:21,830 --> 00:05:26,760
+is, are the performance and cost satisfactory?
+
+128
+00:05:26,760 --> 00:05:31,800
+If yes, you're finished, and you can start building the factory.
+
+129
+00:05:31,800 --> 00:05:35,220
+If no, you have to go back and make some changes.
+
+130
+00:05:35,220 --> 00:05:38,970
+And changes may be required at any or all of the stages
+
+131
+00:05:38,970 --> 00:05:40,860
+that we just went through.
+
+132
+00:05:40,860 --> 00:05:43,020
+The process is iterative, and we may
+
+133
+00:05:43,020 --> 00:05:45,330
+have to go through this process many times,
+
+134
+00:05:45,330 --> 00:05:48,230
+until finally, we get to yes.
+
+135
+00:05:48,230 --> 00:05:49,206
+
+

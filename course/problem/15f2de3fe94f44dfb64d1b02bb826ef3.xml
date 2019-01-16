@@ -1,0 +1,19 @@
+<problem display_name="Part 5" markdown="null" max_attempts="3" showanswer="finished" weight="1.0">
+  <numericalresponse answer="9">
+    <label>Assume now that Youngjae has added a sufficiently large number of buffer space to
+the milling area so that parts are always processed there. For the case \( \lambda=0.9\mu \), compute \( L \), the expected number of parts in the milling area at any randomly chosen time with the system in steady state. 
+</label>
+    <responseparam type="tolerance" default="0.9"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>
+          <span style="font-size: 1em;">
+            <img src="/static/Stochastic2.6.png" alt="" width="800" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+          </span>
+        </p>
+      </div>
+    </solution>
+  </numericalresponse>
+</problem>

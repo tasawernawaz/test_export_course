@@ -1,0 +1,17 @@
+<problem display_name="Question 3" markdown="&gt;&gt;What can cause an operation to stop? &lt;&lt;&#10;&#10;[x] The machine is starved; there are no parts for the machine to work on.&#10;[x] The machine is blocked; e.g. the storage buffer that follows this operation is full.&#10;[x] The operator is not there.&#10;[x] The machine is under repair.&#10;[Explanation]&#10;An operation cannot take place until all the required items are present at the same place at the same time.&#10;[Explanation]" max_attempts="3">
+  <choiceresponse>
+    <label>What can cause an operation to stop? </label>
+    <checkboxgroup>
+      <choice correct="true">The machine is starved; there are no parts for the machine to work on.</choice>
+      <choice correct="true">The machine is blocked; e.g. the storage buffer that follows this operation is full.</choice>
+      <choice correct="true">The operator is not there.</choice>
+      <choice correct="true">The machine is under repair.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>An operation cannot take place until all the required items are present at the same place at the same time.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

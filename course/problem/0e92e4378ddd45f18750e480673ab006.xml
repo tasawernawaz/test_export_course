@@ -1,0 +1,6 @@
+<problem display_name="Part 2" markdown="&gt;&gt;Let X be a random variable that indicates the expected number of throws you need to get a 5 for the first time. Find E[X].&lt;&lt;&#10;&#10;= 6&#10;" max_attempts="3" showanswer="never" weight="5.0">
+  <numericalresponse answer="6">
+    <label>Let X be a random variable that indicates the expected number of throws you need to get a 5 for the first time. Find E[X].</label>
+    <formulaequationinput/>
+  </numericalresponse>
+</problem>

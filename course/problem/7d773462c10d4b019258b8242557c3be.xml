@@ -1,0 +1,16 @@
+<problem display_name="Part 3" markdown="&gt;&gt;The continuous unreliable machine: &lt;&lt;&#10;&#10;&#10;() Is not an ergodic system.&#10;() Only has an approximate steady-state solution because little o is unknown.&#10;(x) Has been analyzed to give a didactic example on how to calculate the transition equations, time-transient solutions, and steady-state solutions.&#10;&#10;[explanation]&#10;There is a unique steady-state solution and therefore this system would be called ergodic. Little o approaches zero as time approaches infinity and therefore the steady-state solution is exact.&#10;[explanation]&#10;&#10;&#10;" max_attempts="2" showanswer="past_due" weight="3.0">
+  <multiplechoiceresponse>
+    <label>The continuous unreliable machine: </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Is not an ergodic system.</choice>
+      <choice correct="false">Only has an approximate steady-state solution because little o is unknown.</choice>
+      <choice correct="true">Has been analyzed to give a didactic example on how to calculate the transition equations, time-transient solutions, and steady-state solutions.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>There is a unique steady-state solution and therefore this system would be called ergodic. Little o approaches zero as time approaches infinity and therefore the steady-state solution is exact.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

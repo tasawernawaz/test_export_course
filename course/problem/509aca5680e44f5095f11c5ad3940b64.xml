@@ -1,0 +1,20 @@
+<problem display_name="Part 2" markdown="Let's access line \(M_{12}-M_2\) first. Only use integer N for input.&#10;&#10;&gt;&gt;What is the optimal profit rate? Round to nearest integer&lt;&lt;&#10;&#10;= 4683 +- 20&#10;&#10;&gt;&gt;What is the optimal \(N\)?&lt;&lt;&#10;&#10;=75+-10&#10;&#10;[explanation]&#10;The maximum profit rate for the M11{M2 version occurs at&#10;N \(\approx\) 75. It is \(\approx\) $4,683.&#10;[explanation]&#10;" max_attempts="2" showanswer="finished" weight="0.0">
+  <p>Let's access line \(M_{12}-M_2\) first. Only use integer N for input.</p>
+  <label>What is the optimal profit rate? Round to nearest integer</label>
+  <numericalresponse answer="4683">
+    <responseparam type="tolerance" default="20"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>What is the optimal \(N\)?</label>
+  <numericalresponse answer="75">
+    <responseparam type="tolerance" default="10"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>The maximum profit rate for the M11{M2 version occurs at</p>
+      <p>N \(\approx\) 75. It is \(\approx\) $4,683.</p>
+    </div>
+  </solution>
+</problem>

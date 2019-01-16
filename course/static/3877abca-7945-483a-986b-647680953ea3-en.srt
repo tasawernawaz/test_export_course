@@ -1,0 +1,396 @@
+0
+00:00:00,000 --> 00:00:02,760
+
+
+1
+00:00:02,760 --> 00:00:04,920
+The heart of the Toyota production system
+
+2
+00:00:04,920 --> 00:00:07,120
+is the continual reduction of waste.
+
+3
+00:00:07,120 --> 00:00:10,730
+Variability is a source of waste, but not the only one.
+
+4
+00:00:10,730 --> 00:00:12,740
+The Japanese word is "muda."
+
+5
+00:00:12,740 --> 00:00:17,600
+"Waste" means the production of defects, manpower inefficiency,
+
+6
+00:00:17,600 --> 00:00:21,080
+excess inventories, missed delivery dates,
+
+7
+00:00:21,080 --> 00:00:23,750
+and, in general, waste of manpower, outputs, money,
+
+8
+00:00:23,750 --> 00:00:26,570
+space, time, information, and so forth.
+
+9
+00:00:26,570 --> 00:00:30,890
+The goals include the reduction of unnecessary setup time,
+
+10
+00:00:30,890 --> 00:00:35,300
+including time wasted looking for things, defective materials
+
+11
+00:00:35,300 --> 00:00:40,220
+and products, clutter, late deliveries of materials
+
+12
+00:00:40,220 --> 00:00:44,780
+and supplies to work areas, not just the customers,
+
+13
+00:00:44,780 --> 00:00:46,880
+and unsafe conditions.
+
+14
+00:00:46,880 --> 00:00:49,430
+All this is important in the term 5s, which
+
+15
+00:00:49,430 --> 00:00:51,470
+are represented by five Japanese words
+
+16
+00:00:51,470 --> 00:00:54,990
+starting in the English language with S.
+
+17
+00:00:54,990 --> 00:00:59,890
+"Seiri" means don't clutter up the factory with useless stuff.
+
+18
+00:00:59,890 --> 00:01:04,500
+"Seiton" means make things easy to find.
+
+19
+00:01:04,500 --> 00:01:08,550
+"Seiso" is daily cleaning and less frequent major cleaning.
+
+20
+00:01:08,550 --> 00:01:11,020
+This can keep machines working.
+
+21
+00:01:11,020 --> 00:01:15,070
+The last two items are aimed at managers.
+
+22
+00:01:15,070 --> 00:01:18,850
+Make sure that the last three are done and encourage workers,
+
+23
+00:01:18,850 --> 00:01:22,320
+listen to their ideas, and don't criticize excessively.
+
+24
+00:01:22,320 --> 00:01:27,660
+Visual control means that things should be easy to see.
+
+25
+00:01:27,660 --> 00:01:31,950
+In the case of seiri, which means to get rid of stuff,
+
+26
+00:01:31,950 --> 00:01:36,180
+the items to be discarded should be systematically labeled.
+
+27
+00:01:36,180 --> 00:01:40,240
+For seitoin, which means make things easy to find,
+
+28
+00:01:40,240 --> 00:01:43,090
+you select where things should go and then label them
+
+29
+00:01:43,090 --> 00:01:45,340
+permanently.
+
+30
+00:01:45,340 --> 00:01:47,650
+And more visual control will be described
+
+31
+00:01:47,650 --> 00:01:50,530
+in the andon discussion below.
+
+32
+00:01:50,530 --> 00:01:55,820
+Another important Japanese word is "jidoka," or autonomation.
+
+33
+00:01:55,820 --> 00:01:57,500
+This doesn't mean automation.
+
+34
+00:01:57,500 --> 00:01:59,090
+It includes automation.
+
+35
+00:01:59,090 --> 00:02:01,220
+What it really means is the autonomous check
+
+36
+00:02:01,220 --> 00:02:04,650
+of the abnormal in a process.
+
+37
+00:02:04,650 --> 00:02:09,250
+It includes mechanisms to detect defects and mechanisms
+
+38
+00:02:09,250 --> 00:02:12,220
+to stop the line when defects are detected.
+
+39
+00:02:12,220 --> 00:02:14,020
+Autonomous really means local.
+
+40
+00:02:14,020 --> 00:02:16,660
+Local machine controls and local people
+
+41
+00:02:16,660 --> 00:02:20,980
+stop or slow down the line, not central management.
+
+42
+00:02:20,980 --> 00:02:24,610
+If a machine produces a defect, it stops the whole line.
+
+43
+00:02:24,610 --> 00:02:28,850
+For manual operations, it's the workers that stop the line.
+
+44
+00:02:28,850 --> 00:02:32,230
+Another term is "poka-yoke," which means mistake-proofing--
+
+45
+00:02:32,230 --> 00:02:36,280
+a system for checking to prevent defects.
+
+46
+00:02:36,280 --> 00:02:38,720
+The visible control system is an automated device
+
+47
+00:02:38,720 --> 00:02:41,750
+to stop or delay a line.
+
+48
+00:02:41,750 --> 00:02:45,600
+Workers have the power and responsibility to stop a line.
+
+49
+00:02:45,600 --> 00:02:49,040
+For example, if a cycle time is supposed to be 70 seconds,
+
+50
+00:02:49,040 --> 00:02:51,680
+but it takes a certain worker 80 seconds to do his work,
+
+51
+00:02:51,680 --> 00:02:53,660
+he must stop the line.
+
+52
+00:02:53,660 --> 00:02:56,780
+Then supervisors and engineers must investigate.
+
+53
+00:02:56,780 --> 00:02:58,820
+Is the worker following instructions?
+
+54
+00:02:58,820 --> 00:03:01,120
+If not, they provide advice.
+
+55
+00:03:01,120 --> 00:03:03,140
+If the worker is following instructions, ,
+
+56
+00:03:03,140 --> 00:03:05,220
+they try to eliminate wasteful actions,
+
+57
+00:03:05,220 --> 00:03:09,020
+shorten walking distances, or find other improvements.
+
+58
+00:03:09,020 --> 00:03:13,430
+Workers are often reluctant to stop the line.
+
+59
+00:03:13,430 --> 00:03:16,270
+The andon is an electric light board.
+
+60
+00:03:16,270 --> 00:03:18,670
+The board is large and high and visible
+
+61
+00:03:18,670 --> 00:03:21,130
+from all points in the factory.
+
+62
+00:03:21,130 --> 00:03:23,290
+The lights are color coded.
+
+63
+00:03:23,290 --> 00:03:25,180
+For example, when a worker delays a line,
+
+64
+00:03:25,180 --> 00:03:26,530
+he turns on a yellow light.
+
+65
+00:03:26,530 --> 00:03:29,410
+When a worker stops a line, he turns on a red light.
+
+66
+00:03:29,410 --> 00:03:32,730
+And there are other colored lights for other conditions.
+
+67
+00:03:32,730 --> 00:03:36,010
+Quality control circles are an important element in all this.
+
+68
+00:03:36,010 --> 00:03:38,910
+Improvement suggestions are obtained from workers
+
+69
+00:03:38,910 --> 00:03:41,250
+via quality control circles.
+
+70
+00:03:41,250 --> 00:03:43,170
+Workers know things that managers do not
+
+71
+00:03:43,170 --> 00:03:47,400
+know because they are intimately involved in the operations.
+
+72
+00:03:47,400 --> 00:03:50,800
+They can provide good ideas.
+
+73
+00:03:50,800 --> 00:03:52,670
+This system shows respect for workers
+
+74
+00:03:52,670 --> 00:03:55,460
+and improves their morale.
+
+75
+00:03:55,460 --> 00:03:58,400
+The kinds of suggestions include refinements
+
+76
+00:03:58,400 --> 00:04:02,150
+of manual operations, introduction of new machinery
+
+77
+00:04:02,150 --> 00:04:04,830
+or improvements in existing equipment,
+
+78
+00:04:04,830 --> 00:04:08,250
+or ways to economize on materials and supplies.
+
+79
+00:04:08,250 --> 00:04:11,790
+These quality control circles are formally structured.
+
+80
+00:04:11,790 --> 00:04:14,010
+There's participation by all workers,
+
+81
+00:04:14,010 --> 00:04:16,350
+and they're recognized by management.
+
+82
+00:04:16,350 --> 00:04:18,779
+The meetings are regularly scheduled,
+
+83
+00:04:18,779 --> 00:04:21,060
+and prizes and commendations are awarded
+
+84
+00:04:21,060 --> 00:04:22,980
+for really good suggestions.
+
+85
+00:04:22,980 --> 00:04:25,650
+To summarize, the Toyota production system
+
+86
+00:04:25,650 --> 00:04:28,340
+is a system for continuous improvement.
+
+87
+00:04:28,340 --> 00:04:31,050
+There is much more detail and many more areas
+
+88
+00:04:31,050 --> 00:04:34,960
+than I've discussed in the Toyota production system.
+
+89
+00:04:34,960 --> 00:04:37,410
+The major emphasis is to deal with variation--
+
+90
+00:04:37,410 --> 00:04:40,470
+to reduce it if possible, to respond to it appropriately
+
+91
+00:04:40,470 --> 00:04:42,000
+if not.
+
+92
+00:04:42,000 --> 00:04:45,030
+The elements of the system are interrelated.
+
+93
+00:04:45,030 --> 00:04:47,820
+For example, it is only possible to mix models
+
+94
+00:04:47,820 --> 00:04:50,550
+if setup change times are short.
+
+95
+00:04:50,550 --> 00:04:54,790
+Respect for people is an integral part of the system.
+
+96
+00:04:54,790 --> 00:04:57,180
+This has been a very brief overview.
+
+97
+00:04:57,180 --> 00:05:00,660
+The Toyota production system has been extremely successful,
+
+98
+00:05:00,660 --> 00:05:04,190
+and it has been extremely influential.
+

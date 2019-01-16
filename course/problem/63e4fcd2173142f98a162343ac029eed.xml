@@ -1,0 +1,8 @@
+<problem display_name="Part 1" markdown="&gt;&gt;Assume the machine is in the up state. What is the mean time until it leaves that state?(round to 3 decimals)&lt;&lt;&#10;&#10;=9.259+-5%&#10;&#10;&lt;script src=&quot;/static/st.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;" max_attempts="3" showanswer="never" weight="5.0">
+  <numericalresponse answer="9.259">
+    <label>Assume the machine is in the up state. What is the mean time until it leaves that state?(round to 3 decimals)</label>
+    <responseparam type="tolerance" default="5%"/>
+    <formulaequationinput/>
+    <script src="/static/st.js" type="text/javascript"/>
+  </numericalresponse>
+</problem>

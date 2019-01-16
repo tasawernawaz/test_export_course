@@ -1,0 +1,20 @@
+<problem display_name="Part 2" markdown="null" max_attempts="3" showanswer="finished" weight="1.0">
+  <p>For each value <i>t</i> between <i>m</i> and <i>b</i>, the proability P(T\(\geq\)t) equals the area of a triangle.</p>
+  <formularesponse type="ci" samples="t,m,b,a,h@0.1,0.5,0.2,0.1,0.2:100,100,100,100,100#10" answer=" (h*(b-t)^2)/(2*(b-m))">
+    <label>Compute this probability </label>
+    <description>Write an expression for the product of <i>t</i>, <i>h</i>, <i>b</i>, and <i>m</i>.</description>
+    <responseparam type="tolerance" default="0.00001"/>
+    <formulaequationinput size="40"/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>) For a given t between m and b: </p>
+        <p>
+          <span style="font-size: 1em;">
+            <img src="/static/Probability8.2.PNG" alt="" width="600" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+          </span>
+        </p>
+      </div>
+    </solution>
+  </formularesponse>
+</problem>

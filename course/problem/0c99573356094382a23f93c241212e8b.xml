@@ -1,0 +1,12 @@
+<problem display_name="Part 3" markdown="&gt;&gt;What must the holding cost ($\engine\day) be for the plant to be indifferent between the policies of part 1 and part 2?&lt;&lt;&#10;&#10;= 960*60/100&#10;&#10;[explanation]&#10;Set part 1 total cost equal to part 2 total cost and solve for \（H\）, which is the holding cost.&#10;[explanation]&#10;&#10;" max_attempts="3" showanswer="finished" weight="1.0">
+  <numericalresponse answer="960*60/100">
+    <label>What must the holding cost ($\engine\day) be for the plant to be indifferent between the policies of part 1 and part 2?</label>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Set part 1 total cost equal to part 2 total cost and solve for \（H\）, which is the holding cost.</p>
+      </div>
+    </solution>
+  </numericalresponse>
+</problem>

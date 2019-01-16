@@ -1,0 +1,16 @@
+<problem display_name="Question 2" markdown="&gt;&gt;In the transition equations of the exponential distribution (slide 47), why is the rate of change in probability for state 1,\(\frac{d\pi(1,t)}{dt}\) independent of the value of \(\pi(0,t)\)?&lt;&lt;&#10;&#10;( ) Because \(\pi(0,t)\) is contained in \(\mu\).&#10;(x) Because the state cannot change from state 0 to state 1.&#10;( ) Because rates of probability change of one state is never influenced by the probability of being in another state.&#10;&#10;&#10;[explanation]&#10;Because the state cannot change from state 0 to state 1, recall in slide 46, \(\pi(1,t + \delta t)= (1 - \mu \delta t)\pi(1,t)+(0)\pi(0,t)+o(\delta t)\), and therefore, \(\frac{d\pi(1,t)}{dt}\) does not depend on \(\pi(0,t)\).&#10;[explanation]" max_attempts="2">
+  <multiplechoiceresponse>
+    <label>In the transition equations of the exponential distribution (slide 47), why is the rate of change in probability for state 1,\(\frac{d\pi(1,t)}{dt}\) independent of the value of \(\pi(0,t)\)?</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Because \(\pi(0,t)\) is contained in \(\mu\).</choice>
+      <choice correct="true">Because the state cannot change from state 0 to state 1.</choice>
+      <choice correct="false">Because rates of probability change of one state is never influenced by the probability of being in another state.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Because the state cannot change from state 0 to state 1, recall in slide 46, \(\pi(1,t + \delta t)= (1 - \mu \delta t)\pi(1,t)+(0)\pi(0,t)+o(\delta t)\), and therefore, \(\frac{d\pi(1,t)}{dt}\) does not depend on \(\pi(0,t)\).</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

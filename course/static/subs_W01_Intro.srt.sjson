@@ -1,0 +1,53 @@
+{
+  "start": [
+    0, 
+    1220, 
+    2930, 
+    6350, 
+    8630, 
+    10667, 
+    12250, 
+    15436, 
+    16810, 
+    18970, 
+    21900, 
+    23890, 
+    26350, 
+    28650, 
+    30660
+  ], 
+  "end": [
+    1220, 
+    2930, 
+    6350, 
+    8630, 
+    10667, 
+    12250, 
+    15436, 
+    16810, 
+    18970, 
+    21900, 
+    23890, 
+    26350, 
+    28650, 
+    30660, 
+    33950
+  ], 
+  "text": [
+    "", 
+    "The first week of this course is devoted", 
+    "to an overview of manufacturing systems, what they are", 
+    "and what problems faced designers and operators", 
+    "of these systems.", 
+    "We'll start off with a case that shows", 
+    "the benefits of the methods we will describe.", 
+    "We'll go through some definitions", 
+    "and take a very basic look at the relationship", 
+    "between a single manufacturing operation and the system", 
+    "it is part of.", 
+    "We will establish one of the basic themes of this course,", 
+    "the effects of variability.", 
+    "We'll describe some system architectures.", 
+    "And we'll discuss some important performance measures."
+  ]
+}

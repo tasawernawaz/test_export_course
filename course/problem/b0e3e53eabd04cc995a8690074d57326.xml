@@ -1,0 +1,18 @@
+<problem display_name="Concept Check 3-2" markdown="&gt;&gt;Which statements are TRUE below? (Select all that apply.)&lt;&lt;&#10;[X] If we want to increase production rate, we should improve the machine with the largest ratio \(p_i\) over \(r_i\). &#10;[X] Line balancing is the assignment of tasks to machines in a way that minimizes the maximum operation time. It is&#9; a challenging combinatorial optimization problem. It varies case to case. &#10;[X]  The operation-dependent failure line has greater production rate than the time-dependent failure line. And the difference increases as the line gets longer.&#10;[ ] We can assume that a part is produced as often as all machines are operational only if there is a mechanism that shuts the whole line when any machine fails.&#10;&#10;[explanation]&#10;The statement “a part is produced as often as all machines are operational” can be considered as true in all circumstances. &#10;A part is produced as often as all the machines are operational. We assume that if any machine fails, the line stops. This is certainly correct if there is a mechanism that shuts the whole line when any machine fails. If not, the formulas we derive may not be exactly correct. For example, the machines downstream of the failure can still work if there are parts in those machines and the transfer mechanism keeps operating. Those machines can do productive work until those parts leave the system. However, if that happens, some or all of the machines downstream of the failure will have no parts at the time that that machine is repaired. For that reason, those machines will be idle after the repair for the same length of time as they were working after the failure. &#10;[explanation]" max_attempts="3">
+  <choiceresponse>
+    <label>Which statements are TRUE below? (Select all that apply.)</label>
+    <checkboxgroup>
+      <choice correct="true">If we want to increase production rate, we should improve the machine with the largest ratio \(p_i\) over \(r_i\). </choice>
+      <choice correct="true">Line balancing is the assignment of tasks to machines in a way that minimizes the maximum operation time. It is	 a challenging combinatorial optimization problem. It varies case to case. </choice>
+      <choice correct="true">The operation-dependent failure line has greater production rate than the time-dependent failure line. And the difference increases as the line gets longer.</choice>
+      <choice correct="false">We can assume that a part is produced as often as all machines are operational only if there is a mechanism that shuts the whole line when any machine fails.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>The statement “a part is produced as often as all machines are operational” can be considered as true in all circumstances. </p>
+        <p>A part is produced as often as all the machines are operational. We assume that if any machine fails, the line stops. This is certainly correct if there is a mechanism that shuts the whole line when any machine fails. If not, the formulas we derive may not be exactly correct. For example, the machines downstream of the failure can still work if there are parts in those machines and the transfer mechanism keeps operating. Those machines can do productive work until those parts leave the system. However, if that happens, some or all of the machines downstream of the failure will have no parts at the time that that machine is repaired. For that reason, those machines will be idle after the repair for the same length of time as they were working after the failure. </p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

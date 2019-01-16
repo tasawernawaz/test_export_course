@@ -1,0 +1,10 @@
+<problem display_name="Part 1" markdown="&gt;&gt;What model of the transfer line should be used?&lt;&lt;&#10;&#10;( ) Continuous Model&#10;(x) Deterministic Model&#10;( ) Exponential Model&#10;" max_attempts="1" showanswer="never" weight="2.0">
+  <multiplechoiceresponse>
+    <label>What model of the transfer line should be used?</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Continuous Model</choice>
+      <choice correct="true">Deterministic Model</choice>
+      <choice correct="false">Exponential Model</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

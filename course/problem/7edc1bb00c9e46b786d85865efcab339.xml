@@ -1,0 +1,39 @@
+<problem display_name="Part 2" markdown="The engine plant management have heard of the Toyota production system so they decided to make \(A-\Delta A\) engines per day on days that the engine plant needs \(A-\Delta A\) and \(A+\Delta A\) on days it needs \(A+\Delta A\).&#10;&#10;&gt;&gt;What is the average daily cost of inventory per day?&lt;&lt;&#10;&#10;= 0&#10;&#10;[explanation]&#10;There is never any inventory, since they make exactly what they need.&#10;[explanation]&#10;&#10;&gt;&gt;What is the average daily cost of labor per day?&lt;&lt;&#10;&#10;= 41280&#10;&#10;[explanation]&#10;The labor cost on the days that the plant makes \(A-\Delta A\) engines is 640\(W\).&#10;On the days that the plant makes \(A+\Delta A\) engines...&#10;1) It makes \(A\) during regular hours so that cost is 640\(W\)&#10;2) It makes \(\Delta A\) engines during overtine. The time requried is \(\Delta A / A\) days. The labor cost of a full day of overtime should be (8)(120)\(W\). Therefore the labor cost of \(\Delta A/A\) days is 960\(W\)\(\Delta A/A\).&#10;3) So the total labor cost on even days is $640\(W\)+960\(W\)\(\Delta A/A\).&#10;4) The labor on odd days is $38400&#10;5) The average is just $41280&#10;[explanation]&#10;&#10;&gt;&gt;What is the total labor cost + inventory per day?&lt;&lt;&#10;&#10;= 41280&#10;&#10;[explanation]&#10;This is just a sum of the previous two parts.&#10;[explanation]&#10;" max_attempts="3" showanswer="finished" weight="1.0">
+  <p>The engine plant management have heard of the Toyota production system so they decided to make \(A-\Delta A\) engines per day on days that the engine plant needs \(A-\Delta A\) and \(A+\Delta A\) on days it needs \(A+\Delta A\).</p>
+  <label>What is the average daily cost of inventory per day?</label>
+  <numericalresponse answer="0">
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>There is never any inventory, since they make exactly what they need.</p>
+    </div>
+  </solution>
+  <label>What is the average daily cost of labor per day?</label>
+  <numericalresponse answer="41280">
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>The labor cost on the days that the plant makes \(A-\Delta A\) engines is 640\(W\).</p>
+      <p>On the days that the plant makes \(A+\Delta A\) engines...</p>
+      <p>1) It makes \(A\) during regular hours so that cost is 640\(W\)</p>
+      <p>2) It makes \(\Delta A\) engines during overtine. The time requried is \(\Delta A / A\) days. The labor cost of a full day of overtime should be (8)(120)\(W\). Therefore the labor cost of \(\Delta A/A\) days is 960\(W\)\(\Delta A/A\).</p>
+      <p>3) So the total labor cost on even days is $640\(W\)+960\(W\)\(\Delta A/A\).</p>
+      <p>4) The labor on odd days is $38400</p>
+      <p>5) The average is just $41280</p>
+    </div>
+  </solution>
+  <label>What is the total labor cost + inventory per day?</label>
+  <numericalresponse answer="41280">
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>This is just a sum of the previous two parts.</p>
+    </div>
+  </solution>
+</problem>

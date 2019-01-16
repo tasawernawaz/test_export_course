@@ -1,0 +1,18 @@
+<problem display_name="Question 1" markdown="null" max_attempts="2">
+  <multiplechoiceresponse>
+    <label>M/M/1 queues: </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Are not ergodic systems.</choice>
+      <choice correct="false">Are always ergodic systems.</choice>
+      <choice correct="true">Are sometimes ergodic systems.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>
+    If \(\rho \geqslant 1\) and the buffer is infinite then a steady-state solution does not exist and the M/M/1 queue is not an ergodic system. If \(\rho \lt 1\) or if \(\rho \geqslant 1\) but the buffer is finite, then a steady-state solution does exist and the M/M/1 queue is an ergodic system.
+  </p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

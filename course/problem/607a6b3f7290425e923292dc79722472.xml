@@ -1,0 +1,37 @@
+<problem display_name="Question 3" markdown="Let X be a normal random variable with mean 9 and variance 16. Use the normal table (&lt;a href=&quot;http://math.arizona.edu/~rsims/ma464/standardnormaltable.pdf &quot; target=&quot;_blank&quot;&gt;see here&lt;/a&gt;) to find the following probabilities, to an accuracy of 4 decimal places. &#10;&#10;a. \(P(X \le 10.6) \) = ____&#10;=====&#10;= 0.6554 +- 5%&#10;&#10;[explanation]&#10;\(P(X \le 10.6) = P((X-9)/4 \le (10.6 - 9)/4) = \phi(0.4) = 0.6554 \)&#10;[explanation]&#10;&#10;b. \(P(X \ge 7.4) \) = ____&#10;=====&#10;= 0.6554 +- 5%&#10;&#10;[explanation]&#10;\(P(X \ge 7.4) = P(X \le 10.6) \) by symmetry&#10;\(P(X \le 10.6) = P((X-9)/4 \le (10.6 - 9)/4) = \phi(0.4) = 0.6554 \)&#10;[explanation]&#10;&#10;&#10;c. \(P(X \le 6.6) \) = ____&#10;=====&#10;= 0.2743 +- 5%&#10;[explanation]&#10;\(P(X \le 6.6) = P((X-9)/4 \le (6.6 - 9)/4) = 1 - \phi(0.6) = 1 - 0.72575 = 0.2743 \)&#10;[explanation]&#10;" max_attempts="3">
+  <p>Let X be a normal random variable with mean 9 and variance 16. Use the normal table (<a href="http://math.arizona.edu/~rsims/ma464/standardnormaltable.pdf " target="_blank">see here</a>) to find the following probabilities, to an accuracy of 4 decimal places. </p>
+  <h3 class="hd hd-2 problem-header">a. \(P(X \le 10.6) \) = ____</h3>
+  <numericalresponse answer="0.6554">
+    <responseparam type="tolerance" default="5%"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>\(P(X \le 10.6) = P((X-9)/4 \le (10.6 - 9)/4) = \phi(0.4) = 0.6554 \)</p>
+    </div>
+  </solution>
+  <h3 class="hd hd-2 problem-header">b. \(P(X \ge 7.4) \) = ____</h3>
+  <numericalresponse answer="0.6554">
+    <responseparam type="tolerance" default="5%"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>\(P(X \ge 7.4) = P(X \le 10.6) \) by symmetry</p>
+      <p>\(P(X \le 10.6) = P((X-9)/4 \le (10.6 - 9)/4) = \phi(0.4) = 0.6554 \)</p>
+    </div>
+  </solution>
+  <h3 class="hd hd-2 problem-header">c. \(P(X \le 6.6) \) = ____</h3>
+  <numericalresponse answer="0.2743">
+    <responseparam type="tolerance" default="5%"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>\(P(X \le 6.6) = P((X-9)/4 \le (6.6 - 9)/4) = 1 - \phi(0.6) = 1 - 0.72575 = 0.2743 \)</p>
+    </div>
+  </solution>
+</problem>

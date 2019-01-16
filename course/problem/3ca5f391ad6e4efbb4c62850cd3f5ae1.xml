@@ -1,0 +1,28 @@
+<problem display_name="Part 2" markdown="What are the steady-state probabilities (Round to 3 decimal places)?&#10;&gt;&gt;\(\pi_0\)&lt;&lt;&#10;&#10;= 0.326+-5%&#10;&#10;&gt;&gt;\(\pi_1\)&lt;&lt;&#10;=0.003+-5%&#10;&#10;&gt;&gt;\(\pi_2\)&lt;&lt;&#10;=0.011+-5%&#10;&#10;&gt;&gt;\(\pi_3\)&lt;&lt;&#10;=0.651+-5%&#10;&#10;&gt;&gt;\(\pi_4\)&lt;&lt;&#10;=0.009+-5%&#10;&#10;" max_attempts="3" showanswer="never" weight="10.0">
+  <p>What are the steady-state probabilities (Round to 3 decimal places)?</p>
+  <label>\(\pi_0\)</label>
+  <numericalresponse answer="0.326">
+    <responseparam type="tolerance" default="5%"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>\(\pi_1\)</label>
+  <numericalresponse answer="0.003">
+    <responseparam type="tolerance" default="5%"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>\(\pi_2\)</label>
+  <numericalresponse answer="0.011">
+    <responseparam type="tolerance" default="5%"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>\(\pi_3\)</label>
+  <numericalresponse answer="0.651">
+    <responseparam type="tolerance" default="5%"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>\(\pi_4\)</label>
+  <numericalresponse answer="0.009">
+    <responseparam type="tolerance" default="5%"/>
+    <formulaequationinput/>
+  </numericalresponse>
+</problem>

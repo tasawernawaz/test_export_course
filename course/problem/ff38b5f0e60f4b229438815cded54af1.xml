@@ -1,0 +1,16 @@
+<problem display_name="Question 5" markdown="&gt;&gt;Single-stage models are models&lt;&lt;&#10;( ) That have one queue.&#10;&#10;( ) That have one server.&#10;&#10;(x) For which a client can only be served by one server before leaving the system.&#10;[explanation]&#10;After being served by one server, clients in multi-stage models may be served by other servers or other processes. In single-stage models, the client only undergoes one process--being served by a server in the system--and must leave afterwards. The M/M/1 queue and M/M/s queue are both examples of single-stage models.&#10;[explanation]&#10;&#10;&#10;" max_attempts="2">
+  <multiplechoiceresponse>
+    <label>Single-stage models are models</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">That have one queue.</choice>
+      <choice correct="false">That have one server.</choice>
+      <choice correct="true">For which a client can only be served by one server before leaving the system.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>After being served by one server, clients in multi-stage models may be served by other servers or other processes. In single-stage models, the client only undergoes one process--being served by a server in the system--and must leave afterwards. The M/M/1 queue and M/M/s queue are both examples of single-stage models.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

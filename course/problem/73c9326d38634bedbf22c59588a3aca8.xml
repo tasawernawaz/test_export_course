@@ -1,0 +1,17 @@
+<problem display_name="Question 1" markdown="&gt;&gt;Stochastic processes (check all that apply): &lt;&lt;&#10;[ ] Are analogous to Markov processes.&#10;[x] Can be represented by X(t), where X is a random variable for every t.&#10;[x] Can be represented by X(t), where X can be discrete or continuous, or vector.&#10;[ ] Can be represented by X(t), where X cannot be a vector.&#10;&#10;[explanation]&#10;Stochastic processes can be represented by X(t), where X is a random variable for every t and can be discrete, continuous, or a vector. A Markov process is only one type of stochastic process.&#10;[explanation]&#10;&#10;&#10;" max_attempts="3">
+  <choiceresponse>
+    <label>Stochastic processes (check all that apply): </label>
+    <checkboxgroup>
+      <choice correct="false">Are analogous to Markov processes.</choice>
+      <choice correct="true">Can be represented by X(t), where X is a random variable for every t.</choice>
+      <choice correct="true">Can be represented by X(t), where X can be discrete or continuous, or vector.</choice>
+      <choice correct="false">Can be represented by X(t), where X cannot be a vector.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Stochastic processes can be represented by X(t), where X is a random variable for every t and can be discrete, continuous, or a vector. A Markov process is only one type of stochastic process.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

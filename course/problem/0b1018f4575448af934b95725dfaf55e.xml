@@ -1,0 +1,41 @@
+<problem display_name="Part 1" group_access="{}" markdown="null" max_attempts="3" showanswer="finished" weight="1.0">
+  <p>For each number <i>t</i> between <i>a</i> and <i>m</i>, the proability P(T\(\leq\)t) equals the area of a triangle.</p>
+  <formularesponse type="ci" samples="t,a,b@0.1,0.5,0.2:100,100,100#10" answer=" 4*(t-a)/((b-a)^2)">
+    <label>What is the triangle's height? </label>
+    <description>Write an expression using <i>t</i>,  <i>a</i>, and <i>b</i>.</description>
+    <responseparam type="tolerance" default="0.00001"/>
+    <formulaequationinput size="40"/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>
+          <span style="font-size: 1em;">
+            <img src="/static/Probability8.1.PNG" alt="" width="600" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+          </span>
+        </p>
+        <p>
+          <span style="font-size: 1em;">
+            <img src="/static/Probability8.1.1.PNG" alt="" width="600" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+          </span>
+        </p>
+      </div>
+    </solution>
+  </formularesponse>
+  <formularesponse type="ci" samples="t,a,b@0.1,0.5,0.2:100,100,100#10" answer="2*((t-a)^2)/((b-a)^2)">
+    <label>What is the area? </label>
+    <description>Write an expression using <i>t</i>,  <i>a</i>, and <i>b</i>.</description>
+    <responseparam type="tolerance" default="0.00001"/>
+    <formulaequationinput size="40"/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>
+          <span style="font-size: 1em;">
+            <img src="/static/Probability8.1.2.PNG" alt="" width="600" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+          </span>
+        </p>
+      </div>
+    </solution>
+  </formularesponse>
+  <script src="/static/st.js" type="text/javascript"/>
+</problem>

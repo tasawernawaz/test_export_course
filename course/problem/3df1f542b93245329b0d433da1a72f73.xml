@@ -1,0 +1,13 @@
+<problem display_name="Part 5" group_access="{}" markdown="&gt;&gt; What is the least expensive design of the line that has a production rate of .55 parts per minute? &lt;&lt;&#10;&#10;(x) \(M_{11} - M_2\)&#10;() \(M_{12} - M_2\)&#10;&#10;&gt;&gt;What is the optimal buffer size the least expensive line? (Make sure to use integer buffer size)&lt;&lt;&#10;&#10;=0&#10;&#10;" max_attempts="1" showanswer="never" weight="2.0">
+  <label> What is the least expensive design of the line that has a production rate of .55 parts per minute? </label>
+  <multiplechoiceresponse>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">\(M_{11} - M_2\)</choice>
+      <choice correct="false">\(M_{12} - M_2\)</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+  <label>What is the optimal buffer size the least expensive line? (Make sure to use integer buffer size)</label>
+  <numericalresponse answer="0">
+    <formulaequationinput/>
+  </numericalresponse>
+</problem>

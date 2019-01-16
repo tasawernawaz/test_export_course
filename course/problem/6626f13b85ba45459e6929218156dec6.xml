@@ -1,0 +1,19 @@
+<problem display_name="Part 4" markdown="null" max_attempts="3" showanswer="finished" weight="0.0">
+  <numericalresponse answer="7.111">
+    <p>In steady state, what is the expected number of items that are waiting in the queue at operation \(Q\)?  </p>
+    <label> \(L_{Q} = \) </label>
+    <description> (Round to 3 decimal places.) </description>
+    <responseparam type="tolerance" default="0.01"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>
+        <span style="font-size: 1em;">
+          \(L_{q} = \frac{\rho^{2}}{1-\rho} =7.111\)
+        </span>
+      </p>
+    </div>
+  </solution>
+</problem>

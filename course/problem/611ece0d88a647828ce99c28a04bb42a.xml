@@ -1,0 +1,42 @@
+<problem display_name="Problem 1" markdown="&gt;&gt;Which of the following are part of Goldratt's general principles and observations? &lt;&lt;&#10;&#10;[x] If you produce what you can't sell, you get inventory&#10;[ ] People tend to excel under stress and efficiency will increase.&#10;[ ] It's mostly likely the Plant Manager's fault, since he is steering the ship.&#10;[x] Balance (keeping everything busy) is not a good strategy because inventory goes up.&#10;[ ] Data in factories is great.&#10;[x] Conventional accounting methods are misleading.&#10;[x] It is not useful to discuss value or value added.&#10;&#10;[Explanation]&#10;Here are the general principles we believe Goldratt outlined in his book.&#10;1. Nobody is at fault. The system is at fault.&#10;2. Under stress, efficiency declines, and people do foolish things.&#10;3. If you produce what you can't sell, you get inventory (WIP or FG).&#10;4. Balance (keeping everything busy) is not a good strategy because inventory goes up.&#10;5. It is not useful to discuss value or value added.&#10;6. Data in factories is lousy.&#10;7. Conventional accounting methods are misleading.&#10;8. It is important to&#10;&#9;-communicate with and convince everybody about important changes.&#10;&#9;-get everybody's good ideas&#10;&#9;-remember reasons for policies and procedures { in order, for example, to get rid of unnecessary heat-treats which were required to make non-bottleneck operations faster.&#10;&#9;-learn things for yourself rather than having them told to you&#10;9. Idle time is not bad (other than at the bottleneck). It is inevitable.&#10;10. Time a part spends in a in plant =&#10;&#9;-setup time (part waits while resource is set up)&#10;&#9;- + process time&#10;&#9;- + queue time (part waits while resource is working on something else)&#10;&#9;- + wait time (part waits for another part for assembly)&#10;11. Most time is spent in queue + wait.&#10;&#9;-For parts going through bottleneck, queue time is dominant.&#10;&#9;-For others, wait time is dominant.&#10;12. An hour lost at a bottleneck is lost forever. An hour saved at a non-bottleneck is a mirage.&#10;[Explanation]&#10;" max_attempts="3" showanswer="finished" weight="0.0">
+  <choiceresponse>
+    <label>Which of the following are part of Goldratt's general principles and observations? </label>
+    <checkboxgroup>
+      <choice correct="true">If you produce what you can't sell, you get inventory</choice>
+      <choice correct="false">People tend to excel under stress and efficiency will increase.</choice>
+      <choice correct="false">It's mostly likely the Plant Manager's fault, since he is steering the ship.</choice>
+      <choice correct="true">Balance (keeping everything busy) is not a good strategy because inventory goes up.</choice>
+      <choice correct="false">Data in factories is great.</choice>
+      <choice correct="true">Conventional accounting methods are misleading.</choice>
+      <choice correct="true">It is not useful to discuss value or value added.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Here are the general principles we believe Goldratt outlined in his book.</p>
+        <p>1. Nobody is at fault. The system is at fault.</p>
+        <p>2. Under stress, efficiency declines, and people do foolish things.</p>
+        <p>3. If you produce what you can't sell, you get inventory (WIP or FG).</p>
+        <p>4. Balance (keeping everything busy) is not a good strategy because inventory goes up.</p>
+        <p>5. It is not useful to discuss value or value added.</p>
+        <p>6. Data in factories is lousy.</p>
+        <p>7. Conventional accounting methods are misleading.</p>
+        <p>8. It is important to</p>
+        <p>	-communicate with and convince everybody about important changes.</p>
+        <p>	-get everybody's good ideas</p>
+        <p>	-remember reasons for policies and procedures { in order, for example, to get rid of unnecessary heat-treats which were required to make non-bottleneck operations faster.</p>
+        <p>	-learn things for yourself rather than having them told to you</p>
+        <p>9. Idle time is not bad (other than at the bottleneck). It is inevitable.</p>
+        <p>10. Time a part spends in a in plant =</p>
+        <p>	-setup time (part waits while resource is set up)</p>
+        <p>	- + process time</p>
+        <p>	- + queue time (part waits while resource is working on something else)</p>
+        <p>	- + wait time (part waits for another part for assembly)</p>
+        <p>11. Most time is spent in queue + wait.</p>
+        <p>	-For parts going through bottleneck, queue time is dominant.</p>
+        <p>	-For others, wait time is dominant.</p>
+        <p>12. An hour lost at a bottleneck is lost forever. An hour saved at a non-bottleneck is a mirage.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

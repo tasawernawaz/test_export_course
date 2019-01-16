@@ -1,0 +1,25 @@
+<problem display_name="Part 3" markdown="&gt;&gt;What is the total production rate of this machine in terms of parts per hour for all parts? (Please enter 4 decimal places) &lt;&lt;&#10;&#10;= 93.3333 +-1&#10;&#10;&gt;&gt;What is the yield? (Yield is the percentage of good parts out of all parts produced) (Please enter 4 decimal places, if your answer is 50%, please enter 0.5) &lt;&lt;&#10;&#10;=0.9614 +-0.1&#10;&#10;&gt;&gt;What is the total production rate of good parts in terms of parts per hour? (Please enter 4 decimal places) &lt;&lt;&#10;&#10;= 89.73 +-1&#10;&#10;[explanation]&#10;The total production rate is given by \( 100(P_1+P_2+P_3)\).&#10;The total yield is given by \(\frac{P_1+0.98P_2+0.9P_3}{P_1+P_2+P_3} \).&#10;The good production rate is given by \( 100(P_1+0.98P_2+0.9P_3)\).&#10;[explanation]" max_attempts="3" showanswer="finished" weight="1.0">
+  <label>What is the total production rate of this machine in terms of parts per hour for all parts? (Please enter 4 decimal places) </label>
+  <numericalresponse answer="93.3333">
+    <responseparam type="tolerance" default="1"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>What is the yield? (Yield is the percentage of good parts out of all parts produced) (Please enter 4 decimal places, if your answer is 50%, please enter 0.5) </label>
+  <numericalresponse answer="0.9614">
+    <responseparam type="tolerance" default="0.1"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>What is the total production rate of good parts in terms of parts per hour? (Please enter 4 decimal places) </label>
+  <numericalresponse answer="89.73">
+    <responseparam type="tolerance" default="1"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>The total production rate is given by \( 100(P_1+P_2+P_3)\).</p>
+      <p>The total yield is given by \(\frac{P_1+0.98P_2+0.9P_3}{P_1+P_2+P_3} \).</p>
+      <p>The good production rate is given by \( 100(P_1+0.98P_2+0.9P_3)\).</p>
+    </div>
+  </solution>
+</problem>

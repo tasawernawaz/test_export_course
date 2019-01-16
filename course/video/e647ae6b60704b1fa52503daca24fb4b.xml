@@ -1,0 +1,11 @@
+<video youtube="1.00:gmpi6qbZcuQ" url_name="e647ae6b60704b1fa52503daca24fb4b" transcripts="{&quot;en&quot;: &quot;74f876da-567c-4181-aa50-22aa6851cfd3-en.srt&quot;}" display_name="Video 3: Zero Buffer Lines" download_track="true" download_video="false" edx_video_id="74f876da-567c-4181-aa50-22aa6851cfd3" html5_sources="[]" youtube_id_1_0="gmpi6qbZcuQ">
+  <video_asset client_video_id="W07v03.mp4" duration="668.13" image="">
+    <encoded_video bitrate="192" file_size="16036554" profile="audio_mp3" url="https://d2f1egay8yehza.cloudfront.net/MIT2854F2017-V006200_AUD.mp3"/>
+    <encoded_video bitrate="150" file_size="12527891" profile="mobile_low" url="https://d2f1egay8yehza.cloudfront.net/MIT2854F2017-V006200_MB2.mp4"/>
+    <encoded_video bitrate="179" file_size="15009642" profile="desktop_mp4" url="https://d2f1egay8yehza.cloudfront.net/MIT2854F2017-V006200_DTH.mp4"/>
+    <encoded_video bitrate="0" file_size="0" profile="hls" url="https://d2f1egay8yehza.cloudfront.net/MIT2854F2017-V006200/MIT2854F2017-V006200.m3u8"/>
+    <encoded_video bitrate="0" file_size="0" profile="youtube" url="gmpi6qbZcuQ"/>
+    <transcripts/>
+  </video_asset>
+  <transcript language="en" src="74f876da-567c-4181-aa50-22aa6851cfd3-en.srt"/>
+</video>

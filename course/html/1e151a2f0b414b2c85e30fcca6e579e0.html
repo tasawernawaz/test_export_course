@@ -1,0 +1,9 @@
+<p>The model of an unreliable machine that we have considered in class has a single failure mode. That is, there is only one way the machine can fail. In this problem, we analyze machines that can fail in several different ways: for example, tool breakage, motor burnout, clamp damage, etc. Different failure modes can occur at different frequencies, and they can require different lengths of time to repair. We need to know the fraction of time the machine is operational and the fraction of time it spends in each down state (failure mode). Consider a machine that has one up state and four down states. The machine fails after a random period of time. When the machine fails, it goes to one of those down states. It stays there for a random length of time and then returns to the up state.</p>
+<p style="font-size: 16px;"></p>
+<p style="font-size: 16px;">\(p_1=0.001, p_2=0.005, p_3=0.1,p_4=0.002\)</p>
+<p style="font-size: 16px;">\(r_1=0.1, r_2=0.15, r_3=0.05, r_4=0.07\)</p>
+<p style="font-size: 16px;"></p>
+<p><img height="348" width="600" src="/static/Screen_Shot_2018-11-14_at_7.38.14_AM.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>Assume that all transitions times are exponentially distributed. When the machine is in the up state, it goes to down state i at rate \(p_i\). When it is in down state i, it goes to the up state at rate \(r_i\). All other transitions have rate 0, ie, they never happen.</p>
+<p></p>
+<p></p>

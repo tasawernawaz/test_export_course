@@ -1,0 +1,16 @@
+<problem display_name="Part 5" markdown="&gt;&gt;What is the relationship between production rate and operation time?&lt;&lt;&#10;&#10;( ) Production rate is equal to the inverse of the operation time.&#10;(x) Production rate is less than or equal to the inverse of the operation time.&#10;( ) Production rate is less than the inverse of the operation time.&#10;&#10;[Explanation]&#10;Production rate is in units/time. While operation time is time/unit. In an ideal world the production rate is equal to the inverse of operation time. However, nothing in this world is infallible due to unforseen events, thus the production rate can be less than the invers of the operation time.&#10;[Explanation]&#10;&#10;" max_attempts="2" showanswer="past_due" weight="3.0">
+  <multiplechoiceresponse>
+    <label>What is the relationship between production rate and operation time?</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Production rate is equal to the inverse of the operation time.</choice>
+      <choice correct="true">Production rate is less than or equal to the inverse of the operation time.</choice>
+      <choice correct="false">Production rate is less than the inverse of the operation time.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Production rate is in units/time. While operation time is time/unit. In an ideal world the production rate is equal to the inverse of operation time. However, nothing in this world is infallible due to unforseen events, thus the production rate can be less than the invers of the operation time.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

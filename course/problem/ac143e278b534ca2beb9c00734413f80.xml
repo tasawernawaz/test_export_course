@@ -1,0 +1,7 @@
+<problem display_name="Part 4" markdown="&gt;&gt;Let Y be a random variable that indicates the number of throws you need in order to get all six numbers at least one time for each. (Minimum for Y is 6, but Y can be very large if you are unlucky) Find E[Y]. (Round solution to 1 decimal place)&lt;&lt;&#10;&#10;= 14.7 +-5%&#10;" max_attempts="3" showanswer="never" weight="5.0">
+  <numericalresponse answer="14.7">
+    <label>Let Y be a random variable that indicates the number of throws you need in order to get all six numbers at least one time for each. (Minimum for Y is 6, but Y can be very large if you are unlucky) Find E[Y]. (Round solution to 1 decimal place)</label>
+    <responseparam type="tolerance" default="5%"/>
+    <formulaequationinput/>
+  </numericalresponse>
+</problem>

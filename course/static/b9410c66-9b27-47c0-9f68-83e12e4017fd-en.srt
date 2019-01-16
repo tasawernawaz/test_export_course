@@ -1,0 +1,836 @@
+0
+00:00:00,000 --> 00:00:02,940
+
+
+1
+00:00:02,940 --> 00:00:05,610
+Complex systems can be hard to manage.
+
+2
+00:00:05,610 --> 00:00:08,189
+And when a system is not well-understood,
+
+3
+00:00:08,189 --> 00:00:10,830
+rules for management proliferate.
+
+4
+00:00:10,830 --> 00:00:14,370
+This is because rules are developed to regulate behavior.
+
+5
+00:00:14,370 --> 00:00:17,010
+Behavior refers to how the system behaves
+
+6
+00:00:17,010 --> 00:00:19,140
+and how it reacts to events.
+
+7
+00:00:19,140 --> 00:00:23,020
+Good rules promote desirable behavior.
+
+8
+00:00:23,020 --> 00:00:26,340
+Bad rules promote bad behavior.
+
+9
+00:00:26,340 --> 00:00:29,310
+But bad rules can lead to unexpected, undesirable
+
+10
+00:00:29,310 --> 00:00:30,510
+behavior.
+
+11
+00:00:30,510 --> 00:00:31,710
+Why?
+
+12
+00:00:31,710 --> 00:00:34,230
+Because the system is not well-understood.
+
+13
+00:00:34,230 --> 00:00:36,240
+If you don't understand how a system works,
+
+14
+00:00:36,240 --> 00:00:39,290
+you won't design rules that lead to desirable behavior
+
+15
+00:00:39,290 --> 00:00:41,460
+and desirable performance.
+
+16
+00:00:41,460 --> 00:00:44,280
+Once somebody sees that things aren't going so well,
+
+17
+00:00:44,280 --> 00:00:47,790
+they develop new rules to regulate the new behavior.
+
+18
+00:00:47,790 --> 00:00:50,370
+But these new rules won't be so good for the same reason.
+
+19
+00:00:50,370 --> 00:00:52,410
+You don't understand the system.
+
+20
+00:00:52,410 --> 00:00:54,600
+You see the bad behavior, and you develop still
+
+21
+00:00:54,600 --> 00:00:57,950
+more rules, and so forth.
+
+22
+00:00:57,950 --> 00:01:00,770
+Whenever you see a complicated system in which there
+
+23
+00:01:00,770 --> 00:01:02,630
+are large, large numbers of rules,
+
+24
+00:01:02,630 --> 00:01:05,870
+that may be a sign that the system is not well-understood,
+
+25
+00:01:05,870 --> 00:01:08,510
+and you have to go back to basics to really understand it.
+
+26
+00:01:08,510 --> 00:01:12,440
+Let's make up a story that gives an example of this.
+
+27
+00:01:12,440 --> 00:01:14,390
+We have a factory.
+
+28
+00:01:14,390 --> 00:01:17,420
+The factory is doing jobs for more than one customer.
+
+29
+00:01:17,420 --> 00:01:21,290
+The management observes that many of the jobs are late,
+
+30
+00:01:21,290 --> 00:01:23,360
+so they need to do something about that.
+
+31
+00:01:23,360 --> 00:01:24,740
+So they come up with a rule.
+
+32
+00:01:24,740 --> 00:01:28,200
+The rule is, do the latest jobs first.
+
+33
+00:01:28,200 --> 00:01:30,140
+Well, this makes sense that means
+
+34
+00:01:30,140 --> 00:01:32,840
+that jobs won't get to be too late,
+
+35
+00:01:32,840 --> 00:01:35,120
+or at least that's what the common sense says.
+
+36
+00:01:35,120 --> 00:01:38,330
+However, they observe undesirable behavior.
+
+37
+00:01:38,330 --> 00:01:41,880
+More and more jobs seem to be coming later and later,
+
+38
+00:01:41,880 --> 00:01:43,380
+so this is bad.
+
+39
+00:01:43,380 --> 00:01:45,570
+They need to do something about this.
+
+40
+00:01:45,570 --> 00:01:47,220
+So they come up with another rule.
+
+41
+00:01:47,220 --> 00:01:49,040
+Since there are many different customers,
+
+42
+00:01:49,040 --> 00:01:51,200
+and some customers are more important than others
+
+43
+00:01:51,200 --> 00:01:54,050
+because they have larger orders or other reasons,
+
+44
+00:01:54,050 --> 00:01:56,960
+the new rule is treat the highest per customers
+
+45
+00:01:56,960 --> 00:01:59,510
+as though their due dates are two weeks earlier than they
+
+46
+00:01:59,510 --> 00:02:00,702
+really are.
+
+47
+00:02:00,702 --> 00:02:01,410
+That makes sense.
+
+48
+00:02:01,410 --> 00:02:03,080
+At least the highest priority customers
+
+49
+00:02:03,080 --> 00:02:05,900
+will get the good treatment, and you
+
+50
+00:02:05,900 --> 00:02:07,740
+can make a profit from them.
+
+51
+00:02:07,740 --> 00:02:10,729
+However, what they observe is that the low priority customers
+
+52
+00:02:10,729 --> 00:02:13,520
+find other suppliers, but the factory is still
+
+53
+00:02:13,520 --> 00:02:14,880
+late with the ones that remain.
+
+54
+00:02:14,880 --> 00:02:15,380
+Why?
+
+55
+00:02:15,380 --> 00:02:17,630
+Well, because they don't understand how
+
+56
+00:02:17,630 --> 00:02:19,300
+their system is really working.
+
+57
+00:02:19,300 --> 00:02:21,920
+When a factory makes multiple part types
+
+58
+00:02:21,920 --> 00:02:24,350
+and those types differ, they have
+
+59
+00:02:24,350 --> 00:02:27,560
+to change the configuration of machines
+
+60
+00:02:27,560 --> 00:02:30,710
+from being able to process one kind of part
+
+61
+00:02:30,710 --> 00:02:33,290
+to being able to process a different kind of part.
+
+62
+00:02:33,290 --> 00:02:36,240
+Frequently, those setup times are significant.
+
+63
+00:02:36,240 --> 00:02:38,570
+So if those set up times are not considered,
+
+64
+00:02:38,570 --> 00:02:42,800
+then you'll waste a lot of time doing unproductive work, which
+
+65
+00:02:42,800 --> 00:02:44,810
+is changing setups, and therefore you'll
+
+66
+00:02:44,810 --> 00:02:45,920
+waste capacity.
+
+67
+00:02:45,920 --> 00:02:49,370
+Any rules that do not consider set up times in this factory
+
+68
+00:02:49,370 --> 00:02:51,000
+will have to perform poorly.
+
+69
+00:02:51,000 --> 00:02:53,720
+Now, there are two ways of reducing the time that's
+
+70
+00:02:53,720 --> 00:02:55,100
+lost due to setups.
+
+71
+00:02:55,100 --> 00:02:56,570
+One is technological.
+
+72
+00:02:56,570 --> 00:02:59,450
+You can simply change the machines
+
+73
+00:02:59,450 --> 00:03:02,150
+so that the setup times are reduced.
+
+74
+00:03:02,150 --> 00:03:05,300
+Or there's operational solutions,
+
+75
+00:03:05,300 --> 00:03:08,210
+which is to have larger batches so that you have
+
+76
+00:03:08,210 --> 00:03:11,360
+to change setups less often and therefore lose
+
+77
+00:03:11,360 --> 00:03:13,340
+less time for setup change.
+
+78
+00:03:13,340 --> 00:03:15,410
+On top of that, they need a better process
+
+79
+00:03:15,410 --> 00:03:17,690
+for deciding what orders to accept
+
+80
+00:03:17,690 --> 00:03:20,000
+and when to promise delivery of those orders.
+
+81
+00:03:20,000 --> 00:03:23,190
+They also need to understand their factory's capacity.
+
+82
+00:03:23,190 --> 00:03:24,890
+What's the maximum possible production
+
+83
+00:03:24,890 --> 00:03:27,770
+rate that the factory can operate at?
+
+84
+00:03:27,770 --> 00:03:30,860
+And how that production rate is related to the setups.
+
+85
+00:03:30,860 --> 00:03:33,380
+Here are some important definitions.
+
+86
+00:03:33,380 --> 00:03:36,050
+Manufacturing is the transformation of material
+
+87
+00:03:36,050 --> 00:03:38,981
+into something useful and portable.
+
+88
+00:03:38,981 --> 00:03:42,920
+A manufacturing system is a set of machines, transportation
+
+89
+00:03:42,920 --> 00:03:45,380
+elements, computers, storage buffers, people,
+
+90
+00:03:45,380 --> 00:03:48,740
+and other items that are used together for manufacturing.
+
+91
+00:03:48,740 --> 00:03:50,450
+We can call these items resources.
+
+92
+00:03:50,450 --> 00:03:53,200
+
+
+93
+00:03:53,200 --> 00:03:55,960
+Alternative terms are factory or production system
+
+94
+00:03:55,960 --> 00:03:57,430
+or fabrication facility.
+
+95
+00:03:57,430 --> 00:04:00,280
+The last one is particularly used for semiconductor
+
+96
+00:04:00,280 --> 00:04:02,740
+manufacturing.
+
+97
+00:04:02,740 --> 00:04:05,500
+Subsets of manufacturing systems,
+
+98
+00:04:05,500 --> 00:04:07,720
+which are themselves systems, are sometimes
+
+99
+00:04:07,720 --> 00:04:10,790
+called cells or work centers or workstations.
+
+100
+00:04:10,790 --> 00:04:12,790
+And we'll be using all of those terms relatively
+
+101
+00:04:12,790 --> 00:04:14,170
+interchangeably.
+
+102
+00:04:14,170 --> 00:04:17,140
+Managing factories has always been challenging,
+
+103
+00:04:17,140 --> 00:04:19,630
+but these days there are more issues that are coming up
+
+104
+00:04:19,630 --> 00:04:21,190
+that make things even harder.
+
+105
+00:04:21,190 --> 00:04:24,760
+For example, there are frequent new product introductions.
+
+106
+00:04:24,760 --> 00:04:28,840
+As a consequence, product lifetimes are very short,
+
+107
+00:04:28,840 --> 00:04:32,860
+and process lifetimes are therefore very short.
+
+108
+00:04:32,860 --> 00:04:35,560
+This leads to frequent building and rebuilding, or at least
+
+109
+00:04:35,560 --> 00:04:37,720
+reconfiguring, factories.
+
+110
+00:04:37,720 --> 00:04:39,190
+There's little time for improving
+
+111
+00:04:39,190 --> 00:04:42,100
+the factory after it's built. It has to be built right.
+
+112
+00:04:42,100 --> 00:04:44,510
+So what do we need in order to do that?
+
+113
+00:04:44,510 --> 00:04:47,560
+We need tools to predict the performance of proposed factory
+
+114
+00:04:47,560 --> 00:04:48,370
+designs.
+
+115
+00:04:48,370 --> 00:04:51,640
+We need tools for optimal factory design.
+
+116
+00:04:51,640 --> 00:04:54,040
+We need tools for optimal real-time management
+
+117
+00:04:54,040 --> 00:04:55,540
+and control of factories.
+
+118
+00:04:55,540 --> 00:04:58,150
+And most importantly, we need manufacturing systems,
+
+119
+00:04:58,150 --> 00:05:00,670
+engineering professionals who understand factories
+
+120
+00:05:00,670 --> 00:05:02,070
+as complex systems.
+
+121
+00:05:02,070 --> 00:05:03,700
+Some more definitions.
+
+122
+00:05:03,700 --> 00:05:07,120
+Design quality is the design of products that
+
+123
+00:05:07,120 --> 00:05:08,560
+give customers what they want.
+
+124
+00:05:08,560 --> 00:05:11,560
+Examples are fuel economy in cars,
+
+125
+00:05:11,560 --> 00:05:15,190
+advanced electronics, attractive styling in cell phones.
+
+126
+00:05:15,190 --> 00:05:18,460
+Manufacturing quality is manufacturing products
+
+127
+00:05:18,460 --> 00:05:21,460
+to avoid giving customers what they don't want.
+
+128
+00:05:21,460 --> 00:05:25,180
+Examples of what they don't want are exploding airbags
+
+129
+00:05:25,180 --> 00:05:26,500
+or exploding batteries.
+
+130
+00:05:26,500 --> 00:05:28,660
+This course is about manufacturing, not
+
+131
+00:05:28,660 --> 00:05:29,680
+about product design.
+
+132
+00:05:29,680 --> 00:05:33,280
+Quantity is how much is produced and when it's produced.
+
+133
+00:05:33,280 --> 00:05:36,310
+Quality is about how well it's produced.
+
+134
+00:05:36,310 --> 00:05:39,010
+In this course, we focus mostly on quantity.
+
+135
+00:05:39,010 --> 00:05:42,220
+Much of manufacturing is setting goals and then meeting them.
+
+136
+00:05:42,220 --> 00:05:45,640
+In quality, the goals have to do with tolerances.
+
+137
+00:05:45,640 --> 00:05:49,090
+In quantity, it means delivering a specified
+
+138
+00:05:49,090 --> 00:05:51,700
+amount at a specified time.
+
+139
+00:05:51,700 --> 00:05:55,750
+In general, variability is the enemy of manufacturing.
+
+140
+00:05:55,750 --> 00:05:58,660
+That applies to both quantity and quality.
+
+141
+00:05:58,660 --> 00:06:00,850
+Variability makes it harder to meet goals
+
+142
+00:06:00,850 --> 00:06:02,950
+and requires you to be more conservative about how
+
+143
+00:06:02,950 --> 00:06:04,570
+you set them.
+
+144
+00:06:04,570 --> 00:06:09,720
+There are two basic styles for how factories meet demand.
+
+145
+00:06:09,720 --> 00:06:13,980
+One of them is off the shelf or make to stock.
+
+146
+00:06:13,980 --> 00:06:16,290
+In that style, items are available when
+
+147
+00:06:16,290 --> 00:06:18,660
+a customer arrives.
+
+148
+00:06:18,660 --> 00:06:21,180
+It's appropriate for large volumes, limited production
+
+149
+00:06:21,180 --> 00:06:23,850
+variety, and cheap raw materials.
+
+150
+00:06:23,850 --> 00:06:26,980
+It's very much like a supermarket.
+
+151
+00:06:26,980 --> 00:06:30,070
+When you need to replenish your home supply of Frosted Flakes,
+
+152
+00:06:30,070 --> 00:06:32,980
+you go to the supermarket and you find the Frosted Flakes
+
+153
+00:06:32,980 --> 00:06:34,180
+on the shelves.
+
+154
+00:06:34,180 --> 00:06:36,730
+If they're not there, you go to a different supermarket
+
+155
+00:06:36,730 --> 00:06:38,524
+to get your Frosted Flakes.
+
+156
+00:06:38,524 --> 00:06:39,940
+With make to order, the production
+
+157
+00:06:39,940 --> 00:06:42,910
+is only started after the order arrives.
+
+158
+00:06:42,910 --> 00:06:45,220
+It's appropriate for custom products, products
+
+159
+00:06:45,220 --> 00:06:47,770
+in low volumes, and products that
+
+160
+00:06:47,770 --> 00:06:49,960
+have expensive raw materials.
+
+161
+00:06:49,960 --> 00:06:51,550
+It's very much like buying clothes
+
+162
+00:06:51,550 --> 00:06:52,840
+that have to be tailored.
+
+163
+00:06:52,840 --> 00:06:55,300
+But for both make to order and make to stock,
+
+164
+00:06:55,300 --> 00:06:58,876
+there are trade-offs in how you manage the factory.
+
+165
+00:06:58,876 --> 00:07:02,510
+For make to stock, you'd like to have large finished goods
+
+166
+00:07:02,510 --> 00:07:05,320
+inventories to prevent stockouts.
+
+167
+00:07:05,320 --> 00:07:08,260
+Stockouts occur when a customer shows up
+
+168
+00:07:08,260 --> 00:07:10,044
+and the product he wants is not there.
+
+169
+00:07:10,044 --> 00:07:12,460
+On the other hand, you'd like to have small finished goods
+
+170
+00:07:12,460 --> 00:07:15,170
+inventories to keep the costs low.
+
+171
+00:07:15,170 --> 00:07:17,824
+Inventory is expensive.
+
+172
+00:07:17,824 --> 00:07:19,990
+And we're going to spend a lot of time later talking
+
+173
+00:07:19,990 --> 00:07:24,300
+about the costs of inventories and how to keep them low.
+
+174
+00:07:24,300 --> 00:07:26,890
+Inventory is expensive because of the time difference
+
+175
+00:07:26,890 --> 00:07:30,640
+between when you have to lay out money to buy materials
+
+176
+00:07:30,640 --> 00:07:32,890
+and when later you get reimbursed and more
+
+177
+00:07:32,890 --> 00:07:35,320
+for when the goods are actually sold.
+
+178
+00:07:35,320 --> 00:07:37,570
+In addition, storage space costs money,
+
+179
+00:07:37,570 --> 00:07:40,510
+and material handling of storage costs money.
+
+180
+00:07:40,510 --> 00:07:42,280
+There's a potential loss of value
+
+181
+00:07:42,280 --> 00:07:47,020
+due to obsolescence or spoilage while an item is in inventory.
+
+182
+00:07:47,020 --> 00:07:49,870
+And there's also potential loss due to damage or theft
+
+183
+00:07:49,870 --> 00:07:51,140
+or even misplacement.
+
+184
+00:07:51,140 --> 00:07:54,460
+For make to order, you'd like to have as much production
+
+185
+00:07:54,460 --> 00:07:56,350
+capacity as possible.
+
+186
+00:07:56,350 --> 00:08:00,130
+That allows you to meet the demand quickly,
+
+187
+00:08:00,130 --> 00:08:02,860
+as soon as it arises.
+
+188
+00:08:02,860 --> 00:08:05,980
+You'd like to make early promises and reliable promises
+
+189
+00:08:05,980 --> 00:08:08,370
+for delivery.
+
+190
+00:08:08,370 --> 00:08:11,880
+On the other hand, you'd like to minimize the excess production
+
+191
+00:08:11,880 --> 00:08:15,390
+capacity to keep costs low, because production
+
+192
+00:08:15,390 --> 00:08:18,540
+capacity, which is machines and other capital equipment,
+
+193
+00:08:18,540 --> 00:08:19,560
+costs money.
+
+194
+00:08:19,560 --> 00:08:22,200
+Factory management has to deal with complexity.
+
+195
+00:08:22,200 --> 00:08:25,320
+Complexity occurs when collections of things
+
+196
+00:08:25,320 --> 00:08:28,410
+have properties that are not obvious functions
+
+197
+00:08:28,410 --> 00:08:31,290
+of the properties of the things that are collected.
+
+198
+00:08:31,290 --> 00:08:36,510
+We'll talk about how things interact in factories later.
+
+199
+00:08:36,510 --> 00:08:39,809
+Non-synchronism, especially random non-synchronism,
+
+200
+00:08:39,809 --> 00:08:41,070
+and its consequences.
+
+201
+00:08:41,070 --> 00:08:44,070
+Factories do not run like clockwork.
+
+202
+00:08:44,070 --> 00:08:47,160
+Ideally, as soon as machine one finishes
+
+203
+00:08:47,160 --> 00:08:49,620
+an operation on a product, it delivers
+
+204
+00:08:49,620 --> 00:08:52,110
+it right to machine two that's able to pick it up and start
+
+205
+00:08:52,110 --> 00:08:53,400
+right away.
+
+206
+00:08:53,400 --> 00:08:55,470
+In reality, that doesn't frequently
+
+207
+00:08:55,470 --> 00:08:58,560
+happen because of lots of variations and lots
+
+208
+00:08:58,560 --> 00:09:01,130
+of complexity in the system.
+

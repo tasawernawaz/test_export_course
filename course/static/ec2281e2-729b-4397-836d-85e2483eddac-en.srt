@@ -1,0 +1,760 @@
+0
+00:00:00,000 --> 00:00:02,270
+
+
+1
+00:00:02,270 --> 00:00:06,050
+OK, let's talk about the densities and distributions
+
+2
+00:00:06,050 --> 00:00:08,620
+of continuous random variables.
+
+3
+00:00:08,620 --> 00:00:10,910
+Let's start with one dimensional systems.
+
+4
+00:00:10,910 --> 00:00:14,000
+In one dimension, capital F of x is the cumulative probability
+
+5
+00:00:14,000 --> 00:00:18,200
+distribution of X. If F of x is the probability that capital
+
+6
+00:00:18,200 --> 00:00:19,490
+X is less than little x.
+
+7
+00:00:19,490 --> 00:00:21,290
+Remember capital X is the random variable,
+
+8
+00:00:21,290 --> 00:00:23,120
+and little x is a value.
+
+9
+00:00:23,120 --> 00:00:26,760
+So it's the probability of being on the heavy line that's
+
+10
+00:00:26,760 --> 00:00:28,400
+indicated over here.
+
+11
+00:00:28,400 --> 00:00:30,830
+Little f of x is the density function of X
+
+12
+00:00:30,830 --> 00:00:33,610
+if capital F is the integral of little f.
+
+13
+00:00:33,610 --> 00:00:36,620
+Whenever capital F is differentiable, then little f
+
+14
+00:00:36,620 --> 00:00:39,560
+is the derivative of capital F.
+
+15
+00:00:39,560 --> 00:00:41,900
+So here are some important facts.
+
+16
+00:00:41,900 --> 00:00:45,380
+Little f of x delta x is approximately the probability
+
+17
+00:00:45,380 --> 00:00:48,270
+of x being between little x and little x plus delta
+
+18
+00:00:48,270 --> 00:00:51,560
+x if delta x is sufficiently small.
+
+19
+00:00:51,560 --> 00:00:55,340
+And that is if x is in this little tiny interval here.
+
+20
+00:00:55,340 --> 00:00:58,430
+Of course, capital F of b minus capital F of a
+
+21
+00:00:58,430 --> 00:01:02,210
+is just the integral of little f between a and b.
+
+22
+00:01:02,210 --> 00:01:04,610
+And the definition of expected value
+
+23
+00:01:04,610 --> 00:01:07,010
+is just the integral from minus infinity and plus
+
+24
+00:01:07,010 --> 00:01:09,560
+infinity of t times f of t.
+
+25
+00:01:09,560 --> 00:01:12,740
+Remember, the expected value or the mean or the average
+
+26
+00:01:12,740 --> 00:01:15,020
+has the same meaning as it does in the case
+
+27
+00:01:15,020 --> 00:01:17,960
+of the discrete random variables.
+
+28
+00:01:17,960 --> 00:01:20,600
+Now, there are certain important random variables
+
+29
+00:01:20,600 --> 00:01:22,460
+that we need to pay attention to.
+
+30
+00:01:22,460 --> 00:01:23,930
+First of all, there's the Gaussian
+
+31
+00:01:23,930 --> 00:01:25,870
+or normal random variable.
+
+32
+00:01:25,870 --> 00:01:28,910
+The density function is given by that formula there.
+
+33
+00:01:28,910 --> 00:01:32,770
+And this is the standard normal that has mean of 0
+
+34
+00:01:32,770 --> 00:01:33,980
+and variance of 1.
+
+35
+00:01:33,980 --> 00:01:37,490
+And we'll talk about the more general normal.
+
+36
+00:01:37,490 --> 00:01:39,900
+The normal distribution function,
+
+37
+00:01:39,900 --> 00:01:44,330
+which is again the probability that our random variable is
+
+38
+00:01:44,330 --> 00:01:45,920
+between minus infinity and little
+
+39
+00:01:45,920 --> 00:01:48,710
+x, that normal distribution function
+
+40
+00:01:48,710 --> 00:01:50,480
+is just the integral of f.
+
+41
+00:01:50,480 --> 00:01:54,530
+Unfortunately, there's no closed form expression for f of x.
+
+42
+00:01:54,530 --> 00:01:57,720
+So the best we can do is find it on tables or things like that.
+
+43
+00:01:57,720 --> 00:02:00,410
+And here are the graphs of the density function
+
+44
+00:02:00,410 --> 00:02:03,080
+above and the distribution function.
+
+45
+00:02:03,080 --> 00:02:06,140
+The distribution function has this very characteristic shape,
+
+46
+00:02:06,140 --> 00:02:10,310
+in which it goes to 0 when x is sufficiently negative.
+
+47
+00:02:10,310 --> 00:02:13,910
+It goes to 1 when x is sufficiently
+
+48
+00:02:13,910 --> 00:02:15,380
+large and positive.
+
+49
+00:02:15,380 --> 00:02:19,320
+And it increases monotonically between 0 and 1.
+
+50
+00:02:19,320 --> 00:02:21,860
+All distribution functions have the shape,
+
+51
+00:02:21,860 --> 00:02:25,120
+but the details are different.
+
+52
+00:02:25,120 --> 00:02:27,700
+The notation that people use is capital
+
+53
+00:02:27,700 --> 00:02:32,050
+N of mu comma sigma square is the normal distribution
+
+54
+00:02:32,050 --> 00:02:35,170
+with mean mu and variance sigma square.
+
+55
+00:02:35,170 --> 00:02:37,740
+Notation is not always uniform, so sometimes people
+
+56
+00:02:37,740 --> 00:02:41,320
+write N of mu and sigma rather than sigma square
+
+57
+00:02:41,320 --> 00:02:43,250
+for the same thing.
+
+58
+00:02:43,250 --> 00:02:46,190
+If X and Y are both normal, then aX
+
+59
+00:02:46,190 --> 00:02:50,620
+plus bY plus c is also normal.
+
+60
+00:02:50,620 --> 00:02:56,110
+If X is normal with mean mu and variance sigma square,
+
+61
+00:02:56,110 --> 00:03:00,880
+then X minus mu over sigma is normal with mean 0
+
+62
+00:03:00,880 --> 00:03:03,860
+and variance 1, the standard normal.
+
+63
+00:03:03,860 --> 00:03:06,310
+So this is why it's very easy to compute
+
+64
+00:03:06,310 --> 00:03:09,680
+the general mean from the specific standard normal.
+
+65
+00:03:09,680 --> 00:03:12,790
+And that's why you'll see N 0, 1,
+
+66
+00:03:12,790 --> 00:03:15,370
+the standard normal tabulated in books.
+
+67
+00:03:15,370 --> 00:03:18,520
+Related distributions are truncated normal distributions.
+
+68
+00:03:18,520 --> 00:03:19,960
+And things get a little bit messy,
+
+69
+00:03:19,960 --> 00:03:23,590
+but unfortunately this is what things often are in real life.
+
+70
+00:03:23,590 --> 00:03:26,200
+The normal distribution allows the random variable
+
+71
+00:03:26,200 --> 00:03:28,250
+to go negative.
+
+72
+00:03:28,250 --> 00:03:30,370
+But in some cases, you have situations
+
+73
+00:03:30,370 --> 00:03:33,400
+where the actual quantity that you're dealing with
+
+74
+00:03:33,400 --> 00:03:35,050
+can only be positive.
+
+75
+00:03:35,050 --> 00:03:38,350
+For example, in a few lectures when we talk about inventory,
+
+76
+00:03:38,350 --> 00:03:40,630
+we're going to talk about the news vendor problem,
+
+77
+00:03:40,630 --> 00:03:44,350
+and we're going to approximate the demand for newspapers
+
+78
+00:03:44,350 --> 00:03:46,810
+on a given day with a normal distribution.
+
+79
+00:03:46,810 --> 00:03:49,090
+But, of course, the demand for newspapers on any day
+
+80
+00:03:49,090 --> 00:03:50,800
+is never going to be negative.
+
+81
+00:03:50,800 --> 00:03:53,750
+You can truncate the normal in a couple of different ways.
+
+82
+00:03:53,750 --> 00:03:58,960
+One is to simply take all the probability that
+
+83
+00:03:58,960 --> 00:04:01,330
+would be assigned to negative numbers
+
+84
+00:04:01,330 --> 00:04:05,110
+and distribute them all around and distribute that probability
+
+85
+00:04:05,110 --> 00:04:07,450
+to the positive numbers, in which case
+
+86
+00:04:07,450 --> 00:04:10,390
+the truncated normal density is given by this formula,
+
+87
+00:04:10,390 --> 00:04:13,960
+just the normal density divided by 1 minus F of zero.
+
+88
+00:04:13,960 --> 00:04:18,070
+It's important to remember that the parameters mu and sigma are
+
+89
+00:04:18,070 --> 00:04:22,510
+the mean and standard deviation of the original normal, which
+
+90
+00:04:22,510 --> 00:04:24,610
+is being truncated, not the resulting
+
+91
+00:04:24,610 --> 00:04:26,500
+truncated normal distribution.
+
+92
+00:04:26,500 --> 00:04:29,470
+And those are a little more complicated to calculate.
+
+93
+00:04:29,470 --> 00:04:32,170
+The other kind of truncation is where you simply
+
+94
+00:04:32,170 --> 00:04:36,430
+assign all of the probability that would go to negative X.
+
+95
+00:04:36,430 --> 00:04:37,900
+Assign that to 0.
+
+96
+00:04:37,900 --> 00:04:40,330
+And so we have a probability mass at 0.
+
+97
+00:04:40,330 --> 00:04:44,020
+In that case, the normal density and normal distribution
+
+98
+00:04:44,020 --> 00:04:46,840
+is the same as the truncated normal density and distribution
+
+99
+00:04:46,840 --> 00:04:52,190
+for positive X, but not for negative X. Again, mu
+
+100
+00:04:52,190 --> 00:04:54,440
+and sigma are the parameters of the original normal
+
+101
+00:04:54,440 --> 00:04:57,350
+distribution, not the truncated distribution.
+
+102
+00:04:57,350 --> 00:05:01,940
+In both cases, for both kinds of truncations, the densities
+
+103
+00:05:01,940 --> 00:05:04,490
+as well as the distributions are close to the densities
+
+104
+00:05:04,490 --> 00:05:06,680
+and distributions of the original normal
+
+105
+00:05:06,680 --> 00:05:09,710
+when mu is much greater than sigma and not otherwise.
+
+106
+00:05:09,710 --> 00:05:12,140
+That's because if mu is much greater than sigma,
+
+107
+00:05:12,140 --> 00:05:16,340
+the probability of a normal random variable being negative
+
+108
+00:05:16,340 --> 00:05:18,740
+is very, very small.
+
+109
+00:05:18,740 --> 00:05:20,980
+Now, we have the law of large numbers, which
+
+110
+00:05:20,980 --> 00:05:23,290
+is one of the reasons why the normal distribution
+
+111
+00:05:23,290 --> 00:05:25,180
+is so important and why it's especially
+
+112
+00:05:25,180 --> 00:05:27,790
+important for statistics.
+
+113
+00:05:27,790 --> 00:05:30,310
+So we define X to be a sequence of independent,
+
+114
+00:05:30,310 --> 00:05:32,350
+identically distributed random variables--
+
+115
+00:05:32,350 --> 00:05:34,840
+that's often abbreviated iid--
+
+116
+00:05:34,840 --> 00:05:36,760
+that have finite mean mu.
+
+117
+00:05:36,760 --> 00:05:39,730
+And Sn is going to be the sum of the first n
+
+118
+00:05:39,730 --> 00:05:40,940
+of those random variables.
+
+119
+00:05:40,940 --> 00:05:44,320
+So Sn is just the sum from X1 to Xn.
+
+120
+00:05:44,320 --> 00:05:48,370
+Then, for every epsilon greater than 0, what this says
+
+121
+00:05:48,370 --> 00:05:54,370
+is that in the limit, as we sum a large number of numbers--
+
+122
+00:05:54,370 --> 00:05:56,290
+that's n going to infinity--
+
+123
+00:05:56,290 --> 00:05:59,770
+the probability that the average differs
+
+124
+00:05:59,770 --> 00:06:04,720
+from the mean of those random variables, the probability
+
+125
+00:06:04,720 --> 00:06:09,190
+of that difference is greater than epsilon and absolute value
+
+126
+00:06:09,190 --> 00:06:10,030
+goes to 0.
+
+127
+00:06:10,030 --> 00:06:11,330
+OK, what does that mean?
+
+128
+00:06:11,330 --> 00:06:14,670
+That means that as n goes to infinity,
+
+129
+00:06:14,670 --> 00:06:19,150
+S over n is unlikely to be further than any given
+
+130
+00:06:19,150 --> 00:06:21,910
+number from 0 and gets less and less likely
+
+131
+00:06:21,910 --> 00:06:23,080
+as n goes to infinity.
+
+132
+00:06:23,080 --> 00:06:25,430
+Eventually, when n goes to infinity,
+
+133
+00:06:25,430 --> 00:06:27,730
+that probability becomes 0.
+
+134
+00:06:27,730 --> 00:06:31,210
+So this says that that average, S of n over n,
+
+135
+00:06:31,210 --> 00:06:33,040
+gets close to mu.
+
+136
+00:06:33,040 --> 00:06:37,330
+So to summarize it, the average approaches the mean.
+
+137
+00:06:37,330 --> 00:06:39,250
+The central limit theorem is another theory
+
+138
+00:06:39,250 --> 00:06:41,950
+about the sum of independent identically distributed
+
+139
+00:06:41,950 --> 00:06:43,630
+random variables.
+
+140
+00:06:43,630 --> 00:06:47,690
+And it becomes particularly important for statistics again.
+
+141
+00:06:47,690 --> 00:06:50,085
+So this is a little bit more complicated looking.
+
+142
+00:06:50,085 --> 00:06:53,140
+But what it says is that we take that sum,
+
+143
+00:06:53,140 --> 00:06:57,760
+subtract off n times the mean and divide it by something.
+
+144
+00:06:57,760 --> 00:07:00,580
+And then when we do that, that probability distribution
+
+145
+00:07:00,580 --> 00:07:04,630
+approaches the standard normal distribution.
+
+146
+00:07:04,630 --> 00:07:07,450
+So what it says is that if we take some linear function
+
+147
+00:07:07,450 --> 00:07:09,280
+of the sum of those random variables,
+
+148
+00:07:09,280 --> 00:07:12,660
+we'll get a normal distribution.
+
+149
+00:07:12,660 --> 00:07:15,200
+Let's define An as Sn over n, which is
+
+150
+00:07:15,200 --> 00:07:17,870
+the average of the first n Xs.
+
+151
+00:07:17,870 --> 00:07:20,210
+So that statement of the theorem is
+
+152
+00:07:20,210 --> 00:07:23,720
+equivalent to saying that as n approaches infinity,
+
+153
+00:07:23,720 --> 00:07:27,350
+the probability distribution of the average
+
+154
+00:07:27,350 --> 00:07:29,600
+approaches the normal distribution
+
+155
+00:07:29,600 --> 00:07:31,550
+with a certain mean and variance.
+
+156
+00:07:31,550 --> 00:07:33,660
+This is important for statistics,
+
+157
+00:07:33,660 --> 00:07:35,840
+because we want to add up a large number of numbers
+
+158
+00:07:35,840 --> 00:07:38,030
+and take their average and find out
+
+159
+00:07:38,030 --> 00:07:40,130
+that that's close to the mean.
+
+160
+00:07:40,130 --> 00:07:42,260
+What this tells us is how many we
+
+161
+00:07:42,260 --> 00:07:45,530
+need to add up in order to get within a certain distance
+
+162
+00:07:45,530 --> 00:07:48,730
+from the mean with a given probability.
+
+163
+00:07:48,730 --> 00:07:54,020
+OK, here are some examples of coin flips again,
+
+164
+00:07:54,020 --> 00:07:56,480
+but it also shows us how we're approaching
+
+165
+00:07:56,480 --> 00:07:58,350
+the normal distribution.
+
+166
+00:07:58,350 --> 00:08:01,130
+So here, we're going back to our coin flips.
+
+167
+00:08:01,130 --> 00:08:05,720
+We have a fair coin, and we're taking more and more flips
+
+168
+00:08:05,720 --> 00:08:06,320
+of the coin.
+
+169
+00:08:06,320 --> 00:08:08,690
+And you can see that those distributions are starting
+
+170
+00:08:08,690 --> 00:08:10,940
+to look like normal distributions
+
+171
+00:08:10,940 --> 00:08:13,547
+as n gets larger and larger.
+
+172
+00:08:13,547 --> 00:08:15,380
+In this case, we're back to the same picture
+
+173
+00:08:15,380 --> 00:08:17,030
+that we showed some time earlier.
+
+174
+00:08:17,030 --> 00:08:20,900
+We have an unfair coin with a probability of 0.4,
+
+175
+00:08:20,900 --> 00:08:22,250
+and we did hundred coin flips.
+
+176
+00:08:22,250 --> 00:08:26,250
+And this certainly looks a lot like a normal distribution.
+
+177
+00:08:26,250 --> 00:08:29,040
+In these cases, we have a smaller probability
+
+178
+00:08:29,040 --> 00:08:31,020
+of getting heads.
+
+179
+00:08:31,020 --> 00:08:34,860
+And as a result, the probability distributions
+
+180
+00:08:34,860 --> 00:08:37,230
+look like a truncated normal distribution
+
+181
+00:08:37,230 --> 00:08:41,039
+as we take a larger and larger number of samples.
+
+182
+00:08:41,039 --> 00:08:43,140
+Here's what when we have a normal density
+
+183
+00:08:43,140 --> 00:08:44,500
+function in two dimensions.
+
+184
+00:08:44,500 --> 00:08:46,290
+Now we have two variables.
+
+185
+00:08:46,290 --> 00:08:48,880
+And the vertical axis is the density,
+
+186
+00:08:48,880 --> 00:08:50,970
+which is the probability of finding
+
+187
+00:08:50,970 --> 00:08:54,210
+the sample within a small rectangle
+
+188
+00:08:54,210 --> 00:08:57,932
+in that plane times the area of that rectangle.
+
+189
+00:08:57,932 --> 00:08:58,432
+
+

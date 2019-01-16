@@ -1,0 +1,13 @@
+<problem display_name="Part 2" markdown="&gt;&gt;What fraction of time is the machine is up? (Please enter 4 decimal places) &lt;&lt;&#10;&#10;= 0.8168 +-0.001&#10;&#10;[explanation]&#10;The answer is simple \(p1+p2\).&#10;[explanation]&#10;" max_attempts="3" showanswer="finished" weight="1.0">
+  <numericalresponse answer="0.8168">
+    <label>What fraction of time is the machine is up? (Please enter 4 decimal places) </label>
+    <responseparam type="tolerance" default="0.001"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>The answer is simple \(p1+p2\).</p>
+      </div>
+    </solution>
+  </numericalresponse>
+</problem>

@@ -1,0 +1,636 @@
+0
+00:00:00,000 --> 00:00:02,900
+
+
+1
+00:00:02,900 --> 00:00:06,110
+Let's continue our discussion of the Newsvendor problem.
+
+2
+00:00:06,110 --> 00:00:08,990
+We've expressed the profit as a function of x and w.
+
+3
+00:00:08,990 --> 00:00:10,700
+x is the unknown we're looking for,
+
+4
+00:00:10,700 --> 00:00:15,080
+and w is a random variable representing the demand.
+
+5
+00:00:15,080 --> 00:00:17,300
+The problem is to find x, the number of papers
+
+6
+00:00:17,300 --> 00:00:19,400
+that the vendor should buy from the publisher that
+
+7
+00:00:19,400 --> 00:00:22,360
+maximizes the expected profit.
+
+8
+00:00:22,360 --> 00:00:24,500
+To find that number, we have to do two things,
+
+9
+00:00:24,500 --> 00:00:27,680
+express the expected profit as a function of x,
+
+10
+00:00:27,680 --> 00:00:31,730
+and then find the x that maximizes that expression.
+
+11
+00:00:31,730 --> 00:00:33,980
+The math is going to get a little more intense now.
+
+12
+00:00:33,980 --> 00:00:35,900
+Please have a copy of the slides handy.
+
+13
+00:00:35,900 --> 00:00:38,780
+I will be discussing expressions on previous slides that
+
+14
+00:00:38,780 --> 00:00:41,810
+are not on the slide I will be explaining.
+
+15
+00:00:41,810 --> 00:00:44,360
+The profit has one expression for w less than x
+
+16
+00:00:44,360 --> 00:00:46,730
+and another one for w greater than x.
+
+17
+00:00:46,730 --> 00:00:49,490
+Therefore, we have two terms.
+
+18
+00:00:49,490 --> 00:00:51,640
+Here's the first one for w less than x.
+
+19
+00:00:51,640 --> 00:00:56,140
+Here's the second one for w greater than x.
+
+20
+00:00:56,140 --> 00:00:58,460
+Now we separate the first integral into two parts,
+
+21
+00:00:58,460 --> 00:01:00,380
+so we have three terms.
+
+22
+00:01:00,380 --> 00:01:03,280
+Let's take a look at the three terms one by one.
+
+23
+00:01:03,280 --> 00:01:06,130
+Notice that the integrals in the second and third terms
+
+24
+00:01:06,130 --> 00:01:07,690
+are just integrals of the density
+
+25
+00:01:07,690 --> 00:01:11,830
+function f of w, one from minus infinity to x and the other
+
+26
+00:01:11,830 --> 00:01:15,030
+from x to infinity.
+
+27
+00:01:15,030 --> 00:01:16,840
+We can't do too much with the first term.
+
+28
+00:01:16,840 --> 00:01:20,820
+So let's look at it after dealing with the others.
+
+29
+00:01:20,820 --> 00:01:22,600
+The integral in the second term is just
+
+30
+00:01:22,600 --> 00:01:25,680
+f of x, the distribution function.
+
+31
+00:01:25,680 --> 00:01:29,340
+And the integral in the third is 1 minus f of x.
+
+32
+00:01:29,340 --> 00:01:33,980
+To find x to maximize EP of x, we have to be sure that EP of x
+
+33
+00:01:33,980 --> 00:01:35,486
+has a maximum.
+
+34
+00:01:35,486 --> 00:01:36,860
+For it to be interesting, we want
+
+35
+00:01:36,860 --> 00:01:40,280
+the maximum expected profit not to occur at x equals 0.
+
+36
+00:01:40,280 --> 00:01:42,830
+In other words, the newspaper business is only a game
+
+37
+00:01:42,830 --> 00:01:46,490
+worth playing if it's not smarter to sit it out.
+
+38
+00:01:46,490 --> 00:01:48,620
+Recall that the density and distribution
+
+39
+00:01:48,620 --> 00:01:52,490
+functions are both 0 when x is less than or equal to 0.
+
+40
+00:01:52,490 --> 00:01:55,280
+Therefore all three terms are 0 when x equals 0.
+
+41
+00:01:55,280 --> 00:01:58,400
+So the expected profit is 0 when x equals 0.
+
+42
+00:01:58,400 --> 00:01:59,420
+That makes sense.
+
+43
+00:01:59,420 --> 00:02:02,275
+If you don't play, you won't win, and you won't lose.
+
+44
+00:02:02,275 --> 00:02:03,650
+In order for the game to be worth
+
+45
+00:02:03,650 --> 00:02:07,160
+playing, EP of x must be positive for some x.
+
+46
+00:02:07,160 --> 00:02:10,699
+In order for this to be a realistic model of a business,
+
+47
+00:02:10,699 --> 00:02:13,280
+EP must be negative for some x.
+
+48
+00:02:13,280 --> 00:02:16,190
+In other words, it's possible to make a bad decision that
+
+49
+00:02:16,190 --> 00:02:18,320
+will cost you money.
+
+50
+00:02:18,320 --> 00:02:21,080
+When x equals 0, EP is 0.
+
+51
+00:02:21,080 --> 00:02:25,070
+That's because the density is 0 for x less than or equal to 0,
+
+52
+00:02:25,070 --> 00:02:28,800
+and the distribution function is 0 at x equals 0.
+
+53
+00:02:28,800 --> 00:02:30,300
+OK, let's look at the other extreme.
+
+54
+00:02:30,300 --> 00:02:33,740
+Let x go to infinity.
+
+55
+00:02:33,740 --> 00:02:37,000
+The first term goes to a finite constant, r minus s
+
+56
+00:02:37,000 --> 00:02:40,020
+times the expected value of w.
+
+57
+00:02:40,020 --> 00:02:41,730
+The middle term goes to minus infinity
+
+58
+00:02:41,730 --> 00:02:45,780
+because it is negative, x goes to infinity, and capital F of x
+
+59
+00:02:45,780 --> 00:02:47,820
+goes to 1.
+
+60
+00:02:47,820 --> 00:02:49,980
+The last term goes to 0.
+
+61
+00:02:49,980 --> 00:02:53,220
+This may not be obvious, because x goes to infinity, and 1 minus
+
+62
+00:02:53,220 --> 00:02:55,110
+f of x goes to 0.
+
+63
+00:02:55,110 --> 00:02:58,590
+But 1 minus f of x goes to 0 faster than 1 over x.
+
+64
+00:02:58,590 --> 00:03:00,560
+And this means that the last term goes to 0.
+
+65
+00:03:00,560 --> 00:03:03,950
+
+
+66
+00:03:03,950 --> 00:03:05,960
+Therefore, when x goes to infinity,
+
+67
+00:03:05,960 --> 00:03:09,800
+the expected profit goes to minus infinity.
+
+68
+00:03:09,800 --> 00:03:10,940
+This makes sense.
+
+69
+00:03:10,940 --> 00:03:12,846
+If you buy a vast quantity of newspapers,
+
+70
+00:03:12,846 --> 00:03:14,720
+you're not going to be able to sell them all,
+
+71
+00:03:14,720 --> 00:03:17,460
+and you'll probably lose a lot of money.
+
+72
+00:03:17,460 --> 00:03:19,130
+So let's summarize what we know so far
+
+73
+00:03:19,130 --> 00:03:21,140
+about the graph of EP of x.
+
+74
+00:03:21,140 --> 00:03:23,870
+EP of 0 equals 0.
+
+75
+00:03:23,870 --> 00:03:27,770
+EP of x goes to minus infinity as x goes to infinity.
+
+76
+00:03:27,770 --> 00:03:30,290
+But we don't know what happens to EP of x, when
+
+77
+00:03:30,290 --> 00:03:33,140
+x is positive but not large.
+
+78
+00:03:33,140 --> 00:03:35,450
+There are two reasonable possibilities.
+
+79
+00:03:35,450 --> 00:03:39,290
+Either EP is always negative for x positive,
+
+80
+00:03:39,290 --> 00:03:43,490
+or EP has a positive maximum for x greater than 0.
+
+81
+00:03:43,490 --> 00:03:46,500
+So we have to figure out which is going to happen.
+
+82
+00:03:46,500 --> 00:03:48,680
+Here's the expression for EP of x again.
+
+83
+00:03:48,680 --> 00:03:51,410
+Let's take its derivative with respect to x.
+
+84
+00:03:51,410 --> 00:03:58,100
+It's just the integral of wf of w evaluated at w equals x.
+
+85
+00:03:58,100 --> 00:04:00,230
+The derivative of the second term of EP of x
+
+86
+00:04:00,230 --> 00:04:03,530
+produces two terms, and the derivative of the third term
+
+87
+00:04:03,530 --> 00:04:07,180
+also produces two terms.
+
+88
+00:04:07,180 --> 00:04:11,510
+So collecting like terms and simplifying
+
+89
+00:04:11,510 --> 00:04:14,390
+gives us this expression.
+
+90
+00:04:14,390 --> 00:04:17,350
+If we can find an x that sets this expression to 0,
+
+91
+00:04:17,350 --> 00:04:22,190
+we have a candidate for the x that maximizes EP.
+
+92
+00:04:22,190 --> 00:04:25,360
+The second derivative is given by this expression.
+
+93
+00:04:25,360 --> 00:04:29,360
+The second derivative is negative for all x positive.
+
+94
+00:04:29,360 --> 00:04:33,580
+Therefore, EP of x is a concave function and has a maximum.
+
+95
+00:04:33,580 --> 00:04:37,230
+
+
+96
+00:04:37,230 --> 00:04:40,140
+The first derivative is positive, greater than 0
+
+97
+00:04:40,140 --> 00:04:42,180
+when x equals 0.
+
+98
+00:04:42,180 --> 00:04:46,590
+This means that EP is increasing at x equals 0, so EP of x
+
+99
+00:04:46,590 --> 00:04:49,410
+is positive for some x.
+
+100
+00:04:49,410 --> 00:04:53,340
+Since we know that EP of x is negative for some x, EP of x
+
+101
+00:04:53,340 --> 00:04:56,190
+has a maximum, which is greater than 0 for some x
+
+102
+00:04:56,190 --> 00:04:59,270
+equals x star, which is greater than 0.
+
+103
+00:04:59,270 --> 00:05:03,960
+x star satisfies the EP dx of x star equals 0.
+
+104
+00:05:03,960 --> 00:05:08,120
+The gaps in the graph of EP of x are now filled in.
+
+105
+00:05:08,120 --> 00:05:10,740
+The equation for x star comes from the DPD x
+
+106
+00:05:10,740 --> 00:05:14,560
+equals 0 equation on slide 25.
+
+107
+00:05:14,560 --> 00:05:17,460
+Notice that the fraction r minus c over or minus x
+
+108
+00:05:17,460 --> 00:05:19,710
+is between 0 and 1.
+
+109
+00:05:19,710 --> 00:05:23,520
+Also, the distribution function, f of x,
+
+110
+00:05:23,520 --> 00:05:25,630
+also is between 0 and 1.
+
+111
+00:05:25,630 --> 00:05:30,870
+Therefore, there is an x star that satisfies this equation.
+
+112
+00:05:30,870 --> 00:05:34,670
+So the policy is buy the quantity that satisfies
+
+113
+00:05:34,670 --> 00:05:36,840
+that equation every day.
+
+114
+00:05:36,840 --> 00:05:38,930
+Some days demand is higher.
+
+115
+00:05:38,930 --> 00:05:41,120
+Some days it's lower.
+
+116
+00:05:41,120 --> 00:05:45,190
+But this amount is the best to buy every day in the long run.
+
+117
+00:05:45,190 --> 00:05:48,265
+Recall the definition of the distribution function f,
+
+118
+00:05:48,265 --> 00:05:50,800
+f of x star is the probability that w is
+
+119
+00:05:50,800 --> 00:05:53,450
+less than or equal to x star.
+
+120
+00:05:53,450 --> 00:05:55,750
+So the equation in the box means,
+
+121
+00:05:55,750 --> 00:06:00,400
+buy enough stock to satisfy demand, 100 times
+
+122
+00:06:00,400 --> 00:06:03,130
+k percent of the time, where k is equal to r minus
+
+123
+00:06:03,130 --> 00:06:05,340
+z over r minus s.
+
+124
+00:06:05,340 --> 00:06:11,670
+To say it in other words, if you buy that quantity every day,
+
+125
+00:06:11,670 --> 00:06:14,370
+then the demand will be less than that quantity
+
+126
+00:06:14,370 --> 00:06:17,360
+for that fraction of a the days.
+
+127
+00:06:17,360 --> 00:06:20,300
+Here's one way of looking at this graphically.
+
+128
+00:06:20,300 --> 00:06:24,260
+The graph, of course, is the density function, f of w.
+
+129
+00:06:24,260 --> 00:06:27,530
+The area of the shaded region is the probability
+
+130
+00:06:27,530 --> 00:06:29,660
+that w is less than x star.
+
+131
+00:06:29,660 --> 00:06:31,940
+That is, that the demand is less than the quantity
+
+132
+00:06:31,940 --> 00:06:35,040
+we calculated to be the optimal amount to buy.
+
+133
+00:06:35,040 --> 00:06:37,000
+Here's another view of it.
+
+134
+00:06:37,000 --> 00:06:39,400
+This is a graph of the distribution function,
+
+135
+00:06:39,400 --> 00:06:40,930
+as a function of x.
+
+136
+00:06:40,930 --> 00:06:42,710
+And it says the same thing.
+
+137
+00:06:42,710 --> 00:06:45,700
+x star is the quantity such that r
+
+138
+00:06:45,700 --> 00:06:48,700
+minus c over r minus s, of the time,
+
+139
+00:06:48,700 --> 00:06:52,400
+the demand will be less than x star.
+
+140
+00:06:52,400 --> 00:06:54,730
+There's one more way of looking at this.
+
+141
+00:06:54,730 --> 00:06:57,220
+Notice that the density function at x star
+
+142
+00:06:57,220 --> 00:06:59,750
+is equal to r minus c over r minus s,
+
+143
+00:06:59,750 --> 00:07:06,440
+which we can write as r minus c over r minus c plus c minus s.
+
+144
+00:07:06,440 --> 00:07:10,200
+r minus c, which is positive, is the marginal profit
+
+145
+00:07:10,200 --> 00:07:12,180
+when x is less than w.
+
+146
+00:07:12,180 --> 00:07:14,700
+That is, it's the increase in profit
+
+147
+00:07:14,700 --> 00:07:17,370
+that you would get if you bought one more copy of the paper
+
+148
+00:07:17,370 --> 00:07:20,850
+from the publisher if the demand was greater than the number
+
+149
+00:07:20,850 --> 00:07:22,700
+that you bought.
+
+150
+00:07:22,700 --> 00:07:26,880
+c minus s is the marginal loss when x is greater than w.
+
+151
+00:07:26,880 --> 00:07:28,470
+The marginal loss is the decrease
+
+152
+00:07:28,470 --> 00:07:30,690
+in profit from buying one more copy of the paper
+
+153
+00:07:30,690 --> 00:07:32,880
+from the publisher if the demand was less
+
+154
+00:07:32,880 --> 00:07:35,200
+than the number you bought.
+
+155
+00:07:35,200 --> 00:07:38,440
+So the rule is choose x star so that the fraction of time
+
+156
+00:07:38,440 --> 00:07:41,680
+you do not buy too much is the marginal profit divided
+
+157
+00:07:41,680 --> 00:07:44,823
+by the marginal profit plus the marginal loss.
+
+158
+00:07:44,823 --> 00:07:45,323
+
+

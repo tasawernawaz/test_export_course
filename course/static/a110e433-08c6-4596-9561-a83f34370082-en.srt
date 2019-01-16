@@ -1,0 +1,88 @@
+0
+00:00:00,000 --> 00:00:00,630
+
+
+1
+00:00:00,630 --> 00:00:02,880
+This week we described some quantitative models
+
+2
+00:00:02,880 --> 00:00:04,920
+of single part type flow lines.
+
+3
+00:00:04,920 --> 00:00:08,160
+We start from a model of a single unreliable machine
+
+4
+00:00:08,160 --> 00:00:10,290
+and then study a long line with several machines
+
+5
+00:00:10,290 --> 00:00:11,880
+and infinite buffers.
+
+6
+00:00:11,880 --> 00:00:13,950
+We introduced the concept of a bottleneck
+
+7
+00:00:13,950 --> 00:00:16,860
+and calculate the production rate of that line.
+
+8
+00:00:16,860 --> 00:00:20,130
+We use simulations to observe inventory accumulation.
+
+9
+00:00:20,130 --> 00:00:22,710
+Then we consider a line with several unreliable machines
+
+10
+00:00:22,710 --> 00:00:23,910
+and no buffers.
+
+11
+00:00:23,910 --> 00:00:26,990
+We calculate the production rate of that one.
+
+12
+00:00:26,990 --> 00:00:30,320
+These are two extremes, zero buffers having zero inventory
+
+13
+00:00:30,320 --> 00:00:32,750
+and low production rates and infinite buffers
+
+14
+00:00:32,750 --> 00:00:35,990
+with large inventories and high production rates.
+
+15
+00:00:35,990 --> 00:00:39,080
+Finally, we studied two machine lines with finite buffers.
+
+16
+00:00:39,080 --> 00:00:41,570
+These models show how buffers affect production rate
+
+17
+00:00:41,570 --> 00:00:42,800
+and inventory.
+
+18
+00:00:42,800 --> 00:00:46,160
+They also show how the frequency and duration of disruptions
+
+19
+00:00:46,160 --> 00:00:48,740
+affect these performance measures in ways that cannot be
+
+20
+00:00:48,740 --> 00:00:52,120
+predicted by machine efficiencies alone.
+
+21
+00:00:52,120 --> 00:00:55,890
+We will continue this subject in the second part of the course.
+

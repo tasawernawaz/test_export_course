@@ -1,0 +1,16 @@
+<problem display_name="Part 2" group_access="{&quot;50&quot;: [1]}" markdown="&gt;&gt;Suppose that exactly 10% of the start-of-week inventory of this CD disappears from the store without being sold; this is euphemistically known as a 10% shrinkage rate. Now, what order quantity maximizes expected profit?&lt;&lt;&#10;&#10;= 203 +-2&#10;&#10;[explanation]&#10;Suppose there is a 10% shrinkage rate, we here use 0.9Q. Then we have&#10;\(P(\frac{d-\mu}{\sigma}\leq\frac{0.9Q-\mu}{\sigma})=P(Z\leq-0.35)=0.3632&gt;0.36\)&#10;\(\frac{0.9Q-\mu}{\sigma}=\frac{0.9Q-200}{50}=-0.35\)&#10;\(q=203\)&#10;&#10;[explanation]&#10;&#10;" max_attempts="2" showanswer="past_due" weight="10.0">
+  <numericalresponse answer="203">
+    <label>Suppose that exactly 10% of the start-of-week inventory of this CD disappears from the store without being sold; this is euphemistically known as a 10% shrinkage rate. Now, what order quantity maximizes expected profit?</label>
+    <responseparam type="tolerance" default="2"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Suppose there is a 10% shrinkage rate, we here use 0.9Q. Then we have</p>
+        <p>\(P(\frac{d-\mu}{\sigma}\leq\frac{0.9Q-\mu}{\sigma})=P(Z\leq-0.35)=0.3632&gt;0.36\)</p>
+        <p>\(\frac{0.9Q-\mu}{\sigma}=\frac{0.9Q-200}{50}=-0.35\)</p>
+        <p>\(q=203\)</p>
+      </div>
+    </solution>
+  </numericalresponse>
+</problem>

@@ -1,0 +1,57 @@
+<problem display_name="Part 1" group_access="{}" markdown="null" max_attempts="3" showanswer="finished" weight="5.0">
+  <p>What are the probabilities of going from each state to each other state in one operation time? (Please answer with 3 decimals)</p>
+  <p>The solution will be released after this problem is finished. You wil need the solution to complete the rest of the problem.</p>
+  <label>\(p_{GG}\)</label>
+  <numericalresponse answer="0.975">
+    <responseparam type="tolerance" default="0.001"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>\(p_{GB}\)</label>
+  <numericalresponse answer="0">
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>\(p_{GD}\)</label>
+  <numericalresponse answer="0.1667">
+    <responseparam type="tolerance" default="0.001"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>\(p_{BG}\)</label>
+  <numericalresponse answer="0.0025">
+    <responseparam type="tolerance" default="0.001"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>\(p_{BB}\)</label>
+  <numericalresponse answer="0.9667">
+    <responseparam type="tolerance" default="0.001"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>\(p_{BD}\)</label>
+  <numericalresponse answer="0">
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>\(p_{DG}\)</label>
+  <numericalresponse answer="0.0225">
+    <responseparam type="tolerance" default="0.001"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>\(p_{DB}\)</label>
+  <numericalresponse answer="0.0333">
+    <responseparam type="tolerance" default="0.001"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>\(p_{DD}\)</label>
+  <numericalresponse answer="0.8333">
+    <responseparam type="tolerance" default="0.001"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>
+        <span style="font-size: 1em;">
+          <img src="/static/W3GP2Pt1.png" alt="" width="500" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+        </span>
+      </p>
+    </div>
+  </solution>
+</problem>

@@ -1,0 +1,16 @@
+<problem display_name="Concept Check 6" markdown="&gt;&gt;”The determination of level of safety stock involves a basic trade-off between the risk of stockout, resulting in possible customer dissatisfaction and lost sales, and the increased costs associated with carrying additional inventory.”&lt;&lt;&#10;( ) False.&#10;(x) True.&#10;( ) Depends.&#10;&#10;[explanation]&#10;Q, R policy tries to find Q and R to minimize ordering and holding cost while not losing too many sales due to stockout (how many lost sales is too many is determined by management.)&#10;[explanation]" max_attempts="3" showanswer="attempted" weight="1.0">
+  <multiplechoiceresponse>
+    <label>”The determination of level of safety stock involves a basic trade-off between the risk of stockout, resulting in possible customer dissatisfaction and lost sales, and the increased costs associated with carrying additional inventory.”</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">False.</choice>
+      <choice correct="true">True.</choice>
+      <choice correct="false">Depends.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Q, R policy tries to find Q and R to minimize ordering and holding cost while not losing too many sales due to stockout (how many lost sales is too many is determined by management.)</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

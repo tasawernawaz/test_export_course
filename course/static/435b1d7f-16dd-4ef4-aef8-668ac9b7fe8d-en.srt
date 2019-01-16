@@ -1,0 +1,604 @@
+0
+00:00:00,000 --> 00:00:02,280
+
+
+1
+00:00:02,280 --> 00:00:05,530
+OK, we'll now look at some discrete time models.
+
+2
+00:00:05,530 --> 00:00:08,230
+We're going to start with the geometric distribution.
+
+3
+00:00:08,230 --> 00:00:10,991
+We already discussed the geometric distribution.
+
+4
+00:00:10,991 --> 00:00:13,240
+We're now going to show how it relates to the simplest
+
+5
+00:00:13,240 --> 00:00:16,079
+possible Markov chain.
+
+6
+00:00:16,079 --> 00:00:19,330
+So here's a very, very simple graph, only two states.
+
+7
+00:00:19,330 --> 00:00:21,800
+The system starts in state one.
+
+8
+00:00:21,800 --> 00:00:24,590
+Somebody flips a bias coin or spins a spinner.
+
+9
+00:00:24,590 --> 00:00:26,930
+If it shows heads with probability p,
+
+10
+00:00:26,930 --> 00:00:28,610
+the system goes to 0.
+
+11
+00:00:28,610 --> 00:00:30,221
+If not it stays at 1.
+
+12
+00:00:30,221 --> 00:00:31,970
+Using the results that we've already seen,
+
+13
+00:00:31,970 --> 00:00:34,250
+we can calculate the probability that the system is
+
+14
+00:00:34,250 --> 00:00:36,860
+in state one or state two at any time greater than
+
+15
+00:00:36,860 --> 00:00:38,940
+or equal to 1.
+
+16
+00:00:38,940 --> 00:00:40,460
+So p is the conditional probability
+
+17
+00:00:40,460 --> 00:00:42,500
+that the system is in state 0 at time t
+
+18
+00:00:42,500 --> 00:00:46,700
+plus 1, given that it's in state 0 at time t.
+
+19
+00:00:46,700 --> 00:00:50,180
+Then formally little p is the probability
+
+20
+00:00:50,180 --> 00:00:52,790
+that alpha of t plus 1 equals 0 given alpha of t
+
+21
+00:00:52,790 --> 00:00:57,790
+equals 1, where alpha represents the state of the system.
+
+22
+00:00:57,790 --> 00:01:00,810
+Let pi of alpha comma t be the probability of being
+
+23
+00:01:00,810 --> 00:01:03,810
+in state alpha at time t.
+
+24
+00:01:03,810 --> 00:01:08,440
+Then we have this transition equation.
+
+25
+00:01:08,440 --> 00:01:10,250
+So what does this say?
+
+26
+00:01:10,250 --> 00:01:12,980
+It says that pi of 0t plus 1, that's
+
+27
+00:01:12,980 --> 00:01:15,040
+the probability of the system being in state 0
+
+28
+00:01:15,040 --> 00:01:17,780
+at time t plus 1, the probability
+
+29
+00:01:17,780 --> 00:01:21,860
+of finding the system in state 0 at time t plus 1
+
+30
+00:01:21,860 --> 00:01:24,120
+is equal to the sum of 2 terms.
+
+31
+00:01:24,120 --> 00:01:28,310
+The first one is the probability that we went from 1 to 0.
+
+32
+00:01:28,310 --> 00:01:31,610
+So it's the probability of being in state 0 at time t
+
+33
+00:01:31,610 --> 00:01:35,120
+plus 1, given that it was in state 1 at time t,
+
+34
+00:01:35,120 --> 00:01:38,390
+times the probability it was in state 1 at time t.
+
+35
+00:01:38,390 --> 00:01:40,700
+Plus the second term, which is the probability
+
+36
+00:01:40,700 --> 00:01:44,300
+of going from state 0 to state 0 in one time step.
+
+37
+00:01:44,300 --> 00:01:46,760
+That's the probability that the state is 0 at time t
+
+38
+00:01:46,760 --> 00:01:50,090
+plus delta-t given that it was 0 at time t,
+
+39
+00:01:50,090 --> 00:01:53,890
+times the probability was 0 in time t.
+
+40
+00:01:53,890 --> 00:01:59,950
+Well, the probability of being in state 0 at time t plus 1,
+
+41
+00:01:59,950 --> 00:02:04,950
+given that it was in state 1 at time t is just p.
+
+42
+00:02:04,950 --> 00:02:07,500
+That equation becomes the first equation of the pair
+
+43
+00:02:07,500 --> 00:02:09,600
+that I've written here.
+
+44
+00:02:09,600 --> 00:02:13,010
+That first transition probability,
+
+45
+00:02:13,010 --> 00:02:16,410
+p of alpha t plus 1 equals 0 given alpha of t
+
+46
+00:02:16,410 --> 00:02:19,850
+equals 1 is just lower-case p.
+
+47
+00:02:19,850 --> 00:02:21,830
+The second, the probability of going
+
+48
+00:02:21,830 --> 00:02:24,530
+from 0 to 0, that probability is just 1.
+
+49
+00:02:24,530 --> 00:02:28,010
+Once you're in 0, you don't leave 0.
+
+50
+00:02:28,010 --> 00:02:30,500
+So the first equation is just the transition equation
+
+51
+00:02:30,500 --> 00:02:31,670
+for state 0.
+
+52
+00:02:31,670 --> 00:02:34,070
+The second equation, derived similarly,
+
+53
+00:02:34,070 --> 00:02:37,160
+is the transition equation for state 1.
+
+54
+00:02:37,160 --> 00:02:41,690
+The probability of being in state 1 at time t plus 1
+
+55
+00:02:41,690 --> 00:02:44,210
+is equal to the probability of being in state 1
+
+56
+00:02:44,210 --> 00:02:47,420
+at time t times the probability of not leaving state 1, which
+
+57
+00:02:47,420 --> 00:02:49,310
+is just 1 minus t.
+
+58
+00:02:49,310 --> 00:02:53,030
+And the probability of going from 0 to 1 is 0.
+
+59
+00:02:53,030 --> 00:02:56,540
+So these are the two transition equations.
+
+60
+00:02:56,540 --> 00:02:59,540
+And of course there's the normalization equation pi
+
+61
+00:02:59,540 --> 00:03:03,620
+of one comma t plus pi of 0 comma t equals 1.
+
+62
+00:03:03,620 --> 00:03:05,930
+So let's assume that pi of 1 comma 0
+
+63
+00:03:05,930 --> 00:03:08,570
+equals 1-- that is that with probability 1
+
+64
+00:03:08,570 --> 00:03:10,790
+the system is in state 1.
+
+65
+00:03:10,790 --> 00:03:14,300
+We can solve those equations and we get pi of 0 comma t
+
+66
+00:03:14,300 --> 00:03:18,320
+equals 1 minus 1 minus p to the t.
+
+67
+00:03:18,320 --> 00:03:22,100
+And pi of one comma t is just 1 minus p to the t.
+
+68
+00:03:22,100 --> 00:03:25,160
+So clearly those two add up to 1.
+
+69
+00:03:25,160 --> 00:03:27,020
+Normally we don't try to calculate
+
+70
+00:03:27,020 --> 00:03:31,070
+time-varying solutions of transition equations.
+
+71
+00:03:31,070 --> 00:03:35,100
+For more complex systems this is a very hard calculation.
+
+72
+00:03:35,100 --> 00:03:41,060
+So here are the graphs of pi 0 comma t and pi 1 comma t.
+
+73
+00:03:41,060 --> 00:03:43,940
+Notice that we're approaching a steady state.
+
+74
+00:03:43,940 --> 00:03:47,030
+As t gets larger and larger, both of those probabilities
+
+75
+00:03:47,030 --> 00:03:49,520
+approach finite values.
+
+76
+00:03:49,520 --> 00:03:54,680
+Pi 1 comma t approaches 0, and pi 0 comma t approaches 1.
+
+77
+00:03:54,680 --> 00:03:57,520
+We've shown that the probability that the state goes from 1 to 0
+
+78
+00:03:57,520 --> 00:04:02,020
+at time t is just p of t equals 1 minus p
+
+79
+00:04:02,020 --> 00:04:04,250
+to the t minus 1 times p.
+
+80
+00:04:04,250 --> 00:04:07,500
+The mean time to go from 1 to 0 is then
+
+81
+00:04:07,500 --> 00:04:12,010
+t-bar which is the sum of tp of t,
+
+82
+00:04:12,010 --> 00:04:17,529
+t going from 1 to infinity, which is the sum of t times
+
+83
+00:04:17,529 --> 00:04:24,040
+1 minus p to the t minus 1 times p sum from 1 to infinity.
+
+84
+00:04:24,040 --> 00:04:29,110
+It's not hard to show that t-bar is simply 1 over p.
+
+85
+00:04:29,110 --> 00:04:33,520
+So the average time to go from state 1 to state 0
+
+86
+00:04:33,520 --> 00:04:37,070
+is the inverse of that transition probability.
+
+87
+00:04:37,070 --> 00:04:39,895
+So if the transition probability of leaving state 1
+
+88
+00:04:39,895 --> 00:04:43,960
+and going as they 0 is 0.1 in a given step,
+
+89
+00:04:43,960 --> 00:04:48,400
+then the average time to go from 1 to 0 is 10.
+
+90
+00:04:48,400 --> 00:04:51,580
+The next example is the unreliable machine.
+
+91
+00:04:51,580 --> 00:04:55,570
+So this is a generalization of the geometric process.
+
+92
+00:04:55,570 --> 00:04:59,840
+Because now the system can go from 1 to 0 and 0 to 1.
+
+93
+00:04:59,840 --> 00:05:02,440
+This is the simplest model of an unreliable machine where
+
+94
+00:05:02,440 --> 00:05:04,270
+state 1 means the machine is working
+
+95
+00:05:04,270 --> 00:05:07,240
+and state 0 means that the machine is under repair.
+
+96
+00:05:07,240 --> 00:05:10,129
+We're making lots of simplifying assumptions in this model.
+
+97
+00:05:10,129 --> 00:05:12,670
+For example, there are always parts available for the machine
+
+98
+00:05:12,670 --> 00:05:14,440
+to work on, and there's always space
+
+99
+00:05:14,440 --> 00:05:17,304
+to put the parts after the operation.
+
+100
+00:05:17,304 --> 00:05:19,220
+Another assumption is that when the machine is
+
+101
+00:05:19,220 --> 00:05:24,120
+operational or up, it produces one part per time unit.
+
+102
+00:05:24,120 --> 00:05:26,180
+In other words, we use the operation time
+
+103
+00:05:26,180 --> 00:05:29,580
+as the time unit, and we assume it is constant.
+
+104
+00:05:29,580 --> 00:05:32,940
+During a time unit when the machine is working on a part,
+
+105
+00:05:32,940 --> 00:05:36,660
+it will fail with probability p and go to state 0.
+
+106
+00:05:36,660 --> 00:05:38,730
+From the analysis of the previous model,
+
+107
+00:05:38,730 --> 00:05:40,860
+the time from when it arrives at state 1
+
+108
+00:05:40,860 --> 00:05:43,170
+to when it goes to state 0 is geometrically
+
+109
+00:05:43,170 --> 00:05:45,900
+distributed with parameter p.
+
+110
+00:05:45,900 --> 00:05:48,180
+The average time between arriving at state 1
+
+111
+00:05:48,180 --> 00:05:50,910
+and leaving state 1 is 1 over p.
+
+112
+00:05:50,910 --> 00:05:52,590
+When the machine is in state 0, it
+
+113
+00:05:52,590 --> 00:05:55,140
+is not operational and is undergoing a repair
+
+114
+00:05:55,140 --> 00:05:56,970
+or it's down.
+
+115
+00:05:56,970 --> 00:05:59,070
+We assume that the probability that that repair is
+
+116
+00:05:59,070 --> 00:06:01,950
+completed in a time unit is r.
+
+117
+00:06:01,950 --> 00:06:04,320
+The average time it takes to complete the repair as 1
+
+118
+00:06:04,320 --> 00:06:05,950
+over r.
+
+119
+00:06:05,950 --> 00:06:10,594
+The probability distribution satisfies these two equations.
+
+120
+00:06:10,594 --> 00:06:12,760
+It's not hard to show that these two expressions are
+
+121
+00:06:12,760 --> 00:06:15,100
+the solutions of those equations.
+
+122
+00:06:15,100 --> 00:06:17,320
+One thing you should notice about them
+
+123
+00:06:17,320 --> 00:06:22,360
+is that they both involve 1 minus p minus r to the t.
+
+124
+00:06:22,360 --> 00:06:26,000
+Since p and r both between 0 and 1,
+
+125
+00:06:26,000 --> 00:06:29,270
+that quantity is between minus 1 and plus 1.
+
+126
+00:06:29,270 --> 00:06:32,980
+When we raise it to the power t as t gets large,
+
+127
+00:06:32,980 --> 00:06:35,450
+that quantity gets smaller and smaller.
+
+128
+00:06:35,450 --> 00:06:38,920
+So eventually both probabilities approach limits.
+
+129
+00:06:38,920 --> 00:06:42,460
+Those limits are pi of 0 comma t, which
+
+130
+00:06:42,460 --> 00:06:45,530
+is the probability that the machine is down approaches
+
+131
+00:06:45,530 --> 00:06:49,810
+p over r plus p and pi of 1 comma t approaches
+
+132
+00:06:49,810 --> 00:06:51,580
+r over r plus p.
+
+133
+00:06:51,580 --> 00:06:55,300
+These expressions from pi 0 and pi 1 and the limit
+
+134
+00:06:55,300 --> 00:06:58,504
+are exactly the solutions of the steady-state transition
+
+135
+00:06:58,504 --> 00:06:59,920
+equations which are written below.
+
+136
+00:06:59,920 --> 00:07:03,600
+
+
+137
+00:07:03,600 --> 00:07:05,790
+If a machine makes one part per time unit
+
+138
+00:07:05,790 --> 00:07:08,940
+when it's operational, it's average production rate is just
+
+139
+00:07:08,940 --> 00:07:10,790
+pi of 1, the probability that it's
+
+140
+00:07:10,790 --> 00:07:15,060
+in state 1, which we've said is r over r plus p.
+
+141
+00:07:15,060 --> 00:07:18,850
+This quantity is called the efficiency of the machine.
+
+142
+00:07:18,850 --> 00:07:21,360
+If the machine makes one part per time unit
+
+143
+00:07:21,360 --> 00:07:24,510
+when it's operational, it's average production rate
+
+144
+00:07:24,510 --> 00:07:30,090
+is 1 over tau times are r over r plus p, or 1 over tau times e.
+
+145
+00:07:30,090 --> 00:07:33,750
+We can also write that e is equal to MTTF over MTTF
+
+146
+00:07:33,750 --> 00:07:38,150
+plus MTTR, where MTTF is the mean time to fail,
+
+147
+00:07:38,150 --> 00:07:41,460
+and MTTR is the mean time to repair.
+
+148
+00:07:41,460 --> 00:07:43,860
+We will show later that this formula does not
+
+149
+00:07:43,860 --> 00:07:47,220
+depend on the assumption of geometric up times
+
+150
+00:07:47,220 --> 00:07:49,640
+and geometric down times.
+

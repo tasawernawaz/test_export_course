@@ -1,0 +1,35 @@
+<problem display_name="Part 1" markdown="For the following, if your answer is 50%, please enter 0.5.&#10;&gt;&gt;Determine the steady-state probability distribution for state 1 (Please enter 4 decimal places). &lt;&lt;&#10;&#10;= 0.7458 +-0.001&#10;&#10;&gt;&gt;Determine the steady-state probability distribution for state 2 (Please enter 4 decimal places). &lt;&lt;&#10;&#10;= 0.07102 +-0.0001&#10;&#10;&gt;&gt;Determine the steady-state probability distribution for state 3 (Please enter 4 decimal places). &lt;&lt;&#10;&#10;= 0.08168 +-0.0001&#10;&#10;&gt;&gt;Determine the steady-state probability distribution for state 4 (Please enter 4 decimal places). &lt;&lt;&#10;&#10;= 0.10147 +-0.0001&#10;&#10;[explanation]&#10;By solving for the steady state proabilities, one should arrive at the follwoing system of equations:&#10;\(p1=\frac{p+d}{q}p2\)&#10;\(p3=\frac{p}{rq}(p+d+q)p2\)&#10;\(p4=\frac{d}{m}p2\)&#10;\(\frac{p+d}{q}p2+\frac{p}{rq}(p+d+q)p2+\frac{d}{m}p2+p2=1\)&#10;To attain the steady state probabilities, solve the system above.&#10;[explanation]&#10;&#10;&lt;script src=&quot;/static/st.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;" max_attempts="3" showanswer="finished" weight="1.0">
+  <p>For the following, if your answer is 50%, please enter 0.5.</p>
+  <label>Determine the steady-state probability distribution for state 1 (Please enter 4 decimal places). </label>
+  <numericalresponse answer="0.7458">
+    <responseparam type="tolerance" default="0.001"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>Determine the steady-state probability distribution for state 2 (Please enter 4 decimal places). </label>
+  <numericalresponse answer="0.07102">
+    <responseparam type="tolerance" default="0.0001"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>Determine the steady-state probability distribution for state 3 (Please enter 4 decimal places). </label>
+  <numericalresponse answer="0.08168">
+    <responseparam type="tolerance" default="0.0001"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>Determine the steady-state probability distribution for state 4 (Please enter 4 decimal places). </label>
+  <numericalresponse answer="0.10147">
+    <responseparam type="tolerance" default="0.0001"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>By solving for the steady state proabilities, one should arrive at the follwoing system of equations:</p>
+      <p>\(p1=\frac{p+d}{q}p2\)</p>
+      <p>\(p3=\frac{p}{rq}(p+d+q)p2\)</p>
+      <p>\(p4=\frac{d}{m}p2\)</p>
+      <p>\(\frac{p+d}{q}p2+\frac{p}{rq}(p+d+q)p2+\frac{d}{m}p2+p2=1\)</p>
+      <p>To attain the steady state probabilities, solve the system above.</p>
+    </div>
+  </solution>
+  <script src="/static/st.js" type="text/javascript"/>
+</problem>

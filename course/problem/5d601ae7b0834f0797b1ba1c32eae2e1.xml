@@ -1,0 +1,17 @@
+<problem display_name="Concept Check 1" markdown="&gt;&gt; Which statement is NOT true below?&lt;&lt;&#10;( ) In systems like flow lines, the machines are unreliable and the buffers are finite.&#10;( X ) In supply chain, most products are assemblies, and  there are usually a lot of errors in assemblies. It is better to have downstream inventory. &#10;( ) If a system is a single reliable machine, the time a part spend in a machine and the operation time of the machine are the same. &#10;( ) &#9;Whenever we analyze systems with machines that have geometric up and down time, we will treat the operation time as the time unit. This will simplify notation.&#10;&#10;[explanation]&#10;In supply chains, most products are assemblies, and the there’s usually a lot of error in an assembly. It is better to have upstream inventory, because it takes less space and thus cheaper. &#10;[explanation]" max_attempts="3">
+  <multiplechoiceresponse>
+    <label> Which statement is NOT true below?</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">In systems like flow lines, the machines are unreliable and the buffers are finite.</choice>
+      <choice correct="true">In supply chain, most products are assemblies, and  there are usually a lot of errors in assemblies. It is better to have downstream inventory.</choice>
+      <choice correct="false">If a system is a single reliable machine, the time a part spend in a machine and the operation time of the machine are the same.</choice>
+      <choice correct="false">Whenever we analyze systems with machines that have geometric up and down time, we will treat the operation time as the time unit. This will simplify notation.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>In supply chains, most products are assemblies, and the there’s usually a lot of error in an assembly. It is better to have upstream inventory, because it takes less space and thus cheaper. </p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

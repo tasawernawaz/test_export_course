@@ -1,0 +1,21 @@
+<p><img src="/static/Screen_Shot_2018-02-25_at_6.42.28_PM.png" alt="Markov Process" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}" width="655" height="532" /></p>
+<p>Consider the continuous-time, discrete-state Markov process above. In this figure, the machine is in:</p>
+<ul>
+<ul>
+<ul>
+<ul>
+<li>State 1 when it is up and making good parts (Up, Good);</li>
+<li>State 2 when it is up and making bad parts (Up, Bad);</li>
+<li>State 3 when it is down after an operational failure (Down, Operational);</li>
+<li>State 4 when it is down after the quality failure has been detected (Down, Quality);</li>
+</ul>
+</ul>
+</ul>
+</ul>
+<p>All transition times are assumed to be exponentially distributed with rates indicated.</p>
+<p>The transition from state 1 to state 2 is a <em>quality failure</em>. The transition from states 1 or 2 to state 3 are <em>operational failures</em>.</p>
+<p>Quality failures are not observed. As soon as the machine is determined to be in state 2 (ie, when the quality failure is detected), a quality repair begins and the machine is considered to be in state 4. However, while the machine is in state 2, an operational failure may occur before the machine is found to be in that state. In that case, it goes to state 3 instead of state 4.</p>
+<p>After the quality repair, the machine returns to state 1. The mean time the machine spends in state 4 is \(1/m\).</p>
+<p>Operational failures are observed as soon as they occur and the repair begins immediately. Then mean time to repair is \(1/r\) and the machine returns to state 1. Since the people observing the machine don't know whether it is in state 1 or state 2 before operational failure, the repair includes correcting the visible problem that stated the repair and the quality repair that may or may not be necessary. Consequently, the mean time the system is in state 3 is longer than the mean time it is in state 4 (ie, \( 1/r&gt;1/m\)).</p>
+<p>Assume that the production rate while the machine is in states 1 or 2 is \(\mu \) parts per time unit.</p>
+<p>Assume \(\mu=1, r=0.05, m=0.07, q=0.01, p=0.005, d=0.1\) as base values.</p>

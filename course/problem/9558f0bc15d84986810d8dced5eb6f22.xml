@@ -1,0 +1,16 @@
+<problem display_name="Concept Check 4-1" markdown="&gt;&gt; The purpose of production smoothing is to diminish or control quality variation in a production line. It includes: (Multiple selection) &lt;&lt;&#10;[ ] smoothing of total production quality;&#10;[X] smoothing of each model’s production quantity;&#10;[X] responding to variation demand;&#10;&#10;[explanation]&#10;The variation of production rate must be controlled. Production smoothing is to diminish or control quantity variation in a production line. Please refer to the very beginning of this lecture. &#10;[explanation]" max_attempts="3">
+  <choiceresponse>
+    <label> The purpose of production smoothing is to diminish or control quality variation in a production line. It includes: (Multiple selection) </label>
+    <checkboxgroup>
+      <choice correct="false">smoothing of total production quality;</choice>
+      <choice correct="true">smoothing of each model’s production quantity;</choice>
+      <choice correct="true">responding to variation demand;</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>The variation of production rate must be controlled. Production smoothing is to diminish or control quantity variation in a production line. Please refer to the very beginning of this lecture. </p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

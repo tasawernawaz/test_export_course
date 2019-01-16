@@ -1,0 +1,17 @@
+<problem display_name="Part 10" markdown="&gt;&gt;Pallets:&lt;&lt;&#10;&#10;&#10;[ ] Increase inventory, because the number of parts in the system is greater than or equal to the number of pallets.&#10;&#10;[x] Enable the part only to be attached to the pallet once, instead of being attached to fixturing at each station. &#10;[x] Reduce the danger of damage to the part.&#10;[x] Simplify the fixturing at each station because it is the same for all the stations.&#10;[Explanation]&#10;Please review video 4 (slide 38).&#10;[Explanation]&#10;" max_attempts="3" showanswer="past_due" weight="3.0">
+  <choiceresponse>
+    <label>Pallets:</label>
+    <checkboxgroup>
+      <choice correct="false">Increase inventory, because the number of parts in the system is greater than or equal to the number of pallets.</choice>
+      <choice correct="true">Enable the part only to be attached to the pallet once, instead of being attached to fixturing at each station. </choice>
+      <choice correct="true">Reduce the danger of damage to the part.</choice>
+      <choice correct="true">Simplify the fixturing at each station because it is the same for all the stations.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Please review video 4 (slide 38).</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

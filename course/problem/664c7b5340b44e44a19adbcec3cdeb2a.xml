@@ -1,0 +1,18 @@
+<problem display_name="Part 2" markdown="&gt;&gt;The total arrival rate at a given node is found by summing: &lt;&lt;&#10;&#10;[x] New items arriving to the given node from outside the network.&#10;[ ] Items that stayed at the given node.&#10;[x] Items that travel to the given node from other nodes in the network.&#10;&#10;[explanation]&#10;Refer to the expression in slide 91 for the total arrival rate at a node i, \(\lambda_i\), such that&#10;\(\lambda_i = \alpha_i + \sum_{j}p_{ji}\lambda_j\).&#10;The first term refers items arriving from outside the network and the second term (summation) refers to items arriving from other nodes in the network.&#10;&#10;[explanation]&#10;&#10;&#10;" max_attempts="3" showanswer="past_due" weight="3.0">
+  <choiceresponse>
+    <label>The total arrival rate at a given node is found by summing: </label>
+    <checkboxgroup>
+      <choice correct="true">New items arriving to the given node from outside the network.</choice>
+      <choice correct="false">Items that stayed at the given node.</choice>
+      <choice correct="true">Items that travel to the given node from other nodes in the network.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Refer to the expression in slide 91 for the total arrival rate at a node i, \(\lambda_i\), such that</p>
+        <p>\(\lambda_i = \alpha_i + \sum_{j}p_{ji}\lambda_j\).</p>
+        <p>The first term refers items arriving from outside the network and the second term (summation) refers to items arriving from other nodes in the network.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

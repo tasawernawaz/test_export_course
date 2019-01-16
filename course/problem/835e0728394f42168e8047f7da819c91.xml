@@ -1,0 +1,15 @@
+<problem display_name="Part 3" markdown="&gt;&gt;In mixing models, a batch size of one is ideal, only if the machines and the people in this factory can accommodate switching among different models with minimal set up time. &lt;&lt; &#10;( X )  True&#10;( )  False&#10;&#10;[explanation]&#10;In general, smaller batches lead to less inventory, but a lower production rate for the same setup time and operation time. So a batch size of one is ideal when setup time and operation time are minimum. &#10;[explanation]" max_attempts="1" showanswer="past_due" weight="3.0">
+  <multiplechoiceresponse>
+    <label>In mixing models, a batch size of one is ideal, only if the machines and the people in this factory can accommodate switching among different models with minimal set up time. </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">True</choice>
+      <choice correct="false">False</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>In general, smaller batches lead to less inventory, but a lower production rate for the same setup time and operation time. So a batch size of one is ideal when setup time and operation time are minimum. </p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

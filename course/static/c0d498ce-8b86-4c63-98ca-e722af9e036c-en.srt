@@ -1,0 +1,516 @@
+0
+00:00:00,000 --> 00:00:01,340
+
+
+1
+00:00:01,340 --> 00:00:04,840
+Welcome back to 2.854.1x.
+
+2
+00:00:04,840 --> 00:00:09,070
+In this video, we'll go over week 4, practice problem 2.
+
+3
+00:00:09,070 --> 00:00:14,010
+
+
+4
+00:00:14,010 --> 00:00:14,510
+OK.
+
+5
+00:00:14,510 --> 00:00:16,430
+So here's the problem.
+
+6
+00:00:16,430 --> 00:00:20,465
+Basically, it's about Jane who moonlights in the food court.
+
+7
+00:00:20,465 --> 00:00:24,350
+
+
+8
+00:00:24,350 --> 00:00:27,750
+I guess she's a servicer in the food court.
+
+9
+00:00:27,750 --> 00:00:30,200
+And customers arrive at her counter
+
+10
+00:00:30,200 --> 00:00:35,180
+at a rate of 10 per hour while it takes her, on average,
+
+11
+00:00:35,180 --> 00:00:37,740
+four minutes to serve a customer.
+
+12
+00:00:37,740 --> 00:00:41,490
+So the arrival process is a plus on the arrival process
+
+13
+00:00:41,490 --> 00:00:45,270
+and the service time is exponentially distributed.
+
+14
+00:00:45,270 --> 00:00:51,080
+So in part one, we are asked what type of queue is this.
+
+15
+00:00:51,080 --> 00:00:57,080
+So since there is no mention of how long the line can be,
+
+16
+00:00:57,080 --> 00:00:58,940
+we assume it's infinite.
+
+17
+00:00:58,940 --> 00:01:01,520
+And since there is only one server
+
+18
+00:01:01,520 --> 00:01:03,470
+and we're told of a Poisson arrival
+
+19
+00:01:03,470 --> 00:01:06,440
+time and exponential service rate,
+
+20
+00:01:06,440 --> 00:01:10,055
+then the model is an [? MM1 ?] system.
+
+21
+00:01:10,055 --> 00:01:13,320
+
+
+22
+00:01:13,320 --> 00:01:15,620
+Now what is lambda?
+
+23
+00:01:15,620 --> 00:01:16,740
+Well, lambda is given.
+
+24
+00:01:16,740 --> 00:01:20,160
+So basically at a rate of 10 per hour,
+
+25
+00:01:20,160 --> 00:01:29,060
+lambda is 10 customers per hour.
+
+26
+00:01:29,060 --> 00:01:32,140
+So what is mu, the service rate?
+
+27
+00:01:32,140 --> 00:01:36,500
+So if she serves four--
+
+28
+00:01:36,500 --> 00:01:41,840
+it takes her four minutes per customer,
+
+29
+00:01:41,840 --> 00:01:50,020
+then that is basically 0.066 hour per customer.
+
+30
+00:01:50,020 --> 00:01:51,490
+So we take the inverse.
+
+31
+00:01:51,490 --> 00:01:58,230
+That is 15 customers per hour.
+
+32
+00:01:58,230 --> 00:01:59,990
+And that is our mu.
+
+33
+00:01:59,990 --> 00:02:04,750
+
+
+34
+00:02:04,750 --> 00:02:05,510
+OK.
+
+35
+00:02:05,510 --> 00:02:08,270
+So here's part 2.
+
+36
+00:02:08,270 --> 00:02:12,720
+What percentage of the time is she serving customers?
+
+37
+00:02:12,720 --> 00:02:16,970
+So this is basically just the utilization rate.
+
+38
+00:02:16,970 --> 00:02:20,750
+Rho is simply just lambda over mu.
+
+39
+00:02:20,750 --> 00:02:28,560
+So that is 10 over 15, which is 0.66.
+
+40
+00:02:28,560 --> 00:02:33,130
+So 66% of the time, she is expected to be busy.
+
+41
+00:02:33,130 --> 00:02:35,460
+So what percentage of time she is idle?
+
+42
+00:02:35,460 --> 00:02:36,450
+That's simple, right?
+
+43
+00:02:36,450 --> 00:02:40,080
+That's basically the percentage of time
+
+44
+00:02:40,080 --> 00:02:43,470
+when there are no customers in the line or in the service.
+
+45
+00:02:43,470 --> 00:02:52,990
+That's just 1 minus rho and that is 0.33.
+
+46
+00:02:52,990 --> 00:02:55,780
+What is the queue length?
+
+47
+00:02:55,780 --> 00:02:59,170
+So we had some confusion in this part.
+
+48
+00:02:59,170 --> 00:03:02,320
+A lot of students thought the queue length
+
+49
+00:03:02,320 --> 00:03:04,870
+is the same thing as the number of people in the system.
+
+50
+00:03:04,870 --> 00:03:05,800
+It's different.
+
+51
+00:03:05,800 --> 00:03:08,230
+It's basically the number of people waiting.
+
+52
+00:03:08,230 --> 00:03:11,380
+So it does not include the person being served.
+
+53
+00:03:11,380 --> 00:03:15,400
+So if we think back, L, which is the number
+
+54
+00:03:15,400 --> 00:03:19,930
+of people in the system, is just rho over 1 minus rho.
+
+55
+00:03:19,930 --> 00:03:21,550
+So what is this?
+
+56
+00:03:21,550 --> 00:03:25,934
+That's 0.666 over 0.33.
+
+57
+00:03:25,934 --> 00:03:27,520
+That's just two, right?
+
+58
+00:03:27,520 --> 00:03:31,670
+So on average there are two people in the system.
+
+59
+00:03:31,670 --> 00:03:34,698
+But what is Lq?
+
+60
+00:03:34,698 --> 00:03:38,810
+Lq is the number of people waiting in line.
+
+61
+00:03:38,810 --> 00:03:40,390
+So if the system--
+
+62
+00:03:40,390 --> 00:03:45,070
+if 66% of the time the system is busy, 33% of the time
+
+63
+00:03:45,070 --> 00:03:49,570
+there are nobody in the system, than the expected line
+
+64
+00:03:49,570 --> 00:03:59,710
+is just 2 times 0.66 plus 0 times 0.33, which is 1.33.
+
+65
+00:03:59,710 --> 00:04:02,080
+And that is basically the formula for Lq.
+
+66
+00:04:02,080 --> 00:04:07,967
+Lq is just rho squared over 1 minus rho.
+
+67
+00:04:07,967 --> 00:04:08,800
+It's the same thing.
+
+68
+00:04:08,800 --> 00:04:11,830
+We basically dropped this part, because 0 times anything
+
+69
+00:04:11,830 --> 00:04:12,736
+is just 0.
+
+70
+00:04:12,736 --> 00:04:18,700
+
+
+71
+00:04:18,700 --> 00:04:23,151
+What is the average time that a customer takes in the system?
+
+72
+00:04:23,151 --> 00:04:23,650
+OK.
+
+73
+00:04:23,650 --> 00:04:26,440
+Well, we use Little's Law here.
+
+74
+00:04:26,440 --> 00:04:30,290
+Average time in the system is w, which
+
+75
+00:04:30,290 --> 00:04:33,201
+this equals L over lambda.
+
+76
+00:04:33,201 --> 00:04:33,700
+Right.
+
+77
+00:04:33,700 --> 00:04:42,020
+In the last section, we said L equals 2, so it's 2 over 10,
+
+78
+00:04:42,020 --> 00:04:45,000
+which is one fifth.
+
+79
+00:04:45,000 --> 00:04:47,880
+[? Hour ?] that is the--
+
+80
+00:04:47,880 --> 00:04:49,755
+and that is just 12 minutes.
+
+81
+00:04:49,755 --> 00:05:00,730
+
+
+82
+00:05:00,730 --> 00:05:04,050
+So what is the probability that the customer waits at least
+
+83
+00:05:04,050 --> 00:05:05,280
+four minutes in the system?
+
+84
+00:05:05,280 --> 00:05:05,780
+OK.
+
+85
+00:05:05,780 --> 00:05:10,770
+So service time is four minutes per customer.
+
+86
+00:05:10,770 --> 00:05:11,520
+Right?
+
+87
+00:05:11,520 --> 00:05:14,380
+So that means if there's one person in the line,
+
+88
+00:05:14,380 --> 00:05:18,130
+the second person has to wait at least four minutes.
+
+89
+00:05:18,130 --> 00:05:23,430
+So this probability is really just the probability of n
+
+90
+00:05:23,430 --> 00:05:27,420
+is greater than or equal to 2.
+
+91
+00:05:27,420 --> 00:05:29,250
+There are two or more people in the system,
+
+92
+00:05:29,250 --> 00:05:32,310
+then somebody has to wait at least four minutes.
+
+93
+00:05:32,310 --> 00:05:45,770
+And that is just 1 minus the probability of n equals zero
+
+94
+00:05:45,770 --> 00:05:51,990
+and minus the probability of n equal 1.
+
+95
+00:05:51,990 --> 00:06:00,010
+So in our notation, that's just 1 minus pi is 0, minus pi 1.
+
+96
+00:06:00,010 --> 00:06:01,110
+OK.
+
+97
+00:06:01,110 --> 00:06:04,050
+The probability when there are nobody in the--
+
+98
+00:06:04,050 --> 00:06:07,200
+of when there's no one in the system,
+
+99
+00:06:07,200 --> 00:06:10,440
+we said in one of the earlier parts
+
+100
+00:06:10,440 --> 00:06:13,370
+that is just one minus rho.
+
+101
+00:06:13,370 --> 00:06:15,900
+Now if we go back to the lecture,
+
+102
+00:06:15,900 --> 00:06:19,530
+the probability of when there is only one person in the system
+
+103
+00:06:19,530 --> 00:06:20,700
+is actually quite simple.
+
+104
+00:06:20,700 --> 00:06:22,410
+And in the lecture notes, we say that it
+
+105
+00:06:22,410 --> 00:06:26,880
+is one minus rho times rho.
+
+106
+00:06:26,880 --> 00:06:31,830
+
+
+107
+00:06:31,830 --> 00:06:32,887
+This is rho.
+
+108
+00:06:32,887 --> 00:06:35,510
+
+
+109
+00:06:35,510 --> 00:06:39,010
+So if you plug everything in, the probability
+
+110
+00:06:39,010 --> 00:06:45,470
+of m greater than or equal to 2 is just 4 over 9.
+
+111
+00:06:45,470 --> 00:06:51,240
+
+
+112
+00:06:51,240 --> 00:06:52,130
+OK.
+
+113
+00:06:52,130 --> 00:06:59,840
+So when Jamie is not busy, she is grading papers.
+
+114
+00:06:59,840 --> 00:07:02,531
+So how many papers can she grade while working
+
+115
+00:07:02,531 --> 00:07:03,280
+in the food court?
+
+116
+00:07:03,280 --> 00:07:05,510
+So when she does grade papers, it
+
+117
+00:07:05,510 --> 00:07:12,150
+takes her about five minutes for each assignment.
+
+118
+00:07:12,150 --> 00:07:16,190
+So mu is just one third.
+
+119
+00:07:16,190 --> 00:07:22,160
+This is when she is not busy.
+
+120
+00:07:22,160 --> 00:07:27,490
+
+
+121
+00:07:27,490 --> 00:07:35,040
+Proportion of when she is not busy times
+
+122
+00:07:35,040 --> 00:07:42,440
+how long it takes her to grade a paper, which is 60 over 5.
+
+123
+00:07:42,440 --> 00:07:52,870
+So that means she could do four papers per hour.
+
+124
+00:07:52,870 --> 00:07:54,670
+That wraps up this problem.
+
+125
+00:07:54,670 --> 00:07:58,010
+Like always, if you have any questions or comments,
+
+126
+00:07:58,010 --> 00:08:00,800
+please leave it in the discussion section below.
+
+127
+00:08:00,800 --> 00:08:02,520
+Thank you.
+
+128
+00:08:02,520 --> 00:08:03,392
+
+

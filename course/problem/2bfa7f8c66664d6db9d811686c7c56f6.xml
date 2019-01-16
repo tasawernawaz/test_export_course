@@ -1,0 +1,19 @@
+<problem display_name="Part 2" markdown="null" max_attempts="3" showanswer="finished" weight="0.0">
+  <numericalresponse answer="1">
+    <p>Consider a newsvendor problem with purchase price c, sales price (revenue per unit) r,
+salvage value s and demand given by a triangular distribution with parameters a, b, and \( m=\frac{a+b}{2} \)</p>
+    <description> How many newspapers should the vendor buy? (You are not asked to solve this problem, but understanding the idea is essential. Enter 1 and submit to see the solution)</description>
+    <responseparam type="tolerance" default="1000000"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>
+          <span style="font-size: 1em;">
+            <img src="/static/Stochastic3.8.png" alt="" width="800" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+          </span>
+        </p>
+      </div>
+    </solution>
+  </numericalresponse>
+</problem>

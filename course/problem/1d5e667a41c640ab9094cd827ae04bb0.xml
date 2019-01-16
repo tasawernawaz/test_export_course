@@ -1,0 +1,29 @@
+<problem display_name="Part 2" markdown="Actually, two operations are now needed to the part: The milling operation described in part 1 and a drilling operation. The operation time for the drill is also 2 minutes. Its mean time to fail is 60 hours and its mean time to repair is 300 minutes. A production line is formed consisting of the mill and drill and a storage area. Any amount of material can be stored. Parts go from the mill to the storage to the drill.&#10;&#10;&gt;&gt;How long will it take to make 24,000 parts in hours? Round to nearest integer. &lt;&lt;&#10;&#10;= 866+-30&#10;&#10;[explanation]&#10;The production rate of the drill is \( \frac{1}{\tau}(\frac{MTTF}{MTTF+MTTR})=\frac{1}{2}\frac{60}{60+5}=0.4615\) parts per minute&#10;This is an infinite buffer line. The production rate of the line is the production rate of the slower machine which is .4615 parts per minute.&#10;Therefore, the time to make 24,000 parts is &#10;24000/.4615 minutes = 52004 minutes = 866.73 hours&#10;[explanation]&#10;&#10;&gt;&gt;How much material will accumulate in the storage area? Round to nearest integer.&lt;&lt;&#10;&#10;=286+-10&#10;&#10;[explanation]&#10;Parts are going into the buffer at the rate of .467 parts per minute and they exit the buffer at rate .4615 parts per minute. Therefore, they accumulate at rate .467-.4615 = .0055 parts per minute. After 52,004 minutes, the expected number of parts in the buffer is&#10;&#10;(52004)(0.0055)=286 parts&#10;[explanation]" max_attempts="3" weight="1.0">
+  <p>Actually, two operations are now needed to the part: The milling operation described in part 1 and a drilling operation. The operation time for the drill is also 2 minutes. Its mean time to fail is 60 hours and its mean time to repair is 300 minutes. A production line is formed consisting of the mill and drill and a storage area. Any amount of material can be stored. Parts go from the mill to the storage to the drill.</p>
+  <label>How long will it take to make 24,000 parts in hours? Round to nearest integer. </label>
+  <numericalresponse answer="866">
+    <responseparam type="tolerance" default="30"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>The production rate of the drill is \( \frac{1}{\tau}(\frac{MTTF}{MTTF+MTTR})=\frac{1}{2}\frac{60}{60+5}=0.4615\) parts per minute</p>
+      <p>This is an infinite buffer line. The production rate of the line is the production rate of the slower machine which is .4615 parts per minute.</p>
+      <p>Therefore, the time to make 24,000 parts is </p>
+      <p>24000/.4615 minutes = 52004 minutes = 866.73 hours</p>
+    </div>
+  </solution>
+  <label>How much material will accumulate in the storage area? Round to nearest integer.</label>
+  <numericalresponse answer="286">
+    <responseparam type="tolerance" default="10"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>Parts are going into the buffer at the rate of .467 parts per minute and they exit the buffer at rate .4615 parts per minute. Therefore, they accumulate at rate .467-.4615 = .0055 parts per minute. After 52,004 minutes, the expected number of parts in the buffer is</p>
+      <p>(52004)(0.0055)=286 parts</p>
+    </div>
+  </solution>
+</problem>

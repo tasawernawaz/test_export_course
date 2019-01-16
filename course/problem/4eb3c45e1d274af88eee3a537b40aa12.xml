@@ -1,0 +1,17 @@
+<problem display_name="Question 1" markdown="&gt;&gt;In this class, we define the purpose of an operation in the manufacturing process is to: &lt;&lt;&#10;&#10;( )Change the state of a material.&#10;(x)Bring a workpiece closer to a state in which it can be sold.&#10;( )Change the physical form of a material.&#10;( )Assemble parts to realize a final product.&#10;[Explanation]&#10;To assemble, change the state or physical form of a material is involved in manufacturing process but not sufficient because the market is the driving force of manufacturing.&#10;[Explanation]" max_attempts="3">
+  <multiplechoiceresponse>
+    <label>In this class, we define the purpose of an operation in the manufacturing process is to: </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Change the state of a material.</choice>
+      <choice correct="true">Bring a workpiece closer to a state in which it can be sold.</choice>
+      <choice correct="false">Change the physical form of a material.</choice>
+      <choice correct="false">Assemble parts to realize a final product.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>To assemble, change the state or physical form of a material is involved in manufacturing process but not sufficient because the market is the driving force of manufacturing.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

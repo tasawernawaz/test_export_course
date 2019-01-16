@@ -1,0 +1,16 @@
+<problem display_name="Question 1" markdown="&gt;&gt;The message of this course is that factories: &lt;&lt;&#10;( )Cannot be understood and the best solution is to overbuild their specifications and react to changes in the factory real-time.&#10;(x)Can be understood like any other complex engineering system.&#10;( )Can only be understood using common sense.&#10;[Explanation]&#10;In this course we will teach you to apply probability theory, deterministic mathematical modeling, and optimization to analyze manufacturing systems.&#10;[Explanation]" max_attempts="2">
+  <multiplechoiceresponse>
+    <label>The message of this course is that factories: </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Cannot be understood and the best solution is to overbuild their specifications and react to changes in the factory real-time.</choice>
+      <choice correct="true">Can be understood like any other complex engineering system.</choice>
+      <choice correct="false">Can only be understood using common sense.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>In this course we will teach you to apply probability theory, deterministic mathematical modeling, and optimization to analyze manufacturing systems.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

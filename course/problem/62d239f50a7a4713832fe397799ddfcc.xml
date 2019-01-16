@@ -1,0 +1,17 @@
+<problem display_name="Part 1" group_access="{}" markdown="null" max_attempts="2" showanswer="past_due" weight="5.0">
+  <numericalresponse answer="2253">
+    <p>Assuming the objective is to maximize profit.</p>
+    <label>What is the optimal number of 30" 1080i TVs to buy? (Round to nearest integer)</label>
+    <responseparam type="tolerance" default="1"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>
+        <span style="font-size: 1em;">
+          <img src="/static/Wk5GP2Pt1.png" alt="" width="500" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+        </span>
+      </p>
+    </div>
+  </solution>
+</problem>

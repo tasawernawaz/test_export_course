@@ -1,0 +1,56 @@
+0
+00:00:00,000 --> 00:00:00,300
+
+
+1
+00:00:00,300 --> 00:00:01,940
+The Toyota production system has been
+
+2
+00:00:01,940 --> 00:00:04,460
+successful and widely adopted and imitated
+
+3
+00:00:04,460 --> 00:00:05,770
+throughout the world.
+
+4
+00:00:05,770 --> 00:00:07,680
+In this set of videos, we describe
+
+5
+00:00:07,680 --> 00:00:09,350
+some of its key elements.
+
+6
+00:00:09,350 --> 00:00:11,637
+Particularly how it deals with variability,
+
+7
+00:00:11,637 --> 00:00:14,220
+and how it treats the people who are part of the manufacturing
+
+8
+00:00:14,220 --> 00:00:15,310
+system.
+
+9
+00:00:15,310 --> 00:00:17,950
+We discuss kanban, production smoothing,
+
+10
+00:00:17,950 --> 00:00:20,610
+reduction of set up time, improvement activities,
+
+11
+00:00:20,610 --> 00:00:22,000
+and other topics.
+
+12
+00:00:22,000 --> 00:00:24,230
+We briefly discuss how the Toyota production
+
+13
+00:00:24,230 --> 00:00:27,750
+system was influenced by its historical context.
+

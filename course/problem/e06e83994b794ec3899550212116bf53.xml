@@ -1,0 +1,33 @@
+<problem display_name="Part 3" markdown="Assuming the same conditions are still in place from part 2. Suppose the second machine fails 40 minutes into the hour, every hour for 10 minutes. &#10;&#10;&gt;&gt;Assuming the Kanban size is now 2, and the buffer is empty at time 0. How many parts are produced in the first hour?&lt;&lt;&#10;&#10;= 39&#10;&#10;[Explanation]&#10;Time 1-10: 9 parts produced&#10;Time 11-20: 1 part produced, Machine 1 is down, there is 1 part in Machine 2.&#10;Time 21-30: 9 parts produced, system is starting up again with nothing in the system.&#10;Time 31-40: 10 parts produced, both machines are up.&#10;Time 41-50: 0 part produced, machine 2 is down, nothing leaves the system.&#10;Time 51-60: 10 parts, machine 2 is back up, and immediately have a part to work on.&#10;[explanation]&#10;&#10;&gt;&gt;If we increase the Kanban to 10, how many parts are produced in the second hour?&lt;&lt;&#10;&#10;= 49&#10;&#10;[explanation]&#10;Time 1-10: 10 parts produced, machine two has part to work on at the start of the 2nd hour.&#10;Time 11-20: 10 part produced, Machine 1 is down, there is 1 part in machine 2 and 9 parts in the buffer.&#10;Time 21-30: 9 parts produced, system is starting up again with nothing in the system.&#10;Time 31-40: 10 parts produced, both machines are up.&#10;Time 41-50: 0 part produced, machine 2 is down, nothing leaves the system.&#10;Time 51-60: 10 parts, machine 2 is back up, and immediately have a part to work on.&#10;[explanation]&#10;" max_attempts="3" showanswer="finished" weight="1.0">
+  <p>Assuming the same conditions are still in place from part 2. Suppose the second machine fails 40 minutes into the hour, every hour for 10 minutes. </p>
+  <label>Assuming the Kanban size is now 2, and the buffer is empty at time 0. How many parts are produced in the first hour?</label>
+  <numericalresponse answer="39">
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>Time 1-10: 9 parts produced</p>
+      <p>Time 11-20: 1 part produced, Machine 1 is down, there is 1 part in Machine 2.</p>
+      <p>Time 21-30: 9 parts produced, system is starting up again with nothing in the system.</p>
+      <p>Time 31-40: 10 parts produced, both machines are up.</p>
+      <p>Time 41-50: 0 part produced, machine 2 is down, nothing leaves the system.</p>
+      <p>Time 51-60: 10 parts, machine 2 is back up, and immediately have a part to work on.</p>
+    </div>
+  </solution>
+  <label>If we increase the Kanban to 10, how many parts are produced in the second hour?</label>
+  <numericalresponse answer="49">
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>Time 1-10: 10 parts produced, machine two has part to work on at the start of the 2nd hour.</p>
+      <p>Time 11-20: 10 part produced, Machine 1 is down, there is 1 part in machine 2 and 9 parts in the buffer.</p>
+      <p>Time 21-30: 9 parts produced, system is starting up again with nothing in the system.</p>
+      <p>Time 31-40: 10 parts produced, both machines are up.</p>
+      <p>Time 41-50: 0 part produced, machine 2 is down, nothing leaves the system.</p>
+      <p>Time 51-60: 10 parts, machine 2 is back up, and immediately have a part to work on.</p>
+    </div>
+  </solution>
+</problem>

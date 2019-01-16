@@ -1,0 +1,9 @@
+<problem display_name="Part 1" group_access="{}" markdown="The Acme Tools Company uses a lathe to machine an aluminum block. The operation time is 5 minutes.&#10;&#10;On average, the lathe requires maintenance after 200 parts. The average maintenance time is about 2 hours. (For the purpose of these calculations, maintenance is the same as failure.&#10;&#10;&gt;&gt;What is the production rate of the machine in parts per minute? (Round to 3 decimal places) &lt;&lt;&#10;&#10;= 0.179 +-0.018&#10;&#10;" max_attempts="2" showanswer="never" weight="2.0">
+  <numericalresponse answer="0.179">
+    <p>The Acme Tools Company uses a lathe to machine an aluminum block. The operation time is 5 minutes.</p>
+    <p>On average, the lathe requires maintenance after 200 parts. The average maintenance time is about 2 hours. (For the purpose of these calculations, maintenance is the same as failure.</p>
+    <label>What is the production rate of the machine in parts per minute? (Round to 3 decimal places) </label>
+    <responseparam type="tolerance" default="0.018"/>
+    <formulaequationinput/>
+  </numericalresponse>
+</problem>

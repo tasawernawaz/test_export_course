@@ -1,0 +1,17 @@
+<problem display_name="Concept Check 4" markdown="&gt;&gt;\(x^*\) is linear in \(µ\) and \(σ\) , when:&lt;&lt;&#10;( ) We consider this in a real world condition.&#10;(x) We accept the assumption that the demand is normal.&#10;( ) The demand is modeled as a truncated normal.&#10;( ) \(µ\) is larger than \(σ\) , and the difference between them are not massive.&#10;&#10;[explanation]&#10;When the \(w\) ~ \(N(µ,σ)\) then \(x^*\) is linear in \(µ\) and \(σ\). In reality however, the demand cannot be negative. Thus, the demand will not be normal in reality. In fact, the demand is more realistically modeled as a truncated normal. When \(µ &gt;&gt; σ\), the normal distribution predicts a very small probability for demand (\(w\)) being negative, which makes the normal a good approximation for the truncated normal.&#10;[explanation]" max_attempts="3" showanswer="attempted" weight="1.0">
+  <multiplechoiceresponse>
+    <label>\(x^*\) is linear in \(µ\) and \(σ\) , when:</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">We consider this in a real world condition.</choice>
+      <choice correct="true">We accept the assumption that the demand is normal.</choice>
+      <choice correct="false">The demand is modeled as a truncated normal.</choice>
+      <choice correct="false">\(µ\) is larger than \(σ\) , and the difference between them are not massive.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>When the \(w\) ~ \(N(µ,σ)\) then \(x^*\) is linear in \(µ\) and \(σ\). In reality however, the demand cannot be negative. Thus, the demand will not be normal in reality. In fact, the demand is more realistically modeled as a truncated normal. When \(µ &gt;&gt; σ\), the normal distribution predicts a very small probability for demand (\(w\)) being negative, which makes the normal a good approximation for the truncated normal.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

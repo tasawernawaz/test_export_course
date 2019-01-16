@@ -1,0 +1,19 @@
+<problem display_name="Part 1" markdown="&gt;&gt;What is the enemy of manufacturing？&lt;&lt;&#10;&#10;( ) Inventory&#10;(x) Variability&#10;( ) Captial Expenditure&#10;( ) Overtime Labor&#10;( ) Idle Time&#10;&#10;[Explanation]&#10;Variability is one of the main drivers that cause high inventory, overtime labor and idle time. Captial expenditure can be a result of variability, but can also be a neccesity to increase capacity.&#10;[Explanation]&#10;&lt;script src=&quot;/static/st.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;" max_attempts="3" showanswer="past_due" weight="3.0">
+  <multiplechoiceresponse>
+    <label>What is the enemy of manufacturing？</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Inventory</choice>
+      <choice correct="true">Variability</choice>
+      <choice correct="false">Captial Expenditure</choice>
+      <choice correct="false">Overtime Labor</choice>
+      <choice correct="false">Idle Time</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Variability is one of the main drivers that cause high inventory, overtime labor and idle time. Captial expenditure can be a result of variability, but can also be a neccesity to increase capacity.</p>
+      </div>
+    </solution>
+    <script src="/static/st.js" type="text/javascript"/>
+  </multiplechoiceresponse>
+</problem>

@@ -1,0 +1,17 @@
+<problem display_name="Question 3" markdown="&gt;&gt;What does it mean when we say &quot;a system reaches steady-state&quot;?&lt;&lt;&#10;&#10;[x] All time derivatives equal to 0&#10;[ ] The more arrivals into the system&#10;[ ] The utilization rate approaches 0&#10;[x] The steady-state probabilities will not change with respect to time&#10;&#10;[explanation]&#10;When a system enters steady-state, we assume that the system has run long enough, such that it is settling at a constant. In this context, it means the probability of being in a certain state is approaching a constant. Thus, time derivatives are set to 0, and probabilities will no longer change as a function of time.&#10;[explanation]&#10;" max_attempts="3" showanswer="finished" weight="1.0">
+  <choiceresponse>
+    <label>What does it mean when we say "a system reaches steady-state"?</label>
+    <checkboxgroup>
+      <choice correct="true">All time derivatives equal to 0</choice>
+      <choice correct="false">The more arrivals into the system</choice>
+      <choice correct="false">The utilization rate approaches 0</choice>
+      <choice correct="true">The steady-state probabilities will not change with respect to time</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>When a system enters steady-state, we assume that the system has run long enough, such that it is settling at a constant. In this context, it means the probability of being in a certain state is approaching a constant. Thus, time derivatives are set to 0, and probabilities will no longer change as a function of time.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

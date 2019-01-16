@@ -1,0 +1,18 @@
+<problem display_name="Concept Check 5-3" markdown="&gt;&gt; In the design and improvement of Deterministic Processing Time, Two-Machine, Finite-Buffer Flow Lines, which statement is NOT true below?&lt;&lt;&#10;( ) Given a certain machine two and processing time, the better machine one is, the smaller the buffer that is needed to achieve the production rate target.&#10;( ) Buffer can compensate for machine unreliability but only up to a point.&#10;( )The costs of machines, inventory holding and buffer space should be considered when designing the flow lines.&#10;( x )  Improving a non-bottleneck machine is not useful to improving the production rate.&#10;( ) If we need a substantial increase in the production rate and the buffer is not small, we must improve the bottleneck.&#10;[explanation]&#10;Improving any machine will increase the production rate. (Please check the graph on slide 75.) There's a noticeable increase in the production rate when the buffer is small. The amount of the increase diminishes as the buffer gets larger because the production rate gets closer to that of the bottleneck.&#10;[explanation]" max_attempts="3">
+  <multiplechoiceresponse>
+    <label> In the design and improvement of Deterministic Processing Time, Two-Machine, Finite-Buffer Flow Lines, which statement is NOT true below?</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Given a certain machine two and processing time, the better machine one is, the smaller the buffer that is needed to achieve the production rate target.</choice>
+      <choice correct="false">Buffer can compensate for machine unreliability but only up to a point.</choice>
+      <choice correct="false">The costs of machines, inventory holding and buffer space should be considered when designing the flow lines.</choice>
+      <choice correct="true">Improving a non-bottleneck machine is not useful to improving the production rate.</choice>
+      <choice correct="false">If we need a substantial increase in the production rate and the buffer is not small, we must improve the bottleneck.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Improving any machine will increase the production rate. (Please check the graph on slide 75.) There's a noticeable increase in the production rate when the buffer is small. The amount of the increase diminishes as the buffer gets larger because the production rate gets closer to that of the bottleneck.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

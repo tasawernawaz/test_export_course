@@ -1,0 +1,1096 @@
+0
+00:00:00,000 --> 00:00:02,460
+
+
+1
+00:00:02,460 --> 00:00:05,580
+The purpose of an operation in the manufacturing process
+
+2
+00:00:05,580 --> 00:00:07,980
+is to bring a work piece closer to a state in which it
+
+3
+00:00:07,980 --> 00:00:09,540
+can be sold.
+
+4
+00:00:09,540 --> 00:00:11,550
+The design of processes and machines
+
+5
+00:00:11,550 --> 00:00:15,220
+to implement those processes is obviously important,
+
+6
+00:00:15,220 --> 00:00:17,480
+but it's not the subject of this course.
+
+7
+00:00:17,480 --> 00:00:20,100
+We're interested in how the characteristics of operations
+
+8
+00:00:20,100 --> 00:00:23,620
+affect the flow of material through the production process.
+
+9
+00:00:23,620 --> 00:00:25,470
+We'll be concerned with discrete parts
+
+10
+00:00:25,470 --> 00:00:26,970
+manufacturing, not production that
+
+11
+00:00:26,970 --> 00:00:28,950
+involves the flow of fluids.
+
+12
+00:00:28,950 --> 00:00:32,310
+This leaves out oil refining and other chemical processes.
+
+13
+00:00:32,310 --> 00:00:35,754
+We'll start with a very basic view of a typical operation.
+
+14
+00:00:35,754 --> 00:00:37,170
+There are many kinds of processes,
+
+15
+00:00:37,170 --> 00:00:39,510
+but they have certain features in common.
+
+16
+00:00:39,510 --> 00:00:42,440
+For example, they all take a work piece into a work area.
+
+17
+00:00:42,440 --> 00:00:45,840
+The piece spends some time in there, and then it leaves.
+
+18
+00:00:45,840 --> 00:00:48,330
+Many processes also take consumables,
+
+19
+00:00:48,330 --> 00:00:50,940
+such as cooling fluid for metal cutting or chemicals
+
+20
+00:00:50,940 --> 00:00:53,460
+for semiconductor fabrication.
+
+21
+00:00:53,460 --> 00:00:55,320
+Most operations require a machine,
+
+22
+00:00:55,320 --> 00:00:59,080
+and some need a human operator.
+
+23
+00:00:59,080 --> 00:01:01,310
+Operations also generate waste.
+
+24
+00:01:01,310 --> 00:01:04,239
+For example, metal cutting operations create metal chips,
+
+25
+00:01:04,239 --> 00:01:08,740
+and also have used contaminated fluid to dispose of.
+
+26
+00:01:08,740 --> 00:01:10,390
+This is generic and typical.
+
+27
+00:01:10,390 --> 00:01:12,550
+There are operations that differ in some details.
+
+28
+00:01:12,550 --> 00:01:15,520
+For example, assembly processes take more than one kind of part
+
+29
+00:01:15,520 --> 00:01:18,730
+in and send a single part out.
+
+30
+00:01:18,730 --> 00:01:22,030
+One thing they have in common is that the operation cannot take
+
+31
+00:01:22,030 --> 00:01:24,730
+place until all the required items are present at the same
+
+32
+00:01:24,730 --> 00:01:26,740
+place at the same time.
+
+33
+00:01:26,740 --> 00:01:28,510
+The requirements include a place to put
+
+34
+00:01:28,510 --> 00:01:30,340
+the completed part and the mechanism
+
+35
+00:01:30,340 --> 00:01:32,320
+to dispose of the waste.
+
+36
+00:01:32,320 --> 00:01:34,660
+If there are no parts for the machine to work on,
+
+37
+00:01:34,660 --> 00:01:36,610
+we say that it is starved.
+
+38
+00:01:36,610 --> 00:01:39,430
+If the next destination for the parts is not available for some
+
+39
+00:01:39,430 --> 00:01:42,190
+reason-- for example, if a storage buffer is full--
+
+40
+00:01:42,190 --> 00:01:44,590
+we say the operation is blocked.
+
+41
+00:01:44,590 --> 00:01:47,380
+The operation could be prevented if the operator is not there,
+
+42
+00:01:47,380 --> 00:01:51,750
+or if the machine is under repair or maintenance.
+
+43
+00:01:51,750 --> 00:01:53,580
+The important point is that nothing happens
+
+44
+00:01:53,580 --> 00:01:56,100
+until everything is present.
+
+45
+00:01:56,100 --> 00:01:57,780
+If any one of these items is absent,
+
+46
+00:01:57,780 --> 00:02:00,930
+the operation must wait until the missing one arrives.
+
+47
+00:02:00,930 --> 00:02:04,290
+Whatever does not arrive last must wait.
+
+48
+00:02:04,290 --> 00:02:06,780
+Idleness is a loss of some of the productive capability
+
+49
+00:02:06,780 --> 00:02:08,530
+of a component of the factory.
+
+50
+00:02:08,530 --> 00:02:10,020
+This is undesirable.
+
+51
+00:02:10,020 --> 00:02:12,300
+One goal of manufacturing systems engineering
+
+52
+00:02:12,300 --> 00:02:14,900
+is to minimize unnecessary waiting.
+
+53
+00:02:14,900 --> 00:02:17,580
+But because of the complexity and variability of a factory,
+
+54
+00:02:17,580 --> 00:02:20,220
+it's impossible to eliminate all the waiting.
+
+55
+00:02:20,220 --> 00:02:22,440
+Therefore, we want the most valuable components
+
+56
+00:02:22,440 --> 00:02:24,600
+to wait the least.
+
+57
+00:02:24,600 --> 00:02:27,310
+There are different names for different things waiting.
+
+58
+00:02:27,310 --> 00:02:29,490
+Inventory is parts waiting.
+
+59
+00:02:29,490 --> 00:02:31,380
+If raw material is expensive, inventory
+
+60
+00:02:31,380 --> 00:02:34,440
+is expensive, so we emphasize minimizing inventory.
+
+61
+00:02:34,440 --> 00:02:39,090
+There are other reasons as well, which we'll discuss later.
+
+62
+00:02:39,090 --> 00:02:40,830
+If capital investment is expensive,
+
+63
+00:02:40,830 --> 00:02:43,980
+we emphasize maximizing machine utilization.
+
+64
+00:02:43,980 --> 00:02:47,856
+So when machines are waiting, we call that underutilization.
+
+65
+00:02:47,856 --> 00:02:49,230
+When operators are waiting, we'll
+
+66
+00:02:49,230 --> 00:02:51,600
+describe that as an idle workforce.
+
+67
+00:02:51,600 --> 00:02:54,300
+If workers must be highly skilled and expensively
+
+68
+00:02:54,300 --> 00:02:59,160
+trained, we emphasize keeping them busy.
+
+69
+00:02:59,160 --> 00:03:00,930
+Reductions in the availability or
+
+70
+00:03:00,930 --> 00:03:03,000
+increased variability in the availability
+
+71
+00:03:03,000 --> 00:03:06,630
+of any of these items increasing waiting in the rest of them
+
+72
+00:03:06,630 --> 00:03:09,390
+and reduces the performance of the system.
+
+73
+00:03:09,390 --> 00:03:11,490
+When an operation is prevented from taking place
+
+74
+00:03:11,490 --> 00:03:14,490
+for any reason, that stoppage can propagate and cause
+
+75
+00:03:14,490 --> 00:03:16,920
+idleness at other parts of the factory.
+
+76
+00:03:16,920 --> 00:03:20,040
+For example, if a machine is under repair for a long time,
+
+77
+00:03:20,040 --> 00:03:22,140
+work pieces can accumulate in the storage area
+
+78
+00:03:22,140 --> 00:03:23,550
+upstream of it.
+
+79
+00:03:23,550 --> 00:03:26,156
+If that buffer becomes full, one or more operations
+
+80
+00:03:26,156 --> 00:03:28,530
+upstream of that machine may become blocked and prevented
+
+81
+00:03:28,530 --> 00:03:29,850
+from working.
+
+82
+00:03:29,850 --> 00:03:32,160
+Similarly, if a machine is down long enough,
+
+83
+00:03:32,160 --> 00:03:34,890
+a storage area downstream may be depleted,
+
+84
+00:03:34,890 --> 00:03:38,100
+and this may cause starvation in downstream work stations.
+
+85
+00:03:38,100 --> 00:03:41,900
+Now we're going to describe some standard system architectures.
+
+86
+00:03:41,900 --> 00:03:45,450
+A flow line is a sequence of machines and buffers.
+
+87
+00:03:45,450 --> 00:03:49,380
+Parts arrive from outside the system at the first machine.
+
+88
+00:03:49,380 --> 00:03:52,410
+After a part's operation is completed at that machine,
+
+89
+00:03:52,410 --> 00:03:53,970
+it goes to a storage buffer and stays
+
+90
+00:03:53,970 --> 00:03:56,490
+there until the next machine is available.
+
+91
+00:03:56,490 --> 00:03:58,410
+It gets an operation of the second machine,
+
+92
+00:03:58,410 --> 00:03:59,868
+and then goes to the second buffer,
+
+93
+00:03:59,868 --> 00:04:02,492
+and then to the third machine, and so forth.
+
+94
+00:04:02,492 --> 00:04:04,200
+Since all of the parts require operations
+
+95
+00:04:04,200 --> 00:04:06,900
+on the same machines in the same sequence,
+
+96
+00:04:06,900 --> 00:04:09,090
+the parts are generally very similar or identical
+
+97
+00:04:09,090 --> 00:04:10,570
+to one another.
+
+98
+00:04:10,570 --> 00:04:13,290
+This is therefore used for low variety manufacturing.
+
+99
+00:04:13,290 --> 00:04:15,570
+High volume is often low variety.
+
+100
+00:04:15,570 --> 00:04:17,490
+The high volume justifies the investment
+
+101
+00:04:17,490 --> 00:04:19,920
+in machines that are dedicated to a small number of part
+
+102
+00:04:19,920 --> 00:04:22,590
+types, possibly just one.
+
+103
+00:04:22,590 --> 00:04:24,250
+Why are there buffers?
+
+104
+00:04:24,250 --> 00:04:26,754
+They are there because machines fail.
+
+105
+00:04:26,754 --> 00:04:28,920
+If there were no buffers, the failure of one machine
+
+106
+00:04:28,920 --> 00:04:31,500
+would stop all the others very quickly.
+
+107
+00:04:31,500 --> 00:04:33,540
+With buffers, if one machine stops,
+
+108
+00:04:33,540 --> 00:04:35,310
+the machine upstream can keep working
+
+109
+00:04:35,310 --> 00:04:37,350
+until the buffer between them fills up, and is
+
+110
+00:04:37,350 --> 00:04:38,940
+therefore blocked.
+
+111
+00:04:38,940 --> 00:04:41,400
+If the machine that's stopped starts up again
+
+112
+00:04:41,400 --> 00:04:43,830
+before the buffer is full, the upstream machine
+
+113
+00:04:43,830 --> 00:04:45,750
+does not have to stop.
+
+114
+00:04:45,750 --> 00:04:47,449
+Also, the machine downstream can keep
+
+115
+00:04:47,449 --> 00:04:48,990
+working until the buffer between them
+
+116
+00:04:48,990 --> 00:04:52,410
+becomes empty, which means that it's starved.
+
+117
+00:04:52,410 --> 00:04:54,600
+If work resumes before that buffer empties,
+
+118
+00:04:54,600 --> 00:04:57,510
+the downstream machine's work is not interrupted.
+
+119
+00:04:57,510 --> 00:05:00,000
+Stoppages can be due to failures, maintenance,
+
+120
+00:05:00,000 --> 00:05:02,070
+blockages, or starvations.
+
+121
+00:05:02,070 --> 00:05:04,530
+Blockages and starvations lead to the propagation
+
+122
+00:05:04,530 --> 00:05:06,990
+of the original disruption.
+
+123
+00:05:06,990 --> 00:05:08,670
+Consequently, larger buffers lead
+
+124
+00:05:08,670 --> 00:05:10,950
+to less propagation, and therefore higher production
+
+125
+00:05:10,950 --> 00:05:11,730
+rates.
+
+126
+00:05:11,730 --> 00:05:14,670
+However, larger buffers lead to greater cost of inventory
+
+127
+00:05:14,670 --> 00:05:17,382
+and the space allocated to holding inventory.
+
+128
+00:05:17,382 --> 00:05:19,590
+This means that there's a trade-off between inventory
+
+129
+00:05:19,590 --> 00:05:21,239
+costs and production rate.
+
+130
+00:05:21,239 --> 00:05:23,280
+We will examine that trade-off in the second part
+
+131
+00:05:23,280 --> 00:05:25,150
+of this course.
+
+132
+00:05:25,150 --> 00:05:26,850
+Let's see a system like this in action.
+
+133
+00:05:26,850 --> 00:05:30,270
+
+
+134
+00:05:30,270 --> 00:05:32,326
+This is a representation of the kind of flow line
+
+135
+00:05:32,326 --> 00:05:33,700
+we were just talking about, where
+
+136
+00:05:33,700 --> 00:05:37,290
+we have a sequence of machines and buffers.
+
+137
+00:05:37,290 --> 00:05:41,909
+The machines are unreliable, so they go up and down.
+
+138
+00:05:41,909 --> 00:05:43,200
+When they're up, they're white.
+
+139
+00:05:43,200 --> 00:05:45,450
+When they're down, they're red.
+
+140
+00:05:45,450 --> 00:05:48,840
+The buffers can hold up to 25 parts.
+
+141
+00:05:48,840 --> 00:05:50,520
+And the little green squares inside them
+
+142
+00:05:50,520 --> 00:05:52,350
+represent the parts they have.
+
+143
+00:05:52,350 --> 00:05:54,660
+And you'll see the movement of parts in there.
+
+144
+00:05:54,660 --> 00:05:57,390
+What you should also see is that when a machine fails,
+
+145
+00:05:57,390 --> 00:05:59,280
+the upstream buffer starts to fill up,
+
+146
+00:05:59,280 --> 00:06:02,250
+and the downstream buffer, if it has any parts in it,
+
+147
+00:06:02,250 --> 00:06:03,465
+will start to empty.
+
+148
+00:06:03,465 --> 00:06:04,350
+So let's go.
+
+149
+00:06:04,350 --> 00:06:23,170
+
+
+150
+00:06:23,170 --> 00:06:25,400
+We've made the machines a little bit more unreliable
+
+151
+00:06:25,400 --> 00:06:27,844
+than you'd probably see in a real factory,
+
+152
+00:06:27,844 --> 00:06:30,010
+just so that we can get to see some action going on.
+
+153
+00:06:30,010 --> 00:06:45,960
+
+
+154
+00:06:45,960 --> 00:06:48,930
+In this model, all the machines have the same operation time.
+
+155
+00:06:48,930 --> 00:06:53,010
+
+
+156
+00:06:53,010 --> 00:06:54,930
+And the time that we're counting is the number
+
+157
+00:06:54,930 --> 00:06:58,230
+of operations time since the beginning of the simulation.
+
+158
+00:06:58,230 --> 00:07:02,670
+You can see that this is a pretty inefficient system,
+
+159
+00:07:02,670 --> 00:07:04,950
+because we've already reached time 110,
+
+160
+00:07:04,950 --> 00:07:07,090
+and there are only 39 parts produced.
+
+161
+00:07:07,090 --> 00:07:16,162
+
+
+162
+00:07:16,162 --> 00:07:18,370
+Factory seems to be having a run of bad luck with all
+
+163
+00:07:18,370 --> 00:07:20,150
+those machines down.
+
+164
+00:07:20,150 --> 00:07:21,784
+Oh.
+
+165
+00:07:21,784 --> 00:07:22,450
+Getting back up.
+
+166
+00:07:22,450 --> 00:07:30,891
+
+
+167
+00:07:30,891 --> 00:07:31,390
+OK.
+
+168
+00:07:31,390 --> 00:07:32,890
+Maybe we've seen all we need to see.
+
+169
+00:07:32,890 --> 00:07:37,340
+
+
+170
+00:07:37,340 --> 00:07:39,620
+For our purposes, an assembly system
+
+171
+00:07:39,620 --> 00:07:42,170
+can be thought of as a generalization of the flow line
+
+172
+00:07:42,170 --> 00:07:43,940
+that we just talked about.
+
+173
+00:07:43,940 --> 00:07:46,429
+The difference here is that assembly machines
+
+174
+00:07:46,429 --> 00:07:48,220
+take different parts from different buffers
+
+175
+00:07:48,220 --> 00:07:49,880
+to do their operations.
+
+176
+00:07:49,880 --> 00:07:51,320
+Consequently, they can be starved
+
+177
+00:07:51,320 --> 00:07:54,570
+if any one of the upstream buffers is empty.
+
+178
+00:07:54,570 --> 00:07:57,180
+Here's a very complex assembly.
+
+179
+00:07:57,180 --> 00:07:58,950
+You can see how many different operations.
+
+180
+00:07:58,950 --> 00:08:02,350
+Each of those little dots represent an operation.
+
+181
+00:08:02,350 --> 00:08:05,270
+And there's very, very many parts.
+
+182
+00:08:05,270 --> 00:08:08,540
+Some factories involve looping flow,
+
+183
+00:08:08,540 --> 00:08:11,160
+in which parts or other items visit the same machines more
+
+184
+00:08:11,160 --> 00:08:12,320
+than once.
+
+185
+00:08:12,320 --> 00:08:14,180
+Determining the performance of these systems
+
+186
+00:08:14,180 --> 00:08:16,340
+must take this into account.
+
+187
+00:08:16,340 --> 00:08:19,260
+Here, parts or fixtures travel in a closed loop.
+
+188
+00:08:19,260 --> 00:08:20,540
+The routes are determined.
+
+189
+00:08:20,540 --> 00:08:23,870
+The number of pallets in the loop is constant.
+
+190
+00:08:23,870 --> 00:08:26,270
+We saw this kind of loop in the HP example.
+
+191
+00:08:26,270 --> 00:08:28,250
+Parts are attached to pallets or fixtures
+
+192
+00:08:28,250 --> 00:08:30,290
+as they enter the system.
+
+193
+00:08:30,290 --> 00:08:32,600
+Essentially, the first operation is the assembly
+
+194
+00:08:32,600 --> 00:08:34,580
+of a part and a pallet.
+
+195
+00:08:34,580 --> 00:08:36,069
+This assembly visits the machines
+
+196
+00:08:36,069 --> 00:08:37,610
+and waits in the buffers between them
+
+197
+00:08:37,610 --> 00:08:39,559
+just like in the flow line.
+
+198
+00:08:39,559 --> 00:08:40,985
+The last machine is a disassembly.
+
+199
+00:08:40,985 --> 00:08:43,460
+The part exits the system and the pallet
+
+200
+00:08:43,460 --> 00:08:46,960
+is recycled back to the first machine.
+
+201
+00:08:46,960 --> 00:08:48,970
+The motivation for this is that the part only
+
+202
+00:08:48,970 --> 00:08:51,400
+has to be attached to the pallet once,
+
+203
+00:08:51,400 --> 00:08:54,550
+instead of being attached to fixturing at each station.
+
+204
+00:08:54,550 --> 00:08:57,820
+This reduces the danger of damage to the part.
+
+205
+00:08:57,820 --> 00:08:59,620
+In addition, the fixturing at each station
+
+206
+00:08:59,620 --> 00:09:02,800
+is simplified, because it is the same for all the stations.
+
+207
+00:09:02,800 --> 00:09:06,160
+This also makes it easier to deal with different part types.
+
+208
+00:09:06,160 --> 00:09:08,110
+This also limits inventory, because the number
+
+209
+00:09:08,110 --> 00:09:10,690
+of parts in the system is less than or equal to the number
+
+210
+00:09:10,690 --> 00:09:12,790
+of pallets.
+
+211
+00:09:12,790 --> 00:09:14,350
+Now, the number of pallets enters
+
+212
+00:09:14,350 --> 00:09:18,710
+into the trade-off between inventory and production rate.
+
+213
+00:09:18,710 --> 00:09:21,760
+A second kind of loop, which is called reentrant,
+
+214
+00:09:21,760 --> 00:09:24,280
+has parts returning to machines they have visited before
+
+215
+00:09:24,280 --> 00:09:26,800
+to get more operations.
+
+216
+00:09:26,800 --> 00:09:30,359
+This is a schematic of a system that produces two part types.
+
+217
+00:09:30,359 --> 00:09:31,900
+The first one that we're showing here
+
+218
+00:09:31,900 --> 00:09:34,120
+has a simple flow, like a flow line.
+
+219
+00:09:34,120 --> 00:09:36,250
+After the part gets its fourth operation,
+
+220
+00:09:36,250 --> 00:09:38,360
+it leaves the system.
+
+221
+00:09:38,360 --> 00:09:41,620
+The second part type has a more complex path.
+
+222
+00:09:41,620 --> 00:09:43,270
+After it gets its fourth operation,
+
+223
+00:09:43,270 --> 00:09:46,330
+it goes back to the first machine for a fifth operation,
+
+224
+00:09:46,330 --> 00:09:48,250
+and then to machines 2, 3, and 4 again.
+
+225
+00:09:48,250 --> 00:09:50,010
+Then it leaves.
+
+226
+00:09:50,010 --> 00:09:51,160
+The routes are determined.
+
+227
+00:09:51,160 --> 00:09:54,010
+The number of parts in the loop varies.
+
+228
+00:09:54,010 --> 00:09:57,010
+Semiconductor fabrication is highly reentrant.
+
+229
+00:09:57,010 --> 00:10:00,220
+Semiconductor chips have multiple layers,
+
+230
+00:10:00,220 --> 00:10:02,740
+and each layer gets similar operations.
+
+231
+00:10:02,740 --> 00:10:05,830
+It's cheaper to use one machine for all the similar operations
+
+232
+00:10:05,830 --> 00:10:08,380
+on different layers than to have different machines
+
+233
+00:10:08,380 --> 00:10:10,600
+for those operations on each layer.
+
+234
+00:10:10,600 --> 00:10:13,030
+The downside of this is that the management of the system
+
+235
+00:10:13,030 --> 00:10:16,270
+is much more complicated than the ones we've already seen.
+
+236
+00:10:16,270 --> 00:10:21,700
+Another extension of the flow line is a rework loop.
+
+237
+00:10:21,700 --> 00:10:24,120
+This is a common kind of material flow.
+
+238
+00:10:24,120 --> 00:10:26,190
+There's an inspection station.
+
+239
+00:10:26,190 --> 00:10:29,070
+Features of parts are measured to determine their quality
+
+240
+00:10:29,070 --> 00:10:30,180
+at that station.
+
+241
+00:10:30,180 --> 00:10:33,360
+If the quality is acceptable, the part moves on.
+
+242
+00:10:33,360 --> 00:10:35,110
+If the quality is not acceptable,
+
+243
+00:10:35,110 --> 00:10:37,290
+but the error is repairable, the part
+
+244
+00:10:37,290 --> 00:10:40,050
+goes back to get the operation redone,
+
+245
+00:10:40,050 --> 00:10:41,940
+and may have to get another operation first,
+
+246
+00:10:41,940 --> 00:10:44,640
+to undo the bad operation.
+
+247
+00:10:44,640 --> 00:10:46,950
+If the error is not acceptable and not repairable,
+
+248
+00:10:46,950 --> 00:10:49,380
+the part is rejected and scrapped.
+
+249
+00:10:49,380 --> 00:10:51,690
+There are actually two reasons for inspection.
+
+250
+00:10:51,690 --> 00:10:54,910
+One is to prevent bad parts from reaching customers.
+
+251
+00:10:54,910 --> 00:10:57,270
+The second is to detect where are other deterioration
+
+252
+00:10:57,270 --> 00:10:59,580
+on the machines that did the operations whose results
+
+253
+00:10:59,580 --> 00:11:00,810
+are inspected.
+
+254
+00:11:00,810 --> 00:11:02,690
+This may trigger a repair or maintenance
+
+255
+00:11:02,690 --> 00:11:05,280
+of the faulty machine.
+
+256
+00:11:05,280 --> 00:11:07,320
+In this kind of system, the routes are random.
+
+257
+00:11:07,320 --> 00:11:09,975
+The number of parts in the loop varies.
+
+258
+00:11:09,975 --> 00:11:11,475
+And the system is already described.
+
+259
+00:11:11,475 --> 00:11:14,820
+The part variety is low, and the volume is high.
+
+260
+00:11:14,820 --> 00:11:17,070
+This allows the factory to be organized according
+
+261
+00:11:17,070 --> 00:11:19,050
+to the sequence of operations.
+
+262
+00:11:19,050 --> 00:11:20,550
+Job shops are different.
+
+263
+00:11:20,550 --> 00:11:24,660
+They deliver a wide variety of parts, often in small batches.
+
+264
+00:11:24,660 --> 00:11:27,300
+It is not cost effective to dedicate a set of machines
+
+265
+00:11:27,300 --> 00:11:31,600
+to a small batch of parts that may not be ordered again.
+
+266
+00:11:31,600 --> 00:11:34,210
+The machines are not organized according to the process flow,
+
+267
+00:11:34,210 --> 00:11:36,790
+because there is no common process flow.
+
+268
+00:11:36,790 --> 00:11:39,930
+Often, instead, machines are grouped by department--
+
+269
+00:11:39,930 --> 00:11:43,550
+a mill department, a lathe department, and so forth.
+
+270
+00:11:43,550 --> 00:11:46,070
+There's a great variety of products.
+
+271
+00:11:46,070 --> 00:11:49,190
+Different products follow different paths.
+
+272
+00:11:49,190 --> 00:11:51,842
+And the management of this system is complex.
+
+273
+00:11:51,842 --> 00:11:52,342
+
+

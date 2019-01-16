@@ -1,0 +1,17 @@
+<problem display_name="Concept Check 2" markdown="&gt;&gt;To calculate the upper bound for the production rate of a line, we can make these assumptions: (Select all that apply.)&lt;&lt;&#10;[X] The first machine always has something to work on (never starved).&#10;[X] Machines in the flow line are not idle if not starved. &#10;[X] The buffers are infinite. &#10;[ ] The machines are reliable. &#10;&#10;[explanation]&#10;These analysis are made to model and study scenarios of machines failures. Thus the last item is not true for this question. With these assumptions, one can calculate the upper bound for the production rate of a line. &#10;[explanation]" max_attempts="3">
+  <choiceresponse>
+    <label>To calculate the upper bound for the production rate of a line, we can make these assumptions: (Select all that apply.)</label>
+    <checkboxgroup>
+      <choice correct="true">The first machine always has something to work on (never starved).</choice>
+      <choice correct="true">Machines in the flow line are not idle if not starved. </choice>
+      <choice correct="true">The buffers are infinite. </choice>
+      <choice correct="false">The machines are reliable. </choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>These analysis are made to model and study scenarios of machines failures. Thus the last item is not true for this question. With these assumptions, one can calculate the upper bound for the production rate of a line. </p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

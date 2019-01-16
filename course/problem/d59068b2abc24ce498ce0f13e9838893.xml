@@ -1,0 +1,16 @@
+<problem display_name="Concept Check 4" markdown="&gt;&gt; Which statement is NOT true below?&lt;&lt;&#10;( ) Simulation is used to analyze finite-buffer lines. Simulation can be accurate, but it's statistical, and it can be slowed when doing optimization.&#10;( X ) We can get exact analytical solutions for two-machine, finite-buffer lines. And there are five parameters of two-machine, finite-buffer lines: 1) the probability of machine one failing while doing an operation; 2) the probability of machine one getting repaired during an operation time when it is down; 3) the probability of machine two failing while doing an operation; 4) the probability of machine two getting repaired during an operation time when it is down; 5) time elapsed. &#10;( ) If we increase the buffer size and leave other parameters the same of two-machine, finite-buffer lines, the production rate will be only slightly increased, and the average inventory will increase by the amount close to the increased buffer size.&#10;&#10;[explanation]&#10;The last parameter should be the number of parts of the buffer can hold. The time elapsed is not a parameter of the flow line itself. It is the horizontal axis of the simulation graph.&#10;[explanation]" max_attempts="2">
+  <multiplechoiceresponse>
+    <label> Which statement is NOT true below?</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Simulation is used to analyze finite-buffer lines. Simulation can be accurate, but it's statistical, and it can be slowed when doing optimization.</choice>
+      <choice correct="true">We can get exact analytical solutions for two-machine, finite-buffer lines. And there are five parameters of two-machine, finite-buffer lines: 1) the probability of machine one failing while doing an operation; 2) the probability of machine one getting repaired during an operation time when it is down; 3) the probability of machine two failing while doing an operation; 4) the probability of machine two getting repaired during an operation time when it is down; 5) time elapsed.</choice>
+      <choice correct="false">If we increase the buffer size and leave other parameters the same of two-machine, finite-buffer lines, the production rate will be only slightly increased, and the average inventory will increase by the amount close to the increased buffer size.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>The last parameter should be the number of parts of the buffer can hold. The time elapsed is not a parameter of the flow line itself. It is the horizontal axis of the simulation graph.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

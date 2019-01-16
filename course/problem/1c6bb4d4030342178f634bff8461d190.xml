@@ -1,0 +1,17 @@
+<problem display_name="Part 3" markdown="null" max_attempts="2" showanswer="never" weight="9.0">
+  <numericalresponse answer="0.5058">
+    <label>What is the production rate of the optimal line? Round to 4 decimals. </label>
+    <responseparam type="tolerance" default="0.01"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>
+          <span style="font-size: 1em;">
+            <img src="/static/Screen_Shot_2018-05-16_at_1.51.47_AM.png" alt="" width="700" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+          </span>
+        </p>
+      </div>
+    </solution>
+  </numericalresponse>
+</problem>

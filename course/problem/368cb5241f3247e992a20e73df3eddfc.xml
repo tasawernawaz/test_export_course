@@ -1,0 +1,36 @@
+<problem display_name="Part 2" markdown="Carefully specify the machine parameters, taking into account the adjusted&#10;operation times. Think hard about these parameters!!! (Round to 3 decimal places)&#10;&#10;&gt;&gt;\(p_A\)&lt;&lt;&#10;= 0.013&#10;&gt;&gt;\(p_B\)&lt;&lt;&#10;=0.010&#10;&gt;&gt;\(p_C\)&lt;&lt;&#10;=0.020&#10;&gt;&gt;\(p_D\)&lt;&lt;&#10;=0.167&#10;&gt;&gt;\(r_A\)&lt;&lt;&#10;= 0.100&#10;&gt;&gt;\(r_B\)&lt;&lt;&#10;=0.100&#10;&gt;&gt;\(r_C\)&lt;&lt;&#10;=0.100&#10;&gt;&gt;\(r_D\)&lt;&lt;&#10;=0.100" max_attempts="3" showanswer="never" weight="5.0">
+  <p>Carefully specify the machine parameters, taking into account the adjusted</p>
+  <p>operation times. Think hard about these parameters!!! (Round to 3 decimal places)</p>
+  <label>\(p_A\)</label>
+  <numericalresponse answer="0.013">
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>\(p_B\)</label>
+  <numericalresponse answer="0.010">
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>\(p_C\)</label>
+  <numericalresponse answer="0.020">
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>\(p_D\)</label>
+  <numericalresponse answer="0.167">
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>\(r_A\)</label>
+  <numericalresponse answer="0.100">
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>\(r_B\)</label>
+  <numericalresponse answer="0.100">
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>\(r_C\)</label>
+  <numericalresponse answer="0.100">
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>\(r_D\)</label>
+  <numericalresponse answer="0.100">
+    <formulaequationinput/>
+  </numericalresponse>
+</problem>

@@ -1,0 +1,17 @@
+<problem display_name="Part 4" markdown="&gt;&gt;What is the inventory trade-off in the Make to Order production?&lt;&lt;&#10;&#10;( ) Large finished goods inventories needed to prevent stockouts, but small finished goods inventories needed to keep cost low.&#10;( ) Space required for storage&#10;(x) Excess production capacity is needed to allow early, reliable delivery promises, but minimal production capacity is needed to keep costs low.&#10;( ) Damaged inventory&#10;&#10;[Explanation]&#10;In order to be able to reliably ship orders on time, manufacturers need to have production capacity readily available. This means workers and production equipment, which are expensive.&#10;[Explanation]&#10;&#10;" max_attempts="3" showanswer="past_due" weight="3.0">
+  <multiplechoiceresponse>
+    <label>What is the inventory trade-off in the Make to Order production?</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Large finished goods inventories needed to prevent stockouts, but small finished goods inventories needed to keep cost low.</choice>
+      <choice correct="false">Space required for storage</choice>
+      <choice correct="true">Excess production capacity is needed to allow early, reliable delivery promises, but minimal production capacity is needed to keep costs low.</choice>
+      <choice correct="false">Damaged inventory</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>In order to be able to reliably ship orders on time, manufacturers need to have production capacity readily available. This means workers and production equipment, which are expensive.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

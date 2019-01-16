@@ -1,0 +1,19 @@
+<problem display_name="Part 2" markdown="null" max_attempts="3" showanswer="finished" weight="0.0">
+  <numericalresponse answer="0.889">
+    <p>Compute the Utilization Rate at operation \(Q\).</p>
+    <label> \(\rho = \) </label>
+    <description> (Round to 3 decimal places.) </description>
+    <responseparam type="tolerance" default="0.01"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>
+        <span style="font-size: 1em;">
+          \(\rho=\frac{\lambda_{a}}{\mu}=0.889\)
+        </span>
+      </p>
+    </div>
+  </solution>
+</problem>

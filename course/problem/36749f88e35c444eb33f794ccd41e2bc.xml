@@ -1,0 +1,7 @@
+<problem display_name="Part 3" group_access="{}" markdown="&gt;&gt;Continuing from Part 2, if now the demand distribution is a Poisson distribution with \(\lambda\)=400, what is the optimal order quantity to maximize profit? (Round to the nearest integer)&lt;&lt;&#10;&#10;= 417 +-5&#10;" max_attempts="2" showanswer="past_due" weight="7.0">
+  <numericalresponse answer="417">
+    <label>Continuing from Part 2, if now the demand distribution is a Poisson distribution with \(\lambda\)=400, what is the optimal order quantity to maximize profit? (Round to the nearest integer)</label>
+    <responseparam type="tolerance" default="5"/>
+    <formulaequationinput/>
+  </numericalresponse>
+</problem>

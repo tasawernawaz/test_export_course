@@ -1,0 +1,18 @@
+<problem display_name="Part 1" markdown="null" max_attempts="3" showanswer="finished" weight="0.0">
+  <numericalresponse answer="180">
+    <label>What is the expected daily sales, in lunches? </label>
+    <responseparam type="tolerance" default="0.5"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>
+        <span style="font-size: 1em;">
+          \( (.4)(30)+(.8)(30)+(2.4)(15)+(1.2)(45)+(2.4)(15)+(.4)(45)\)
+          \(=12+24+36+54+36+18=180\)
+        </span>
+      </p>
+    </div>
+  </solution>
+</problem>

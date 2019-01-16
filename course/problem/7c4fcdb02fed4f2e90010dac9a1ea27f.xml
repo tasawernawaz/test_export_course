@@ -1,0 +1,34 @@
+<problem display_name="Part 1" markdown="The engine plant management never heard of the Toyota Production System and they decided to always make exactly \(A\) engines every day.&#10;&#10;&gt;&gt;There is a storage buffer for engine inventory between the engine plant and the assembly plant.  If the inventory holding cost is $10 per engine per day, what is the average daily cost of inventory per day?&lt;&lt;&#10;&#10;= 50&#10;&#10;[Explanation]&#10;On odd days the engine plant produces A and the assembly plant takes \(A-\Delta A\). On those days the inventory is \(\Delta A\). On even days, the engine plant produces A and the assembly plant takes \(A+\Delta A\), so the inventory goes to 0. Therefore, the average inventory is \(\Delta A/2\). The average daily cost of inventory is \(10\Delta A/2\).&#10;[Explanation]&#10;&#10;&gt;&gt;What is the average daily cost of labor per day?&lt;&lt;&#10;&#10;=8*80*60&#10;&#10;[Explanation]&#10;The daily average cost is just 8*80*\(W\).&#10;[Explanation]&#10;&#10;&gt;&gt;What is the total cost of labor + inventory per day?&lt;&lt;&#10;&#10;=50+8*80*60&#10;&#10;[explanation]&#10;This is just the sum of the above two parts&#10;[explanation]&#10;&#10;&lt;script src=&quot;/static/st.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;" max_attempts="3" showanswer="finished" weight="1.0">
+  <p>The engine plant management never heard of the Toyota Production System and they decided to always make exactly \(A\) engines every day.</p>
+  <label>There is a storage buffer for engine inventory between the engine plant and the assembly plant.  If the inventory holding cost is $10 per engine per day, what is the average daily cost of inventory per day?</label>
+  <numericalresponse answer="50">
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>On odd days the engine plant produces A and the assembly plant takes \(A-\Delta A\). On those days the inventory is \(\Delta A\). On even days, the engine plant produces A and the assembly plant takes \(A+\Delta A\), so the inventory goes to 0. Therefore, the average inventory is \(\Delta A/2\). The average daily cost of inventory is \(10\Delta A/2\).</p>
+    </div>
+  </solution>
+  <label>What is the average daily cost of labor per day?</label>
+  <numericalresponse answer="8*80*60">
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>The daily average cost is just 8*80*\(W\).</p>
+    </div>
+  </solution>
+  <label>What is the total cost of labor + inventory per day?</label>
+  <numericalresponse answer="50+8*80*60">
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>This is just the sum of the above two parts</p>
+    </div>
+  </solution>
+  <script src="/static/st.js" type="text/javascript"/>
+</problem>

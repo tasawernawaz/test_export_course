@@ -1,0 +1,17 @@
+<problem display_name="Part 2" markdown="&gt;&gt; Which of the following are examples of waste?&lt;&lt;&#10;&#10;[x] Any amount of inventory&#10;[ ] Employee non-manufacturing time&#10;[x] Switch over time (Setup time)&#10;[ ] One-Piece flow&#10;&#10;[explanation]&#10;Toyota invests heavily on clever setup processes. SMED is their process of switching out stamping dies in less than 10 mins. Any amount inventory is also obviously wrong. Inventory decisions are carefully made via controlled systems such as Kanban.&#10;[explanation]&#10;" max_attempts="3" weight="1.0">
+  <choiceresponse>
+    <label> Which of the following are examples of waste?</label>
+    <checkboxgroup>
+      <choice correct="true">Any amount of inventory</choice>
+      <choice correct="false">Employee non-manufacturing time</choice>
+      <choice correct="true">Switch over time (Setup time)</choice>
+      <choice correct="false">One-Piece flow</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Toyota invests heavily on clever setup processes. SMED is their process of switching out stamping dies in less than 10 mins. Any amount inventory is also obviously wrong. Inventory decisions are carefully made via controlled systems such as Kanban.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

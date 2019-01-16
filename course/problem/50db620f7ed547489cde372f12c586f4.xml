@@ -1,0 +1,11 @@
+<problem display_name="Part 3" markdown="&gt;&gt;The biggest pile of inventory is just before the bottleneck. True or false?&lt;&lt;&#10;&#10;[x] True, if there is only one bottleneck and buffers are infinite.&#10;[x] Possibly false, if buffers are finite. Blockages propagates, and inventory spreads out.&#10;[ ] True, because the bottleneck is the slowest machines, thus parts will accumulate infront of it.&#10;[x] Possibly false, if there is more than one. Largest inventory occurs where there is largest difference in rates of successive bottlenecks.&#10;" max_attempts="3" showanswer="finished" weight="0.0">
+  <choiceresponse>
+    <label>The biggest pile of inventory is just before the bottleneck. True or false?</label>
+    <checkboxgroup>
+      <choice correct="true">True, if there is only one bottleneck and buffers are infinite.</choice>
+      <choice correct="true">Possibly false, if buffers are finite. Blockages propagates, and inventory spreads out.</choice>
+      <choice correct="false">True, because the bottleneck is the slowest machines, thus parts will accumulate infront of it.</choice>
+      <choice correct="true">Possibly false, if there is more than one. Largest inventory occurs where there is largest difference in rates of successive bottlenecks.</choice>
+    </checkboxgroup>
+  </choiceresponse>
+</problem>

@@ -1,0 +1,880 @@
+0
+00:00:00,000 --> 00:00:02,940
+
+
+1
+00:00:02,940 --> 00:00:06,222
+In this set of slides, we'll discuss production smoothing.
+
+2
+00:00:06,222 --> 00:00:07,680
+The purpose of production smoothing
+
+3
+00:00:07,680 --> 00:00:09,930
+is to diminish or control quantity variation
+
+4
+00:00:09,930 --> 00:00:11,990
+in a production line.
+
+5
+00:00:11,990 --> 00:00:14,830
+It includes smoothing of total production quantity
+
+6
+00:00:14,830 --> 00:00:18,320
+and smoothing of each model's production quantity.
+
+7
+00:00:18,320 --> 00:00:21,460
+However, production must respond to variable demand.
+
+8
+00:00:21,460 --> 00:00:24,160
+If production is always done at a perfectly constant rate,
+
+9
+00:00:24,160 --> 00:00:26,960
+it will not be synchronized with varying demand.
+
+10
+00:00:26,960 --> 00:00:29,980
+Therefore, there must be some variation in production rate,
+
+11
+00:00:29,980 --> 00:00:32,380
+but that variation must be controlled.
+
+12
+00:00:32,380 --> 00:00:35,080
+Production rate due to internal factory events,
+
+13
+00:00:35,080 --> 00:00:37,720
+such as machine failures and other stoppages,
+
+14
+00:00:37,720 --> 00:00:41,240
+must be diminished as much as possible.
+
+15
+00:00:41,240 --> 00:00:43,910
+The just-in-time idea applied to sales
+
+16
+00:00:43,910 --> 00:00:49,250
+is supplying products in saleable quantities only.
+
+17
+00:00:49,250 --> 00:00:51,380
+That means that production must adapt promptly
+
+18
+00:00:51,380 --> 00:00:56,280
+to demand changes and doing this eliminates excess inventories
+
+19
+00:00:56,280 --> 00:00:59,240
+of finished goods.
+
+20
+00:00:59,240 --> 00:01:02,420
+Production rate variation due to internal factory events
+
+21
+00:01:02,420 --> 00:01:04,840
+must be diminished.
+
+22
+00:01:04,840 --> 00:01:07,420
+If demand increases, hire temporary workers,
+
+23
+00:01:07,420 --> 00:01:10,060
+add shifts, and so forth.
+
+24
+00:01:10,060 --> 00:01:13,600
+If demand decreases, dismiss temporary workers,
+
+25
+00:01:13,600 --> 00:01:16,820
+transfer workers to lines with increased demand,
+
+26
+00:01:16,820 --> 00:01:21,340
+decrease overtime, or fill up workers time with quality
+
+27
+00:01:21,340 --> 00:01:23,470
+control meetings, setup practice, maintenance,
+
+28
+00:01:23,470 --> 00:01:25,150
+and so forth.
+
+29
+00:01:25,150 --> 00:01:27,850
+Note that the last item's activities are all productive.
+
+30
+00:01:27,850 --> 00:01:31,320
+They're not just time fillers.
+
+31
+00:01:31,320 --> 00:01:34,380
+Our system has a maximum production rate, its capacity.
+
+32
+00:01:34,380 --> 00:01:38,330
+When demand is less than that maximum, capacity is wasted.
+
+33
+00:01:38,330 --> 00:01:41,960
+Smoothing production can reduce the required maximum.
+
+34
+00:01:41,960 --> 00:01:44,300
+However, when demand is greater than capacity,
+
+35
+00:01:44,300 --> 00:01:47,780
+there will have to be inventory or lost sales.
+
+36
+00:01:47,780 --> 00:01:50,102
+There's a trade off between inventory and lost sales,
+
+37
+00:01:50,102 --> 00:01:51,560
+just as in the news vendor problem.
+
+38
+00:01:51,560 --> 00:01:54,205
+
+
+39
+00:01:54,205 --> 00:01:55,580
+But there are lots of differences
+
+40
+00:01:55,580 --> 00:01:58,040
+between what we're talking about now and the news vendor
+
+41
+00:01:58,040 --> 00:01:59,000
+problem.
+
+42
+00:01:59,000 --> 00:02:02,300
+Cars are sold over a long period, not just one day.
+
+43
+00:02:02,300 --> 00:02:05,150
+Sales are not lost like they are when the product is
+
+44
+00:02:05,150 --> 00:02:06,200
+today's newspaper.
+
+45
+00:02:06,200 --> 00:02:10,340
+Instead, the sale prices of cars go down over time gradually.
+
+46
+00:02:10,340 --> 00:02:13,190
+Also, the price of a car is not fixed, it's set by the market.
+
+47
+00:02:13,190 --> 00:02:16,230
+
+
+48
+00:02:16,230 --> 00:02:17,690
+The goal of production smoothing is
+
+49
+00:02:17,690 --> 00:02:22,440
+to minimize the variance of total output during a period.
+
+50
+00:02:22,440 --> 00:02:24,290
+Ideally, produce the same amount every day,
+
+51
+00:02:24,290 --> 00:02:26,510
+if demand is constant.
+
+52
+00:02:26,510 --> 00:02:28,910
+The amount produced in a day is the total for a planning
+
+53
+00:02:28,910 --> 00:02:31,310
+period, such as a month, divided by the number of days
+
+54
+00:02:31,310 --> 00:02:32,900
+in that period.
+
+55
+00:02:32,900 --> 00:02:36,629
+The planning period should be as short as possible.
+
+56
+00:02:36,629 --> 00:02:38,545
+Consider an engine line that normally produces
+
+57
+00:02:38,545 --> 00:02:40,880
+a hundred engines per day.
+
+58
+00:02:40,880 --> 00:02:43,305
+An assembly plant requests lots of five,
+
+59
+00:02:43,305 --> 00:02:45,940
+with withdrawal kanbans.
+
+60
+00:02:45,940 --> 00:02:49,950
+Withdrawals normally occur 20 times per day.
+
+61
+00:02:49,950 --> 00:02:52,700
+Suppose demand is reduced to 90 per day,
+
+62
+00:02:52,700 --> 00:02:55,990
+then withdrawals occur 18 times per day.
+
+63
+00:02:55,990 --> 00:02:57,580
+The production process is stopped
+
+64
+00:02:57,580 --> 00:03:00,700
+after 90 engines are produced.
+
+65
+00:03:00,700 --> 00:03:02,830
+If demand is increased to 100 per day,
+
+66
+00:03:02,830 --> 00:03:05,540
+withdrawals occur 22 times per day.
+
+67
+00:03:05,540 --> 00:03:09,790
+The additional engines are produced in overtime.
+
+68
+00:03:09,790 --> 00:03:12,676
+If the engine plant did not alter their work hours,
+
+69
+00:03:12,676 --> 00:03:14,050
+they would either build inventory
+
+70
+00:03:14,050 --> 00:03:16,610
+or starve the assembly plant.
+
+71
+00:03:16,610 --> 00:03:20,990
+The purpose of mixing models is to minimize inventory,
+
+72
+00:03:20,990 --> 00:03:25,530
+to maximize utilization, and to minimize variability.
+
+73
+00:03:25,530 --> 00:03:27,940
+The next slides describe the effect of mixing models
+
+74
+00:03:27,940 --> 00:03:29,630
+on the amount of inventory.
+
+75
+00:03:29,630 --> 00:03:33,210
+This is a completely made-up example.
+
+76
+00:03:33,210 --> 00:03:36,540
+Over a period of 168 working hours,
+
+77
+00:03:36,540 --> 00:03:39,090
+which is eight hours a day for 21 days,
+
+78
+00:03:39,090 --> 00:03:43,020
+there's a constant demand for 56 a items, 56 b items,
+
+79
+00:03:43,020 --> 00:03:46,390
+and 56 c's.
+
+80
+00:03:46,390 --> 00:03:49,980
+a items have a 50 minute operation time.
+
+81
+00:03:49,980 --> 00:03:52,970
+b items require 60 minutes, and c items
+
+82
+00:03:52,970 --> 00:03:55,950
+have a 70 minute operation time.
+
+83
+00:03:55,950 --> 00:03:59,720
+Suppose they're produced with all 56 a's, and then 56 b's,
+
+84
+00:03:59,720 --> 00:04:02,540
+and then 56 c's every month.
+
+85
+00:04:02,540 --> 00:04:04,460
+In that case, the production rate of the line
+
+86
+00:04:04,460 --> 00:04:06,640
+changes over time.
+
+87
+00:04:06,640 --> 00:04:09,970
+For 46 hours and 40 minutes, it makes a items
+
+88
+00:04:09,970 --> 00:04:13,220
+at a rate of 1.2 items per hour.
+
+89
+00:04:13,220 --> 00:04:15,710
+For the next 56 hours, it makes b items
+
+90
+00:04:15,710 --> 00:04:18,600
+at a rate of one item per hour.
+
+91
+00:04:18,600 --> 00:04:21,690
+And then for the remaining 65 hours and 20 minutes,
+
+92
+00:04:21,690 --> 00:04:23,800
+it makes c items at a rate of items.
+
+93
+00:04:23,800 --> 00:04:26,210
+86 items per hour.
+
+94
+00:04:26,210 --> 00:04:28,730
+These graphs show the cumulative production
+
+95
+00:04:28,730 --> 00:04:31,910
+and cumulative demand for all three part types
+
+96
+00:04:31,910 --> 00:04:34,220
+over the course of that month.
+
+97
+00:04:34,220 --> 00:04:35,930
+In all the graphs, the horizontal axis
+
+98
+00:04:35,930 --> 00:04:38,180
+is the time in hours, the vertical axis
+
+99
+00:04:38,180 --> 00:04:41,120
+is cumulative production and cumulative demand.
+
+100
+00:04:41,120 --> 00:04:43,200
+The assumption is that demand is constant,
+
+101
+00:04:43,200 --> 00:04:46,090
+and the items are delivered in a steady stream.
+
+102
+00:04:46,090 --> 00:04:48,970
+The line produces a's for the first 46 and 1/3
+
+103
+00:04:48,970 --> 00:04:52,400
+hours at 1.2 parts per hour.
+
+104
+00:04:52,400 --> 00:04:54,340
+Then it stops producing a's and starts
+
+105
+00:04:54,340 --> 00:04:57,904
+producing b's for 56 hours at one per hour.
+
+106
+00:04:57,904 --> 00:04:59,320
+And then, finally, it stops making
+
+107
+00:04:59,320 --> 00:05:02,120
+b's and starts producing c's for 65 and 1/3
+
+108
+00:05:02,120 --> 00:05:06,490
+hours at 0.857 parts per hour.
+
+109
+00:05:06,490 --> 00:05:10,540
+Over a period of 168 hours, we've produced 56 a's, 56
+
+110
+00:05:10,540 --> 00:05:12,846
+b's, and 56 c's.
+
+111
+00:05:12,846 --> 00:05:14,810
+The production rate of a's, which
+
+112
+00:05:14,810 --> 00:05:18,350
+is the slope of the red line, is greater than the demand rate,
+
+113
+00:05:18,350 --> 00:05:20,420
+which is the slope of the green line,
+
+114
+00:05:20,420 --> 00:05:22,700
+until the month's requirements are met.
+
+115
+00:05:22,700 --> 00:05:24,620
+After that, there is no more a production,
+
+116
+00:05:24,620 --> 00:05:28,410
+so the red line becomes flat.
+
+117
+00:05:28,410 --> 00:05:30,720
+At that point the production of b's starts.
+
+118
+00:05:30,720 --> 00:05:32,340
+If you look at the graph, you'll see
+
+119
+00:05:32,340 --> 00:05:34,560
+that the line is flat until the time
+
+120
+00:05:34,560 --> 00:05:37,590
+when the a production is done, and then the b production
+
+121
+00:05:37,590 --> 00:05:39,030
+takes off.
+
+122
+00:05:39,030 --> 00:05:42,510
+It rises at a rate which is steeper than the demand rate,
+
+123
+00:05:42,510 --> 00:05:44,760
+and then the line flattens out because all the b's
+
+124
+00:05:44,760 --> 00:05:46,520
+have been produced.
+
+125
+00:05:46,520 --> 00:05:51,640
+Finally, the production of c starts at about hour 102,
+
+126
+00:05:51,640 --> 00:05:53,950
+and that continues until the end of the month.
+
+127
+00:05:53,950 --> 00:05:58,690
+These graphs are displaying the surplus as a function of time.
+
+128
+00:05:58,690 --> 00:06:00,760
+Time, as usual, is on the horizontal axis,
+
+129
+00:06:00,760 --> 00:06:02,950
+and surplus is on the vertical axis.
+
+130
+00:06:02,950 --> 00:06:05,770
+The surplus is the difference between cumulative production
+
+131
+00:06:05,770 --> 00:06:07,630
+and cumulative demand.
+
+132
+00:06:07,630 --> 00:06:10,630
+When surplus is negative, it's called backlog.
+
+133
+00:06:10,630 --> 00:06:14,410
+What's the consequence of having such surpluses in backlogs?
+
+134
+00:06:14,410 --> 00:06:16,090
+There are two cases to consider.
+
+135
+00:06:16,090 --> 00:06:19,390
+One case is where the customer, the next production stage,
+
+136
+00:06:19,390 --> 00:06:21,730
+operates the same way that this stage did,
+
+137
+00:06:21,730 --> 00:06:24,310
+and the two stages synchronize their production.
+
+138
+00:06:24,310 --> 00:06:26,620
+The downstream line would never be starved,
+
+139
+00:06:26,620 --> 00:06:29,560
+and there would be no inventory accumulation between them.
+
+140
+00:06:29,560 --> 00:06:32,580
+In that case, there would not be a problem.
+
+141
+00:06:32,580 --> 00:06:34,700
+But we intend to talk about constant demand,
+
+142
+00:06:34,700 --> 00:06:37,410
+and what I've just described is not constant demand.
+
+143
+00:06:37,410 --> 00:06:39,860
+So suppose the demand is constant.
+
+144
+00:06:39,860 --> 00:06:42,200
+That could happen in various ways.
+
+145
+00:06:42,200 --> 00:06:44,410
+There could be three customers, not one.
+
+146
+00:06:44,410 --> 00:06:47,330
+One customer only for a's, one only for b's, and one only
+
+147
+00:06:47,330 --> 00:06:50,960
+for c's, and they all have constant demand rates.
+
+148
+00:06:50,960 --> 00:06:52,910
+Or there could be a single customer,
+
+149
+00:06:52,910 --> 00:06:55,790
+but that customer needs to mix products and produce them
+
+150
+00:06:55,790 --> 00:06:58,370
+according to abc, abc, abc.
+
+151
+00:06:58,370 --> 00:07:00,920
+The third is that the product is going to the general market
+
+152
+00:07:00,920 --> 00:07:03,680
+where demand comes from many independent customers,
+
+153
+00:07:03,680 --> 00:07:07,120
+and the demand rate is constant for each.
+
+154
+00:07:07,120 --> 00:07:08,950
+In that case the b and c customers
+
+155
+00:07:08,950 --> 00:07:10,660
+would not be served for much of the month
+
+156
+00:07:10,660 --> 00:07:13,660
+without an accumulation of inventories.
+
+157
+00:07:13,660 --> 00:07:16,945
+So let's provide some inventories.
+
+158
+00:07:16,945 --> 00:07:19,410
+They're the same is the surplus graph, except we've
+
+159
+00:07:19,410 --> 00:07:21,510
+added enough inventory to b and c graph
+
+160
+00:07:21,510 --> 00:07:24,510
+so that the graph is never less than zero.
+
+161
+00:07:24,510 --> 00:07:27,030
+Now, we've produced large inventories
+
+162
+00:07:27,030 --> 00:07:28,710
+by doing things this way.
+
+163
+00:07:28,710 --> 00:07:31,590
+Let's contrast that with a situation
+
+164
+00:07:31,590 --> 00:07:35,610
+in which the items are produced abc, abc, abc,
+
+165
+00:07:35,610 --> 00:07:37,880
+and demand is constant.
+
+166
+00:07:37,880 --> 00:07:41,630
+So we're producing three parts every 180 minutes,
+
+167
+00:07:41,630 --> 00:07:44,254
+or one part an hour, on the average.
+
+168
+00:07:44,254 --> 00:07:46,670
+But to do that, we're making the assumption that the setup
+
+169
+00:07:46,670 --> 00:07:49,760
+change time is extremely small, essentially
+
+170
+00:07:49,760 --> 00:07:51,410
+that the machines are flexible.
+
+171
+00:07:51,410 --> 00:07:55,040
+As a result the surpluses and inventories are all small.
+
+172
+00:07:55,040 --> 00:07:57,710
+But this is only possible if the machines and the people
+
+173
+00:07:57,710 --> 00:07:59,636
+in this factory are flexible.
+
+174
+00:07:59,636 --> 00:08:01,760
+But now let's suppose that they're not so flexible,
+
+175
+00:08:01,760 --> 00:08:04,730
+and the setup change time from one part to another
+
+176
+00:08:04,730 --> 00:08:06,260
+is one hour.
+
+177
+00:08:06,260 --> 00:08:08,840
+In that case, making a batch of 56 a's
+
+178
+00:08:08,840 --> 00:08:12,590
+and then a batch of 56 b's and then 56 c's would
+
+179
+00:08:12,590 --> 00:08:14,750
+take 171 hours.
+
+180
+00:08:14,750 --> 00:08:18,570
+The 168 plus 3 for changeovers, assuming that the cycle
+
+181
+00:08:18,570 --> 00:08:20,870
+is going to repeat every month.
+
+182
+00:08:20,870 --> 00:08:22,485
+171 hours.
+
+183
+00:08:22,485 --> 00:08:24,860
+On the other hand, suppose we mix the parts making one a,
+
+184
+00:08:24,860 --> 00:08:27,920
+one b, and one c, and then repeating that.
+
+185
+00:08:27,920 --> 00:08:29,630
+In that case, it would take six hours
+
+186
+00:08:29,630 --> 00:08:36,210
+to make one set of three parts, and 56 times 6 and 336 hours
+
+187
+00:08:36,210 --> 00:08:40,919
+altogether to make 56 sets of three parts.
+
+188
+00:08:40,919 --> 00:08:45,317
+This is almost double the time for the three large batches.
+
+189
+00:08:45,317 --> 00:08:47,400
+In other words, this would cut the production rate
+
+190
+00:08:47,400 --> 00:08:49,940
+by about 50%.
+
+191
+00:08:49,940 --> 00:08:53,520
+In general, smaller batches lead to less inventory, but a lower
+
+192
+00:08:53,520 --> 00:08:57,220
+production rate for the same operation time and setup time.
+
+193
+00:08:57,220 --> 00:09:00,930
+A batch size of one is ideal, but it can only
+
+194
+00:09:00,930 --> 00:09:03,540
+happen if this technology is such that the change over time
+
+195
+00:09:03,540 --> 00:09:07,540
+is minimal, and there's enough capacity to meet the demand.
+
+196
+00:09:07,540 --> 00:09:09,440
+One more example.
+
+197
+00:09:09,440 --> 00:09:13,020
+A plant produces 10,000 Toyota Coronas in a month.
+
+198
+00:09:13,020 --> 00:09:17,900
+It produces 5,000 sedans, 2,500 hardtops, and 2,500 wagons.
+
+199
+00:09:17,900 --> 00:09:21,920
+So for example, one month is 20 eight-hour shift.
+
+200
+00:09:21,920 --> 00:09:24,490
+Production is divided equally.
+
+201
+00:09:24,490 --> 00:09:30,200
+In every shift, we have to make 250 sedans, 125 hardtops,
+
+202
+00:09:30,200 --> 00:09:34,810
+and 125 wagons, for a total of 500 cars.
+
+203
+00:09:34,810 --> 00:09:37,620
+An eight hour shift is 480 minutes,
+
+204
+00:09:37,620 --> 00:09:41,020
+therefore the unit cycle time is 480 over 500,
+
+205
+00:09:41,020 --> 00:09:45,940
+or 0.96 minutes, which works out to be 57 and 1/2 seconds.
+
+206
+00:09:45,940 --> 00:09:48,910
+On the average, then, once sedan must be generated every one
+
+207
+00:09:48,910 --> 00:09:52,400
+minute and 55 seconds, one hardtop
+
+208
+00:09:52,400 --> 00:09:56,490
+must be generated every 3 minutes and 50 seconds,
+
+209
+00:09:56,490 --> 00:10:01,460
+and one wagon must be generated every 3 minutes and 50 seconds.
+
+210
+00:10:01,460 --> 00:10:03,930
+The possible sequences to do this
+
+211
+00:10:03,930 --> 00:10:07,100
+is a sedan, wagon, sedan, hardtop, sedan, wagon, sedan,
+
+212
+00:10:07,100 --> 00:10:09,460
+hardtop, and so forth.
+
+213
+00:10:09,460 --> 00:10:11,980
+And that is mixing of models.
+
+214
+00:10:11,980 --> 00:10:13,420
+As long as there's no setup cost,
+
+215
+00:10:13,420 --> 00:10:14,980
+the sequence like this is desirable
+
+216
+00:10:14,980 --> 00:10:17,570
+because minimizes inventory.
+
+217
+00:10:17,570 --> 00:10:20,439
+But machines and people must be flexible for this.
+
+218
+00:10:20,439 --> 00:10:21,980
+The next set of slides will start off
+
+219
+00:10:21,980 --> 00:10:24,580
+with a discussion of setup times.
+

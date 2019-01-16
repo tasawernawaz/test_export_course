@@ -1,0 +1,17 @@
+<problem display_name="Question 3" markdown="&gt;&gt;Why is station 4’s maximum utilization less than 100% (slide 101)? &lt;&lt;&#10;( ) Because there are not enough machines in station 4.&#10;( ) Because the processing time of station 4 is too low.&#10;( ) Because station 4 is starved.&#10;(x) Because the entire system’s production is limited by another station that is used more frequently than station 4, and that other system has reached 100% utilization.&#10;&#10;[explanation]&#10;Parts need to go to station 2 more often than the other stations, or they need to spend more time there. As N increases, the only limit on the utilizations of the stations is 100%, which is reached by Station 2 because it is the most utilized. Other less utilized stations never reach 100% as a result.&#10;[explanation]&#10;&#10;" max_attempts="3">
+  <multiplechoiceresponse>
+    <label>Why is station 4’s maximum utilization less than 100% (slide 101)? </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Because there are not enough machines in station 4.</choice>
+      <choice correct="false">Because the processing time of station 4 is too low.</choice>
+      <choice correct="false">Because station 4 is starved.</choice>
+      <choice correct="true">Because the entire system’s production is limited by another station that is used more frequently than station 4, and that other system has reached 100% utilization.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>Parts need to go to station 2 more often than the other stations, or they need to spend more time there. As N increases, the only limit on the utilizations of the stations is 100%, which is reached by Station 2 because it is the most utilized. Other less utilized stations never reach 100% as a result.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

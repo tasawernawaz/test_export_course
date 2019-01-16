@@ -1,0 +1,17 @@
+<problem display_name="Part 1" group_access="{}" markdown="null" max_attempts="2" showanswer="past_due" weight="6.0">
+  <numericalresponse answer="586">
+    <label>How many loaves should they buy each day to maximize expected profit? （Round to the nearest integer)</label>
+    <responseparam type="tolerance" default="5"/>
+    <formulaequationinput/>
+    <script src="/static/st.js" type="text/javascript"/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>
+        <span style="font-size: 1em;">
+          <img src="/static/Wk5GP1Pt1.png" alt="" width="500" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+        </span>
+      </p>
+    </div>
+  </solution>
+</problem>

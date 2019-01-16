@@ -1,0 +1,24 @@
+<problem display_name="Part 4" markdown="null" max_attempts="3" showanswer="finished" weight="1.0">
+  <multiplechoiceresponse>
+    <p>Return to the situation described in Question 1. Suppose that Youngjae decided not to
+work on a part in FIFO order but in random order. That is, if Youngjae finishes a process
+and finds two parts waiting, he will chose between the two parts at random, i.e., each waiting
+part will have probability 0.5 of being the next one to be processed. </p>
+    <description>In which of the two cases, if any, will W time be greater? (W is the expected total amount of time that a part has to spend in the milling area.) </description>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">The first is larger.</choice>
+      <choice correct="false">The second is larger.</choice>
+      <choice correct="true">They are the same.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>
+          <span style="font-size: 1em;">
+            <img src="/static/Stochastic2.5.png" alt="" width="800" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+          </span>
+        </p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

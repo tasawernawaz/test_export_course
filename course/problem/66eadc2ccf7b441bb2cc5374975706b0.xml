@@ -1,0 +1,20 @@
+<problem display_name="Part 3" markdown="&gt;&gt;Which of the following are exemplifies the Kanban system?&lt;&lt;&#10;&#10;[ ] Central planning&#10;[ ] Optimize scheduling&#10;[ ] Zero inventory&#10;[x] Production control systems&#10;[x] Information systems&#10;[ ] Push system&#10;[x] Pull system&#10;&#10;[explanation]&#10;The Kanban system uses a signaling system that enables and disables production at individual processes. The tradtional Kanban card also includes information such as inventory, lot size and others.&#10;[explanation]&#10;" max_attempts="3" weight="1.0">
+  <choiceresponse>
+    <label>Which of the following are exemplifies the Kanban system?</label>
+    <checkboxgroup>
+      <choice correct="false">Central planning</choice>
+      <choice correct="false">Optimize scheduling</choice>
+      <choice correct="false">Zero inventory</choice>
+      <choice correct="true">Production control systems</choice>
+      <choice correct="true">Information systems</choice>
+      <choice correct="false">Push system</choice>
+      <choice correct="true">Pull system</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>The Kanban system uses a signaling system that enables and disables production at individual processes. The tradtional Kanban card also includes information such as inventory, lot size and others.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

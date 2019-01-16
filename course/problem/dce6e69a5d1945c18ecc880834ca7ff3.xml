@@ -1,0 +1,16 @@
+<problem display_name="Question 1" markdown="&gt;&gt;What was HP's actual production rate before they installed the &quot;Eclipse&quot; system?  &lt;&lt;&#10;&#10;( ) 370,000 units/month&#10;( ) 125,000 units/month&#10;(x) 200,000 units/month&#10;&#10;[Explanation]&#10;The production rate of the factory when labor was manual was 200,000 units/month. See video 1 for reference.[Explanation]&#10;" max_attempts="2" showanswer="attempted" weight="1.0">
+  <multiplechoiceresponse>
+    <label>What was HP's actual production rate before they installed the "Eclipse" system?  </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">370,000 units/month</choice>
+      <choice correct="false">125,000 units/month</choice>
+      <choice correct="true">200,000 units/month</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>The production rate of the factory when labor was manual was 200,000 units/month. See video 1 for reference.</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

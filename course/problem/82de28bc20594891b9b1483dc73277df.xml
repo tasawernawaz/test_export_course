@@ -1,0 +1,13 @@
+<problem display_name="Part 3" markdown="&gt;&gt;X is a continuous random variable which is uniformly distributed between 13 and 17. What is the probability that 14 \(\leq\) X \(\leq\) 15.5? (Enter 3 decimal places)&lt;&lt;&#10;&#10;= 0.375+-0.003&#10;&#10;[explanation]&#10;\((15.5-14)/(17-13)=0.375\)&#10;[explanation]&#10;" max_attempts="3" showanswer="past_due" weight="2.0">
+  <numericalresponse answer="0.375">
+    <label>X is a continuous random variable which is uniformly distributed between 13 and 17. What is the probability that 14 \(\leq\) X \(\leq\) 15.5? (Enter 3 decimal places)</label>
+    <responseparam type="tolerance" default="0.003"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>\((15.5-14)/(17-13)=0.375\)</p>
+      </div>
+    </solution>
+  </numericalresponse>
+</problem>

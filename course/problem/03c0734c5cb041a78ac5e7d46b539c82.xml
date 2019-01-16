@@ -1,0 +1,22 @@
+<problem display_name="Part 3" group_access="{}" markdown="null" max_attempts="3" showanswer="past_due" weight="5.0">
+  <numericalresponse answer="0.1344">
+    <p>Continued from Part 2.</p>
+    <p>When there are 4 people in the shop, no new customer can enter. Assume that
+customers that arrive when the shop is full go away, without waiting outside for
+someone to leave the shop. Those people represent lost sales.</p>
+    <label>What is the fraction
+of customers that do not get their sandwiches? (Enter as a decimal, round to 3 decimal places)</label>
+    <responseparam type="tolerance" default="0.007"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>
+        <span style="font-size: 1em;">
+          <img src="/static/Wk4GP1Pt3.png" alt="" width="600" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+        </span>
+      </p>
+    </div>
+  </solution>
+</problem>

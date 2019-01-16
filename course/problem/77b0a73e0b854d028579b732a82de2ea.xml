@@ -1,0 +1,21 @@
+<problem display_name="Part 2" group_access="{&quot;50&quot;: [1]}" markdown="null" max_attempts="2" showanswer="past_due" weight="10.0">
+  <numericalresponse answer="1054.42">
+    <p>What is the company's expected profit from car rental at that location? Hint: The expected profit \(P(Q)\) when we order \(Q\) items is given by:</p>
+    <label>
+\(P(Q)=E[(r-c)min[Q,d]-(c-s)max[0,Q-d]]\)in which \(r\) is the revenue per day, \(c\) is the cost per day, and \(s\) is the salvage value per day，\(d\) is the demand.
+
+\(P(Q)\) can also be Revenue-Cost:
+\(P(Q)=E[Revenue]-Cost\)</label>
+    <responseparam type="tolerance" default="150"/>
+    <formulaequationinput/>
+    <solution>
+      <div class="detailed-solution">
+        <p>
+          <span style="font-size: 1em;">
+            <img src="/static/Screen_Shot_2018-05-22_at_11.56.44_AM.png" alt="" width="600" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+          </span>
+        </p>
+      </div>
+    </solution>
+  </numericalresponse>
+</problem>

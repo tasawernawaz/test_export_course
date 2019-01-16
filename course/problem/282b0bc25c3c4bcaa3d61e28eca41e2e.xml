@@ -1,0 +1,17 @@
+<problem display_name="Question 1" markdown="&gt;&gt;What are the important aspects that Closed Jackson Network model of an FMS fails to consider? &lt;&lt;&#10;[x] The change over time of a machine from one part time to another.&#10;[ ] The total number of pallets.&#10;[x] The fact that different parts might require different kinds of fixtures.&#10;[x] In reality, the storage space is not always infinite.&#10;&#10;[explanation]&#10;All models are approximations of reality and have limited set of uses. A closed model considers the number of pallets in the system as a constant, and therefore is considered.&#10;[explanation]" max_attempts="3" showanswer="attempted" weight="1.0">
+  <choiceresponse>
+    <label>What are the important aspects that Closed Jackson Network model of an FMS fails to consider? </label>
+    <checkboxgroup>
+      <choice correct="true">The change over time of a machine from one part time to another.</choice>
+      <choice correct="false">The total number of pallets.</choice>
+      <choice correct="true">The fact that different parts might require different kinds of fixtures.</choice>
+      <choice correct="true">In reality, the storage space is not always infinite.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>All models are approximations of reality and have limited set of uses. A closed model considers the number of pallets in the system as a constant, and therefore is considered.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

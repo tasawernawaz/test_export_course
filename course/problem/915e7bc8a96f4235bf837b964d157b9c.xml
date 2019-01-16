@@ -1,0 +1,22 @@
+<problem display_name="Part 2" markdown="&gt;&gt;what are the useful measurements of plant performance&lt;&lt;&#10;&#10;[x] Throughput&#10;[ ] Idle time&#10;[ ] Productivity&#10;[x] Inventory&#10;[x] Operational expense&#10;[ ] Setup time&#10;&#10;[Explanation]&#10;1. throughput: rate at which the system generates money through sales&#10;2. inventory: all the money the systems has invested in things that it intends to sell.&#10;3. operational expense: all the money the system spends in order to turn inventory into through-&#10;put.&#10;[Explanation]&#10;" max_attempts="3" showanswer="finished" weight="0.0">
+  <choiceresponse>
+    <label>what are the useful measurements of plant performance</label>
+    <checkboxgroup>
+      <choice correct="true">Throughput</choice>
+      <choice correct="false">Idle time</choice>
+      <choice correct="false">Productivity</choice>
+      <choice correct="true">Inventory</choice>
+      <choice correct="true">Operational expense</choice>
+      <choice correct="false">Setup time</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>1. throughput: rate at which the system generates money through sales</p>
+        <p>2. inventory: all the money the systems has invested in things that it intends to sell.</p>
+        <p>3. operational expense: all the money the system spends in order to turn inventory into through-</p>
+        <p>put.</p>
+      </div>
+    </solution>
+  </choiceresponse>
+</problem>

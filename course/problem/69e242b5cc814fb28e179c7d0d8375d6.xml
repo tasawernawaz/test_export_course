@@ -1,0 +1,28 @@
+<problem display_name="Part 2" group_access="{}" markdown="null" max_attempts="3" showanswer="past_due" weight="3.0">
+  <p>What is the steady-state probability of being in each state? (Please answer with 3 decimals)</p>
+  <label>P(G)</label>
+  <numericalresponse answer="0.8164">
+    <responseparam type="tolerance" default="0.001"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>P(B)</label>
+  <numericalresponse answer="0.0612">
+    <responseparam type="tolerance" default="0.001"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>P(D)</label>
+  <numericalresponse answer="0.1224">
+    <responseparam type="tolerance" default="0.001"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>
+        <span style="font-size: 1em;">
+          <img src="/static/WK3GP2Pt2.png" alt="" width="500" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+        </span>
+      </p>
+    </div>
+  </solution>
+</problem>

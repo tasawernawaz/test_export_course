@@ -1,0 +1,19 @@
+<problem display_name="Part 3" markdown="null" max_attempts="3" showanswer="finished" weight="0.0">
+  <multiplechoiceresponse>
+    <label>The Aggregate Arrival process at operation \(Q\) is Poisson. </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">True</choice>
+      <choice correct="false">False</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>
+        <span style="font-size: 1em;">
+          Yes. The rework flow is Poisson distributed. Two Poisson queues add up together will still make a Poisson queue.
+        </span>
+      </p>
+    </div>
+  </solution>
+</problem>

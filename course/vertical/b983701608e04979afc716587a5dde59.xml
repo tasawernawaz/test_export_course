@@ -1,0 +1,34 @@
+<vertical display_name="Graded Problem 2" visible_to_staff_only="true">
+  <openassessment url_name="2f7f5d948b6548569786fc1723d3be77" submission_start="2018-08-28T15:00:00" submission_due="2018-09-11T15:00:00" text_response="required" allow_latex="False" prompts_type="html">
+    <title>Introduce Yourself </title>
+    <assessments>
+      <assessment name="self-assessment" start="2018-08-28T15:00:00" due="2018-09-11T15:00:00"/>
+    </assessments>
+    <prompts>
+      <prompt>
+        <description>&lt;p&gt;1) In the box below, please share where you are from, why you are enrolled in this program and what you hope to accomplish upon completion of this course. Additionally, please talk about what manufacturing experiences have you had in the past, and what problems in manufacturing you hope to address in the future. &lt;br /&gt;&lt;br /&gt;2) Once #1 is completed, scroll down to the discussion forum section, and copy and paste this in the "Please introduce yourself " discussion. Feel free to attach pictures.&lt;/p&gt;</description>
+      </prompt>
+    </prompts>
+    <rubric>
+      <criterion>
+        <name>0</name>
+        <label>Completion</label>
+        <prompt>Please copy and paste this assignment in the "Please introduce yourself" Post.</prompt>
+        <option points="10">
+          <name>0</name>
+          <label>Completed</label>
+          <explanation>If you wrote the introduction and copy and pasted into the "Introduce Yourself" post.</explanation>
+        </option>
+        <option points="0">
+          <name>1</name>
+          <label>Not completed</label>
+          <explanation>If you did not write an introduction in the prompt or copy and paste your introduction into the discussion forum.</explanation>
+        </option>
+      </criterion>
+      <feedbackprompt>No feedback necessary for this exercise.</feedbackprompt>
+      <feedback_default_text>No feedback necessary for this exercise.</feedback_default_text>
+    </rubric>
+  </openassessment>
+  <html url_name="cd15b22b5caa416c9a211d6681f3c0ec"/>
+  <discussion url_name="8844cc8473544b618fb183ea2b86ab0c" xblock-family="xblock.v1" discussion_target="Please Introduce Yourself" discussion_category="Week 1"/>
+</vertical>

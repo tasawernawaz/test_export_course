@@ -1,0 +1,17 @@
+<problem display_name="Concept Check 1" markdown="&gt;&gt;Which statement is NOT true about Toyota Production System?&lt;&lt;&#10;( X ) TPS focus on the manufacturing systems. The management of people in the Toyota company obeys another very efficient set of rules.&#10;( ) The core of TPS is that it creates a community of scientists. When things go wrong, the worker has to use scientific methods to determine what is wrong and correct it. And the function of manager is to guide and support this effort.&#10;( ) The rules that people obey in TPS try to avoid all possible ambiguities， misunderstandings and miscommunications. &#10;( ) Toyota’s primary goals is cost reduction and improvement of productivity.&#10;&#10;[explanation]&#10;TPS consider all aspects of manufacturing systems -not just factory design and operation. It deals with people in the company, both the ergonomic and psychology. It also discusses how to implement its methodology. &#10;[explanation]" max_attempts="3" showanswer="attempted" weight="1.0">
+  <multiplechoiceresponse>
+    <label>Which statement is NOT true about Toyota Production System?</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">TPS focus on the manufacturing systems. The management of people in the Toyota company obeys another very efficient set of rules.</choice>
+      <choice correct="false">The core of TPS is that it creates a community of scientists. When things go wrong, the worker has to use scientific methods to determine what is wrong and correct it. And the function of manager is to guide and support this effort.</choice>
+      <choice correct="false">The rules that people obey in TPS try to avoid all possible ambiguities， misunderstandings and miscommunications.</choice>
+      <choice correct="false">Toyota’s primary goals is cost reduction and improvement of productivity.</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>TPS consider all aspects of manufacturing systems -not just factory design and operation. It deals with people in the company, both the ergonomic and psychology. It also discusses how to implement its methodology. </p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

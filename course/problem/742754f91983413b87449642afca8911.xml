@@ -1,0 +1,71 @@
+<problem display_name="Question 2" markdown="Select the distributions that would be most appropriate to model the following situations:&#10;&#10;&#10;&gt;&gt;a. Lifetime of lightbulb.&#10;&lt;&lt;&#10;[[&#10;Uniform (continuous or uniform)&#10;Normal&#10;Triangular&#10;(Exponential)&#10;Poisson&#10;]]&#10;[explanation]&#10;The exponential distribution is often used for the time until a specified event occurs, when wear does not occur (or occurs very slowly).  That is, the probability that the event occurs in any time interval given that it did not occur before the beginning of that interval is the same no matter when the interval begins.&#10;[explanation]&#10;&#10;&#10;&gt;&gt;b. The results of rolling a regular die.&#10;&lt;&lt;&#10;[[&#10;(Uniform (continuous or uniform))&#10;Normal&#10;Triangular&#10;Exponential&#10;Poisson&#10;]]&#10;[explanation]&#10;Given the die is fair, there is equal chance to roll any side.&#10;[explanation]&#10;&#10;&#10;&gt;&gt;c. The number of cars crossing an intersection during a time interval.&#10;&lt;&lt;&#10;[[&#10;Uniform (continuous or uniform)&#10;Normal&#10;Triangular&#10;Exponential&#10;(Poisson)&#10;]]&#10;[explanation]&#10;Poisson distributions are commonly used to take historical frequency to predict future behavior, particularly in arrivals and services.&#10;[explanation]&#10;&#10;&#10;&gt;&gt;d. Height of students in a school.&#10;&lt;&lt;&#10;[[&#10;Uniform (continuous or uniform)&#10;(Normal)&#10;Triangular&#10;Exponential&#10;Poisson&#10;]]&#10;[explanation]&#10;The heights of students have empirically found to follow a normal distribution fairly closely.&#10;[explanation]&#10;&#10;&#10;&#10;" max_attempts="3">
+  <p>Select the distributions that would be most appropriate to model the following situations:</p>
+  <label>a. Lifetime of lightbulb.
+</label>
+  <optionresponse>
+    <optioninput>
+      <option correct="False">Uniform (continuous or uniform)</option>
+      <option correct="False">Normal</option>
+      <option correct="False">Triangular</option>
+      <option correct="True">Exponential</option>
+      <option correct="False">Poisson</option>
+    </optioninput>
+  </optionresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>The exponential distribution is often used for the time until a specified event occurs, when wear does not occur (or occurs very slowly).  That is, the probability that the event occurs in any time interval given that it did not occur before the beginning of that interval is the same no matter when the interval begins.</p>
+    </div>
+  </solution>
+  <label>b. The results of rolling a regular die.
+</label>
+  <optionresponse>
+    <optioninput>
+      <option correct="True">Uniform (continuous or uniform)</option>
+      <option correct="False">Normal</option>
+      <option correct="False">Triangular</option>
+      <option correct="False">Exponential</option>
+      <option correct="False">Poisson</option>
+    </optioninput>
+  </optionresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>Given the die is fair, there is equal chance to roll any side.</p>
+    </div>
+  </solution>
+  <label>c. The number of cars crossing an intersection during a time interval.
+</label>
+  <optionresponse>
+    <optioninput>
+      <option correct="False">Uniform (continuous or uniform)</option>
+      <option correct="False">Normal</option>
+      <option correct="False">Triangular</option>
+      <option correct="False">Exponential</option>
+      <option correct="True">Poisson</option>
+    </optioninput>
+  </optionresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>Poisson distributions are commonly used to take historical frequency to predict future behavior, particularly in arrivals and services.</p>
+    </div>
+  </solution>
+  <label>d. Height of students in a school.
+</label>
+  <optionresponse>
+    <optioninput>
+      <option correct="False">Uniform (continuous or uniform)</option>
+      <option correct="True">Normal</option>
+      <option correct="False">Triangular</option>
+      <option correct="False">Exponential</option>
+      <option correct="False">Poisson</option>
+    </optioninput>
+  </optionresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>The heights of students have empirically found to follow a normal distribution fairly closely.</p>
+    </div>
+  </solution>
+</problem>

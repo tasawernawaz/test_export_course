@@ -1,0 +1,800 @@
+0
+00:00:00,000 --> 00:00:02,750
+
+
+1
+00:00:02,750 --> 00:00:05,879
+Before we get into discussing continuous random variables,
+
+2
+00:00:05,879 --> 00:00:07,670
+I think there are some philosophical issues
+
+3
+00:00:07,670 --> 00:00:10,610
+that we want to talk about.
+
+4
+00:00:10,610 --> 00:00:13,040
+When do we use continuous and when do we
+
+5
+00:00:13,040 --> 00:00:15,920
+use discrete random variables?
+
+6
+00:00:15,920 --> 00:00:18,950
+The temptation is to say that when the system that we're
+
+7
+00:00:18,950 --> 00:00:22,080
+analyzing is discrete, we use discrete random variables,
+
+8
+00:00:22,080 --> 00:00:25,590
+and when it's continuous, we use continuous random variables.
+
+9
+00:00:25,590 --> 00:00:28,490
+However, we don't have to be ruled by that.
+
+10
+00:00:28,490 --> 00:00:33,170
+All models are only approximations of reality.
+
+11
+00:00:33,170 --> 00:00:36,380
+Mathematically, continuous and discrete random variables
+
+12
+00:00:36,380 --> 00:00:40,980
+are very different, and they're analyzed very differently.
+
+13
+00:00:40,980 --> 00:00:44,150
+However, quantitatively, some continuous models
+
+14
+00:00:44,150 --> 00:00:46,100
+are very close to some discrete models.
+
+15
+00:00:46,100 --> 00:00:50,200
+
+
+16
+00:00:50,200 --> 00:00:52,840
+As a consequence, there may be times
+
+17
+00:00:52,840 --> 00:00:57,330
+when we have a choice, because the purpose of modeling
+
+18
+00:00:57,330 --> 00:00:59,910
+is to make predictions, quantitative predictions,
+
+19
+00:00:59,910 --> 00:01:01,860
+about what's going to happen.
+
+20
+00:01:01,860 --> 00:01:04,590
+So which kind of model we use for any given system
+
+21
+00:01:04,590 --> 00:01:07,080
+can be a matter of convenience and not
+
+22
+00:01:07,080 --> 00:01:12,580
+dictated by the nature of the system in a very rigid way.
+
+23
+00:01:12,580 --> 00:01:16,320
+For example, if we're looking at a factory in which we're
+
+24
+00:01:16,320 --> 00:01:19,740
+making small metal parts, such as nuts and bolts and washers,
+
+25
+00:01:19,740 --> 00:01:22,290
+et cetera, things like that, then it
+
+26
+00:01:22,290 --> 00:01:25,140
+might be better to model this as a continuous flow
+
+27
+00:01:25,140 --> 00:01:29,050
+rather than a large number of discrete parts.
+
+28
+00:01:29,050 --> 00:01:31,410
+For example, instead of counting the parts,
+
+29
+00:01:31,410 --> 00:01:33,870
+we might simply weigh the number of parts that we have
+
+30
+00:01:33,870 --> 00:01:36,480
+or look at the volume of the number of the parts
+
+31
+00:01:36,480 --> 00:01:38,890
+that we've made.
+
+32
+00:01:38,890 --> 00:01:42,690
+Now continuous random variables have to be treated differently
+
+33
+00:01:42,690 --> 00:01:46,579
+because they can take on an infinite number of values,
+
+34
+00:01:46,579 --> 00:01:48,120
+whereas the discrete random variables
+
+35
+00:01:48,120 --> 00:01:54,734
+take on a finite or a discrete infinity number of values.
+
+36
+00:01:54,734 --> 00:01:56,400
+So to talk about that, we'd have to talk
+
+37
+00:01:56,400 --> 00:01:58,410
+about probability density.
+
+38
+00:01:58,410 --> 00:02:00,840
+The probability of a two-dimensional random variable
+
+39
+00:02:00,840 --> 00:02:04,050
+being in a small square is the probability density
+
+40
+00:02:04,050 --> 00:02:06,840
+times the area of the square.
+
+41
+00:02:06,840 --> 00:02:09,330
+The definition is similar in higher dimensional spaces,
+
+42
+00:02:09,330 --> 00:02:11,760
+where we talk about volumes.
+
+43
+00:02:11,760 --> 00:02:15,300
+In this figure, we've represented the high density
+
+44
+00:02:15,300 --> 00:02:19,410
+areas with dark colors and the low density areas
+
+45
+00:02:19,410 --> 00:02:21,090
+with light colors.
+
+46
+00:02:21,090 --> 00:02:23,880
+You might want to compare this with slide 14, which
+
+47
+00:02:23,880 --> 00:02:28,270
+is a similar figure involving discrete random variables.
+
+48
+00:02:28,270 --> 00:02:32,500
+Now what does this actually mean?
+
+49
+00:02:32,500 --> 00:02:36,430
+So let's make up a story about a blindfolded dart thrower.
+
+50
+00:02:36,430 --> 00:02:40,220
+He's throwing darts at that same rectangle
+
+51
+00:02:40,220 --> 00:02:42,860
+that we had on the previous slide.
+
+52
+00:02:42,860 --> 00:02:46,407
+But we don't know exactly where the darts are going to land.
+
+53
+00:02:46,407 --> 00:02:47,990
+In fact, we don't even know if they're
+
+54
+00:02:47,990 --> 00:02:50,573
+going to land on the rectangle, but let's assume that they do.
+
+55
+00:02:50,573 --> 00:02:52,950
+
+
+56
+00:02:52,950 --> 00:02:56,960
+Wherever each one lands is random, and for our purposes,
+
+57
+00:02:56,960 --> 00:02:57,840
+unpredictable.
+
+58
+00:02:57,840 --> 00:03:00,290
+But one thing that we do know is that if he
+
+59
+00:03:00,290 --> 00:03:04,040
+throws a lot of darts, then a large number of them
+
+60
+00:03:04,040 --> 00:03:07,580
+will end up in the darker areas and a smaller number will
+
+61
+00:03:07,580 --> 00:03:10,070
+end up in the lighter areas.
+
+62
+00:03:10,070 --> 00:03:14,840
+The probability that a dart lands in a little square
+
+63
+00:03:14,840 --> 00:03:17,930
+is equal to the probability density
+
+64
+00:03:17,930 --> 00:03:21,770
+where that square is times the area of that square.
+
+65
+00:03:21,770 --> 00:03:24,800
+So the probability density is higher in the upper left corner
+
+66
+00:03:24,800 --> 00:03:27,920
+and lower in the lower right corner.
+
+67
+00:03:27,920 --> 00:03:29,960
+Continuous random variables can be
+
+68
+00:03:29,960 --> 00:03:32,240
+defined in one, two, three or even infinite
+
+69
+00:03:32,240 --> 00:03:35,660
+dimensional spaces and in finite or infinite regions
+
+70
+00:03:35,660 --> 00:03:38,240
+of those spaces.
+
+71
+00:03:38,240 --> 00:03:39,710
+They can have probability measures
+
+72
+00:03:39,710 --> 00:03:43,010
+with the same dimensionality of the space or even
+
+73
+00:03:43,010 --> 00:03:44,990
+with the lower dimensionality of the space
+
+74
+00:03:44,990 --> 00:03:46,719
+or a mix of dimensions.
+
+75
+00:03:46,719 --> 00:03:48,260
+We'll give you examples of that soon.
+
+76
+00:03:48,260 --> 00:03:51,890
+
+
+77
+00:03:51,890 --> 00:03:54,130
+So now let's think about what happens
+
+78
+00:03:54,130 --> 00:03:57,250
+as an example in a set of make-believe tanks
+
+79
+00:03:57,250 --> 00:04:00,610
+with make-believe water flowing through them.
+
+80
+00:04:00,610 --> 00:04:02,680
+In this case, we have two tanks.
+
+81
+00:04:02,680 --> 00:04:04,870
+Water can flow into the first tank,
+
+82
+00:04:04,870 --> 00:04:06,790
+and then from the first tank into the second,
+
+83
+00:04:06,790 --> 00:04:09,240
+and then out of the second.
+
+84
+00:04:09,240 --> 00:04:12,310
+There's a valve at the entrance of the first tank,
+
+85
+00:04:12,310 --> 00:04:15,370
+another valve between the first tank and the second,
+
+86
+00:04:15,370 --> 00:04:21,110
+and finally, a third valve at the end of the line.
+
+87
+00:04:21,110 --> 00:04:25,100
+The analogy to manufacturing is that these valves represent
+
+88
+00:04:25,100 --> 00:04:28,850
+machines, which can fail or be operational,
+
+89
+00:04:28,850 --> 00:04:31,850
+and the tanks represent storage or inventory
+
+90
+00:04:31,850 --> 00:04:34,320
+between these machines.
+
+91
+00:04:34,320 --> 00:04:36,560
+Here's the system starting empty.
+
+92
+00:04:36,560 --> 00:04:38,660
+There's no water in any of the tanks,
+
+93
+00:04:38,660 --> 00:04:41,360
+and the valves are all open.
+
+94
+00:04:41,360 --> 00:04:44,000
+If the valves stay open for a while,
+
+95
+00:04:44,000 --> 00:04:46,362
+we still basically have no water in each of the tanks.
+
+96
+00:04:46,362 --> 00:04:48,320
+In fact, there'll be a little bit of splashing.
+
+97
+00:04:48,320 --> 00:04:51,700
+But let's not worry about that.
+
+98
+00:04:51,700 --> 00:04:54,100
+So let's watch what happens.
+
+99
+00:04:54,100 --> 00:04:57,550
+First of all, notice that the third valve is closed.
+
+100
+00:04:57,550 --> 00:05:01,080
+And as a consequence of that, the second tank
+
+101
+00:05:01,080 --> 00:05:03,420
+is starting to accumulate water.
+
+102
+00:05:03,420 --> 00:05:06,210
+The first tank stays empty, because as soon as water
+
+103
+00:05:06,210 --> 00:05:08,220
+goes in, it goes right out.
+
+104
+00:05:08,220 --> 00:05:09,430
+So let's watch what happens.
+
+105
+00:05:09,430 --> 00:05:11,520
+Notice that the tank is starting to fill up.
+
+106
+00:05:11,520 --> 00:05:14,850
+The second tank is starting to fill up.
+
+107
+00:05:14,850 --> 00:05:18,660
+Eventually, we can see that the second tank actually gets full.
+
+108
+00:05:18,660 --> 00:05:21,420
+And when that happens, the water has no place
+
+109
+00:05:21,420 --> 00:05:23,140
+to go after the first tank.
+
+110
+00:05:23,140 --> 00:05:25,170
+So the first tank level starts going up.
+
+111
+00:05:25,170 --> 00:05:28,170
+
+
+112
+00:05:28,170 --> 00:05:29,880
+Now notice what happens.
+
+113
+00:05:29,880 --> 00:05:32,410
+The middle valve has closed.
+
+114
+00:05:32,410 --> 00:05:34,470
+Now with the middle valve is closed,
+
+115
+00:05:34,470 --> 00:05:37,230
+the second tank stays full.
+
+116
+00:05:37,230 --> 00:05:39,285
+The first tank continues to increase.
+
+117
+00:05:39,285 --> 00:05:42,260
+
+
+118
+00:05:42,260 --> 00:05:44,890
+So now we have the first valve open
+
+119
+00:05:44,890 --> 00:05:48,070
+and the next two valves closed.
+
+120
+00:05:48,070 --> 00:05:51,490
+Now notice that the third valve has opened.
+
+121
+00:05:51,490 --> 00:05:55,000
+The first tank is continuing to accumulate water,
+
+122
+00:05:55,000 --> 00:05:58,330
+but the second tank is starting to lose its water.
+
+123
+00:05:58,330 --> 00:06:00,850
+There's no flow between the first tank and the second tank
+
+124
+00:06:00,850 --> 00:06:02,530
+because that second valve is full.
+
+125
+00:06:02,530 --> 00:06:05,810
+
+
+126
+00:06:05,810 --> 00:06:08,360
+Now the second valve opens up.
+
+127
+00:06:08,360 --> 00:06:11,890
+Now all three valves are open, and both tanks
+
+128
+00:06:11,890 --> 00:06:13,060
+stay at the same level.
+
+129
+00:06:13,060 --> 00:06:17,452
+
+
+130
+00:06:17,452 --> 00:06:18,750
+Uh-oh.
+
+131
+00:06:18,750 --> 00:06:21,900
+Looks like the first valve closed.
+
+132
+00:06:21,900 --> 00:06:24,990
+Now no water gets into the first tank.
+
+133
+00:06:24,990 --> 00:06:27,000
+But water can still flow from the first tank
+
+134
+00:06:27,000 --> 00:06:28,660
+to the second one.
+
+135
+00:06:28,660 --> 00:06:31,944
+So the level of the first tank is going down,
+
+136
+00:06:31,944 --> 00:06:34,110
+whereas the level of the second tank stays constant.
+
+137
+00:06:34,110 --> 00:06:36,740
+
+
+138
+00:06:36,740 --> 00:06:38,550
+The valves are still staying open.
+
+139
+00:06:38,550 --> 00:06:40,790
+But now notice that the first tank has completely
+
+140
+00:06:40,790 --> 00:06:42,200
+emptied out.
+
+141
+00:06:42,200 --> 00:06:45,050
+Now there's no water entering the second tank.
+
+142
+00:06:45,050 --> 00:06:46,760
+Water is leaving it.
+
+143
+00:06:46,760 --> 00:06:51,790
+So as a result, the level of the second tank goes down.
+
+144
+00:06:51,790 --> 00:06:55,780
+And finally, the second tank becomes empty.
+
+145
+00:06:55,780 --> 00:06:56,920
+OK.
+
+146
+00:06:56,920 --> 00:07:02,860
+This graph represents the space of the water tanks,
+
+147
+00:07:02,860 --> 00:07:04,510
+which we're labeling with Bs now,
+
+148
+00:07:04,510 --> 00:07:07,150
+which represent buffers, which represent
+
+149
+00:07:07,150 --> 00:07:11,440
+storage areas in the factory.
+
+150
+00:07:11,440 --> 00:07:16,630
+Now the arrows in this graph represents how the water
+
+151
+00:07:16,630 --> 00:07:19,360
+can flow in the two tanks.
+
+152
+00:07:19,360 --> 00:07:23,350
+For example, when the first valve is open
+
+153
+00:07:23,350 --> 00:07:26,140
+and the last two valves are closed,
+
+154
+00:07:26,140 --> 00:07:28,210
+we're symbolizing that as one, zero, zero.
+
+155
+00:07:28,210 --> 00:07:30,460
+That means the first thing is open-- that's a one--
+
+156
+00:07:30,460 --> 00:07:33,910
+and the other two are closed-- those are zeros.
+
+157
+00:07:33,910 --> 00:07:39,860
+What happens then is that the first tank starts filling up,
+
+158
+00:07:39,860 --> 00:07:43,280
+but the second tank stays at the same level.
+
+159
+00:07:43,280 --> 00:07:48,290
+And for that reason, the arrow is moving to the right.
+
+160
+00:07:48,290 --> 00:07:51,760
+Another condition would be that the first two valves are open
+
+161
+00:07:51,760 --> 00:07:54,220
+and the last valve is closed.
+
+162
+00:07:54,220 --> 00:07:59,300
+In that case, the water in the first tank stays constant,
+
+163
+00:07:59,300 --> 00:08:04,000
+but the second tank starts going up until it becomes full.
+
+164
+00:08:04,000 --> 00:08:06,190
+When the second tank becomes full,
+
+165
+00:08:06,190 --> 00:08:08,830
+that's where the first tank starts accumulating water.
+
+166
+00:08:08,830 --> 00:08:12,640
+And that keeps going until it reaches the upper right corner.
+
+167
+00:08:12,640 --> 00:08:16,480
+You can imagine other scenarios.
+
+168
+00:08:16,480 --> 00:08:17,860
+OK.
+
+169
+00:08:17,860 --> 00:08:20,120
+So this is after the animation.
+
+170
+00:08:20,120 --> 00:08:22,390
+Now if we look at what happens, we'll
+
+171
+00:08:22,390 --> 00:08:27,040
+notice that some parts of the space get darker.
+
+172
+00:08:27,040 --> 00:08:28,780
+Other parts stay lighter.
+
+173
+00:08:28,780 --> 00:08:32,110
+Those that are darker represent the higher density states.
+
+174
+00:08:32,110 --> 00:08:34,179
+Notice, though, that when a tank becomes full,
+
+175
+00:08:34,179 --> 00:08:36,030
+it tends to stay full for a while.
+
+176
+00:08:36,030 --> 00:08:39,880
+When it becomes empty, it tends to stay empty for a while.
+
+177
+00:08:39,880 --> 00:08:42,549
+So what we have is that in the interior of this space,
+
+178
+00:08:42,549 --> 00:08:44,350
+we really have a two-dimensional density,
+
+179
+00:08:44,350 --> 00:08:47,230
+where we can only describe the probability
+
+180
+00:08:47,230 --> 00:08:54,370
+by looking at the probability of being in a small area.
+
+181
+00:08:54,370 --> 00:08:57,220
+The edges of the rectangle, we actually
+
+182
+00:08:57,220 --> 00:09:02,230
+have one-dimensional densities, because when a tank becomes
+
+183
+00:09:02,230 --> 00:09:07,720
+full, it stays full, although the other tank can gain or lose
+
+184
+00:09:07,720 --> 00:09:09,730
+material.
+
+185
+00:09:09,730 --> 00:09:14,800
+Eventually, some of the corners have actual probabilities, not
+
+186
+00:09:14,800 --> 00:09:16,690
+densities at all anymore.
+
+187
+00:09:16,690 --> 00:09:20,200
+You can think of probabilities as zero-dimensional densities.
+
+188
+00:09:20,200 --> 00:09:22,030
+So we have a probability, for example,
+
+189
+00:09:22,030 --> 00:09:23,650
+of both tanks being full--
+
+190
+00:09:23,650 --> 00:09:26,110
+the probability of the first tank being full
+
+191
+00:09:26,110 --> 00:09:28,940
+and the second tank being empty and so forth.
+
+192
+00:09:28,940 --> 00:09:30,700
+If we looked at the discrete system,
+
+193
+00:09:30,700 --> 00:09:33,100
+the state space would look like this,
+
+194
+00:09:33,100 --> 00:09:37,690
+where the size of the dots represent the probabilities
+
+195
+00:09:37,690 --> 00:09:39,950
+of each of those states.
+
+196
+00:09:39,950 --> 00:09:43,900
+So we have integer numbers of parts in the first tank,
+
+197
+00:09:43,900 --> 00:09:46,360
+integer number of parts in the second tank,
+
+198
+00:09:46,360 --> 00:09:48,812
+and different probabilities.
+
+199
+00:09:48,812 --> 00:09:49,312
+
+

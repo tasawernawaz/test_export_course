@@ -1,0 +1,12 @@
+<problem display_name="Part 2" markdown="&#10;&gt;&gt;What is the aggregate arrival rate for the filling machine in bottles per sec? (round to 3 decimal places)&lt;&lt;&#10;&#10;= 1.103 +-5%&#10;&#10;&#10;&gt;&gt;What is the aggregate arrival rate for the capping machine in bottles per sec? (round to 3 decimal places)&lt;&lt;&#10;&#10;= 1.149 +-5%" max_attempts="3" showanswer="never" weight="10.0">
+  <label>What is the aggregate arrival rate for the filling machine in bottles per sec? (round to 3 decimal places)</label>
+  <numericalresponse answer="1.103">
+    <responseparam type="tolerance" default="5%"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>What is the aggregate arrival rate for the capping machine in bottles per sec? (round to 3 decimal places)</label>
+  <numericalresponse answer="1.149">
+    <responseparam type="tolerance" default="5%"/>
+    <formulaequationinput/>
+  </numericalresponse>
+</problem>

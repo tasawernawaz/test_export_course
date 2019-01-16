@@ -1,0 +1,39 @@
+<problem display_name="Part 1" group_access="{}" markdown="null" max_attempts="3" showanswer="past_due" weight="5.0">
+  <p>Let \(\pi_n\) (n = 0; 1; 2; 3; 4) be the steady state probability that there are n customers in the shop. Write and solve the set of equations to determine \(\pi_n\). Assume \(\lambda=\frac{1}{30}\) and \(\mu=\frac{1}{29}\) (Enter 4 decimal places).</p>
+  <label>What is \(\pi_0\)?</label>
+  <numericalresponse answer="0.2138">
+    <responseparam type="tolerance" default="0.01"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>What is \(\pi_1\)?</label>
+  <numericalresponse answer="0.2067">
+    <responseparam type="tolerance" default="0.01"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>What is \(\pi_2\)?</label>
+  <numericalresponse answer="0.1997">
+    <responseparam type="tolerance" default="0.01"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>What is \(\pi_3\)?</label>
+  <numericalresponse answer="0.1931">
+    <responseparam type="tolerance" default="0.007"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>What is \(\pi_4\)?</label>
+  <numericalresponse answer="0.1867">
+    <responseparam type="tolerance" default="0.007"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>
+        <span style="font-size: 1em;">
+          <img src="/static/Wk4GP1Pt1.png" alt="" width="600" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}"/>
+        </span>
+      </p>
+    </div>
+  </solution>
+  <script src="/static/st.js" type="text/javascript"/>
+</problem>

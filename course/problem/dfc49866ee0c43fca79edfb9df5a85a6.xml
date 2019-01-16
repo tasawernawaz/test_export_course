@@ -1,0 +1,15 @@
+<problem display_name="Part 7" markdown="&gt;&gt;In the HP Case, did the improved Eclipse system yield an overall improvement from manual assembly? &lt;&lt;&#10;&#10;(x) Yes&#10;( ) No&#10;&#10;&#10;[Explanation]&#10;The capacity with manual assembly was 200,000 printers/month and the capacity with the improved Eclipse system was 250,000 printers/month&#10;[Explanation]" max_attempts="1" showanswer="past_due" weight="3.0">
+  <multiplechoiceresponse>
+    <label>In the HP Case, did the improved Eclipse system yield an overall improvement from manual assembly? </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">Yes</choice>
+      <choice correct="false">No</choice>
+    </choicegroup>
+    <solution>
+      <div class="detailed-solution">
+        <p>Explanation</p>
+        <p>The capacity with manual assembly was 200,000 printers/month and the capacity with the improved Eclipse system was 250,000 printers/month</p>
+      </div>
+    </solution>
+  </multiplechoiceresponse>
+</problem>

@@ -1,0 +1,18 @@
+<problem display_name="Part 4" group_access="{}" markdown="&gt;&gt;What is the total cost for inventory holding and order placement for 1080i TVs during YR2018 Q1?&lt;&lt;&#10;&#10;= 30020 +-100&#10;&#10;&gt;&gt;What is the total cost for inventory holding and order placement for 4K TVs during YR2018 Q1?&lt;&lt;&#10;&#10;= 21909 +-100&#10;&#10;[Explanation]&#10;See solution for part 3&#10;[Explanation]" max_attempts="2" showanswer="past_due" weight="5.0">
+  <label>What is the total cost for inventory holding and order placement for 1080i TVs during YR2018 Q1?</label>
+  <numericalresponse answer="30020">
+    <responseparam type="tolerance" default="100"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <label>What is the total cost for inventory holding and order placement for 4K TVs during YR2018 Q1?</label>
+  <numericalresponse answer="21909">
+    <responseparam type="tolerance" default="100"/>
+    <formulaequationinput/>
+  </numericalresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>See solution for part 3</p>
+    </div>
+  </solution>
+</problem>
